@@ -1,0 +1,481 @@
+---
+title: Einrichten von HoloLens als Kiosk
+description: Verwenden Sie eine Kiosk-Konfiguration, um die apps auf HoloLens zu sperren.
+ms.prod: hololens
+ms.sitesec: library
+author: dansimp
+ms.author: dansimp
+ms.topic: article
+ms.localizationpriority: medium
+ms.date: 04/27/2020
+ms.custom:
+- CI 115262
+- CI 111456
+- CSSTroubleshooting
+ms.reviewer: ''
+manager: laurawi
+appliesto:
+- HoloLens (1st gen)
+- HoloLens 2
+ms.openlocfilehash: 0163e028756743922302b46f04309f3d7f738233
+ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "10828439"
+---
+# Einrichten von HoloLens als Kiosk
+
+Sie können ein HoloLens-Gerät so konfigurieren, dass es als ein Gerät mit festem Zweck, auch als *Kiosk*bezeichnet, funktioniert, indem Sie das Gerät so konfigurieren, dass es im Kioskmodus ausgeführt wird. Der Kiosk Modus schränkt die auf dem Gerät verfügbaren Anwendungen (oder Benutzer) ein. Der Kiosk Modus ist eine nützliche Funktion, mit der Sie einem HoloLens-Gerät Geschäfts-apps widmen oder das HoloLens-Gerät in einer APP-Demo verwenden können.
+
+Dieser Artikel enthält Informationen zu Aspekten der Kiosk Konfiguration, die für HoloLens-gerätespezifisch sind. Allgemeine Informationen zu den unterschiedlichen Typen von Windows-basierten Kiosken und deren Konfiguration finden Sie unter [Konfigurieren von Kiosken und digitalen Signalen auf Windows-Desktop-Editionen](https://docs.microsoft.com/windows/configuration/kiosk-methods).  
+
+> [!IMPORTANT]  
+> Im Kiosk Modus wird festgelegt, welche apps verfügbar sind, wenn sich ein Benutzer am Gerät anmeldet. Der Kioskmodus ist jedoch keine Sicherheitsmethode. Es wird nicht verhindert, dass eine APP, die nicht erlaubt ist, eine andere APP öffnen kann. Um apps oder Prozesse beim Öffnen zu blockieren, verwenden Sie [Windows Defender Application Control (WDAC) CSP](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) , um geeignete Richtlinien zu erstellen.  
+
+Sie können den Kioskmodus entweder in einer einzelnen APP-oder in einer Multi-App-Konfiguration verwenden, und Sie können einen von drei Prozessen zum Einrichten und Bereitstellen der Kiosk Konfiguration verwenden.
+
+> [!IMPORTANT]  
+> Durch das Löschen der Konfiguration mit mehreren apps werden die Benutzer Sperrungs Profile entfernt, die vom Feature zugewiesene Zugriffsrechte erstellt wurden. Allerdings werden nicht alle Richtlinienänderungen zurückgesetzt. Wenn Sie diese Richtlinien wiederherstellen möchten, müssen Sie das Gerät auf die Werkseinstellungen zurücksetzen.
+
+## Planen der Kiosk Bereitstellung
+
+### Anforderungen für den Kiosk Modus
+
+Sie können ein beliebiges HoloLens 2-Gerät für die Verwendung des Kioskmodus konfigurieren.
+
+Wenn Sie ein HoloLens-Gerät (1st Generation) für die Verwendung des Kioskmodus konfigurieren möchten, müssen Sie zuerst sicherstellen, dass auf dem Gerät Windows 10, Version 1803 oder eine neuere Version ausgeführt wird. Wenn Sie das Windows Device Recovery-Tool zum Wiederherstellen Ihres HoloLens-Geräts (1st Generation) mit dem standardmäßigen Build verwendet haben oder wenn Sie die neuesten Updates installiert haben, ist Ihr Gerät für die Konfiguration bereit.
+
+> [!IMPORTANT]  
+> Zum Schutz von Geräten, die im Kioskmodus ausgeführt werden, sollten Sie Geräteverwaltungsrichtlinien hinzufügen, die Features wie USB-Konnektivität deaktivieren. Überprüfen Sie außerdem die Einstellungen für den Update Ring, um sicherzustellen, dass die automatischen Updates während der Geschäftszeiten nicht erfolgen.
+
+### Entscheiden zwischen einem Single-App-Kiosk oder einem Multi-App-Kiosk
+
+Mit einem einzelnen App-Kiosk wird die angegebene App gestartet, wenn sich der Benutzer beim Gerät anmeldet. Das Startmenü ist deaktiviert, ebenso wie Cortana. Ein HoloLens 2-Gerät reagiert nicht auf die [Start](hololens2-basic-usage.md#start-gesture) Geste. Ein HoloLens (1st Generation)-Gerät reagiert nicht auf die [Bloom](hololens1-basic-usage.md) -Geste. Da nur eine app ausgeführt werden kann, kann der Benutzer keine anderen apps platzieren.
+
+Ein Multi-App-Kiosk zeigt das Startmenü an, wenn sich der Benutzer beim Gerät anmeldet. Die Kiosk-Konfiguration bestimmt, welche apps im Startmenü zur Verfügung stehen. Sie können einen Kiosk mit mehreren Apps verwenden, um Benutzern eine leicht verständliche Benutzeroberfläche zu bieten, indem Sie Ihnen nur die Dinge präsentieren, die Sie verwenden müssen, und die Dinge entfernen, die Sie nicht verwenden müssen.
+
+In der folgenden Tabelle sind die Funktions Funktionen in den verschiedenen Kiosk Modi aufgeführt.
+
+| &nbsp; |Startmenü |Menü ' schnell Aktionen ' |Kamera und Video |Miracast |Cortana |Integrierte Sprachbefehle |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|Single-App-Kiosk |Deaktiviert |Deaktiviert   |Deaktiviert |Deaktiviert   |Deaktiviert |Aktiviert <sup> 1</sup> |
+|Multi-App-Kiosk |Aktiviert |Aktiviert <sup> 2</sup> |Verfügbar <sup> 2</sup> |Verfügbar <sup> 2</sup> |Verfügbar <sup> 2, 3</sup>  |Aktiviert <sup> 1</sup> |
+
+> <sup>1 </sup> Sprachbefehle, die sich auf deaktivierte Funktionen beziehen, funktionieren nicht.  
+> <sup>2 weitere </sup> Informationen zum Konfigurieren dieser Features finden Sie unter Auswählen von [Kiosk-apps](#plan-kiosk-apps).  
+> <sup>3 </sup> auch wenn Cortana deaktiviert ist, sind die integrierten Sprachbefehle aktiviert.
+
+In der folgenden Tabelle sind die Benutzer Unterstützungsfunktionen der verschiedenen Kiosk Modi aufgeführt.
+
+| &nbsp; |Unterstützte Benutzertypen | Automatische Anmeldung | Mehrere Zugriffsebenen |
+| --- | --- | --- | --- |
+|Single-App-Kiosk |Verwaltetes Dienstkonto (MSA) in Azure Active Directory (AAD) oder lokales Konto |Ja |Nein |
+|Multi-App-Kiosk |Aad-Konto |Nein |Ja |
+
+Beispiele für die Verwendung dieser Funktionen finden Sie in der folgenden Tabelle.
+
+|Verwenden Sie einen Single-App-Kiosk für: |Verwenden Sie einen Multi-App-Kiosk für: |
+| --- | --- |
+|Ein Gerät, auf dem nur ein Dynamics 365-Leitfaden für neue Mitarbeiter ausgeführt wird. |Ein Gerät, das sowohl Führungslinien als auch Remote Unterstützung für eine Reihe von Mitarbeitern ausführt. |
+|Ein Gerät, auf dem nur eine benutzerdefinierte app ausgeführt wird. |Ein Gerät, das für die meisten Benutzer als Kiosk fungiert (nur eine benutzerdefinierte App ausführt), aber als Standardgerät für eine bestimmte Benutzergruppe fungiert. |
+
+### Planen von Kiosk-apps
+
+Allgemeine Informationen dazu, wie Sie Kiosk-apps auswählen können, finden Sie unter [Richtlinien für das Auswählen einer APP für zugewiesenen Zugriff (Kioskmodus)](https://docs.microsoft.com/windows/configuration/guidelines-for-assigned-access-app).
+
+Wenn Sie das Windows-Geräte Portal verwenden, um einen einzelnen App-Kiosk zu konfigurieren, wählen Sie die APP während des Setupvorgangs aus.  
+
+Wenn Sie ein MDM-System (Mobile Device Management) oder ein Bereitstellungspaket zum Konfigurieren des Kioskmodus verwenden, verwenden Sie den [AssignedAccess-Konfigurationsdienstanbieter (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) , um Anwendungen anzugeben. Der CSP verwendet [Anwendungsbenutzer Modell-IDs (Anwendungs)](https://docs.microsoft.com/windows/configuration/find-the-application-user-model-id-of-an-installed-app) , um Anwendungen zu identifizieren. In der folgenden Tabelle sind die Anwendungs einiger in-Box-Anwendungen aufgeführt, die Sie in einem Kiosk mit mehreren Apps verwenden können.
+
+> [!CAUTION]
+> Sie können die Shell-APP nicht als Kiosk-App auswählen. Außerdem empfehlen wir, dass Sie Microsoft Edge, Microsoft Store oder Datei-Explorer **nicht** als Kiosk-App auswählen.  
+
+<a id="aumids"></a>
+
+|App-Name |AUMID |
+| --- | --- |
+|3D-Viewer |Microsoft. Microsoft3DViewer \ _8wekyb3d8bbwe \! Microsoft. Microsoft3DViewer |
+|Kalender |Microsoft. windowscommunicationsapps \ _8wekyb3d8bbwe \! Microsoft. Windows Live stürzen. Calendar |
+|Kamera <sup> 1, 2</sup> |HoloCamera \ _cw5n1h2txyewy \! HoloCamera |
+|Cortana <sup> 3</sup> |Microsoft. 549981C3F5F10 \ _8wekyb3d8bbwe \! App |
+|Geräteauswahl |HoloDevicesFlow \ _cw5n1h2txyewy \! HoloDevicesFlow |
+|Dynamics 365 Guides |Microsoft. Dynamics365. Guides \ _8wekyb3d8bbwe \! MicrosoftGuides |
+|Dynamics 365 Remote Assist |Microsoft. MicrosoftRemoteAssist \ _8wekyb3d8bbwe \! Microsoft. RemoteAssist |
+|Feedback- &nbsp; Hub |Microsoft. WindowsFeedbackHub \ _8wekyb3d8bbwe \! App |
+|Datei-Explorer |c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy! App |
+|Mail |Microsoft. windowscommunicationsapps_8wekyb3d8bbwe! Microsoft. Windows Live stürzen. Mail |
+|Microsoft Store |Microsoft.WindowsStore_8wekyb3d8bbwe! App |
+|Miracast <sup> 4</sup> |&nbsp; |
+|Filme & TV |Microsoft. ZuneVideo \ _8wekyb3d8bbwe \! Microsoft. ZuneVideo |
+|OneDrive |Microsoft. microsoftskydrive \ _8wekyb3d8bbwe \! App |
+|Fotos |Microsoft. Windows. Fotos \ _8wekyb3d8bbwe \! App |
+|Einstellungen |HolographicSystemSettings \ _cw5n1h2txyewy \! App |
+|Tipps |Microsoft. HoloLensTips \ _8wekyb3d8bbwe \! HoloLensTips |
+
+> <sup>1 </sup> um die Foto-oder Videoaufnahme zu aktivieren, müssen Sie die Kamera-APP als Kiosk-App aktivieren.  
+> <sup>2 </sup> Wenn Sie die Kamera-APP aktivieren, beachten Sie die folgenden Bedingungen:
+> - Das Menü "schnelle Aktionen" enthält die Schaltflächen "Foto" und "Video".  
+> - Sie sollten auch eine APP (beispielsweise Fotos, e-Mail oder OneDrive) aktivieren, die mit Bildern interagieren oder Bilder abrufen kann.  
+>  
+> <sup>3 </sup> auch wenn Sie Cortana nicht als Kiosk-App aktivieren, sind integrierte Sprachbefehle aktiviert. Befehle, die mit deaktivierten Features verknüpft sind, haben jedoch keine Auswirkungen.  
+> <sup>4 </sup> Sie können Miracast nicht direkt aktivieren. Um Miracast als Kiosk-APP zu aktivieren, aktivieren Sie die Kamera-APP und die Geräteauswahl-app.
+
+### Planen von Benutzer-und Gerätegruppen
+
+In einer MDM-Umgebung verwenden Sie Gruppen, um Gerätekonfigurationen und den Benutzer Zugriff zu verwalten. 
+
+Das Kiosk-Konfigurationsprofil enthält die Einstellung für den **Anmeldetyp des Benutzers** . Der **Benutzer Anmeldetyp** identifiziert den Benutzer (oder die Gruppe, der die Benutzer enthält), der die APP oder die apps verwenden kann, die Sie hinzufügen. Wenn sich ein Benutzer mit einem Konto anmeldet, das nicht im Konfigurationsprofil enthalten ist, kann dieser Benutzer keine apps auf dem Kiosk verwenden.  
+
+> [!NOTE]  
+> Der **Benutzer Anmeldetyp** eines einzelnen App-Kiosks gibt ein einzelnes Benutzerkonto an. Dies ist der Benutzerkontext, unter dem der Kiosk ausgeführt wird. Der **Benutzer Anmeldetyp** eines Multi-App-Kiosks kann ein oder mehrere Benutzerkonten oder Gruppen angeben, die den Kiosk verwenden können.
+
+Bevor Sie die Kiosk-Konfiguration auf einem Gerät bereitstellen können, müssen Sie das Kiosk-Konfigurationsprofil einer Gruppe *zuweisen* , die das Gerät enthält, oder einen Benutzer, der sich beim Gerät anmelden kann. Mit dieser Einstellung wird folgendes Verhalten erzeugt:
+
+- Wenn es sich bei dem Gerät um ein Mitglied der zugewiesenen Gruppe handelt, wird die Kiosk Konfiguration für das Gerät bereitgestellt, wenn sich der Benutzer zum ersten Mal auf dem Gerät anmeldet.  
+- Wenn das Gerät nicht Mitglied der zugewiesenen Gruppe ist, aber ein Benutzer, der Mitglied dieser Gruppe ist, sich anmeldet, wird die Kiosk-Konfiguration zu diesem Zeitpunkt auf dem Gerät bereitgestellt.
+
+Eine vollständige Erläuterung der Auswirkungen der Zuweisung von Konfigurationsprofilen in InTune finden Sie unter [Zuweisen von Benutzer-und Geräteprofilen in Microsoft InTune](https://docs.microsoft.com/intune/configuration/device-profile-assign).
+
+> [!NOTE]  
+> In den folgenden Beispielen werden Multi-App-Kioske beschrieben. Single-App-Kioske Verhalten sich auf ähnliche Weise, aber nur ein Benutzerkonto erhält die Kiosk-Erfahrung.
+
+**Beispiel 1**
+
+Sie verwenden eine einzelne Gruppe (Gruppe 1) für Geräte und Benutzer. Ein Gerät und die Benutzer A, B und C sind Mitglieder dieser Gruppe. Sie konfigurieren das Kiosk-Konfigurationsprofil wie folgt:  
+
+- **Benutzer Anmeldetyp**: Gruppe 1
+- **Zugewiesene Gruppe**: Gruppe 1
+
+Unabhängig davon, welcher Benutzer sich zuerst am Gerät anmeldet (und die Out-of-Box-Oberfläche durchläuft), wird die Kiosk-Konfiguration auf dem Gerät bereitgestellt. Die Benutzer A, B und C können sich bei dem Gerät anmelden und die Funktionalität des Kiosks nutzen.
+
+**Beispiel 2**
+
+Sie schließen Geräte an zwei verschiedene Anbieter ab, die unterschiedliche Kiosk-Erfahrungen benötigen. Beide Anbieter verfügen über Benutzer, und Sie möchten, dass alle Benutzer auf Kioske sowohl von Ihrem eigenen Anbieter als auch dem anderen Anbieter zugreifen können. Sie konfigurieren Gruppen wie folgt:
+
+- Gerätegruppe 1:
+  - Gerät 1 (Anbieter 1)
+  - Gerät 2 (Anbieter 1)
+
+- Gerätegruppe 2:
+  - Gerät 3 (Lieferant 2)
+  - Gerät 4 (Lieferant 2)
+
+- Benutzergruppe:
+  - Benutzer A (Lieferant 1)
+  - Benutzer B (Lieferant 2)
+
+Sie erstellen zwei Kiosk-Konfigurationsprofile, die die folgenden Einstellungen aufweisen:
+
+- Kiosk-Profil 1:
+   - **Benutzer Anmeldetyp**: Benutzergruppe
+   - **Zugewiesene Gruppe**: Gerätegruppe 1
+
+- Kiosk-Profil 2:
+   - **Benutzer Anmeldetyp**: Benutzergruppe
+   - **Zugewiesene Gruppe**: Gerätegruppe 2
+
+Bei diesen Konfigurationen werden die folgenden Ergebnisse erzielt:
+
+- Wenn sich ein Benutzer bei Device 1 oder Device 2 anmeldet, stellt InTune das Kiosk-Profil 1 für dieses Gerät bereit.
+- Wenn sich ein Benutzer bei Device 3 oder Device 4 anmeldet, stellt InTune das Kiosk-Profil 2 auf dem Gerät bereit.
+- Benutzer a und Benutzer B können sich bei einem der vier Geräte anmelden. Wenn Sie sich bei Gerät 1 oder Gerät 2 anmelden, sehen Sie die Erfahrung des Anbieters 1 Kiosks. Wenn Sie sich bei Device 3 oder Device 4 anmelden, sehen Sie den Verkäufer 2 Kiosk-Erfahrung.
+
+#### Profil Konflikte
+
+Wenn zwei oder mehr Kiosk-Konfigurationsprofile auf dasselbe Gerät ausgerichtet sind, treten Konflikte auf. Im Fall von InTune-verwalteten Geräten wendet InTune keine der in Konflikt stehenden Profile an.
+
+Andere Arten von Profilen und Richtlinien, wie Geräteeinschränkungen, die nicht mit dem Kiosk-Konfigurationsprofil verknüpft sind, haben keinen Konflikt mit dem Kiosk-Konfigurationsprofil.
+
+### Auswählen einer Bereitstellungsmethode
+
+Sie können eine der folgenden Methoden zum Bereitstellen von Kiosk Konfigurationen auswählen:
+
+- [Microsoft InTune oder anderer MDM-Dienst (Mobile Device Management)](#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk)
+
+- [Bereitstellungspaket](#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)
+
+- [Windows Geräteportal](#use-the-windows-device-portal-to-set-up-a-single-app-kiosk)
+
+   > [!NOTE]  
+   > Da diese Methode erfordert, dass der Entwicklermodus auf dem Gerät aktiviert ist, empfehlen wir, Sie nur für Demos zu verwenden.
+
+In der folgenden Tabelle sind die Funktionen und Vorteile der einzelnen Bereitstellungsmethoden aufgelistet.
+
+| &nbsp; |Bereitstellen mithilfe des Windows Device Portals |Bereitstellen mithilfe eines Bereitstellungspakets |Bereitstellen mithilfe von MDM |
+| --------------------------- | ------------- | -------------------- | ---- |
+|Bereitstellen von Kiosken für einzelne apps   | Ja           | Ja                  | Ja  |
+|Bereitstellen von Multi-App-Kiosken    | Nein            | Ja                  | Ja  |
+|Nur auf lokalen Geräten bereitstellen | Ja           | Ja                  | Nein.   |
+|Bereitstellen mithilfe des Entwicklermodus |Erforderlich       | Nicht erforderlich            | Nicht erforderlich   |
+|Bereitstellen mithilfe von Azure Active Directory (AAD)  | Nicht erforderlich            | Nicht erforderlich                   | Erforderlich  |
+|Automatisches Bereitstellen      | Nein            | Nein                   | Ja  |
+|Bereitstellungsgeschwindigkeit            | Schnellste       | Fast                 | Verzögerte Anzeige |
+|Bereitstellen im Maßstab | Nicht empfohlen    | Nicht empfohlen        | Empfohlen |
+
+## Verwenden von Microsoft InTune oder einem anderen MDM zum Einrichten einer einzelnen APP oder eines Multi-App-Kiosks
+
+Führen Sie die folgenden Schritte aus, um den Kioskmodus mithilfe von Microsoft InTune oder einem anderen MDM-System einzurichten.
+
+1. [Bereiten Sie die Registrierung der Geräte vor](#mdmenroll).
+1. [Erstellen Sie ein Kiosk-Konfigurationsprofil](#mdmprofile).
+1. Konfigurieren Sie den Kiosk.
+   - [Konfigurieren Sie die Einstellungen für einen einzelnen App-Kiosk](#mdmconfigsingle).
+   - [Konfigurieren Sie die Einstellungen für einen Kiosk mit mehreren apps](#mdmconfigmulti).
+1. [Weisen Sie das Kiosk-Konfigurationsprofil einer Gruppe zu](#mdmassign).
+1. Stellen Sie die Geräte bereit.
+   - [Bereitstellen eines Single-App-Kiosks](#mdmsingledeploy)
+   - [Bereitstellen eines Multi-App-Kiosks](#mdmmultideploy)
+
+### <a id="mdmenroll"></a>MDM, Schritt 1 &ndash; Vorbereiten der Registrierung der Geräte
+
+Sie können Ihr MDM-System so konfigurieren, dass HoloLens-Geräte automatisch registriert werden, wenn sich der Benutzer zum ersten Mal anmeldet oder wenn Benutzer Geräte manuell registrieren. Die Geräte müssen ebenfalls mit ihrer Azure AD-Domäne verbunden und den entsprechenden Gruppen zugewiesen werden.
+
+Weitere Informationen zum Registrieren der Geräte finden Sie unter Registrieren von [HoloLens in MDM](hololens-enroll-mdm.md) -und [InTune-Registrierungsmethoden für Windows-Geräte](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-methods).
+
+### <a id="mdmprofile"></a>MDM, Schritt 2: &ndash; Erstellen eines Kiosk-Konfigurationsprofils
+
+1. Öffnen Sie das [Azure](https://portal.azure.com/) -Portal, und registrieren Sie sich bei Ihrem InTune-Administratorkonto.
+1. Wählen Sie **Microsoft InTune**  >  **Device Configuration (Profile**  >  **Create profile**) aus.
+1. Geben Sie einen Profilnamen ein.
+1. Wählen Sie **Platform**  >  **Windows 10 und höher**aus, und wählen Sie dann **Profiltyp**-  > **Geräteeinschränkungen**aus.
+1. Wählen **Configure**Sie  >  **Kiosk**konfigurieren aus, und wählen Sie dann eine der folgenden Optionen aus:
+   - Zum Erstellen eines Single-App-Kiosks wählen Sie **Kioskmodus**  >  **Single-App Kiosk**aus.
+   - Zum Erstellen eines Multi-App-Kiosks wählen Sie **Kioskmodus**  >  **-Multi-App-Kiosk**aus.
+1. Um mit der Konfiguration des Kiosks zu beginnen, wählen Sie **Hinzufügen**aus.
+
+Die nächsten Schritte unterscheiden sich je nach Art des gewünschten Kiosks. Wenn Sie weitere Informationen wünschen, wählen Sie eine der folgenden Optionen aus:  
+
+- [Single-App-Kiosk](#mdmconfigsingle)
+- [Multi-App-Kiosk](#mdmconfigmulti)
+
+Weitere Informationen dazu, wie Sie ein Kiosk-Konfigurationsprofil erstellen, finden Sie unter [Windows 10 und Windows holographische Geräteeinstellungen für Unternehmen, die mithilfe von InTune als dedizierter Kiosk ausgeführt](https://docs.microsoft.com/intune/configuration/kiosk-settings)werden können.
+
+### <a id="mdmconfigsingle"></a>MDM, Schritt 3 (Single-APP) &ndash; Konfigurieren der Einstellungen für einen einzelnen App-Kiosk
+
+In diesem Abschnitt werden die Einstellungen zusammengefasst, die für einen einzelnen App-Kiosk erforderlich sind. Weitere Informationen finden Sie in den folgenden Artikeln:
+
+- Informationen dazu, wie Sie ein Kiosk-Konfigurationsprofil in InTune konfigurieren, finden Sie unter [Konfigurieren des Kioskmodus mit Microsoft InTune](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune).
+- Weitere Informationen zu den verfügbaren Einstellungen für Single-App-Kioske in InTune finden Sie unter [einzelne APP-Kioske im Vollbildmodus](https://docs.microsoft.com/intune/configuration/kiosk-settings-holographic#single-full-screen-app-kiosks) .
+- Weitere MDM-Dienste finden Sie in der Dokumentation Ihres Anbieters. Wenn Sie eine benutzerdefinierte XML-Konfiguration verwenden müssen, um einen Kiosk in Ihrem MDM-Dienst einzurichten, [Erstellen Sie eine XML-Datei, die die Kiosk Konfiguration definiert](#ppkioskconfig).
+
+1. Wählen Sie **Benutzer Anmeldetyp**  >  **Lokales Benutzerkonto**aus, und geben Sie dann den Benutzernamen des lokalen (Geräte-) Kontos oder des Microsoft-Kontos (MSA) ein, das sich beim Kiosk anmelden kann.
+   > [!NOTE]  
+   > Die Typen von **Autologon** -Benutzerkonten werden in Windows holographisch für Unternehmen nicht unterstützt.
+1. Wählen **Application type**Sie  >  **App**-Typ Store-App aus, und wählen Sie dann in der Liste eine APP aus.
+
+Der nächste Schritt besteht darin, das Profil einer Gruppe [zuzuweisen](#mdmassign) .
+
+### <a id="mdmconfigmulti"></a>MDM, Schritt 3 (Multi-APP) &ndash; Konfigurieren der Einstellungen für einen Multi-App-Kiosk
+
+In diesem Abschnitt werden die Einstellungen zusammengefasst, die ein Multi-App-Kiosk erfordert. Ausführlichere Informationen finden Sie in den folgenden Artikeln:
+
+- Informationen dazu, wie Sie ein Kiosk-Konfigurationsprofil in InTune konfigurieren, finden Sie unter [Konfigurieren des Kioskmodus mit Microsoft InTune](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune).
+- Weitere Informationen zu den verfügbaren Einstellungen für Multi-App-Kioske in InTune finden Sie unter [Multi-App-Kioske](https://docs.microsoft.com/mem/intune/configuration/kiosk-settings-holographic#multi-app-kiosks)
+- Weitere MDM-Dienste finden Sie in der Dokumentation Ihres Anbieters. Wenn Sie eine benutzerdefinierte XML-Konfiguration verwenden müssen, um einen Kiosk in Ihrem MDM-Dienst einzurichten, [Erstellen Sie eine XML-Datei, die die Kiosk Konfiguration definiert](#ppkioskconfig). Wenn Sie eine XML-Datei verwenden, stellen Sie sicher, dass Sie das [Start Layout](#start-layout-for-hololens)einbeziehen.  
+- Optional können Sie ein benutzerdefiniertes Start Layout für InTune oder andere MDM-Dienste verwenden. Weitere Informationen finden Sie unter [Starten der Layoutdatei für MDM (InTune und andere)](#start-layout-file-for-mdm-intune-and-others).
+
+1. Wählen Sie **Windows 10 im S-Modus für Geräte**  >  **Nein**aus.  
+   >[!NOTE]  
+   > Der S-Modus wird für Windows holographische for Business nicht unterstützt.
+1. Wählen Sie **Benutzer Anmeldetyp**  >  **Azure AD-Benutzer oder-Gruppe** oder **Benutzer Anmeldetyp**  >  **HoloLens-Besucher**aus, und fügen Sie dann eine oder mehrere Benutzergruppen oder-Konten hinzu.  
+
+   Nur Benutzer, die zu den Gruppen oder Konten gehören, die Sie in der **Benutzer Anmeldeart** angeben, können die Funktionalität des Kiosks nutzen.
+
+1. Wählen Sie eine oder mehrere Apps mithilfe der folgenden Optionen aus:
+   - Wenn Sie eine hochgeladene Branchen-app hinzufügen möchten, wählen Sie **Store-App hinzufügen** und dann die gewünschte App aus.
+   - Wenn Sie eine APP durch Angabe Ihres AUMID hinzufügen möchten, wählen Sie **Add by AUMID** aus, und geben Sie dann den AUMID der APP ein. [Anzeigen der Liste der verfügbaren Anwendungs](#aumids)
+
+Der nächste Schritt besteht darin, das Profil einer Gruppe [zuzuweisen](#mdmassign) .
+
+### <a id="mdmassign"></a>MDM, Schritt 4 &ndash; Zuweisen des Kiosk-Konfigurationsprofils zu einer Gruppe
+
+Auf der Seite " **Aufgaben** " des Kiosk-Konfigurationsprofils können Sie bestimmen, wo die Kiosk-Konfiguration bereitgestellt werden soll. Im einfachsten Fall weisen Sie das Kiosk-Konfigurationsprofil einer Gruppe zu, die das HoloLens-Gerät enthält, wenn das Gerät in MDM registriert wird.
+
+### <a id="mdmsingledeploy"></a>MDM, Schritt 5 (Single-APP) &ndash; Bereitstellen eines Single-App-Kiosks
+
+Wenn Sie ein MDM-System verwenden, können Sie das Gerät in MDM während OOBE registrieren. Nachdem OOBE abgeschlossen ist, ist das Anmelden auf dem Gerät einfach.
+
+Führen Sie während OOBE die folgenden Schritte aus:
+
+1. Anmelden mit dem Konto, das Sie im Kiosk-Konfigurationsprofil angegeben haben.
+1. Registrieren Sie das Gerät. Stellen Sie sicher, dass das Gerät der Gruppe hinzugefügt wird, der das Kiosk-Konfigurationsprofil zugewiesen ist.
+1. Warten Sie, bis OOBE beendet wird, damit die Store-App heruntergeladen und installiert werden kann und Richtlinien angewendet werden. Starten Sie dann das Gerät neu.
+
+Wenn Sie sich das nächste Mal beim Gerät anmelden, sollte die Kiosk-App automatisch gestartet werden.
+
+Wenn Ihre Kiosk-Konfiguration zu diesem Zeitpunkt nicht angezeigt wird, [Überprüfen Sie den Zuordnungsstatus](https://docs.microsoft.com/intune/configuration/device-profile-monitor).
+
+### <a id="mdmmultideploy"></a>MDM, Schritt 5 (Multi-APP) &ndash; Bereitstellen eines Multi-App-Kiosks
+
+Wenn Sie ein MDM-System verwenden, können Sie das Gerät an Ihren Azure AD-Mandanten anschließen und das Gerät während OOBE in MDM registrieren. Geben Sie bei Bedarf die Registrierungsinformationen für die Benutzer an, damit Sie während des OOBE-Prozesses zur Verfügung stehen.
+
+> [!NOTE]  
+> Wenn Sie das Kiosk-Konfigurationsprofil einer Gruppe zugeordnet haben, die Benutzer enthält, stellen Sie sicher, dass eines dieser Benutzerkonten das erste Konto ist, das sich beim Gerät anmeldet.
+
+Führen Sie während OOBE die folgenden Schritte aus:
+
+1. Melden Sie sich mit dem Konto an, das zur Gruppe der **Benutzeranmelde Typen** gehört.
+1. Registrieren Sie das Gerät.
+1. Warten Sie, bis alle apps, die Teil des Kiosk-Konfigurationsprofils sind, heruntergeladen und installiert werden. Warten Sie auch, bis Richtlinien angewendet werden.  
+1. Nachdem OOBE beendet wurde, können Sie weitere Apps aus dem Microsoft Store oder von Sideloading installieren. [Erforderliche apps](https://docs.microsoft.com/mem/intune/apps/apps-deploy#assign-an-app) für die Gruppe, zu der das Gerät gehört, wird automatisch installiert.
+1. Nachdem die Installation abgeschlossen ist, starten Sie das Gerät neu.
+
+Wenn Sie sich das nächste Mal mit einem Konto, das zum **Anmeldetyp des Benutzers**gehört, beim Gerät anmelden, sollte die Kiosk-App automatisch gestartet werden.
+
+Wenn Ihre Kiosk-Konfiguration zu diesem Zeitpunkt nicht angezeigt wird, [Überprüfen Sie den Zuordnungsstatus](https://docs.microsoft.com/intune/configuration/device-profile-monitor).
+
+## Verwenden eines Bereitstellungspakets zum Einrichten einer einzelnen APP oder eines Multi-App-Kiosks
+
+Führen Sie die folgenden Schritte aus, um den Kioskmodus mithilfe eines Bereitstellungspakets einzurichten.
+
+1. [Erstellen Sie eine XML-Datei, die die Kiosk Konfiguration definiert](#ppkioskconfig), einschließlich eines [Start Layouts](#start-layout-for-hololens).
+2. [Fügen Sie die XML-Datei zu einem Bereitstellungspaket hinzu.](#ppconfigadd)
+3. [Wenden Sie das Bereitstellungspaket auf HoloLens an.](#ppapply)
+
+### <a id="ppkioskconfig"></a>Bereitstellungspaket, Schritt 1 &ndash; Erstellen einer XML-Datei für die Kiosk-Konfiguration
+
+Befolgen Sie [die allgemeinen Anweisungen zum Erstellen einer XML-Datei für die Kiosk-Konfiguration für Windows Desktop](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file), mit Ausnahme der folgenden:
+
+- Schließen Sie keine klassischen Windows-Anwendungen (Win32) ein. HoloLens unterstützt diese Anwendungen nicht.
+- Verwenden Sie den [Platzhalter Start Layout XML](#start-layout-for-hololens) für HoloLens.
+- Optional: Gastzugriff auf die Kiosk-Konfiguration hinzufügen
+
+#### <a id="ppkioskguest"></a>Optional: Gastzugriff auf die Kiosk-Konfiguration hinzufügen
+
+Im Abschnitt [ **configs** der XML-Datei](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configs)können Sie eine spezielle Gruppe mit dem Namen " **Besucher** " konfigurieren, um den Gästen die Verwendung des Kiosks zu ermöglichen. Wenn der Kiosk so konfiguriert ist, dass er die spezielle Gruppe " **Besucher** " unterstützt, wird der Anmeldeseite eine Option "**Gast**" hinzugefügt. Das **Gastkonto erfordert** kein Kennwort, und alle Daten, die dem Konto zugeordnet sind, werden gelöscht, wenn sich das Konto abmeldet.
+
+Zum Aktivieren des **Gastkontos** fügen Sie den folgenden Codeausschnitt zu Ihrem Kiosk-Konfigurations-XML hinzu:
+
+```xml
+<Configs>
+  <Config>  
+    <SpecialGroup Name="Visitor" />  
+    <DefaultProfile Id="enter a profile ID"/>  
+  </Config>  
+</Configs>  
+```
+
+#### <a id="start-layout-for-hololens"></a>Platzhalter Anfangslayout für HoloLens
+
+Wenn Sie ein [Bereitstellungspaket](##use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk) zum Konfigurieren eines Multi-App-Kiosks verwenden, ist für das Verfahren ein Start Layout erforderlich. Die Anpassung des Start Layouts wird in Windows holographisch für Unternehmen nicht unterstützt. Daher müssen Sie ein Platzhalter Anfangslayout verwenden.
+
+> [!NOTE]  
+> Da ein Single-App-Kiosk die Kiosk-App startet, wenn sich ein Benutzer anmeldet, wird kein Startmenü verwendet, und es muss kein Start Layout vorhanden sein.
+
+> [!NOTE]  
+> Wenn Sie [MDM](#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk) zum Einrichten eines Multi-App-Kiosks verwenden, können Sie optional ein Start Layout verwenden. Weitere Informationen finden Sie unter [Layoutdatei für den Platzhalter Anfang für MDM (InTune und andere)](#start-layout-file-for-mdm-intune-and-others).
+
+Fügen Sie für das Start Layout den folgenden **StartLayout** -Abschnitt zur Bereitstellungs-XML-Datei von Kiosk hinzu:
+
+```xml
+<!-- This section is required for parity with Desktop Assigned Access. It is not currently used on HoloLens -->
+            <StartLayout>
+                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+                      <LayoutOptions StartTileGroupCellWidth="6" />
+                      <DefaultLayoutOverride>
+                        <StartLayoutCollection>
+                          <defaultlayout:StartLayout GroupCellWidth="6">
+                            <start:Group Name="">
+                              <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="placeholderpackagename_kzf8qxf38zg5c!App" />
+                            </start:Group>
+                          </defaultlayout:StartLayout>
+                        </StartLayoutCollection>
+                      </DefaultLayoutOverride>
+                    </LayoutModificationTemplate>
+                ]]>
+            </StartLayout>
+            <!-- This section is required for parity with Desktop Assigned Access. It is not currently used on HoloLens -->
+```
+
+#### <a id="start-layout-file-for-mdm-intune-and-others"></a>Platzhalter-Start-Layoutdatei für MDM (InTune und andere)
+
+Speichern Sie das folgende Beispiel als XML-Datei. Sie können diese Datei verwenden, wenn Sie den Multi-App-Kiosk in Microsoft InTune konfigurieren (oder in einem anderen MDM-Dienst, der ein Kiosk-Profil bereitstellt).
+
+> [!NOTE]
+> Wenn Sie eine benutzerdefinierte Einstellung und eine vollständige XML-Konfiguration verwenden müssen, um einen Kiosk in Ihrem MDM-Dienst einzurichten, verwenden Sie die [Anweisungen zum Starten des Layouts für ein Bereitstellungspaket](#start-layout-for-hololens).
+
+```xml
+<LayoutModificationTemplate
+    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
+    xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
+    Version="1">
+  <RequiredStartGroupsCollection>
+    <RequiredStartGroups>
+      <AppendGroup Name="">
+        <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="placeholderpackagename_kzf8qxf38zg5c!App" />
+      </AppendGroup>
+    </RequiredStartGroups>
+  </RequiredStartGroupsCollection>
+ </LayoutModificationTemplate>
+```
+
+### <a id="ppconfigadd"></a>Prov. Paket, Schritt 2: &ndash; Hinzufügen der XML-Datei für die Kiosk-Konfiguration zu einem Bereitstellungspaket
+
+1. Öffnen Sie den [Windows-Konfigurations-Designer](https://www.microsoft.com/store/apps/9nblggh4tx22).
+1. Wählen Sie **Erweiterte Bereitstellung**aus, geben Sie einen Namen für Ihr Projekt ein, und wählen Sie dann **weiter**aus.
+1. Wählen Sie **Windows 10 holographisch**aus, und wählen Sie dann **weiter**aus.
+1. Wählen Sie **Fertig stellen**aus. Der Arbeitsbereich für Ihr Paket wird geöffnet.
+1. Wählen Sie **Laufzeiteinstellungen**  >  **AssignedAccess**  >  **MultiAppAssignedAccessSettings**aus.
+1. Wählen Sie im mittleren Bereich **Durchsuchen** aus, um die von Ihnen erstellte Kiosk-Konfigurationsdatei zu suchen und auszuwählen.
+
+   ![Screenshot des Felds MultiAppAssignedAccessSettings im Windows-Konfigurations-Designer](./images/multiappassignedaccesssettings.png)
+
+1. **Optional**. (Wenn Sie das Bereitstellungspaket nach der ersten Einrichtung des Geräts anwenden möchten und ein Administrator Benutzer bereits auf dem Kiosk Gerät verfügbar ist, überspringen Sie diesen Schritt.) Wählen Sie Benutzer der **Laufzeiteinstellungen** - &gt; **Konten** aus &gt; **Users**, und erstellen Sie dann ein Benutzerkonto. Geben Sie einen Benutzernamen und ein Kennwort ein, und wählen Sie dann **Benutzer**  >  **Gruppe-Administratoren**aus.  
+  
+     Mithilfe dieses Kontos können Sie den Bereitstellungsstatus und die Protokolle anzeigen.  
+1. **Optional**. (Wenn Sie bereits über ein Konto ohne Administratorrechte auf dem Kiosk Gerät verfügen, überspringen Sie diesen Schritt.) Wählen Sie Benutzer der **Laufzeiteinstellungen** - &gt; **Konten** aus &gt; **Users**, und erstellen Sie dann ein lokales Benutzerkonto. Stellen Sie sicher, dass der Benutzername mit dem Konto identisch ist, das Sie im Konfigurations-XML angeben. Wählen Sie **Benutzer**  >  **gruppenstandard-Benutzer**aus.
+1. Wählen Sie **Datei**  >  **Speichern**aus.
+1. Wählen **Export**Sie  >  **Bereitstellungspaket**exportieren aus, und wählen Sie dann **Besitzer**  >  **IT-Administrator**aus. Dadurch wird die Rangfolge dieses Bereitstellungspakets höher als Bereitstellungspakete festgelegt, die auf dieses Gerät aus anderen Quellen angewendet werden.
+1. Wählen Sie **Weiter** aus.
+1. Wählen Sie auf der Seite **Bereitstellungspaket Sicherheit** eine Sicherheitsoption aus.
+   > [!IMPORTANT]  
+   > Wenn Sie **Paketsignierung aktivieren**auswählen, müssen Sie auch ein gültiges Zertifikat auswählen, das zum Signieren des Pakets verwendet werden soll. Wählen Sie dazu **Durchsuchen** aus, und wählen Sie das Zertifikat aus, das Sie zum Signieren des Pakets verwenden möchten.
+   
+   > [!CAUTION]  
+   > Wählen Sie **Paketverschlüsselung nicht aktivieren**aus. Bei HoloLens-Geräten führt diese Einstellung zu einem Fehler bei der Bereitstellung.
+1. Wählen Sie **Weiter** aus.
+1. Geben Sie den Ausgabespeicherort an, an dem das Bereitstellungspaket nach dem Aufbau ablaufen soll. Standardmäßig verwendet der Windows-Konfigurations-Designer den Projektordner als Ausgabespeicherort. Wenn Sie den Ausgabespeicherort ändern möchten, wählen Sie **Durchsuchen**aus. Wenn Sie den Vorgang beenden, wählen Sie **weiter**aus.
+1. Wählen Sie **Erstellen** aus, um mit dem Erstellen des Pakets zu beginnen. Die Erstellung eines Bereitstellungspakets dauert nicht lange. Auf der Seite "erstellen" werden die Projektinformationen angezeigt, und die Statusleiste zeigt den Buildstatus an.
+
+### <a id="ppapply"></a>Bereitstellungspaket, Schritt 3 &ndash; Anwenden des Bereitstellungspakets auf HoloLens
+
+Der Artikel "Konfigurieren der HoloLens mithilfe eines Bereitstellungspakets" enthält detaillierte Anweisungen zum Anwenden des Bereitstellungspakets unter den folgenden Bedingungen:
+
+- Sie können [ein Bereitstellungspaket zunächst während des Setups auf HoloLens anwenden](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
+
+- Sie können [ein Bereitstellungspaket auch nach dem Setup auf HoloLens anwenden](hololens-provisioning.md#4-apply-a-provisioning-package-to-hololens-after-setup).
+
+## Verwenden des Windows-Geräte Portals zum Einrichten eines Single-App-Kiosks
+
+Führen Sie die folgenden Schritte aus, um den Kioskmodus mithilfe des Windows-Geräte Portals einzurichten.
+
+> [!IMPORTANT]
+> Der Kiosk Modus ist nur verfügbar, wenn auf dem Gerät [Windows holographische for Business](hololens1-upgrade-enterprise.md) installiert ist.
+
+1. [Einrichten des HoloLens-Geräts zur Verwendung des Windows-Geräte Portals](https://developer.microsoft.com/windows/mixed-reality/using_the_windows_device_portal#setting_up_hololens_to_use_windows_device_portal) Das Geräteportal ist ein Webserver auf der HoloLens, mit dem Sie über einen Webbrowser auf dem PC eine Verbindung herstellen können.
+
+    > [!CAUTION]
+    > Wenn Sie HoloLens für die Verwendung des Geräte Portals einrichten, müssen Sie den Entwicklermodus auf dem Gerät aktivieren. Der Entwicklermodus auf einem Gerät, das über Windows holographische for Business verfügt, ermöglicht Ihnen das Laden von apps mit der Seite. Mit dieser Einstellung wird jedoch das Risiko verursacht, dass Benutzer apps installieren können, die nicht vom Microsoft Store zertifiziert wurden. Administratoren können die Möglichkeit zum Aktivieren des Entwicklermodus mithilfe der **ApplicationManagement/AllowDeveloper-Einstellung Sperre** im [Richtlinien-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider)blockieren. [Weitere Informationen zum Entwicklermodus](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
+    
+1. Stellen Sie auf einem Computer mithilfe von [WLAN](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_wi-fi) oder [USB](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_usb)eine Verbindung mit dem HoloLens her.
+
+1. Führen Sie eine der folgenden Aktionen aus:
+   - Wenn Sie zum ersten Mal eine Verbindung mit dem Windows-Geräte Portal herstellen, [Erstellen Sie einen Benutzernamen und ein Kennwort](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#creating_a_username_and_password) .
+   - Geben Sie den Benutzernamen und das Kennwort ein, die Sie zuvor eingerichtet haben.
+
+    > [!TIP]
+    > Wenn ein Zertifikatfehler im Browser angezeigt wird, führen Sie [diese Schrittezur Problembehandlung](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#security_certificate) aus.
+
+1. Wählen Sie im Windows-Geräte Portal **Kiosk Modus**aus.
+
+1. Wählen Sie **Kiosk Modus aktivieren**aus, wählen Sie eine APP aus, die beim Start des Geräts ausgeführt werden soll, und wählen Sie dann **Speichern**aus.
+
+    ![Kioskmodus](images/kiosk.png)
+1. Starten Sie HoloLens neu. Wenn Ihre Geräte Portal Seite weiterhin geöffnet ist, können Sie oben auf der Seite " **neu starten** " auswählen.
+
+## Weitere Informationen
+
+Schauen Sie sich an, wie Sie einen Kiosk mithilfe eines Bereitstellungspakets konfigurieren.  
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/fa125d0f-77e4-4f64-b03e-d634a4926884?autoplay=false]

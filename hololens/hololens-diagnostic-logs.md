@@ -1,0 +1,119 @@
+---
+title: Sammeln und Verwenden von Diagnoseinformationen von HoloLens-Geräten
+description: ''
+author: Teresa-Motiv
+ms.author: v-tea
+ms.date: 03/23/2020
+ms.prod: hololens
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.topic: article
+ms.custom:
+- CI 115131
+- CSSTroubleshooting
+audience: ITPro
+ms.localizationpriority: medium
+keywords: ''
+manager: jarrettr
+appliesto:
+- HoloLens (1st gen)
+- HoloLens 2
+ms.openlocfilehash: f11128c66845f0e062a006855fd75ca66ffc4e5e
+ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "10828403"
+---
+# Sammeln und Verwenden von Diagnoseinformationen von HoloLens-Geräten
+
+HoloLens-Benutzer und-Administratoren können unter vier verschiedenen Methoden auswählen, um Diagnoseinformationen von HoloLens zu sammeln:
+
+- Feedback-Hub-App
+- DiagnosticLog-Konfigurationsdienstanbieter
+- Einstellungs-App
+
+> [!IMPORTANT]  
+> Gerätediagnose Protokolle enthalten personenbezogene Informationen (PII), beispielsweise Informationen darüber, welche Prozesse oder Anwendungen der Benutzer während typischer Vorgänge startet. Wenn mehrere Benutzer ein HoloLens-Gerät verwenden (beispielsweise melden sich Benutzer mit verschiedenen Microsoft Azure Active Directory (AAD)-Konten bei demselben Gerät an), enthalten die Diagnoseprotokolle möglicherweise PII-Informationen, die für mehrere Benutzer gelten. Weitere Informationen finden Sie unter [Microsoft-Datenschutzbestimmungen](https://privacy.microsoft.com/privacystatement).
+
+In der folgenden Tabelle werden die drei sammlungsmethoden verglichen. Die Methodennamen verweisen auf ausführlichere Informationen in den Abschnitten, die der Tabelle folgen.
+
+|Methode |Voraussetzungen |Datenspeicherorte |Datenzugriff und-Verwendung |Datenaufbewahrung |
+| --- | --- | --- | --- | --- |
+|[Feedback-Hub](#feedback-hub) |Netzwerk-und Internetverbindung<br /><br />Feedback-Hub-App<br /><br />Berechtigung zum Hochladen von Dateien in die Microsoft-Cloud |Microsoft-Cloud<br /><br />HoloLens-Gerät (optional) |Der Benutzer bittet um Unterstützung, akzeptiert die Nutzungsbedingungen und lädt die Daten hoch<br /><br />Die Daten werden von Microsoft-Mitarbeitern im Einklang mit den Nutzungsbestimmungen angezeigt. |Daten in der Cloud werden für den Zeitraum beibehalten, der durch den Datenschutz der nächsten Generation (NGP) definiert ist. Dann werden die Daten automatisch gelöscht.<br /><br />Daten auf dem Gerät können jederzeit von einem Benutzer gelöscht werden, der über **Gerätebesitzer** oder **Administrator** Berechtigungen verfügt. |
+|[Einstellungen-Problembehandlung](#settings-troubleshooter) |Einstellungs-App |HoloLens-Gerät<br /><br />Verbundener Computer (optional) |Der Benutzer speichert die Daten, und nur der Benutzer greift auf die Daten zu (es sei denn, der Benutzer hat die Daten ausdrücklich mit einem anderen Benutzer geteilt). |Die Daten werden beibehalten, bis der Benutzer Sie löscht. * |
+|[DiagnosticLog-Konfigurationsdienstanbieter](#diagnosticlog-csp) |Netzwerkverbindung<br /><br />MDM-Umgebung, die den DiagnosticLog-CSP unterstützt |Der Administrator konfiguriert Speicherorte |In der verwalteten Umgebung stimmt der Benutzer implizit dem Administratorzugriff auf die Daten zu.<br /><br />Der Administrator konfiguriert Zugriffsrollen und Berechtigungen. | Der Administrator konfiguriert die Aufbewahrungsrichtlinie. |
+
+
+-   Der Endbenutzer ist dafür verantwortlich, die Protokolle verantwortungsbewusst mit einer anderen Person zu teilen. Diese Dateien sind in erster Linie hilfreich, wenn Sie sich mit dem Kundendienst und-Support in Verbindung setzen.  
+
+## Feedback-Hub
+
+Ein HoloLens-Benutzer kann die Microsoft Feedback-Hub-Desktop-App verwenden, um Diagnoseinformationen an den Microsoft-Support zu senden. Details und vollständige Anweisungen finden Sie unter [Feedback zu uns](hololens-feedback.md).  
+
+> [!NOTE]  
+> **Kommerzielle oder Unternehmensbenutzer:** Wenn Sie die Feedback-Hub-App verwenden, um ein Problem zu melden, das sich auf MDM, Bereitstellung oder einen anderen Aspekt der Geräteverwaltung bezieht, ändern Sie die APP-Kategorie in die Kategorie **Enterprise Management**  >  **Device**.
+
+### Voraussetzungen
+
+- Das Gerät ist mit einem Netzwerk verbunden.
+- Die Feedback-Hub-APP ist auf dem Desktopcomputer des Benutzers verfügbar, und der Benutzer kann Dateien in die Microsoft-Cloud hochladen.
+
+### Datenspeicherorte, Zugriff und Aufbewahrung
+
+Durch die Zustimmung zu den Nutzungsbedingungen des Feedback-Hubs willigt der Nutzer ausdrücklich in die Speicherung und Nutzung der Daten ein (wie in diesem Vertrag definiert).
+
+Der Feedback-Hub bietet zwei Stellen, an denen der Benutzer Diagnoseinformationen speichern muss:
+
+- **Die Microsoft-Cloud**. Daten, die der Benutzer mithilfe der Feedback-Hub-App hochlädt, werden für die Anzahl der Tage gespeichert, die mit den Datenschutzanforderungen der nächsten Generation (NGP) konsistent sind. Microsoft-Mitarbeiter können einen NGP-kompatiblen Viewer verwenden, um während dieses Zeitraums auf die Informationen zuzugreifen.
+   > [!NOTE]  
+   > Diese Anforderungen gelten für Daten in allen Feedback-Hub-Kategorien.
+
+- **Das HoloLens-Gerät**. Beim Einreichen eines Berichts im Feedback-Hub kann der Benutzer **eine lokale Kopie der Diagnose und Anlagen, die beim geben von Feedback erstellt wurden, speichern**auswählen. Wenn der Benutzer diese Option auswählt, speichert der Feedback-Hub eine Kopie der Diagnoseinformationen auf dem HoloLens-Gerät. Diese Informationen bleiben dem Benutzer (oder jeder Person, die dieses Konto verwendet, um sich bei HoloLens zu anmelden) weiterhin zugänglich. Zum Löschen dieser Informationen muss ein Benutzer über **Gerätebesitzer** oder **Administrator** Berechtigungen auf dem Gerät verfügen. Ein Benutzer, der über die entsprechenden Berechtigungen verfügt, kann sich beim Feedback-Hub anmelden, **Einstellungen**  >  **Anzeigendiagnose Protokolle**auswählen und die Informationen löschen.
+
+## Einstellungen-Problembehandlung
+
+Ein HoloLens-Benutzer kann die Einstellungs-APP auf dem Gerät verwenden, um Probleme zu beheben und Diagnoseinformationen zu sammeln. Gehen Sie hierzu folgendermaßen vor:
+
+1. Öffnen Sie die Einstellungs-APP, und wählen Sie **Update & Security**  >  **Troubleshooting** Page aus.
+1. Wählen Sie den entsprechenden Bereich aus, und wählen Sie **Start**aus.
+1. Reproduzieren Sie das Problem.
+1. Nachdem Sie das Problem reproduziert haben, kehren Sie zu Einstellungen zurück, und wählen Sie **Beenden**aus.
+
+### Voraussetzungen
+
+- Die Einstellungs-APP ist auf dem Gerät installiert und steht dem Benutzer zur Verfügung.
+
+### Datenspeicherorte, Zugriff und Aufbewahrung
+
+Da der Benutzer die Datensammlung startet, stimmt der Benutzer implizit der Speicherung der Diagnoseinformationen zu. Nur der Benutzer oder alle Personen, mit denen der Benutzer die Daten freigibt, können auf die Daten zugreifen.
+
+Die Diagnoseinformationen werden auf dem Gerät gespeichert. Wenn das Gerät mit dem Computer des Benutzers verbunden ist, befinden sich die Informationen auch auf dem Computer in der folgenden Datei:
+
+> Diese PC\\ \<*HoloLens device name*> \\Internal Storage\\Documents\\Trace \<*ddmmyyhhmmss*> . ETL
+
+> [!NOTE]  
+> In diesem Dateipfad und-Name \<*HoloLens device name*> stellt den Namen des HoloLens-Geräts dar und \<*ddmmyyhhmmss*> stellt das Datum und die Uhrzeit der Erstellung der Datei dar.
+
+Die Diagnoseinformationen verbleibt an diesen Speicherorten, bis der Benutzer Sie löscht.
+
+## DiagnosticLog-Konfigurationsdienstanbieter
+
+In einer MDM-Umgebung (Mobile Device Management) kann der IT-Administrator den [DiagnosticLog-Konfigurationsdienstanbieter (CSP)](https://docs.microsoft.com/windows/client-management/mdm/diagnosticlog-csp) verwenden, um Diagnoseeinstellungen auf registrierten HoloLens-Geräten zu konfigurieren. Der IT-Administrator kann diese Einstellungen so konfigurieren, dass Protokolle von registrierten Geräten erfasst werden.
+
+### Voraussetzungen
+
+- Das Gerät ist mit einem Netzwerk verbunden.
+- Das Gerät ist in einer MDM-Umgebung registriert, die den DiagnosticLog-CSP unterstützt.
+
+### Datenspeicherorte, Zugriff und Aufbewahrung
+
+Da das Gerät Teil der verwalteten Umgebung ist, stimmt der Benutzer implizit dem Administratorzugriff auf Diagnoseinformationen zu.
+
+Der IT-Administrator verwendet den DiagnosticLog-CSP zum Konfigurieren der Daten Speicherungs-, Aufbewahrungs-und Zugriffsrichtlinien, einschließlich der folgenden Richtlinien:
+
+- Die Cloud-Infrastruktur, in der die Diagnoseinformationen gespeichert sind.
+- Der Aufbewahrungszeitraum für die Diagnoseinformationen.
+- Berechtigungen, die den Zugriff auf die Diagnoseinformationen steuern.
+
+
