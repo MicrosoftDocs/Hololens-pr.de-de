@@ -11,27 +11,32 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 4/21/2020
+ms.date: 6/29/2020
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e00c043f7de1142e4d2e08e41ff0d91123d4a98b
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
-ms.translationtype: MT
+ms.openlocfilehash: cd2b055679f5e1a9a529ad4947773e412211f9c4
+ms.sourcegitcommit: 2b1518675b9962518e08b13c12b43b6d9827fe17
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828064"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10858009"
 ---
 # Insider-Vorschau für Microsoft HoloLens
 
 Willkommen bei den neuesten Insider Preview-Builds für HoloLens!  Es ist ganz einfach, die ersten Schritte zu Unternehmen und wertvolles Feedback für unser nächstes wichtiges Betriebssystemupdate für HoloLens zu liefern.
 
+Windows Insider wird nun in Kanäle verschoben. Der **fast** -Ring wird zum **dev-Kanal**, **der Slow** -Ring wird zum **Beta-Kanal**, und der **Release Preview** -Ring wird zum **Release Preview-Kanal**. Diese Zuordnung sieht wie folgt aus:
+
+![Windows-Insider-Kanäle explination](images/WindowsInsiderChannels.png)
+
+Weitere Informationen: [Windows-Blog Eintrag](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels)
+
 ## Beginnen Sie, Insider-Builds zu erhalten
 
 Wechseln Sie auf einem HoloLens 2-Gerät zu **Einstellungen**  ->  **Aktualisieren & Security**  ->  **Windows-Insider-Programm** , und wählen Sie **Erste Schritte**aus. Verknüpfen Sie das Konto, das Sie für die Registrierung als Windows-Insider verwendet haben.
 
-Wählen Sie dann **aktive Entwicklung von Windows**aus, wählen Sie aus, ob Sie **schnell** oder **langsam** Builds erhalten möchten, und überprüfen Sie die Programm Ausdrücke.
+Wählen Sie dann **aktive Entwicklung von Windows**aus, wählen Sie aus, ob Sie **Entwickler Kanal** -oder **Beta Kanal** -Builds erhalten möchten, und überprüfen Sie die Programm Ausdrücke.
 
 Wählen Sie **Confirm-> jetzt neu starten** aus, um den Vorgang abzuschließen. Nachdem das Gerät neu gestartet wurde, wechseln Sie zu **Einstellungen – > Update & Sicherheit – > auf Updates überprüfen** , um den neuesten Build zu erhalten.
 
@@ -68,11 +73,31 @@ Sie sind willkommen und ermutigt, Ihre Anwendungen mithilfe von Insider-Builds v
 
 ## Anmerkungen zu dieser Version von Windows Insider
 
-Ab unserem [Windows holographischen 2020-Update](hololens-release-notes.md) -Release können alle unsere Release Preview-feautres jetzt im allgemeinen avalible! [Aktualisieren Sie Ihre HoloLens](hololens-update-hololens.md) , damit Sie die neuesten Funktionen nutzen können.  
+Wenn Sie nach einer Funktion suchen, die Sie zuvor hier aufgelistet haben, die Sie nicht sehen können, dann ist es in die nicht-Insider-Builds eingegangen, stellen Sie bitte sicher, dass Sie die [Versionshinweise](hololens-release-notes.md) lesen, um alle in der Regel verfügbaren Features anzuzeigen. [Aktualisieren Sie Ihre HoloLens](hololens-update-hololens.md) , damit Sie die neuesten Funktionen nutzen können.  
 
 Wir werden diese Seite erneut mit neuen Features aktualisieren, während wir Sie für Windows-Insider-Builds freigeben. 
 
-### FFU herunterladen und Blitz Anleitungen
+### Unterstützung der automatischen Augen Position
+
+In HoloLens 2 ermöglichen Augen Positionen eine exakte Hologramm-Positionierung, ein komfortables Anzeigeerlebnis und eine verbesserte Anzeigequalität. Augen Positionen werden als Teil des Eye Tracking-Ergebnisses berechnet. Dies erfordert allerdings, dass jeder Benutzer die Kalibrierung der Eye-Tracking-Anwendung durchlaufen muss, selbst wenn die Erfahrung keine Augenblicke erfordert.
+
+Die **Automatische Augen Position (AEP)** ermöglicht diese Szenarien mit einer Interaktions freien Möglichkeit zum Berechnen von Augen Positionen für den Benutzer.  Die automatische Augen Position beginnt automatisch ab dem Moment, in dem der Benutzer das Gerät anlegt, im Hintergrund zu arbeiten. Wenn der Benutzer nicht über eine vorherige Kalibrierung der Augen verfügt, beginnt die automatische augenposition, um die Augen Positionen des Benutzers nach einer kleinen Verarbeitungszeit dem Anzeigesystem zur Verfügung zu stellen. Diese Verarbeitungszeit liegt in der Regel zwischen 20-60 Sekunden. Die Benutzerdaten werden nicht auf dem Gerät gespeichert, und daher wird dieser Vorgang wiederholt, wenn der Benutzer das Gerät wieder annimmt, oder wenn das Gerät neu gestartet oder aus dem Ruhezustand reaktiviert wird.  
+
+Wenn ein nicht kalibrierter Benutzer das Gerät anlegt, gibt es einige Änderungen des Systemverhaltens mit der Funktion "Automatische Augen Position". Ein nicht kalibrierter Benutzer bezieht sich auf eine Person, die den Kalibrierungsprozess für die Augen Verfolgung auf dem Gerät zuvor nicht durchlaufen hat.
+
+|     Aktive Anwendung                           |     Aktuelles Verhalten                                   |     Verhalten von Windows Insider Build 19041.1339 +                                                      |
+|--------------------------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+|     APP oder holographische Shell ohne Blick    |     Aufforderung zur Kalibrierung der Augen Verfolgung wird angezeigt.    |     Es wird keine Eingabeaufforderung angezeigt.                                                                                |
+|     App "Blick aktiviert"                             |     Aufforderung zur Kalibrierung der Augen Verfolgung wird angezeigt.    |     Die Eingabeaufforderung zur Kalibrierung der Augen wird nur angezeigt, wenn die Anwendung auf Eye-Gaze-Datenstrom zugreift.     |
+
+ Wenn der Benutzer von einer nicht auf den Blick aktivierten Anwendung zu einer wechselt, die auf die Blickdaten zugreift, wird die Kalibrierungs Aufforderung angezeigt. Der Erfahrungs Fluss "außerhalb des Felds" wird nicht geändert. 
+ 
+Für Erfahrungen, bei denen Augenblick Daten oder eine sehr präzise Hologramm-Positionierung erforderlich sind, empfehlen wir unkalibrierten Benutzern, die Eye Tracking-Kalibrierung über die Kalibrierungs Aufforderung zur Augen Verfolgung auszuführen, oder indem Sie die Einstellungs-APP aus dem Startmenü starten, und dann **System > Kalibrierung > Augen Kalibrierung auswählen > die Augen**Kalibrierung durchführen.
+
+**Bekannte Probleme**
+1.  Wir untersuchen ein Problem, bei dem der Eye Tracker-Treiber Hostprozess bei starker Speicherauslastung abstürzt. Der Treiber Hostprozess für die Eye-Tracking-Funktion sollte automatisch wiederhergestellt werden.
+
+## FFU herunterladen und Blitz Anleitungen
 Um mit einem FFU-Flight-Test zu testen, müssen Sie zuerst das Gerät Entsperren, bevor Sie den Flug mit dem signierten FFU.
 1. Auf dem PC
     1. Laden Sie FFU auf Ihren PC herunter:[https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload)

@@ -17,12 +17,11 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 0163e028756743922302b46f04309f3d7f738233
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
-ms.translationtype: MT
+ms.openlocfilehash: 7409865f63199dead1779fa183128b30445053aa
+ms.sourcegitcommit: 2b1518675b9962518e08b13c12b43b6d9827fe17
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828439"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857999"
 ---
 # Einrichten von HoloLens als Kiosk
 
@@ -99,7 +98,8 @@ Wenn Sie ein MDM-System (Mobile Device Management) oder ein Bereitstellungspaket
 |Kalender |Microsoft. windowscommunicationsapps \ _8wekyb3d8bbwe \! Microsoft. Windows Live stürzen. Calendar |
 |Kamera <sup> 1, 2</sup> |HoloCamera \ _cw5n1h2txyewy \! HoloCamera |
 |Cortana <sup> 3</sup> |Microsoft. 549981C3F5F10 \ _8wekyb3d8bbwe \! App |
-|Geräteauswahl |HoloDevicesFlow \ _cw5n1h2txyewy \! HoloDevicesFlow |
+|Geräteauswahl auf HoloLens (1st Generation) |HoloDevicesFlow \ _cw5n1h2txyewy \! HoloDevicesFlow |
+|Geräteauswahl auf HoloLens 2 |Microsoft. Windows. DevicesFlowHost \ _cw5n1h2txyewy \! Microsoft. Windows. DevicesFlowHost |
 |Dynamics 365 Guides |Microsoft. Dynamics365. Guides \ _8wekyb3d8bbwe \! MicrosoftGuides |
 |Dynamics 365 Remote Assist |Microsoft. MicrosoftRemoteAssist \ _8wekyb3d8bbwe \! Microsoft. RemoteAssist |
 |Feedback- &nbsp; Hub |Microsoft. WindowsFeedbackHub \ _8wekyb3d8bbwe \! App |
@@ -119,7 +119,7 @@ Wenn Sie ein MDM-System (Mobile Device Management) oder ein Bereitstellungspaket
 > - Sie sollten auch eine APP (beispielsweise Fotos, e-Mail oder OneDrive) aktivieren, die mit Bildern interagieren oder Bilder abrufen kann.  
 >  
 > <sup>3 </sup> auch wenn Sie Cortana nicht als Kiosk-App aktivieren, sind integrierte Sprachbefehle aktiviert. Befehle, die mit deaktivierten Features verknüpft sind, haben jedoch keine Auswirkungen.  
-> <sup>4 </sup> Sie können Miracast nicht direkt aktivieren. Um Miracast als Kiosk-APP zu aktivieren, aktivieren Sie die Kamera-APP und die Geräteauswahl-app.
+> <sup>4 </sup> Sie können Miracast nicht direkt aktivieren. Aktivieren Sie die Kamera-APP und die Geräteauswahl-APP, um Miracast als Kiosk-APP zu aktivieren.
 
 ### Planen von Benutzer-und Gerätegruppen
 
@@ -358,7 +358,7 @@ Zum Aktivieren des **Gastkontos** fügen Sie den folgenden Codeausschnitt zu Ihr
 
 #### <a id="start-layout-for-hololens"></a>Platzhalter Anfangslayout für HoloLens
 
-Wenn Sie ein [Bereitstellungspaket](##use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk) zum Konfigurieren eines Multi-App-Kiosks verwenden, ist für das Verfahren ein Start Layout erforderlich. Die Anpassung des Start Layouts wird in Windows holographisch für Unternehmen nicht unterstützt. Daher müssen Sie ein Platzhalter Anfangslayout verwenden.
+Wenn Sie ein [Bereitstellungspaket](#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk) zum Konfigurieren eines Multi-App-Kiosks verwenden, ist für das Verfahren ein Start Layout erforderlich. Die Anpassung des Start Layouts wird in Windows holographisch für Unternehmen nicht unterstützt. Daher müssen Sie ein Platzhalter Anfangslayout verwenden.
 
 > [!NOTE]  
 > Da ein Single-App-Kiosk die Kiosk-App startet, wenn sich ein Benutzer anmeldet, wird kein Startmenü verwendet, und es muss kein Start Layout vorhanden sein.
