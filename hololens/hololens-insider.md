@@ -16,11 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cd2b055679f5e1a9a529ad4947773e412211f9c4
-ms.sourcegitcommit: 2b1518675b9962518e08b13c12b43b6d9827fe17
+ms.openlocfilehash: b054b61b269522d673be104ffbda9abc1bc85415
+ms.sourcegitcommit: 168a7659420525e5f3e3088d7ce0b5e03c969029
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10858009"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "10860605"
 ---
 # Insider-Vorschau für Microsoft HoloLens
 
@@ -28,7 +29,7 @@ Willkommen bei den neuesten Insider Preview-Builds für HoloLens!  Es ist ganz e
 
 Windows Insider wird nun in Kanäle verschoben. Der **fast** -Ring wird zum **dev-Kanal**, **der Slow** -Ring wird zum **Beta-Kanal**, und der **Release Preview** -Ring wird zum **Release Preview-Kanal**. Diese Zuordnung sieht wie folgt aus:
 
-![Windows-Insider-Kanäle explination](images/WindowsInsiderChannels.png)
+![Erläuterung von Windows-Insider Kanälen](images/WindowsInsiderChannels.png)
 
 Weitere Informationen: [Windows-Blog Eintrag](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels)
 
@@ -58,7 +59,6 @@ So deaktivieren Sie Insider-Builds:
 1. Befolgen Sie die Anweisungen, um Ihr Gerät zu deaktivieren.
 
 
-
 ## Bereitstellen von Feedback und melden von Problemen
 
 Bitte verwenden Sie [die Feedback-Hub-App](hololens-feedback.md) auf Ihrem HoloLens, um Feedback zu geben und Probleme zu melden. Durch die Verwendung des Feedback-Hubs wird sichergestellt, dass alle erforderlichen Diagnoseinformationen enthalten sind, damit unsere Ingenieure das Problem schnell Debuggen und beheben können.  Probleme mit der chinesischen und japanischen Version von HoloLens sollten auf die gleiche Weise gemeldet werden.
@@ -73,9 +73,10 @@ Sie sind willkommen und ermutigt, Ihre Anwendungen mithilfe von Insider-Builds v
 
 ## Anmerkungen zu dieser Version von Windows Insider
 
-Wenn Sie nach einer Funktion suchen, die Sie zuvor hier aufgelistet haben, die Sie nicht sehen können, dann ist es in die nicht-Insider-Builds eingegangen, stellen Sie bitte sicher, dass Sie die [Versionshinweise](hololens-release-notes.md) lesen, um alle in der Regel verfügbaren Features anzuzeigen. [Aktualisieren Sie Ihre HoloLens](hololens-update-hololens.md) , damit Sie die neuesten Funktionen nutzen können.  
+Ab unserer [Windows holographischen 2020-Update](hololens-release-notes.md) Version sind alle unsere Funktionen zur Veröffentlichungs Vorschau jetzt in der Regel verfügbar! [Aktualisieren Sie Ihre HoloLens](hololens-update-hololens.md) , damit Sie die neuesten Funktionen nutzen können.
 
-Wir werden diese Seite erneut mit neuen Features aktualisieren, während wir Sie für Windows-Insider-Builds freigeben. 
+Wir werden diese Seite erneut mit neuen Features aktualisieren, während wir Sie für Windows-Insider-Builds freigeben.
+
 
 ### Unterstützung der automatischen Augen Position
 
@@ -101,6 +102,6 @@ Für Erfahrungen, bei denen Augenblick Daten oder eine sehr präzise Hologramm-P
 Um mit einem FFU-Flight-Test zu testen, müssen Sie zuerst das Gerät Entsperren, bevor Sie den Flug mit dem signierten FFU.
 1. Auf dem PC
     1. Laden Sie FFU auf Ihren PC herunter:[https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload)
-    1. Installieren von Arc (Advanced Recovery Companion) aus dem Microsoft Store:[https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8) 
+    1. Installieren von Arc (Advanced Recovery Companion) aus dem Microsoft Store:[https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
 1. Auf HoloLens-Flight Unlock: Öffnen Sie **Einstellungen**  >  **Aktualisieren & Security**  >  **Windows-Insider-Programm** dann registrieren, Gerät neu starten
-1. Flash-FFU-jetzt können Sie den Flight-signierten FFU mit ARC blinken 
+1. Flash-FFU-jetzt können Sie den Flight-signierten FFU mit ARC blinken
