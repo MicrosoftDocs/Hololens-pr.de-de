@@ -10,18 +10,21 @@ audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/15/2019
-ms.openlocfilehash: 8aa8e0f679ad18a2e47f34c5f1233435a502dc0c
-ms.sourcegitcommit: f3cda6c6b3bfb7ba4be5f4da66d8ed5b03ca807d
+ms.openlocfilehash: e53e6575ef688e01ce2d1f6124f3214b18b05c95
+ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10830129"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "10865564"
 ---
 # Bereitstellen von HoloLens in einer kommerziellen Umgebung
 
 Sie können HoloLens im Maßstab in einer kommerziellen Einstellung bereitstellen und konfigurieren. Dieser Artikel enthält Anweisungen zum Bereitstellen von HoloLens-Geräten in einer geschäftlichen Umgebung. Dieser Leitfaden geht von grundlegender Vertrautheit mit HoloLens aus. Folgen Sie dem Leitfaden "erste [Schritte](hololens1-setup.md) ", um HoloLens zum ersten Mal einzurichten.
 
-In diesem Dokument wird auch davon ausgegangen, dass das HoloLens von Sicherheitsteams als sicher für die Verwendung im Unternehmensnetzwerk ausgewertet wurde. Häufig gestellte Fragen zur Sicherheit finden Sie [hier](hololens-faq-security.md) .
+In diesem Dokument wird auch davon ausgegangen, dass das HoloLens von Sicherheitsteams als sicher für die Verwendung im Unternehmensnetzwerk ausgewertet wurde.  
+> [!Tip]
+> Weitere Informationen zur [HoloLens-Sicherheit](security-overview.md).
+> Für HoloLens (1st Gen)-Sicherheit lesen Sie bitte [diese FAQ](hololens1-faq-security.md).
 
 ## Übersicht über Bereitstellungsschritte
 
@@ -32,11 +35,11 @@ In diesem Dokument wird auch davon ausgegangen, dass das HoloLens von Sicherheit
 1. Optional [Konfigurieren von HoloLens mit einem Bereitstellungspaket](hololens-provisioning.md)
 1. [Gerät registrieren](hololens-enroll-mdm.md)
 1. [Einrichten von ringbasierten Updates für HoloLens](hololens-updates.md)
-1. [Aktivieren der Bitlocker-Geräteverschlüsselung für HoloLens](hololens-encryption.md)
+1. [Aktivieren der Bitlocker-Geräteverschlüsselung für HoloLens](security-encryption-data-protection.md)
 
 ## Schritt 1. Bestimmen, was Sie benötigen
 
-Bevor Sie das HoloLens in Ihrer Umgebung bereitstellen, müssen Sie zunächst ermitteln, welche Features, Apps und Typen von Identitäten erforderlich sind. Darüber hinaus ist es wichtig, sicherzustellen, dass Ihr Sicherheitsteam die Nutzung des HoloLens im Netzwerk des Unternehmens genehmigt hat. Weitere Sicherheitsinformationen finden Sie unter Häufig gestellte Fragen zu [Sicherheitsfragen](hololens-faq-security.md) .
+Bevor Sie das HoloLens in Ihrer Umgebung bereitstellen, müssen Sie zunächst ermitteln, welche Features, Apps und Typen von Identitäten erforderlich sind. Darüber hinaus ist es wichtig, sicherzustellen, dass Ihr Sicherheitsteam die Nutzung des HoloLens im Netzwerk des Unternehmens genehmigt hat. Weitere Sicherheitsinformationen finden Sie unter [HoloLens2-Sicherheit](security-overview.md) .
 
 ### Art der Identität
 
