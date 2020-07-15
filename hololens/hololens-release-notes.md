@@ -15,18 +15,37 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 25a1bc21638090cc5d22bc4482299f3931641dea
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: cb4296413fdf31376ff0d11f1fa807c190af81f4
+ms.sourcegitcommit: 563797405f7470f979a27718c604df920efbb368
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828253"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10881235"
 ---
 # Veröffentlichungshinweise für HoloLens 2
 
-Um sicherzustellen, dass Sie mit ihren HoloLens-Geräten eine produktive Erfahrung haben, veröffentlichen wir weiterhin Funktions-, Fehler-und Sicherheitsupdates. Auf dieser Seite können Sie jeden Monat erfahren, was es Neues auf HoloLens gibt. Wenn Sie das neueste HoloLens 2-FFU herunterladen möchten, um Ihr Gerät über [Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device) zu blinken, können Sie es [hier](https://aka.ms/hololens2download)herunterladen. Diese wird auf dem neuesten Stand gehalten und entspricht dem neuesten allgemein verfügbaren Build. 
+Um sicherzustellen, dass Sie mit ihren HoloLens-Geräten eine produktive Erfahrung haben, veröffentlichen wir weiterhin Funktions-, Fehler-und Sicherheitsupdates. Auf dieser Seite können Sie jeden Monat erfahren, was es Neues auf HoloLens gibt. Wenn Sie das neueste HoloLens 2-FFU herunterladen möchten, um Ihr Gerät über [Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device) zu blinken, können Sie es [hier](https://aka.ms/hololens2download)herunterladen. Dies wird auf dem neuesten Stand gehalten und entspricht dem neuesten allgemein verfügbaren Build. 
 
 HoloLens-Emulator-Versionshinweise finden Sie [hier](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
+
+## Windows holographisch, Version 2004 – Update vom Juli 2020
+- Build 19041,1109
+
+Verbesserungen und Korrekturen im Update:
+
+- Entwickler können zwischen dem Aktivieren oder Deaktivieren des Geräte Portals, das eine sichere Verbindung erfordert, wählen.
+- Verbesserungen der Zuverlässigkeit für Anwendungen, die nach Betriebssystemupdates gestartet werden
+- Ändern der standardmäßigen Posteingangs Helligkeit auf 100%.
+- Es wurde ein Problem mit der HTTPS-Weiterleitung für das Windows Device Portal auf HoloLens 2 behoben.
+
+## Windows holographisch, Version 1903 – Update vom Juli 2020
+- Build 18362,1071
+
+Verbesserungen und Korrekturen im Update:
+
+- Behebt ein Problem, das dazu führen kann, dass Hologramme in Einheits Anwendungen verschwinden, wenn Sie die Nachverfolgung verlieren und/oder wieder gewinnen.
+- Ein Problem wurde behoben, durch das exklusive Hololens-Apps bei Verwendung des Hololens-Emulators mit Hardwarebeschleunigung auf bestimmten Geräten wieder in die Shell zurück stürzten.
+- Es wurde ein Problem mit der HTTPS-Weiterleitung für das Windows Device Portal auf HoloLens 2 behoben.
 
 ## Windows holographisch, Version 2004 – Update vom Juni 2020
 - Build 19041,1106
