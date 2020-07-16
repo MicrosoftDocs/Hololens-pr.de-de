@@ -15,12 +15,12 @@ ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
 - HoloLens 2
-ms.openlocfilehash: 330a7fd549a2b847f77715ca90d69f1d4df1fb1d
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: db95edfbadb271b7fc47cf5798e80d9b2cad3c90
+ms.sourcegitcommit: 708da7b390fed1fd3aea1a2b2e50461851052683
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828427"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10881328"
 ---
 # Bekannte Probleme bei HoloLens
 
@@ -47,6 +47,14 @@ Dies ist die aktuelle Liste bekannter Probleme für HoloLens-Geräte. Überprüf
 - Das Feature für die Live Vorschau in Mixed-Reality-Aufnahmen kann mehrere Sekunden Wartezeit aufweisen.
 - Auf der virtuellen Eingabeseite sind die Steuerelemente für Gesten und Scrollen unter dem Abschnitt virtuelle Gesten nicht funktionsfähig. Die Verwendung hat keine Auswirkungen. Die virtuelle Tastatur auf derselben Seite funktioniert ordnungsgemäß.
 - Nach dem Aktivieren des Entwicklermodus in Einstellungen kann es einige Sekunden dauern, bis der Wechsel zum Aktivieren des Geräte Portals aktiviert ist.
+
+### OneDrive Kamera Upload
+
+Die OneDrive-App für HoloLens unterstützt keinen automatischen Kamera Upload für geschäftliche oder Schul Konten.
+
+Workarounds
+- Wenn Sie für Ihr Unternehmen geeignet sind, wird der automatische Kamera Upload für Consumer Microsoft-Konten unterstützt. Sie können sich zusätzlich zu Ihrem Geschäfts-oder Schulkonto bei Ihrem Microsoft-Konto anmelden (die OneDrive-App unterstützt die duale Anmeldung). In Ihrem Microsoft-Kontoprofil in OneDrive können Sie den automatischen, Hintergrund-Upload von Kamera Rollen aktivieren.
+- Wenn Sie ein Consumer Microsoft-Konto nicht sicher für das automatische Hochladen von Fotos verwenden können, können Sie Fotos von der OneDrive-app manuell in Ihr Geschäfts-oder Schulkonto hochladen. Vergewissern Sie sich, dass Sie bei Ihrem Geschäfts-oder Schulkonto in der OneDrive-App angemeldet sind. Wählen Sie die **+** Schaltfläche und dann **hochladen**aus. Suchen Sie die Fotos oder Videos, die Sie hochladen möchten, indem Sie zu **Bilder > Kamerarolle**navigieren. Wählen Sie die Fotos oder Videos aus, die Sie hochladen möchten, und wählen Sie dann die Schaltfläche **Öffnen** aus.
 
 ## Bekannte Probleme bei HoloLens 2-Geräten
 
