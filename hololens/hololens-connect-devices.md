@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d4c5441c1df198ae1c85be5d8f4fe38f10f0be4b
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 53d426b4319dafd0dd976e67111992020507f719
+ms.sourcegitcommit: 563797405f7470f979a27718c604df920efbb368
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828104"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10881245"
 ---
 # Verbinden mit Bluetooth- und USB C-Geräten
 
@@ -29,6 +29,9 @@ HoloLens 2 unterstützt die folgenden Bluetooth-Geräteklassen:
 - Maus
 - Tastatur
 - Bluetooth Audio Output (A2DP)-Geräte
+
+> [!NOTE]
+> Externe Mikrofone können nicht verwendet werden. HoloLens 2 verwendet sein integriertes [Mikrofon-Array](hololens2-hardware.md#audio-and-speech).
 
 HoloLens (1. Generation) unterstützt die folgenden Bluetooth-Geräteklassen:
 
@@ -44,7 +47,9 @@ HoloLens (1. Generation) unterstützt die folgenden Bluetooth-Geräteklassen:
 1. Schalten Sie die Tastatur oder Maus ein, damit sie auffindbar sind.  Wenn Sie wissen möchten, wie das Gerät auffindbar ist, suchen Sie nach Informationen auf dem Gerät (oder dessen Dokumentation), oder besuchen Sie die Website des Herstellers.
 
 1. Verwenden Sie die Bloom-Geste (HoloLens (1. Generation)) oder die Start-Geste (HoloLens 2), um zu **Start**zu wechseln, und wählen Sie dann **Einstellungen**aus.
+
 1. Wählen Sie **Geräte**aus, und vergewissern Sie sich, dass Bluetooth aktiviert ist.  
+
 1. Wenn der Gerätename angezeigt wird, wählen Sie **Koppeln** aus, und folgen Sie den Anweisungen.
 
 ### HoloLens (1. Generation): Clicker koppeln
@@ -86,6 +91,7 @@ Wenn Sie Miracast verwenden möchten, führen Sie die folgenden Schritte aus:
    - Sagen Sie "verbinden", während Sie auf das **Startmenü**schauen.  
 
 1. Wählen Sie in der Liste der angezeigten Geräte ein verfügbares Gerät aus.
+
 1. Führen Sie die Kopplung aus, um mit dem projizieren zu beginnen.
 
 ## Bluetooth deaktivieren
@@ -93,4 +99,5 @@ Wenn Sie Miracast verwenden möchten, führen Sie die folgenden Schritte aus:
 Mit diesem Verfahren werden die RF-Komponenten des Bluetooth-Funks deaktiviert, und alle Bluetooth-Funktionen werden auf Microsoft-HoloLens deaktiviert.
 
 1. Verwenden Sie die Bloom-Geste (HoloLens (1. Generation)) oder die Start-Geste (HoloLens 2), um zu **Start**zu wechseln, und wählen Sie dann **Einstellungen** > **Geräte**aus.
+
 1. Verschieben Sie den Schieberegler für **Bluetooth-** zur **Aus** Position.
