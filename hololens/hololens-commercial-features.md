@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 28898c5c0cbc2a4f66cea13665e5ef63447db382
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 254c1048d2a1c7b63dfe87ead4585c21153fa8bb
+ms.sourcegitcommit: fc2ce4d843229bcc9ae6c7a42da559c0f6f558b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828121"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "10882985"
 ---
 # Kommerzielle Funktionen
 
@@ -75,11 +75,11 @@ HoloLens (1. Generation) hat zwei Lizenzierungsoptionen, die Entwicklerlizenz un
 
 ## Aktivieren von kommerziellen Features
 
-Der IT-Administrator Ihrer Organisation kann kommerzielle Features wie Microsoft Store für Unternehmen, Kioskmodus und Enterprise-WLAN-Zugriff einrichten. In der [Microsoft HoloLens](index.md)-Dokumentation finden Sie schrittweise Anleitungen zum Registrieren von Geräten und zum Installieren von Apps aus dem Microsoft Store für Unternehmen.
+Der IT-Administrator Ihrer Organisation kann kommerzielle Features wie Microsoft Store für Unternehmen, Kioskmodus und Enterprise-WLAN-Zugriff einrichten. In der [Microsoft HoloLens](index.yml)-Dokumentation finden Sie schrittweise Anleitungen zum Registrieren von Geräten und zum Installieren von Apps aus dem Microsoft Store für Unternehmen.
 
 ## Weitere Informationen
 
-- [Microsoft HoloLens](index.md)
+- [Microsoft HoloLens](index.yml)
 - [Kioskmodus](hololens-kiosk.md)
 - [In HoloLens-Geräten unterstützte CSPs (Kryptografiedienstanbieter)](/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices)
 - [Microsoft Store für Unternehmen und Branchenanwendungen](https://blogs.technet.microsoft.com/sbucci/2016/04/13/windows-store-for-business-and-line-of-business-applications/)
