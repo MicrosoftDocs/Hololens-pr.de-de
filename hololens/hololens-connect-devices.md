@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 53d426b4319dafd0dd976e67111992020507f719
-ms.sourcegitcommit: 563797405f7470f979a27718c604df920efbb368
+ms.openlocfilehash: fef69ee4cd148b82721472436da8dfd627f86ff1
+ms.sourcegitcommit: 708da7b390fed1fd3aea1a2b2e50461851052683
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/15/2020
-ms.locfileid: "10881245"
+ms.locfileid: "10881338"
 ---
 # Verbinden mit Bluetooth- und USB C-Geräten
 
@@ -80,6 +80,8 @@ HoloLens 2 unterstützt die folgenden USB-C-Geräteklassen:
 
 > [!NOTE]
 > Einige mobile Geräte mit USB-C-Verbindungen stellen sich der HoloLens als Ethernet-Adapter dar und können daher in einer Anbindehaltung-Konfiguration verwendet werden, beginnend mit der holographischen Windows-Version 2004. USB LTE-Modems, die einen separaten Treiber und/oder eine für die Konfiguration installierte Anwendung erfordern, werden nicht unterstützt.
+
+Als Antwort auf das Kundenfeedback haben wir die eingeschränkte Unterstützung für die Mobilfunkverbindung aktiviert, die über USB-C direkt an das HoloLens angebunden ist.  Tethering funktioniert nur bei Geräten, die die generische Microsoft [RNDIS-](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) Treiber-Implementierung unterstützen und keine weiteren Treiber oder Anwendungen installieren müssen.  Ein solches Gerät wird, wenn es verbunden ist, automatisch als neue Ethernet-Verbindung in der Benutzeroberfläche der HoloLens 2-Netzwerkeinstellungen angezeigt. Bitte wenden Sie sich an den Hersteller Ihres Geräts, um weitere Informationen zu erhalten, ob es den generischen Microsoft RNDIS-Treiber unterstützt.
 
 ## Herstellen einer Verbindung mit Miracast
 
