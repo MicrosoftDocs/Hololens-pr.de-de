@@ -12,12 +12,12 @@ ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c88a9af7369a6a9d6fb115fb820c0a4da13eafdc
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: 147401331cb6da732a6fe37e57964d61a10dce99
+ms.sourcegitcommit: 47bc3b696936dd7011b3f9dd683deb872ed25b90
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865744"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "10883139"
 ---
 # Netzwerksicherheit
 
@@ -26,8 +26,6 @@ ms.locfileid: "10865744"
 Das veraltete NetBIOS (Network Basic Input/Output System) wurde in früheren LAN-Szenarien häufig verwendet – meist für die Bereitstellung von Namensauflösung für einen Computer und freigegebene Ordner. Im Verlauf der Zeit hat sich NetBIOS aber als anfällig für verschiedene Angriffe erwiesen und seine Bedeutung verringerte sich zugunsten anderer Protokolle, die mehr Sicherheit bieten. Um dieses Problem des Sicherheitsrisikos zu beseitigen, hat HoloLens2 den NetBIOS-bezogenen Code aus dem Betriebssystem entfernt.
 
 TLS-Protokolle (Transport Layer Security) werden ständig weiterentwickelt. Um mit den unterschiedlichen Sicherheits-Exploits, die in diesem Bereich aufgedeckt wurden, Schritt zu halten, ist die Computerbranche auf neuere und effektivere Versionen umgestiegen. Aufgrund der Zeit, die alle Serverbereitstellungen benötigen, um die neuen TLS-Protokollversionen zu übernehmen, kann ein Fallbackmechanismus implementiert werden, der es erlaubt, dass Client und Server während der Übergangszeit noch mit verschiedenen Standardprotokollversionen kommunizieren können.
-
-Allerdings erhöhen solche Fallbackmechanismen die Sicherheitsrisiken. Da man dieses Problem erkannt hat, wurde in HoloLens2 das Fallback von TLS 1.2 auf TLS 1.1 oder 1.0 deaktiviert, und es gibt keine Benutzerschnittstelle, mit der es wieder aktiviert werden kann. Darüber hinaus fragt der Client während des TLS-Handshakes nach TLS 1.2 und lässt nicht zu, dass der Server auf eine niedrigere Version herabgestuft wird.
 
 ## Sichere Verbindungen 
 

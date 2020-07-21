@@ -47,7 +47,6 @@
 ### [Hardwaregesicherter Sicherheits- und Laufzeitnachweis](security-hardware-backed-integrity.md)
 ### [Verschlüsselung und Datenschutz](security-encryption-data-protection.md)
 ### [Netzwerksicherheit](security-network-security.md)
-### [Drahtlos und WLAN](security-wireless-wifi.md)
 ### [Sicherheits-Engineering ](security-engineering.md)
 ### Sicherheit von HoloLens 1. Gen.
 #### [Häufig gestellte Sicherheitsfragen zu HoloLens (1. Gen.)](hololens1-faq-security.md)
