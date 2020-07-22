@@ -15,12 +15,12 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8e6ce55630c6ec20b83ca24006acedbe5f949997
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 4574f62e42678ada15e8263e03ca95d388dc8e57
+ms.sourcegitcommit: 223df264cdc812beba88582377002ea3e49d55fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828223"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "10888554"
 ---
 # Reinigen von HoloLens 2: Häufig gestellte Fragen
 
@@ -74,7 +74,7 @@ Zum Säubern des Stirnpolsters wischen Sie es mit einem Tuch ab, das mit Wasser 
 
 ## Kann ich ultraviolettes (UV-) Licht verwenden, um das Gerät zu reinigen?
 
-Eine keimtötende UV-C-Bestrahlung wurde an der HoloLens 2 nicht getestet.
+UVC-Bestrahlung mit UVC-LED, die bei 265nm mit einem Intensitätsgrad von 0,5-0,6 MW/cm <sup> 2 funktioniert </sup> und kein Ozon ausstrahlt, kann zur Desinfektion von HoloLens2 verwendet werden. Bitte folgen Sie den Spezifikationen des Herstellers zur Behandlung und Belichtungszeit.
 
 > [!CAUTION]  
 > Eine hohe UV-A- und UV-B-Belastung kann die Anzeigequalität des Geräts verschlechtern und die Visierbeschichtung beschädigen. Zu starke UV-A- und UV-B-Strahlung hat, abhängig von der Dauer und Intensität der Bestrahlung, die folgenden Auswirkungen:
@@ -82,7 +82,7 @@ Eine keimtötende UV-C-Bestrahlung wurde an der HoloLens 2 nicht getestet.
 > 1. Das Stirnpolster und die Verschlüsse des Geräts können verfärben.
 > 1. Die Antireflex-Schicht (AR) des Visiers und die Sensorscheiben nehmen Schaden.
 > 1. Die Grundmaterialien des Visiers und der Sensorscheiben werden angegriffen.
-> 1. SRG-Leistung verschlechtert sich.
+> 1. Die Anzeigeleistung verschlechtert sich.
 
 ## Ist das hintere Polster auswechselbar?
 
