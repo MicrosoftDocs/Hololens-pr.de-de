@@ -10,12 +10,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: 734176dcf8a789f130aa8b010f5f3c9ec1d22c72
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: 0f46ff4a1bef95d153d9fa93c746c8977dc49771
+ms.sourcegitcommit: 47bc3b696936dd7011b3f9dd683deb872ed25b90
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857793"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "10883149"
 ---
 # HoloLens mit einem Netzwerk verbinden
 
@@ -32,24 +32,14 @@ Bei der ersten Verwendung von HoloLens werden Sie beim Herstellen einer Verbindu
 
 ## Herstellen einer Verbindung zu WLAN nach dem Einrichten
 
-1. Wählen Sie **Start** > **Einstellungen** aus.
-   - *Nur HoloLens (1. Generation)*: Verwenden Sie Anvisieren, um die Einstellungs-App zu positionieren, und tippen Sie dann in die Luft, um sie zu platzieren, oder sagen Sie „Platzieren”.
-1. Wählen Sie **Netzwerk und Internet** > **WLAN** aus. Wenn Ihr Netzwerk nicht angezeigt wird, scrollen Sie die Liste nach unten.
+1. Führen Sie die **Startgeste** aus, und wählen Sie **Einstellungen** aus. Die Einstellungs-App wird automatisch vor Ihnen platziert.
+1. Wählen Sie **Netzwerk und Internet** > **WLAN** aus. Stellen Sie sicher, dass WLAN aktiviert ist. Wenn Ihr Netzwerk nicht angezeigt wird, scrollen Sie die Liste nach unten.
 1. Wählen Sie ein Netzwerk und dann **Verbinden** aus.
 1. Wenn Sie zur Eingabe eines Netzwerkkennworts aufgefordert werden, geben Sie es ein, und wählen Sie dann **Weiter** aus.
-
-## Herstellen einer Verbindung zu WLAN auf HoloLens (1. Generation)
 
 HoloLens verfügt über einen 802.11ac-fähiges 2x2-WLAN-Funkanschluss. Das Verbinden von HoloLens mit einem WLAN-Netzwerk ähnelt dem Verbinden eines Windows 10-Desktops oder mobilen Geräts mit einem WLAN-Netzwerk.
 
 ![WLAN-Einstellungen für HoloLens](./images/wifi-hololens-600px.jpg)
-
-1. Öffnen Sie das **Startmenü**.
-1. Wählen Sie die Einstellungs-App im **Startmenü** aus oder aus der Liste **Alle apps** auf der rechten Seite des **Startmenüs** aus. Die Einstellungs-App wird automatisch vor Ihnen platziert.
-1. Wählen Sie **Netzwerk und Internet** aus.
-1. Stellen Sie sicher, dass WLAN aktiviert ist.
-1. Wählen Sie in der Liste ein WLAN-Netzwerk aus.
-1. Geben Sie bei Bedarf das Kennwort für das WLAN-Netzwerk ein.
 
 Sie können auch bestätigen, dass Sie mit einem WLAN-Netzwerk verbunden sind, indem Sie den WLAN-Status im **Startmenü** überprüfen:
 
@@ -61,6 +51,19 @@ Sie können auch bestätigen, dass Sie mit einem WLAN-Netzwerk verbunden sind, i
 Wenn Sie Probleme beim Herstellen einer WLAN-Verbindung haben, lesen Sie [Ich kann keine WLAN-Verbindung herstellen](./hololens-faq.md#i-cant-connect-to-wi-fi).
 
 Melden Sie sich mit dem Gerät bei einem Unternehmens- oder Organisationskonto an, kann auch die Richtlinie für die mobile Geräteverwaltung (Mobile Device Management, MDM) gelten, wenn die Richtlinie von Ihrem IT-Administrator konfiguriert wurde.
+
+## VPN
+Eine VPN-Verbindung kann Ihnen dabei helfen, eine sicherere Verbindung herzustellen sowie auf das Netzwerk Ihres Unternehmens und das Internet zuzugreifen. HoloLens2 unterstützt den integrierten VPN-Client und das VPN-Plug-In Universelle Windows-Plattform (UWP). 
+
+Unterstützte integrierte VPN-Protokolle:
+- IKEv2
+- L2TP
+- PPTP
+
+Wenn für die Authentifizierung des integrierten VPN-Clients ein Zertifikat verwendet wird, muss das erforderliche Clientzertifikat zum Benutzerzertifikatspeicher hinzugefügt werden. Wenn Sie herausfinden möchten, ob das VPN-Plug-In eines Drittanbieters HoloLens2 unterstützt, wechseln Sie zu „Speicher“, um die VPN-App zu suchen, und überprüfen Sie, ob HoloLens als unterstütztes Gerät aufgeführt ist und ob die App auf der Seite „Systemanforderungen“ die ARM- oder ARM64-Architektur unterstützt. HoloLens unterstützt nur Universelle Windows-Plattform-Anwendungen für VPN von Drittanbietern.
+
+VPN ist standardmäßig nicht aktiviert, kann aber durch Öffnen der App **Einstellungen** und Navigieren zu **„Netzwerk und Internet“ –> „VPN“** manuell aktiviert werden. VPN kann durch MDM über [Einstellungen/AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn) verwaltet und über die Richtlinie [Vpnv2-csp](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp) festgelegt werden.
+Weitere Informationen zum [Konfigurieren von VPN](https://support.microsoft.com/help/20510/windows-10-connect-to-vpn) finden Sie in [diesen Handbüchern](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-guide).  
 
 ## Deaktivieren von WLAN auf HoloLens (1. Generation)
 
@@ -89,9 +92,9 @@ Melden Sie sich mit dem Gerät bei einem Unternehmens- oder Organisationskonto a
 
    Die IP-Adresse wird neben **IPv4-Adresse** angezeigt.
 
-### Mithilfe von Cortana
+### Mithilfe von Sprachbefehlen
 
-Sagen Sie „Hey Cortana, wie lautet meine IP-Adresse?” und Cortana wird Ihre IP-Adresse anzeigen und vorlesen.
+Je nach dem Build Ihres Geräts können Sie entweder mithilfe von integrierten Sprachbefehlen oder Cortana Ihre IP-Adresse anzeigen. Sprechen Sie bei Builds nach [19041.1103](hololens-release-notes.md#windows-holographic-version-2004) „Wie lautet meine IP-Adresse?“ Dann wird sie angezeigt. Sagen Sie bei früheren Builds oder HoloLens (1.Generation)„Hey Cortana, wie lautet meine IP-Adresse?”. und Cortana wird Ihre IP-Adresse anzeigen und vorlesen.
 
 ### Mithilfe des Windows-Geräteportals
 
