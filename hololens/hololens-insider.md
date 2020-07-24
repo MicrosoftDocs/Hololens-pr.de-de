@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 4f09a383f20c5c4f2d21ee9367a1b3c5afd62f9f
-ms.sourcegitcommit: c0c8b57bb03a2fc724c051ad42ea5a3fb911ba71
+ms.openlocfilehash: 7eaa08b7d88cac1841573b08d492f6b66b599c37
+ms.sourcegitcommit: bde0c2035638ba48f64ac05ed18595a907a05c6a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "10894064"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "10894604"
 ---
 # Insider-Vorschau für Microsoft HoloLens
 
@@ -39,8 +39,8 @@ Wenn Sie nach einem Feature suchen, das hier nicht mehr aufgeführt ist, ist es 
 
 Wir werden diese Seite erneut mit neuen Features aktualisieren, während wir Sie für Windows-Insider-Builds freigeben.
 
-| Feature                                         | Beschreibung                                                                                   | Verfügbar in Insider-Builds |
-|-------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
+|                     Feature                     |                                          Beschreibung                                          | Verfügbar in Insider-Builds |
+|:-----------------------------------------------:|:---------------------------------------------------------------------------------------------:|:---------------------------:|
 | Unterstützung der automatischen Augen Position                       | Sucht aktiv nach Augen Positionen und ermöglicht eine exakte Hologramm-Positionierung.                       | 19041.1339 +                 |
 | Global zugewiesener Zugriff                          | Konfigurieren Sie das HoloLens 2-Gerät für den Multi-App-Kioskmodus, der auf Systemebene anwendbar ist.  | 19041.1346 +                 |
 | Automatisches Starten einer APP im Multi-App-Kiosk           | Legt fest, dass eine Anwendung beim Anmelden in einem Kioskmodus mit mehreren Apps automatisch gestartet wird. | 19041.1346 +                 |
@@ -49,6 +49,7 @@ Wir werden diese Seite erneut mit neuen Features aktualisieren, während wir Sie
 | Neue Richtlinien für Geräteeinschränkungen für HoloLens 2  | Für HoloLens 2 aktivierte Geräteverwaltungsrichtlinien neu aktiviert.                              | 19041.1349 +                 |
 | Sichtbarkeits Seite für aktivierte Einstellungen für HoloLens 2 | Richtlinie, um auszuwählen, welche Seiten in der Einstellungs-APP angezeigt werden.                                          | 19041.1349 +                 |
 | HoloLens-Richtlinien                               | Neue Richtlinien für Mixed-Reality-Geräte.                                                       | 19041.1349 +                 |
+| Update Richtlinien                                 | Neu aktivierte Richtlinien, die die Steuerung von Updates ermöglichen.                                           | 19041.1352 +                 |
 
 ### Unterstützung der automatischen Augen Position
 
@@ -133,6 +134,12 @@ Neue Mixed-Reality-Richtlinien wurden für HoloLens 2-Geräte auf Builds 19041.1
 |     MixedReality\MicrophoneDisabled       |     Deaktiviert das Mikrofon, damit auf HoloLens 2 keine Audioaufnahme möglich ist.                   |     1 ja, 0 Nein (Standard)                                                |
 |     MixedReality\FallbackDiagnostics      |     Steuert das Verhalten, wenn Diagnoseprotokolle erfasst werden können.                            |     0 deaktiviert, 1 für Gerätebesitzer aktiviert, 2 für alle aktiviert (Standard) |
 |     MixedReality\HeadTrackingMode         |     Für die spätere Verwendung reserviert.                                                               |                                                                          |
+### Neu aktivierte Update Richtlinien für HoloLens
+Diese Update Richtlinien sind jetzt auf HoloLens 2-Geräten aktiviert:
+-   [Update-ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)
+-   [Update-ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange)
+-   [Update-ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)
+-   [Update-SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)
 
 ## Beginnen Sie, Insider-Builds zu erhalten
 
