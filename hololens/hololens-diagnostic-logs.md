@@ -1,5 +1,5 @@
 ---
-title: Sammeln und Verwenden von Diagnoseinformationen von HoloLens-Geräten
+title: Sammeln und nutzen von Diagnoseinformationen von HoloLens-Geräten
 description: ''
 author: Teresa-Motiv
 ms.author: v-tea
@@ -18,14 +18,14 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f11128c66845f0e062a006855fd75ca66ffc4e5e
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 4c17ac2bf68076978c233db2f2b7156fee447f01
+ms.sourcegitcommit: 5d38af8d17dfcc028e7e0b2bb888c6c9d1e40524
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828403"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "10899168"
 ---
-# Sammeln und Verwenden von Diagnoseinformationen von HoloLens-Geräten
+# Sammeln und nutzen von Diagnoseinformationen von HoloLens-Geräten
 
 HoloLens-Benutzer und-Administratoren können unter vier verschiedenen Methoden auswählen, um Diagnoseinformationen von HoloLens zu sammeln:
 
@@ -43,6 +43,7 @@ In der folgenden Tabelle werden die drei sammlungsmethoden verglichen. Die Metho
 |[Feedback-Hub](#feedback-hub) |Netzwerk-und Internetverbindung<br /><br />Feedback-Hub-App<br /><br />Berechtigung zum Hochladen von Dateien in die Microsoft-Cloud |Microsoft-Cloud<br /><br />HoloLens-Gerät (optional) |Der Benutzer bittet um Unterstützung, akzeptiert die Nutzungsbedingungen und lädt die Daten hoch<br /><br />Die Daten werden von Microsoft-Mitarbeitern im Einklang mit den Nutzungsbestimmungen angezeigt. |Daten in der Cloud werden für den Zeitraum beibehalten, der durch den Datenschutz der nächsten Generation (NGP) definiert ist. Dann werden die Daten automatisch gelöscht.<br /><br />Daten auf dem Gerät können jederzeit von einem Benutzer gelöscht werden, der über **Gerätebesitzer** oder **Administrator** Berechtigungen verfügt. |
 |[Einstellungen-Problembehandlung](#settings-troubleshooter) |Einstellungs-App |HoloLens-Gerät<br /><br />Verbundener Computer (optional) |Der Benutzer speichert die Daten, und nur der Benutzer greift auf die Daten zu (es sei denn, der Benutzer hat die Daten ausdrücklich mit einem anderen Benutzer geteilt). |Die Daten werden beibehalten, bis der Benutzer Sie löscht. * |
 |[DiagnosticLog-Konfigurationsdienstanbieter](#diagnosticlog-csp) |Netzwerkverbindung<br /><br />MDM-Umgebung, die den DiagnosticLog-CSP unterstützt |Der Administrator konfiguriert Speicherorte |In der verwalteten Umgebung stimmt der Benutzer implizit dem Administratorzugriff auf die Daten zu.<br /><br />Der Administrator konfiguriert Zugriffsrollen und Berechtigungen. | Der Administrator konfiguriert die Aufbewahrungsrichtlinie. |
+|[Offline Diagnose](#offline-diagnostics) |Gerätekonfiguration:<ul><li>Eingeschaltet und mit Computer verbunden</li><li>Power-und Lautstärketasten funktionieren</li></ul> |HoloLens-Gerät<br /><br />Verbundener Computer |Der Benutzer speichert die Daten, und nur der Benutzer greift auf die Daten zu (es sei denn, der Benutzer hat die Daten ausdrücklich mit einem anderen Benutzer geteilt). |Die Daten werden beibehalten, bis der Benutzer Sie löscht. | 
 
 
 -   Der Endbenutzer ist dafür verantwortlich, die Protokolle verantwortungsbewusst mit einer anderen Person zu teilen. Diese Dateien sind in erster Linie hilfreich, wenn Sie sich mit dem Kundendienst und-Support in Verbindung setzen.  
@@ -116,4 +117,22 @@ Der IT-Administrator verwendet den DiagnosticLog-CSP zum Konfigurieren der Daten
 - Der Aufbewahrungszeitraum für die Diagnoseinformationen.
 - Berechtigungen, die den Zugriff auf die Diagnoseinformationen steuern.
 
+## Offline Diagnose
+In Situationen, in denen das Gerät keine Diagnose über den Feedback-Hub oder die Einstellungsproblem Behandlung sammeln kann, können Sie die Diagnose manuell sammeln. Ein Szenario, in dem dies erforderlich ist, ist, wenn das Gerät keine WLAN-Verbindung herstellen kann. Die Diagnose sammelt Absturzabbilder und-Protokolle vom Gerät, die einem Microsoft-Supporttechniker helfen, Probleme zu isolieren.
+
+Dies funktioniert, wenn das Gerät im Datei-Explorer angezeigt wird, nachdem es über ein USB-Kabel mit einem PC verbunden wurde. 
+
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Gathering-Diagnostic-Files-on-HoloLens2/player]
+
+Führen Sie die folgenden Schritte aus, um Diagnosen zu sammeln:
+1.  Schließen Sie das Gerät mit einem USB-Kabel an Ihren PC an.
+2.  Navigieren Sie im Datei-Explorer auf Ihrem PC zu **"dieser PC- \<hololens-device> \Internal-Speicher"**.
+3.  Wenn der **interne Speicher** Ordner nicht angezeigt wird, wartet das Gerät darauf, dass sich ein Benutzer anmeldet. Wenn Sie die Einschalttaste 10 Sekunden lang gedrückt halten, sollten Sie sich entweder anmelden oder das Gerät in den Stromkreis schalten.
+4.  Drücken Sie die **Einschalt** Taste, und lassen Sie Sie gleichzeitig wieder los.
+5.  Warten Sie eine Minute, bis das Gerät die ZIP-Archive vorbereitet hat.
+6.  Aktualisieren Sie den Datei-Explorer, und navigieren Sie zum Ordner **"\Dokumente"** .
+7.  Kopieren Sie die ZIP-Diagnosedateien, und geben Sie Sie für das Microsoft-Support Team frei.
+
+Beachten Sie, dass einige der ZIP-Diagnosedateien personenbezogene Informationen enthalten können.
 
