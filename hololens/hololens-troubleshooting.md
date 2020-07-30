@@ -13,11 +13,12 @@ manager: jarrettr
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: 15998fe11de1e7be4f12087a2724bec7e22337b0
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: e00226852f92cf5b3137d8d41cfde0f01394f5bc
+ms.sourcegitcommit: 7c16570839893f4a4432286b13ae6d84c665d376
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857743"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "10902290"
 ---
 # Problembehandlung
 
@@ -45,13 +46,15 @@ Wenn Ihre Hologramme instabil, nervös oder nicht richtig aussehen, probieren Si
 - Sie können Ihre Umgebung erkunden, damit HoloLens Sie vollständiger Scannen kann.
 - Kalibrieren Ihres HoloLens für Ihre Augen. Wechseln Sie zu **Einstellungen**  >  **System**  >  **Dienstprogramme**. Wählen Sie unter **Kalibrierung** die Option **Kalibrierung öffnen** aus.
 
-## HoloLens reagiert nicht auf Gesten
+## HoloLens reagiert nicht auf Hand Eingaben
 
-Um sicherzustellen, dass HoloLens ihre Gesten sehen kann.  Halten Sie Ihre Hand im Gesten Rahmen, wenn HoloLens Ihre Hand sehen kann, ändert sich der Cursor von einem Punkt in einen Ring.
+Um sicherzustellen, dass HoloLens Ihre Hände sehen kann, müssen Sie Sie im Gesten Rahmen behalten.  Das Mixed Reality Home bietet Feedback, mit dem Sie wissen, wann Ihre Hände verfolgt werden.  Das Feedback unterscheidet sich von verschiedenen Versionen von HoloLens:
+- Auf HoloLens (1st Gen) wechselt der Blick Cursor von einem Punkt zu einem Ring
+- Auf HoloLens 2 erscheint ein Fingerspitzen-Cursor, wenn sich die Hand in der Nähe eines Schiefer Blatts befindet, und ein Hand Strahl erscheint, wenn Schiefer weiter entfernt sind.
 
-Weitere Informationen finden Sie unter Verwenden von Gesten in [HoloLens (1st Gen)](hololens1-basic-usage.md#use-hololens-with-your-hands) oder [HoloLens 2](hololens2-basic-usage.md#the-hand-tracking-frame).
+Viele immersive apps folgen Eingabe Mustern, die der Mixed-Reality-Startseite ähneln.  Weitere Informationen finden Sie unter Verwenden der Handeingabe auf [HoloLens (1st Gen)](hololens1-basic-usage.md#use-hololens-with-your-hands) und [HoloLens 2](hololens2-basic-usage.md#the-hand-tracking-frame).
 
-Wenn Ihre Umgebung zu dunkel ist, kann HoloLens möglicherweise nicht Ihre Hand sehen, stellen Sie also sicher, dass genügend Licht vorhanden ist.
+Wenn Sie Handschuhe tragen, beachten Sie, dass einige Arten von Handschuhen nicht mit der Hand Nachverfolgung funktionieren.  Ein typisches Beispiel sind schwarze Gummihandschuhe, die eher Infrarotlicht absorbieren und nicht von der tiefen Kamera aufgenommen werden.  Wenn Ihre Arbeit Gummihandschuhe umfasst, empfehlen wir, eine hellere Farbe wie blau oder grau zu versuchen.  Ein weiteres Beispiel sind große Baggy-Handschuhe, die dazu neigen, die Form ihrer Hand zu verdecken. Wir empfehlen, Handschuhe zu verwenden, die so formschlüssig wie möglich sind, um optimale Ergebnisse zu erzielen.
 
 Wenn ihr Visier Fingerabdrücke oder Flecken hat, verwenden Sie das mit dem HoloLens gelieferte Microfaser-Reinigungstuch, um ihr Visier schonend zu reinigen.
 
