@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: a52e8e5bae49973d92efa6ea75391dc44d8b8ddb
-ms.sourcegitcommit: 357094acfd39f7c59a0a62f1dd7918b58c209ef7
+ms.openlocfilehash: de53f8f2cccfe3ece8900c88c5379adf2fb55a7b
+ms.sourcegitcommit: 5d38af8d17dfcc028e7e0b2bb888c6c9d1e40524
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "10861160"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "10899178"
 ---
 # HoloLens (1. Generation) neustarten, zurücksetzen oder wiederherstellen
 
@@ -91,7 +91,7 @@ Wenn nach dem Neustart Ihres HoloLens weiterhin Probleme auftreten, versuchen Si
 
 Wenn Sie Ihr Gerät zurücksetzen, werden alle Ihre persönlichen Daten, Apps und Einstellungen gelöscht, einschließlich der TPM-Zurücksetzung. Durch das Zurücksetzen wird nur die neueste installierte Version von Windows Holographic installiert. Sie müssen alle Initialisierungsschritte (kalibrieren, Verbindung mit Wi-Fi, Erstellen eines Benutzerkontos, Herunterladen von Apps usw.) wiederholen.
 
-1. Starten Sie die App "Einstellungen", und wählen Sie dann **Update** > **Zurücksetzen**aus.
+1. Starten Sie die App „Einstellungen“, und wählen Sie **Update** > **Wiederherstellung**aus.
 1. Wählen Sie die Option **Gerät zurücksetzen** aus, und lesen Sie die Bestätigungsmeldung.
 1. Wenn Sie Ihr Gerät zurücksetzen, wird das Gerät neu gestartet, und es wird eine Reihe von rotierenden Gängen mit einer Statusanzeige angezeigt.
 1. Warten Sie etwa 30 Minuten, bis dieser Vorgang durchgeführt wird.

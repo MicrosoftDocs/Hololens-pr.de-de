@@ -14,12 +14,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2f2c8afffdc24eedf9cb6b462448f5ed6ffc8d5d
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: a4a5478f396dff9eef84540286e0fa9672172076
+ms.sourcegitcommit: 9197b9d507d8b9b195bdf512d1b832888b53162d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828128"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "10899097"
 ---
 # Verbessern der Grafikqualität und des Komforts
 
@@ -89,6 +89,8 @@ Wenn die Kalibrierung nicht erfolgreich ist, versuchen Sie Folgendes:
 - Schalten Sie Licht in Ihrem Zimmer ein oder weichen Sie direktem Sonnenlicht aus
 
 Wenn Sie alle Richtlinien befolgt haben und die Kalibrierung weiterhin fehlschlägt, können Sie die Eingabeaufforderung zur Kalibrierung unter Einstellungen deaktivieren. Bitte teilen Sie uns auch im [Feedback-Hub](hololens-feedback.md) Ihre Meinung mit.
+
+Lesen Sie auch die entsprechenden Informationen zur [Problembehandlung bei Bildfarbe oder Helligkeit](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right).
 
 Beachten Sie, dass das Einstellen des IPD für HoloLens 2 nicht anwendbar ist, da die Augenpositionen vom System berechnet werden. 
 

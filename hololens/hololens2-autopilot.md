@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: Autopilot
 manager: jarrettr
-ms.openlocfilehash: 8f62c09fd569e6c5dbeb961ae023c6f3cefff879
-ms.sourcegitcommit: 72be5b64e90dde339323012997440dfaca182027
+ms.openlocfilehash: 33463685818c3e864c698160776c76ec7d8cbefd
+ms.sourcegitcommit: 9197b9d507d8b9b195bdf512d1b832888b53162d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "10895789"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "10899107"
 ---
 # Windows Autopilot für HoloLens 2
 
@@ -68,7 +68,7 @@ Befolgen Sie die nachstehenden Schritte, um Ihre Umgebung für die private Vorsc
 
 - Sie müssen das neueste Betriebssystem (Windows Holographic Version 2004,Build 19041.1103 oder höher) mithilfe von [Advanced Recovery Companion (ARC)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab) manuell installieren. Anweisungen finden Sie [hier](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device). 
 - Ihre Geräte müssen bei Windows Autopilot registriert werden. Informationen zum Registrieren von Geräten finden Sie unter [4. Registrieren von Geräten bei Windows Autopilot](#4-register-devices-in-windows-autopilot). 
-- Im aktuellen Release müssen die Geräte mit dem Internet verbunden werden, bevor HoloLens eingeschaltet und der Autopilot-Bereitstellungsprozess initiiert wird. Verbinden Sie Ihr Gerät mit dem Ethernet, indem Sie den "USB-C auf Ethernet"-Adapter für eine kabelgebundene Internetverbindung oder den "USB C auf WLAN"-Adapter für eine drahtlose Internetverbindung verwenden. 
+- Im aktuellen Release müssen die Geräte mit dem Internet verbunden werden, bevor HoloLens eingeschaltet und der Autopilot-Bereitstellungsprozess initiiert wird. Verbinden Sie Ihr Gerät mit Ethernet über einen „USB-C zu Ethernet“-Adapter für drahtgebundene Internetkonnektivität. 
 - Die Geräte sind noch keine Mitglieder von Azure AD und noch nicht bei Intune (oder einem anderen MDM-System) registriert. Der Self-Deployment-Prozess für Autopilot rundet führt diese Schritte aus. Um sicherzustellen, dass alle gerätebezogenen Informationen bereinigt werden, überprüfen Sie die **Geräte**-Seiten in Azure AD und den Intune-Portalen.
 - Wenn Sie die Self-Deployment-Modus-Profile von Autopilot konfigurieren und verwalten möchten, stellen Sie sicher, dass Sie Zugriff auf [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com) haben.
 
