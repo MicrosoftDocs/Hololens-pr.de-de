@@ -14,12 +14,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 054c4ded7496957671c055e3161a1297de7abc1a
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 1dd6c2e6cde980b86ac810f82d27b3b88f20f336
+ms.sourcegitcommit: 7edbb99e0972d3d857e5e87c062c3c64cacc1f41
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828096"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "10903221"
 ---
 # Registrieren von HoloLens in MDM
 
@@ -31,6 +31,21 @@ Sie können mehrere Microsoft HoloLens-Geräte gleichzeitig mit Lösungen wie [M
 ## Anforderungen
 
  Für Ihre Organisation muss die Mobile Device Management (MDM) eingerichtet sein, um HoloLens-Geräte verwalten zu können. Ihr MDM-Anbieter kann Microsoft Intune oder ein Drittanbieter sein, der die Microsoft-MDM-APIs verwendet.
+ 
+## Verschiedene Methoden zum Registrieren
+
+Je nach dem Typ der Identität, die während der OOBE oder der Post Anmeldung ausgewählt wurde, gibt es verschiedene Methoden für die Registrierung. Wenn Sie mehr über die einzelnen Identitätstypen auf HoloLens erfahren möchten, besuchen Sie bitte [Diese Seite](hololens-identity.md).
+
+- Wenn Identity Aad ist, wählen Sie entweder während der OOBE-oder **Einstellungen-App**  ->  **Access work oder School**  ->  **Connect** .
+    - Bei Aad erfolgt die automatische MDM-Registrierung nur, wenn Aad mit Registrierungs-URLs konfiguriert wurde.
+- Wenn Identity Aad ist und Device für den InTune-MDM-Server mit einem bestimmten Konfigurationsprofil bereits registriert wurde, werden Aad-Join und die Registrierung automatisch während OOBE ausgeführt.
+    - Auch als [Autopilot-Flow](hololens2-autopilot.md) verfügbar, der in [19041.1103 +-Builds](hololens-release-notes.md#windows-holographic-version-2004)verfügbar ist.
+- Wenn Identity MSA ist, verwenden Sie die **Einstellungen App**  ->  **Access work oder School**  ->  **Connect** .
+    - Wird auch als Add work Account (AWA)-Flow bezeichnet.
+- Wenn Identität ein lokaler Benutzer ist, verwenden Sie die **Einstellungen App**  ->  **Access work oder School**  ->  **nur registrieren in Device Management** Link.
+    - Wird auch als reiner MDM-Registrierungs Fluss bezeichnet.
+
+Nachdem das Gerät für Ihren MDM-Server registriert wurde, wird in der Einstellungs-APP nun wiedergespiegelt, dass das Gerät für die Geräteverwaltung registriert ist.
 
 ## Automatische Registrierung in MDM
 
@@ -38,16 +53,6 @@ Wenn Ihre Organisation Azure Active Directory (Azure AD) und eine MDM-Lösung ve
 
 Wenn die automatische Registrierung aktiviert ist, ist keine zusätzliche manuelle Registrierung erforderlich. Wenn der Benutzer sich mit einem Azure AD-Konto anmeldet, wird das Gerät nach der ersten Ausführung in MDM registriert.
 
-## Registrieren über die Einstellungs-App
-
- Wenn das Gerät während der ersten Ausführung nicht in MDM registriert wird, kann der Benutzer das Gerät mithilfe der Einstellungs-App manuell bei dem MDM-Server der Organisation registrieren.
-
-1. Wechseln Sie zu **Einstellungen** > **Konten** > **Arbeitsplatzzugriff**.
-1. Wählen Sie **Für Verwaltungsdienst registrieren**, und geben Sie Ihr Organisationskonto ein. Sie werden zur Anmeldeseite Ihrer Organisation weitergeleitet.
-1. Bei erfolgreicher Authentifizierung bei dem MDM-Server wird eine entsprechende Meldung angezeigt.
-
-Ihr Gerät ist jetzt bei Ihrem MDM-Server registriert. Die Einstellungs-App wird jetzt anzeigen, dass das Gerät in der Geräteverwaltung registriert ist.
-
 ## Abmelden von HoloLens aus InTune
 
-Sie können HoloLens dezentral von Intune [entfernen](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows). Wenn der Administrator das Gerät mithilfe der MDM-Registrierung entfernt, wird das Gerät aus dem Intune-Dashboard entfernt.
+Weitere Informationen zur Registrierung eines Geräts finden Sie auf [dieser Seite](https://docs.microsoft.com/windows/client-management/mdm/disconnecting-from-mdm-unenrollment). 

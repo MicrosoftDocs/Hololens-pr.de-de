@@ -11,12 +11,12 @@ manager: jarrettr
 ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 042856de2b89395fa0168d90515a7700298087f1
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 9a20a2ddd52c08a2b44dad452aac07ad9e69de85
+ms.sourcegitcommit: 7edbb99e0972d3d857e5e87c062c3c64cacc1f41
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829469"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "10903231"
 ---
 # Einrichten von HoloLens (1. Generation)
 
@@ -48,12 +48,12 @@ Wenn Sie Ihre HoloLens zum ersten Mal starten, müssen Sie auf Ihrem Gerät zun�
 1. Stellen Sie eine Verbindung zum Internet her (HoloLens hilft Ihnen bei der Auswahl des WLAN-Netzwerks).
 
 1. Melden Sie sich bei Ihrem Benutzerkonto an. Wählen Sie entweder [Es gehört] **Meinem Arbeitgeber oder meiner Bildungseinrichtung** oder **Mir** aus.
-    - Wenn Sie " **Meinem Arbeitgeber oder Bildungseinrichtung** auswählen, können Sie sich mit einem Azure AD-Konto anmelden. Wenn Ihr Unternehmen Azure AD Premium verwendet und die automatische MDM-Registrierung konfiguriert wurde, wird HoloLens automatisch in MDM registriert. Wenn Ihr Unternehmen kein Azure AD Premium verwendet, ist die automatische MDM-Registrierung nicht verfügbar. In diesem Fall müssen Sie [HoloLens über die Geräteverwaltung manuell registrieren](hololens-enroll-mdm.md#enroll-through-settings-app). Führen Sie die folgenden Schritte aus, um sich bei Ihrem Gerät zum ersten Mal mit einem Geschäfts-oder Schulkonto anzumelden:
+    - Wenn Sie " **Meinem Arbeitgeber oder Bildungseinrichtung** auswählen, können Sie sich mit einem Azure AD-Konto anmelden. Wenn Ihr Unternehmen Azure AD Premium verwendet und die automatische MDM-Registrierung konfiguriert wurde, wird HoloLens automatisch in MDM registriert. Wenn Ihr Unternehmen kein Azure AD Premium verwendet, ist die automatische MDM-Registrierung nicht verfügbar. In diesem Fall müssen Sie [HoloLens über die Geräteverwaltung manuell registrieren](hololens-enroll-mdm.md#different-ways-to-enroll). Führen Sie die folgenden Schritte aus, um sich bei Ihrem Gerät zum ersten Mal mit einem Geschäfts-oder Schulkonto anzumelden:
         1. Geben Sie Ihre Unternehmenskontodaten ein.
         1. Akzeptieren Sie die Datenschutzbestimmungen.
         1. Melden Sie sich mit Ihren Azure AD-Anmeldeinformationen an. Hier werden Sie möglicherweise auf die Anmeldeseite Ihres Unternehmens umgeleitet.
         1. Setzen Sie die Einrichtung des Geräts fort.
-    - Wenn Sie die Option **Mir** auswählen, können Sie sich mit einem Microsoft-Konto anmelden. Nach Abschluss der Installation können Sie [HoloLens manuell in der Geräteverwaltung registrieren](hololens-enroll-mdm.md#enroll-through-settings-app).
+    - Wenn Sie die Option **Mir** auswählen, können Sie sich mit einem Microsoft-Konto anmelden. Nach Abschluss der Installation können Sie [HoloLens manuell in der Geräteverwaltung registrieren](hololens-enroll-mdm.md#different-ways-to-enroll).
         1. Geben Sie Ihre Microsoft-Kontoinformationen ein.
         1. Geben Sie Ihr Kennwort ein. Wenn für Ihr Microsoft-Konto [eine Überprüfung in zwei Schritten (2FA)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/) erforderlich ist, schließen Sie den entsprechenden Prozess ab.
 
