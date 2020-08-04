@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 477693dd0d4a3ce63bfe29df166e171b9292aea4
-ms.sourcegitcommit: c0c8b57bb03a2fc724c051ad42ea5a3fb911ba71
+ms.openlocfilehash: 5b1df54ea5112109a175f6d7172635042262ca14
+ms.sourcegitcommit: e85a55c110e729a4836b8a59aa29d786c74ed6bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "10894051"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "10903330"
 ---
 # HoloLens 2-Hardware
 
@@ -144,6 +144,23 @@ Um den Prozentsatz der internen Akkuladedauer beizubehalten bzw. zu verbessern, 
 
 ### Rechtliche Informationen
 [Rechtliche Informationen zu HoloLens](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): Enthält Informationen zu Temperatur, Entsorgung, Funk- und TV-Interferenzen und vielem mehr.
+
+## Paketmaße
+
+|      Messwert               |      Metrische Einheiten für das Gerät     |      Imperiale Einheiten für das Gerät     |
+|--------------------------------|-----------------------|-------------------------|
+|     Länge des Geräts                |     378,97 mm          |     14,92 Zoll       |
+|     Breite des Geräts                 |     247,90 mm          |     9,76 Zoll        |
+|     Tiefe des Geräts                 |     163,07 mm          |     6,42 Zoll        |
+|     Gewicht des Geräts                |     2,88 kg           |     6,34 lbs           |
+|     Länge der Umverpackung    |     446,00 mm          |     17,56 Zoll       |
+|     Breite der Umverpackung     |     257,99 mm          |     10,16 Zoll       |
+|     Tiefe der Umverpackung     |     172,01 mm          |     6,77 Zoll        |
+|     Gewicht der Umverpackung    |     3,28 kg           |     7,24 lbs           |
+
+Hinweise:
+- Gerät: Die HoloLens 2 wird in einer schwarzen Box im Einzelhandelsstil verkauft.
+- Umverpackung: Die schützende Versandverpackung des Geräts.
 
 ## Nächster Schritt
 
