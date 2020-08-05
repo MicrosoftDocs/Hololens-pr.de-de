@@ -13,12 +13,12 @@ manager: jarrettr
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: e00226852f92cf5b3137d8d41cfde0f01394f5bc
-ms.sourcegitcommit: 7c16570839893f4a4432286b13ae6d84c665d376
+ms.openlocfilehash: 469848cf306675fcfb99247b5c91b159c204a5fe
+ms.sourcegitcommit: 2122490074adb7f63edfc3576441980caa22695f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "10902290"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "10915944"
 ---
 # Problembehandlung
 
@@ -28,7 +28,7 @@ In diesem Artikel wird beschrieben, wie Sie mehrere häufige HoloLens-Probleme b
 
 Wenn Ihr HoloLens nicht gestartet wird:
 
-- Wenn die LEDs neben dem Netzschalter nicht leuchten oder nur eine LED blinkt, müssen Sie möglicherweise [Ihr HoloLens aufladen.](hololens-recovery.md#charging-the-device)
+- Wenn die LEDs neben dem Netzschalter nicht leuchten oder nur eine LED blinkt, müssen Sie möglicherweise [Ihr HoloLens aufladen.](hololens-recovery.md#charge-the-device)
 - Wenn die LEDs leuchten, wenn Sie die Power-Taste drücken, aber auf den Displays nichts angezeigt wird, stellen Sie [ein Hard-Reset des Geräts](hololens-recovery.md#hard-reset-procedure)vor.
 
 Wenn Ihr HoloLens eingefroren ist oder nicht mehr reagiert:
