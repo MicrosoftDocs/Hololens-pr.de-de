@@ -1,7 +1,7 @@
 ---
 title: Vorbereiten einer neuen HoloLens 2
 description: Diese Anleitung führt Sie durch die erstmalige Einrichtung sowie durch die Hardware-Anleitung.
-keywords: hololens
+keywords: HoloLens, Anzeigeleuchten, Passung, Teile
 ms.assetid: 02692dcf-aa22-4d1e-bd00-f89f51048e32
 ms.date: 9/17/2019
 ms.prod: hololens
@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b8803183382e3235c540c3bc175277ffdc7d04f2
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 943cc5af8f5be337a9cfcc0d3e4a4640aa307e72
+ms.sourcegitcommit: 14c30f412cd17058d0316444215f878ba1ee422f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828367"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "10905622"
 ---
 # Einrichten Ihrer HoloLens 2 für die Verwendung
 
@@ -119,6 +119,8 @@ Verwenden Sie Ihre HoloLens in einem sicheren Raum, der frei von Hindernissen un
 ### Bequem bleiben
 
 Halten Sie Ihre ersten Sitzungen mit HoloLens kurz und legen Sie unbedingt Pausen ein. Wenn Sie Beschwerden haben, hören Sie auf und ruhen Sie sich aus, bis Sie sich besser fühlen. Dies kann vorübergehende Gefühle von Übelkeit, Reisekrankheit, Schwindel, Orientierungslosigkeit, Kopfschmerz, Ermüdung, Überanstrengung der Augen oder trockenen Augen umfassen.
+
+Weitere Informationen hierzu finden Sie unter [Warnungen und Anweisungen zur Produktsicherheit](https://support.microsoft.com/help/4558037/product-safety-warnings-and-instructions).
 
 > [!div class="nextstepaction"]
 > [Starten und Konfigurieren Ihrer HoloLens 2](hololens2-start.md)
