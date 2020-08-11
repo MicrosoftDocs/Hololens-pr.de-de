@@ -1,7 +1,7 @@
 ---
 title: Suchen und Speichern von Dateien auf HoloLens
 description: Verwenden des Datei-Explorers auf HoloLens zum Anzeigen und Verwalten von Dateien auf Ihrem Gerät
-keywords: hololens
+keywords: Vorgehensweise, Dateiauswahl, Dateien, Fotos, Videos, Bilder, OneDrive, Speicher, Datei-Explorer, hololens
 ms.assetid: 77d2e357-f65f-43c8-b62f-6cd9bf37070a
 author: mattzmsft
 ms.author: mazeller
@@ -16,14 +16,14 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 50a13e1634344bea66bb6b7ce90d9e3fc8c2a783
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: fb3287f0a074eddeac0c7ee2871e289b93eafcac
+ms.sourcegitcommit: 8b56f4b9b5f9c928fc361f18efcbea729055a0b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828041"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "10919122"
 ---
-# Suchen, öffnen und Speichern von Dateien auf HoloLens
+# Suchen, Öffnen und Speichern von Dateien mit HoloLens
 
 Dateien, die Sie auf HoloLens erstellen, einschließlich Fotos und Videos, werden direkt auf Ihrem HoloLens-Gerät gespeichert. Sie können Sie auf die gleiche Weise anzeigen und verwalten, wie Sie Dateien unter Windows 10 verwalten würden:
 
