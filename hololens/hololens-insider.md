@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5394e56882c0847333186cbbe25670231293ba4f
-ms.sourcegitcommit: 8b56f4b9b5f9c928fc361f18efcbea729055a0b2
+ms.openlocfilehash: 3a9f44c6210dd6a60b0ee60cf42ab068bac7ebc8
+ms.sourcegitcommit: 763896af822b247ee8ee981c2dec3b1abf61bf6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "10919146"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "10924247"
 ---
 # Insider-Vorschau für Microsoft HoloLens
 
@@ -43,6 +43,7 @@ Wir werden diese Seite erneut mit neuen Features aktualisieren, während wir Sie
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
 | Unterstützung der automatischen Augen Position                            | Sucht aktiv nach Augen Positionen und ermöglicht eine exakte Hologramm-Positionierung.                       | 19041.1339 +                 |
 | Zertifikatanzeige                                   | Zeigen Sie Benutzer-und Gerätezertifikate in der Einstellungs-APP an.                                        | 19041.1346 +                 |
+| Wi-Fi-Verbindung und Verwendung von Autopilot                 | Verwenden Sie Autopilot vom Gerät Wi-Fi ohne Ethernet-Adapter.                            | 19041.1364 +                 |
 | HoloLens-Richtlinien                                    | Neue Richtlinien für Mixed-Reality-Geräte.                                                       | 19041.1349 +                 |
 | Cache-Aad-Gruppenmitgliedschaft für Offline-Kiosk         | Richtlinie für die Anzahl der Tage, an denen der Aad-Gruppen Mitgliedschafts Cache für den Kiosk Modus verwendet werden darf.     | 19041.1356 +                 |
 | Neue Richtlinien für Geräteeinschränkungen für HoloLens 2       | Für HoloLens 2 aktivierte Geräteverwaltungsrichtlinien neu aktiviert.                              | 19041.1349 +                 |
@@ -87,6 +88,9 @@ In Windows Insider Build 19041.1346 + fügen wir eine Zertifikatanzeige in der H
 Wenn Sie Zertifikate anzeigen möchten, wechseln Sie zu **Einstellungen > Update & Security >-Zertifikate**.
 
 ![Zertifikatanzeige in der Einstellungs-APP](images/hololens-certificate-viewer.png)
+
+### Wi-Fi-Verbindung und Verwendung von Autopilot
+Wenn Sie jetzt während OOBE eine Verbindung zwischen HoloLens 2 und WLAN herstellen, überprüft OOBE, ob das Gerät ein Autopilot-Profil hat. Wenn einer gefunden wird, wird er verwendet, um den restlichen Teil des Aad-Joins und-Registrierungs Flusses abzuschließen. Mit anderen Worten: die Verwendung von Ethernet-zu-USB-c-oder WiFi-zu-USB-c-Adaptern ist nicht mehr erforderlich, Sie funktionieren jedoch weiterhin, wenn Sie am Anfang von OOBE bereitgestellt werden. Weitere Informationen zu [Autopilot für HoloLens 2-Geräte](hololens2-autopilot.md).
 
 ### HoloLens-Richtlinien
 Neue Mixed-Reality-Richtlinien wurden für HoloLens 2-Geräte auf Builds 19041.1349 + erstellt. Zu den neuen steuerbaren Einstellungen gehören: Festlegen der Helligkeit, Festlegen der Lautstärke, Deaktivieren der Audioaufzeichnung in Mixed-Reality-Aufnahmen, festlegen, wann die Diagnose erfasst werden kann, und Aad-Gruppenmitgliedschaft Zwischenspeicher.  
