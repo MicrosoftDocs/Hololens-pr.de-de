@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: deddd753c22095532c1a4e3f8e896e2e881a1ad5
-ms.sourcegitcommit: 763896af822b247ee8ee981c2dec3b1abf61bf6f
+ms.openlocfilehash: 3e2bb1a6f8de93faa1a1157b3d05ff671d0b0a45
+ms.sourcegitcommit: 5799ce0f3d8f1d231823cff6c9c013ce933b8f3b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "10924257"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926328"
 ---
 # Veröffentlichungshinweise für HoloLens 2
 
@@ -35,7 +35,7 @@ Um sicherzustellen, dass Sie mit ihren HoloLens-Geräten eine produktive Erfahru
 Verbesserungen und Korrekturen im Update:
 
 - Die app "Einstellungen" folgt dem Benutzer nicht mehr in die Iris-Registrierung oder die Kalibrierung von Augen Nachverfolgung.
-- Ein Fehler wurde behoben, bei dem die Anwendung eines Bereitstellungspakets während OOBE, das das Gerät umbenennen und andere Aktionen ausführt (wie etwa das Herstellen einer Verbindung mit einem Netzwerk), die anderen Aktionen nach dem Neustart des Geräts aufgrund einer Umbenennung nicht durchführen kann.
+- Ein Fehler wurde behoben, bei dem die Anwendung eines Bereitstellungspakets während OOBE, das das Gerät umbenennen und andere Aktionen ausführt (wie etwa das Herstellen einer Verbindung mit einem Netzwerk), die anderen Aktionen nach dem Neustart des Geräts aufgrund einer Umbenennung nicht durchführen würde.
 - Geändertes Farbschema der anfänglichen Geräte Einrichtung, um die visuelle Qualität zu verbessern.
 
 ## Windows holographisch, Version 1903 – Update vom August 2020
