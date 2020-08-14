@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2b34cc642aa08adf5bb875588c9e4458df0034e1
-ms.sourcegitcommit: f3cda6c6b3bfb7ba4be5f4da66d8ed5b03ca807d
+ms.openlocfilehash: 0a2edd0c516234a433a93c0cff806153726678fd
+ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10830159"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "10929861"
 ---
 # Konfigurieren von HoloLens mithilfe eines Bereitstellungspakets
 
@@ -152,7 +152,9 @@ Wenn Sie fertig sind, wählen Sie **Erstellen**aus. Es dauert nur wenige Sekunde
 
 ## Anwenden eines Bereitstellungspakets auf HoloLens während des Setups
 
-1. Verwenden Sie das USB-Kabel, um das Gerät mit einem PC zu verbinden, und starten Sie dann das Gerät. Gehen Sie nicht über die **erste interagierende Moment** Seite von OOBE hinaus.   
+HoloLens 2-Geräte auf Build [19041,1103](hololens-release-notes.md#windows-holographic-version-2004) oder höher verwenden möglicherweise ein USB-Laufwerk, um ein Bereitstellungspaket anzuwenden. Kopieren Sie einfach die ppkg-Datei in das Stammverzeichnis des USB-Laufwerks. Bereitstellungspakete werden nur angewendet, wenn Sie sich im Stammverzeichnis des USB-Laufwerks befinden. Das vorhanden sein mehrerer Bereitstellungspakete wird sequenziell angewendet.
+
+1. Verwenden Sie das USB-Kabel, um das Gerät mit einem PC (oder einem USB-Laufwerk für HoloLens 2 wie oben beschrieben) zu verbinden, und starten Sie dann das Gerät. Gehen Sie nicht über die **erste interagierende Moment** Seite von OOBE hinaus.   
     - Auf HoloLens (1st Gen) enthält diese Seite ein blaues Feld. 
     - Auf HoloLens 2 enthält diese Seite den Kolibri.
 
@@ -162,7 +164,7 @@ Wenn Sie fertig sind, wählen Sie **Erstellen**aus. Es dauert nur wenige Sekunde
 
 4. Verschieben Sie das Bereitstellungspaket (.ppkg) im Datei-Explorer per Drag & Drop zum Gerätespeicher.
 
-5. Drücken Sie erneut die Tasten **Leiser** und **Ein/Aus** kurz gleichzeitig, während Sie sich auf der Seite **Anpassen** befinden, und geben Sie sie anschließend wieder frei.
+5. Drücken Sie kurz die **Lautstärke** Taste und die **Power** -Taste gleichzeitig wieder, während Sie sich auf der **ersten interagierenden Moment** Seite von OOBE befinden.
 
 6. Das Gerät fragt Sie, ob Sie dem Paket Vertrauen und es anwenden möchten. Bestätigen Sie, dass Sie dem Paket vertrauen.
 
@@ -171,7 +173,7 @@ Wenn Sie fertig sind, wählen Sie **Erstellen**aus. Es dauert nur wenige Sekunde
 > [!NOTE]
 > Wenn das Gerät vor August 2016 gekauft wurde, müssen Sie sich mit einem Microsoft-Konto bei dem Gerät anmelden, das neueste Betriebssystemupdate abrufen und dann das Betriebssystem zurücksetzen, um das Bereitstellungspaket anzuwenden.
 
-### 4. Anwenden eines Bereitstellungspakets auf HoloLens nach dem Setup
+### Anwenden eines Bereitstellungspakets auf HoloLens nach dem Setup
 
 > [!NOTE]
 > Diese Schritte gelten nur für Windows 10, Version 1809.

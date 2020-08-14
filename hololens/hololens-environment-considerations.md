@@ -10,12 +10,12 @@ ms.prod: hololens
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: high
-ms.openlocfilehash: 0fa147eb2b1194dacdcabff4995f5141a1b25bde
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: 2632c5bfd82feab4e21ee9c393f8c22efda28c42
+ms.sourcegitcommit: 458e07c0dcad66616fa98cfef125eb217713d89c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857853"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "10927839"
 ---
 # Umgebungsaspekte für HoloLens
 
@@ -116,6 +116,9 @@ Wenn Ihre Hologramme zittrig oder wackelig aussehen oder Sie Probleme beim Platz
 Um die Kalibrierungs-App aufzurufen, wechseln Sie zu **Einstellungen** > **System** > **Dienstprogramme**. Wählen Sie **Kalibrierung öffnen** aus, und folgen Sie den Anweisungen.
 
 Wenn ein anderer Benutzer Ihre HoloLens verwendet, sollte er zuerst die Kalibrierungs-App ausführen, damit das Gerät ordnungsgemäß eingerichtet ist.
+
+### Temperatur und Rechtliche Informationen
+[Rechtliche Informationen zu HoloLens](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): Enthält Informationen zu Temperatur, Entsorgung, Funk- und TV-Interferenzen und vielem mehr.
 
 ## Weitere Informationen
 

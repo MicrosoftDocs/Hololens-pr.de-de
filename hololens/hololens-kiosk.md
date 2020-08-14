@@ -17,11 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 7409865f63199dead1779fa183128b30445053aa
-ms.sourcegitcommit: 2b1518675b9962518e08b13c12b43b6d9827fe17
+ms.openlocfilehash: f5c45477ab33064afe30e275f8b0003bc6022eac
+ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857999"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "10929851"
 ---
 # Einrichten von HoloLens als Kiosk
 
@@ -206,7 +207,7 @@ In der folgenden Tabelle sind die Funktionen und Vorteile der einzelnen Bereitst
 | --------------------------- | ------------- | -------------------- | ---- |
 |Bereitstellen von Kiosken für einzelne apps   | Ja           | Ja                  | Ja  |
 |Bereitstellen von Multi-App-Kiosken    | Nein            | Ja                  | Ja  |
-|Nur auf lokalen Geräten bereitstellen | Ja           | Ja                  | Nein.   |
+|Nur auf lokalen Geräten bereitstellen | Ja           | Ja                  | Nein   |
 |Bereitstellen mithilfe des Entwicklermodus |Erforderlich       | Nicht erforderlich            | Nicht erforderlich   |
 |Bereitstellen mithilfe von Azure Active Directory (AAD)  | Nicht erforderlich            | Nicht erforderlich                   | Erforderlich  |
 |Automatisches Bereitstellen      | Nein            | Nein                   | Ja  |
@@ -251,7 +252,7 @@ Die nächsten Schritte unterscheiden sich je nach Art des gewünschten Kiosks. W
 
 Weitere Informationen dazu, wie Sie ein Kiosk-Konfigurationsprofil erstellen, finden Sie unter [Windows 10 und Windows holographische Geräteeinstellungen für Unternehmen, die mithilfe von InTune als dedizierter Kiosk ausgeführt](https://docs.microsoft.com/intune/configuration/kiosk-settings)werden können.
 
-### <a id="mdmconfigsingle"></a>MDM, Schritt 3 (Single-APP) &ndash; Konfigurieren der Einstellungen für einen einzelnen App-Kiosk
+### <a id="mdmconfigsingle"></a>MDM, Schritt 3 (Single-APP) &ndash;  Konfigurieren der Einstellungen für einen einzelnen App-Kiosk
 
 In diesem Abschnitt werden die Einstellungen zusammengefasst, die für einen einzelnen App-Kiosk erforderlich sind. Weitere Informationen finden Sie in den folgenden Artikeln:
 
@@ -445,7 +446,7 @@ Der Artikel "Konfigurieren der HoloLens mithilfe eines Bereitstellungspakets" en
 
 - Sie können [ein Bereitstellungspaket zunächst während des Setups auf HoloLens anwenden](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
 
-- Sie können [ein Bereitstellungspaket auch nach dem Setup auf HoloLens anwenden](hololens-provisioning.md#4-apply-a-provisioning-package-to-hololens-after-setup).
+- Sie können [ein Bereitstellungspaket auch nach dem Setup auf HoloLens anwenden](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-after-setup).
 
 ## Verwenden des Windows-Geräte Portals zum Einrichten eines Single-App-Kiosks
 
