@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cb7c60ed8a381c0ce8c7f6a28bc8274d5ea20f30
-ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.openlocfilehash: 728e0d33863a3d8b70c471c97c97a75569b7ba95
+ms.sourcegitcommit: 1221a9b33c4fcd0eb6dd9e544e85a7c58efd47df
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929875"
+ms.locfileid: "10930862"
 ---
 # Insider-Vorschau für Microsoft HoloLens
 
@@ -33,25 +33,25 @@ Wenn Sie nach einem Feature suchen, das hier nicht mehr aufgeführt ist, ist es 
 
 Wir werden diese Seite erneut mit neuen Features aktualisieren, während wir Sie für Windows-Insider-Builds freigeben.
 
-| Feature                                              | Beschreibung                                                                                   | Verfügbar in Insider-Builds |
-|------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
-| Unterstützung der automatischen Augen Position                            | Sucht aktiv nach Augen Positionen und ermöglicht eine exakte Hologramm-Positionierung.                       | 19041.1339 +                 |
-| Zertifikatanzeige                                   | Zeigen Sie Benutzer-und Gerätezertifikate in der Einstellungs-APP an.                                        | 19041.1346 +                 |
-| Installieren und Entfernen von Zertifikaten                      | Benutzer können Zertifikate mithilfe der Zertifikatanzeige installieren und entfernen.                       | 19041.1361 +                 |
-| Automatisches Starten der Bereitstellung über USB                    | OOBE erkennt automatisch Bereitstellungspakete auf USB-Laufwerken.                                 | 19041.1361 +                 |
-| Automatisches bestätigen von Bereitstellungspaketen in Oobe           | Automatisches Anwenden von Bereitstellungspaketen in Oobe                                            | 19041.1361 +                 |
-| Wi-Fi-Verbindung und Verwendung von Autopilot                 | Verwenden Sie Autopilot vom Gerät Wi-Fi ohne Ethernet-Adapter.                            | 19041.1364 +                 |
-| HoloLens-Richtlinien                                    | Neue Richtlinien für Mixed-Reality-Geräte.                                                       | 19041.1349 +                 |
-| Cache-Aad-Gruppenmitgliedschaft für Offline-Kiosk         | Richtlinie für die Anzahl der Tage, an denen der Aad-Gruppen Mitgliedschafts Cache für den Kiosk Modus verwendet werden darf.     | 19041.1356 +                 |
-| Neue Richtlinien für Geräteeinschränkungen für HoloLens 2       | Für HoloLens 2 aktivierte Geräteverwaltungsrichtlinien neu aktiviert.                              | 19041.1349 +                 |
-| Neue Energierichtlinien für HoloLens 2                    | Neu unterstützte Richtlinien für Energie Timeouteinstellungen.                                          | 19041.1349 +                 |
-| Update Richtlinien                                      | Neu aktivierte Richtlinien, die die Steuerung von Updates ermöglichen.                                           | 19041.1352 +                 |
-| Sichtbarkeits Seite für aktivierte Einstellungen für HoloLens 2      | Richtlinie, um auszuwählen, welche Seiten in der Einstellungs-APP angezeigt werden.                                          | 19041.1349 +                 |
-| Global zugewiesener Zugriff                               | Konfigurieren Sie das HoloLens 2-Gerät für den Multi-App-Kioskmodus, der auf Systemebene anwendbar ist.  | 19041.1356 +                 |
-| Automatisches Starten einer APP im Multi-App-Kiosk                | Legt fest, dass eine Anwendung beim Anmelden in einem Kioskmodus mit mehreren Apps automatisch gestartet wird. | 19041.1346 +                 |
-| Besucher-Auto Anmeldung für Kioske                        | Ermöglicht die Verwendung der automatischen Anmeldung für Besucher Konten für Kiosk Modi.                        | 19041.1361 +                 |
-| Verhaltensänderungen im Kiosk Modus zur Behandlung von Fehlern | Änderungen beim Ausfall des Kiosk Modus werden nun verarbeitet.                                             | 19041.1356 +                 |
-| Verbesserungen und Korrekturen im Update                 | Weitere Korrekturen im Update.                                                               | 19041.1361 +                 |
+| Feature                                                | Beschreibung                                                                                    | Verfügbar in Insider-Builds |
+|--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
+| [Unterstützung der automatischen Augen Position](hololens-insider.md#auto-eye-position-support)                              | Sucht aktiv nach Augen Positionen und ermöglicht eine exakte Hologramm-Positionierung.                        | 19041.1339 +                 |
+| [Zertifikatanzeige](hololens-insider.md#certificate-viewer)                                     | Zeigen Sie Benutzer-und Gerätezertifikate in der Einstellungs-APP an.                                         | 19041.1346 +                 |
+| [Installieren und Entfernen von Zertifikaten](hololens-insider.md#install-and-remove-certificates)                        | Benutzer können Zertifikate mithilfe der Zertifikatanzeige installieren und entfernen.                        | 19041.1361 +                 |
+| [Automatisches Starten der Bereitstellung über USB](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE erkennt automatisch Bereitstellungspakete auf USB-Laufwerken.                                | 19041.1361 +                 |
+| [Automatisches bestätigen von Bereitstellungspaketen in Oobe](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | Automatisches Anwenden von Bereitstellungspaketen in Oobe                                             | 19041.1361 +                 |
+| [Verwenden von Autopilot mit Wi-Fi-Verbindung](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | Verwenden Sie Autopilot vom Gerät Wi-Fi ohne Ethernet-Adapter.                             | 19041.1364 +                 |
+| [Global zugewiesener Zugriff](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | Konfigurieren Sie das HoloLens 2-Gerät für den Multi-App-Kioskmodus, der auf Systemebene anwendbar ist. | 19041.1356 +                 |
+| [Automatisches Starten einer APP im Multi-App-Kiosk](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | Legt fest, dass eine Anwendung beim Anmelden bei einem Kioskmodus mit mehreren Apps automatisch gestartet wird.     | 19041.1346 +                 |
+| [Besucher-automatische Anmeldung für Kioske](hololens-insider.md#visitor-auto-logon-for-kiosks)                          | Ermöglicht die Verwendung der automatischen Anmeldung für Besucher Konten für Kiosk Modi.                         | 19041.1361 +                 |
+| [Verhaltensänderungen im Kiosk Modus zur Behandlung von Fehlern](hololens-insider.md#kiosk-mode-behavior-changes-for-handling-of-failures) | Änderungen beim Ausfall des Kiosk Modus werden nun verarbeitet.                                              | 19041.1356 +                 |
+| [HoloLens-Richtlinien](hololens-insider.md#hololens-policies)                                      | Neue Richtlinien für Mixed-Reality-Geräte.                                                        | 19041.1349 +                 |
+| [Cache-Aad-Gruppenmitgliedschaft für Offline-Kiosk](hololens-insider.md#cache-aad-group-membership-for-offline-kiosk)           | Richtlinie für die Anzahl der Tage, an denen der Aad-Gruppen Mitgliedschafts Cache für den Kiosk Modus verwendet werden darf.    | 19041.1356 +                 |
+| [Neue Richtlinien für Geräteeinschränkungen für HoloLens 2](hololens-insider.md#new-device-restriction-policies-for-hololens-2)         | Für HoloLens 2 aktivierte Geräteverwaltungsrichtlinien neu aktiviert.                               | 19041.1349 +                 |
+| [Neue Energierichtlinien für HoloLens 2](hololens-insider.md#new-power-policies-for-hololens-2)                      | Neu unterstützte Richtlinien für Energie Timeouteinstellungen.                                           | 19041.1349 +                 |
+| [Update Richtlinien](hololens-insider.md#newly-enabled-update-policies-for-hololens)                                        | Neu aktivierte Richtlinien, die die Steuerung von Updates ermöglichen.                                            | 19041.1352 +                 |
+| [Sichtbarkeits Seite für aktivierte Einstellungen für HoloLens 2](hololens-insider.md#enabled-settings-page-visibility-for-hololens-2)        | Richtlinie, um auszuwählen, welche Seiten in der Einstellungs-APP angezeigt werden.                                           | 19041.1349 +                 |
+| [Verbesserungen und Korrekturen im Update](hololens-insider.md#improvements-and-fixes-in-the-update)                   | Weitere Korrekturen im Update.                                                                | 19041.1361 +                 |
 
 ### Unterstützung der automatischen Augen Position
 
@@ -135,8 +135,39 @@ Durch die Kombination des automatischen Starts der Bereitstellung von USB-Gerät
 
 Ihr Gerät ist jetzt konfiguriert, und der Bildschirm Bereitstellung erfolgreich wird angezeigt.
 
-### Wi-Fi-Verbindung und Verwendung von Autopilot
+### Verwenden von Autopilot mit Wi-Fi-Verbindung
 Wenn Sie jetzt während OOBE eine Verbindung zwischen HoloLens 2 und WLAN herstellen, überprüft OOBE, ob das Gerät ein Autopilot-Profil hat. Wenn einer gefunden wird, wird er verwendet, um den restlichen Teil des Aad-Joins und-Registrierungs Flusses abzuschließen. Mit anderen Worten: die Verwendung von Ethernet-zu-USB-c-oder WiFi-zu-USB-c-Adaptern ist nicht mehr erforderlich, Sie funktionieren jedoch weiterhin, wenn Sie am Anfang von OOBE bereitgestellt werden. Weitere Informationen zu [Autopilot für HoloLens 2-Geräte](hololens2-autopilot.md).
+
+### Global zugewiesener Zugriff – Kiosk Modus
+Diese neue Funktion ermöglicht es einem IT-Administrator, ein HoloLens 2-Gerät für den Multi-App-Kioskmodus zu konfigurieren, das auf Systemebene anwendbar ist, keine Affinität zu einer beliebigen Identität im System hat und für alle Personen gilt, die sich beim Gerät anmelden. Informieren Sie sich [hier](hololens-global-assigned-access-kiosk.md)ausführlich über dieses neue Feature.
+
+### Automatischer Start einer Anwendung im Kioskmodus mit mehreren apps 
+Gilt nur für den Kioskmodus mit mehreren apps, und nur 1 App kann mithilfe des hervorgehobenen Attributs unten in zugewiesener Zugriffskonfiguration automatisch gestartet werden. 
+
+Die Anwendung wird automatisch gestartet, wenn sich der Benutzer anmeldet. 
+
+```xml
+<AllowedApps>                     
+    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
+```
+
+### Besucher-Auto Anmeldung für Kioske
+Mit diesem neuen Feature können Sie die automatische Anmeldung für Besucher Konten für den Kiosk Modus verwenden. 
+
+Bei einer nicht-Aad-Konfiguration können Sie ein Gerät für Besucher Autologon konfigurieren:
+1.  Erstellen Sie ein Bereitstellungspaket, das:
+    1.  Konfiguriert **Runtime Settings/AssignedAccess** , um Besucher Konten zuzulassen.
+    1.  Registriert optional das Gerät in MDM **(Laufzeiteinstellungen/Arbeitsplatz/Anmeldungen)** , damit es später verwaltet werden kann.
+    1.  Kein lokales Konto erstellen
+1.  [Wenden Sie das Bereitstellungspaket](hololens-provisioning.md)an.
+
+Für eine Aad-Konfiguration können Benutzer heute ohne diese Änderung etwas Ähnliches erreichen. Aad-verbundene Geräte, die für den Kioskmodus konfiguriert sind, können mit einem einzigen Mausklick auf dem Anmeldebildschirm ein besucherkonto anmelden. Nachdem Sie sich bei dem besucherkonto angemeldet haben, fordert das Gerät keine erneute Anmeldung auf, bis der Besucher explizit über das Startmenü abgemeldet oder das Gerät neu gestartet wird.
+
+### Verhaltensänderungen im Kiosk Modus zur Behandlung von Fehlern
+
+Zu einem früheren Zeitpunkt, zu dem Fehler bei der Anwendung des Kioskmodus aufgetreten sind, wurden im Startmenü alle Anwendungen HoloLens angezeigt. Ab diesem Windows-Insider-Build werden im Fall von Fehlern keine apps im Startmenü wie folgt angezeigt: 
+
+![Abbildung dessen, was der Kiosk Modus jetzt sieht, wenn er fehlschlägt.](images/hololens-kiosk-failure-behavior.png )
 
 ### HoloLens-Richtlinien
 Neue Mixed-Reality-Richtlinien wurden für HoloLens 2-Geräte auf Builds 19041.1349 + erstellt. Zu den neuen steuerbaren Einstellungen gehören: Festlegen der Helligkeit, Festlegen der Lautstärke, Deaktivieren der Audioaufzeichnung in Mixed-Reality-Aufnahmen, festlegen, wann die Diagnose erfasst werden kann, und Aad-Gruppenmitgliedschaft Zwischenspeicher.  
@@ -204,37 +235,6 @@ Wir haben jetzt eine Richtlinie aktiviert, mit der IT-Administratoren entweder v
 - [PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)
  
 ![Screenshot der in der Einstellungs-APP geänderten aktiven Stunden](images/hololens-page-visibility-list.jpg)
-
-### Global zugewiesener Zugriff – Kiosk Modus
-Diese neue Funktion ermöglicht es einem IT-Administrator, ein HoloLens 2-Gerät für den Multi-App-Kioskmodus zu konfigurieren, das auf Systemebene anwendbar ist, keine Affinität zu einer beliebigen Identität im System hat und für alle Personen gilt, die sich beim Gerät anmelden. Informieren Sie sich [hier](hololens-global-assigned-access-kiosk.md)ausführlich über dieses neue Feature.
-
-### Automatischer Start einer Anwendung im Kioskmodus mit mehreren apps 
-Gilt nur für den Kioskmodus mit mehreren apps, und nur 1 App kann mithilfe des hervorgehobenen Attributs unten in zugewiesener Zugriffskonfiguration automatisch gestartet werden. 
-
-Die Anwendung wird automatisch gestartet, wenn sich der Benutzer anmeldet. 
-
-```xml
-<AllowedApps>                     
-    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
-```
-
-### Besucher-Auto Anmeldung für Kioske
-Mit diesem neuen Feature können Sie die automatische Anmeldung für Besucher Konten für den Kiosk Modus verwenden. 
-
-Bei einer nicht-Aad-Konfiguration können Sie ein Gerät für Besucher Autologon konfigurieren:
-1.  Erstellen Sie ein Bereitstellungspaket, das:
-    1.  Konfiguriert **Runtime Settings/AssignedAccess** , um Besucher Konten zuzulassen.
-    1.  Registriert optional das Gerät in MDM **(Laufzeiteinstellungen/Arbeitsplatz/Anmeldungen)** , damit es später verwaltet werden kann.
-    1.  Kein lokales Konto erstellen
-1.  [Wenden Sie das Bereitstellungspaket](hololens-provisioning.md)an.
-
-Für eine Aad-Konfiguration können Benutzer heute ohne diese Änderung etwas Ähnliches erreichen. Aad-verbundene Geräte, die für den Kioskmodus konfiguriert sind, können mit einem einzigen Mausklick auf dem Anmeldebildschirm ein besucherkonto anmelden. Nachdem Sie sich bei dem besucherkonto angemeldet haben, fordert das Gerät keine erneute Anmeldung auf, bis der Besucher explizit über das Startmenü abgemeldet oder das Gerät neu gestartet wird.
-
-### Verhaltensänderungen im Kiosk Modus zur Behandlung von Fehlern
-
-Zu einem früheren Zeitpunkt, zu dem Fehler bei der Anwendung des Kioskmodus aufgetreten sind, wurden im Startmenü alle Anwendungen HoloLens angezeigt. Ab diesem Windows-Insider-Build werden im Fall von Fehlern keine apps im Startmenü wie folgt angezeigt: 
-
-![Abbildung dessen, was der Kiosk Modus jetzt sieht, wenn er fehlschlägt.](images/hololens-kiosk-failure-behavior.png )
 
 ### Verbesserungen und Korrekturen im Update:
 - Aktualisierte Richtlinie zum Deaktivieren der Enumeration von USB-Funktionen über MDM für NCM für AllowUsbConnection.
