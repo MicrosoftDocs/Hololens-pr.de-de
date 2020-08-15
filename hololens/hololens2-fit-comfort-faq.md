@@ -13,12 +13,12 @@ ms.reviewer: jarrettr
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 594f51897502847251adcbe8c32beb0c55d71098
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 17b55ef165cbb9df47f822f742141f4460cd9c6b
+ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829410"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "10929841"
 ---
 # HoloLens2 komfortabel anpassen: Häufig gestellte Fragen
 
@@ -50,12 +50,7 @@ Passen Sie die Position des Visiers so an, dass der holografische Bereich Ihrem 
 
 ## Die Farbe oder Helligkeit des Hologramms wird nicht richtig dargestellt.
 
-Führen Sie für HoloLens 2 die folgenden Schritte aus, um die höchste visuelle Qualität von Hologrammen auf Displays zu gewährleisten:
-
-- **Erhöhen Sie die Helligkeit des Displays.** Hologramme sehen am besten aus, wenn die höchste Helligkeitsstufe des Displays eingestellt ist.
-- **Drücken Sie das Visier so nah wie möglich an Ihre Augen.** Drehen Sie das Visier nach unten, sodass es sich möglichst nah an Ihren Augen befindet.
-- **Schieben Sie das Visier nach unten.** Versuchen Sie, das Stirnpolster auf der Stirn nach unten zu bewegen, was dazu führt, dass sich das Visier in einer tieferen Position und näher an der Nase befindet.
-- **Führen Sie die Kalibrierung der Augen aus.** Auf dem Display werden Bilder anhand Ihres Pupillenabstand und der Blickerkennung optimiert. Wenn Sie keine Augenkalibrierung ausführen, kann sich die Bildqualität verschlechtern.
+Lesen Sie die Schritte zur [Behandlung von Problemen mit der Anzeige](hololens2-display.md) in HoloLens 2.
 
 ## Das Gerät rutscht bei der Verwendung nach unten oder ich muss den Bügel zu straff ziehen, damit er nicht verrutscht.
 
