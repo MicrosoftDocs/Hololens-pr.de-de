@@ -15,12 +15,12 @@ ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
 - HoloLens 2
-ms.openlocfilehash: db95edfbadb271b7fc47cf5798e80d9b2cad3c90
-ms.sourcegitcommit: 708da7b390fed1fd3aea1a2b2e50461851052683
+ms.openlocfilehash: 6947fe2232701fb9451291bd07e1c896979861d5
+ms.sourcegitcommit: 77eb85608066d9a4ed01b3862afe356f7e54d583
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10881328"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "10940195"
 ---
 # Bekannte Probleme bei HoloLens
 
@@ -28,7 +28,7 @@ Dies ist die aktuelle Liste bekannter Probleme für HoloLens-Geräte. Überprüf
 
 >[!NOTE]
 > - Wenn Sie ein Problem entdecken, das Sie nicht blockiert, melden Sie es bitte über das [Feedback-Hub](hololens-feedback.md)auf Ihrem HoloLens-Gerät.
-> - Wenn Ihnen das Problem, mit dem Sie konfrontiert sind, blockiert, senden Sie bitte [eine Support-Anfrage](https://aka.ms/hlsupport).
+> - Wenn Ihnen das Problem, mit dem Sie konfrontiert sind, blockiert, senden Sie bitte  [eine Support-Anfrage](https://aka.ms/hlsupport).
 
 - [Bekannte Probleme für alle HoloLens-Generationen](#known-issues-for-all-hololens-generations)
 - [Bekannte Probleme bei HoloLens 2-Geräten](#known-issues-for-hololens-2-devices)
@@ -57,6 +57,20 @@ Workarounds
 - Wenn Sie ein Consumer Microsoft-Konto nicht sicher für das automatische Hochladen von Fotos verwenden können, können Sie Fotos von der OneDrive-app manuell in Ihr Geschäfts-oder Schulkonto hochladen. Vergewissern Sie sich, dass Sie bei Ihrem Geschäfts-oder Schulkonto in der OneDrive-App angemeldet sind. Wählen Sie die **+** Schaltfläche und dann **hochladen**aus. Suchen Sie die Fotos oder Videos, die Sie hochladen möchten, indem Sie zu **Bilder > Kamerarolle**navigieren. Wählen Sie die Fotos oder Videos aus, die Sie hochladen möchten, und wählen Sie dann die Schaltfläche **Öffnen** aus.
 
 ## Bekannte Probleme bei HoloLens 2-Geräten
+
+### Tastatur wechselt nicht zu Sonderzeichen
+
+Während der OOBE ist ein Problem aufgetreten, bei dem ein Benutzer ein Geschäfts-oder Schulkonto ausgewählt hat und sein Kennwort eingibt, wobei versucht wird, zu den Sonderzeichen auf der Tastatur zu wechseln, indem Sie auf die Schaltfläche "&123" tippen, die nicht in Sonderzeichen geändert wird. 
+
+Work-arounds:
+-   Schließen Sie die Tastatur, und öffnen Sie Sie erneut, indem Sie auf das Textfeld tippen.
+-   Geben Sie Ihr Kennwort falsch ein. Wenn die Tastatur beim nächsten Mal neu gestartet wird, funktioniert Sie wie erwartet.
+- Web-Authentifizierung: Schließen Sie die Tastatur, und wählen Sie **auf einem anderen Gerät anmelden aus**. 
+-   Wenn nur Zahlen eingegeben werden, kann ein Benutzer bestimmte Tasten gedrückt halten, um ein erweitertes Menü zu öffnen.
+-   Über eine USB-Tastatur.
+
+Dies hat keine Auswirkungen auf:
+- Benutzer, die ein privates Konto verwenden möchten.
 
 ### Der blaue Bildschirm wird angezeigt, nachdem die Registrierung von Insider Preview-Builds auf einem Gerät mit einem Insider-Build nicht mehr registriert wurde.
 
@@ -98,7 +112,7 @@ Unser Team arbeitet derzeit an einer Lösung. In der Zwischenzeit können Sie di
 1. Geben Sie dem Projekt einen Namen (beispielsweise "HoloLensDeploymentFix"), und stellen Sie sicher, dass das Framework auf mindestens .NET Framework 4,5 eingestellt ist, und wählen Sie dann **OK**aus.
 1. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf den Knoten **Verweise** , und fügen Sie die folgenden Verweise hinzu (Wählen Sie den Abschnitt **Durchsuchen** und dann **Durchsuchen**aus):
 
-    ```CMD
+    ```console
     C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\Microsoft.Tools.Deploy.dll
     C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\Microsoft.Tools.Connectivity.dll
     C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\SirepInterop.dll
@@ -113,7 +127,7 @@ Unser Team arbeitet derzeit an einer Lösung. In der Zwischenzeit können Sie di
 1. Suchen Sie im Projektmappen-Explorer nach beiden Dateien, und wählen Sie Sie aus (Sie sollten sich unten in der Liste der Dateien befinden), und wechseln Sie im **Eigenschaften** Fenster in **Ausgabeverzeichnis kopieren** , um **immer zu kopieren**.
 1. Fügen Sie oben in der Datei die folgende Liste der vorhandenen `using` Anweisungen hinzu:
 
-    ```CMD
+    ```console
     using Microsoft.Tools.Deploy;
     using System.Net;
     ```
