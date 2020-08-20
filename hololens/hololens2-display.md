@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: bf0f293fac531045e50bee9a9dd153eb9dd2b377
-ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.openlocfilehash: 80ac6348dd2cba932316b690cafc4c5dc0331353
+ms.sourcegitcommit: 77eb85608066d9a4ed01b3862afe356f7e54d583
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929905"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "10940205"
 ---
 # Das HoloLens 2-Display
 
@@ -30,7 +30,7 @@ Führen Sie für HoloLens 2 die folgenden Schritte aus, um die höchste visuelle
 * **Erhöhen Sie die Helligkeit des Displays.** Hologramme sehen am besten aus, wenn die höchste Helligkeitsstufe des Displays eingestellt ist.
 * **Drücken Sie das Visier so nah wie möglich an Ihre Augen.** Drehen Sie das Visier nach unten, sodass es sich möglichst nah an Ihren Augen befindet.
 * **Schieben Sie das Visier nach unten.** Versuchen Sie, das Stirnpolster auf der Stirn nach unten zu bewegen, was dazu führt, dass sich das Visier in einer tieferen Position und näher an der Nase befindet.
-* **Führen Sie die Kalibrierung der Augen aus.** Auf dem Display werden Bilder anhand Ihrer Pupillendistanz (PD) und der Blickerkennung optimiert. Wenn Sie keine Augenkalibrierung ausführen, kann sich die Bildqualität verschlechtern. Wenn Sie die Augenkalibrierung ausführen möchten, wechseln Sie zu **Einstellungen** ➔ **System** ➔ **Kalibrierung** ➔ **Augenkalibrierung ausführen**.
+* **Führen Sie die Kalibrierung der Augen aus.** Auf dem Display werden Bilder anhand Ihrer Pupillendistanz (PD) und der Blickerkennung optimiert. Wenn Sie keine Augenkalibrierung ausführen, kann sich die Bildqualität verschlechtern. Wenn Sie die Augenkalibrierung ausführen möchten, wechseln Sie zu **Einstellungen** > **System** > **Kalibrierung** > **Augenkalibrierung ausführen**.
 
 ## FAQ
 
@@ -77,11 +77,14 @@ Betriebssystemupdates werden automatisch bereitgestellt. Sie können auch frühe
 
 ### Welche Anleitungen stehen Entwicklern zum Anwenden von Designprinzipien für den dunklen Modus zur Verfügung?
 
-Microsoft bereitet gerade einen Entwicklerleitfaden für Designprinzipien für den Dunklen Modus vor. Der Leitfaden wird in Kürze in der [Entwicklerdokumentation](https://docs.microsoft.com/windows/mixed-reality/) verfügbar sein. Die Empfehlungen im Überblick:
+Für Benutzer ist es am besten, wenn sie weiße Hintergründe vermeiden. Der dunkle Modus ist ein Designprinzip, das von Apps für schwarze oder dunkle Hintergründe verwendet wird. Bei den Systemeinstellungen wird standardmäßig der dunkle Modus festgelegt. Er kann über **Einstellungen** > **System** > **Farbe** angepasst werden.
 
-* Verwenden Sie dunkle Farben für den Hintergrund von Benutzeroberflächen.
-* Verwenden Sie halbfett oder fett formatierte Schriftstärken.
-* Verwenden Sie das HolographicBackplate-Material des Mixed Reality-Toolkits.
+Entwicklern wird empfohlen, die Designanleitung für den dunklen Modus zu beachten:
+
+* [Designrichtlinien zu HoloLens-Displays für Entwickler](https://docs.microsoft.com/windows/mixed-reality/designing-content-for-holographic-display#design-guidelines)
+* [Empfohlene Schriftgrade](https://docs.microsoft.com/windows/mixed-reality/typography#recommended-font-size)
+
+Wenn für ein Hologramm ein weißer Hintergrund erforderlich ist, sollte es kleiner als das vollständige Sichtfeld des Displays sein. Bei dieser Größe können Benutzer das Hologramm in die Mitte des Displays setzen.
 
 ### Wie kann ich eine HoloLens 2-Anzeige reinigen?
 
