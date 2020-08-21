@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 0a2edd0c516234a433a93c0cff806153726678fd
-ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.openlocfilehash: 917e9fd0e8bf69eb0b7c53165029cb8e42904582
+ms.sourcegitcommit: ab9e70e68d546cc6965e1569e5d914995fa508da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929861"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "10955457"
 ---
 # Konfigurieren von HoloLens mithilfe eines Bereitstellungspakets
 
@@ -173,7 +173,7 @@ HoloLens 2-Geräte auf Build [19041,1103](hololens-release-notes.md#windows-holo
 > [!NOTE]
 > Wenn das Gerät vor August 2016 gekauft wurde, müssen Sie sich mit einem Microsoft-Konto bei dem Gerät anmelden, das neueste Betriebssystemupdate abrufen und dann das Betriebssystem zurücksetzen, um das Bereitstellungspaket anzuwenden.
 
-### Anwenden eines Bereitstellungspakets auf HoloLens nach dem Setup
+## Anwenden eines Bereitstellungspakets auf HoloLens nach dem Setup
 
 > [!NOTE]
 > Diese Schritte gelten nur für Windows 10, Version 1809.
