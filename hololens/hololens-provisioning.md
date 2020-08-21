@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 0a2edd0c516234a433a93c0cff806153726678fd
-ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.openlocfilehash: 917e9fd0e8bf69eb0b7c53165029cb8e42904582
+ms.sourcegitcommit: ab9e70e68d546cc6965e1569e5d914995fa508da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929861"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "10955457"
 ---
 # <span data-ttu-id="cc51b-103">Konfigurieren von HoloLens mithilfe eines Bereitstellungspakets</span><span class="sxs-lookup"><span data-stu-id="cc51b-103">Configure HoloLens by using a provisioning package</span></span>
 
@@ -173,7 +173,7 @@ ms.locfileid: "10929861"
 > [!NOTE]
 > <span data-ttu-id="cc51b-224">Wenn das Gerät vor August 2016 gekauft wurde, müssen Sie sich mit einem Microsoft-Konto bei dem Gerät anmelden, das neueste Betriebssystemupdate abrufen und dann das Betriebssystem zurücksetzen, um das Bereitstellungspaket anzuwenden.</span><span class="sxs-lookup"><span data-stu-id="cc51b-224">If the device was purchased before August 2016, you will need to sign in to the device by using a Microsoft account, get the latest operating system update, and then reset the operating system in order to apply the provisioning package.</span></span>
 
-### <span data-ttu-id="cc51b-225">Anwenden eines Bereitstellungspakets auf HoloLens nach dem Setup</span><span class="sxs-lookup"><span data-stu-id="cc51b-225">Apply a provisioning package to HoloLens after setup</span></span>
+## <span data-ttu-id="cc51b-225">Anwenden eines Bereitstellungspakets auf HoloLens nach dem Setup</span><span class="sxs-lookup"><span data-stu-id="cc51b-225">Apply a provisioning package to HoloLens after setup</span></span>
 
 > [!NOTE]
 > <span data-ttu-id="cc51b-226">Diese Schritte gelten nur für Windows 10, Version 1809.</span><span class="sxs-lookup"><span data-stu-id="cc51b-226">These steps apply only toWindows 10, version 1809.</span></span>
