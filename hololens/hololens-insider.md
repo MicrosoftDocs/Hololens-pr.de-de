@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1e6b8fcfad1dab49823f38c722de33654b361f58
-ms.sourcegitcommit: 16d61083a1da8007278aed7e11eb6d44f7a90952
+ms.openlocfilehash: d51616f23a63c1f45fe5ed7da88be4b5429c36eb
+ms.sourcegitcommit: 238d41844116ab94d347a2ffd0fbfa18b8a81947
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "10941682"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "10956771"
 ---
 # Insider-Vorschau für Microsoft HoloLens
 
@@ -34,8 +34,7 @@ Hier finden Sie eine Liste der anstehenden Features, die Sie heute in unserem Wi
 | Feature                                                | Beschreibung                                                                                    | Verfügbar in Insider-Builds |
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
 | [Unterstützung der automatischen Augen Position](hololens-insider.md#auto-eye-position-support)                              | Sucht aktiv nach Augen Positionen und ermöglicht eine exakte Hologramm-Positionierung.                        | 19041.1339 +                 |
-| [Zertifikatanzeige](hololens-insider.md#certificate-viewer)                                     | Zeigen Sie Benutzer-und Gerätezertifikate in der Einstellungs-APP an.                                         | 19041.1346 +                 |
-| [Installieren und Entfernen von Zertifikaten](hololens-insider.md#install-and-remove-certificates)                        | Benutzer können Zertifikate mithilfe der Zertifikatanzeige installieren und entfernen.                        | 19041.1361 +                 |
+| [Zertifikat-Manager](hololens-insider.md#certificate-manager)                                     | Benutzer können Zertifikate der aktuellen Benutzer-und lokalen Computerzertifikate in der Einstellungs-APP anzeigen, installieren und entfernen.                                         | 19041.1361 +                 |
 | [Automatisches Starten der Bereitstellung über USB](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE erkennt automatisch Bereitstellungspakete auf USB-Laufwerken.                                | 19041.1361 +                 |
 | [Automatisches bestätigen von Bereitstellungspaketen in Oobe](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | Automatisches Anwenden von Bereitstellungspaketen in Oobe                                             | 19041.1361 +                 |
 | [Verwenden von Autopilot mit Wi-Fi-Verbindung](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | Verwenden Sie Autopilot vom Gerät Wi-Fi ohne Ethernet-Adapter.                             | 19041.1364 +                 |
@@ -72,41 +71,40 @@ Für Erfahrungen, bei denen Augenblick Daten oder eine sehr präzise Hologramm-P
 **Bekannte Probleme**
  - Wir untersuchen ein Problem, bei dem der Eye Tracker-Treiber Hostprozess bei starker Speicherauslastung abstürzt. Der Treiber Hostprozess für die Eye-Tracking-Funktion sollte automatisch wiederhergestellt werden.
 
-### Zertifikatanzeige
+### Zertifikat-Manager
 
-In Windows Insider Build 19041.1346 + fügen wir eine Zertifikatanzeige in der HoloLens 2-Einstellungs-APP hinzu. Die Zertifikatinstallation unterstützt derzeit CER-und CRT-Dateien. Gerätebesitzer können Zertifikate auf dem lokalen Computer und dem aktuellen Benutzer installieren.  alle anderen Benutzer können nur in den aktuellen Benutzer installieren. Benutzer können nur Zertifikate entfernen, die direkt von der UI für Einstellungen installiert wurden. Wenn ein Zertifikat auf andere Weise installiert wurde, muss es auch vom gleichen Mechanismus entfernt werden.
+In Windows Insider Build 19041.1361 + fügen wir eine Zertifikatverwaltung in die HoloLens 2-Einstellungs-APP ein. Wechseln Sie zu **Einstellungen > Update & Security >-Zertifikate**. Dieses Feature bietet eine einfache und benutzerfreundliche Möglichkeit, Zertifikate auf Ihrem Gerät anzuzeigen, zu installieren und zu entfernen. Mit dem neuen Zertifikat-Manager verfügen Administratoren und Benutzer nun über verbesserte Überwachungs-, Diagnose-und Validierungstools, um sicherzustellen, dass die Geräte sicher und kompatibel sind. 
 
 -   **Überwachung:** Fähigkeit, zu überprüfen, ob ein Zertifikat richtig bereitgestellt wurde, oder zu bestätigen, dass es ordnungsgemäß entfernt wurde. 
 -   **Diagnose:** Wenn Probleme auftreten, können Sie überprüfen, ob die entsprechenden Zertifikate auf dem Gerät vorhanden sind, Zeit sparen und bei der Problembehandlung helfen. 
--   **Validierung:** Wenn Sie überprüfen, ob das Zertifikat den beabsichtigten Zweck erfüllt und funktionell ist, können Sie vor allem in kommerziellen Umgebungen beträchtliche Zeit sparen, bevor Sie Zertifikate im größeren Maßstab bereitstellen.
+-   **Validierung:** Wenn Sie überprüfen, ob ein Zertifikat den beabsichtigten Zweck erfüllt und funktionell ist, können Sie vor allem in kommerziellen Umgebungen beträchtliche Zeit sparen, bevor Sie Zertifikate im größeren Maßstab bereitstellen.
 
-Wenn Sie Zertifikate anzeigen möchten, wechseln Sie zu **Einstellungen > Update & Security >-Zertifikate**.
+Um schnell ein bestimmtes Zertifikat in der Liste zu finden, gibt es Optionen zum Sortieren nach Name, Store oder Ablaufdatum. Benutzer können auch direkt nach einem Zertifikat suchen. Wenn Sie einzelne Zertifikateigenschaften anzeigen möchten, wählen Sie das Zertifikat aus, und klicken Sie auf **Info**. 
 
-![Zertifikatanzeige in der Einstellungs-APP](images/certificate-viewer-device.jpg)
+Die Zertifikatinstallation unterstützt derzeit CER-und CRT-Dateien. Gerätebesitzer können Zertifikate auf dem lokalen Computer und dem aktuellen Benutzer installieren.  alle anderen Benutzer können nur in den aktuellen Benutzer installieren. Benutzer können nur Zertifikate entfernen, die direkt von der UI für Einstellungen installiert wurden. Wenn ein Zertifikat auf andere Weise installiert wurde, muss es auch vom gleichen Mechanismus entfernt werden.
 
-### Installieren und Entfernen von Zertifikaten
-Ab Windows Insider Release 19041.1361 + können Sie Zertifikate direkt auf HoloLens 2 über die Einstellungs-APP installieren und entfernen. Die Zertifikatinstallation unterstützt derzeit CER-und CRT-Dateien. Gerätebesitzer können Zertifikate auf dem lokalen Computer und dem aktuellen Benutzer installieren.  alle anderen Benutzer können nur in den aktuellen Benutzer installieren. Benutzer können nur Zertifikate entfernen, die direkt von der UI für Einstellungen installiert wurden. Wenn ein Zertifikat auf andere Weise installiert wurde, muss es auch vom gleichen Mechanismus entfernt werden.
+#### So installieren Sie ein Zertifikat: 
 
-#### So installieren Sie ein Zertifikat mithilfe der Zertifikatanzeige: 
-1. Navigieren Sie zu **Einstellungen-App**-  ->  **Update und Sicherheits**  ->  **Zertifikate**, und wählen Sie **Zertifikat installieren**aus. 
-1. Wählen Sie eine CER-Datei aus der Dateiauswahl aus.
-1. Wählen Sie lokaler Computer (oder das Zertifikat aus) aus.
-1. Wählen Sie als Zertifikatspeicher **Stamm** (oder in welchem Store Sie Ihr Zertifikat platzieren möchten) aus. 
-1. Klicken Sie auf **Installieren**.
+1.  Verbinden Sie Ihr HoloLens 2 mit einem PC.
+1.  Legen Sie die Zertifikatdatei, die Sie installieren möchten, an einem Speicherort auf Ihrem HoloLens 2 ab.
+1.  Navigieren Sie zu **Einstellungen-app > aktualisieren Sie & Security >-Zertifikate**, und wählen Sie Zertifikat installieren aus.
+1.  Klicken Sie auf **Datei importieren** , und navigieren Sie zu dem Speicherort, an dem Sie das Zertifikat gespeichert haben.
+1.  Wählen Sie **Store Location**aus.
+1.  Wählen Sie **Zertifikatspeicher**aus.
+1.  Klicken Sie auf **Installieren**.
 
 Das Zertifikat sollte nun auf dem Gerät installiert sein.
 
-#### So entfernen Sie ein Zertifikat mithilfe der Zertifikatanzeige: 
-1. Navigieren Sie zu **Einstellungen**  ->  **-App-Update und Sicherheits**  ->  **Zertifikaten**.
+#### So entfernen Sie ein Zertifikat: 
+1. Navigieren Sie zu **Einstellungen-app > Update-und Sicherheits > Zertifikate**.
 1. Suchen Sie im Suchfeld nach dem Namen des Zertifikats.
 1. Wählen Sie das Zertifikat aus.
 1. Klicken Sie auf **Entfernen** .
-1. Wählen Sie ja aus, wenn Sie dazu aufgefordert werden, und wenn Sie zur Bestätigung aufgefordert werden.
+1. Wählen Sie **Ja** aus, wenn Sie zur Bestätigung aufgefordert werden.
+
+![Zertifikatanzeige in der Einstellungs-APP](images/certificate-viewer-device.jpg)
 
 ![Abbildung der Verwendung der Zertifikat-UI zum Installieren eines Zertifikats](images/certificate-device-install.jpg)
-
-#### Bekannte Probleme 
-Wir untersuchen ein Problem, bei dem während des Installations Flusses nach Auswahl eines Zertifikats aus der Dateiauswahl die Benutzeroberfläche des Installationsdialogfelds die ausgewählte Zertifikatdatei nicht anzeigt, obwohl Sie ausgewählt wurde. Nachdem Sie die Datei ausgewählt haben, können Sie mit der Installation fortfahren, auch wenn die Datei im Dialogfeld nicht angezeigt wird. 
 
 ### Automatisches Starten der Bereitstellung über USB
 Vor diesem Build mussten Benutzer den Bereitstellungs Bildschirm während der OOBE manuell starten, um die Bereitstellung über eine Tastenkombination durchführen zu können. Jetzt können Benutzer die Tastenkombination überspringen, indem Sie ein Bereitstellungspaket auf einem USB-Speicherlaufwerk verwenden. 
