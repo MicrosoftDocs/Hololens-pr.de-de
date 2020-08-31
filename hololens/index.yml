@@ -11,70 +11,124 @@ metadata:
   ms.author: v-todmc
   ms.date: 5/22/2020
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: 10588713cc7670fb8e7f9601b504e327c3462aed
-  ms.sourcegitcommit: 5e9c558ff1c9c12eb17a7343a7571f710993e386
+  ms.openlocfilehash: 544582762cb950d319f96647fc41a75507389059
+  ms.sourcegitcommit: e17e3449d22e770ce45e9e7b9ad55396a1c7360c
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 08/17/2020
-  ms.locfileid: "10932118"
+  ms.lasthandoff: 08/28/2020
+  ms.locfileid: "10978632"
 landingContent:
-- title: Bereitstellung und Verwaltung
+- title: Übersicht für HoloLens
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: HoloLens 2-Hardware
+      url: hololens2-hardware.md
+    - text: HoloLens-Hardware (1. Generation)
+      url: hololens1-hardware.md
+    - text: Verwenden des Startmenüs und der Mixed Reality-Startseite
+      url: holographic-home.md
+    - text: Suchen, Installieren und Deinstallieren von Anwendungen
+      url: holographic-store-apps.md
+    - text: Verbessern der Grafikqualität und des Komforts
+      url: hololens-calibration.md
+    - text: Aktualisieren von HoloLens
+      url: hololens-update-hololens.md
+- title: Vorbereiten
   linkLists:
   - linkListType: get-started
     links:
     - text: Bereitstellen von HoloLens in einer kommerziellen Umgebung
       url: hololens-requirements.md
-    - text: 'App-Verwaltung: Übersicht'
-      url: app-deploy-overview.md
+    - text: Sicherheitsübersicht
+      url: security-overview.md
+    - text: Lizenzanforderungen
+      url: hololens-licenses-requirements.md
+    - text: Umgebungsaspekte für HoloLens
+      url: hololens-environment-considerations.md
+    - text: Kommerzielle Funktionen
+      url: hololens-commercial-features.md
+- title: Konfigurieren
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Verwalten der Benutzeridentität und der Anmeldung für HoloLens
+      url: hololens-identity.md
+    - text: Konfigurieren Ihres Netzwerks für HoloLens
+      url: hololens-commercial-infrastructure.md
+    - text: Verbinden von HoloLens mit einem Netzwerk
+      url: hololens-network.md
+    - text: Verwalten von Verbindungsendpunkten für HoloLens
+      url: hololens-offline.md
+    - text: Konfigurieren von HoloLens mittels Bereitstellungspaketen
+      url: hololens-provisioning.md
     - text: Einrichten von HoloLens als Kiosk
       url: hololens-kiosk.md
+- title: Bereitstellen
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: Registrieren von HoloLens in MDM
+      url: hololens-enroll-mdm.md
+    - text: Windows Autopilot für HoloLens 2
+      url: hololens2-autopilot.md
+    - text: Anwendungsverwaltungsübersicht
+      url: app-deploy-overview.md
+    - text: Microsoft Store für Unternehmen
+      url: app-deploy-intune.md
+    - text: Microsoft Store für Unternehmen
+      url: app-deploy-store-business.md
+    - text: Bereitstellungspaket
+      url: app-deploy-provisioning-package.md
+- title: Warten
+  linkLists:
+  - linkListType: how-to-guide
+    links:
     - text: Verwalten von HoloLens-Updates
       url: hololens-updates.md
-- title: Dynamics 365
-  linkLists:
-  - linkListType: reference
-    links:
-    - text: Microsoft Dynamics 365 Mixed Reality-Dokumentation
-      url: https://docs.microsoft.com/dynamics365/mixed-reality/
-    - text: Remote Assist auf einem HoloLens-Gerät verwenden
-      url: https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/overview-hololens
-    - text: Guides auf einem HoloLens-Gerät verwenden
-      url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/
-    - text: Lernmodule für Remote Assist
-      url: https://docs.microsoft.com/en-us/learn/browse/?products=dynamics-remote-assist
-- title: Verwandte Ressourcen
-  linkLists:
-  - linkListType: reference
-    links:
-    - text: Mixed Reality-Entwicklerdokumentation
-      url: https://developer.microsoft.com/windows/mixed-reality/development
-    - text: HoloLens-Preise und -Optionen
-      url: https://www.microsoft.com/hololens/buy
-- title: Problembehandlung
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: HoloLens 2 neu starten, zurücksetzen oder wiederherstellen
-      url: hololens-recovery.md
     - text: Problembehandlung für HoloLens
       url: hololens-troubleshooting.md
+    - text: HoloLens 2 neu starten, zurücksetzen oder wiederherstellen
+      url: hololens-recovery.md
+    - text: HoloLens (1. Generation) neu starten, zurücksetzen oder wiederherstellen
+      url: hololens1-recovery.md
+    - text: Bekannte Probleme bei HoloLens
+      url: hololens-known-issues.md
     - text: Sammeln und nutzen von Diagnoseinformationen von HoloLens-Geräten
       url: hololens-diagnostic-logs.md
-- title: Support
+- title: Anmerkungen zur Version & Feedback
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: Veröffentlichungshinweise für HoloLens 2
+      url: hololens-release-notes.md
+    - text: Insider-Vorschau für Microsoft HoloLens
+      url: hololens-insider.md
+    - text: Feedback senden
+      url: hololens-feedback.md
+- title: Zusätzliche Dienste
   linkLists:
   - linkListType: reference
     links:
-    - text: Veröffentlichungshinweise für HoloLens 2
-      url: https://docs.microsoft.com/hololens/hololens-release-notes
-    - text: Hilfe und Support zu Windows
-      url: https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f
-- title: Mixed Reality
+    - text: Dynamics 365 Remote Assist-Dokumente
+      url: https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview
+    - text: Lernen Sie Dynamics 365 Remote Assist kennen
+      url: https://docs.microsoft.com/learn/browse/?products=dynamics-remote-assist
+    - text: Dynamics 365 Guides
+      url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/
+    - text: Microsoft Dynamics 365 Mixed Reality
+      url: https://docs.microsoft.com/dynamics365/mixed-reality/
+    - text: Übersicht über Cloud-Dienste
+      url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality-cloud-services#overview
+- title: Weitere Ressourcen
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Erste Schritte mit Mixed Reality
-      url: https://docs.microsoft.com/windows/mixed-reality/
+    - text: Was ist Mixed Reality?
+      url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality
     - text: Mit Entwerfen und Erstellen von Prototypen beginnen
       url: https://docs.microsoft.com/windows/mixed-reality/design
-    - text: Erlernen von Tools und Architektur
-      url: https://docs.microsoft.com/windows/mixed-reality/development
+    - text: Einführung in die Entwicklung für Mixed Reality
+      url: https://docs.microsoft.com/windows/mixed-reality/development?tabs=unity
+    - text: Hilfe und Support zu Windows
+      url: https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f
