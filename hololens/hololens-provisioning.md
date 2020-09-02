@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 917e9fd0e8bf69eb0b7c53165029cb8e42904582
-ms.sourcegitcommit: ab9e70e68d546cc6965e1569e5d914995fa508da
+ms.openlocfilehash: da783756c271c589f67efca0c229ad0f777857e2
+ms.sourcegitcommit: ccdd628cdbb5b89741f5dbc971143cb2fd2e451b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "10955457"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10990909"
 ---
 # Konfigurieren von HoloLens mithilfe eines Bereitstellungspakets
 
@@ -205,5 +205,9 @@ Wenn Sie ein Bereitstellungspaket für Windows Holographic im Windows-Konfigurat
 | **EditionUpgrade** | [Upgrade auf Windows Holographic for Business.](hololens1-upgrade-enterprise.md)  |
 | **Richtlinien** | Lassen Sie den Entwicklermodus auf HoloLens zu, oder sperren Sie ihn. [Richtlinien, die von Windows Holographic for Business unterstützt werden](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#hololenspolicies) |
 
+## App-Installation über Bereitstellungspaket
+
+Apps können über Bereitstellungspakete auf HoloLens 2-Geräten installiert werden. Dies ermöglicht ein einfach wiederverwendbares Paket, mit dem Sie Ihre apps verteilen können. Lesen Sie die vollständigen Anweisungen zum [Bereitstellen von apps über Bereitstellungspakete](app-deploy-provisioning-package.md).  
+
 > [!NOTE]
-> HoloLens unterstützt derzeit keine Installation von apps (**UniversalAppInstall**) mithilfe eines Bereitstellungspakets.
+> HoloLens (1st Generation) unterstützt die Installation von apps (**UniversalAppInstall**) nicht mithilfe eines Bereitstellungspakets.
