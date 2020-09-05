@@ -10,12 +10,12 @@ ms.prod: hololens
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: high
-ms.openlocfilehash: 2632c5bfd82feab4e21ee9c393f8c22efda28c42
-ms.sourcegitcommit: 458e07c0dcad66616fa98cfef125eb217713d89c
+ms.openlocfilehash: dc8182d04a8cdc8a8ec3775a8e453a41d29486d3
+ms.sourcegitcommit: 0abe53295191e22299d5be49f2cef4e85744d0fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "10927839"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993645"
 ---
 # Umgebungsaspekte für HoloLens
 
@@ -117,8 +117,17 @@ Um die Kalibrierungs-App aufzurufen, wechseln Sie zu **Einstellungen** > **Syste
 
 Wenn ein anderer Benutzer Ihre HoloLens verwendet, sollte er zuerst die Kalibrierungs-App ausführen, damit das Gerät ordnungsgemäß eingerichtet ist.
 
-### Temperatur und Rechtliche Informationen
-[Rechtliche Informationen zu HoloLens](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): Enthält Informationen zu Temperatur, Entsorgung, Funk- und TV-Interferenzen und vielem mehr.
+## Temperatur und Rechtliche Informationen
+
+[Rechtliche Informationen zu HoloLens](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): Enthält Informationen zu Temperaturbereich, Entsorgung, Funk- und TV-Interferenzen und vielem mehr.
+
+Hier sind einige Richtlinien, die bei der Verwendung Ihres Geräts zu beachten sind:
+
+1. Lagern Sie das Gerät eine Stunde lang in einer Umgebung innerhalb des Temperaturbereichs (entweder im Standby-Modus oder ausgeschaltet), bevor Sie das Gerät verwenden.
+1. Verwenden Sie das Gerät in einer Umgebung innerhalb des Temperaturbereiches.
+1. Verwenden Sie das Gerät in Innenräumen.
+1. Verwenden Sie das Gerät im Schatten. Auch in Innenräumen direkte Sonneneinstrahlung durch Fenster oder Oberlichter vermeiden.
+1. Wenn Sie die obigen Richtlinien befolgen, aber unerwartete Überhitzungsprobleme auftreten, stellen Sie sicher, dass vollständige Telemetrie aktiviert ist, bevor Sie ein [Feedback](hololens-feedback.md) übermitteln.
 
 ## Weitere Informationen
 
