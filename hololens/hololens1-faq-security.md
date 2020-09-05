@@ -24,7 +24,7 @@ ms.locfileid: "10865708"
 ---
 # Häufig gestellte Sicherheitsfragen zu HoloLens (1. Gen.)
 
-1. **Welches Maß an Datenschutz bietet die HoloLens 1?**
+1. **Welches Maß an Datenschutz bietet HoloLens 1?**
     1. Lesen Sie dazu [BitLocker-Verschlüsselung von HoloLens (1. Gen.)](hololens1-encryption.md)
 1. **Welche Drahtlostechnologie wird verwendet?**
     1. 802.11ac und Bluetooth 4.1 LE
