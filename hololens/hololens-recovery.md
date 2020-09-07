@@ -14,18 +14,18 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: 9c9dd12b596d8fafdfe575797193f18e7b96919c
-ms.sourcegitcommit: 2122490074adb7f63edfc3576441980caa22695f
+ms.openlocfilehash: 8c028ed39cf0925ebff18ca69889de2d87f1e7eb
+ms.sourcegitcommit: e3056a433aeebb8bc45dc3f6db9a75f212fdf53b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "10915957"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "10996413"
 ---
 # HoloLens 2 neu starten, zurücksetzen oder wiederherstellen
 
 ## Laden des Geräts
 
-Bevor Sie eine Problembehandlung starten, stellen Sie sicher, dass Ihr Gerät möglichst auf 20 bis 40 Prozent der Akkukapazität aufgeladen wurde. Verwenden Sie das Ladegerät und das USB-Typ-C-Kabel, die mit dem HoloLens2-Gerät geliefert wurden. Wenn das Zubehör nicht verfügbar ist, vergewissern Sie sich, dass das verfügbare Ladegerät mindestens 15 W Leistung unterstützt.
+Bevor Sie eine Problembehandlung starten, stellen Sie sicher, dass Ihr Gerät möglichst auf 20 bis 40 Prozent der Akkukapazität aufgeladen wurde. Verwenden Sie das Ladegerät und die USB-Typ-C-Kabel, die mit dem HoloLens2-Gerät geliefert wurden. Die in der Lieferung des Geräts enthaltene Stromversorgung und das USB-C-zu-C-Kabel sind die beste Methode zum Aufladen Ihrer HoloLens2. Das Ladegerät liefert 18W (9V bei 2A). Wenn das Zubehör nicht verfügbar ist, vergewissern Sie sich, dass das verfügbare Ladegerät mindestens 15W Leistung unterstützt.
 
 > [!NOTE]
 > Vermeiden Sie nach Möglichkeit die Verwendung eines PCs, um das Gerät über USB zu laden, was sehr langsam ist.
@@ -34,15 +34,19 @@ Wenn das Gerät korrekt hochgefahren und ausgeführt wird, gibt es drei verschie
 
 - Über das Hauptmenü der Benutzeroberfläche des HoloLens-Geräts.
 - Sehen Sie sich die LEDs in der Nähe des Netzschalters an (bei 40 % sollten mindestens zwei LEDs ununterbrochen leuchten).
-- Öffnen Sie auf Ihrem Host-PC den Datei-Explorer, und suchen Sie Ihr HoloLens 2-Gerät auf der linken Seite unter **Dieser PC**. Klicken Sie mit der rechten Maustaste auf das Gerät, und wählen Sie **Eigenschaften** aus. Ein Dialogfeld mit dem Akkuladezustand wird angezeigt.
+    - Während des Ladevorgangs leuchtet die Akkuanzeige auf, um den aktuellen Ladezustand anzuzeigen.  Die letzte Anzeige leuchtet auf und erlischt, um den aktiven Ladevorgang anzuzeigen.
+    - Wenn Ihre HoloLens eingeschaltet ist, zeigt die Akkuanzeige den Akkustand in fünf Schritten an.
+    - Wenn nur eine der fünf LEDs leuchtet, ist der Akkustand unter 20%.
+    - Wenn der Akkuladestand kritisch niedrig ist und Sie versuchen, das Gerät einzuschalten, blinkt eine LED kurz und erlischt anschließend.
+- Öffnen Sie auf Ihrem Host-PC den **Datei-Explorer**, und suchen Sie Ihr HoloLens 2-Gerät auf der linken Seite unter **Dieser PC**. Klicken Sie mit der rechten Maustaste auf das Gerät, und wählen Sie **Eigenschaften** aus. Ein Dialogfeld mit dem Akkuladezustand wird angezeigt.
 
    ![Ein HoloLens 2-Eigenschaftenbildschirm zeigt den Akkuladezustand.](images/ResetRecovery2.png)
 
-Wenn das Gerät nicht ins Startmenü starten kann, beachten Sie das LED-Erscheinungsbild und die Geräteenumeration auf dem Host-PC. Folgen Sie dann der [Anleitung zur Problembehandlung](https://docs.microsoft.com/hololens/hololens-troubleshooting). Falls der Status des Geräts nicht mit einem der im Handbuch zur Fehlerbehebung aufgeführten Zustände übereinstimmt, führen Sie den *Hard-Reset-Vorgang* aus, wobei das Gerät nicht mit Ihrem Host-PC, sondern mit dem Netzteil verbunden sein muss. Warten Sie mindestens eine Stunde, bis das Gerät aufgeladen ist.
+Wenn das Gerät nicht ins Startmenü starten kann, beachten Sie das LED-Erscheinungsbild und die Geräteenumeration auf dem Host-PC. Folgen Sie dann der [Anleitung zur Problembehandlung](https://docs.microsoft.com/hololens/hololens-troubleshooting). Falls der Status des Geräts nicht mit einem der im Handbuch zur Fehlerbehebung aufgeführten Zustände übereinstimmt, führen Sie den [Hard-Reset-Vorgang](hololens-recovery.md#hard-reset-procedure) aus, wobei das Gerät nicht mit Ihrem Host-PC, sondern mit dem Netzteil verbunden sein muss. Warten Sie mindestens eine Stunde, bis das Gerät aufgeladen ist.
 
 ## Setzen Sie das Gerät zurück
 
-Unter bestimmten Umständen möchten Sie das Gerät möglicherweise manuell zurücksetzen, ohne die SW-Benutzeroberfläche zu verwenden.
+Unter bestimmten Umständen möchten Sie das Gerät möglicherweise manuell zurücksetzen, ohne die Software-Benutzeroberfläche zu verwenden.
 
 ### Standardvorgehensweise
 1. Trennen Sie das Gerät von der Stromversorgung oder dem Host-PC, indem Sie das Typ-C-Kabel abziehen.
@@ -70,7 +74,14 @@ Wenn das Standardzurücksetzungsverfahren nicht funktioniert, verwenden Sie das 
 
 ## Clean-Reflash des Geräts
 
-In außergewöhnlichen Situationen müssen Sie das HoloLens 2 möglicherweise „clean flashen“. Dafür gibt es zwei Möglichkeiten. Für beide müssen Sie zuerst [Advanced Recovery Companion aus dem Windows Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8)installieren.
+In außergewöhnlichen Situationen müssen Sie das HoloLens 2 möglicherweise „clean flashen“. Beachten Sie, dass sich ein Clean-Reflash erwartungsgemäß nicht auf die folgenden Probleme auswirkt:
+- [Farbhomogenität des Bildschirms](hololens2-display.md)
+- Startvorgang mit Sound, aber ohne Bildschirmausgabe
+- [1-3-5-LED-Muster](hololens2-setup.md#lights-to-indicate-problems)
+- [Überhitzung](hololens-environment-considerations.md#temperature-and-regulatory-information) 
+- Betriebssystemabstürze (was sich von Anwendungsabstürzen unterscheidet)
+
+Dafür gibt es zwei Möglichkeiten. Für beide müssen Sie zuerst [Advanced Recovery Companion aus dem Windows Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8)installieren.
 
 >[!WARNING]
 >Wenn Sie Ihr Gerät neu flashen, werden alle Ihre persönlichen Daten, Apps und Einstellungen gelöscht, einschließlich der TPM-Zurücksetzungsinformationen.

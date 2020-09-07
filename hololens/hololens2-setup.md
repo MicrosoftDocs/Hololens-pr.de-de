@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 943cc5af8f5be337a9cfcc0d3e4a4640aa307e72
-ms.sourcegitcommit: 14c30f412cd17058d0316444215f878ba1ee422f
+ms.openlocfilehash: b2d95839ff394d61eec8f5c76baf9a151855794a
+ms.sourcegitcommit: e3056a433aeebb8bc45dc3f6db9a75f212fdf53b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "10905622"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "10996403"
 ---
 # Einrichten Ihrer HoloLens 2 für die Verwendung
 
@@ -33,6 +33,8 @@ Die Lade- und Geschwindigkeitsrate kann je nach Umgebung, in der das Gerät ausg
 - Wenn Ihre HoloLens eingeschaltet ist, zeigt die Akkuanzeige den Akkustand in Schritten an.
 - Wenn nur eine der fünf LEDs leuchtet, ist der Akkustand unter 20%.
 - Wenn der Akkuladestand kritisch niedrig ist und Sie versuchen, das Gerät einzuschalten, blinkt eine LED kurz und erlischt anschließend.
+
+Die vollständigen [Details zum Laden von Geräten finden Sie hier](hololens-recovery.md#charge-the-device), wenn weitere Informationen erforderlich sind. 
 
 ## Anpassen der Passung
 
@@ -108,7 +110,7 @@ Sie wissen nicht genau, was die Anzeigeleuchten auf Ihrer HoloLens bedeuten? Mö
 | - | - | - |
 | Drücken der Ein-/Aus-Taste. | Eine Anzeige blinkt fünfmal und erlischt anschließend. | Der Akkustand der HoloLens ist kritisch niedrig. Laden Sie Ihre HoloLens auf. |
 | Drücken der Ein-/Aus-Taste. | Alle fünf Anzeigen blinken fünfmal und erlöschen anschließend. |  HoloLens kann nicht ordnungsgemäß gestartet werden und befindet sich in einem Fehlerzustand. [Installieren Sie das Betriebssystem erneut](hololens-recovery.md) , um Ihr Gerät wiederherzustellen. |
-| Drücken der Ein-/Aus-Taste. | Die erste, dritte und fünfte Leuchte blinken durchgehend gleichzeitig. |  Bei HoloLens ist möglicherweise ein Hardwarefehler aufgetreten. Um sicherzugehen, [installieren Sie das Betriebssystem neu](hololens-recovery.md), und versuchen Sie es erneut. Wenn das beschriebene Blinken nach der Neuinstallation des Betriebssystems weiterhin auftritt, wenden Sie sich an den [Support](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapid=3ec35c62-022f-466b-3a1e-dbbb7b9a55fb). |
+| Drücken der Ein-/Aus-Taste. | Die erste, dritte und fünfte Leuchte blinken durchgehend gleichzeitig. |  Bei HoloLens ist möglicherweise ein Hardwarefehler aufgetreten. Wenden Sie sich an den [Support](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapid=3ec35c62-022f-466b-3a1e-dbbb7b9a55fb). |
 
 ## Sicherheit und Komfort
 
