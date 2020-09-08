@@ -79,7 +79,7 @@ In außergewöhnlichen Situationen müssen Sie das HoloLens 2 möglicherweise �
 - Startvorgang mit Sound, aber ohne Bildschirmausgabe
 - [1-3-5-LED-Muster](hololens2-setup.md#lights-to-indicate-problems)
 - [Überhitzung](hololens-environment-considerations.md#temperature-and-regulatory-information) 
-- Betriebssystemabstürze (was sich von Anwendungsabstürzen unterscheidet)
+- Betriebssystemabstürze (welche sich von Anwendungsabstürzen unterscheiden)
 
 Dafür gibt es zwei Möglichkeiten. Für beide müssen Sie zuerst [Advanced Recovery Companion aus dem Windows Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8)installieren.
 
