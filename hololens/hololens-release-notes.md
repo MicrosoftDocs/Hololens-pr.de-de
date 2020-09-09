@@ -1,6 +1,6 @@
 ---
 title: Veröffentlichungshinweise für HoloLens 2
-description: Informieren Sie sich über Updates in jeder neuen HoloLens-Version.
+description: Informieren Sie sich über Updates in jeder neuen Version von HoloLens 2.
 author: scooley
 ms.author: scooley
 manager: laurawi
@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3e2bb1a6f8de93faa1a1157b3d05ff671d0b0a45
-ms.sourcegitcommit: 5799ce0f3d8f1d231823cff6c9c013ce933b8f3b
+ms.openlocfilehash: 0fe78d4b668523de4faa66a64f54c14760a81b12
+ms.sourcegitcommit: bddd470ac475dd8fc7b69e8904d18082a83f39e0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926328"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "10997216"
 ---
 # Veröffentlichungshinweise für HoloLens 2
 
@@ -28,6 +28,25 @@ Um sicherzustellen, dass Sie mit ihren HoloLens-Geräten eine produktive Erfahru
 
 >[!NOTE]
 > Wenn Sie HoloLens-Emulator-Versionshinweise lesen möchten, [besuchen Sie das Archiv](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
+
+## Windows holographisch, Version 2004 – Update vom September 2020
+- Build 19041,1117
+
+Verbesserungen und Korrekturen im Update:
+
+- Behebt ein Problem, durch das Visual Studio das Debuggen einer Anwendung verhindert, wenn SupportsMultipleInstances = "true" im appxmanifest vorhanden ist.
+- Diese Version enthält die Netzwerkverbindungs-Proxy Erkennungs Korrektur zum Beheben einer fehlgeschlagenen Internet Erkennung über einen Netzwerkproxy. Netzwerkverbindungs kann den Computer Proxy und den pro-Profil-Proxy für die Erkennung von Internet Verbindungen verwenden. Pro-Benutzer-Proxy wird von Netzwerkverbindungs in der zukünftigen Version unterstützt.
+- Bei den meisten Windows-Mixed-Reality-Geräten befindet sich der aufwärts Richtungsvektor parallel zum Boden, wenn sich der Kopf des Benutzers in einer neutralen Position befindet. In früheren Versionen von HoloLens 2 wurde der Vektor jedoch so ausgerichtet, dass er senkrecht zu den Anzeigebereichen verläuft, was relativ zur idealen Ausrichtung um einige Grad nach unten geneigt ist. Neuere Versionen von HoloLens 2 haben dies korrigiert, um die semantische Konsistenz in Formfaktoren zu gewährleisten.
+- Verbesserte Robustheit der Hand Nachverfolgung, die zu weniger nach Verfolgungs Verlusten in bestimmten Szenarien führt.
+- Diese Version enthält eine Lösung zur Verbesserung der Qualität des Audio-Zeitstempels, die möglicherweise zu Problemen bei der Videoaufnahme beigetragen hat.
+
+## Windows holographisch, Version 1903 – Update vom September 2020
+- Build 18362,1079
+
+Verbesserungen und Korrekturen im Update:
+
+- Bei den meisten Windows-Mixed-Reality-Geräten befindet sich der aufwärts Richtungsvektor parallel zum Boden, wenn sich der Kopf des Benutzers in einer neutralen Position befindet. In früheren Versionen von HoloLens 2 wurde der Vektor jedoch so ausgerichtet, dass er senkrecht zu den Anzeigebereichen verläuft, was relativ zur idealen Ausrichtung um einige Grad nach unten geneigt ist. Neuere Versionen von HoloLens 2 haben dies korrigiert, um die semantische Konsistenz in Formfaktoren zu gewährleisten.
+- Verbesserte Robustheit der Hand Nachverfolgung, die zu weniger nach Verfolgungs Verlusten in bestimmten Szenarien führt.
 
 ## Windows holographisch, Version 2004 – Update vom August 2020
 - Build 19041,1113
@@ -210,7 +229,7 @@ Diese "in-Box"-Apps unterstützen den dunklen Modus:
 - Einstellungen 
 - Microsoft Store 
 - Mail 
-- Kalender 
+- Calendar 
 - Datei-Explorer 
 - Feedback-Hub 
 - OneDrive 
@@ -266,7 +285,7 @@ Diese "in-Box"-Apps unterstützen den dunklen Modus:
 - Einstellungen
 - Microsoft Store
 - Mail
-- Kalender
+- Calendar
 - Datei-Explorer
 - Feedback-Hub
 - OneDrive
