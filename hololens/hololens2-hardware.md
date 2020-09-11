@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5b1df54ea5112109a175f6d7172635042262ca14
-ms.sourcegitcommit: e85a55c110e729a4836b8a59aa29d786c74ed6bf
+ms.openlocfilehash: d5d875b17e69705591c6730349c8e23bc9692db1
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "10903330"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009433"
 ---
 # HoloLens 2-Hardware
 
@@ -126,13 +126,21 @@ Um den Prozentsatz der internen Akkuladedauer beizubehalten bzw. zu verbessern, 
 ## Vorinstallierte Software
 
 - Windows Holographic Betriebssystem
-- Microsoft Edge
-- Dynamics 365 Remote Assist
-- Dynamics 365 Guides
 - 3D-Viewer
-- OneDrive for Business
-- HoloLens-Tipps
+- Calendar
 - Cortana
+- Dynamics 365 Guides
+- Dynamics 365 Remote Assist
+- Feedback-Hub
+- Datei-Explorer
+- Mail
+- Microsoft Edge
+- Microsoft Store
+- Filme & TV
+- OneDrive
+- Fotos
+- Einstellungen
+- Tipps
 
 ## Gerätezertifizierungen
 

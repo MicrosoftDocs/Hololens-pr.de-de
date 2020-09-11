@@ -2,7 +2,9 @@
 title: InTune und Unternehmens Portal
 description: InTune, App-Verwaltung, APP, Unternehmensportal, Portal
 keywords: InTune, App-Verwaltung, APP, Unternehmensportal, Portal, hololens
-author: v-jodben
+author: evmill
+ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/22/2020
 ms.prod: hololens
 ms.custom:
@@ -12,17 +14,18 @@ ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: HoloLens
-manager: yannisl
+manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f6a79224d02b4251a76f97f0463d4a11f6496670
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: 5fc369caa2e5e26c91c07f9270c3984177507dbd
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857902"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009463"
 ---
-# InTune-& Unternehmens Portal
+# Intune und Unternehmensportal
 
 Mit der Verwaltung mobiler Geräte (Mobile Device Management, MDM) können Sie Ihre eigenen benutzerdefinierten Apps über [Microsoft Endpoint Manager (InTune)](https://docs.microsoft.com/intune/windows-holographic-for-business) verwenden, um Sie direkt auf Ihren HoloLens-Geräten bereitzustellen. Microsoft InTune ist ein Cloud-basierter Dienst, der sich auf die Verwaltung mobiler Geräte (Mobile Device Management, MDM) und die Verwaltung mobiler Anwendungen (MAM) konzentriert. InTune ist in der Microsoft[Enterprise Mobility + Security (EMS)-Suite](https://www.microsoft.com/microsoft-365/enterprise-mobility-security)enthalten und ermöglicht Benutzern, produktiv zu sein und gleichzeitig ihre Organisationsdaten zu schützen. Wenn Sie mehr über InTune erfahren möchten, lesen Sie [Was ist InTune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune).
 

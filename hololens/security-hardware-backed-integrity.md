@@ -1,23 +1,24 @@
 ---
 title: Hardwaregesicherter Integritäts- und Laufzeitnachweis
-description: Begrenzen der Verwendung von Kennwörtern für HoloLens
-author: jbennett
+description: Hardwaregesicherter Integritäts- und Laufzeitnachweis
+author: evmill
+ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.topic: article
 keywords: Sicherheit, HoloLens, hardwaregesicherte Integrität, Laufzeitnachweis, UEFI, UEFI Secure Boot, Secure Boot, TPM, Threat Protection, Windows-Antipersistenzzusicherung (Windows Anti-Persistence Assurance), Codeintegrität, Codeschutz,
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-ms.reviewer: ''
-manager: yannisl
+manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d1a3fe02b64ce1566806119e5309fd262667b181
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: b3986d7310650c2fac20204488ae5f882754deab
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865716"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009473"
 ---
 # Hardwaregesicherter Integritäts- und Laufzeitnachweis
 
