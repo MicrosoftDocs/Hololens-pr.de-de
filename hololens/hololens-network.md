@@ -10,12 +10,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: 0f46ff4a1bef95d153d9fa93c746c8977dc49771
-ms.sourcegitcommit: 47bc3b696936dd7011b3f9dd683deb872ed25b90
+ms.openlocfilehash: 0db64ffb4113ff948651c708c28b91da535cb09b
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "10883149"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009523"
 ---
 # HoloLens mit einem Netzwerk verbinden
 
@@ -29,6 +29,8 @@ Weitere Informationen finden Sie unter [Verwenden von HoloLens Offline](hololens
 ## Erstmaliges Herstellen einer Verbindung
 
 Bei der ersten Verwendung von HoloLens werden Sie beim Herstellen einer Verbindung mit einem WLAN-Netzwerk angeleitet. Wenn beim Einrichten Probleme beim Herstellen einer Verbindung zu WLAN auftreten, stellen Sie sicher, dass es sich um ein offenes, kennwortgeschütztes Netzwerk oder ein Captive-Portalnetzwerk handelt. Stellen Sie sicher, dass für das Netzwerk kein Zertifikat zum Herstellen einer Verbindung benötigt wird. Nach dem Einrichten können Sie eine Verbindung zu anderen Arten von WLAN-Netzwerken herstellen.
+
+Auf HoloLens2-Geräten kann ein Benutzer auch über einen [USB-C-zu-Ethernet-Adapter](hololens-connect-devices.md#hololens-2-connect-usb-c-devices) eine direkte Verbindung zu WLAN herstellen, um die Einrichtung des Geräts zu unterstützen. Sobald das Gerät eingerichtet wurde, kann ein Benutzer den Adapter entweder weiter verwenden oder das Gerät vom Adapter trennen und [nach dem Einrichten eine Verbindung zu WLAN herstellen](hololens-network.md#connecting-to-wi-fi-after-setup). 
 
 ## Herstellen einer Verbindung zu WLAN nach dem Einrichten
 

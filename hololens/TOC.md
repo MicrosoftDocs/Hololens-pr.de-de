@@ -72,6 +72,7 @@
 
 ## Richtlinien
 ### [Konfigurieren von HoloLens mittels Bereitstellungspaketen](hololens-provisioning.md)
+### [Verwenden von MDM zum Verwalten von HoloLens-Geräten](hololens-mdm-configure.md)
 ### [Einrichten von HoloLens als Kiosk](hololens-kiosk.md)
 # Bereitstellen
 ## Anmeldung
