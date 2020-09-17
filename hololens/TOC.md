@@ -65,7 +65,8 @@
 ### [Teilen von HoloLens mit mehreren Personen](hololens-multiple-users.md)
 ## Netzwerk und Verbindungen
 ### [Konfigurieren Ihres Netzwerks für HoloLens](hololens-commercial-infrastructure.md)
-### [Verbinden von HoloLens mit einem Netzwerk](hololens-network.md)
+### [HoloLens mit einem Netzwerk verbinden](hololens-network.md)
+### [Vorbereiten von Zertifikaten und Netzwerkprofilen für HoloLens 2](hololens-certificates-network.md)
 ### [Verwalten von Verbindungsendpunkten für HoloLens](hololens-offline.md)
 ### [Verbinden mit Bluetooth- und USB C-Geräten](hololens-connect-devices.md)
 
