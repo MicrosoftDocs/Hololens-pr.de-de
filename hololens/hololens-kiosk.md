@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f5c45477ab33064afe30e275f8b0003bc6022eac
-ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.openlocfilehash: c6b2bf3d48da642e91b8709cfdf35d03a7913ac4
+ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929851"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "11016689"
 ---
 # Einrichten von HoloLens als Kiosk
 
@@ -31,7 +31,9 @@ Sie können ein HoloLens-Gerät so konfigurieren, dass es als ein Gerät mit fes
 Dieser Artikel enthält Informationen zu Aspekten der Kiosk Konfiguration, die für HoloLens-gerätespezifisch sind. Allgemeine Informationen zu den unterschiedlichen Typen von Windows-basierten Kiosken und deren Konfiguration finden Sie unter [Konfigurieren von Kiosken und digitalen Signalen auf Windows-Desktop-Editionen](https://docs.microsoft.com/windows/configuration/kiosk-methods).  
 
 > [!IMPORTANT]  
-> Im Kiosk Modus wird festgelegt, welche apps verfügbar sind, wenn sich ein Benutzer am Gerät anmeldet. Der Kioskmodus ist jedoch keine Sicherheitsmethode. Es wird nicht verhindert, dass eine APP, die nicht erlaubt ist, eine andere APP öffnen kann. Um apps oder Prozesse beim Öffnen zu blockieren, verwenden Sie [Windows Defender Application Control (WDAC) CSP](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) , um geeignete Richtlinien zu erstellen.  
+> Im Kiosk Modus wird festgelegt, welche apps verfügbar sind, wenn sich ein Benutzer am Gerät anmeldet. Der Kioskmodus ist jedoch keine Sicherheitsmethode. Es wird nicht verhindert, dass eine APP, die nicht erlaubt ist, eine andere APP öffnen kann. Um apps oder Prozesse beim Öffnen zu blockieren, verwenden Sie [Windows Defender Application Control (WDAC) CSP](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) , um geeignete Richtlinien zu erstellen.
+>
+> Weitere Informationen zu den Microsoft-Diensten, um Benutzern eine erweiterte Sicherheitsstufe zur Verfügung zu stellen, die von HoloLens 2 verwendet wird, finden Sie weitere Informationen über den [Schutz von Zustands Trennungen und Isolierungs Verteidigern](security-state-separation-isolation.md#defender-protections). Oder erfahren Sie, wie Sie [WDAC und Windows PowerShell verwenden, um apps auf HoloLens 2-Geräten mit Microsoft InTune zuzulassen oder zu blockieren](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens).
 
 Sie können den Kioskmodus entweder in einer einzelnen APP-oder in einer Multi-App-Konfiguration verwenden, und Sie können einen von drei Prozessen zum Einrichten und Bereitstellen der Kiosk Konfiguration verwenden.
 
@@ -96,7 +98,7 @@ Wenn Sie ein MDM-System (Mobile Device Management) oder ein Bereitstellungspaket
 |App-Name |AUMID |
 | --- | --- |
 |3D-Viewer |Microsoft. Microsoft3DViewer \ _8wekyb3d8bbwe \! Microsoft. Microsoft3DViewer |
-|Kalender |Microsoft. windowscommunicationsapps \ _8wekyb3d8bbwe \! Microsoft. Windows Live stürzen. Calendar |
+|Calendar |Microsoft. windowscommunicationsapps \ _8wekyb3d8bbwe \! Microsoft. Windows Live stürzen. Calendar |
 |Kamera <sup> 1, 2</sup> |HoloCamera \ _cw5n1h2txyewy \! HoloCamera |
 |Cortana <sup> 3</sup> |Microsoft. 549981C3F5F10 \ _8wekyb3d8bbwe \! App |
 |Geräteauswahl auf HoloLens (1st Generation) |HoloDevicesFlow \ _cw5n1h2txyewy \! HoloDevicesFlow |
