@@ -3,7 +3,7 @@ title: Einstellungs-URIs
 description: Liste der von HoloLens unterstützten URIs für PageVisibilityList
 author: evmill
 ms.author: v-evmill
-ms.date: 8/1/2020
+ms.date: 09/16/2020
 ms.topic: article
 keywords: HoloLens, HoloLens 2, zugewiesener Zugriff, Kiosk, Einstellungsseite
 ms.prod: hololens
@@ -13,30 +13,60 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6b506b36915c8f34b90c455410db67e55a2cca09
-ms.sourcegitcommit: 7f48e7103f869a22a0d20a54dc8f9b708b22484c
+ms.openlocfilehash: 17959fa25763d2c6b89d0956f29b9999b3012e60
+ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "10963714"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "11016699"
 ---
 # Einstellungs-URIs
 
-Zu den verwaltbaren Features für HoloLens-Geräte gehört die [Einstellungen/PageVisibilityList-Richtlinie](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist), mit der die in der App „Einstellungen“ angezeigten Seiten eingeschränkt werden können. HoloLens-Geräte und Windows 10-Geräte weisen in der App „Einstellungen“ eine unterschiedliche Seitenauswahl auf. Auf dieser Seite finden Sie nur die Einstellungen, die auf HoloLens vorhanden sind. 
+Zu den verwaltbaren Features für HoloLens-Geräte gehört die [Einstellungen/PageVisibilityList-Richtlinie](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist), mit der die in der App „Einstellungen“ angezeigten Seiten eingeschränkt werden können. Die PageVisibilityList ist eine Richtlinie, die es IT-Administratoren ermöglicht, entweder zu verhindern, dass bestimmte Seiten in der Systemeinstellungs-App sichtbar oder zugänglich sind oder Sie können das für alle Seiten tun, außer den angegebenen. 
 
-## Konten
+> [!IMPORTANT]
+> Dieses Feature ist derzeit nur in [Windows-Insider-Builds verfügbar.](hololens-insider.md). Bitte stellen Sie sicher, dass die Geräte, für die Sie dafür verwenden möchten, über Version 19041.1349+ verfügen.
+
+Das folgende Beispiel zeigt eine Richtlinie, die nur Zugriff auf die Seiten „Über“ und „Bluetooth“ ermöglichen würde, die jeweils über URI „ms-settings:network-wifi“ und „ms-settings:bluetooth“ verfügen:
+- showonly:network-wifi;network-proxy;bluetooth
+
+So legen Sie dies über ein Provsioning-Paket fest: 
+1. Während Sie Ihr Paket im Windows Configuration Designer erstellen, navigieren Sie zu **Policies > Settings > PageVisibilityList**.
+1. Geben Sie den String **showonly:network-wifi;network-proxy;bluetooth**ein.
+1. Exportieren Sie Ihr Provsioning-Paket.
+1. Wenden des Paket auf Ihrem Gerät an. Ausführliche Informationen über die Erstellung und Anwendung eines Provsioning-Pakets finden Sie unter [this page](hololens-provisioning.md). 
+
+Dies kann über Intune mit OMA-URI erfolgen.
+1. Verwenden Sie eine **benutzerdefinierte Richtlinie**.
+1. Verwenden Sie beim Einstellen des OMA-URI den String: **./Device/Vendor/MSFT/Policy/Config/Settings/PageVisibilityList**
+1. Wählen Sie bei der Auswahl der Daten: **String**
+1. Wenn Sie den Wert eingeben, verwenden Sie:**showonly:network-wifi;network-proxy;bluetooth**
+1. Stellen Sie sicher, dass die benutzerdefinierte Gerätekonfiguration der Gruppe zugeordnet wird, zu der das Gerät gehören soll.
+Weitere Informationen zu Intune-Gruppen und Gerätekonfigurationen [finden Sie hier](hololens-mdm-configure.md).
+
+Unabhängig von der gewählten Methode, sollte Ihr Gerät nun die Änderungen erhalten, und die Benutzer erhalten die folgende Einstellungs-App. 
+
+![Screenshot der Nutzungszeit, die in der Einstellungs-App geändert werden](images/hololens-page-visibility-list.jpg)
+
+Um die Einstellungsseiten der App so zu konfigurieren, dass Sie Ihre eigene Auswahl an Seiten ein- oder ausblenden können, werfen Sie bitte einen Blick auf die auf HoloLens verfügbaren Einstellungs-URIs. 
+
+## Einstellungs-URIs
+
+HoloLens-Geräte und Windows 10-Geräte weisen in der App „Einstellungen“ eine unterschiedliche Seitenauswahl auf. Auf dieser Seite finden Sie nur die Einstellungen, die auf HoloLens vorhanden sind. 
+
+### Konten
 | Einstellungsseite           | URI                                            |
 |-------------------------|------------------------------------------------|
 | Anmeldeoptionen         | ms-settings:signinoptions                      |
 | Iris-Registrierung       | ms-settings:signinoptions-launchirisenrollment |
 | Geschäfts- oder Schulkonto öffnen | ms-settings:workplace                          |
 
-## Geräte
+### Geräte
 | Einstellungsseite | URI                          |
 |---------------|------------------------------|
 | Bluetooth     | ms-settings:bluetooth <br> ms-settings:connecteddevices |
 
-## Vertraulichkeit
+### Vertraulichkeit
 | Einstellungsseite            | URI                                             |
 |--------------------------|-------------------------------------------------|
 | Kontoinformationen             | ms-settings:privacy-accountinfo                 |
@@ -63,14 +93,14 @@ Zu den verwaltbaren Features für HoloLens-Geräte gehört die [Einstellungen/Pa
 | Stimmaktivierung       | ms-settings:privacy-voiceactivation             |
 | Kamera                   | ms-settings:privacy-webcam                      |
 
-## Netzwerk und Internet
+### Netzwerk und Internet
 | Einstellungsseite | URI                              |
 |---------------|----------------------------------|
 | WLAN  | ms-settings:network-wifi<br>ms-settings:network-wifisettings<br>ms-settings:network-status<br>ms-settings:wifi-provisioning    |
 | VPN   | ms-settings:network-vpn          |
 | Proxy | ms-settings:network-proxy        |
 
-## System
+### System
 | Einstellungsseite      | URI                                |
 |--------------------|------------------------------------|
 | Gemeinsame Erfahrung | ms-settings:crossdevice            |
@@ -78,13 +108,13 @@ Zu den verwaltbaren Features für HoloLens-Geräte gehört die [Einstellungen/Pa
 | Benachrichtigungen & Infos  | ms-settings:notifications          |
 | Speicher            | ms-settings:storagesense           |
 
-## Zeit & Sprache
+### Zeit & Sprache
 | Einstellungsseite | URI                                           |
 |---------------|-----------------------------------------------|
 | Region        | ms-settings:regionformatting                  |
 | Sprache      | ms-settings:regionlanguage<br>ms-settings:regionlanguage-adddisplaylanguage<br>ms-settings:regionlanguage-setdisplaylanguage |
 
-## Update und Sicherheit
+### Update und Sicherheit
 | Einstellungsseite                         | URI                                       |
 |---------------------------------------|-------------------------------------------|
 | Windows-Insider-Programm               | ms-settings:windowsinsider <br>ms-settings:windowsinsider-optin          |
