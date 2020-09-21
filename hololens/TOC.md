@@ -71,10 +71,16 @@
 ### [Verbinden mit Bluetooth- und USB C-Geräten](hololens-connect-devices.md)
 
 
-## Richtlinien
+## -Geräteverwaltung
+### [Übersicht über CSPs und Geräteverwaltung konfigurieren](hololens-csp-policy-overview.md)
 ### [Konfigurieren von HoloLens mittels Bereitstellungspaketen](hololens-provisioning.md)
 ### [Verwenden von MDM zum Verwalten von HoloLens-Geräten](hololens-mdm-configure.md)
+### [Allgemeine Geräteeinschränkungen](hololens-common-device-restrictions.md)
 ### [Einrichten von HoloLens als Kiosk](hololens-kiosk.md)
+### [Windows Defender Application Control – WDAC](windows-defender-application-control-wdac.md)
+
+
+
 # Bereitstellen
 ## Anmeldung
 ### [Registrieren von HoloLens in MDM](hololens-enroll-mdm.md)
