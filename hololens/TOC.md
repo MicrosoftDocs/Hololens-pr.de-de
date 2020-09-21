@@ -107,5 +107,7 @@
 ## [Insider-Vorschau für Microsoft HoloLens](hololens-insider.md)
 ### [Global zugewiesener Zugriff – Kiosk](hololens-global-assigned-access-kiosk.md)
 ### [Seiteneinstellungs-URIs für HoloLens](settings-uri-list.md)
+### [App-Installer](app-deploy-app-installer.md)
+### [Web-App-Installer](app-deploy-web-installer.md)
 ## [Veröffentlichungshinweise für HoloLens (1. Generation)](hololens1-release-notes.md)
 # [Feedback senden](hololens-feedback.md)
