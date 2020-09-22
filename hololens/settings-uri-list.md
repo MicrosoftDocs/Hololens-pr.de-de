@@ -1,6 +1,6 @@
 ---
-title: Einstellungs-URIs
-description: Liste der von HoloLens unterstützten URIs für PageVisibilityList
+title: Sichtbarkeit von Seiteneinstellungen
+description: Liste der von HoloLens unterstützten URIs für PageVisibilityList und Guide
 author: evmill
 ms.author: v-evmill
 ms.date: 09/16/2020
@@ -13,33 +13,33 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 17959fa25763d2c6b89d0956f29b9999b3012e60
-ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
+ms.openlocfilehash: 7a24d64b0b60be9f922260b7145d04c2c13951ed
+ms.sourcegitcommit: 8b5e349990ba5566bcc6a2a72ff83d1a21b099b8
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 09/17/2020
-ms.locfileid: "11016699"
+ms.locfileid: "11026938"
 ---
-# Einstellungs-URIs
+# Sichtbarkeit von Seiteneinstellungen
 
-Zu den verwaltbaren Features für HoloLens-Geräte gehört die [Einstellungen/PageVisibilityList-Richtlinie](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist), mit der die in der App „Einstellungen“ angezeigten Seiten eingeschränkt werden können. Die PageVisibilityList ist eine Richtlinie, die es IT-Administratoren ermöglicht, entweder zu verhindern, dass bestimmte Seiten in der Systemeinstellungs-App sichtbar oder zugänglich sind oder dies für alle Seiten außer den angegebenen zu tun. 
+Zu den verwaltbaren Features für HoloLens-Geräte gehört die [Einstellungen/PageVisibilityList-Richtlinie](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist), mit der die in der App „Einstellungen“ angezeigten Seiten eingeschränkt werden können. Die PageVisibilityList ist eine Richtlinie, die es IT-Administratoren ermöglicht, entweder zu verhindern, dass bestimmte Seiten in der Systemeinstellungs-App sichtbar oder zugänglich sind oder Sie können das für alle Seiten tun, außer den angegebenen. 
 
 > [!IMPORTANT]
-> Dieses Feature ist derzeit nur in [Windows-Insider-Builds verfügbar.](hololens-insider.md). Bitte stellen Sie sicher, dass die Geräte, für die Sie dafür verwenden möchten, über Version 19041.1349 oder höher verfügen.
+> Dieses Feature ist derzeit nur in [Windows-Insider-Builds verfügbar.](hololens-insider.md). Bitte stellen Sie sicher, dass die Geräte, für die Sie dafür verwenden möchten, über Version 19041.1349+ verfügen.
 
 Das folgende Beispiel zeigt eine Richtlinie, die nur Zugriff auf die Seiten „Über“ und „Bluetooth“ ermöglichen würde, die jeweils über URI „ms-settings:network-wifi“ und „ms-settings:bluetooth“ verfügen:
 - showonly:network-wifi;network-proxy;bluetooth
 
-So legen Sie dies über ein Bereitstellungspaket fest: 
-1. Während Sie Ihr Paket im Windows Configuration Designer erstellen, navigieren Sie zu **Richtlinien > Einstellungen > PageVisibilityList**.
-1. Geben Sie die Zeichenfolge **showonly:network-wifi;network-proxy;bluetooth** ein.
-1. Exportieren Sie Ihr Bereitstellungspaket.
-1. Wenden Sie das Paket auf Ihrem Gerät an. Ausführliche Informationen über die Erstellung und Anwendung eines Bereitstellungspakets finden Sie auf [dieser Seite](hololens-provisioning.md). 
+So legen Sie dies über ein Provsioning-Paket fest: 
+1. Während Sie Ihr Paket im Windows Configuration Designer erstellen, navigieren Sie zu **Policies > Settings > PageVisibilityList**.
+1. Geben Sie den String **showonly:network-wifi;network-proxy;bluetooth**ein.
+1. Exportieren Sie Ihr Provsioning-Paket.
+1. Wenden des Paket auf Ihrem Gerät an. Ausführliche Informationen über die Erstellung und Anwendung eines Provsioning-Pakets finden Sie unter [this page](hololens-provisioning.md). 
 
 Dies kann über Intune mit OMA-URI erfolgen.
 1. Verwenden Sie eine **benutzerdefinierte Richtlinie**.
-1. Verwenden Sie beim Einstellen des OMA-URI die Zeichenfolge: **./Device/Vendor/MSFT/Policy/Config/Settings/PageVisibilityList**
-1. Klicken Sie bei der Auswahl der Daten auf: **String**
+1. Verwenden Sie beim Einstellen des OMA-URI den String: **./Device/Vendor/MSFT/Policy/Config/Settings/PageVisibilityList**
+1. Wählen Sie bei der Auswahl der Daten: **String**
 1. Wenn Sie den Wert eingeben, verwenden Sie:**showonly:network-wifi;network-proxy;bluetooth**
 1. Stellen Sie sicher, dass die benutzerdefinierte Gerätekonfiguration der Gruppe zugeordnet wird, zu der das Gerät gehören soll.
 Weitere Informationen zu Intune-Gruppen und Gerätekonfigurationen [finden Sie hier](hololens-mdm-configure.md).
@@ -122,8 +122,7 @@ HoloLens-Geräte und Windows 10-Geräte weisen in der App „Einstellungen“ ei
 | Windows Update – Suche nach Updates | ms-settings:windowsupdate-action          |
 | Erweiterte Optionen                    | ms-settings:windowsupdate-options         |
 
-> [!NOTE]
->  1 Die folgenden beiden URI führen Sie nicht tatsächlich zur Seite „Erweiterte Optionen“ oder „Optionen“. Sie blockieren/zeigen nur die Hauptseite von Windows Update. 
+>  <sup>1 </sup> Die folgenden beiden URIs führen Sie nicht zu den Seiten **Erweiterte Optionen** oder **Optionen**; sie blockieren oder zeigen nur die Windows Update-Hauptseite an. 
 > - ms-settings:windowsupdate-options
 > - ms-settings:windowsupdate-restartoptions 
 
