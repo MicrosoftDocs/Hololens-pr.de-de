@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: da783756c271c589f67efca0c229ad0f777857e2
-ms.sourcegitcommit: ccdd628cdbb5b89741f5dbc971143cb2fd2e451b
+ms.openlocfilehash: c10f07a6caeae6f2e8ace41d345c3ad11901621a
+ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10990909"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11052644"
 ---
 # Konfigurieren von HoloLens mithilfe eines Bereitstellungspakets
 
@@ -210,4 +210,4 @@ Wenn Sie ein Bereitstellungspaket für Windows Holographic im Windows-Konfigurat
 Apps können über Bereitstellungspakete auf HoloLens 2-Geräten installiert werden. Dies ermöglicht ein einfach wiederverwendbares Paket, mit dem Sie Ihre apps verteilen können. Lesen Sie die vollständigen Anweisungen zum [Bereitstellen von apps über Bereitstellungspakete](app-deploy-provisioning-package.md).  
 
 > [!NOTE]
-> HoloLens (1st Generation) unterstützt die Installation von apps (**UniversalAppInstall**) nicht mithilfe eines Bereitstellungspakets.
+> HoloLens (1st Generation) hat begrenzte Unterstützung bei der Installation von apps (**UniversalAppInstall**) mithilfe eines Bereitstellungspakets. HoloLens (1st Gen)-Geräte unterstützen nur die Installation einer APP über PPKG nur während der OOBE und nur bei Installationen des Benutzerkontexts.

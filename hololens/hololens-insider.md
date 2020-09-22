@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 604e1e54999f7fb76a3a6a31223c3d59b7e4161f
-ms.sourcegitcommit: 4ad9b6c73913808175b1a448d2be9e33592f65af
+ms.openlocfilehash: 64e31a03eb3c8cf1c0e6112fd0605aaebb26ba64
+ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "11027441"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11052634"
 ---
 # Insider-Vorschau für Microsoft HoloLens
 
@@ -43,7 +43,6 @@ Hier finden Sie eine Liste der anstehenden Features, die Sie heute in unserem Wi
 |[Tenantlockdown-CSP und Autopilot](hololens-insider.md#tenantlockdown-csp-and-autopilot) | Nachdem die mandantenregistrierung und die Richtlinie angewendet wurden, kann das Gerät immer nur für diesen Mandanten registriert werden, wenn das Gerät zurückgesetzt oder erneut geflasht wird. | 19041.1366 +|
 | [Global zugewiesener Zugriff](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | Konfigurieren Sie das HoloLens 2-Gerät für den Multi-App-Kioskmodus, der auf Systemebene anwendbar ist. | 19041.1356 +                 |
 | [Automatisches Starten einer APP im Multi-App-Kiosk](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | Legt fest, dass eine Anwendung beim Anmelden bei einem Kioskmodus mit mehreren Apps automatisch gestartet wird.     | 19041.1346 +                 |
-| [Besucher-automatische Anmeldung für Kioske](hololens-insider.md#visitor-auto-logon-for-kiosks)                          | Ermöglicht die Verwendung der automatischen Anmeldung für Besucher Konten für Kiosk Modi.                         | 19041.1361 +                 |
 | [Verhaltensänderungen im Kiosk Modus zur Behandlung von Fehlern](hololens-insider.md#kiosk-mode-behavior-changes-for-handling-of-failures) | Änderungen beim Ausfall des Kiosk Modus werden nun verarbeitet.                                              | 19041.1356 +                 |
 | [HoloLens-Richtlinien](hololens-insider.md#hololens-policies)                                      | Neue Richtlinien für Mixed-Reality-Geräte.                                                        | 19041.1349 +                 |
 | [Cache-Aad-Gruppenmitgliedschaft für Offline-Kiosk](hololens-insider.md#cache-aad-group-membership-for-offline-kiosk)           | Richtlinie für die Anzahl der Tage, an denen der Aad-Gruppen Mitgliedschafts Cache für den Kiosk Modus verwendet werden darf.    | 19041.1356 +                 |
@@ -212,18 +211,6 @@ Die Anwendung wird automatisch gestartet, wenn sich der Benutzer anmeldet.
 <AllowedApps>                     
     <!--TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
 ```
-
-### Besucher-Auto Anmeldung für Kioske
-Mit diesem neuen Feature können Sie die automatische Anmeldung für Besucher Konten für den Kiosk Modus verwenden. 
-
-Bei einer nicht-Aad-Konfiguration können Sie ein Gerät für Besucher Autologon konfigurieren:
-1.  Erstellen Sie ein Bereitstellungspaket, das:
-    1.  Konfiguriert **Runtime Settings/AssignedAccess** , um Besucher Konten zuzulassen.
-    1.  Registriert optional das Gerät in MDM **(Laufzeiteinstellungen/Arbeitsplatz/Anmeldungen)** , damit es später verwaltet werden kann.
-    1.  Kein lokales Konto erstellen
-1.  [Wenden Sie das Bereitstellungspaket](hololens-provisioning.md)an.
-
-Für eine Aad-Konfiguration können Benutzer heute ohne diese Änderung etwas Ähnliches erreichen. Aad-verbundene Geräte, die für den Kioskmodus konfiguriert sind, können mit einem einzigen Mausklick auf dem Anmeldebildschirm ein besucherkonto anmelden. Nachdem Sie sich bei dem besucherkonto angemeldet haben, fordert das Gerät keine erneute Anmeldung auf, bis der Besucher explizit über das Startmenü abgemeldet oder das Gerät neu gestartet wird.
 
 ### Verhaltensänderungen im Kiosk Modus zur Behandlung von Fehlern
 
