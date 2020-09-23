@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c6b2bf3d48da642e91b8709cfdf35d03a7913ac4
-ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
+ms.openlocfilehash: 8844f691ec5395f9c69bce7df44125da9c838f14
+ms.sourcegitcommit: 7bf0f92aaf1683c7c39ed6b17ac47231c5088365
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11016689"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11072792"
 ---
 # Einrichten von HoloLens als Kiosk
 
@@ -477,6 +477,9 @@ Führen Sie die folgenden Schritte aus, um den Kioskmodus mithilfe des Windows-G
 
     ![Kioskmodus](images/kiosk.png)
 1. Starten Sie HoloLens neu. Wenn Ihre Geräte Portal Seite weiterhin geöffnet ist, können Sie oben auf der Seite " **neu starten** " auswählen.
+
+> [!NOTE]
+> Der Kiosk Modus kann über die restliche API des Geräte Portals festgelegt werden, indem ein Beitrag zu/API/Holographic/kioskmode/Settings mit einem erforderlichen Abfragezeichenfolgenparameter ("kioskModeEnabled" mit dem Wert "true" oder "false") und einem optionalen Parameter ("startupApp" mit dem Wert eines Paket namens) ausgeführt wird. Beachten Sie bitte, dass Device Portal nur für Entwickler gedacht ist und nicht auf nicht-Entwickler Geräten aktiviert werden sollte. Die restliche API unterliegt Änderungen in zukünftigen Updates/Versionen.
 
 ## Weitere Informationen
 

@@ -3,7 +3,7 @@ title: Global zugewiesener Zugriff
 description: Leitfaden für die Verwendung von Oma-URI für global zugewiesene Zugriff-Kioske
 author: evmill
 ms.author: v-evmill
-ms.date: 7/13/2020
+ms.date: 9/21/2020
 ms.topic: article
 keywords: HoloLens, HoloLens 2, zugewiesener Zugriff, Kiosk
 ms.prod: hololens
@@ -13,12 +13,12 @@ ms.reviewer: lavinds
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1a0a3eb8ef3d21b34e13711bcc890af57e5ae2c2
-ms.sourcegitcommit: 7c16570839893f4a4432286b13ae6d84c665d376
+ms.openlocfilehash: c2be1123d0e8a09d6955fb6e5da782daebc96bcf
+ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "10902300"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11052624"
 ---
 # Global zugewiesener Zugriff – Kiosk
 
@@ -44,7 +44,7 @@ Dieses Feature konfiguriert das Hololens 2-Gerät für den Multi-App-Kioskmodus,
 
 2.  Führen Sie die Schritte in [Verwenden eines Bereitstellungspakets aus, um einen Single-App- oder Multi-App-Kiosk](https://docs.microsoft.com/hololens/hololens-kiosk#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)einzurichten, insbesondere den Abschnitt Prov. Paket, Schritt 2 – Fügen Sie die Kiosk-Konfigurations-XML-Datei zu einem Bereitstellungspaket hinzu und verweisen Sie auf die XML-Datei, die im vorherigen Schritt gespeichert wurde. 
 
-## Kann ich eine Konfiguration erstellen, bei der Global für alle Personen mit Ausnahme des 1 AAD-Kontos oder der AAD-Gruppe gilt? 
+## Kann ich eine Konfiguration erstellen, bei der eine globale Konfiguration für alle und eine separate Konfiguration für 1 AAD-Konto oder eine AAD-Gruppe gilt? 
 
 Ja, weitere Informationen dazu finden Sie im folgenden Beispiel-XML-BLOB. Das global zugewiesene Zugriff-Profil wird auf HoloLens angewendet, wenn ein bestimmtes Profil für den angemeldeten Benutzer nicht gefunden wird. Daher ist dies die Standardkonfiguration für den Kioskmodus für angemeldete Benutzer. Hier ist ein Beispiel für die Verwendung von XML-BLOB: 
 
