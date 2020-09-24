@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 8/21/2020
+ms.date: 9/23/2020
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 64e31a03eb3c8cf1c0e6112fd0605aaebb26ba64
-ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
+ms.openlocfilehash: c5e050fefc9a6a0717dea2258ada39df302f2e45
+ms.sourcegitcommit: 8c036f12a341a063eb7827ee7b70784402dad57f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11052634"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "11077692"
 ---
 # Insider-Vorschau für Microsoft HoloLens
 
@@ -35,8 +35,6 @@ Hier finden Sie eine Liste der anstehenden Features, die Sie heute in unserem Wi
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
 | [Unterstützung der automatischen Augen Position](hololens-insider.md#auto-eye-position-support)                              | Sucht aktiv nach Augen Positionen und ermöglicht eine exakte Hologramm-Positionierung.                        | 19041.1339 +                 |
 | [Zertifikat-Manager](hololens-insider.md#certificate-manager)                                     | Benutzer können Zertifikate der aktuellen Benutzer-und lokalen Computerzertifikate in der Einstellungs-APP anzeigen, installieren und entfernen.                                         | 19041.1361 +                 |
-| [App-Installer](hololens-insider.md#install-apps-on-hololens-2-via-app-installer) | Auf der Geräte-UI, um Apps aus AppX-Dateien zu installieren. | 19041.1377 + |
-| [Installieren von apps von einer Webseite](hololens-insider.md#installing-apps-from-a-web-page) | Einrichten von apps zum herunterladen und installieren über den Browser. | 19041.1366 + | 
 | [Automatisches Starten der Bereitstellung über USB](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE erkennt automatisch Bereitstellungspakete auf USB-Laufwerken.                                | 19041.1361 +                 |
 | [Automatisches bestätigen von Bereitstellungspaketen in Oobe](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | Automatisches Anwenden von Bereitstellungspaketen in Oobe                                             | 19041.1361 +                 |
 | [Verwenden von Autopilot mit Wi-Fi-Verbindung](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | Verwenden Sie Autopilot vom Gerät Wi-Fi ohne Ethernet-Adapter.                             | 19041.1364 +                 |
@@ -108,22 +106,6 @@ Das Zertifikat sollte nun auf dem Gerät installiert sein.
 ![Zertifikatanzeige in der Einstellungs-APP](images/certificate-viewer-device.jpg)
 
 ![Abbildung der Verwendung der Zertifikat-UI zum Installieren eines Zertifikats](images/certificate-device-install.jpg)
-
-### Installieren von apps auf HoloLens 2 über das App-Installationsprogramm
-Benutzer können jetzt Apps über AppX-Bundles jetzt installieren, ohne den Entwicklermodus aktivieren oder Device Portal verwenden zu müssen. Diese Vorgehensweise ist einfach für die Installation von apps auf lokalen Geräten oder das Freigeben einer APP für eine andere Person, die mit anderen APP-Installationsmethoden auf HoloLens nicht vertraut ist.
-
-Dies ist eine einfache Methode, um eine vollständig erstellte APP zu verteilen. Unabhängig davon, ob Sie Ihre APP einfach einem anderen Benutzer mit einem HoloLens-Demo senden möchten, oder wenn Sie Ihre APP im Maßstab bereitstellen möchten, funktioniert diese Methode für beide.
-
-Informieren Sie sich über den vollständigen Prozess der [Installation von apps auf HoloLens 2 mit dem App-Installationsprogramm](app-deploy-app-installer.md).  
-
-![Installieren von MRTK-Beispielen über das App-Installationsprogramm](images/hololens-app-installer-picture.jpg)
-
-### Installieren von apps von einer Webseite
-Jetzt können in Windows Insider-Builds 19041.1366 +-Benutzer eine APP direkt von einem Webserver installieren. 
-
-AppX-Pakete, die jetzt erstellt wurden, können auf einer Webseite gehostet werden. In Kombination mit der Zertifikatbereitstellung kann diese Methode der APP-Verteilung für die APP-Bereitstellung sehr hilfreich sein.
-
-Informationen zum vollständigen Prozess der [Installation von apps auf HoloLens 2 von einer Webseite](app-deploy-web-installer.md)
 
 ### Automatisches Starten der Bereitstellung über USB
 Vor diesem Build mussten Benutzer den Bereitstellungs Bildschirm während der OOBE manuell starten, um die Bereitstellung über eine Tastenkombination durchführen zu können. Jetzt können Benutzer die Tastenkombination überspringen, indem Sie ein Bereitstellungspaket auf einem USB-Speicherlaufwerk verwenden. 
@@ -260,7 +242,10 @@ Neu aktivierte Richtlinien, die weitere Verwaltungsoptionen von HoloLens 2-Gerä
 - [AllowAddProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
 - [AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
 - [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone)
-- [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp)
+- [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp) *
+
+>[!NOTE]
+> In Bezug auf [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp)unterstützt HoloLens nur die./Vendor/MSFT/RemoteLock/Lock-Konfiguration. Die Konfigurationen, die sich mit PIN wie Reset und Recover befassen, werden nicht unterstützt.
 
 ### Neue Energierichtlinien für Hololens 2
 Diese neu hinzugefügten Richtlinien ermöglichen Administratoren, Energiezustände wie Leerlauftimeout zu steuern. Wenn Sie mehr über die einzelnen Richtlinien erfahren möchten, klicken Sie auf den Link für diese Richtlinie.
