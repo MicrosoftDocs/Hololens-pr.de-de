@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c5e050fefc9a6a0717dea2258ada39df302f2e45
-ms.sourcegitcommit: 8c036f12a341a063eb7827ee7b70784402dad57f
+ms.openlocfilehash: caf860ad5926c03d1e87e829f04838531510df51
+ms.sourcegitcommit: 44de31c6d3534b6e0b73ddc2a9336147daf7a41d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "11077692"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "11078383"
 ---
 # Insider-Vorschau für Microsoft HoloLens
 
@@ -258,6 +258,9 @@ Diese neu hinzugefügten Richtlinien ermöglichen Administratoren, Energiezustä
 |     [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)     |     Beispielwert für die Verwendung im Windows-Konfigurations-Designer, also 100                                                                          |
 |     [StandbyTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     Beispielwert, der im Windows-Konfigurations-Designer verwendet werden soll, also   `<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
 |     [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     Beispielwert, der im Windows-Konfigurations-Designer verwendet werden soll, also  `<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
+
+> [!NOTE]
+> Um eine konsistente Nutzung von HoloLens 2 zu gewährleisten, stellen Sie bitte sicher, dass die Werte für DisplayOffTimeoutOnBattery und StandbyTimeoutOnBattery mit dem gleichen Wert festgesetzt werden. Das gleiche gilt für DisplayOffTimeoutPluggedIn und StandbyTimeoutPluggedIn. Weitere Informationen zum modernen Standby finden Sie unter [Leerlaufzeiten für Anzeige, Ruhezustand und Ruhezustand](https://docs.microsoft.com/windows-hardware/design/device-experiences/display--sleep--and-hibernate-idle-timers) .
 
 ### Neu aktivierte Update Richtlinien für HoloLens
 Diese Update Richtlinien sind jetzt auf HoloLens 2-Geräten aktiviert:
