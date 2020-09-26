@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 8844f691ec5395f9c69bce7df44125da9c838f14
-ms.sourcegitcommit: 7bf0f92aaf1683c7c39ed6b17ac47231c5088365
+ms.openlocfilehash: 920ba7e84b1bb4818aef4efdee60be004d8a3300
+ms.sourcegitcommit: e6885d03c980b33dd0bab5c418cbd1892d5ff123
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11072792"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "11080444"
 ---
 # Einrichten von HoloLens als Kiosk
 
@@ -90,8 +90,10 @@ Wenn Sie das Windows-Geräte Portal verwenden, um einen einzelnen App-Kiosk zu k
 
 Wenn Sie ein MDM-System (Mobile Device Management) oder ein Bereitstellungspaket zum Konfigurieren des Kioskmodus verwenden, verwenden Sie den [AssignedAccess-Konfigurationsdienstanbieter (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) , um Anwendungen anzugeben. Der CSP verwendet [Anwendungsbenutzer Modell-IDs (Anwendungs)](https://docs.microsoft.com/windows/configuration/find-the-application-user-model-id-of-an-installed-app) , um Anwendungen zu identifizieren. In der folgenden Tabelle sind die Anwendungs einiger in-Box-Anwendungen aufgeführt, die Sie in einem Kiosk mit mehreren Apps verwenden können.
 
-> [!CAUTION]
-> Sie können die Shell-APP nicht als Kiosk-App auswählen. Außerdem empfehlen wir, dass Sie Microsoft Edge, Microsoft Store oder Datei-Explorer **nicht** als Kiosk-App auswählen.  
+> [!IMPORTANT]
+> Im Kiosk Modus wird festgelegt, welche apps verfügbar sind, wenn sich ein Benutzer am Gerät anmeldet. Der Kioskmodus ist jedoch keine Sicherheitsmethode. Es wird nicht verhindert, dass eine APP, die nicht erlaubt ist, eine andere APP öffnen kann. Da wir dieses Verhalten nicht einschränken, können apps weiterhin über Edge, den Datei-Explorer und die Microsoft Store-Apps gestartet werden. Wenn bestimmte apps nicht von einem Kiosk aus gestartet werden sollen, verwenden Sie [Windows Defender Application Control (WDAC) CSP](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) , um geeignete Richtlinien zu erstellen. 
+> 
+> Darüber hinaus kann das "Mixed Reality Home" nicht als Kiosk-App eingerichtet werden.
 
 <a id="aumids"></a>
 
