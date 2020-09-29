@@ -39,6 +39,8 @@
 ## Planen der Unternehmensbereitstellung von HoloLens 2
 ### [Bereitstellen von HoloLens in einer kommerziellen Umgebung](hololens-requirements.md)
 ### [Szenarien für die Bereitstellung einer gemeinsamen Infrastruktur](common-scenarios.md)
+## Allgemeine Szenarien
+### [Offline Sicherheit](hololens-common-scenarios-offline-secure.md)
 ## Sicherheit
 ### [Sicherheitsübersicht](security-overview.md)
 ### [Architecture](security-architecture.md)
