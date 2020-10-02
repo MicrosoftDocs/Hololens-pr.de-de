@@ -87,6 +87,7 @@
 ## Anmeldung
 ### [Registrieren von HoloLens in MDM](hololens-enroll-mdm.md)
 ### [Windows Autopilot für HoloLens 2](hololens2-autopilot.md) 
+### [Anmeldung in einer auf MAC-Adressen beschränkten WLAN-Umgebung](mac-address-options.md)
 ## Anwendungen
 ### [Anwendungsverwaltungsübersicht](app-deploy-overview.md)
 ### [Intune und Unternehmensportal](app-deploy-intune.md)
