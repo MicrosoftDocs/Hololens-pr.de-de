@@ -13,12 +13,12 @@ ms.reviewer: lavinds
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c2be1123d0e8a09d6955fb6e5da782daebc96bcf
-ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
+ms.openlocfilehash: 9c7e4e37b54e6dd81341a64165e1e742a2242d00
+ms.sourcegitcommit: a0f6ff5c36aab0ed94e16e136728e4b8753203db
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11052624"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "11093935"
 ---
 # Global zugewiesener Zugriff – Kiosk
 
@@ -32,7 +32,12 @@ Dieses Feature konfiguriert das Hololens 2-Gerät für den Multi-App-Kioskmodus,
 > [!NOTE]
 > Bitte beachten Sie die mit "<!-" markierten Bereiche. In diesen Bereichen müssen Sie Änderungen vornehmen, die Ihren Voreinstellungen entsprechen. 
 
-1.  Erstellen Sie ein benutzerdefiniertes Konfigurationsprofil für OMA-URI-Geräte wie folgt, und wenden Sie es auf die HoloLens-Gerätegruppe an: ![Global zugewiesene Zugriff Oma-URI in InTune](images/global-assigned-access-omauri.png)
+1.  Erstellen Sie wie folgt ein benutzerdefiniertes OMA URI-Gerätekonfigurationsprofil und wenden Sie es auf die HoloLens-Gerätegruppe an: 
+
+    URI-Wert: .Device/Vendor/MSFT/AssignedAccess/Configuration
+   
+    > [!div class="mx-imgBorder"]
+    > ![Globaler zugewiesener Zugriff OMA-URI in Intune](images/global-assigned-access-omauri.png)
 
 2.  Für Wert, aktualisieren und einfügen des folgenden Inhalts: 
 
@@ -49,7 +54,7 @@ Dieses Feature konfiguriert das Hololens 2-Gerät für den Multi-App-Kioskmodus,
 Ja, weitere Informationen dazu finden Sie im folgenden Beispiel-XML-BLOB. Das global zugewiesene Zugriff-Profil wird auf HoloLens angewendet, wenn ein bestimmtes Profil für den angemeldeten Benutzer nicht gefunden wird. Daher ist dies die Standardkonfiguration für den Kioskmodus für angemeldete Benutzer. Hier ist ein Beispiel für die Verwendung von XML-BLOB: 
 
 > [!NOTE]
-> Bitte beachten Sie die mit <! markierten Bereiche. In diesen Bereichen müssen Sie Änderungen vornehmen, die Ihren Einstellungen entsprechen. 
+> Bitte beachten Sie die mit `<!-` gekennzeichneten Bereiche. In diesen Bereichen müssen Sie Änderungen vornehmen, die Ihren Voreinstellungen entsprechen. 
 
  :::code language="xml" source="samples/exclude-one-aad-user-or-group.xml" highlight="8,11,17":::
 
