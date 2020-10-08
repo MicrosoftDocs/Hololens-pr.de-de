@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: Autopilot
 manager: jarrettr
-ms.openlocfilehash: 33463685818c3e864c698160776c76ec7d8cbefd
-ms.sourcegitcommit: 9197b9d507d8b9b195bdf512d1b832888b53162d
+ms.openlocfilehash: 68e7b86259d4837be5bfa634c6ada4aa5b8006a1
+ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "10899107"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "11102344"
 ---
 # Windows Autopilot für HoloLens 2
 
@@ -199,6 +199,9 @@ Auf der Seite "Registrierungsstatus" (ESP) wird der Status des gesamten Gerätek
 ## Windows Autopilot für HoloLens 2 – Benutzeroberfläche
 
 Sobald die oben stehenden Anweisungen befolgt wurden, werden Ihre HoloLens 2-Benutzer zur Bereitstellung ihrer HoloLens-Geräte die folgende Oberfläche durchlaufen:  
+
+> [!NOTE]
+> Die Verwendung von Autopilot wirkt sich auf den [Gerätebesitzer](security-adminless-os.md#device-owner) aus.
 
 1. Wie erwähnt, müssen die Geräte im aktuellen Release mit dem Internet verbunden werden, bevor HoloLens eingeschaltet und der Autopilot-Bereitstellungsprozess initiiert wird. Verbinden Sie Ihr Gerät mit dem Ethernet, indem Sie den "USB-C auf Ethernet"-Adapter für eine kabelgebundene Internetverbindung oder den "USB C auf WLAN"-Adapter für eine drahtlose Internetverbindung verwenden.
    

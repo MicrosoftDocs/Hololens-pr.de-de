@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: ea35012e63f4c0d8868f9604809c1552c3212e72
-ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
+ms.openlocfilehash: c7c54c624fe2e1c48eee468e2d30fe3460f7e786
+ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11016639"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "11102314"
 ---
 # Betriebssystem ohne Administrator
 
@@ -29,6 +29,8 @@ Auf diese Anwendungsfunktionen wird weiterhin über das dreistufige Klassifizier
   * Windows
 
 Windows-Komponenten können auch den AppContainer Sandbox über System-UWPs nutzen. Weitere Informationen zu Apps für die Universelle Windows-Plattform (UWP) finden Sie in der [UWP-Dokumentation](https://docs.microsoft.com/windows/uwp/). Außerdem wird für Windows-Komponenten, für die eine stärkere Einschränkung der Zugriffsrechte erforderlich ist (z. B. Browser-Inhaltsseiten, Parser) die Sandbox Less Privileged AppContainer (LPAC) verwendet. Diese beschränkt den Zugriff auf die Reihe von Ressourcen, die für alle AppContainer verfügbar sind.
+
+## Gerätebesitzer
 
 Zu guter Letzt wird die Ausführung spezifischer geräteweiter Vorgänge (z. B. Anschluss des Geräts an einen Mandanten oder die Benutzerverwaltung) nur „Gerätebesitzern“ gestattet. Diese Gruppe wird von Benutzern auf dem Gerät durch einen der folgenden Schritte ausgefüllt:
   * Der erste Nutzer auf dem Gerät wird immer als Besitzer festgelegt. 

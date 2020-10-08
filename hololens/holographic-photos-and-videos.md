@@ -1,7 +1,7 @@
 ---
-title: Capture and manage mixed reality photos and videos
-description: Learn how to capture, view, and share mixed reality photos and videos, using HoloLens.
-keywords: hololens, photo, video, capture, mrc, mixed reality capture, photos, camera, stream, livestream, demo
+title: Aufnehmen und Verwalten von Fotos und Videos mit gemischten Realitäten
+description: Hier erfahren Sie, wie Sie Fotos und Videos mit gemischter Realität mithilfe von HoloLens erfassen, anzeigen und freigeben.
+keywords: hololens, Foto, Video, Capture, MRC, Mixed-Reality-Capture, Fotos, Kamera, Stream, Livestream, Demo
 ms.assetid: 1b636ec3-6186-4fbb-81b2-71155aef0593
 ms.prod: hololens
 ms.sitesec: library
@@ -22,154 +22,154 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 10/06/2020
 ms.locfileid: "11100270"
 ---
-# Create mixed reality photos and videos
+# Mixed Reality-Fotos und -Videos aufnehmen
 
-HoloLens gives users the experience of mixing the real world with the digital world.  Mixed reality capture (MRC) lets you capture that experience as a photo or video, or share what you see with others in real-time.
+HoloLens gibt Benutzern die Erfahrung, die reale Welt mit der digitalen Welt zu vermischen.  Mit Mixed Reality Capture (MRC) können Sie diese Erfahrung als Foto oder Video aufnehmen oder das, was Sie mit anderen Personen in Echtzeit sehen, freigeben.
 
-Mixed reality capture uses a first-person point of view so other people can see holograms as you see them. For a third-person point of view, use [spectator view](https://docs.microsoft.com/windows/mixed-reality/spectator-view). Spectator view is especially useful for demos.
+Bei der Mixed-Reality-Aufnahme wird eine First-Person-Ansicht verwendet, damit andere Personen Hologramme sehen können, wenn Sie Sie sehen. Verwenden Sie für einen Third-Person-Blickpunkt die [Zuschaueransicht](https://docs.microsoft.com/windows/mixed-reality/spectator-view). Die Zuschaueransicht eignet sich besonders für Demos.
 
-While it's fun to share videos amongst friends and colleagues, videos can also help teach other people to use an app or to communicate problems with apps and experiences.
-
-> [!NOTE]
-> If you can't launch mixed reality capture experiences and your HoloLens is a work device, check with your system administrator. Access to the camera can be restricted through company policy.
-
-## Capture a mixed reality photo
-
-There are several ways to take a photo of mixed reality on HoloLens; you can use hardware buttons, voice, or the Start menu.
-
-### Hardware buttons to take photos
-
-To take a quick photo of your current view, press the volume up and volume down buttons at the same time.  This is a bit like the HoloLens version of a screenshot or print screen.
-
-- [Button locations on HoloLens 2](hololens2-hardware.md)
-- [Button locations on HoloLens (1st gen)](hololens1-hardware.md#hololens-components)
+Während es Spaß macht, Videos zwischen Freunden und Kollegen zu teilen, können Videos anderen Personen auch helfen, eine APP zu verwenden oder Probleme mit apps und Erfahrungen zu kommunizieren.
 
 > [!NOTE]
-> Holding the **volume up** and **volume down** buttons for three seconds will start recording a video rather than taking a photo. To stop recording, tap both **volume up** and **volume down** buttons simultaneously.
+> Wenn Sie keine Mixed-Reality-Capture-Erfahrungen starten können und Ihr HoloLens ein Arbeitsgerät ist, wenden Sie sich an Ihren System Administrator. Der Zugriff auf die Kamera kann durch Unternehmensrichtlinien eingeschränkt werden.
 
-### Voice commands to take photos
+## Aufnehmen eines Mixed-Reality-Fotos
 
-On HoloLens 2, version 2004 (and later), say: "Take a picture."
+Es gibt mehrere Möglichkeiten, ein Foto der gemischten Realität auf HoloLens zu erstellen. Sie können die Hardware Schaltflächen, die Sprachausgabe oder das Startmenü verwenden.
 
-On HoloLens (1st gen) or HoloLens 2, version 1903, say: "Hey Cortana, take a picture."
+### Hardware Schaltflächen zum Aufnehmen von Fotos
 
-### Start menu to take photos
+Wenn Sie ein schnelles Foto Ihrer aktuellen Ansicht aufnehmen möchten, drücken Sie gleichzeitig die Tasten Lautstärke nach oben und die Lautstärke nach unten.  Dies ist ein bisschen wie die HoloLens-Version eines Screenshots oder eines Druck Bildschirms.
 
-Use the Start gesture to go to **Start**, then select the **camera** icon.
-
-Point your head in the direction of what you want to capture, then [air tap](hololens2-basic-usage.md#touch-holograms-near-you) to take a photo. You can continue to air tap and capture additional photos. Any photos you capture will be saved to your device.
-
-Use the Start gesture again to end photo capture.  
-
-## Capture a mixed reality video
-
-There are several ways to record a video of mixed reality on HoloLens; you can use hardware buttons, voice, or the Start menu.
-
-### Hardware buttons to record videos
-
-The quickest way to record a video is to press and hold the **volume up** and **volume down** buttons simultaneously until a three-second countdown begins. To stop recording, tap both buttons simultaneously.
+- [Schaltflächen Positionen auf HoloLens 2](hololens2-hardware.md)
+- [Schaltflächen Positionen auf HoloLens (1st Generation)](hololens1-hardware.md#hololens-components)
 
 > [!NOTE]
-> Quickly pressing the **volume up** and **volume down** buttons at the same time will take a photo rather than recording a video.
+> Wenn **Sie die Lautstärke** -und **Lautstärke** Taste drei Sekunden lang gedrückt halten, wird ein Video aufgenommen, anstatt ein Foto aufzunehmen. Um die Aufzeichnung zu beenden, tippen Sie gleichzeitig auf **Lautstärke** -und **Lautstärke** Regler.
 
-### Voice to record videos
+### Sprachbefehle zum Aufnehmen von Fotos
 
-On HoloLens 2, version 2004 (and later), say: "Start recording." To stop recording, say "Stop recording."
+Unter HoloLens 2, Version 2004 (und höher), sagen Sie: "machen Sie ein Bild."
 
-On HoloLens (1st gen) or HoloLens 2, version 1903, say: "Hey Cortana, start recording." To stop recording, say "Hey Cortana, stop recording."
+Auf HoloLens (1st Generation) oder HoloLens 2, Version 1903, sagen Sie: "Hey Cortana, Mach ein Bild."
 
-### Start menu to record videos
+### Startmenü zum Aufnehmen von Fotos
 
-Use the Start gesture to go to **Start**, then select the **video** icon. Point your head in the direction of what you want to capture, then [air tap](hololens2-basic-usage.md#touch-holograms-near-you) to start recording. There will be a three second countdown and your recording will begin.
+Verwenden Sie die Geste "Start", um zu **Start**zu wechseln, und wählen Sie dann das **Kamera** Symbol aus.
 
-To stop recording, use the Start gesture and select the highlighted **video** icon. The video will be saved to your device.
+Zeigen Sie mit dem Kopf in die Richtung, die Sie aufnehmen möchten, und tippen Sie dann auf [Luft](hololens2-basic-usage.md#touch-holograms-near-you) , um ein Foto aufzunehmen. Sie können weiterhin mit der Luft tippen und weitere Fotos aufnehmen. Alle Fotos, die Sie aufnehmen, werden auf Ihrem Gerät gespeichert.
 
-> [!NOTE]
-> **Applies to HoloLens (1st gen) only**  
-> The [Windows 10 October 2018 Update](https://docs.microsoft.com/windows/mixed-reality/release-notes-october-2018) changes how the Start gesture and Windows button behave on HoloLens (1st gen). Before the update, the Start gesture or Windows button would stop a video recording. After the update, however, the Start gesture or Windows button opens the **Start** menu (or the **quick actions menu** if you are in an immersive app), from which you can select the highlighted **video** icon to stop recording.
+Verwenden Sie die Geste erneut starten, um die Fotoaufnahme zu beenden.  
 
-## Share what you see in real-time
+## Aufnehmen eines Mixed-Reality-Videos
 
-You can share what you see in HoloLens with friends and colleagues in real-time. There are a few methods available:
+Es gibt mehrere Möglichkeiten zum Aufzeichnen eines Videos von Mixed Reality auf HoloLens. Sie können die Hardware Schaltflächen, die Sprachausgabe oder das Startmenü verwenden.
 
-1. Connecting to a Miracast-enabled device or adapter to watch on a TV.
-1. Using [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal) to watch on a PC
-1. Using the [Microsoft HoloLens companion app](https://www.microsoft.com/store/productId/9NBLGGH4QWNX) to watch on a PC.
-1. Deploying the [Microsoft Dynamics 365 Remote Assist](https://dynamics.microsoft.com/en-us/mixed-reality/remote-assist) app, which enables front-line workers to stream what they see to a remote expert. The remote expert can then guide the front-line worker verbally or by annotating in their world.
+### Hardware Schaltflächen zum Aufzeichnen von Videos
+
+Am schnellsten können Sie ein Video aufzeichnen, indem Sie die **Lautstärke** -und **laut** Stärke Taste gleichzeitig gedrückt halten, bis ein Countdown von drei Sekunden beginnt. Um die Aufzeichnung zu beenden, tippen Sie gleichzeitig auf beide Schaltflächen.
 
 > [!NOTE]
-> Sharing what you see via Windows Device Portal or Microsoft HoloLens companion app requires your HoloLens to be in [Developer mode](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal).
+> Wenn Sie die Tasten **Lautstärke** und **Lautstärke** schnell drücken, wird ein Foto aufgenommen, anstatt ein Video aufzunehmen.
 
-### Stream video with Miracast
+### Sprachausgabe zum Aufzeichnen von Videos
 
-Use the Start gesture to go to **Start**, then select the **connect** icon. From the picker that appears, select the Miracast-enabled device or adapter to which you want to connect.
+Unter HoloLens 2, Version 2004 (und höher), sagen Sie: "Aufzeichnung starten". Wenn Sie die Aufzeichnung beenden möchten, sagen Sie "Aufzeichnung beenden".
 
-To stop sharing, use the Start gesture and select the highlighted **connect** icon. Because you were streaming, nothing will be saved to your device.
+Auf HoloLens (1st Generation) oder HoloLens 2, Version 1903, sagen Sie: "Hey Cortana, starten Sie die Aufzeichnung." Wenn Sie die Aufzeichnung beenden möchten, sagen Sie "Hey Cortana, beenden Sie die Aufzeichnung."
 
-> [!NOTE]
-> Miracast support was enabled on HoloLens (1st gen) beginning with the [Windows 10 October 2018 Update](https://docs.microsoft.com/windows/mixed-reality/release-notes-october-2018).
+### Startmenü zum Aufzeichnen von Videos
 
-### Real time video with Windows Device Portal
+Verwenden Sie die Geste "Start", um zu **Start**zu wechseln, und wählen Sie dann das **Video** Symbol aus. Zeigen Sie mit dem Kopf in die Richtung, die Sie aufnehmen möchten, und tippen Sie dann auf [Luft](hololens2-basic-usage.md#touch-holograms-near-you) , um mit der Aufzeichnung zu beginnen. Es wird ein Countdown von drei Sekunden geben und Ihre Aufzeichnung beginnt.
 
-Because sharing via Windows Device Portal requires Developer mode to be enabled on HoloLens, follow the instructions in our developer documentation to [set up Developer mode and navigate Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal).
-
-### Microsoft HoloLens companion app
-
-Because sharing via the Microsoft HoloLens companion app requires Developer mode to be enabled on HoloLens, follow the instructions in our developer documentation to [set up Developer mode](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal). Then, download the [Microsoft HoloLens companion app](https://www.microsoft.com/store/productId/9NBLGGH4QWNX) and follow the instructions within the app to connect to your HoloLens.
-
-Once the app is set up with your HoloLens, select the **Live stream** option from the app's main menu.
-
-## View your mixed reality photos and videos
-
-Mixed reality photos and videos are saved to the device's "Camera Roll". You can browse the contents of this folder on your HoloLens with the File Explorer app (navigate to Pictures > Camera Roll).
-
-You can also view your mixed reality photos and videos in the Photos app, which is pre-installed on HoloLens. To pin a photo in your world, select it in the Photos app and choose **Place in mixed world**. You can move the photo around your world after it's been placed.
-
-To view and/or save your mixed reality photos and videos on a PC connected to HoloLens, you can use [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal#mixed-reality-capture) or your [PC's File Explorer via MTP](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018#new-features-for-hololens).
-
-### Use File Explorer to get your pictures, videos and files
-
-Similar to other mobile devices, connect your HoloLens to your PC to bring up File Explorer to access your HoloLens libraries (photos, videos, documents) for easy transfer. This method is easy to use and does not require the use of device portal or Wi-Fi.
-
-1. Unlock the device.
-1. Connect the device to a PC via USB.
-1. File Explorer should open on your PC.
-1. Navigate to: This PC\\*yourhololensname*\Internal Storage\Pictures\Camera Roll
-1. Copy whatever files you need to your PC.
-
-Tips:
-- If you don't see any files, please ensure you sign in to your HoloLens to enable access to your data.
-- You can get other files in other folders, such as [diagnostics files](hololens-diagnostic-logs.md#offline-diagnostics) from the Documents folder.
-- From File Explorer on your PC, you can select Device properties to see Windows Holographic OS version number (firmware version) and device serial number and battery percentage.
-- If your Organization has used MDM to disable [Connectivity/AllowUSBConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) then you will be unable to connect to your device.
-
-## Share your mixed reality photos and videos
-
-After capturing a mixed reality photo or video, a preview will appear. Select the **share** icon above the preview to bring up the share assistant. From there, you can select the end point to which you'd like to share that photo or video.
-
-You can also share mixed reality photos and videos from OneDrive, by automatically uploading your mixed reality photos and videos. Open the OneDrive app on HoloLens and sign in with a personal [Microsoft account](https://account.microsoft.com) if you haven't already. Select the **settings** icon and choose **Camera upload**. Turn Camera upload on. Your mixed reality photos and videos will now be uploaded to OneDrive each time you launch the app on HoloLens.
+Wenn Sie die Aufzeichnung beenden möchten, verwenden Sie die Geste Start, und wählen Sie das hervorgehobene **Video** Symbol aus. Das Video wird auf Ihrem Gerät gespeichert.
 
 > [!NOTE]
-> You can only enable camera upload in OneDrive if you’re signed into OneDrive with a personal Microsoft account. If you set up HoloLens with a work or school account, you can add a personal Microsoft account in the OneDrive app to enable this feature.
+> **Gilt nur für HoloLens (1st Generation)**  
+> Das [Windows 10 October 2018-Update](https://docs.microsoft.com/windows/mixed-reality/release-notes-october-2018) ändert, wie sich die Schaltfläche "Start Gesten" und "Windows" auf HoloLens (1st Gen) Verhalten. Vor dem Update stoppt die Schaltfläche "Geste starten" oder "Windows" eine Videoaufzeichnung. Nach dem Update wird jedoch die Schaltfläche "Start Gesten" oder "Windows" das **Startmenü** (oder das **Menü "schnelle Aktionen"** , wenn Sie sich in einer immersiven App befinden) geöffnet, auf der Sie das hervorgehobene **Video** Symbol auswählen können, um die Aufzeichnung zu beenden.
 
-## Limitations of mixed reality capture
+## Freigeben Ihrer Anzeige in Echtzeit
 
-- While using mixed reality capture, the framerate of HoloLens will be halved to 30 Hz.
-- Videos have a maximum length of five minutes.
-- The resolution of photos and videos may be reduced if the photo/video camera is already in use by another application, while live streaming, or when system resources are low.
+Sie können das, was Sie in HoloLens sehen, mit Freunden und Kollegen in Echtzeit teilen. Es stehen einige Methoden zur Verfügung:
 
-## Default file format and resolution
+1. Herstellen einer Verbindung mit einem Miracast-fähigen Gerät oder Adapter, um es auf einem Fernseher zu sehen.
+1. Verwenden des [Windows-Geräte Portals](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal) zur Überwachung auf einem PC
+1. Verwenden der [Microsoft HoloLens-Begleit-App](https://www.microsoft.com/store/productId/9NBLGGH4QWNX) für die Überwachung auf einem PC.
+1. Bereitstellen der [Microsoft Dynamics 365-Remote Unterstützungs](https://dynamics.microsoft.com/en-us/mixed-reality/remote-assist) -APP, die es Front-Work-Mitarbeitern ermöglicht, das, was Sie sehen, an einen Remote Experten zu streamen. Der Remote Experte kann den Front-Worker dann verbal oder durch kommentieren in seiner Welt leiten.
 
-### Default photo format and resolution
+> [!NOTE]
+> Für die Freigabe Ihrer Anzeige über das Windows Device Portal oder die Microsoft HoloLens-Begleit-app muss sich Ihr HoloLens im [Entwicklermodus](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal)befinden.
 
-|  Device  |  Format  |  Extension  |  Resolution  |
+### Streamen von Videos mit Miracast
+
+Verwenden Sie die Geste "Start", um zu **Start**zu wechseln, und wählen Sie dann das Symbol **verbinden** aus. Wählen Sie in der daraufhin angezeigten Auswahl das Miracast-fähige Gerät oder den Adapter aus, mit dem Sie eine Verbindung herstellen möchten.
+
+Wenn Sie die Freigabe beenden möchten, verwenden Sie die Geste Start, und wählen Sie das Symbol hervorgehoben **verbinden** aus. Da Sie gestreamt haben, wird nichts auf Ihrem Gerät gespeichert.
+
+> [!NOTE]
+> Miracast-Unterstützung wurde für HoloLens (1st Generation) ab dem [Windows 10 October 2018-Update](https://docs.microsoft.com/windows/mixed-reality/release-notes-october-2018)aktiviert.
+
+### Echtzeitvideo mit Windows Device Portal
+
+Da für die Freigabe über das Windows Device Portal der Entwicklermodus auf HoloLens aktiviert werden muss, befolgen Sie die Anweisungen in unserer Entwicklerdokumentation, um den [Entwicklermodus einzurichten und in das Windows Device Portal zu navigieren](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal).
+
+### Microsoft HoloLens-Begleit-App
+
+Da die Freigabe über die Microsoft HoloLens-Begleit-App erfordert, dass der Entwicklermodus auf HoloLens aktiviert wird, folgen Sie den Anweisungen in unserer Entwicklerdokumentation, um den [Entwicklermodus einzurichten](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal). Laden Sie dann die [Microsoft HoloLens-Begleit-App](https://www.microsoft.com/store/productId/9NBLGGH4QWNX) herunter, und folgen Sie den Anweisungen in der APP, um eine Verbindung mit Ihrem HoloLens herzustellen.
+
+Nachdem die APP mit Ihrem HoloLens eingerichtet wurde, wählen Sie im Hauptmenü der APP die Option " **Livestream** " aus.
+
+## Anzeigen Ihrer Mixed-Reality-Fotos und-Videos
+
+Mixed-Reality-Fotos und Videos werden auf der "Camera-Rolle" des Geräts gespeichert. Sie können die Inhalte dieses Ordners auf Ihrem HoloLens mit der App "Datei-Explorer" Durchsuchen (navigieren Sie zu Bilder > Kamerarolle).
+
+Sie können auch Ihre Fotos und Videos für die gemischte Realität in der Foto-App anzeigen, die auf HoloLens vorinstalliert ist. Wenn Sie ein Foto in ihrer Welt anheften möchten, wählen Sie es in der Fotos-App aus, und wählen Sie **in gemischter Welt platzieren**aus. Sie können das Foto um Ihre Welt bewegen, nachdem es plaziert wurde.
+
+Wenn Sie Ihre Mixed-Reality-Fotos und-Videos auf einem mit HoloLens verbundenen PC anzeigen und/oder speichern möchten, können Sie das [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal#mixed-reality-capture) oder den [Datei-Explorer Ihres PCs über MTP](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018#new-features-for-hololens)verwenden.
+
+### Verwenden des Datei-Explorers zum Abrufen von Bildern, Videos und Dateien
+
+Ähnlich wie bei anderen mobilen Geräten können Sie Ihren HoloLens an Ihren PC anschließen, um den Datei-Explorer für den Zugriff auf Ihre HoloLens-Bibliotheken (Fotos, Videos, Dokumente) zur einfachen Übertragung zu öffnen. Diese Methode ist benutzerfreundlich und erfordert keine Verwendung von Device Portal oder WLAN.
+
+1. Entsperren Sie das Gerät.
+1. Schließen Sie das Gerät über USB an einen PC an.
+1. Der Datei-Explorer sollte auf Ihrem PC geöffnet sein.
+1. Navigieren Sie zu: This PC\\*yourhololensname*\Internal Storage\Pictures\Camera-Rolle
+1. Kopieren Sie alle benötigten Dateien auf Ihren PC.
+
+Tipps:
+- Wenn Sie keine Dateien sehen, stellen Sie bitte sicher, dass Sie sich bei Ihrem HoloLens anmelden, um den Zugriff auf Ihre Daten zu ermöglichen.
+- Sie können andere Dateien in anderen Ordnern wie [Diagnosedateien](hololens-diagnostic-logs.md#offline-diagnostics) aus dem Ordner "Dokumente" abrufen.
+- Im Datei-Explorer auf Ihrem PC können Sie Geräteeigenschaften auswählen, um die Versionsnummer des Windows holographischen Betriebssystems (Firmware-Version) sowie die Seriennummer des Geräts und den Prozentsatz der Batterie anzuzeigen.
+- Wenn Ihre Organisation MDM zum Deaktivieren der [Konnektivitäts-AllowUSBConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) verwendet hat, können Sie keine Verbindung zu Ihrem Gerät herstellen.
+
+## Teilen von Fotos und Videos aus der Mixed-Reality-Galerie
+
+Nachdem Sie ein Foto oder Video mit einer gemischten Realität aufgenommen haben, wird eine Vorschau angezeigt. Wählen Sie über der Vorschau das Symbol " **Freigeben** " aus, um den Freigabe-Assistenten aufzurufen. Von dort aus können Sie den Endpunkt auswählen, auf den Sie dieses Foto oder Video freigeben möchten.
+
+Sie können auch Fotos und Videos aus der Mixed-Reality-Datei von OneDrive aus senden, indem Sie Ihre Mixed-Reality-Fotos und-Videos automatisch hochladen. Öffnen Sie die OneDrive-App auf HoloLens, und melden Sie sich mit einem persönlichen [Microsoft-Konto](https://account.microsoft.com) an, wenn Sie dies noch nicht getan haben. Wählen Sie das Symbol **Einstellungen** und dann **Kamera Upload**aus. Aktivieren Sie den Kamera-Upload. Ihre Mixed-Reality-Fotos und-Videos werden nun jedes Mal in OneDrive hochgeladen, wenn Sie die APP auf HoloLens starten.
+
+> [!NOTE]
+> Sie können den Kamera Upload nur in OneDrive aktivieren, wenn Sie bei OneDrive mit einem persönlichen Microsoft-Konto angemeldet sind. Wenn Sie HoloLens mit einem Firmen-oder Schulkonto eingerichtet haben, können Sie in der OneDrive-App ein persönliches Microsoft-Konto hinzufügen, um dieses Feature zu aktivieren.
+
+## Einschränkungen der Mixed-Reality-Aufnahme
+
+- Bei Verwendung der Mixed-Reality-Aufnahme wird die Framerate von HoloLens auf 30 Hz halbiert.
+- Videos haben eine maximale Länge von fünf Minuten.
+- Die Auflösung von Fotos und Videos kann reduziert werden, wenn die Foto/Videokamera bereits von einer anderen Anwendung verwendet wird, während Live-Streaming erfolgt oder wenn die Systemressourcen niedrig sind.
+
+## Standarddateiformat und-Auflösung
+
+### Standardfotoformat und-Auflösung
+
+|  Gerät  |  Format  |  Erweiterung  |  Lösung  |
 |----------|----------|----------|----------|
-| HoloLens 2 | [JPEG](https://en.wikipedia.org/wiki/JPEG) | .jpg | 3904x2196px |
-| HoloLens (1st gen) | [JPEG](https://en.wikipedia.org/wiki/JPEG) | .jpg | 1408x792px |
+| HoloLens 2 | [JPEG](https://en.wikipedia.org/wiki/JPEG) | JPG | 3904x2196px |
+| HoloLens (1. Generation) | [JPEG](https://en.wikipedia.org/wiki/JPEG) | JPG | 1408x792px |
 
-### Recorded video format and resolution
+### Aufgenommenes Videoformat und-Auflösung
 
-| Device | Format | Extension | Resolution | Speed | Audio |
+| Gerät | Format | Erweiterung | Lösung | Geschwindigkeit | Audio |
 |----------|----------|----------|----------|----------|----------|
-| HoloLens 2 | [MPEG-4](https://en.wikipedia.org/wiki/MPEG-4) | .mp4 | 1920x1080px | 30fps | 48kHz Stereo |
-| HoloLens (1st gen) |  [MPEG-4](https://en.wikipedia.org/wiki/MPEG-4) | .mp4 | 1216x684px | 24fps | 48kHz Stereo |
+| HoloLens 2 | [MPEG-4](https://en.wikipedia.org/wiki/MPEG-4) | .mp4 | 1920x1080px | 30fps | 48 kHz Stereo |
+| HoloLens (1. Generation) |  [MPEG-4](https://en.wikipedia.org/wiki/MPEG-4) | .mp4 | 1216x684px | 24fps | 48 kHz Stereo |

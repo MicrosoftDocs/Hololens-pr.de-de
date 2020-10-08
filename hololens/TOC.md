@@ -3,6 +3,7 @@
 # Übersicht
 
 ## Erste Schritte mit HoloLens 2
+### [Übersicht für HoloLens 2](hololens2-options.md)
 ### [HoloLens 2-Hardware](hololens2-hardware.md)
 ### [Vorbereiten von HoloLens 2](hololens2-setup.md)
 ### [Einrichten von HoloLens 2](hololens2-start.md)
