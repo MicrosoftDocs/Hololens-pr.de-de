@@ -11,17 +11,19 @@ metadata:
   ms.author: v-todmc
   ms.date: 5/22/2020
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: 7afce81a15745b6ece3707972e6f8b5d82ba17ff
-  ms.sourcegitcommit: 44de31c6d3534b6e0b73ddc2a9336147daf7a41d
+  ms.openlocfilehash: 23cac991786c5540d7dadfcaae7ba2fe1d84dc64
+  ms.sourcegitcommit: 58812149a9795b46799845e89f98d4cfd72ded42
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 09/25/2020
-  ms.locfileid: "11078373"
+  ms.lasthandoff: 10/08/2020
+  ms.locfileid: "11105396"
 landingContent:
 - title: Übersicht für HoloLens
   linkLists:
   - linkListType: overview
     links:
+    - text: Übersicht für HoloLens 2
+      url: hololens2-options.md
     - text: HoloLens 2-Hardware
       url: hololens2-hardware.md
     - text: HoloLens-Hardware (1. Generation)
@@ -80,12 +82,10 @@ landingContent:
       url: app-deploy-store-business.md
     - text: Bereitstellungspaket
       url: app-deploy-provisioning-package.md
-- title: Warten
+- title: Verwaltungs- und Problembehandlungshandbuch
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Verwalten von HoloLens-Updates
-      url: hololens-updates.md
     - text: Problembehandlung für HoloLens
       url: hololens-troubleshooting.md
     - text: HoloLens 2 neu starten, zurücksetzen oder wiederherstellen
@@ -96,6 +96,8 @@ landingContent:
       url: hololens-known-issues.md
     - text: Sammeln und nutzen von Diagnoseinformationen von HoloLens-Geräten
       url: hololens-diagnostic-logs.md
+    - text: Verwalten von HoloLens-Updates
+      url: hololens-updates.md
 - title: Anmerkungen zur Version & Feedback
   linkLists:
   - linkListType: whats-new
@@ -118,10 +120,6 @@ landingContent:
       url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/
     - text: Microsoft Dynamics 365 Mixed Reality
       url: https://docs.microsoft.com/dynamics365/mixed-reality/
-    - text: Übersicht über Cloud-Dienste
-      url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality-cloud-services#overview
-- title: Weitere Ressourcen
-  linkLists:
   - linkListType: how-to-guide
     links:
     - text: Was ist Mixed Reality?
@@ -130,5 +128,15 @@ landingContent:
       url: https://docs.microsoft.com/windows/mixed-reality/design
     - text: Einführung in die Entwicklung für Mixed Reality
       url: https://docs.microsoft.com/windows/mixed-reality/development?tabs=unity
+    - text: Übersicht über Cloud-Dienste
+      url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality-cloud-services#overview
+- title: Support
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: HoloLens kaufen
+      url: https://www.microsoft.com/hololens/buy
+    - text: Support für Communities
+      url: https://holodevelopersslack.azurewebsites.net/
     - text: Hilfe und Support zu Windows
       url: https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=e9391227-fa6d-927b-0fff-f96288631b8f
