@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0fe78d4b668523de4faa66a64f54c14760a81b12
-ms.sourcegitcommit: bddd470ac475dd8fc7b69e8904d18082a83f39e0
+ms.openlocfilehash: 23ec5478c35977d1fd1fa20a33827e441d4b5c12
+ms.sourcegitcommit: 264c8ff6726f702c3770525d774e0c1d263a2705
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "10997216"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "11117770"
 ---
 # Veröffentlichungshinweise für HoloLens 2
 
@@ -28,6 +28,18 @@ Um sicherzustellen, dass Sie mit ihren HoloLens-Geräten eine produktive Erfahru
 
 >[!NOTE]
 > Wenn Sie HoloLens-Emulator-Versionshinweise lesen möchten, [besuchen Sie das Archiv](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
+
+## Windows holographisch, Version 2004 – Update vom Oktober 2020
+- Build 19041,1124
+ 
+Verbesserungen und Korrekturen im Update:
+
+- Eine unnötige Überprüfung wurde entfernt, die einen Laufzeitsystem Fehler verursacht hat.
+
+## Windows holographisch, Version 1903 – Update vom Oktober 2020
+- Build 18362,1081
+
+Dieses monatliche Qualitäts Update enthält keine nennenswerten Änderungen, wir empfehlen Ihnen, unsere neuesten Builds für Windows holographisch, Version 2004, zu testen.
 
 ## Windows holographisch, Version 2004 – Update vom September 2020
 - Build 19041,1117
@@ -97,7 +109,7 @@ Verbesserungen und Korrekturen im Update:
 - Verbesserte Hologramm-Stabilität in aufgezeichneten Videos.
 - Ein Problem wurde behoben, bei dem "Mixed Reality Capture" kein Video aufzeichnen konnte, nachdem das Gerät mehrere Tage lang im Standby-Modus war.
 - Die HolographicSpace. UserPresence-API ist in der Regel für Unity-Anwendungen deaktiviert. Dieses Verhalten vermeidet ein Problem, bei dem einige apps angehalten wurden, als das Visor nach oben geklappt wurde, auch wenn die Einstellung "im Hintergrund ausführen" aktiviert war. Die API ist jetzt für Unity-Versionen 2018.4.18 und höher und 2019.3.4 und höher aktiviert.
-- Wenn Sie über eine WLAN-Verbindung auf Device Portal zugreifen, kann ein Webbrowser den Zugriff auf die Ursache eines ungültigen Zertifikats verhindern. Der Browser meldet möglicherweise einen Fehler wie "ERR_SSL_PROTOCOL_ERROR", auch wenn das Gerätezertifikat zuvor als vertrauenswürdig eingestuft wurde. In diesem Fall können Sie nicht zu Device Portal Fortschreiten, da es keine Option zum Ignorieren von Sicherheitswarnungen gibt. Dieses Update hat das Problem behoben. Wenn das Gerätezertifikat zuvor heruntergeladen und auf einem PC als vertrauenswürdig eingestuft wurde, um die Sicherheitswarnungen des Browsers zu entfernen, und der SSL-Fehler auftritt, muss das neue Zertifikat heruntergeladen und den Sicherheitswarnungen des Browsers als vertrauenswürdig eingestuft werden.
+- Wenn Sie über eine Wi-Fi Verbindung auf Device Portal zugreifen, kann ein Webbrowser möglicherweise verhindern, dass der Zugriff auf ein ungültiges Zertifikat zurückzuführen ist. Der Browser meldet möglicherweise einen Fehler wie "ERR_SSL_PROTOCOL_ERROR", auch wenn das Gerätezertifikat zuvor als vertrauenswürdig eingestuft wurde. In diesem Fall können Sie nicht zu Device Portal Fortschreiten, da es keine Option zum Ignorieren von Sicherheitswarnungen gibt. Dieses Update hat das Problem behoben. Wenn das Gerätezertifikat zuvor heruntergeladen und auf einem PC als vertrauenswürdig eingestuft wurde, um die Sicherheitswarnungen des Browsers zu entfernen, und der SSL-Fehler auftritt, muss das neue Zertifikat heruntergeladen und den Sicherheitswarnungen des Browsers als vertrauenswürdig eingestuft werden.
 - Die Möglichkeit zum Erstellen eines Runtime-Bereitstellungspakets, das eine App mithilfe von MSIX-Paketen installieren kann, wurde aktiviert.
 - Eine Einstellung in Hologramme des **Einstellungen**-Systems wurde hinzugefügt  >  **System**  >  **Holograms** , mit der Benutzer alle Hologramme automatisch aus dem Mixed-Reality-Home entfernen können, wenn das Gerät heruntergefahren wird.
 - Ein Problem wurde behoben, durch das HoloLens-apps, die ihr Pixelformat ändern, im HoloLens-Emulator schwarz gerendert wurden.
@@ -208,7 +220,7 @@ Der NetworkQoSPolicy-Konfigurationsdienst Anbieter erstellt Netzwerk Quality-of-
 
 ### Erweiterte USB-Ethernet-Unterstützung für 5G/LTE-angebundene Geräte
 
-Unterstützung wurde hinzugefügt, um bestimmte mobile Breitbandgeräte wie 5G/LTE-Telefone und WLAN-Eintöpfen zu aktivieren, wenn Sie über einen USB-Anschluss an das HoloLens 2 angebunden sind. Diese Geräte werden nun in den **Netzwerkeinstellungen** als eine weitere Ethernet-Verbindung angezeigt. (Mobile Breitbandgeräte, die einen externen Treiber erfordern, werden nicht unterstützt.) Diese Funktion ermöglicht Verbindungen mit hoher Bandbreite, wenn WLAN nicht zur Verfügung steht und die WLAN-Anbindung nicht ausreicht. Weitere Informationen zu unterstützten USB-Geräten finden Sie unter [Herstellen einer Verbindung mit Bluetooth-und USB-C-Geräten](https://docs.microsoft.com/hololens/hololens-connect-devices).  
+Unterstützung wurde hinzugefügt, um bestimmte mobile Breitbandgeräte wie 5G/LTE-Telefone und Wi-Fi Eintöpfen zu aktivieren, wenn Sie über einen USB-Anschluss an das HoloLens 2 angebunden sind. Diese Geräte werden nun in den **Netzwerkeinstellungen** als eine weitere Ethernet-Verbindung angezeigt. (Mobile Breitbandgeräte, die einen externen Treiber erfordern, werden nicht unterstützt.) Diese Funktion ermöglicht Verbindungen mit hoher Bandbreite, wenn Wi-Fi nicht verfügbar ist und Wi-Fi Tethering nicht ausreicht. Weitere Informationen zu unterstützten USB-Geräten finden Sie unter [Herstellen einer Verbindung mit Bluetooth-und USB-C-Geräten](https://docs.microsoft.com/hololens/hololens-connect-devices).  
 
 ### Verbesserungen bei der Hand Verfolgung
 
@@ -245,13 +257,13 @@ Sie können jetzt Sprachbefehle mit jeder beliebigen App auf dem Gerät verwende
 
 ### Cortana-Updates
 
-Die aktualisierte APP ist in Microsoft 365 integriert, damit Sie mehr über Ihre Geräte (derzeit nur in US-Englisch) erledigen können. Auf HoloLens 2 unterstützt Cortana nicht mehr bestimmte gerätespezifische Befehle, wie etwa das Anpassen der Lautstärke oder des Neustarts. Diese Optionen werden jetzt von den neuen System Sprachbefehlen unterstützt. Weitere Informationen zur neuen Cortana-App finden Sie in unserem [Blog](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/).
+Die aktualisierte APP ist in Microsoft 365 integriert, damit Sie mehr über Ihre Geräte hinweg erledigen können (derzeit nur in US-English). Auf HoloLens 2 unterstützt Cortana nicht mehr bestimmte gerätespezifische Befehle, wie etwa das Anpassen der Lautstärke oder des Neustarts. Diese Optionen werden jetzt von den neuen System Sprachbefehlen unterstützt. Weitere Informationen zur neuen Cortana-App finden Sie in unserem [Blog](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/).
 
 ### Qualitätsverbesserungen und-Korrekturen
 
 Verbesserungen und Korrekturen auch im Update:  
 - Einführung eines aktiven Anzeige Kalibrier Systems Dieses Feature verbessert die Stabilität und Ausrichtung von Hologrammen. Sie bleiben nun in Kraft, wenn Sie den Kopf von einer Seite zur anderen bewegen.
-- Ein Fehler wurde behoben, bei dem das WLAN-Streaming zu HoloLens in regelmäßigen Abständen gestört wurde. Wenn eine Anwendung angibt, dass Sie ein Streaming mit niedriger Latenz benötigt, implementieren Sie den Fix durch Aufrufen der [SetSocketMediaStreamingMode-Funktion](https://docs.microsoft.com/windows/win32/api/socketapi/nf-socketapi-setsocketmediastreamingmode).
+- Ein Fehler wurde behoben, bei dem Wi-Fi Streaming zu HoloLens in regelmäßigen Abständen gestört wurde. Wenn eine Anwendung angibt, dass Sie ein Streaming mit niedriger Latenz benötigt, implementieren Sie den Fix durch Aufrufen der [SetSocketMediaStreamingMode-Funktion](https://docs.microsoft.com/windows/win32/api/socketapi/nf-socketapi-setsocketmediastreamingmode).
 - Ein Geräte Absturz, der während des Streaming im Recherche Modus aufgetreten ist, wurde behoben.
 - Ein Fehler wurde behoben, bei dem in einigen Fällen der richtige Benutzer beim Fortsetzen einer Sitzung nicht auf dem Anmeldebildschirm angezeigt wird.
 - Ein Problem wurde behoben, bei dem Benutzer die MDM-Protokolle nicht über die **Einstellungen**exportieren konnten.
