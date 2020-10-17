@@ -1,9 +1,9 @@
 ---
 title: Sammeln und nutzen von Diagnoseinformationen von HoloLens-Geräten
-description: ''
+description: Sammeln und nutzen von Diagnoseinformationen von HoloLens-Geräten
 author: Teresa-Motiv
 ms.author: v-tea
-ms.date: 03/23/2020
+ms.date: 10/15/2020
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: b3071c2c66bf1e9c07ba2481b3e22a0d5125bc6d
-ms.sourcegitcommit: 8b56f4b9b5f9c928fc361f18efcbea729055a0b2
+ms.openlocfilehash: 8e72bef1ad82faeb734123828050de5273bc6505
+ms.sourcegitcommit: fba9bdbb9b9326f522d5078e776b68ac6c94b6a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "10919136"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "11119945"
 ---
 # Sammeln und nutzen von Diagnoseinformationen von HoloLens-Geräten
 
@@ -122,6 +122,12 @@ In Situationen, in denen das Gerät keine Diagnose über den Feedback-Hub oder d
 
 Dies funktioniert, wenn das Gerät im Datei-Explorer angezeigt wird, nachdem es über ein USB-Kabel mit einem PC verbunden wurde. 
 
+> [!NOTE]
+> Die Offline Diagnose ist nur aktiviert, wenn der Benutzer entweder OOBE durchläuft oder der [System\AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) -Richtlinienwert auf vollständig gesetzt ist (Standard ist Standardwert auf Hololens). 
+>
+> Wenn Sie die Offline Diagnose deaktivieren möchten, wechseln Sie zu **Einstellungen-app > Seite Privatsphäre** , und wählen Sie **Standard** in **Diagnosedaten**aus.
+
+Schauen Sie sich dieses Video an, um weitere Informationen zu erhalten. 
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Gathering-Diagnostic-Files-on-HoloLens2/player]
 
@@ -134,5 +140,8 @@ Führen Sie die folgenden Schritte aus, um Diagnosen zu sammeln:
 6.  Aktualisieren Sie den Datei-Explorer, und navigieren Sie zum Ordner **"\Dokumente"** .
 7.  Kopieren Sie die ZIP-Diagnosedateien, und geben Sie Sie für das Microsoft-Support Team frei.
 
-Beachten Sie, dass einige der ZIP-Diagnosedateien personenbezogene Informationen enthalten können.
+> [!NOTE]
+> Einige der Diagnose-ZIP-Dateien enthalten möglicherweise personenbezogene Informationen.
+
+
 

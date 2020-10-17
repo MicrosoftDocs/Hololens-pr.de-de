@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 9/23/2020
+ms.date: 10/15/2020
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 439ae9ddfbc6e7a83807e85c445f3d9f4cd2e182
-ms.sourcegitcommit: fa2e551e3294ee49677035f5461b28861b20170f
+ms.openlocfilehash: 408bf94b4cec49b91198917c16f83012fa9ab644
+ms.sourcegitcommit: a81d48d362f8511960e74d38c7c8f0cff19b67c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "11088609"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "11119298"
 ---
 # Insider-Vorschau für Microsoft HoloLens
 
@@ -37,7 +37,7 @@ Hier finden Sie eine Liste der anstehenden Features, die Sie heute in unserem Wi
 | [Zertifikat-Manager](hololens-insider.md#certificate-manager)                                     | Benutzer können Zertifikate der aktuellen Benutzer-und lokalen Computerzertifikate in der Einstellungs-APP anzeigen, installieren und entfernen.                                         | 19041.1361 +                 |
 | [Automatisches Starten der Bereitstellung über USB](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE erkennt automatisch Bereitstellungspakete auf USB-Laufwerken.                                | 19041.1361 +                 |
 | [Automatisches bestätigen von Bereitstellungspaketen in Oobe](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | Automatisches Anwenden von Bereitstellungspaketen in Oobe                                             | 19041.1361 +                 |
-| [Verwenden von Autopilot mit Wi-Fi-Verbindung](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | Verwenden Sie Autopilot vom Gerät Wi-Fi ohne Ethernet-Adapter.                             | 19041.1364 +                 |
+| [Verwenden von Autopilot mit Wi-Fi-Verbindung](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | Verwenden Sie Autopilot von Device Wi-Fi ohne Ethernet-Adapter.                             | 19041.1364 +                 |
 |[Tenantlockdown-CSP und Autopilot](hololens-insider.md#tenantlockdown-csp-and-autopilot) | Nachdem die mandantenregistrierung und die Richtlinie angewendet wurden, kann das Gerät immer nur für diesen Mandanten registriert werden, wenn das Gerät zurückgesetzt oder erneut geflasht wird. | 19041.1366 +|
 | [Global zugewiesener Zugriff](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | Konfigurieren Sie das HoloLens 2-Gerät für den Multi-App-Kioskmodus, der auf Systemebene anwendbar ist. | 19041.1356 +                 |
 | [Automatisches Starten einer APP im Multi-App-Kiosk](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | Legt fest, dass eine Anwendung beim Anmelden bei einem Kioskmodus mit mehreren Apps automatisch gestartet wird.     | 19041.1346 +                 |
@@ -49,6 +49,7 @@ Hier finden Sie eine Liste der anstehenden Features, die Sie heute in unserem Wi
 | [Update Richtlinien](hololens-insider.md#newly-enabled-update-policies-for-hololens)                                        | Neu aktivierte Richtlinien, die die Steuerung von Updates ermöglichen.                                            | 19041.1352 +                 |
 | [Sichtbarkeits Seite für aktivierte Einstellungen für HoloLens 2](hololens-insider.md#enabled-settings-page-visibility-for-hololens-2)        | Richtlinie, um auszuwählen, welche Seiten in der Einstellungs-APP angezeigt werden.                                           | 19041.1349 +                 |
 |  [Recherche Modus](hololens-insider.md#research-mode) | Verwenden des Recherche Modus auf HoloLens 2 | 19041.1375 + |
+| [Aufnahmedauer erhöht](hololens-insider.md#recording-length-increased) | MRC-Aufnahmen sind nicht mehr auf 5 Minuten begrenzt. | 19041.1387 + |
 | [Verbesserungen und Korrekturen im Update](hololens-insider.md#improvements-and-fixes-in-the-update)                   | Weitere Korrekturen im Update.                                                                | 19041.1361 +                 |
 
 
@@ -283,6 +284,15 @@ Im forschungsmodus wird das HoloLens 2 zu einem potenten Tool für die Computer 
 Forscher haben nun die Möglichkeit, den forschungsmodus auf Ihren HoloLens-Geräten zu aktivieren, um auf alle diese externen, unformatierten Bildsensor Ströme zuzugreifen. Der Recherche Modus für HoloLens 2 bietet ebenfalls Zugriff auf die Beschleunigungsmesser-, Kreisel-und Magnetometer-Werte. Um die Privatsphäre der Nutzer zu schützen, sind unformatierte Augen Tracking-Kamera Bilder im Recherche Modus nicht verfügbar, aber Blick Richtung ist über vorhandene APIs verfügbar.
 
 Weitere technische Details finden Sie in der [Dokumentation zum Recherche Modus](https://docs.microsoft.com/windows/mixed-reality/research-mode) .
+
+### Aufnahmedauer erhöht
+Aufgrund des Kundenfeedbacks haben wir die Aufnahmedauer von [Mixed-Reality-Aufnahmen](holographic-photos-and-videos.md)erhöht. Mixed-Reality-Aufnahmen sind standardmäßig nicht mehr auf 5 Minuten limitiert, sondern berechnen die maximale Aufnahmedauer basierend auf dem verfügbaren Speicherplatz. Das Gerät schätzt die maximale Videoaufnahmedauer basierend auf dem verfügbaren Speicherplatz bis zu 80% des gesamten Speicherplatzes.
+
+> [!NOTE]
+> Die HoloLens verwendet die standardmäßige Videoaufnahme Länge (5 Minuten), wenn eine der folgenden Vorgehensweise Eintritt:
+> - Die geschätzte maximale Aufnahmedauer ist kleiner als die standardmäßigen 5 Minuten.
+> - Der verfügbare Speicherplatz beträgt weniger als 20% des gesamten Speicherplatzes.
+
 
 ### Verbesserungen und Korrekturen im Update:
 - Aktualisierte Richtlinie zum Deaktivieren der Enumeration von USB-Funktionen über MDM für NCM für AllowUsbConnection.
