@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 8e72bef1ad82faeb734123828050de5273bc6505
-ms.sourcegitcommit: fba9bdbb9b9326f522d5078e776b68ac6c94b6a9
+ms.openlocfilehash: e1302a3d482648b1ebbf7fee71ceec3ca4261d23
+ms.sourcegitcommit: 87d503434339fc6c9b41aa9473e35ddfde845cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "11119945"
+ms.locfileid: "11120146"
 ---
 # Sammeln und nutzen von Diagnoseinformationen von HoloLens-Geräten
 
@@ -124,8 +124,8 @@ Dies funktioniert, wenn das Gerät im Datei-Explorer angezeigt wird, nachdem es 
 
 > [!NOTE]
 > Die Offline Diagnose ist nur aktiviert, wenn der Benutzer entweder OOBE durchläuft oder der [System\AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) -Richtlinienwert auf vollständig gesetzt ist (Standard ist Standardwert auf Hololens). 
->
-> Wenn Sie die Offline Diagnose deaktivieren möchten, wechseln Sie zu **Einstellungen-app > Seite Privatsphäre** , und wählen Sie **Standard** in **Diagnosedaten**aus.
+
+Wenn Gerät gesperrt ist, werden die Protokolle nicht angezeigt. Wenn Sie die Offline Diagnose deaktivieren möchten, wechseln Sie zu **Einstellungen-app > Seite Privatsphäre** , und wählen Sie **Standard** in **Diagnosedaten**aus. Bei Builds, bei denen die Offline Diagnose von der Telemetrie-Einstellung abhängt, wirkt sich dies nur darauf aus, ob Protokolle erfasst werden. Es hat keinen Einfluss darauf, welche Dateien erfasst werden.
 
 Schauen Sie sich dieses Video an, um weitere Informationen zu erhalten. 
 
