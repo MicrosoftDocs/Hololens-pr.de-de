@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 23ec5478c35977d1fd1fa20a33827e441d4b5c12
-ms.sourcegitcommit: 264c8ff6726f702c3770525d774e0c1d263a2705
+ms.openlocfilehash: 85bba3c955c26bcfdb7e80a24be0befa1e06289e
+ms.sourcegitcommit: 8fb914cf6512c67444e0ead2050cf1c82bd5decc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "11117770"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "11134424"
 ---
 # Veröffentlichungshinweise für HoloLens 2
 
@@ -155,7 +155,7 @@ Das 2020-Major-Software Update für HoloLens 2, *Windows holographisch, Version 
 
 ### Unterstützung für Windows Autopilot
 
-Mit Windows Autopilot für HoloLens 2 kann der Geräte Vertriebskanal HoloLens in Ihrem InTune-Mandanten vor der Registrierung registrieren. Wenn Geräte eintreffen, können Sie als freigegebene Geräte unter Ihrem Mandanten selbst bereitgestellt werden. Um die Selbstbereitstellung zu nutzen, muss das Gerät während des ersten Bildschirms in Setup über einen USB-c-zu-Ethernet-oder USB-c-to-LTE-Dongle mit einem Netzwerk verbunden werden.
+Mit Windows Autopilot für HoloLens 2 kann der Geräte Vertriebskanal HoloLens in Ihrem InTune-Mandanten vor der Registrierung registrieren. Wenn Geräte eintreffen, können Sie als freigegebene Geräte unter Ihrem Mandanten selbst bereitgestellt werden. Um die Vorteile der Selbstbereitstellung zu nutzen, muss das Gerät während des ersten Bildschirms in Setup mithilfe eines USB-C-zu-Ethernet-Geräts eine Verbindung mit einem Netzwerk herstellen.
 
 Nachdem ein Benutzer den selbst Bereitstellungsprozess von Autopilot gestartet hat, führt der Prozess die folgenden Schritte aus:
 
