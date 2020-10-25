@@ -13,12 +13,12 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 6183a478a9eee8a5ab6212443ea2955605754a21
-ms.sourcegitcommit: 7bf0f92aaf1683c7c39ed6b17ac47231c5088365
+ms.openlocfilehash: 8eef05c3d9f47fbbc86647ccf22c7de88bacc687
+ms.sourcegitcommit: b33dd8accef641578142e5234b9ad2d0222694ec
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11072782"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "11134676"
 ---
 # HoloLens-Hardware (1. Generation)
 
@@ -167,6 +167,22 @@ Um das Visier zu reinigen, entfernen Sie jeglichen Staub mit einer Kamel-oder Zi
 Zum Reinigen des restlichen Geräts, einschließlich des Stirn-und Geräte Arms, verwenden Sie ein fusselfreies Tuch, das mit milder Seife und Wasser befeuchtet ist. Lassen Sie Ihr HoloLens vollständig trocknen, bevor Sie es erneut verwenden.
 
 ![Abbildung, die zeigt, wie das Visier gereinigt wird](images/hololens-cleaning-visor.png)
+
+## Auffinden der Seriennummer
+
+Die Seriennummer für HoloLens (1st Gen)-Geräte wird unterhalb des rechten Objektivs gedruckt.
+1. Halten Sie das Gerät vor Ihnen, als ob Sie es tragen wollten.
+1. Wenn das Objektiv weiterhin nach vorne zeigt, drehen Sie das Spraymoppgerät auf den Kopf, sodass Sie die Unterseite sehen.
+1. Das richtige Objektiv befindet sich nun auf der linken Seite, die unter dem Objektiv auf dem Band gedruckt wird, ist die Seriennummer. 
+
+Die Seriennummer ist auch über einen angeschlossenen PC zu finden:
+
+1. Anschließen des Geräts
+1. Navigieren zu **diesem PC** im Datei-Explorer
+1. Klicken Sie mit der rechten Maustaste, und wählen Sie **Eigenschaften** des HoloLens-Geräts aus
+1. Dadurch wird die Seriennummer des Geräts angezeigt. Wie dieser Screenshot unten.
+
+<img src="images/hl1-serial-number.png" width="400" height="600" />
 
 > [!div class="nextstepaction"]
 > [Einrichten und Starten Ihres HoloLens (1st Generation)](hololens1-setup.md)
