@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 408bf94b4cec49b91198917c16f83012fa9ab644
-ms.sourcegitcommit: a81d48d362f8511960e74d38c7c8f0cff19b67c3
+ms.openlocfilehash: 63350230a680bc5a6185a3f3f334180962602442
+ms.sourcegitcommit: 72ae5a270f869393872eac160e43076eaa35fe4c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "11119298"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "11135556"
 ---
 # Insider-Vorschau für Microsoft HoloLens
 
@@ -35,6 +35,7 @@ Hier finden Sie eine Liste der anstehenden Features, die Sie heute in unserem Wi
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
 | [Unterstützung der automatischen Augen Position](hololens-insider.md#auto-eye-position-support)                              | Berechnet aktive Augen Positionen und ermöglicht eine exakte Hologramm-Positionierung.                        | 19041.1339 +                 |
 | [Zertifikat-Manager](hololens-insider.md#certificate-manager)                                     | Benutzer können Zertifikate der aktuellen Benutzer-und lokalen Computerzertifikate in der Einstellungs-APP anzeigen, installieren und entfernen.                                         | 19041.1361 +                 |
+| [App-Installer](hololens-insider.md#install-apps-on-hololens-2-via-app-installer) | Auf der Geräte-UI, um Apps aus AppX-Dateien zu installieren. | 19041.1377 + |
 | [Automatisches Starten der Bereitstellung über USB](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE erkennt automatisch Bereitstellungspakete auf USB-Laufwerken.                                | 19041.1361 +                 |
 | [Automatisches bestätigen von Bereitstellungspaketen in Oobe](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | Automatisches Anwenden von Bereitstellungspaketen in Oobe                                             | 19041.1361 +                 |
 | [Verwenden von Autopilot mit Wi-Fi-Verbindung](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | Verwenden Sie Autopilot von Device Wi-Fi ohne Ethernet-Adapter.                             | 19041.1364 +                 |
@@ -104,6 +105,26 @@ Das Zertifikat sollte nun auf dem Gerät installiert sein.
 ![Zertifikatanzeige in der Einstellungs-APP](images/certificate-viewer-device.jpg)
 
 ![Abbildung der Verwendung der Zertifikat-UI zum Installieren eines Zertifikats](images/certificate-device-install.jpg)
+
+### Installieren von apps auf HoloLens 2 über das App-Installationsprogramm
+In unserer Windows-Insider-Version **fügen wir eine neue Funktion (app-Installationsprogramm) hinzu, mit der Sie Anwendungen nahtlos** auf Ihren HoloLens 2-Geräten installieren können.  Sie können jetzt apps installieren, ohne den Entwicklermodus oder die Verwendung des Geräte Portals aktivieren zu müssen.  Laden Sie einfach (über USB oder durch Edge) das AppX-Paket auf Ihr Gerät herunter, und navigieren Sie im Datei-Explorer zum AppX-Paket, um aufgefordert zu werden, die Installation zu starten.  Alternativ können Sie [eine Installation von einer Webseite aus initiieren](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web).  Genau wie apps, die Sie über den Microsoft Store oder querladen mit der Dienst Bereitstellungsfunktion der Branchen-App für die Branchenanwendung von MDM installieren, müssen apps mit dem [Signatur Tool](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) digital signiert werden, und das [zum Signieren verwendete Zertifikat muss](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) vom HoloLens-Gerät als vertrauenswürdig eingestuft werden, bevor die APP bereitgestellt werden kann. Hinweis: Sie haben Vollzugriff, um diesen neuen Pfad der App-Installation zu deaktivieren, indem Sie das App-Installationsprogramm mithilfe der [Windows Defender-Anwendungssteuerung deaktivieren – WDAC-CSP](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens), Blockierung Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
+
+**Installationsanweisungen für die Anwendung.**
+
+1.  Stellen Sie sicher, dass Ihr HoloLens 2-Gerät eingeschaltet und an Ihren PC angeschlossen ist.
+2.  Sicherstellen, dass Sie beim HoloLens 2-Gerät angemeldet sind
+3.  Navigieren Sie auf Ihrem PC zu Ihrer benutzerdefinierten APP, und kopieren Sie yourapp. appxbundle nach yourdevicename\Internal Storage\Downloads.   Nachdem Sie das Kopieren Ihrer Datei beendet haben, können Sie die Verbindung zu Ihrem Gerät trennen.
+4.  Öffnen Sie auf Ihrem HoloLens 2-Gerät das Startmenü, wählen Sie alle apps aus, und starten Sie die Datei-Explorer-app.
+5.  Navigieren Sie zum Ordner Downloads. Möglicherweise müssen Sie auf der linken Seite der APP zuerst dieses Gerät auswählen und dann zu Downloads navigieren.
+6.  Wählen Sie die Datei "yourapp. appxbundle" aus.
+7.  Das App-Installationsprogramm wird gestartet. Wählen Sie die Schaltfläche Installieren aus, um Ihre APP zu installieren.
+Die installierte APP wird nach Abschluss der Installation automatisch gestartet.
+
+Sie können Beispiel-apps unter [Windows universelle Beispiele GitHub](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples) finden, um diesen Fluss zu testen.
+
+Informieren Sie sich über den vollständigen Prozess der [Installation von apps auf HoloLens 2 mit dem App-Installationsprogramm](app-deploy-app-installer.md).  
+
+![Installieren von MRTK-Beispielen über das App-Installationsprogramm](images/hololens-app-installer-picture.jpg)
 
 ### Automatisches Starten der Bereitstellung über USB
 Vor diesem Build mussten Benutzer den Bereitstellungs Bildschirm während der OOBE manuell starten, um die Bereitstellung über eine Tastenkombination durchführen zu können. Jetzt können Benutzer die Tastenkombination überspringen, indem Sie ein Bereitstellungspaket auf einem USB-Speicherlaufwerk verwenden. 

@@ -15,21 +15,23 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 1
-ms.openlocfilehash: f610de413c9990bd3f8bc4df63fa8c7ed821e32b
-ms.sourcegitcommit: 8c036f12a341a063eb7827ee7b70784402dad57f
+ms.openlocfilehash: ab67962efdafe3f39097210d60589dc6db715837
+ms.sourcegitcommit: c870802ea75a9dd602319c59fedb124f80c19b71
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "11077672"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "11136170"
 ---
 # Versionshinweise zu HoloLens 1st (Gen)
 
 ## HoloLens (1st Gen) langzeitwartung
 HoloLens (1. Generation) hat den Status "langzeitwartung" (LTS) eingegeben. Zukünftige Updates konzentrieren sich auf Problem-und Sicherheitsfixes und unter Beibehaltung der funktionsparität mit der Windows 10 holographischen Version 1809 für HoloLens (1st Generation).
 
+Für Entwickler bedeutet dies, dass HoloLens (1st Gen)-Apps die openxr-API nicht unterstützen.  Diese Headsets bleiben in Unity 2019 LTS mit dem WinRT-API-Back-End für den vollständigen Lebenszyklus von Unity 2019 LTS bis Mid-2022 unterstützt.
+
 ### Windows 10 holographisch, Version 1809
 
-> **Gilt für:** Hololens (1. Generation)
+> **Gilt für:** HoloLens (1. Generation)
 
 | Feature | Details |
 |---|---|
@@ -63,7 +65,7 @@ HoloLens (1. Generation) hat den Status "langzeitwartung" (LTS) eingegeben. Zuk�
 
 ### Windows 10, Version 1803 für Microsoft HoloLens
 
-> **Gilt für:** Hololens (1. Generation)
+> **Gilt für:** HoloLens (1. Generation)
 
 Windows 10, Version 1803, ist das erste Funktions Update für Windows holographische for Business seit seiner Veröffentlichung in Windows 10, Version 1607. Mit diesem Update werden die folgenden Änderungen eingeführt:
 
@@ -80,7 +82,7 @@ Windows 10, Version 1803, ist das erste Funktions Update für Windows holographi
 
 - Nachdem Sie sich zuvor mit einem Azure Active Directory (Azure AD)-Konto bei dem Gerät angemeldet haben, mussten Sie in den **Einstellungen** den **Arbeits Zugriff hinzufügen** , um Zugriff auf Unternehmensressourcen zu erhalten. Nun können Sie sich mit einem Azure AD-Konto anmelden, und die Registrierung erfolgt automatisch.
 
-- Bevor Sie sich anmelden, können Sie das Netzwerksymbol unter dem Feld "Kennwort" auswählen, um ein anderes WLAN-Netzwerk zu wählen, mit dem Sie eine Verbindung herstellen möchten. Sie können auch eine Verbindung mit einem Gastnetzwerk herstellen, beispielsweise in einem Hotel, einem Konferenzzentrum oder einem Unternehmen.
+- Bevor Sie sich anmelden, können Sie das Netzwerksymbol unter dem Kennwortfeld auswählen, um ein anderes Wi-Fi Netzwerk auszuwählen, mit dem eine Verbindung hergestellt werden soll. Sie können auch eine Verbindung mit einem Gastnetzwerk herstellen, beispielsweise in einem Hotel, einem Konferenzzentrum oder einem Unternehmen.
 
 - Sie können HoloLens nun problemlos [für mehrere Personen](hololens-multiple-users.md) mit Azure Ad-Konten freigeben.
 
