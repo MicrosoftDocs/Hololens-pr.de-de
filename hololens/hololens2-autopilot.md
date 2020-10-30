@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: Autopilot
 manager: jarrettr
-ms.openlocfilehash: 68e7b86259d4837be5bfa634c6ada4aa5b8006a1
-ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
+ms.openlocfilehash: 6851249ab9ed79e7dcdea6afc853fee66fdddf19
+ms.sourcegitcommit: a51f2e409f0207fc7457e97403b5298f1e0ad7dc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "11102344"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "11145656"
 ---
 # Windows Autopilot für HoloLens 2
 
@@ -62,12 +62,12 @@ Befolgen Sie die nachstehenden Schritte, um Ihre Umgebung für die private Vorsc
 **Lesen Sie den Abschnitt "[Voraussetzungen](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying#requirements)" im Artikel zum Self-Deployment-Modus von Autopilot.** Ihre Umgebung muss diese Anforderungen zusätzlich zu den Standardanforderungen für Windows Autopilot erfüllen. Sie brauchen die Abschnitte "Schritt-für-Schritt" und "Validierung" des Artikels nicht zu lesen. Die weiter unten in diesem Artikel aufgeführten Vorgehensweisen enthalten entsprechende Schritte speziell für HoloLens. Informationen zum Registrieren und Konfigurieren von Profilen finden Sie unter [4. Registrieren von Geräten bei Windows Autopilot](#4-register-devices-in-windows-autopilot) und [6. Erstellen eines Bereitstellungsprofils](#6-create-a-deployment-profile) in diesem Artikel. In diesen Abschnitten finden Sie die für HoloLens spezifischen Schritte.
 
 > [!IMPORTANT]  
-> Im Gegensatz zu anderen Windows Autopilot-Programmen weist Windows Autopilot für HoloLens 2 spezifische Betriebssystemanforderungen auf. Der Autopilot setzt voraus, dass Windows Holographic Version 2004 (Build 19041.1103 oder höher) auf den HoloLens-Geräten vorinstalliert ist. Bei Geräten, die bis Ende August 2020 ausgeliefert wurden, ist Windows Holographic Version 1903, vorinstalliert. Wenden Sie sich an Ihren Händler, um zu erfahren, wann Autopilot-fähige Geräte verfügbar sein werden. Wenn Sie an der privaten Vorschau teilnehmen möchten, lesen Sie die Anweisungen und Anforderungen weiter unten.
+> Windows Autopilot für HoloLens 2 weist spezifische Betriebssystemanforderungen auf. Autopilot setzt voraus, dass Windows Holographic Version 2004 (Build 19041.1103 oder höher) auf den HoloLens-Geräten vorinstalliert ist. Bei Geräten, die bis Ende September 2020 ausgeliefert wurden, ist Windows Holographic Version 1903, vorinstalliert. Wenden Sie sich an Ihren Händler, um zu erfahren, wann Autopilot-fähige Geräte verfügbar sein werden. Wenn Sie an der privaten Vorschau teilnehmen möchten, lesen Sie die Anweisungen und Anforderungen weiter unten.
 
 **Wenn Sie die Autopilot-Vorschau testen möchten, vergewissern Sie sich vor dem Starten der vorkonfigurierten Benutzeroberfläche (Out-of-the-Box Experience, OOBE) und des Bereitstellungsprozesses, dass die HoloLens-Geräte die folgenden Voraussetzungen erfüllen:**
 
-- Sie müssen das neueste Betriebssystem (Windows Holographic Version 2004,Build 19041.1103 oder höher) mithilfe von [Advanced Recovery Companion (ARC)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab) manuell installieren. Anweisungen finden Sie [hier](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device). 
-- Ihre Geräte müssen bei Windows Autopilot registriert werden. Informationen zum Registrieren von Geräten finden Sie unter [4. Registrieren von Geräten bei Windows Autopilot](#4-register-devices-in-windows-autopilot). 
+- Stellen Sie sicher, dass auf Ihrem Gerät Windows Holographic, Version 2004 (Build 19041.1103 oder höher) ausgeführt wird. Wenn das neueste Betriebssystem nicht vorinstalliert ist, müssen Sie die Aktualisierung manuell mit dem [Advanced Recovery Companion (ARC)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab) durchführen. Anweisungen finden Sie [hier](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device). 
+- Ihre Geräte müssen bei Windows Autopilot registriert werden. Informationen zum Registrieren von Geräten finden Sie unter [4. Registrieren von Geräten bei Windows Autopilot](#4-register-devices-in-windows-autopilot). Die empfohlene Vorgehensweise ist, dass Ihr Händler oder Verteiler die Geräte für Sie registriert.     
 - Im aktuellen Release müssen die Geräte mit dem Internet verbunden werden, bevor HoloLens eingeschaltet und der Autopilot-Bereitstellungsprozess initiiert wird. Verbinden Sie Ihr Gerät mit Ethernet über einen „USB-C zu Ethernet“-Adapter für drahtgebundene Internetkonnektivität. 
 - Die Geräte sind noch keine Mitglieder von Azure AD und noch nicht bei Intune (oder einem anderen MDM-System) registriert. Der Self-Deployment-Prozess für Autopilot rundet führt diese Schritte aus. Um sicherzustellen, dass alle gerätebezogenen Informationen bereinigt werden, überprüfen Sie die **Geräte**-Seiten in Azure AD und den Intune-Portalen.
 - Wenn Sie die Self-Deployment-Modus-Profile von Autopilot konfigurieren und verwalten möchten, stellen Sie sicher, dass Sie Zugriff auf [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com) haben.
@@ -75,9 +75,11 @@ Befolgen Sie die nachstehenden Schritte, um Ihre Umgebung für die private Vorsc
 
 ### 2. Registrieren für das Windows Autopilot für HoloLens 2-Programm
 
-**Für die Teilnahme am Programm muss Ihr Mandant beim privaten Vorschauprogramm angemeldet sein, um die HoloLens-spezifischen Intune UI-Steuerelemente für Autopilot zu erhalten.** Wechseln Sie zu diesem Zweck zu [Windows Autopilot für HoloLens – Anforderung der privaten Vorschau](https://aka.ms/APHoloLensTAP), oder verwenden Sie den folgenden QR-Code zum Senden einer Anforderung.  
+**Für die Teilnahme am Programm muss Ihr Mandant beim privaten Vorschauprogramm angemeldet sein. Dadurch erhalten Sie die HoloLens-spezifischen Intune UI-Steuerelemente (auch als MEM bezeichnet) für Autopilot.** Wechseln Sie zu diesem Zweck zu [Windows Autopilot für HoloLens – Anforderung der privaten Vorschau](https://aka.ms/APHoloLensTAP), oder verwenden Sie den folgenden QR-Code zum Senden einer Anforderung.  
 
 ![Autopilot-QR-Code](./images/hololens-ap-qrcode.png)  
+
+Microsoft führt einmal pro Woche ein Test-Flight für den Mandanten durch. Nach Abschluss des Test-Flights erhalten Sie eine E-Mail-Benachrichtigung. 
 
 Halten Sie für diese Anforderung folgende Informationen bereit:
 

@@ -3,7 +3,7 @@ title: Suchen, Installieren und Deinstallieren von Anwendungen
 description: Im Microsoft-Shop finden Sie Apps und Spiele, die mit HoloLens arbeiten.  Erfahren Sie mehr über das Suchen, Installieren und Deinstallieren von holographischen Apps.
 ms.assetid: cbe9aa3a-884f-4a92-bf54-8d4917bc3435
 ms.reviewer: v-miegge
-ms.date: 08/31/2020
+ms.date: 10/27/2020
 manager: jarrettr
 keywords: Hololens, Shop, UWP, App, installieren
 ms.prod: hololens
@@ -15,12 +15,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: fd818054fbe692363d411373a6a12ad1057d1be7
-ms.sourcegitcommit: 2b1de9c8f8a212a797fb0cb6056856dd4ff716a1
+ms.openlocfilehash: d64d0a18fbbf6570173c4bd80bc4f036f4408e08
+ms.sourcegitcommit: a51f2e409f0207fc7457e97403b5298f1e0ad7dc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10985839"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "11145636"
 ---
 # Anwendungen aus dem Microsoft-Shop suchen, installieren und deinstallieren.
 
@@ -35,6 +35,15 @@ Weitere Informationen zum Installieren und Ausführen benutzerdefinierter Apps f
 ## Apps suchen
 
 Öffnen Sie den Microsoft-Shop über **Startmenü**aus. Suchen Sie dann nach Apps und Spielen. Sie können mithilfe von [Sprachbefehlen](hololens-cortana.md) suchen, indem Sie "Suchen" sagen. Sobald sich das Suchfenster öffnet, sagen Sie "Diktieren beginnen" und wenn Sie dazu aufgefordert werden, beginnen Sie, Ihre Suchbegriffe auszusprechen.
+
+> [!NOTE]
+> Am 12. Januar 2021 erreichen die folgenden Apps das Supportende für HoloLens-Geräte. Wir empfehlen Ihnen, auf Ihrem Gerät über den folgenden Link die Webversion der App zu verwenden.
+
+| App        | Link                                          |
+|------------|-----------------------------------------------|
+| Excel Mobile      | https://office.live.com/start/Excel.aspx      |
+| Word Mobile       | https://office.live.com/start/Word.aspx       |
+| PowerPoint Mobile | https://office.live.com/start/PowerPoint.aspx |
 
 ## Installieren von Apps
 
