@@ -14,29 +14,26 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 4e2256f1086c92cdf0e788ba9dddf5b74a733116
-ms.sourcegitcommit: 72ae5a270f869393872eac160e43076eaa35fe4c
+ms.openlocfilehash: 415733bb2809b7ae2808edc097423f8928910c57
+ms.sourcegitcommit: c4fd9a87bb7c728c73418f95a1b15dd93b0af7c6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "11135526"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "11150916"
 ---
 # Installieren von apps auf HoloLens 2 über das App-Installationsprogramm
-
-In unserer Windows-Insider-Version **fügen wir eine neue Funktion (app-Installationsprogramm) hinzu, mit der Sie Anwendungen nahtlos** auf Ihren HoloLens 2-Geräten installieren können.  Sie können jetzt apps installieren, ohne den Entwicklermodus oder die Verwendung des Geräte Portals aktivieren zu müssen.  Laden Sie einfach (über USB oder durch Edge) das AppX-Paket auf Ihr Gerät herunter, und navigieren Sie im Datei-Explorer zum AppX-Paket, um aufgefordert zu werden, die Installation zu starten.  Alternativ können Sie [eine Installation von einer Webseite aus initiieren](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web).  Genau wie apps, die Sie über den Microsoft Store oder querladen mit der Dienst Bereitstellungsfunktion der Branchen-App für die Branchenanwendung von MDM installieren, müssen apps mit dem [Signatur Tool](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) digital signiert werden, und das [zum Signieren verwendete Zertifikat muss](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) vom HoloLens-Gerät als vertrauenswürdig eingestuft werden, bevor die APP bereitgestellt werden kann.   
-
-Dieses Update richtet sich an den Desktop, [auf dem Sideloading standardmäßig aktiviert ist](https://blogs.windows.com/windows-insider/2019/08/07/announcing-windows-10-insider-preview-build-18956/) .
 
 > [!IMPORTANT]
 > Dieses Feature ist derzeit nur avalible in Windows Insider-Builds 19041.1377 +. [Weitere Informationen zum Registrieren von Windows Insider-Builds](hololens-insider.md).
 
-> [!NOTE]
-> Für IT-Administratoren, die diese Funktion deaktivieren möchten, verwenden Sie den folgenden Paket Familiennamen als Teil ihrer [WDAC-Richtlinie](windows-defender-application-control-wdac.md). Dadurch wird nur die APP-Installationsprogramm-APP und keine apps blockiert, die aus anderen Quellen wie dem Microsoft Store oder aus ihrer MDM-Lösung installiert wurden.
-```
-Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
-```
-> [!NOTE]
-> Es wird empfohlen, die [WDAC-Richtlinie](windows-defender-application-control-wdac.md) zum Steuern von apps zu verwenden, wenn Sie jedoch nur Microsoft Store-Apps zulassen möchten, die für die [ApplicationManagement/AllowAllTrustedApps-](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps) Richtlinie explizit auf "nicht zulassen" konfiguriert sind, können Apps nur aus dem Microsoft Store installiert werden. 
+In unserer Windows-Insider-Version **fügen wir eine neue Funktion (app-Installationsprogramm) hinzu, mit der Sie Anwendungen nahtlos** auf Ihren HoloLens 2-Geräten installieren können. Das Feature ist **für nicht verwaltete Geräte standardmäßig aktiviert**. Um Unterbrechungen von Unternehmen zu verhindern, steht das App-Installationsprogramm derzeit **nicht für verwaltete Geräte zur Verfügung** .  
+
+Ein Gerät gilt als "verwaltet", **Wenn eine der folgenden** Bedingungen zutrifft:
+- MDM [registriert](hololens-enroll-mdm.md)
+- Mit [Bereitstellungspaket](hololens-provisioning.md) konfiguriert
+- Benutzer [Identität](hololens-identity.md) ist Aad
+
+Sie können jetzt apps installieren, ohne den Entwicklermodus oder die Verwendung des Geräte Portals aktivieren zu müssen.  Laden Sie einfach (über USB oder durch Edge) das AppX-Paket auf Ihr Gerät herunter, und navigieren Sie im Datei-Explorer zum AppX-Paket, um aufgefordert zu werden, die Installation zu starten.  Alternativ können Sie [eine Installation von einer Webseite aus initiieren](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web).  Genau wie apps, die Sie über den Microsoft Store oder querladen mit der Dienst Bereitstellungsfunktion der Branchen-App für die Branchenanwendung von MDM installieren, müssen apps mit dem [Signatur Tool](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) digital signiert werden, und das [zum Signieren verwendete Zertifikat muss](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) vom HoloLens-Gerät als vertrauenswürdig eingestuft werden, bevor die APP bereitgestellt werden kann.   
 
 ## Anforderungen
 
@@ -60,6 +57,7 @@ Apps, die über diese Methode installiert werden, müssen digital signiert sein.
 
 ## Installationsmethode
 
+1.  Stellen Sie sicher, dass Ihr Gerät nicht als verwaltet angesehen wird.
 1.  Stellen Sie sicher, dass Ihr HoloLens 2-Gerät eingeschaltet ist und Sie angemeldet sind.
 1.  Navigieren Sie auf Ihrem PC zu Ihrer benutzerdefinierten APP, und kopieren Sie yourapp. appxbundle nach yourdevicename\Internal Storage\Downloads. 
     Nachdem Sie Ihre Datei fertig kopiert haben, können Sie Ihr Gerät trennen und die Installation später abschließen.
