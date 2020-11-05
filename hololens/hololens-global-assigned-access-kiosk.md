@@ -13,12 +13,12 @@ ms.reviewer: lavinds
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9c411811376d34b4399db76c76364cd1254910c4
-ms.sourcegitcommit: a59ce1cf68785c8e08c5ea94046ba04291ee1a55
+ms.openlocfilehash: 8777c64b4d4ca08bf3b103d7d92bbb99d6978bdc
+ms.sourcegitcommit: 4e168380c23e8463438aa8a1388baf8d5ac1a1ab
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "11094973"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "11154196"
 ---
 # Global zugewiesener Zugriff – Kiosk
 
@@ -64,3 +64,14 @@ Diese Funktion ermöglicht es einem Benutzer, der als "[Gerätebesitzer](securit
 
  :::code language="xml" source="samples/exclude-device-owners-from-global.xml" highlight="6,16-18":::
  
+## Zusätzliche Beispiele für globalen Zugriff
+
+Dies ist ein global zugewiesener Zugriffkiosk. Wenn sich ein Benutzer dort anmeldet, steht ihm ein Multi-App-Kiosk mit der Einstellungen-App, Feedback-Hub und Edge zur Verfügung.
+
+:::code language="xml" source="samples/kiosk-sample-global-assigned-access.xml":::
+
+Dies ist ein global zugewiesener Zugriffkiosk, der den Gerätebesitzer ausschließt. Wenn sich ein anderer AAD-Benutzer dort anmeldet, steht ihm ein Multi-App-Kiosk mit der Einstellungen-App, Feedback-Hub und Edge zur Verfügung. Dieser Kiosk enthält auch eine sekundäre Kiosk-Konfiguration für ein Besucherkonto, bei dem sich alle Benutzer auf dem Sperrbildschirm anmelden können. Wenn sich ein Benutzer beim Besucherkonto anmeldet, steht ihm ein Multi-App-Kiosk zur Verfügung, der nur die Feedback-Hub-App enthält.
+
+:::code language="xml" source="samples/kiosk-sample-global-assigned-access-visitor-exclude.xml":::
+
+
