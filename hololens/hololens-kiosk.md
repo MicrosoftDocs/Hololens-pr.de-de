@@ -7,7 +7,7 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 04/27/2020
+ms.date: 10/27/2020
 ms.custom:
 - CI 115262
 - CI 111456
@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 920ba7e84b1bb4818aef4efdee60be004d8a3300
-ms.sourcegitcommit: e6885d03c980b33dd0bab5c418cbd1892d5ff123
+ms.openlocfilehash: c4c4b533538ab7998f8438d7cc0c2f3d88143ec6
+ms.sourcegitcommit: 4e168380c23e8463438aa8a1388baf8d5ac1a1ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "11080444"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "11154185"
 ---
 # Einrichten von HoloLens als Kiosk
 
@@ -41,6 +41,13 @@ Sie können den Kioskmodus entweder in einer einzelnen APP-oder in einer Multi-A
 > Durch das Löschen der Konfiguration mit mehreren apps werden die Benutzer Sperrungs Profile entfernt, die vom Feature zugewiesene Zugriffsrechte erstellt wurden. Allerdings werden nicht alle Richtlinienänderungen zurückgesetzt. Wenn Sie diese Richtlinien wiederherstellen möchten, müssen Sie das Gerät auf die Werkseinstellungen zurücksetzen.
 
 ## Planen der Kiosk Bereitstellung
+
+Bei der Planung Ihres Kiosks müssen Sie in der Lage sein, die folgenden Fragen zu beantworten. Hier sind einige Entscheidungen, die Sie beim Lesen dieser Seite und einige Überlegungen zu diesen Fragen berücksichtigen sollten.
+1. **Wer wird Ihren Kiosk nutzen, und welche [Art von Konto (n)](hololens-identity.md) werden Sie verwenden?** Dies ist eine Entscheidung, die Sie wahrscheinlich bereits getroffen haben und die nicht um Ihres Kiosks Willen angepasst werden sollte, sondern sich auf die spätere Zuweisung des Kiosks auswirkt.
+1. **Müssen Sie entweder unterschiedliche Kioske pro Nutzer/Gruppe oder ein Kiosk für einige nicht aktiviert haben?** Wenn dies der Fall ist, sollten Sie Ihren Kiosk über XML erstellen. 
+1. **Wie viele apps sind in Ihrem Kiosk zu finden?** Wenn Sie über mehr als eine APP verfügen, benötigen Sie einen Kiosk mit mehreren apps. 
+1. **Welche app (s) befindet sich in Ihrem Kiosk?** Bitte verwenden Sie die unten aufgeführte Anwendungs-Liste, um zusätzlich zu ihren eigenen In-Box-apps hinzuzufügen.
+1. **Wie planen Sie die Bereitstellung Ihres Kiosks?** Wenn Sie Device in MDM registrieren, empfehlen wir die Verwendung von MDM zur Bereitstellung Ihres Kiosks. Wenn Sie MDM nicht verwenden, steht die Bereitstellung mit Bereitstellungspaket zur Verfügung.  
 
 ### Anforderungen für den Kiosk Modus
 
@@ -109,7 +116,7 @@ Wenn Sie ein MDM-System (Mobile Device Management) oder ein Bereitstellungspaket
 |Dynamics 365 Remote Assist |Microsoft. MicrosoftRemoteAssist \ _8wekyb3d8bbwe \! Microsoft. RemoteAssist |
 |Feedback- &nbsp; Hub |Microsoft. WindowsFeedbackHub \ _8wekyb3d8bbwe \! App |
 |Datei-Explorer |c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy! App |
-|Mail |Microsoft. windowscommunicationsapps_8wekyb3d8bbwe! Microsoft. Windows Live stürzen. Mail |
+|Mail |Microsoft.windowscommunicationsapps_8wekyb3d8bbwe! Microsoft. Windows Live stürzen. Mail |
 |Microsoft Store |Microsoft.WindowsStore_8wekyb3d8bbwe! App |
 |Miracast <sup> 4</sup> |&nbsp; |
 |Filme & TV |Microsoft. ZuneVideo \ _8wekyb3d8bbwe \! Microsoft. ZuneVideo |
@@ -126,71 +133,24 @@ Wenn Sie ein MDM-System (Mobile Device Management) oder ein Bereitstellungspaket
 > <sup>3 </sup> auch wenn Sie Cortana nicht als Kiosk-App aktivieren, sind integrierte Sprachbefehle aktiviert. Befehle, die mit deaktivierten Features verknüpft sind, haben jedoch keine Auswirkungen.  
 > <sup>4 </sup> Sie können Miracast nicht direkt aktivieren. Aktivieren Sie die Kamera-APP und die Geräteauswahl-APP, um Miracast als Kiosk-APP zu aktivieren.
 
-### Planen von Benutzer-und Gerätegruppen
+### Planen von Kiosk Profilen für Benutzer oder Gruppen
 
-In einer MDM-Umgebung verwenden Sie Gruppen, um Gerätekonfigurationen und den Benutzer Zugriff zu verwalten. 
+Wenn Sie entweder die XML-Datei erstellen oder die Benutzeroberfläche von InTune verwenden, um einen Kiosk einzurichten, müssen Sie berücksichtigen, wer der Kiosk sein soll. Eine Kiosk Konfiguration kann auf ein einzelnes Konto oder auf Azure AD Groups begrenzt werden. 
 
-Das Kiosk-Konfigurationsprofil enthält die Einstellung für den **Anmeldetyp des Benutzers** . Der **Benutzer Anmeldetyp** identifiziert den Benutzer (oder die Gruppe, der die Benutzer enthält), der die APP oder die apps verwenden kann, die Sie hinzufügen. Wenn sich ein Benutzer mit einem Konto anmeldet, das nicht im Konfigurationsprofil enthalten ist, kann dieser Benutzer keine apps auf dem Kiosk verwenden.  
+In der Regel sind Kioske entweder für einen Benutzer oder eine Benutzergruppe aktiviert. Wenn Sie jedoch beabsichtigen, ihren eigenen XML-Kiosk zu schreiben, sollten Sie möglicherweise den Global zugewiesenen Zugriff in Frage stellen, in dem der Kiosk unabhängig von der Identität auf Geräteebene angewendet wird. Wenn Ihnen dies gefällt, [Lesen Sie mehr über global zugewiesene Access-Kioske.](hololens-global-assigned-access-kiosk.md)
 
-> [!NOTE]  
-> Der **Benutzer Anmeldetyp** eines einzelnen App-Kiosks gibt ein einzelnes Benutzerkonto an. Dies ist der Benutzerkontext, unter dem der Kiosk ausgeführt wird. Der **Benutzer Anmeldetyp** eines Multi-App-Kiosks kann ein oder mehrere Benutzerkonten oder Gruppen angeben, die den Kiosk verwenden können.
+#### Wenn Sie eine XML-Datei erstellen:
+-   Sie erstellen viele verschiedene Kiosk-Profile und weisen diese einzelnen Benutzern/Gruppen zu. Wie einen Kiosk für Ihre Aad-Gruppe, der viele apps enthält, und einen Besucher, der über einen mehr-App-Kiosk mit einer einmaligen App verfügt.
+-   Ihre Kiosk-Konfiguration wird als **Profil-ID** bezeichnet und besitzt eine GUID.
+-   Sie weisen dieses Profil im Abschnitt configs zu, indem Sie den Benutzertyp angeben und die gleiche GUID für die **DefaultProfile-ID**verwenden.
+- Eine XML-Datei kann erstellt, aber weiterhin auf ein Gerät über MDM angewendet werden, indem ein benutzerdefiniertes Oma-URI-Geräte Konfigurationsprofil erstellt und auf die HoloLens-Gerätegruppe mit dem URI-Wert angewendet wird:./Device/Vendor/MSFT/AssignedAccess/Configuration
 
-Bevor Sie die Kiosk-Konfiguration auf einem Gerät bereitstellen können, müssen Sie das Kiosk-Konfigurationsprofil einer Gruppe *zuweisen* , die das Gerät enthält, oder einen Benutzer, der sich beim Gerät anmelden kann. Mit dieser Einstellung wird folgendes Verhalten erzeugt:
-
-- Wenn es sich bei dem Gerät um ein Mitglied der zugewiesenen Gruppe handelt, wird die Kiosk Konfiguration für das Gerät bereitgestellt, wenn sich der Benutzer zum ersten Mal auf dem Gerät anmeldet.  
-- Wenn das Gerät nicht Mitglied der zugewiesenen Gruppe ist, aber ein Benutzer, der Mitglied dieser Gruppe ist, sich anmeldet, wird die Kiosk-Konfiguration zu diesem Zeitpunkt auf dem Gerät bereitgestellt.
-
-Eine vollständige Erläuterung der Auswirkungen der Zuweisung von Konfigurationsprofilen in InTune finden Sie unter [Zuweisen von Benutzer-und Geräteprofilen in Microsoft InTune](https://docs.microsoft.com/intune/configuration/device-profile-assign).
-
-> [!NOTE]  
-> In den folgenden Beispielen werden Multi-App-Kioske beschrieben. Single-App-Kioske Verhalten sich auf ähnliche Weise, aber nur ein Benutzerkonto erhält die Kiosk-Erfahrung.
-
-**Beispiel 1**
-
-Sie verwenden eine einzelne Gruppe (Gruppe 1) für Geräte und Benutzer. Ein Gerät und die Benutzer A, B und C sind Mitglieder dieser Gruppe. Sie konfigurieren das Kiosk-Konfigurationsprofil wie folgt:  
-
-- **Benutzer Anmeldetyp**: Gruppe 1
-- **Zugewiesene Gruppe**: Gruppe 1
-
-Unabhängig davon, welcher Benutzer sich zuerst am Gerät anmeldet (und die Out-of-Box-Oberfläche durchläuft), wird die Kiosk-Konfiguration auf dem Gerät bereitgestellt. Die Benutzer A, B und C können sich bei dem Gerät anmelden und die Funktionalität des Kiosks nutzen.
-
-**Beispiel 2**
-
-Sie schließen Geräte an zwei verschiedene Anbieter ab, die unterschiedliche Kiosk-Erfahrungen benötigen. Beide Anbieter verfügen über Benutzer, und Sie möchten, dass alle Benutzer auf Kioske sowohl von Ihrem eigenen Anbieter als auch dem anderen Anbieter zugreifen können. Sie konfigurieren Gruppen wie folgt:
-
-- Gerätegruppe 1:
-  - Gerät 1 (Anbieter 1)
-  - Gerät 2 (Anbieter 1)
-
-- Gerätegruppe 2:
-  - Gerät 3 (Lieferant 2)
-  - Gerät 4 (Lieferant 2)
-
-- Benutzergruppe:
-  - Benutzer A (Lieferant 1)
-  - Benutzer B (Lieferant 2)
-
-Sie erstellen zwei Kiosk-Konfigurationsprofile, die die folgenden Einstellungen aufweisen:
-
-- Kiosk-Profil 1:
-   - **Benutzer Anmeldetyp**: Benutzergruppe
-   - **Zugewiesene Gruppe**: Gerätegruppe 1
-
-- Kiosk-Profil 2:
-   - **Benutzer Anmeldetyp**: Benutzergruppe
-   - **Zugewiesene Gruppe**: Gerätegruppe 2
-
-Bei diesen Konfigurationen werden die folgenden Ergebnisse erzielt:
-
-- Wenn sich ein Benutzer bei Device 1 oder Device 2 anmeldet, stellt InTune das Kiosk-Profil 1 für dieses Gerät bereit.
-- Wenn sich ein Benutzer bei Device 3 oder Device 4 anmeldet, stellt InTune das Kiosk-Profil 2 auf dem Gerät bereit.
-- Benutzer a und Benutzer B können sich bei einem der vier Geräte anmelden. Wenn Sie sich bei Gerät 1 oder Gerät 2 anmelden, sehen Sie die Erfahrung des Anbieters 1 Kiosks. Wenn Sie sich bei Device 3 oder Device 4 anmelden, sehen Sie den Verkäufer 2 Kiosk-Erfahrung.
-
-#### Profil Konflikte
-
-Wenn zwei oder mehr Kiosk-Konfigurationsprofile auf dasselbe Gerät ausgerichtet sind, treten Konflikte auf. Im Fall von InTune-verwalteten Geräten wendet InTune keine der in Konflikt stehenden Profile an.
-
-Andere Arten von Profilen und Richtlinien, wie Geräteeinschränkungen, die nicht mit dem Kiosk-Konfigurationsprofil verknüpft sind, haben keinen Konflikt mit dem Kiosk-Konfigurationsprofil.
+#### Wenn Sie einen Kiosk in InTune erstellen.
+-   Jedes Gerät erhält möglicherweise nur ein einzelnes Kiosk-Profil, da es sonst zu einem Konflikt führt und überhaupt keine Kiosk-Konfigurationen mehr erhält. 
+    -   Andere Arten von Profilen und Richtlinien, wie Geräteeinschränkungen, die nicht mit dem Kiosk-Konfigurationsprofil verknüpft sind, haben keinen Konflikt mit dem Kiosk-Konfigurationsprofil.
+-   Der Kiosk wird für alle Benutzer aktiviert, die Teil des Benutzeranmelde Typs sind, der für einen Benutzer oder eine Aad-Gruppe eingerichtet wird. 
+-   Nachdem die Kiosk Konfiguration eingestellt wurde und der **Benutzer Anmeldetyp** (Benutzer, die sich beim Kiosk anmelden können) und die apps ausgewählt sind, muss die Gerätekonfiguration weiterhin einer Gruppe zugewiesen werden. Die zugewiesene Gruppe (n) bestimmt, welche Geräte die Konfiguration des Kiosk Geräts empfangen, interagiert jedoch nicht mit, wenn der Kiosk aktiviert ist oder nicht. 
+    - Eine vollständige Erläuterung der Auswirkungen der Zuweisung von Konfigurationsprofilen in InTune finden Sie unter [Zuweisen von Benutzer-und Geräteprofilen in Microsoft InTune](https://docs.microsoft.com/intune/configuration/device-profile-assign).
 
 ### Auswählen einer Bereitstellungsmethode
 
@@ -215,8 +175,8 @@ In der folgenden Tabelle sind die Funktionen und Vorteile der einzelnen Bereitst
 |Bereitstellen mithilfe des Entwicklermodus |Erforderlich       | Nicht erforderlich            | Nicht erforderlich   |
 |Bereitstellen mithilfe von Azure Active Directory (AAD)  | Nicht erforderlich            | Nicht erforderlich                   | Erforderlich  |
 |Automatisches Bereitstellen      | Nein            | Nein                   | Ja  |
-|Bereitstellungsgeschwindigkeit            | Schnellste       | Fast                 | Verzögerte Anzeige |
-|Bereitstellen im Maßstab | Nicht empfohlen    | Nicht empfohlen        | Empfohlen |
+|Bereitstellungsgeschwindigkeit            | Fast       | Fast                 | Verzögerte Anzeige |
+|Bereitstellen im Maßstab | Nicht empfohlen    | Empfohlen        | Empfohlen |
 
 ## Verwenden von Microsoft InTune oder einem anderen MDM zum Einrichten einer einzelnen APP oder eines Multi-App-Kiosks
 
@@ -487,3 +447,19 @@ Führen Sie die folgenden Schritte aus, um den Kioskmodus mithilfe des Windows-G
 
 Schauen Sie sich an, wie Sie einen Kiosk mithilfe eines Bereitstellungspakets konfigurieren.  
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/fa125d0f-77e4-4f64-b03e-d634a4926884?autoplay=false]
+
+## XML-Kiosk Code Beispiele für HoloLens
+
+### Mehrere App-Kioskmodus, der auf eine Aad-Gruppe ausgerichtet ist. 
+Dieser Kiosk stellt einen Kiosk bereit, der für Benutzer in der Aad-Gruppe einen Kiosk aktiviert hat, der die drei apps: Einstellungen, Remote Unterstützung und Feedback-Hub umfasst. Um dieses Beispiel für die sofortige Verwendung zu ändern, stellen Sie sicher, dass Sie die unten hervorgehobene GUID so ändern, dass Sie einer eigenen Aad-Gruppe entspricht. 
+
+
+:::code language="xml" source="samples/kiosk-sample-multi-aad-group.xml" highlight="20":::
+
+
+### Mehrere App-Kioskmodus, der auf das Aad-Konto ausgerichtet ist.
+Dieser Kiosk stellt einen Kiosk für einen einzelnen Benutzer bereit, auf dem ein Kiosk aktiviert ist, der die drei apps: Einstellungen, Remote Unterstützung und Feedback-Hub umfasst. Um dieses Beispiel für die sofortige Verwendung zu ändern, stellen Sie sicher, dass Sie das unten hervorgehobene Konto so ändern, dass es einem eigenen Aad-Konto entspricht. 
+
+
+:::code language="xml" source="samples/kiosk-sample-multi-aad-account.xml" highlight="20":::
+
