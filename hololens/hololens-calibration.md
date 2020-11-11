@@ -14,12 +14,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 627631ee7070af6cb6c60e91890f05472ce0f6be
-ms.sourcegitcommit: 8b56f4b9b5f9c928fc361f18efcbea729055a0b2
+ms.openlocfilehash: f466d64da8ef122ce2917117a74ab904a573b4e3
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "10919156"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163050"
 ---
 # Verbessern der Grafikqualität und des Komforts
 
@@ -40,19 +40,19 @@ HoloLens 2 fordert einen Benutzer auf, das Gerät unter den folgenden Umständen
 - Das Gerät wird deaktiviert und wieder aktiviert, und es gelten die vorstehenden Umstände. 
 
 
-![Aufforderung zur Kalibrierung](./images/07-et-adjust-for-your-eyes.png)
+![Kalibrierungsaufforderung zur Anpassung an die Augen.](./images/07-et-adjust-for-your-eyes.png)
 
 Während dieses Vorgangs sehen Sie sich eine Reihe von Zielen (Edelsteinen) an. Es ist in Ordnung, wenn Sie während der Kalibrierung blinzeln oder die Augen schließen. Versuchen Sie sich jedoch auf die Edelsteine zu konzentrieren, und nicht auf andere Gegenstände im Raum.  Auf diese Weise kann HoloLens Ihre Augenposition ermitteln, um Ihre holografische Welt darzustellen.
 
-![Aufforderung zur Kalibrierung](./images/07-et-hold-head-still.png)
+![Für die Kalibrierung werden Sie aufgefordert, den Kopf ruhig zu halten und den Punkten mit den Augen zu folgen.](./images/07-et-hold-head-still.png)
 
-![Aufforderung zur Kalibrierung](./images/08-et-gems.png)
+![Beispiel-Kalibrierung mit Edelstein.](./images/08-et-gems.png)
 
-![Aufforderung zur Kalibrierung](./images/09-et-adjusting.png)
+![Kalibrierung anpassen.](./images/09-et-adjusting.png)
 
 Wenn die Kalibrierung erfolgreich war, wird ein Erfolgsbildschirm angezeigt.  Wenn dies nicht der Fall ist, lesen Sie [hier](#troubleshooting-hololens-2-calibration) mehr über die Diagnose von Kalibrierungsfehlern.
 
-![Aufforderung zur Kalibrierung](./images/10-et-success.png)
+![Kalibrierung erfolgreich.](./images/10-et-success.png)
 
 ### Kalibrierung beim Freigeben eines Geräts oder einer Sitzung
 
@@ -65,6 +65,28 @@ Mehrere Benutzer können ein HoloLens 2-Gerät gemeinsam nutzen, ohne dass jede 
 1. Wählen Sie **Einstellungen** aus, und wählen Sie dann **System** > **Kalibrierung** > **Kalibrierung der Augen** > **Kalibrierung der Augen ausführen** aus.
 
    ![Die Einstellungs-App mit der Option „Kalibrierung der Augen ausführen”](./images/C-Settings.Calibration.png)
+
+### Automatische Unterstützung der Augenposition
+- Wir bieten jetzt eine höhere Genauigkeit bei der Hologramm-Positionierung durch die automatische Unterstützung der Augenposition für verbesserten Sehkomfort und bessere Anzeigequalität. 
+
+Bei HoloLens 2 ermöglichen die Augenpositionen eine genaue Hologramm-Positionierung, ein komfortables Seherlebnis und eine verbesserte Anzeigequalität. Die Augenpositionen werden als Teil des Eyetracking-Ergebnisses berechnet. Dazu müssen alle Benutzer eine Eye Tracking-Kalibrierung durchführen, auch wenn keine Blickeingabe erforderlich ist.
+
+**Auto Eye Position (AEP)** ermöglicht diese Szenarien mit einer interaktionsfreien Methode zur Berechnung der Augenpositionen für Benutzer.  Auto Eye Position beginnt automatisch im Hintergrund zu arbeiten, sobald Benutzer das Gerät anlegen. Wenn Benutzer keine vorherige Eye Tracking-Kalibrierung haben, beginnt Auto Eye Position nach einer kurzen Verarbeitungszeit mit der Bereitstellung der Augenpositionen der Benutzer an das Anzeigesystem. Diese Bearbeitungszeit liegt typischerweise zwischen 20 bis 60 Sekunden. Die Benutzerdaten werden nicht auf dem Gerät beibehalten. Deshalb wird dieser Vorgang wiederholt, wenn das Gerät wieder eingesetzt, neu gestartet oder aus dem Ruhezustand reaktiviert wird.  
+
+Änderungen des Systemverhaltens mit der Funktion Auto Eye Position, wenn ein unkalibrierter Benutzer das Gerät anlegt. Ein nicht kalibrierter Benutzer ist eine Person, die den Eye-Tracking-Kalibrierungsprozess auf dem Gerät noch nicht durchlaufen hat.
+
+|     Aktive Anwendung                           |     Bisheriges Verhalten                                   |     Verhalten für Windows HWindows Holographic, ab Version 20H2                                                     |
+|--------------------------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+|     App oder Holographic Shell ohne Blickkontakt    |     Aufforderung zur Eye-Tracking-Kalibrierung wird angezeigt.    |     Es wird keine Aufforderung angezeigt.                                                                                |
+|     App mit Blickeingabe                             |     Aufforderung zur Eye-Tracking-Kalibrierung wird angezeigt.    |     Die Aufforderung zur Eye-Tracking-Kalibrierung wird nur angezeigt, wenn die Anwendung auf den Blickstrom des Auges zugreift.     |
+
+ Wenn Benutzer von einer Anwendung ohne Blickeingabe zu einer Anwendung wechseln, die auf Blickdaten zugreift, wird die Kalibrierungsaufforderung angezeigt. Es wird nicht auf einen Out-Of-Box-Erfahrungsfluss umgestellt. 
+ 
+Für Umgebungen, die Blickdaten oder eine sehr präzise Hologramm-Positionierung erfordern, empfehlen wir unkalibrierten Benutzern, die Eye Tracking-Kalibrierung über die Eingabeaufforderung auszuführen. Oder die App-Einstellungen im Startmenü zu starten und **System > Kalibrierung > Augenkalibrierung > Augenkalibrierung ausführen** auszuwählen.
+
+**Bekannte Probleme**
+ - Wir untersuchen ein Problem, bei dem der Eyetracking-Treiber-Host-Prozess bei starker Speicherauslastung abstürzt. Der Eyetracking-Treiber-Host-Prozess sollte sich automatisch erholen.
+
 
 ### Problembehandlung bei der HoloLens 2-Kalibrierung
 
