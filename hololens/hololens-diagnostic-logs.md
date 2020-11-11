@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: e1302a3d482648b1ebbf7fee71ceec3ca4261d23
-ms.sourcegitcommit: 87d503434339fc6c9b41aa9473e35ddfde845cac
+ms.openlocfilehash: b0a068bb50d033544b4bf44100d005dfedc1d94d
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "11120146"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162938"
 ---
 # Sammeln und nutzen von Diagnoseinformationen von HoloLens-Geräten
 
@@ -123,9 +123,17 @@ In Situationen, in denen das Gerät keine Diagnose über den Feedback-Hub oder d
 Dies funktioniert, wenn das Gerät im Datei-Explorer angezeigt wird, nachdem es über ein USB-Kabel mit einem PC verbunden wurde. 
 
 > [!NOTE]
-> Die Offline Diagnose ist nur aktiviert, wenn der Benutzer entweder OOBE durchläuft oder der [System\AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) -Richtlinienwert auf vollständig gesetzt ist (Standard ist Standardwert auf Hololens). 
+> Die Offline Diagnose Generierung und-Verwaltung wird je nach Betriebssystemversion unterschiedlich gesteuert. Zuvor wurde sie von der Telemetrie-Einstellung gesteuert, wird nun aber direkt über die Richtlinie gesteuert. 
 
-Wenn Gerät gesperrt ist, werden die Protokolle nicht angezeigt. Wenn Sie die Offline Diagnose deaktivieren möchten, wechseln Sie zu **Einstellungen-app > Seite Privatsphäre** , und wählen Sie **Standard** in **Diagnosedaten**aus. Bei Builds, bei denen die Offline Diagnose von der Telemetrie-Einstellung abhängt, wirkt sich dies nur darauf aus, ob Protokolle erfasst werden. Es hat keinen Einfluss darauf, welche Dateien erfasst werden.
+Verhalten vor [Windows holographisch, Version 20H2](hololens-release-notes.md#windows-holographic-version-20h2):
+ - Die Offline Diagnose ist nur aktiviert, wenn der Benutzer entweder OOBE durchläuft oder der [System\AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) -Richtlinienwert auf vollständig gesetzt ist (Standard ist Standardwert auf HoloLens). 
+- Wenn Sie die Offline Diagnose deaktivieren möchten, wechseln Sie zu **Einstellungen-app > Seite Privatsphäre** , und wählen Sie **Standard** in **Diagnosedaten**aus. Bei Builds, bei denen die Offline Diagnose von der Telemetrie-Einstellung abhängt, wirkt sich dies nur darauf aus, ob Protokolle erfasst werden. Es hat keinen Einfluss darauf, welche Dateien erfasst werden.
+- Wenn Gerät gesperrt ist, werden die Protokolle nicht angezeigt.
+
+Auf erstellt [Windows holographisch, Version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) und weiter:
+- Wenn die Fall Back Diagnose aktiviert ist, wird Sie von einer bestimmten MDM-Richtlinie mit der entsprechenden Einstellung [MixedReality/FallbackDiagnostics](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-fallbackdiagnostics) gesteuert.
+- Wenn Gerät gesperrt ist, werden die Protokolle nicht angezeigt.
+
 
 Schauen Sie sich dieses Video an, um weitere Informationen zu erhalten. 
 

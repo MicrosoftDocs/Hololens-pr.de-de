@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c4c4b533538ab7998f8438d7cc0c2f3d88143ec6
-ms.sourcegitcommit: 4e168380c23e8463438aa8a1388baf8d5ac1a1ab
+ms.openlocfilehash: b4730029755c71cab5dc00b37ac69cd6ed54be58
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "11154185"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162975"
 ---
 # Einrichten von HoloLens als Kiosk
 
@@ -445,8 +445,59 @@ Führen Sie die folgenden Schritte aus, um den Kioskmodus mithilfe des Windows-G
 
 ## Weitere Informationen
 
-Schauen Sie sich an, wie Sie einen Kiosk mithilfe eines Bereitstellungspakets konfigurieren.  
+### Schauen Sie sich an, wie Sie einen Kiosk mithilfe eines Bereitstellungspakets konfigurieren.  
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/fa125d0f-77e4-4f64-b03e-d634a4926884?autoplay=false]
+
+### Global zugewiesener Zugriff – Kiosk Modus
+- Reduzierte Identitätsverwaltung für Kiosk durch Aktivieren der neuen Kiosk Methode, die den Kioskmodus auf Systemebene anwendet.
+
+Diese neue Funktion ermöglicht es einem IT-Administrator, ein HoloLens 2-Gerät für den Multi-App-Kioskmodus zu konfigurieren, das auf Systemebene anwendbar ist, keine Affinität zu einer beliebigen Identität im System hat und für alle Personen gilt, die sich beim Gerät anmelden. Informieren Sie sich [hier](hololens-global-assigned-access-kiosk.md)ausführlich über dieses neue Feature.
+
+### Automatischer Start einer Anwendung im Kioskmodus mit mehreren apps 
+- Mit der automatischen App-Einführung wird die Benutzeroberfläche und die APP-Auswahl für die Erfahrungen im Kiosk Modus weiter verbessert.
+
+Gilt nur für den Kioskmodus mit mehreren apps, und nur 1 App kann mithilfe des hervorgehobenen Attributs unten in zugewiesener Zugriffskonfiguration automatisch gestartet werden. 
+
+Die Anwendung wird automatisch gestartet, wenn sich der Benutzer anmeldet. 
+
+```xml
+<AllowedApps>                     
+      <!--TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
+</AllowedApps>
+```
+
+
+### Verhaltensänderungen im Kiosk Modus zur Behandlung von Fehlern
+- Sicherer Kioskmodus durch Eliminierung verfügbarer apps im Kioskmodus-Fehler. 
+
+Zu einem früheren Zeitpunkt, zu dem Fehler bei der Anwendung des Kioskmodus aufgetreten sind, wurden im Startmenü alle Anwendungen HoloLens angezeigt. Jetzt in Windows holographische Version 20H2 im Fall von Fehlern werden keine apps im Startmenü wie folgt angezeigt: 
+
+![Abbildung dessen, was der Kiosk Modus jetzt sieht, wenn er fehlschlägt.](images/hololens-kiosk-failure-behavior.png )
+
+### Cache-Aad-Gruppenmitgliedschaft für Offline-Kiosk
+- Ermöglicht das Verwenden von Offline-Kiosken für Aad-Gruppen für bis zu 60 Tage.
+
+Diese Richtlinie steuert, wie viele Tage der Aad-Gruppen Mitgliedschafts Cache für zugewiesene Zugriffs Konfigurationen verwendet werden kann, die für Aad-Gruppen für signierten Benutzer vorgesehen sind. Sobald dieser Richtlinienwert auf den Wert größer als 0 gesetzt ist, wird der Cache andernfalls verwendet.  
+
+Name: AADGroupMembershipCacheValidityInDays URI-Wert:./Vendor/MSFT/Policy/config/MixedReality/AADGroupMembershipCacheValidityInDays
+
+Min-0 Tage  
+Max-60 Tage 
+
+Schritte zur korrekten Verwendung dieser Richtlinie: 
+1. Erstellen Sie ein Device-Konfigurationsprofil für Kiosk-Targeting-Aad-Gruppen, und weisen Sie es HoloLens-Geräten zu. 
+1. Erstellen Sie eine benutzerdefinierte Oma-URI-basierte Gerätekonfiguration, die diesen Richtlinienwert auf die gewünschte Anzahl von Tagen (> 0) festlegt und HoloLens-Device (s) zuweist. 
+    1. Der URI-Wert sollte in Oma-URI-Textfeld als./Vendor/MSFT/Policy/config/MixedReality/AADGroupMembershipCacheValidityInDays eingegeben werden.
+    1. Der Wert kann zwischen min/max zulässig sein.
+1. Registrieren Sie HoloLens-Geräte, und überprüfen Sie, ob beide Konfigurationen auf das Gerät angewendet werden. 
+1. Lassen Sie Aad Benutzer 1 anmelden, wenn Internet verfügbar ist, sobald die Benutzeranmeldung und die Aad-Gruppenmitgliedschaft erfolgreich bestätigt wurde, wird der Cache erstellt. 
+1. Jetzt kann Aad User 1 HoloLens offline schalten und für den Kioskmodus verwenden, solange der Richtlinienwert X Anzahl von Tagen zulässt. 
+1. Die Schritte 4 und 5 können für jeden anderen Aad-Benutzer N. entscheidend ist hier, dass sich jeder Aad-Benutzer bei einem Gerät mit Internet anmelden muss, damit mindestens einmal festgestellt werden kann, dass Sie Mitglied der Aad-Gruppe sind, auf die die Kiosk Konfiguration ausgerichtet ist. 
+ 
+> [!NOTE]
+> Bis zum Ausführen von Schritt 4 für einen Aad-Benutzer tritt ein Fehler Verhalten auf, das in "getrennte" Umgebungen erwähnt wird. 
+
 
 ## XML-Kiosk Code Beispiele für HoloLens
 

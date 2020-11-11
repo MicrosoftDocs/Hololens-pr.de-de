@@ -5,7 +5,7 @@ keywords: App-Verwaltung, APP, hololens, App-Installationsprogramm
 author: evmill
 ms.author: v-evmill
 ms.reviewer: qizho
-ms.date: 10/26/2020
+ms.date: 11/10/2020
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -14,17 +14,20 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 415733bb2809b7ae2808edc097423f8928910c57
-ms.sourcegitcommit: c4fd9a87bb7c728c73418f95a1b15dd93b0af7c6
+ms.openlocfilehash: eba1fd00215ef197f9e32949e958bdbded089d6d
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "11150916"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162895"
 ---
 # Installieren von apps auf HoloLens 2 über das App-Installationsprogramm
 
+
+Wir werden die Funktion des App-Installationsprogramms in Kürze nach dem Windows holographischen, Version 20H2-Update versenden. Wir **fügen eine neue Funktion (app-Installationsprogramm) hinzu, mit der Sie Anwendungen nahtlos** auf Ihren HoloLens 2-Geräten installieren können. Das Feature ist **für nicht verwaltete Geräte standardmäßig aktiviert**. Um Unterbrechungen von Unternehmen zu verhindern, steht das App-Installationsprogramm derzeit **nicht für verwaltete Geräte zur Verfügung** .  
+
 > [!IMPORTANT]
-> Dieses Feature ist derzeit nur avalible in Windows Insider-Builds 19041.1377 +. [Weitere Informationen zum Registrieren von Windows Insider-Builds](hololens-insider.md).
+> Dieses Feature ist derzeit nur in Windows-Insider-Builds verfügbar. [Weitere Informationen zum Registrieren von Windows Insider-Builds](hololens-insider.md).
 
 In unserer Windows-Insider-Version **fügen wir eine neue Funktion (app-Installationsprogramm) hinzu, mit der Sie Anwendungen nahtlos** auf Ihren HoloLens 2-Geräten installieren können. Das Feature ist **für nicht verwaltete Geräte standardmäßig aktiviert**. Um Unterbrechungen von Unternehmen zu verhindern, steht das App-Installationsprogramm derzeit **nicht für verwaltete Geräte zur Verfügung** .  
 
@@ -38,8 +41,7 @@ Sie können jetzt apps installieren, ohne den Entwicklermodus oder die Verwendun
 ## Anforderungen
 
 ### Für Ihre Geräte: 
-> [!NOTE]
-> Dieses Feature ist derzeit nur avalible in Windows Insider-Builds 19041.1377 +. [Weitere Informationen zum Registrieren von Windows Insider-Builds](hololens-insider.md).
+Dies ist derzeit avalible in [Windows Insider-Builds](hololens-insider.md) für HoloLens 2-Geräte. Stellen Sie sicher, dass alle Geräte, die diese Methode verwenden, [aktualisiert](hololens-update-hololens.md)werden. 
 
 ### Für Ihre apps: 
 Die Projektmappenkonfiguration der APP muss entweder **Master** oder **Release** sein, da vom APP-Installationsprogramm Abhängigkeiten aus dem Store verwendet werden. Weitere Informationen finden Sie unter [Erstellen von App-Paketen](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs).
@@ -53,7 +55,7 @@ Apps, die über diese Methode installiert werden, müssen digital signiert sein.
 **Entscheiden Sie sich für eine Zertifikat Bereitstellungsmethode.** 
 - [Bereitstellungspakete](hololens-provisioning.md) können auf lokale Geräte angewendet werden.
 - MDM kann verwendet werden, um [Zertifikate mit Gerätekonfigurationen anzuwenden](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
-- Verwenden Sie den [Zertifikat-Manager](hololens-insider.md#certificate-manager)für Geräte. 
+- Verwenden Sie den [Zertifikat-Manager](certificate-manager.md)für Geräte. 
 
 ## Installationsmethode
 

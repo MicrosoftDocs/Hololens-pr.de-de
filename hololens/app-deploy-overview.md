@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: b0b7609f1caac20ff0c47251b1f85a26d7fe1de8
-ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
+ms.openlocfilehash: 36d86e24cc10d6b8457cfb415528398a8d43aa27
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11016649"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162866"
 ---
 # App-Verwaltung: Übersicht
 
@@ -65,7 +65,18 @@ Weitere Informationen finden Sie unter [holographische Store-Apps](https://docs.
 [Bereitstellungspakete](app-deploy-provisioning-package.md) ermöglichen es Ihnen, benutzerdefinierte oder branchenspezifische apps zu installieren, sodass IT-Experten und Administratoren apps schnell auf einem lokalen Gerät (n) über USB installieren können. Dies kann ohne Internetverbindung und für beliebige Identitätstypen erfolgen.
     
 Die Installation über Bereitstellungspakete gilt für: 
-* Geschäftszeile (nicht öffentliche) apps
+* Zeile der Geschäfts-und selbst entwickelten (nicht öffentlichen) apps
 * Öffentliche Apps (wenn das offlineinstallationsprogramm verfügbar ist)
 * Nur USB-Seite laden
 * Keine automatische Aktualisierung (erfordert manuelle Updates über Bereitstellungspaket)
+
+## Installieren von apps auf HoloLens 2 über das App-Installationsprogramm
+Die Verwendung der [App-Installationsprogramm](app-deploy-app-installer.md) Benutzer kann eine einfache Erfahrung für die Installation von apps auf lokalen Geräten oder das Freigeben einer APP für eine andere Person aufweisen, die mit anderen APP-Installationsmethoden auf HoloLens nicht vertraut ist. Dies kann erfolgen, ohne dass Sie den Entwicklermodus aktivieren oder Device Portal verwenden müssen. Dies ist eine einfache Methode, um eine vollständig erstellte APP zu verteilen. Unabhängig davon, ob Sie Ihre APP einfach einem anderen Benutzer mit einem HoloLens-Demo senden möchten, oder wenn Sie Ihre APP bereitstellen möchten, funktioniert diese Methode problemlos.
+
+Die Installation über das App-Installationsprogramm gilt für: 
+* Zeile der Geschäfts-und selbst entwickelten (nicht öffentlichen) apps
+* Nur Seite laden
+* Erfordert keinen Entwicklermodus oder Geräte Portal
+* Einfache Installation für Endbenutzer
+
+

@@ -15,12 +15,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 4da70e73cd5949c77bc77a73f57f788ed51eff90
-ms.sourcegitcommit: 973b0e71ebceeb2c614aea3dd3a1fbb90d7daed9
+ms.openlocfilehash: 452164caaad09f2caecf7c4a51cda6242d805d7f
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "11100270"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163109"
 ---
 # Mixed Reality-Fotos und -Videos aufnehmen
 
@@ -155,8 +155,18 @@ Sie können auch Fotos und Videos aus der Mixed-Reality-Datei von OneDrive aus s
 ## Einschränkungen der Mixed-Reality-Aufnahme
 
 - Bei Verwendung der Mixed-Reality-Aufnahme wird die Framerate von HoloLens auf 30 Hz halbiert.
-- Videos haben eine maximale Länge von fünf Minuten.
 - Die Auflösung von Fotos und Videos kann reduziert werden, wenn die Foto/Videokamera bereits von einer anderen Anwendung verwendet wird, während Live-Streaming erfolgt oder wenn die Systemressourcen niedrig sind.
+
+### Maximale Aufnahmedauer
+
+Auf HoloLens 2-Geräten vor der Windows-holographischen Version 20H2 auf dem Gerät aufgezeichnete Videos auf maximal fünf Minuten.
+
+Aufgrund des Kundenfeedbacks haben wir die Aufnahmedauer von [Mixed-Reality-Aufnahmen](holographic-photos-and-videos.md)erhöht. Mixed-Reality-Aufnahmen sind standardmäßig nicht mehr auf 5 Minuten limitiert, sondern berechnen die maximale Aufnahmedauer basierend auf dem verfügbaren Speicherplatz. Das Gerät schätzt die maximale Videoaufnahmedauer basierend auf dem verfügbaren Speicherplatz bis zu 80% des gesamten Speicherplatzes.
+
+> [!NOTE]
+> Die HoloLens verwendet die standardmäßige Videoaufnahme Länge (5 Minuten), wenn eine der folgenden Vorgehensweise Eintritt:
+> - Die geschätzte maximale Aufnahmedauer ist kleiner als die standardmäßigen 5 Minuten.
+> - Der verfügbare Speicherplatz beträgt weniger als 20% des gesamten Speicherplatzes.
 
 ## Standarddateiformat und-Auflösung
 
