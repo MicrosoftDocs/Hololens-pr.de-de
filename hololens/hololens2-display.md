@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 80ac6348dd2cba932316b690cafc4c5dc0331353
-ms.sourcegitcommit: 77eb85608066d9a4ed01b3862afe356f7e54d583
+ms.openlocfilehash: 0001ff627b150a9ba79e76f8d995231186c46917
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "10940205"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163014"
 ---
 # Das HoloLens 2-Display
 
@@ -59,9 +59,9 @@ Dennoch können spezielle Industriekameras gute Bilder des HoloLens 2-Displays a
 
 Das HoloLens 2-Display korrigiert aktiv die Farben von Bildern basierend auf der Position der Augen des Benutzers. Die [Augenkalibrierung](hololens-calibration.md) bietet zwei wichtige Eingaben: (1) die Pupillendistanz (PD) des Benutzers und (2) die Blickrichtung der einzelnen Augen. Ohne Augenkalibrierung gilt im System standardmäßig eine nominale Augenstellung ohne Augenbewegungen. Der Unterschied zwischen aktiver Farbkorrektur und keiner Korrektur hängt von den physischen Merkmalen des Benutzers ab. Bei einem Benutzer mit der gleichen PD wie der Systemstandard erfolgen beispielsweise weniger Farbkorrekturen. Während bei Benutzern mit einer viel engeren oder weiteren PD als die Systemstandardeinstellung mehr Änderungen am Anzeigebild vorgenommen werden.
 
-Hinweis: Ein neues Feature, das in einem zukünftigen Betriebssystemupdate bereitgestellt wird, wird die [Augenstellung automatisch erkennen](hololens-insider.md#auto-eye-position-support). Interessierte können sich für die [Insider Preview](hololens-insider.md) anmelden, um dieses Feature bereits jetzt auszuprobieren.
+Hinweis: Eine neue Funktion in [Windows Holographic Version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) beginnt [automatisch mit der Erkennung der Augenposition](hololens-calibration.md#auto-eye-position-support). 
 
-### Wie unterscheiden sich die Displays von HoloLens (1st Gen) und HoloLens 2?
+### Was sind die Darstellungsunterschiede zwischen HoloLens (1. Generation) und HoloLens 2?
 
 Zu den häufigsten Wünschen, die Kunden nach der Erfahrung mit HoloLens 1 Microsoft gegenüber geäußert haben, zählten (1) ein größeres Sichtfeld und (2) größere Helligkeit. Technologische Entwicklungen ermöglichten Microsoft die Fertigung von Wellenleitern, die den Sichtbereich verdoppelten, und von Lichtprojektoren mit einer bis zu dreimal helleren Anzeige. Die Hardware bildet die Grundlage für drei miteinander in Konflikt stehende Elemente für die Qualität des Anzeigebilds: (1) Sichtfeld, (2) Helligkeit und (3) Farbhomogenität. Fortwährende technologische Fortschritte ermöglichen Verbesserungen in allen Bereichen, ohne dass bei einem Abstriche gemacht werden müssen. In der Zwischenzeit setzen die vorhandenen Technologien die Grenzen für die Lösung dieser Konflikte fest.
 

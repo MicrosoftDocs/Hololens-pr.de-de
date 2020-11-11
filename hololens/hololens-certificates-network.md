@@ -13,12 +13,12 @@ audience: ITPro
 manager: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 460b6f42de7413e77eaec041a5ab6141ed959cf4
-ms.sourcegitcommit: 9944fd2040fc1267ace1da1bd62ef36b68c7f318
+ms.openlocfilehash: b5fe64a1843db5ba8dc31f3c17776f0717264fe1
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015521"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162986"
 ---
 # Vorbereiten von Zertifikaten und Netzwerkprofilen für HoloLens 2
 
@@ -45,18 +45,20 @@ Führen Sie die folgenden Schritte aus, um Zertifikate und Profile bereitzustell
 1.  Erstellen Sie ein Profil für jedes der Stamm- und Zwischen-Zertifikate (siehe [Erstellen von Profilen für vertrauenswürdige Zertifikate](https://docs.microsoft.com/intune/protect/certificates-configure#create-trusted-certificate-profiles)). Jedes dieser Profile muss eine Beschreibung mit einem Ablaufdatum im Format TT/MM/JJJJ aufweisen. **Zertifikatprofile ohne Ablaufdatum werden nicht bereitgestellt.**
 1.  Erstellen Sie ein Profil für jedes SCEP- oder PKCS-Zertifikat (siehe [Erstellen eines SCEP-Zertifikatprofils oder eines PKCS-Zertifikatprofils](https://docs.microsoft.com/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)). Jedes dieser Profile muss eine Beschreibung mit einem Ablaufdatum im Format TT/MM/JJJJ aufweisen. **Zertifikatprofile ohne Ablaufdatum werden nicht bereitgestellt.**
 
-> [!NOTE]
-> Da HoloLens 2 von vielen als freigegebenes Gerät (mehrere Benutzer pro Gerät) angesehen wird, empfiehlt es sich, wenn möglich Gerätezertifikate anstelle von Benutzerzertifikaten für die WLAN-Authentifizierung bereitzustellen.
+    > [!NOTE]
+    > Da HoloLens 2 von vielen als freigegebenes Gerät (mehrere Benutzer pro Gerät) angesehen wird, empfiehlt es sich, wenn möglich Gerätezertifikate anstelle von Benutzerzertifikaten für die WLAN-Authentifizierung bereitzustellen.
 
 3.  Erstellen Sie ein Profil für jedes WLAN-Unternehmensnetzwerk (siehe [WLAN-Einstellungen für Geräte mit Windows 10 und höher](https://docs.microsoft.com/intune/wi-fi-settings-windows)). 
-> [!NOTE]
-> Es empfiehlt sich, das WLAN-Profil möglichst Gerätegruppen statt Benutzergruppen[ zuzuweisen](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign). 
+    > [!NOTE]
+    > Es empfiehlt sich, das WLAN-Profil möglichst Gerätegruppen statt Benutzergruppen[ zuzuweisen](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign). 
 
-> [!TIP]
-> Sie können auch ein funktionierendes WLAN-Profil von einem Windows 10-PC in Ihrem Unternehmensnetzwerk exportieren. Mit diesem Export wird eine XML-Datei mit allen aktuellen Einstellungen erstellt. Importieren Sie dann diese Datei in Intune, und verwenden Sie sie als WLAN-Profil für Ihre HoloLens 2-Geräte. Siehe [Export und Import von WLAN-Einstellungen für Windows-Geräte](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1).
+    > [!TIP]
+    > Sie können auch ein funktionierendes WLAN-Profil von einem Windows 10-PC in Ihrem Unternehmensnetzwerk exportieren. Mit diesem Export wird eine XML-Datei mit allen aktuellen Einstellungen erstellt. Importieren Sie dann diese Datei in Intune, und verwenden Sie sie als WLAN-Profil für Ihre HoloLens 2-Geräte. Siehe [Export und Import von WLAN-Einstellungen für Windows-Geräte](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1).
 
 4.  Erstellen Sie ein Profil für jedes Unternehmens-VPN (siehe [Einstellungen für Windows 10- und Windows Holographic-Geräte zum Hinzufügen von VPN-Verbindungen mit Intune](https://docs.microsoft.com/intune/vpn-settings-windows-10)).
 
+## Problembehandlung bei Zertifikaten
 
+Für den Fall, dass Sie überprüfen müssen, ob ein Zertifikat korrekt eingesetzt wird, verwenden Sie den [Zertifikat-Manager](certificate-manager.md) auf dem Gerät, um zu überprüfen, ob Ihr Zertifikat vorhanden ist.  
 
 

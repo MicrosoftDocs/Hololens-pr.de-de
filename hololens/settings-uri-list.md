@@ -3,7 +3,7 @@ title: Sichtbarkeit von Seiteneinstellungen
 description: Liste der von HoloLens unterstützten URIs für PageVisibilityList und Guide
 author: evmill
 ms.author: v-evmill
-ms.date: 09/16/2020
+ms.date: 10/13/2020
 ms.topic: article
 keywords: HoloLens, HoloLens 2, zugewiesener Zugriff, Kiosk, Einstellungsseite
 ms.prod: hololens
@@ -13,19 +13,19 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7a24d64b0b60be9f922260b7145d04c2c13951ed
-ms.sourcegitcommit: 8b5e349990ba5566bcc6a2a72ff83d1a21b099b8
+ms.openlocfilehash: 8cd336ce64cf7d4549b031a7977f592ca82dd6e4
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11026938"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163138"
 ---
 # Sichtbarkeit von Seiteneinstellungen
 
 Zu den verwaltbaren Features für HoloLens-Geräte gehört die [Einstellungen/PageVisibilityList-Richtlinie](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist), mit der die in der App „Einstellungen“ angezeigten Seiten eingeschränkt werden können. Die PageVisibilityList ist eine Richtlinie, die es IT-Administratoren ermöglicht, entweder zu verhindern, dass bestimmte Seiten in der Systemeinstellungs-App sichtbar oder zugänglich sind oder Sie können das für alle Seiten tun, außer den angegebenen. 
 
-> [!IMPORTANT]
-> Dieses Feature ist derzeit nur in [Windows-Insider-Builds verfügbar.](hololens-insider.md). Bitte stellen Sie sicher, dass die Geräte, für die Sie dafür verwenden möchten, über Version 19041.1349+ verfügen.
+> [!NOTE]
+> Diese Funktion ist nur in [Windows Holographic, Version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) für HoloLens 2-Geräte verfügbar. Stellen Sie sicher, dass die Geräte aktualisiert sind, wenn Sie die Funktion verwenden möchten.
 
 Das folgende Beispiel zeigt eine Richtlinie, die nur Zugriff auf die Seiten „Über“ und „Bluetooth“ ermöglichen würde, die jeweils über URI „ms-settings:network-wifi“ und „ms-settings:bluetooth“ verfügen:
 - showonly:network-wifi;network-proxy;bluetooth
