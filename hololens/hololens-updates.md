@@ -8,7 +8,7 @@ ms.author: v-tea
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: high
-ms.date: 07/09/2020
+ms.date: 10/13/2020
 ms.reviewer: jarrettr
 manager: jarrettr
 ms.custom:
@@ -16,12 +16,12 @@ ms.custom:
 - CI 115825
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: 384d33e72effd298e1874e5723e9c418061c3287
-ms.sourcegitcommit: 0d4e67d8e21d34885e0eaee08646e28426c4f641
+ms.openlocfilehash: 3a2246296c5ab8aa86dfaa419ed02aa5a961dbfc
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "10861908"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163134"
 ---
 # Verwalten von HoloLens-Updates
 
@@ -76,6 +76,21 @@ Verwenden Sie die folgenden Richtlinien, um zu konfigurieren, wie und wann Updat
   - Werte: 0–23 (0 = Mitternacht; 23 = 23:00 Uhr)
   - Standardwert: 15:00 Uhr
 
+#### Nutzungszeit konfigurieren
+Beginnend mit [Windows Holographic, Version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) kann ein IT-Administrator den aktiven Stundenbereich für HoloLens 2-Geräte festlegen.
+
+Nutzungszeit ist der Zeitraum, in dem das Gerät voraussichtlich in Gebrauch ist. Automatische Neustarts nach einem Update erfolgen außerhalb der Nutzungszeit. Der angegebene Bereich wird ab dem Startzeitpunkt der Nutzungszeit gezählt. Sie können MDM verwenden, wie unter [Nutzungszeit mit MDM konfigurieren](https://docs.microsoft.com/windows/deployment/update/waas-restart#configuring-active-hours-with-mdm) beschrieben. MDM verwendet die Einstellungen Update/ActiveHoursStart und Update/ActiveHoursEnd und Update/ActiveHoursMaxRange im Richtlinien-CSP, um die Nutzungszeit zu konfigurieren.
+
+-   [Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend) – dieser Wert legt die Endzeit fest. Maximal 12 Stunden ab Startzeit.
+    -   Unterstützte Werte sind 0 bis 23, wobei 0 ist 12 Uhr, 1 ist 1 Uhr usw.
+    -   Der Standardwert ist 17 (17:00).
+-   [Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange) – dieser Wert legt die maximale Dauer der Nutzungszeit ab Startzeit fest.
+    -   Unterstützte Werte sind 8 bis 18.
+    -   Der Standardwert ist 18 (Stunden).
+-   [Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart) – dieser Wert legt die Startzeit fest. Maximal 12 Stunden ab Endzeit.
+    -   Unterstützte Werte sind 0 bis 23, wobei 0 ist 12 Uhr, 1 ist 1 Uhr usw.
+    -   Der Standardwert ist 8 (8:00).
+
 #### Nur für Windows 10-Geräte, Version 1607
 
 Mithilfe der folgenden Update-Richtlinien können Sie Geräte so konfigurieren, dass Updates vom Windows Server Update-Dienst (WSUS) anstelle von Windows Update abgerufen werden:
@@ -117,7 +132,16 @@ Sie können unterschiedliche Verzögerungen für Feature- und Qualitätsupdates 
 |Funktionsupdates |DeferFeatureUpdatesPeriodInDays |365 Tage |
 |Qualitätsupdates |DeferQualityUpdatesPeriodInDays |30Tage |
 
-#### Intune-Updateverwaltungsfunktionen, die HoloLens unterstützt
+#### Updates über ein Gerät anhalten
+
+Wenn Benutzer keinen Zugang zu MDM haben, können sie Updates bis zu 35 Tage manuell auf einem HoloLens 2-Gerät mit [Windows Holographic, Version 2004 oder später](hololens-release-notes.md#windows-holographic-version-2004), einzeln unterbrechen. Benutzer erreichen diese Einstellung, indem sie zu **Einstellungen -> Aktualisierung & Sicherheit -> Erweiterte Optionen** navigieren, nach unten zu **Aktualisierungen pausieren** scrollen und das Datum auswählen, bis zu dem sie Aktualisierungen pausieren. Sobald die Pausengrenze erreicht ist, erhält das Gerät neue Updates, da diese erneut pausiert werden können. 
+
+Beginnend mit [Windows Holographic, Version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) kann die Funktion „Aktualisierungen pausieren“ für HoloLens 2-Geräte verwaltet werden. 
+- [Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess).
+    - 0 (Standard) – Aktiviert
+    - 1 – Deaktiviert
+
+#### Intune Update-Verwaltungsfunktionen, die HoloLens unterstützt
 
 Sie können die folgenden Intune-Updateverwaltungsfunktionen zum Verwalten von Updates für HoloLens verwenden.
 
