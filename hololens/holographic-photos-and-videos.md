@@ -15,12 +15,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 452164caaad09f2caecf7c4a51cda6242d805d7f
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: df67fe8c5b29eea317a0d00a1ebdcf7331fb0936
+ms.sourcegitcommit: 681e8e03e1a0250368f1f50cef6fbc3c99bac3af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11163109"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "11165005"
 ---
 # Mixed Reality-Fotos und -Videos aufnehmen
 
@@ -140,7 +140,7 @@ Wenn Sie Ihre Mixed-Reality-Fotos und-Videos auf einem mit HoloLens verbundenen 
 Tipps:
 - Wenn Sie keine Dateien sehen, stellen Sie bitte sicher, dass Sie sich bei Ihrem HoloLens anmelden, um den Zugriff auf Ihre Daten zu ermöglichen.
 - Sie können andere Dateien in anderen Ordnern wie [Diagnosedateien](hololens-diagnostic-logs.md#offline-diagnostics) aus dem Ordner "Dokumente" abrufen.
-- Im Datei-Explorer auf Ihrem PC können Sie Geräteeigenschaften auswählen, um die Versionsnummer des Windows holographischen Betriebssystems (Firmware-Version) sowie die Seriennummer des Geräts und den Prozentsatz der Batterie anzuzeigen.
+- Im Datei-Explorer auf Ihrem PC können Sie Geräteeigenschaften auswählen, um die Versionsnummer des Windows holographischen Betriebssystems (Firmware-Version), die Seriennummer des Geräts und den Prozentsatz der Batterie anzuzeigen.
 - Wenn Ihre Organisation MDM zum Deaktivieren der [Konnektivitäts-AllowUSBConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) verwendet hat, können Sie keine Verbindung zu Ihrem Gerät herstellen.
 
 ## Teilen von Fotos und Videos aus der Mixed-Reality-Galerie

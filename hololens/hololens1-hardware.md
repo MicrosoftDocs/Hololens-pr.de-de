@@ -13,12 +13,12 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 8eef05c3d9f47fbbc86647ccf22c7de88bacc687
-ms.sourcegitcommit: b33dd8accef641578142e5234b9ad2d0222694ec
+ms.openlocfilehash: e3821cf7945b101abd2ffa5b261802bea125fe8e
+ms.sourcegitcommit: 681e8e03e1a0250368f1f50cef6fbc3c99bac3af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "11134676"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "11165020"
 ---
 # HoloLens-Hardware (1. Generation)
 
@@ -168,19 +168,19 @@ Zum Reinigen des restlichen Geräts, einschließlich des Stirn-und Geräte Arms,
 
 ![Abbildung, die zeigt, wie das Visier gereinigt wird](images/hololens-cleaning-visor.png)
 
-## Auffinden der Seriennummer
+## Ermitteln der Seriennummer
 
 Die Seriennummer für HoloLens (1st Gen)-Geräte wird unterhalb des rechten Objektivs gedruckt.
-1. Halten Sie das Gerät vor Ihnen, als ob Sie es tragen wollten.
+1. Halten Sie das Gerät vor Ihnen, als ob Sie es auf dem Kopf tragen wollten. Wenn das Gerät nach vorne und aufrecht ausgerichtet ist.
 1. Wenn das Objektiv weiterhin nach vorne zeigt, drehen Sie das Spraymoppgerät auf den Kopf, sodass Sie die Unterseite sehen.
 1. Das richtige Objektiv befindet sich nun auf der linken Seite, die unter dem Objektiv auf dem Band gedruckt wird, ist die Seriennummer. 
 
-Die Seriennummer ist auch über einen angeschlossenen PC zu finden:
+Die Seriennummer kann auch über einen angeschlossenen PC gefunden werden:
 
-1. Anschließen des Geräts
-1. Navigieren zu **diesem PC** im Datei-Explorer
-1. Klicken Sie mit der rechten Maustaste, und wählen Sie **Eigenschaften** des HoloLens-Geräts aus
-1. Dadurch wird die Seriennummer des Geräts angezeigt. Wie dieser Screenshot unten.
+1. Schließen Sie das Gerät an
+1. Navigieren Sie im Datei-Explorer zu **Diesem PC**
+1. Klicken Sie mit der rechten Maustaste und wählen Sie **Eigenschaften** des HoloLens-Geräts aus
+1. Damit wird die Seriennummer des Geräts angezeigt. Wie auf dem folgenden Screenshot.
 
 <img src="images/hl1-serial-number.png" width="400" height="600" />
 

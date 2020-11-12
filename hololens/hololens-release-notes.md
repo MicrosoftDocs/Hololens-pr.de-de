@@ -8,23 +8,23 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/13/2020
+ms.date: 11/10/2020
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0825e3fd2d0a4e6328eaa617e4233639f481e8cb
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: df8d6e2c00bd8ff8507be4a2fd58c773d8833c11
+ms.sourcegitcommit: 20ff249e3570c74f62cdf6339c8be76c401d9f4a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11163157"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "11165973"
 ---
 # Veröffentlichungshinweise für HoloLens 2
 
-Um sicherzustellen, dass Sie mit ihren HoloLens-Geräten eine produktive Erfahrung haben, veröffentlichen wir weiterhin Funktions-, Fehler-und Sicherheitsupdates. Auf dieser Seite können Sie jeden Monat sehen, was es Neues für HoloLens gibt. Um das neueste HoloLens 2-vollständiges Flash-Update (FFU) zu erhalten, um [Ihr Gerät über Advanced Recovery Companion zu blinken](hololens-recovery.md#clean-reflash-the-device), [Laden Sie es hier herunter](https://aka.ms/hololens2download). Der Download wird auf dem neuesten Stand gehalten und bietet das neueste allgemein verfügbare Build.
+Um sicherzustellen, dass Sie mit ihren HoloLens-Geräten eine produktive Erfahrung haben, veröffentlichen wir weiterhin Funktions-, Fehler-und Sicherheitsupdates. Auf dieser Seite können Sie jeden Monat sehen, was es Neues für HoloLens gibt. Um das neueste HoloLens 2-Update zu erhalten, können Sie entweder [nach Updates suchen und](hololens-update-hololens.md#check-for-updates-and-manually-update) das vollständige Flash-Update (FFU) manuell aktualisieren, um [Ihr Gerät über Advanced Recovery Companion zu blinken](hololens-recovery.md#clean-reflash-the-device), [hier herunterladen](https://aka.ms/hololens2download). Der Download wird auf dem neuesten Stand gehalten und bietet das neueste allgemein verfügbare Build.
 
 >[!NOTE]
 > Wenn Sie HoloLens-Emulator-Versionshinweise lesen möchten, [besuchen Sie das Archiv](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
@@ -40,7 +40,7 @@ Diese neueste Version ist ein monatliches Update auf Version 2004, aber dieses M
 
 | Feature                                              | Beschreibung                                                                                                                                     |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unterstützung der automatischen Augen Position](hololens-release-notes.md#auto-eye-position-support) | Berechnet aktive Augen Positionen, ohne dass die Benutzer die aktive Kalibrierung durchlaufen.   |
+| [Automatische Unterstützung der Augenposition](hololens-release-notes.md#auto-eye-position-support) | Berechnet aktive Augen Positionen, ohne dass die Benutzer die Kalibrierung der Augen Verfolgung durchlaufen.   |
 | [Zertifikat-Manager](hololens-release-notes.md#certificate-manager)   | Ermöglicht neue einfachere Methoden zum Installieren und Entfernen von Zertifikaten aus der Einstellungs-APP.     |
 | [Automatisches Starten der Bereitstellung über USB](hololens-release-notes.md#auto-launch-provisioning-from-usb)                    | Bereitstellungspakete auf USB-Laufwerken fordern die Bereitstellungsseite in OOBE automatisch an.                                                         |
 | [Automatisches bestätigen von Bereitstellungspaketen in Oobe](hololens-release-notes.md#auto-confirm-provisioning-packages-in-oobe)           | Bereitstellungspakete werden während OOBE automatisch von der Bereitstellungsseite übernommen.                                                         |
@@ -60,24 +60,24 @@ Diese neueste Version ist ein monatliches Update auf Version 2004, aber dieses M
 | [Aufnahmedauer erhöht](hololens-release-notes.md#recording-length-increased) | MRC-Aufnahmen sind nicht mehr auf 5 Minuten begrenzt. |
 | [Verbesserungen und Korrekturen im Update](hololens-release-notes.md#improvements-and-fixes-in-the-update)                 | Weitere Korrekturen im Update.   |
 
-### Unterstützung der automatischen Augen Position
+### Automatische Unterstützung der Augenposition
 
-- Wir bieten nun eine höhere Genauigkeit für die Hologramm-Positionierung durch automatische Augen Positions Unterstützung für erhöhten Anzeigekomfort und verbesserte Anzeigequalität. 
+Bei HoloLens 2 ermöglichen die Augenpositionen eine genaue Hologramm-Positionierung, ein komfortables Seherlebnis und eine verbesserte Anzeigequalität. Augen Positionen werden intern als Teil der Eye Tracking-Berechnung berechnet. Dies erfordert allerdings, dass jeder Benutzer die Kalibrierung der Eye-Tracking-Anwendung durchlaufen muss, selbst wenn die Erfahrung möglicherweise keine Augenblicke benötigt.
 
-In HoloLens 2 ermöglichen Augen Positionen eine exakte Hologramm-Positionierung, ein komfortables Anzeigeerlebnis und eine verbesserte Anzeigequalität. Augen Positionen werden als Teil des Eye Tracking-Ergebnisses berechnet. Dies erfordert allerdings, dass jeder Benutzer die Kalibrierung der Eye-Tracking-Anwendung durchlaufen muss, selbst wenn die Erfahrung keine Augenblicke erfordert.
+**Auto Eye Position (AEP)** ermöglicht diese Szenarien mit einer interaktionsfreien Methode zur Berechnung der Augenpositionen für Benutzer. Auto Eye Position beginnt automatisch im Hintergrund zu arbeiten, sobald Benutzer das Gerät anlegen. Wenn der Benutzer nicht über eine vorherige Kalibrierung der Augen verfügt, beginnt die automatische augenposition mit der Bereitstellung der Augen Positionen des Benutzers nach einer Verarbeitungszeit von 20-30 Sekunden für das Anzeigesystem. Die Benutzerdaten werden nicht auf dem Gerät beibehalten. Deshalb wird dieser Vorgang wiederholt, wenn das Gerät wieder eingesetzt, neu gestartet oder aus dem Ruhezustand reaktiviert wird.
 
-Die **Automatische Augen Position (AEP)** ermöglicht diese Szenarien mit einer Interaktions freien Möglichkeit zum Berechnen von Augen Positionen für den Benutzer.  Die automatische Augen Position beginnt automatisch ab dem Moment, in dem der Benutzer das Gerät anlegt, im Hintergrund zu arbeiten. Wenn der Benutzer nicht über eine vorherige Kalibrierung der Augen verfügt, beginnt die automatische augenposition, um die Augen Positionen des Benutzers nach einer kleinen Verarbeitungszeit dem Anzeigesystem zur Verfügung zu stellen. Diese Verarbeitungszeit liegt in der Regel zwischen 20-60 Sekunden. Die Benutzerdaten werden nicht auf dem Gerät gespeichert, und daher wird dieser Vorgang wiederholt, wenn der Benutzer das Gerät wieder annimmt, oder wenn das Gerät neu gestartet oder aus dem Ruhezustand reaktiviert wird.  
+Änderungen des Systemverhaltens mit der Funktion Auto Eye Position, wenn ein unkalibrierter Benutzer das Gerät anlegt. In diesem Zusammenhang bezieht sich ein nicht kalibrierter Benutzer auf eine Person, die den Kalibrierungsprozess der Augen Verfolgung auf dem Gerät zuvor nicht durchlaufen hat.
 
-Wenn ein nicht kalibrierter Benutzer das Gerät anlegt, gibt es einige Änderungen des Systemverhaltens mit der Funktion "Automatische Augen Position". Ein nicht kalibrierter Benutzer bezieht sich auf eine Person, die den Kalibrierungsprozess für die Augen Verfolgung auf dem Gerät zuvor nicht durchlaufen hat.
+| Aktive Anwendung | Vorheriges Verhalten | Verhalten von Windows holographisch, Version 20H2 Update |
+|:-------------------|:-----------------|:-----------------------------------|
+| App oder Holographic Shell ohne Blickkontakt |Das Dialogfeld zur Kalibrierung der Augen Verfolgung wird angezeigt. | Es wird keine Aufforderung angezeigt. |
+| App mit Blickeingabe | Das Dialogfeld zur Kalibrierung der Augen Verfolgung wird angezeigt. | Die Eingabeaufforderung zur Kalibrierung der Augen wird nur angezeigt, wenn die Anwendung auf Eye-Gaze-Datenstrom zugreift. |
 
-|     Aktive Anwendung                           |     Altes Verhalten                                   |     Verhalten für Windows-holographische Version 20H2 ab                                                     |
-|--------------------------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-|     APP oder holographische Shell ohne Blick    |     Aufforderung zur Kalibrierung der Augen Verfolgung wird angezeigt.    |     Es wird keine Eingabeaufforderung angezeigt.                                                                                |
-|     App "Blick aktiviert"                             |     Aufforderung zur Kalibrierung der Augen Verfolgung wird angezeigt.    |     Die Eingabeaufforderung zur Kalibrierung der Augen wird nur angezeigt, wenn die Anwendung auf Eye-Gaze-Datenstrom zugreift.     |
+Wenn Benutzer von einer Anwendung ohne Blickeingabe zu einer Anwendung wechseln, die auf Blickdaten zugreift, wird die Kalibrierungsaufforderung angezeigt. 
 
- Wenn der Benutzer von einer nicht auf den Blick aktivierten Anwendung zu einer wechselt, die auf die Blickdaten zugreift, wird die Kalibrierungs Aufforderung angezeigt. Der Erfahrungs Fluss "außerhalb des Felds" wird nicht geändert. 
- 
-Für Erfahrungen, bei denen Augenblick Daten oder eine sehr präzise Hologramm-Positionierung erforderlich sind, empfehlen wir unkalibrierten Benutzern, die Eye Tracking-Kalibrierung über die Kalibrierungs Aufforderung zur Augen Verfolgung auszuführen, oder indem Sie die Einstellungs-APP aus dem Startmenü starten, und dann **System > Kalibrierung > Augen Kalibrierung auswählen > die Augen**Kalibrierung durchführen.
+Alle anderen Systemverhalten sind ähnlich, wenn der aktuelle Benutzer nicht über eine aktive Eye Tracking-Kalibrierung verfügt. Beispielsweise wird die einhändige anfangs Geste nicht aktiviert. Bei der Ersteinrichtung wird es keine Änderung an der Out-of-Box-Erfahrung geben.
+
+Für Erfahrungen, bei denen Augenblick Daten oder eine sehr präzise Hologramm-Positionierung erforderlich sind, empfehlen wir unkalibrierten Benutzern, die Augen Tracking-Kalibrierung durchzuführen. Sie können über die Eingabeaufforderung zur Augen Verfolgung oder durch Starten der Einstellungs-APP aus dem Startmenü aufgerufen werden, und wählen Sie dann **System > Kalibrierung > Augen Kalibrierung**aus, > die Augen Kalibrierung auszuführen.
 
 Diese Informationen sind später mit [anderen Kalibrierinformationen](hololens-calibration.md#auto-eye-position-support)zu finden. 
 
@@ -189,7 +189,7 @@ Oma-URI-Wert sollte./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
 1. Machen Sie das HoloLens 2-Geräte Mitglied der im vorherigen Schritt erstellten Gruppe, und lösen Sie die Synchronisierung aus.  
 
-Überprüfen Sie im InTune-Portal, ob die Gerätekonfiguration erfolgreich angewendet wurde. Sobald diese Gerätekonfiguration erfolgreich auf dem Hololens 2-Gerät angewendet wurde, sind die Effekte von TenantLockdown aktiv.
+Überprüfen Sie im InTune-Portal, ob die Gerätekonfiguration erfolgreich angewendet wurde. Sobald diese Gerätekonfiguration erfolgreich auf dem HoloLens 2-Gerät angewendet wurde, sind die Effekte von TenantLockdown aktiv.
 
 #### Wie kann ich TenantLockdown-RequireNetworkInOOBE auf HoloLens 2 mithilfe von InTune löschen? 
 1. Entfernen Sie die HoloLens 2 aus der Gerätegruppe, der die oben erstellte Gerätekonfiguration zuvor zugewiesen wurde. 
@@ -203,7 +203,7 @@ Oma-URI-Wert sollte./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
 1. Machen Sie das HoloLens 2-Geräte Mitglied der im vorherigen Schritt erstellten Gruppe, und lösen Sie die Synchronisierung aus.
 
-Überprüfen Sie im InTune-Portal, ob die Gerätekonfiguration erfolgreich angewendet wurde. Sobald diese Gerätekonfiguration erfolgreich auf dem Hololens 2-Gerät angewendet wurde, sind die Effekte von TenantLockdown inaktiv. 
+Überprüfen Sie im InTune-Portal, ob die Gerätekonfiguration erfolgreich angewendet wurde. Sobald diese Gerätekonfiguration erfolgreich auf dem HoloLens 2-Gerät angewendet wurde, sind die Effekte von TenantLockdown inaktiv. 
 
 #### Was passiert während OOBE, wenn das Autopilot-Profil auf einem HoloLens nicht zugewiesen wurde, nachdem TenantLockdown auf "true" festgelegt wurde? 
 OOBE wartet unbegrenzt auf das Autopilot-Profil, um es herunterzuladen, und das folgende Dialogfeld wird angezeigt. Um die Effekte von TenantLockdown zu entfernen, muss das Gerät zunächst nur mit Autopilot für seinen ursprünglichen Mandanten registriert werden, und RequireNetworkInOOBE muss wie in vorheriger Schritt beschrieben nicht festgelegt werden, bevor die von TenantLockdown CSP eingeführten Einschränkungen entfernt werden. 
@@ -284,7 +284,7 @@ Neu aktivierte Richtlinien, die weitere Verwaltungsoptionen von HoloLens 2-Gerä
 
 Diese zwei neuen Policen für AllowAddProvisioningPackage und AllowRemoveProvisioningPackage werden unseren [allgemeinen Geräteeinschränkungen](hololens-common-device-restrictions.md)hinzugefügt.
 
-### Neue Energierichtlinien für Hololens 2
+### Neue Energierichtlinien für HoloLens 2
 - Weitere Optionen für den Fall, dass HoloLens über Energierichtlinien schläft oder sperrt. 
 
 Diese neu hinzugefügten Richtlinien ermöglichen Administratoren, Energiezustände wie Leerlauftimeout zu steuern. Wenn Sie mehr über die einzelnen Richtlinien erfahren möchten, klicken Sie auf den Link für diese Richtlinie.
