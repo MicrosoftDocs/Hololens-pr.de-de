@@ -14,12 +14,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f466d64da8ef122ce2917117a74ab904a573b4e3
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: d14d33ea01a3fe649f7125e050dd1b0a16426e6c
+ms.sourcegitcommit: 681e8e03e1a0250368f1f50cef6fbc3c99bac3af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11163050"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "11165035"
 ---
 # Verbessern der Grafikqualität und des Komforts
 
@@ -67,26 +67,32 @@ Mehrere Benutzer können ein HoloLens 2-Gerät gemeinsam nutzen, ohne dass jede 
    ![Die Einstellungs-App mit der Option „Kalibrierung der Augen ausführen”](./images/C-Settings.Calibration.png)
 
 ### Automatische Unterstützung der Augenposition
-- Wir bieten jetzt eine höhere Genauigkeit bei der Hologramm-Positionierung durch die automatische Unterstützung der Augenposition für verbesserten Sehkomfort und bessere Anzeigequalität. 
 
-Bei HoloLens 2 ermöglichen die Augenpositionen eine genaue Hologramm-Positionierung, ein komfortables Seherlebnis und eine verbesserte Anzeigequalität. Die Augenpositionen werden als Teil des Eyetracking-Ergebnisses berechnet. Dazu müssen alle Benutzer eine Eye Tracking-Kalibrierung durchführen, auch wenn keine Blickeingabe erforderlich ist.
+Bei HoloLens 2 wird durch die Augenstellungen eine genaue Hologramm-Positionierung, ein komfortables Seherlebnis und eine verbesserte Anzeigequalität ermöglicht. Die Augenstellungen werden intern im Rahmen der Eye-Tracking-Berechnung bestimmt. Dazu müssen alle Benutzer eine Eye Tracking-Kalibrierung durchführen, auch wenn keine Eingabe über Anvisieren erforderlich ist.
 
-**Auto Eye Position (AEP)** ermöglicht diese Szenarien mit einer interaktionsfreien Methode zur Berechnung der Augenpositionen für Benutzer.  Auto Eye Position beginnt automatisch im Hintergrund zu arbeiten, sobald Benutzer das Gerät anlegen. Wenn Benutzer keine vorherige Eye Tracking-Kalibrierung haben, beginnt Auto Eye Position nach einer kurzen Verarbeitungszeit mit der Bereitstellung der Augenpositionen der Benutzer an das Anzeigesystem. Diese Bearbeitungszeit liegt typischerweise zwischen 20 bis 60 Sekunden. Die Benutzerdaten werden nicht auf dem Gerät beibehalten. Deshalb wird dieser Vorgang wiederholt, wenn das Gerät wieder eingesetzt, neu gestartet oder aus dem Ruhezustand reaktiviert wird.  
+**Auto Eye Position (AEP, automatische Augenstellung)** ermöglicht diese Szenarien durch eine interaktionsfreie Methode zur Berechnung der Augenstellungen des Benutzers. Auto Eye Position beginnt automatisch im Hintergrund zu arbeiten, sobald der Benutzer das Gerät anlegt. Wenn ein Benutzer zuvor keine Eye Tracking-Kalibrierung durchgeführt hat, beginnt Auto Eye Position nach einer kurzen Verarbeitungszeit von 20-30 Sekunden, die Augenstellungen des Benutzers an das Anzeigesystem zu übermitteln. Die Benutzerdaten werden nicht auf dem Gerät beibehalten. Deshalb wird dieser Vorgang wiederholt, wenn das Gerät wieder eingesetzt, neu gestartet oder aus dem Ruhezustand reaktiviert wird.
 
-Änderungen des Systemverhaltens mit der Funktion Auto Eye Position, wenn ein unkalibrierter Benutzer das Gerät anlegt. Ein nicht kalibrierter Benutzer ist eine Person, die den Eye-Tracking-Kalibrierungsprozess auf dem Gerät noch nicht durchlaufen hat.
+Es gibt ein paar Änderungen hinsichtlich des Systemverhaltens bei der Funktion Auto Eye Position, wenn ein nicht kalibrierter Benutzer das Gerät anlegt. In diesem Zusammenhang bezieht sich der Begriff „nicht kalibrierter Benutzer“ auf eine Person, die den Eye-Tracking-Kalibrierungsprozess auf dem Gerät zuvor noch nicht durchlaufen hat.
 
-|     Aktive Anwendung                           |     Bisheriges Verhalten                                   |     Verhalten für Windows HWindows Holographic, ab Version 20H2                                                     |
-|--------------------------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-|     App oder Holographic Shell ohne Blickkontakt    |     Aufforderung zur Eye-Tracking-Kalibrierung wird angezeigt.    |     Es wird keine Aufforderung angezeigt.                                                                                |
-|     App mit Blickeingabe                             |     Aufforderung zur Eye-Tracking-Kalibrierung wird angezeigt.    |     Die Aufforderung zur Eye-Tracking-Kalibrierung wird nur angezeigt, wenn die Anwendung auf den Blickstrom des Auges zugreift.     |
+| Aktive Anwendung | Früheres Verhalten | Verhalten ab Windows Holographic, Version 20H2-Update |
+|:-------------------|:-----------------|:-----------------------------------|
+| App oder Holographic Shell ohne Eingabe über Anvisieren |Dialogfeld zur Eye-Tracking-Kalibrierung wird angezeigt. | Es wird kein Dialogfeld angezeigt. |
+| App mit Eingabe über Anvisieren | Dialogfeld zur Eye-Tracking-Kalibrierung wird angezeigt. | Das Dialogfeld zur Eye-Tracking-Kalibrierung wird nur angezeigt, wenn die Anwendung auf Blickdaten zugreift. |
 
- Wenn Benutzer von einer Anwendung ohne Blickeingabe zu einer Anwendung wechseln, die auf Blickdaten zugreift, wird die Kalibrierungsaufforderung angezeigt. Es wird nicht auf einen Out-Of-Box-Erfahrungsfluss umgestellt. 
- 
-Für Umgebungen, die Blickdaten oder eine sehr präzise Hologramm-Positionierung erfordern, empfehlen wir unkalibrierten Benutzern, die Eye Tracking-Kalibrierung über die Eingabeaufforderung auszuführen. Oder die App-Einstellungen im Startmenü zu starten und **System > Kalibrierung > Augenkalibrierung > Augenkalibrierung ausführen** auszuwählen.
+Wenn Benutzer von einer Anwendung ohne Eingabe über Anvisieren zu einer Anwendung wechseln, die auf Blickdaten zugreift, wird das Kalibrierungsdialogfeld angezeigt. 
 
-**Bekannte Probleme**
- - Wir untersuchen ein Problem, bei dem der Eyetracking-Treiber-Host-Prozess bei starker Speicherauslastung abstürzt. Der Eyetracking-Treiber-Host-Prozess sollte sich automatisch erholen.
+Alle anderen Systemverhalten sind jenem ähnlich, wenn keine aktive Eye Tracking-Kalibrierung für den aktuellen Benutzer vorliegt. Beispielsweise wird die einhändige Startgeste nicht aktiviert sein. Bei der Ersteinrichtung wird es keine Änderung an der Standardumgebung geben.
 
+Bei Umgebungen, für die Blickdaten oder eine sehr präzise Hologramm-Positionierung erforderlich sind, empfehlen wir nicht kalibrierten Benutzern, die Eye Tracking-Kalibrierung durchzuführen. Sie kann über das Dialogfeld zur Eye-Tracking-Kalibrierung aufgerufen werden. Starten Sie alternativ die Einstellungs-App aus dem Startmenü, und wählen Sie dann **System > Kalibrierung > Augenkalibrierung > Augenkalibrierung auszuführen** aus.
+
+#### Verzögerte Anzeige des Kalibrierungsdialogfelds
+
+Bei aktivierter Auto Eye Position wird die Anzeige des Dialogfelds zur Eye-Tracking-Kalibrierung so lange verzögert, bis eine Anwendung Blickdaten anfordert. Dadurch wird sichergestellt, dass dem Benutzer das Dialogfeld nicht angezeigt wird, wenn die aktive Anwendung keine Blickdaten erfordert. Wenn die Anwendung Blickdaten erfordert und der aktuelle Benutzer nicht kalibriert ist, wird ihm das Kalibrierungsdialogfeld angezeigt. Dieses Verhalten kann dazu genutzt werden, das Dialogfeld zur Eye-Tracking-Kalibrierung zu einem geeigneten Zeitpunkt während der Verwendung des Geräts anzuzeigen. Diese Methode empfiehlt sich aus den folgenden Gründen:
+
+1.  Das Dialogfeld zur Eye-Tracking-Kalibrierung informiert den Benutzer darüber, warum das Eye-Tracking erforderlich ist.
+2.  Es bietet dem Benutzer eine Möglichkeit, die Kalibrierung seiner Augen abzulehnen.
+
+Wenn der Benutzer die Eye-Tracking-Kalibrierung startet, sollte der Fokus nach Abschluss der Kalibrierung wieder zur ursprünglichen Anwendung zurückkehren. 
 
 ### Problembehandlung bei der HoloLens 2-Kalibrierung
 
