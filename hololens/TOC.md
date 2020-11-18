@@ -12,7 +12,7 @@
 ### [Reinigen von HoloLens 2: Häufig gestellte Fragen](hololens2-maintenance.md)
 ### [Unterstützte Sprachen für HoloLens 2](hololens2-language-support.md)
 ### [Aufbau von HoloLens 2](hololens2-basic-usage.md)
-### [FAQ zu HoloLens Development Edition](hololens2-development-edition-faq.md)
+### [FAQ zu HoloLens 2 Development Edition](hololens2-development-edition-faq.md)
 
 
 ## Erste Schritte mit HoloLens (1. Generation)
