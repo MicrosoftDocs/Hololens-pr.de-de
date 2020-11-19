@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: Autopilot
 manager: jarrettr
-ms.openlocfilehash: be9da0ec2f301705a0691bcfc9dcf9d75eac8922
-ms.sourcegitcommit: cfbcdf562f949eef9cd797bbb08dfdf9f29e8fcd
+ms.openlocfilehash: 429f955777eae5cbe94c710ca4c17e03091fb99e
+ms.sourcegitcommit: 307e313f05243b6d94f9bfc0cb4e316a00a8005c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "11168530"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "11176897"
 ---
 # Windows Autopilot für HoloLens 2
 
@@ -325,8 +325,8 @@ OOBE wartet unbestimmte Zeit auf den Autopilot-Profil-Download. Folgendes Dialog
 
 ## Bekannte Probleme
 
-- Die in Intune konfigurierte, auf Gerätekontext basierende Anwendungsinstallation funktioniert noch nicht.
-- Beim Einrichten von Autopilot über WLAN ist kann es vorkommen, dass das Autopilot-Profil nicht heruntergeladen wird, wenn die Internetverbindung erstmalig hergestellt wird und die Endbenutzer-Lizenzvereinbarung (EULA) angezeigt wird und der Benutzer die Möglichkeit hat, mit den Setup-Erfahrungen für nicht-Autopilot fortzufahren. Wenn Sie das Einrichten mit Autopilot wiederholen möchten, setzen Sie das Gerät in den Ruhezustand und fahren Sie es dann hoch, oder starten Sie das Gerät neu, und versuchen Sie es erneut.
+- Die in Intune konfigurierte, auf Gerätekontext basierende Anwendungsinstallation funktioniert noch nicht. [Weitere Informationen über Gerätekontext- und Benutzerkontext-Installationen.](https://docs.microsoft.com/mem/intune/apps/apps-windows-10-app-deploy#install-apps-on-windows-10-devices)
+-   Beim Einrichten des Autopiloten über WLAN kann es vorkommen, dass das Autopilot-Profil nicht heruntergeladen wird, wenn die Internetverbindung zum ersten Mal hergestellt wird. In diesem Fall werden die Lizenzbedingungen vorgelegt, und der Benutzer hat die Möglichkeit, das Setup ohne Autopilot durchzuführen. Wenn Sie das Einrichten mit Autopilot wiederholen möchten, setzen Sie das Gerät in den Ruhezustand und fahren Sie es dann hoch, oder starten Sie das Gerät neu, und versuchen Sie es erneut.
 
 ### Problembehandlung
 
