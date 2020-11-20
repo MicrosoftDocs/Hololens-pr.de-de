@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: b4730029755c71cab5dc00b37ac69cd6ed54be58
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: f560dae725cbce8658bdf2a135c5061b5332f797
+ms.sourcegitcommit: 456a88907d606f4c4532b153d5a848e214b6b8e1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11162975"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "11182006"
 ---
 # Einrichten von HoloLens als Kiosk
 
@@ -53,7 +53,10 @@ Bei der Planung Ihres Kiosks müssen Sie in der Lage sein, die folgenden Fragen 
 
 Sie können ein beliebiges HoloLens 2-Gerät für die Verwendung des Kioskmodus konfigurieren.
 
-Wenn Sie ein HoloLens-Gerät (1st Generation) für die Verwendung des Kioskmodus konfigurieren möchten, müssen Sie zuerst sicherstellen, dass auf dem Gerät Windows 10, Version 1803 oder eine neuere Version ausgeführt wird. Wenn Sie das Windows Device Recovery-Tool zum Wiederherstellen Ihres HoloLens-Geräts (1st Generation) mit dem standardmäßigen Build verwendet haben oder wenn Sie die neuesten Updates installiert haben, ist Ihr Gerät für die Konfiguration bereit.
+> [!IMPORTANT]
+> Der Kiosk Modus ist nur verfügbar, wenn das Gerät Windows holographisch für Unternehmen aufweist. Alle HoloLens 2-Geräte werden mit Windows holographisch für Unternehmen ausgeliefert, und es gibt keine anderen Editionen. Auf jedem HoloLens 2-Gerät kann der Kiosk-Modus ausgeführt werden.
+>
+> HoloLens (1st Gen)-Geräte müssen sowohl in Bezug auf den Betriebssystem-Build als auch die OS-Edition aktualisiert werden. Hier finden Sie weitere Informationen zum Aktualisieren einer HoloLens (1st Generation) auf [Windows holographische for Business](hololens1-upgrade-enterprise.md) Edition. Wenn Sie ein HoloLens-Gerät (1st Generation) für die Verwendung des Kioskmodus aktualisieren möchten, müssen Sie zuerst sicherstellen, dass auf dem Gerät Windows 10, Version 1803 oder eine neuere Version ausgeführt wird. Wenn Sie das Windows Device Recovery-Tool zum Wiederherstellen Ihres HoloLens-Geräts (1st Generation) mit dem standardmäßigen Build verwendet haben oder wenn Sie die neuesten Updates installiert haben, ist Ihr Gerät für die Konfiguration bereit.
 
 > [!IMPORTANT]  
 > Zum Schutz von Geräten, die im Kioskmodus ausgeführt werden, sollten Sie Geräteverwaltungsrichtlinien hinzufügen, die Features wie USB-Konnektivität deaktivieren. Überprüfen Sie außerdem die Einstellungen für den Update Ring, um sicherzustellen, dass die automatischen Updates während der Geschäftszeiten nicht erfolgen.
@@ -415,9 +418,6 @@ Der Artikel "Konfigurieren der HoloLens mithilfe eines Bereitstellungspakets" en
 ## Verwenden des Windows-Geräte Portals zum Einrichten eines Single-App-Kiosks
 
 Führen Sie die folgenden Schritte aus, um den Kioskmodus mithilfe des Windows-Geräte Portals einzurichten.
-
-> [!IMPORTANT]
-> Der Kiosk Modus ist nur verfügbar, wenn auf dem Gerät [Windows holographische for Business](hololens1-upgrade-enterprise.md) installiert ist.
 
 1. [Einrichten des HoloLens-Geräts zur Verwendung des Windows-Geräte Portals](https://developer.microsoft.com/windows/mixed-reality/using_the_windows_device_portal#setting_up_hololens_to_use_windows_device_portal) Das Geräteportal ist ein Webserver auf der HoloLens, mit dem Sie über einen Webbrowser auf dem PC eine Verbindung herstellen können.
 
