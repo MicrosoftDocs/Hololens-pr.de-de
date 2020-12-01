@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: Autopilot
 manager: jarrettr
-ms.openlocfilehash: 5090a433b3d06e92cd36bdadbfbae3758432bb41
-ms.sourcegitcommit: 8656379a4871e118b9e06e72eab1dbcc8eb3cd42
+ms.openlocfilehash: f5405e0ae5096d23b791f18f04b842b2a577a9d5
+ms.sourcegitcommit: c77b2704e87f13b8513d198ce7df7dc0da6075b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "11182446"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "11192445"
 ---
 # Windows Autopilot für HoloLens 2
 
@@ -223,10 +223,7 @@ Sobald die obigen Anweisungen abgeschlossen sind, werden Benutzer der HoloLens 2
     
     - Schließen Sie Ihr Gerät mit einem "USB-C an WLAN"-Adapter für eine kabellose Internetverbindung an. Lassen Sie HoloLens 2 automatisch Autopilot vervollständigen.
 
-       > [!NOTE]
-       > Die Verwendung von Autopilot wirkt sich auf den [Gerätebesitzer](security-adminless-os.md#device-owner) aus.
-   
-       > [!IMPORTANT]  
+        > [!IMPORTANT]  
        > Um WLAN in OOBE für Autopilot zu verwenden, benötigen Geräte [Windows Holographic, Version 20H2](hololens-release-notes.md#windows-holographic-version-20h2).
        >
        > Bei Geräten, die Ethernet-Adapter verwenden, müssen Sie das Gerät an das Netzwerk anschließen, bevor die Out-of-the-Box-Erfahrung (OOBE) beginnt. Auf dem ersten OOBE-Bildschirm wird ermittelt, ob das Gerät als Autopilot-Gerät bereitgestellt wird. Wenn das Gerät keine Verbindung mit dem Netzwerk herstellen kann, oder wenn Sie sich entscheiden, das Gerät nicht als Autopilot-Gerät bereitzustellen, können Sie zu einem späteren Zeitpunkt nicht zur Autopilot-Bereitstellung wechseln. Stattdessen müssten Sie diesen Vorgang erneut ausführen, um das Gerät als Autopilot-Gerät bereitzustellen.
