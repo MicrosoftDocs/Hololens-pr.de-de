@@ -15,12 +15,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d64d0a18fbbf6570173c4bd80bc4f036f4408e08
-ms.sourcegitcommit: a51f2e409f0207fc7457e97403b5298f1e0ad7dc
+ms.openlocfilehash: 06768203459827a83d8b6e891dfc8c46e33c3da2
+ms.sourcegitcommit: 1f37a06cde037f3acdc4ef3767a9384953d97c33
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "11145636"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "11194865"
 ---
 # Anwendungen aus dem Microsoft-Shop suchen, installieren und deinstallieren.
 
@@ -35,6 +35,11 @@ Weitere Informationen zum Installieren und Ausführen benutzerdefinierter Apps f
 ## Apps suchen
 
 Öffnen Sie den Microsoft-Shop über **Startmenü**aus. Suchen Sie dann nach Apps und Spielen. Sie können mithilfe von [Sprachbefehlen](hololens-cortana.md) suchen, indem Sie "Suchen" sagen. Sobald sich das Suchfenster öffnet, sagen Sie "Diktieren beginnen" und wenn Sie dazu aufgefordert werden, beginnen Sie, Ihre Suchbegriffe auszusprechen.
+
+> [!NOTE]
+> Die Systemanforderungen für HoloLens-Geräte basieren auf der Architektur des App-Builds. Wenn ein App-Build für HoloLens (1. Generation) nicht mit einem neueren UWP im Geschäft aktualisiert wurde, um das ARM-Architekturpaket zu integrieren, ist es für HoloLens 2-Geräte nicht verfügbar. Wenn eine HoloLens 2-App das x86-Architekturpaket nicht enthält, ist sie auch nicht für HoloLens-Geräte (1. Generation) verfügbar. HoloLens-Gerätearchitekturen:
+> - x86 = HoloLens (1. Generation)
+> - ARM = HoloLens 2
 
 > [!NOTE]
 > Am 12. Januar 2021 erreichen die folgenden Apps das Supportende für HoloLens-Geräte. Wir empfehlen Ihnen, auf Ihrem Gerät über den folgenden Link die Webversion der App zu verwenden.
