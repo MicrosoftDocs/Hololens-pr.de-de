@@ -13,12 +13,12 @@ manager: jarrettr
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: 469848cf306675fcfb99247b5c91b159c204a5fe
-ms.sourcegitcommit: 2122490074adb7f63edfc3576441980caa22695f
+ms.openlocfilehash: 4f077a8bb2592ab9b650e2e8021c97d3d8524dcc
+ms.sourcegitcommit: d20f610edd7db452ccc2ac554fc8d21bd89b0b99
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "10915944"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "11195281"
 ---
 # Problembehandlung
 
@@ -45,6 +45,17 @@ Wenn Ihre Hologramme instabil, nervös oder nicht richtig aussehen, probieren Si
 - Erhöhen des Lichts in Ihrem Raum.
 - Sie können Ihre Umgebung erkunden, damit HoloLens Sie vollständiger Scannen kann.
 - Kalibrieren Ihres HoloLens für Ihre Augen. Wechseln Sie zu **Einstellungen**  >  **System**  >  **Dienstprogramme**. Wählen Sie unter **Kalibrierung** die Option **Kalibrierung öffnen** aus.
+ 
+### Melden von Problemen, bei denen Hologramme instabil sind oder nicht richtig aussehen
+ 
+1. Notieren Sie sich das Problem mit einem [Mixed-Reality-Capture-Video](holographic-photos-and-videos.md#capture-a-mixed-reality-video) . Dieses Video kann später über den Feedback-Hub als angefügte Datei hochgeladen werden.  
+1. Aktivieren Sie die vollständige Telemetrie über die **Einstellungs** -app – > Daten **Schutz**-  ->  **Diagnose & Feedback** und unter **optionale Diagnosedaten** sicherstellen, dass die Umschaltfläche **auf ein** gesetzt ist.
+1. Besorgen Sie sich die neuesten Fixes für Hologramm-Skalierung und Stabilität, indem Sie auf das neueste [Windows holographische Betriebssystem (20H2 oder höher)](hololens-release-notes.md#windows-holographic-version-20h2)aktualisieren. Nach der Aktualisierung führen Sie die folgenden Schritte aus:
+    1. Entfernen Sie alle Hologramme über **Einstellungen** -app-> **System**-  ->  **Hologramme** -> wählen Sie dann **alle Hologramme entfernen** aus, und beginnen Sie mit einer neuen Karte.
+    1. Erstellen Sie eine neue Karte Ihres Spaces, indem Sie die HoloLens tragen und in Ihrem Raum umhergehen und alle Bereiche und Oberflächen im Raum betrachten. Tun Sie dies für 2-3 Minuten.
+    1. Führen Sie die IPD-Kalibrierung durch. Wechseln Sie zu **Einstellungen**  >  **System**  >  **Dienstprogramme**. Wählen Sie unter **Kalibrierung** die Option **Kalibrierung öffnen** aus.
+    1. Testen Sie das Szenario erneut, und überprüfen Sie, ob es weiterhin besteht.
+1. Wenn das Problem durch die Aktualisierung nicht behoben wird, geben Sie bitte ein [Feedback-Hub-Problem](hololens-feedback.md)ein. Nachdem Sie Feedback ausgefüllt haben, können Sie die Schaltfläche " **Freigeben** " verwenden, um einen einfach zu sendenden Link zu erstellen, der beim Kontaktieren des Supports gesendet werden kann.
 
 ## HoloLens reagiert nicht auf Hand Eingaben
 
@@ -67,7 +78,7 @@ Wenn Cortana nicht auf Ihre Sprachbefehle reagiert, stellen Sie sicher, dass Cor
 Wenn HoloLens Ihren Space nicht zuordnen oder laden kann, wird er in den Modus "limitiert" gesetzt, und Sie können keine Hologramme platzieren oder Hologramme sehen, die Sie platziert haben. Probieren Sie Folgendes aus:
 
 - Stellen Sie sicher, dass in Ihrer Umgebung genügend Licht vorhanden ist, damit HoloLens den Platz sehen und zuordnen kann.
-- Stellen Sie sicher, dass Sie mit einem WLAN-Netzwerk verbunden sind. Wenn Sie nicht mit WLAN verbunden sind, kann HoloLens einen bekannten Speicherplatz nicht identifizieren und laden.
+- Stellen Sie sicher, dass Sie mit einem Wi-Fi Netzwerk verbunden sind. Wenn Sie nicht mit WLAN verbunden sind, kann HoloLens einen bekannten Speicherplatz nicht identifizieren und laden.
 - Wenn Sie einen neuen Speicherplatz erstellen müssen, stellen Sie eine Verbindung zu WLAN her, und starten Sie dann Ihr HoloLens neu.
 - Wenn Sie feststellen möchten, ob der richtige Platz aktiv ist, oder wenn Sie ein Leerzeichen manuell laden möchten, wechseln Sie zu **Einstellungen**  >  **System**  >  **Leerzeichen**.
 - Wenn der richtige Speicherplatz geladen wird und Sie weiterhin Probleme haben, ist der Speicherplatz möglicherweise beschädigt. Um dieses Problem zu beheben, wählen Sie den Bereich aus, und wählen Sie dann **Entfernen**aus. Nachdem Sie das Leerzeichen entfernt haben, beginnt HoloLens, Ihre Umgebung zuzuordnen und einen neuen Bereich zu erstellen.
@@ -76,7 +87,7 @@ Wenn HoloLens Ihren Space nicht zuordnen oder laden kann, wird er in den Modus "
 
 Wenn Ihr HoloLens den Speicherplatz, in dem Sie sich befinden, nicht automatisch identifizieren und laden kann, überprüfen Sie die folgenden Faktoren:
 
-- Stellen Sie sicher, dass Sie mit WLAN verbunden sind.
+- Stellen Sie sicher, dass Sie mit Wi-Fi verbunden sind.
 - Sorgen Sie dafür, dass der Raum viel Licht hat
 - Stellen Sie sicher, dass sich die Umgebung nicht wesentlich geändert hat.
 
