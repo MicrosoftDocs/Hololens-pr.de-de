@@ -1,0 +1,62 @@
+---
+title: Bereitstellungshandbuch – Cloud Connected HoloLens 2-Bereitstellung im Maßstab mit Remote Unterstützung – konfigurieren
+description: Einrichten von Konfigurationen für die Registrierung von HoloLens-Geräten über ein in der Cloud verbundenes Netzwerk
+keywords: HoloLens, Verwaltung, Cloud Connected, Remote Assist, AAD, Azure AD, MDM, Verwaltung mobiler Geräte
+author: evmill
+ms.author: v-evmill
+ms.reviewer: aboeger
+ms.date: 12/04/2020
+ms.prod: hololens
+ms.topic: article
+ms.sitesec: library
+ms.localizationpriority: medium
+audience: HoloLens
+manager: yannisle
+appliesto:
+- HoloLens 2
+ms.openlocfilehash: 43b9db96a2c29d1e3a798d0c695ab6edaa8199ac
+ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "11196309"
+---
+# <span data-ttu-id="7aebb-104">Konfigurieren-Cloud Connected-Leitfaden</span><span class="sxs-lookup"><span data-stu-id="7aebb-104">Configure - Cloud connected Guide</span></span>
+
+<span data-ttu-id="7aebb-105">In diesem Abschnitt des Leitfadens&#39;wir, wie Sie die automatische Registrierung für Ihren Mandanten einrichten und wie Sie Lizenzen für InTune und Remote Assist anwenden.</span><span class="sxs-lookup"><span data-stu-id="7aebb-105">In this section of the guide we&#39;ll go over how to set up Auto Enrollment for your tenant, and how to apply licenses for both Intune and Remote Assist.</span></span>
+
+## <span data-ttu-id="7aebb-106">Azure-Benutzer und-Gruppen</span><span class="sxs-lookup"><span data-stu-id="7aebb-106">Azure Users and Groups</span></span>
+
+<span data-ttu-id="7aebb-107">Azure und InTune von dieser Erweiterung verwenden Benutzer und Gruppen, um die Zuweisung von Konfigurationen und Lizenzen zu unterstützen.</span><span class="sxs-lookup"><span data-stu-id="7aebb-107">Azure, and Intune by that extension, uses users and groups to help assign configurations and licenses.</span></span> <span data-ttu-id="7aebb-108">Um diesen Bereitstellungs Fluss zu überprüfen und einen Remote Unterstützungs Anruf von einem Benutzer zu einem anderen durchführen zu können, benötigen Sie&#39;2 Benutzerkonten.</span><span class="sxs-lookup"><span data-stu-id="7aebb-108">For the sake of validating this deployment flow and being able to make a Remote Assist call from one user to another you&#39;ll need 2 user accounts.</span></span>
+
+<span data-ttu-id="7aebb-109">Wir können eine einzelne Benutzergruppe zum Zweck der Zuweisung von Lizenzen erstellen.</span><span class="sxs-lookup"><span data-stu-id="7aebb-109">We can make a single user group for the purpose of assigning licenses.</span></span> <span data-ttu-id="7aebb-110">Wir können beiden Benutzern dieselbe Gruppe hinzufügen und eine Lizenz für InTune und Remote Unterstützung für diese Gruppe anwenden.</span><span class="sxs-lookup"><span data-stu-id="7aebb-110">We can join both users to the same group and apply a license for Intune and Remote Assist to that group.</span></span>
+
+<span data-ttu-id="7aebb-111">Wenn Sie Don&#39;t bereits Zugriff auf zwei Aad-Konten in einer Benutzergruppe haben, die Sie verwenden können; Im folgenden finden Sie die Schnellstart Handbücher für:</span><span class="sxs-lookup"><span data-stu-id="7aebb-111">If you don&#39;t already have access to two AAD accounts in a user group you can use; here are the quick start guides for:</span></span>
+
+- [<span data-ttu-id="7aebb-112">Erstellen eines Benutzers</span><span class="sxs-lookup"><span data-stu-id="7aebb-112">How to create a user</span></span>](https://docs.microsoft.com/mem/intune/fundamentals/quickstart-create-user)
+- [<span data-ttu-id="7aebb-113">Erstellen einer Gruppe</span><span class="sxs-lookup"><span data-stu-id="7aebb-113">How to create a group</span></span>](https://docs.microsoft.com/mem/intune/fundamentals/quickstart-create-group)
+- <span data-ttu-id="7aebb-114">[Hinzufügen von Benutzern zu einer Gruppe](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal) – Hinzufügen von erstellten Benutzern zum Erstellen einer Gruppe</span><span class="sxs-lookup"><span data-stu-id="7aebb-114">[Add users to a group](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal) – Add created users to create group</span></span>
+- <span data-ttu-id="7aebb-115">[Konfigurieren von Aad, um einer Benutzergruppe die Teilnahme an Geräten zu ermöglichen](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) – stellen Sie sicher, dass die neue Benutzergruppe die Berechtigung zum Registrieren von Geräten für Aad hat.</span><span class="sxs-lookup"><span data-stu-id="7aebb-115">[Configure AAD to allow a User Group to join devices](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) – Ensure new user group has permission to enroll devices to AAD</span></span>
+
+## <span data-ttu-id="7aebb-116">Automatische Registrierung auf HoloLens 2</span><span class="sxs-lookup"><span data-stu-id="7aebb-116">Auto Enrollment on HoloLens 2</span></span>
+
+<span data-ttu-id="7aebb-117">Um eine reibungslose und nahtlose Benutzeroberfläche zu haben, ist das Einrichten von Azure Active Directory Join (AADJ) und der automatischen Registrierung für InTune für HoloLens 2-Geräte die richtige Lösung.</span><span class="sxs-lookup"><span data-stu-id="7aebb-117">In order to have a smooth and seamless experience, setting up Azure Active Directory Join (AADJ) and Auto Enrollment to Intune for HoloLens 2 devices is the way to go.</span></span> <span data-ttu-id="7aebb-118">Dadurch können Benutzer ihre Anmeldeinformationen für Ihre Organisation einfach während OOBE eingeben und sich automatisch bei Aad registrieren und das Gerät in MDM registrieren.</span><span class="sxs-lookup"><span data-stu-id="7aebb-118">This will allow users to simply input their organization log-in credentials during OOBE and automatically register with AAD and enroll the device into MDM.</span></span>
+
+<span data-ttu-id="7aebb-119">Mithilfe von [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home) können wir Dienste auswählen und auf einigen Seiten navigieren, bis wir eine Premium-Testversion auswählen können.</span><span class="sxs-lookup"><span data-stu-id="7aebb-119">By using [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home) we can select services and navigate a few pages until we can select Get a Premium trial.</span></span> <span data-ttu-id="7aebb-120">Sie werden feststellen, dass es Azure Active Directory Premium 1 und 2 gibt, für die automatische Registrierung P1 genügt.</span><span class="sxs-lookup"><span data-stu-id="7aebb-120">You many notice there is Azure Active Directory Premium 1 and 2, for Automatic Enrollment P1 is sufficient.</span></span> <span data-ttu-id="7aebb-121">Wir können InTune auswählen und den Benutzerbereich für die automatische Registrierung auswählen und die zuvor erstellte Gruppe auswählen.</span><span class="sxs-lookup"><span data-stu-id="7aebb-121">We can select Intune and select the user scope for automatic enrollment, and select the group that was previously created.</span></span>
+
+<span data-ttu-id="7aebb-122">Ausführliche Informationen und Schritte finden Sie im Leitfaden zum [Aktivieren der automatischen Registrierung für InTune](https://docs.microsoft.com/mem/intune/enrollment/quickstart-setup-auto-enrollment).</span><span class="sxs-lookup"><span data-stu-id="7aebb-122">For full details and steps please read the guide on [how to enable auto enrollment for Intune](https://docs.microsoft.com/mem/intune/enrollment/quickstart-setup-auto-enrollment).</span></span>
+
+## <span data-ttu-id="7aebb-123">Anwendungslizenzen</span><span class="sxs-lookup"><span data-stu-id="7aebb-123">Application Licenses</span></span>
+
+<span data-ttu-id="7aebb-124">Eine Anwendungslizenz ermöglicht es einem Benutzer, entweder von Unternehmen erworbene apps zu installieren oder von einer kostenlosen Testversion auf die Vollversion einer APP zu aktualisieren.</span><span class="sxs-lookup"><span data-stu-id="7aebb-124">An application license allows a user to either install company purchased Apps or upgrade from a free trial to the full version of an app.</span></span> <span data-ttu-id="7aebb-125">Anwendungslizenzen können entweder auf Benutzer, Benutzergruppen oder Gerätegruppen angewendet werden.</span><span class="sxs-lookup"><span data-stu-id="7aebb-125">Application licenses can be applied to either users, user groups, or device groups.</span></span> <span data-ttu-id="7aebb-126">Sie&#39;ll benötigen Remote Assist-Lizenzen für Benutzer in Ihrer Organisation, um die Remoteunterstützung verwenden zu können.</span><span class="sxs-lookup"><span data-stu-id="7aebb-126">You&#39;ll need Remote Assist licenses for users in your organization to use Remote Assist.</span></span> <span data-ttu-id="7aebb-127">In diesem Leitfaden weisen wir der Benutzergruppe, die wir oben in [Azure-Benutzern und-Gruppen](hololens2-cloud-connected-configure.md#azure-users-and-groups)erstellt haben, Remote Unterstützungs Lizenzen zu.</span><span class="sxs-lookup"><span data-stu-id="7aebb-127">For the purpose of this guide we'll assign Remote Assist licenses to the user group we created above in [Azure Users and Groups](hololens2-cloud-connected-configure.md#azure-users-and-groups).</span></span>
+
+<span data-ttu-id="7aebb-128">Die Anforderungen für Lizenzen können unterschiedlich sein, je nachdem, ob der Benutzer den Remote Unterstützungs Anruf von einem Gerät aus durchführt oder ein Remotemitarbeiter von Microsoft Teams ist.</span><span class="sxs-lookup"><span data-stu-id="7aebb-128">The requirements for licenses can be different depending on if the user will be making the Remote Assist call from a device or will be a remote collaborator from Microsoft Teams.</span></span> <span data-ttu-id="7aebb-129">Standardmäßig sind die Kontrollkästchen "Remote Assist" und "Teams" beide markiert.</span><span class="sxs-lookup"><span data-stu-id="7aebb-129">By default the Remote Assist and Teams check boxes are both marked.</span></span> <span data-ttu-id="7aebb-130">Für die Zwecke dieses Leitfadens empfehlen wir, die Standardfelder aktiviert zu lassen.</span><span class="sxs-lookup"><span data-stu-id="7aebb-130">For the purposes of this guide, we suggest to leave the default boxes checked.</span></span>
+
+1. <span data-ttu-id="7aebb-131">Weitere Informationen zu den unterschiedlichen [Lizenzierungs-und Produktanforderungen pro Rolle](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements#licensing-and-product-requirements-per-role).</span><span class="sxs-lookup"><span data-stu-id="7aebb-131">Learn more about the different [Licensing and product requirements per role](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements#licensing-and-product-requirements-per-role).</span></span> <span data-ttu-id="7aebb-132">Es gibt ein paar verschiedene Arten von Lizenzen für Remote-Unterstützung, um sicherzustellen, dass Sie die richtigen für Ihre Anforderungen erhalten.</span><span class="sxs-lookup"><span data-stu-id="7aebb-132">There are a few different types of Remote Assist licenses so be sure to get the correct ones for your needs.</span></span>
+2. <span data-ttu-id="7aebb-133">Sie müssen&#39;[die Lizenz erwerben](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-remote-assist).</span><span class="sxs-lookup"><span data-stu-id="7aebb-133">You&#39;ll need to [acquire the license](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-remote-assist).</span></span>
+3. <span data-ttu-id="7aebb-134">[Wenden Sie Ihre Lizenzen](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/deploy-remote-assist) auf die Gruppe an.</span><span class="sxs-lookup"><span data-stu-id="7aebb-134">[Apply your licenses](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/deploy-remote-assist) to the group.</span></span>
+
+## <span data-ttu-id="7aebb-135">Nächster Schritt</span><span class="sxs-lookup"><span data-stu-id="7aebb-135">Next step</span></span>
+
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="7aebb-136">Cloud Connected-Bereitstellung – bereitstellen</span><span class="sxs-lookup"><span data-stu-id="7aebb-136">Cloud connected deployment - Deploy</span></span>](hololens2-cloud-connected-deploy.md)
