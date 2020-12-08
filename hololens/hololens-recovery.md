@@ -14,12 +14,12 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: 8c028ed39cf0925ebff18ca69889de2d87f1e7eb
-ms.sourcegitcommit: e3056a433aeebb8bc45dc3f6db9a75f212fdf53b
+ms.openlocfilehash: 872e9d3445df2601579ae81f4190458289fa2eea
+ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "10996413"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "11195598"
 ---
 # HoloLens 2 neu starten, zurücksetzen oder wiederherstellen
 
@@ -57,7 +57,7 @@ Unter bestimmten Umständen möchten Sie das Gerät möglicherweise manuell zur�
 
 4. Verbinden Sie das Gerät mit dem Host-PC, und öffnen Sie dann den Geräte-Manager. (Drücken Sie unter Windows 10 die **Windows**-Taste und dann die **X**-Taste, und wählen Sie dann **Geräte-Manager** aus.) Stellen Sie sicher, dass das Gerät wie im folgenden Bild korrekt als *Microsoft HoloLens* aufgeführt wird:
 
-   ![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLens_DeviceManager.png)
+   ![Gerätemanager für HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLens_DeviceManager.png)
 
 ### Hard-Reset-Verfahren
 
@@ -70,7 +70,7 @@ Wenn das Standardzurücksetzungsverfahren nicht funktioniert, verwenden Sie das 
 4. Verbinden Sie das Gerät mit dem Host-PC.
 5. Öffnen Sie den Geräte-Manager (drücken Sie unter Windows 10 die **Windows**-Taste und dann die **X**-Taste, und wählen Sie dann **Geräte-Manager** aus). Stellen Sie sicher, dass das Gerät ordnungsgemäß als *Microsoft HoloLens* aufgelistet wird, wie in der folgenden Abbildung dargestellt:
 
-   ![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLens_DeviceManager.png)
+   ![Gerätemanager 2 für HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLens_DeviceManager.png)
 
 ## Clean-Reflash des Geräts
 
@@ -81,12 +81,12 @@ In außergewöhnlichen Situationen müssen Sie das HoloLens 2 möglicherweise �
 - [Überhitzung](hololens-environment-considerations.md#temperature-and-regulatory-information) 
 - Betriebssystemabstürze (welche sich von Anwendungsabstürzen unterscheiden)
 
-Dafür gibt es zwei Möglichkeiten. Für beide müssen Sie zuerst [Advanced Recovery Companion aus dem Windows Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8)installieren.
+Dafür gibt es zwei Möglichkeiten. Für beide müssen Sie zuerst [Advanced Recovery Companion aus dem Windows Store installieren](https://www.microsoft.com/store/productId/9P74Z35SFRS8).
 
 >[!WARNING]
 >Wenn Sie Ihr Gerät neu flashen, werden alle Ihre persönlichen Daten, Apps und Einstellungen gelöscht, einschließlich der TPM-Zurücksetzungsinformationen.
 
-Standardmäßig ist Advanced Recovery Companion zurzeit so eingerichtet, dass der Funktionsbuild für [Windows Holographic 2004](hololens-release-notes.md#windows-holographic-version-2004) heruntergeladen wird. Um das neueste HoloLens 2 Full Flash Update (FFU) zu erhalten und Ihr Gerät über Advanced Recovery Companion neu zu flashen, [laden Sie es hier herunter](https://aka.ms/hololens2download). Diese Version ist der neueste allgemein verfügbare Build.
+Standardmäßig ist Advanced Recovery Companion so eingestellt, dass der neueste Featurerelease-Build heruntergeladen wird. In unseren [Versionshinweisen](hololens-release-notes.md#) finden Sie weitere Informationen zu den neuesten Featurereleases. Wenn Sie das neueste HoloLens 2 Full Flash Update (FFU)-Paket herunterladen möchten, um Ihr Gerät über Advanced Recovery Companion zu reflashen, [klicken Sie hier, um das neueste monatliche HoloLens 2-Image herunterzuladen](https://aka.ms/hololens2download). Diese Version ist der neueste allgemein verfügbare Build.
 
 Stellen Sie vor dem Starten des Flashens sicher, dass die Anwendung auf Ihrem Windows 10-PC installiert ist, ausgeführt wird und bereit ist, das Gerät zu erkennen.
 
@@ -134,8 +134,8 @@ Führen Sie die folgenden Schritte aus, um den Bereitstellungspfad zu aktivieren
 1. Wechseln Sie zum [Microsoft Store für Unternehmen](https://businessstore.microsoft.com), und melden Sie sich mit einer Azure Active Directory-Identität an.
 
 1. Wechseln Sie zu **Verwalten – Einstellungen**. Aktivieren Sie **Offline-Apps anzeigen** unter **Shopping-Erfahrung**. 
-1. Wechseln Sie zu **Einkaufen für meine Gruppe** und suchen Sie nach [***Advanced Recovery Companion***](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8).
-1. Ändern Sie den **Lizenztyp** auf ***Offline***, und klicken Sie auf **Verwalten**.
+1. Wechseln Sie zu **Shop für meine Gruppe**, und suchen Sie nach [**_Advanced Recovery Companion_*_](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8).
+1. Ändern Sie den _*Lizenztyp** in **_Offline_*_, und wählen Sie _* Manage** aus.
 1. Wählen Sie unter **Paket für Offline-Verwendung herunterladen** die zweite blaue Schaltfläche **Herunterladen** aus. Stellen Sie sicher, dass die Dateierweiterung *.appxbundle* lautet.
 
     - Wenn der Desktop-PC zu diesem Zeitpunkt über einen Internetzugang verfügt, doppelklicken Sie auf das Paket, um die App zu installieren.

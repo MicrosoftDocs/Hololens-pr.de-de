@@ -39,11 +39,16 @@
 ## [Aktualisieren von HoloLens](hololens-update-hololens.md)
 
 # Vorbereiten
-## Planen der Unternehmensbereitstellung von HoloLens 2
-### [Bereitstellen von HoloLens in einer kommerziellen Umgebung](hololens-requirements.md)
-### [Szenarien für die Bereitstellung einer gemeinsamen Infrastruktur](common-scenarios.md)
-## Allgemeine Szenarien
-### [Offline Sicherheit](hololens-common-scenarios-offline-secure.md)
+## [Bereitstellen von HoloLens in einer kommerziellen Umgebung](hololens-requirements.md)
+## Allgemeine Bereitstellungsszenarien
+### [Szenarien für die Infrastrukturbereitstellung](common-scenarios.md)
+### Cloud Connected HoloLens 2-Bereitstellung mit Remote Assist
+#### [Cloud Connected – Bereitstellungsübersicht](hololens2-cloud-connected-overview.md)
+#### [Cloud Connected – Vorbereiten](hololens2-cloud-connected-prepare.md)
+#### [Cloud Connected – Konfigurieren](hololens2-cloud-connected-configure.md)
+#### [Cloud Connected – Bereitstellen](hololens2-cloud-connected-deploy.md)
+#### [Cloud Connected – Pflegen](hololens2-cloud-connected-maintain.md)
+### [Offline-Sicherheit](hololens-common-scenarios-offline-secure.md)
 ## Sicherheit
 ### [Sicherheitsübersicht](security-overview.md)
 ### [Architecture](security-architecture.md)
