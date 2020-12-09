@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3cf2797d4c01f66b6433aaf327e31061a8dd2f3e
-ms.sourcegitcommit: 307e313f05243b6d94f9bfc0cb4e316a00a8005c
+ms.openlocfilehash: fcc13150df796290cac3f9397a9ec6bda120037b
+ms.sourcegitcommit: 74e9989240dc0c324df35e8651b2f307f9d42148
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "11176907"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "11201379"
 ---
 # Veröffentlichungshinweise für HoloLens 2
 
@@ -28,6 +28,52 @@ Um sicherzustellen, dass Sie mit ihren HoloLens-Geräten eine produktive Erfahru
 
 >[!NOTE]
 > Wenn Sie HoloLens-Emulator-Versionshinweise lesen möchten, [besuchen Sie das Archiv](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
+
+
+## Windows holographisch, Version 20H2 – Dezember 2020 Update
+- Build 19041,1131
+
+### Installieren von apps auf HoloLens 2 über das App-Installationsprogramm
+
+Wir **fügen eine neue Funktion (app-Installationsprogramm) hinzu, mit der Sie Anwendungen nahtlos** auf Ihren HoloLens 2-Geräten installieren können. Das Feature ist **für nicht verwaltete Geräte standardmäßig aktiviert**. Um Unterbrechungen von Unternehmen zu verhindern, steht das App-Installationsprogramm derzeit **nicht für verwaltete Geräte zur Verfügung** .  
+
+Ein Gerät gilt als "verwaltet", **Wenn eine der folgenden** Bedingungen zutrifft:
+- MDM [registriert](hololens-enroll-mdm.md)
+- Mit [Bereitstellungspaket](hololens-provisioning.md) konfiguriert
+- Benutzer [Identität](hololens-identity.md) ist Azure AD
+
+Sie können jetzt apps installieren, ohne den Entwicklermodus oder die Verwendung des Geräte Portals aktivieren zu müssen.  Laden Sie einfach (über USB oder durch Edge) das AppX-Paket auf Ihr Gerät herunter, und navigieren Sie im Datei-Explorer zum AppX-Paket, um aufgefordert zu werden, die Installation zu starten.  Alternativ können Sie [eine Installation von einer Webseite aus initiieren](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web).  Genau wie apps, die Sie über den Microsoft Store oder querladen mit der Dienst Bereitstellungsfunktion der Branchen-App für die Branchenanwendung von MDM installieren, müssen apps mit dem [Signatur Tool](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) digital signiert werden, und das [zum Signieren verwendete Zertifikat muss](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) vom HoloLens-Gerät als vertrauenswürdig eingestuft werden, bevor die APP bereitgestellt werden kann.
+
+**Installationsanweisungen für die Anwendung.**
+
+1.  Stellen Sie sicher, dass Ihr Gerät nicht als verwaltet angesehen wird.
+1.  Stellen Sie sicher, dass Ihr HoloLens 2-Gerät eingeschaltet und an Ihren PC angeschlossen ist.
+1.  Sicherstellen, dass Sie beim HoloLens 2-Gerät angemeldet sind
+1.  Navigieren Sie auf Ihrem PC zu Ihrer benutzerdefinierten APP, und kopieren Sie yourapp. appxbundle nach yourdevicename\Internal Storage\Downloads.   Nachdem Sie das Kopieren Ihrer Datei beendet haben, können Sie die Verbindung zu Ihrem Gerät trennen.
+1.  Öffnen Sie auf Ihrem HoloLens 2-Gerät das Startmenü, wählen Sie alle apps aus, und starten Sie die Datei-Explorer-app.
+1.  Navigieren Sie zum Ordner Downloads. Möglicherweise müssen Sie auf der linken Seite der APP zuerst dieses Gerät auswählen und dann zu Downloads navigieren.
+1.  Wählen Sie die Datei "yourapp. appxbundle" aus.
+1.  Das App-Installationsprogramm wird gestartet. Wählen Sie die Schaltfläche Installieren aus, um Ihre APP zu installieren.
+Die installierte APP wird nach Abschluss der Installation automatisch gestartet.
+
+Sie können Beispiel-apps unter [Windows universelle Beispiele GitHub](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples) finden, um diesen Fluss zu testen.
+
+Informieren Sie sich über den vollständigen Prozess der [Installation von apps auf HoloLens 2 mit dem App-Installationsprogramm](app-deploy-app-installer.md).  
+
+![Installieren von MRTK-Beispielen über das App-Installationsprogramm](images/hololens-app-installer-picture.jpg)
+
+### Verbesserungen und Korrekturen im Update:
+
+- Die manuelle Nachverfolgung unterstützt jetzt die Nachverfolgung in vielen neuen Fällen, in denen die Hand zuvor verloren gegangen wäre.  In einigen dieser neuen Fälle wird nur die Palm-Position basierend auf der realen Hand des Benutzers aktualisiert, während die anderen Gelenke auf Grundlage einer vorherigen Pose abgeleitet werden.  Diese Änderung verbessert die nach Verfolgungs Konsistenz in Bewegungen wie Slappen, werfen, Schaufeln und klatschen.  Es hilft auch in Fällen, in denen die Hand nahe an einer Oberfläche liegt oder ein Objekt hält.  Wenn Handgelenke hergeleitet werden, wird der Wert für [pro Gelenk Genauigkeit](https://docs.microsoft.com/uwp/api/windows.perception.people.jointposeaccuracy?view=winrt-19041&preserve-view=true) auf "Näherung" anstelle von "höchst" festgesetzt.
+- Ein Problem wurde behoben, bei dem die PIN-Zurücksetzung für Azure Ad-Konten einen Fehler aufweist.
+- Benutzer sollten beim Starten von et, IRIS aus der Einstellungs-APP, neuer Benutzer oder Benachrichtigungs-Toast viel geringere nach-Boot-OOBE-Abstürze sehen.
+- Benutzer sollten über die richtige Zeitzone von OOBE verfügen.
+
+## Windows holographisch, Version 1903 – Update vom Dezember 2020
+- Build 18362,1088
+
+Dieses monatliche Qualitäts Update enthält keine nennenswerten Änderungen, wir empfehlen Ihnen, unser neuestes Windows holographisches, Version 20H2 – Dezember 2020-Update und das neue Feature "APP-Installer" zu testen, das im Build hinzugefügt wurde.
+
 
 ## Windows holographisch, Version 20H2
 - Build 19041,1128
@@ -493,7 +539,7 @@ Mit Windows Autopilot für HoloLens 2 kann der Geräte Vertriebskanal HoloLens i
 
 Nachdem ein Benutzer den selbst Bereitstellungsprozess von Autopilot gestartet hat, führt der Prozess die folgenden Schritte aus:
 
-1. Verknüpfen des Geräts mit Azure Active Directory (Azure AD).
+1. Verbinden des Geräts mit Azure Active Directory (Azure AD).
 1. Verwenden von Azure AD, um das Gerät bei Microsoft Intune (oder einem anderen MDM-Dienst) zu registrieren.
 1. Herunterladen der gerätespezifischen Richtlinien, Zertifikate und Netzwerkprofile.
 1. Bereitstellen des Geräts.

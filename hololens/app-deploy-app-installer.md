@@ -14,22 +14,22 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: eba1fd00215ef197f9e32949e958bdbded089d6d
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: 53937881d6569e6aaa17d7e60083381b13502b87
+ms.sourcegitcommit: 74e9989240dc0c324df35e8651b2f307f9d42148
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11162895"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "11201369"
 ---
 # Installieren von apps auf HoloLens 2 über das App-Installationsprogramm
 
 
-Wir werden die Funktion des App-Installationsprogramms in Kürze nach dem Windows holographischen, Version 20H2-Update versenden. Wir **fügen eine neue Funktion (app-Installationsprogramm) hinzu, mit der Sie Anwendungen nahtlos** auf Ihren HoloLens 2-Geräten installieren können. Das Feature ist **für nicht verwaltete Geräte standardmäßig aktiviert**. Um Unterbrechungen von Unternehmen zu verhindern, steht das App-Installationsprogramm derzeit **nicht für verwaltete Geräte zur Verfügung** .  
+Wir **fügen eine neue Funktion (app-Installationsprogramm) hinzu, mit der Sie Anwendungen nahtlos** auf Ihren HoloLens 2-Geräten installieren können. Das Feature ist **für nicht verwaltete Geräte standardmäßig aktiviert**. Um Unterbrechungen von Unternehmen zu verhindern, steht das App-Installationsprogramm derzeit **nicht für verwaltete Geräte zur Verfügung** .  
 
-> [!IMPORTANT]
-> Dieses Feature ist derzeit nur in Windows-Insider-Builds verfügbar. [Weitere Informationen zum Registrieren von Windows Insider-Builds](hololens-insider.md).
+> [!NOTE]
+> Dieses Feature wurde in [Windows holographisch, Version 20H2 – Dezember 2020-Update](hololens-release-notes.md)zur Verfügung gestellt. Stellen Sie sicher, dass Ihr Gerät [aktualisiert](hololens-update-hololens.md) wurde, um dieses Feature zu verwenden.
 
-In unserer Windows-Insider-Version **fügen wir eine neue Funktion (app-Installationsprogramm) hinzu, mit der Sie Anwendungen nahtlos** auf Ihren HoloLens 2-Geräten installieren können. Das Feature ist **für nicht verwaltete Geräte standardmäßig aktiviert**. Um Unterbrechungen von Unternehmen zu verhindern, steht das App-Installationsprogramm derzeit **nicht für verwaltete Geräte zur Verfügung** .  
+Wir haben **eine neue Funktion (app-Installationsprogramm) hinzugefügt, mit der Sie Anwendungen nahtlos** auf Ihren HoloLens 2-Geräten installieren können. Das Feature ist **für nicht verwaltete Geräte standardmäßig aktiviert**. Um Unterbrechungen von Unternehmen zu verhindern, steht das App-Installationsprogramm derzeit **nicht für verwaltete Geräte zur Verfügung** .  
 
 Ein Gerät gilt als "verwaltet", **Wenn eine der folgenden** Bedingungen zutrifft:
 - MDM [registriert](hololens-enroll-mdm.md)
