@@ -100,6 +100,7 @@
 ### [Intune und Unternehmensportal](app-deploy-intune.md)
 ### [Microsoft Store für Unternehmen](app-deploy-store-business.md)
 ### [Bereitstellungspaket](app-deploy-provisioning-package.md)
+### [App-Installer](app-deploy-app-installer.md)
 
 # Warten
 ## [Verwalten von HoloLens-Updates](hololens-updates.md)
@@ -115,7 +116,6 @@
 # Versionshinweise für HoloLens
 ## [Veröffentlichungshinweise für HoloLens 2](hololens-release-notes.md)
 ## [Insider-Vorschau für Microsoft HoloLens](hololens-insider.md)
-### [App-Installer](app-deploy-app-installer.md)
-## [Versionshinweise zu HoloLens (1. Generation)](hololens1-release-notes.md)
+## [Veröffentlichungshinweise für HoloLens (1. Generation)](hololens1-release-notes.md)
 
 # [Feedback senden](hololens-feedback.md)
