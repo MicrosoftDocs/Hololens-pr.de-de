@@ -4,7 +4,7 @@ description: Erstellen Sie mithilfe des Feedback-Hubs Umsetz-Feedback für HoloL
 ms.assetid: b9b24c72-ff86-44a9-b30d-dd76c49479a9
 author: mattzmsft
 ms.author: mazeller
-ms.date: 05/14/2020
+ms.date: 12/17/2020
 ms.custom:
 - CI 116157
 - CSSTroubleshooting
@@ -17,24 +17,24 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f922104658378239c6f94a20d22913f11a56c347
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: f8704b7e1b75cd08bc282eb0c2df22b8266cb9fd
+ms.sourcegitcommit: e44f1f1ab708e5bd6c4c5b85ec449db2bc798be2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828045"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "11237275"
 ---
 # Feedback zu HoloLens
 
 Verwenden Sie den Feedback-Hub, um uns mitzuteilen, welche Funktionen Sie lieben, auf welche Funktionen Sie verzichten können und wie etwas besser sein könnte. Das Entwicklungsteam verwendet denselben Mechanismus intern, um Fehler zu überwachen und zu beheben, verwenden Sie daher Feedback-Hub, um alle angezeigten Fehler zu melden. Wir hören zu!
 
-Der Feedback-Hub ist eine hervorragende Möglichkeit, das Entwicklungsteam auf Fehler aufmerksam zu machen und sicherzustellen, dass zukünftige Updates gesünder und konsistenter sind. Der Feedback-Hub bietet jedoch keine Antwort. Wenn Sie Hilfe benötigen, wenden Sie sich bitte an die Zusammenfassung, die Sie für Ihr Feedback bereitgestellt haben, und folgen Sie dann dem [HoloLens-Support](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f).
+Der Feedback-Hub ist eine hervorragende Möglichkeit, das Entwicklungsteam auf Fehler aufmerksam zu machen und sicherzustellen, dass zukünftige Updates gesünder und konsistenter sind. Der Feedback-Hub bietet jedoch keine Antwort. Wenn Sie Hilfe benötigen, wenden Sie sich bitte an die Zusammenfassung, die Sie für Ihr Feedback bereitgestellt haben, und folgen Sie dann dem [HoloLens-Support](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f) – verwenden Sie das Feature " **Freigeben** " im Feedback-Hub, um einen direkten Link zur URL freizugeben. Der Feedback-Hub erhält täglich viele Daten – die URL hilft uns, Ihr Feedback schnell zu identifizieren.
 
 > [!NOTE]  
 >  
-> - Stellen Sie sicher, dass Sie über die aktuelle Version des Feedback-Hubs verfügen. Wählen Sie dazu **Start**  >  **Microsoft Store**starten aus, und wählen Sie dann die Auslassungszeichen (**.**..) aus. Wählen Sie dann **Downloads und Updates**  >  **erhalten Updates**aus.  
+> - Stellen Sie sicher, dass Sie über die aktuelle Version des Feedback-Hubs verfügen. Wählen Sie dazu ****  >  **Microsoft Store**starten aus, und wählen Sie dann die Auslassungszeichen (**.**..) aus. Wählen Sie dann **Downloads und Updates**  >  **erhalten Updates**aus.  
 >  
-> - Um die bestmöglichen Daten zur Behebung von Problemen zur Verfügung zu stellen, wird dringend empfohlen, die Telemetrie des Geräts auf **Full**festzulegen. Sie können diesen Wert während der Out-of-Box-Experience (OOBE) oder mithilfe der Einstellungs-APP festlegen. Wählen Sie dazu unter Einstellungen die Option **Start**  >  **Einstellungen**  >  für die**Datenschutz**-  >  **App**starten aus  >  **On**.
+> - Um die bestmöglichen Daten zur Behebung von Problemen zur Verfügung zu stellen, wird dringend empfohlen, die Telemetrie für Geräte auf **optional**festzulegen. Sie können diesen Wert während der Out-of-Box-Experience (OOBE) oder mithilfe der Einstellungs-APP festlegen. Wählen Sie dazu unter Einstellungen die Option ****  >  **Einstellungen**  >  für die**Datenschutz**-  >  **App**starten aus  >  ****.
 
 ## Verwenden des Feedback-Hubs
 
@@ -87,3 +87,5 @@ Der Feedback-Hub ist eine hervorragende Möglichkeit, das Entwicklungsteam auf F
      1. Wählen Sie **Aufzeichnung beenden**aus. Nachdem die Aufzeichnung angehalten wurde, können Sie die Daten sehen, die Ihrem Feedback für das Entwicklungsteam zugeordnet sind.
 
 1. Stellen Sie sicher, dass Sie über eine aktive Internetverbindung verfügen, damit wir Ihr Feedback empfangen können. Wählen Sie **Absenden**aus, und schon sind Sie fertig.
+
+1. Verwenden Sie die Schaltfläche " **Freigeben** ", um die verkürzte URL mit dem Microsoft-Support oder Ihren Kollegen zu teilen.
