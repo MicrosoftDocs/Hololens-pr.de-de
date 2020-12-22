@@ -17,16 +17,16 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 55e2b15808e52bb80e8114e215bc0cef52358842
-ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
+ms.openlocfilehash: 7fcd65d5e49fa9cdd771828401749a0a41e50238
+ms.sourcegitcommit: d319ac257b9ace484acf5dcfb16c9d4e19ea50a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11016667"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "11247217"
 ---
 # Intune und Unternehmensportal
 
-Mit der Verwaltung mobiler Geräte (Mobile Device Management, MDM) können Sie Ihre eigenen benutzerdefinierten Apps über [Microsoft Endpoint Manager (InTune)](https://docs.microsoft.com/intune/windows-holographic-for-business) verwenden, um Sie direkt auf Ihren HoloLens-Geräten bereitzustellen. Microsoft InTune ist ein Cloud-basierter Dienst, der sich auf die Verwaltung mobiler Geräte (Mobile Device Management, MDM) und die Verwaltung mobiler Anwendungen (MAM) konzentriert. InTune ist in der Microsoft[Enterprise Mobility + Security (EMS)-Suite](https://www.microsoft.com/microsoft-365/enterprise-mobility-security)enthalten und ermöglicht Benutzern, produktiv zu sein und gleichzeitig ihre Organisationsdaten zu schützen. Wenn Sie mehr über InTune erfahren möchten, lesen Sie [Was ist InTune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune).
+Mit der Verwaltung mobiler Geräte (Mobile Device Management, MDM) können Sie Ihre eigenen benutzerdefinierten Apps über [Microsoft Endpoint Manager (InTune)](https://docs.microsoft.com/intune/windows-holographic-for-business) verwenden, um Sie direkt auf Ihren HoloLens-Geräten bereitzustellen. Microsoft InTune ist ein Cloud-basierter Dienst, der sich auf die Verwaltung mobiler Geräte (Mobile Device Management, MDM) und die Verwaltung mobiler Anwendungen (MAM) konzentriert. InTune ist in der Microsoft [Enterprise Mobility + Security (EMS)-Suite](https://www.microsoft.com/microsoft-365/enterprise-mobility-security)enthalten und ermöglicht Benutzern, produktiv zu sein und gleichzeitig ihre Organisationsdaten zu schützen. Wenn Sie mehr über InTune erfahren möchten, lesen Sie [Was ist InTune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune).
 
 ## Setup
 
