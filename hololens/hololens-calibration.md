@@ -14,12 +14,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d14d33ea01a3fe649f7125e050dd1b0a16426e6c
-ms.sourcegitcommit: 681e8e03e1a0250368f1f50cef6fbc3c99bac3af
+ms.openlocfilehash: 748475cb3e3c51e36904109ecfe03e65bdad6c1e
+ms.sourcegitcommit: 6446a80bece77d67077f36a390f13b8ce59af26e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "11165035"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "11252529"
 ---
 # Verbessern der Grafikqualität und des Komforts
 
@@ -42,7 +42,7 @@ HoloLens 2 fordert einen Benutzer auf, das Gerät unter den folgenden Umständen
 
 ![Kalibrierungsaufforderung zur Anpassung an die Augen.](./images/07-et-adjust-for-your-eyes.png)
 
-Während dieses Vorgangs sehen Sie sich eine Reihe von Zielen (Edelsteinen) an. Es ist in Ordnung, wenn Sie während der Kalibrierung blinzeln oder die Augen schließen. Versuchen Sie sich jedoch auf die Edelsteine zu konzentrieren, und nicht auf andere Gegenstände im Raum.  Auf diese Weise kann HoloLens Ihre Augenposition ermitteln, um Ihre holografische Welt darzustellen.
+Während dieses Vorgangs sehen Sie sich eine Reihe von Zielen (Edelsteinen) an. Es ist in Ordnung, wenn Sie während der Kalibrierung blinzeln oder die Augen schließen. Versuchen Sie sich jedoch auf die Edelsteine zu konzentrieren, und nicht auf andere Gegenstände im Raum.  Durch die Fokussierung auf die Edelsteine kann HoloLens Ihre Augenposition ermitteln, um Ihre holografische Welt darzustellen.
 
 ![Für die Kalibrierung werden Sie aufgefordert, den Kopf ruhig zu halten und den Punkten mit den Augen zu folgen.](./images/07-et-hold-head-still.png)
 
