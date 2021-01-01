@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: b0a068bb50d033544b4bf44100d005dfedc1d94d
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: 24f9fc142581de5017e498b2c4591cdb8f79d533
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11162938"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253152"
 ---
 # Sammeln und nutzen von Diagnoseinformationen von HoloLens-Geräten
 
@@ -34,7 +34,7 @@ HoloLens-Benutzer und-Administratoren können unter vier verschiedenen Methoden 
 - Einstellungs-App
 
 > [!IMPORTANT]  
-> Gerätediagnose Protokolle enthalten personenbezogene Informationen (PII), beispielsweise Informationen darüber, welche Prozesse oder Anwendungen der Benutzer während typischer Vorgänge startet. Wenn mehrere Benutzer ein HoloLens-Gerät verwenden (beispielsweise melden sich Benutzer mit verschiedenen Microsoft Azure Active Directory (AAD)-Konten bei demselben Gerät an), enthalten die Diagnoseprotokolle möglicherweise PII-Informationen, die für mehrere Benutzer gelten. Weitere Informationen finden Sie unter [Microsoft-Datenschutzbestimmungen](https://privacy.microsoft.com/privacystatement).
+> Gerätediagnose Protokolle enthalten personenbezogene Informationen (PII), beispielsweise Informationen darüber, welche Prozesse oder Anwendungen der Benutzer während typischer Vorgänge startet. Wenn mehrere Benutzer ein HoloLens-Gerät verwenden (beispielsweise melden sich Benutzer mit verschiedenen Microsoft Azure Active Directory-Konten (Azure AD) bei demselben Gerät an), enthalten die Diagnoseprotokolle möglicherweise PII-Informationen, die für mehrere Benutzer gelten. Weitere Informationen finden Sie unter [Microsoft-Datenschutzbestimmungen](https://privacy.microsoft.com/privacystatement).
 
 In der folgenden Tabelle werden die drei sammlungsmethoden verglichen. Die Methodennamen verweisen auf ausführlichere Informationen in den Abschnitten, die der Tabelle folgen.
 

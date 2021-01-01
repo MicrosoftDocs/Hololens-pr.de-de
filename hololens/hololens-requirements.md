@@ -11,12 +11,12 @@ audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 11/04/2020
-ms.openlocfilehash: 5f24d62193f083f96144b7e8c3518dc97c14be68
-ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
+ms.openlocfilehash: 082064acd075451e7a8d55352249a0776cd19d76
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11195588"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253212"
 ---
 # HoloLens 2 Enterprise-Bereitstellung und-Verwaltung
 
@@ -140,7 +140,7 @@ Weitere Informationen zum Konfigurieren einer HoloLens 2 im Kioskmodus finden Si
 
 ### MDM-Geräteregistrierung
 
-Bei Unternehmensbereitstellungen empfiehlt es sich, Geräte nur mit Azure AD Join und automatischer MDM-Registrierung (AAD + MDM) als unternehmensgeräte in MDM zu [registrieren](https://docs.microsoft.com/hololens/hololens-enroll-mdm) . Dies erfordert Azure AD Premium und unterstützt die automatische Registrierung für mehrere MDM-Anbieter, einschließlich InTune.
+Bei Unternehmensbereitstellungen empfiehlt es sich, Geräte nur mit Azure AD Join und automatischer MDM-Registrierung (Azure AD + MDM) als unternehmensgeräte in MDM zu [registrieren](https://docs.microsoft.com/hololens/hololens-enroll-mdm) . Dies erfordert Azure AD Premium und unterstützt die automatische Registrierung für mehrere MDM-Anbieter, einschließlich InTune.
 
 Weitere Informationen zur Self-Deploying-Registrierungsmethode [Autopilot](https://docs.microsoft.com/hololens/hololens2-autopilot).
 

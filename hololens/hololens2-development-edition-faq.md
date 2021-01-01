@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7ef5fd06f4d77f541047a934056cffd863962c73
-ms.sourcegitcommit: 307e313f05243b6d94f9bfc0cb4e316a00a8005c
+ms.openlocfilehash: d2f3a58766baf9850f5af38c8e94acc8cb4877d6
+ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "11176867"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "11252786"
 ---
 # FAQ zu HoloLens 2 Development Edition
 
@@ -29,7 +29,7 @@ ms.locfileid: "11176867"
 
 Die HoloLens 2 Development Edition umfasst eine HoloLens 2, $500 in Azure Credits, eine 3-monatige Unity pro-Testversion und eine 3-monatige Pixyz-Plug-in-Testversion.
 
-### Was ist der Unterschied zwischen HoloLens 2 und HoloLens 2 Development Edition? 
+### Was ist der Unterschied zwischen HoloLens 2 und HoloLens 2 Development Edition?
 
 Sie dürfen die HoloLens 2 Development Edition nur zum internen erstellen und Testen von Unternehmensanwendungen verwenden, die in Verbindung mit der HoloLens 2 (Commercial Edition) in einer Produktionsumgebung verwendet werden. Im Rahmen des Kaufs der Development Edition kann Microsoft nach eigenem Ermessen bestimmte Rechte während des Checkout-Vorgangs angeben, wie etwa das Recht, bestimmte Gutschriften oder Test Zugriff auf bestimmte Microsoft-oder Drittanbieterdienste oder-Tools während eines bestimmten Zeitraums einzulösen. [Mehr erfahren](hololens2-options.md?tabs=developeredition#1-learn-about-the-development-edition)
 
@@ -43,13 +43,13 @@ Ihr Rabatt Guthaben oder Test Zugriff wird innerhalb von zwei Werktagen nach Pro
 
 ### Kann ich mein HoloLens 2 (Device Only)-Gerät auf die HoloLens 2 Development Edition "aktualisieren, um die Test Guthaben zu erhalten?
 
-Nein, wir bieten keine Geräte Transfer Pläne an. Es gibt keine Möglichkeit, von einer beliebigen Edition zu einer anderen Edition zu übertragen. 
+Nein, wir bieten keine Geräte Transfer Pläne an. Es gibt keine Möglichkeit, von einer beliebigen Edition zu einer anderen Edition zu übertragen.
 
-### Was ist Einheit pro? 
+### Was ist Einheit pro?
 
 Unity pro ist eine 3D-Echtzeitplattform für kleine und mittelständische Studios/Firmen. Sie ist für Teams mit einer Kombination aus technischen und nicht technischen Fähigkeiten konzipiert. [Mehr erfahren](https://store.unity.com/products/unity-pro)
 
-### Was ist Pixyz Plugin? 
+### Was ist Pixyz Plugin?
 
 Das Pixyz-Plug-in liest und wandelt nahezu jedes Format um, optimiert und versetzt es in Einheit und inszeniert es, um Soforteinsatz bereite Ressourcen für Echtzeitanwendungen bereitzustellen. [Mehr erfahren](https://unity.com/products/pixyz)
 
@@ -59,7 +59,7 @@ Die Finanzierung von HoloLens 2 Development Edition wird Anfang 2021 zur Verfüg
 
 ### An wen kann ich mich mit Fragen zu meinen HoloLens 2 Development Edition-Berechtigungen wenden?
 
-Wenden Sie sich bei Fragen im Zusammenhang mit Ansprüchen bitte an Ihren Vertriebsspezialisten unter 866-425-4709, Mo-Fr, 6.00 bis 18.00 Uhr, PST.
+Wenden Sie sich bei Fragen im Zusammenhang mit Ansprüchen an Ihren Vertriebsspezialisten unter 866-425-4709, Mo-Fr, 6.00 bis 18.00 Uhr, PST.
 
 ### Kann mein Unternehmen mehrere HoloLens 2 Development Edition-Geräte kaufen? 
 
@@ -117,7 +117,7 @@ Support [finden Sie hier.](https://support.serviceshub.microsoft.com/supportforb
 
 ### Was ist in meiner Einheits Testversion enthalten?
 
-Eine 3-Kalendermonat Unity pro-Testversion ermöglicht den Zugriff auf die Komplettlösung von Unity&#39;s für professionelle Anwender, um Sie zu erstellen, zu betreiben und zu monetarisieren. Das Testabonnement für die zugehörige Einheit pro hat keine Frist zum einlösen.
+Eine drei-Kalendermonat Unity pro-Testversion ermöglicht den Zugriff auf die vollständige Lösung von Unity&#39;s für professionelle Anwender zum Erstellen, arbeiten und monetarisieren. Das Testabonnement für die zugehörige Einheit pro hat keine Frist zum einlösen.
 
 Dieses Angebot gilt für neue Nutzer und gilt nicht für festgelegte Unity pro-Abonnements. Unity pro Trial unterliegt eventuell zusätzlichen Bedingungen, die bei der Einlösung zur Verfügung gestellt werden. Überprüfen [Sie &amp; die anwendbaren Bedingungen und](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) [Datenschutzrichtlinien](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0).
 
@@ -127,8 +127,8 @@ Wegbeschreibung zum Einlösen
 
 1. Besuchen Sie ID.Unity.com
 2. Anmelden mit ihrer Einheits-ID oder Erstellen eines Kontos
-3. Klicken Sie auf &#39;Produktcode einlösen&#39;
-4. Geben Sie den Produktcode ein, und klicken Sie auf &#39;Produktcode einlösen&#39;
+3. Wählen Sie &#39;Produktcode einlösen aus&#39;
+4. Geben Sie den Produktcode ein, und wählen Sie &#39;Einlösen eines Produktcodes aus&#39;
 
 [Weitere Informationen](https://docs.microsoft.com/hololens/hololens2-options?tabs=device) finden Sie in der Dokumentation zur HoloLens 2-Entwicklungsversion.
 
@@ -138,13 +138,13 @@ Ja, Sie können Anwendungen mit allen kompatiblen Versionen von Unity erstellen.
 
 ### Wie kontaktiere ich den Unity-Support?
 
-Wenn Sie Hilfe bei Fragen zu ihrer Einheits-ID, Ihrem Konto, Ihrer Organisation (en) und Ihrem Abonnement erhalten möchten, besuchen Sie bitte support.Unity3D.com.
+Wenn Sie Hilfe bei Fragen zu ihrer Einheits-ID, Ihrem Konto, Ihrer Organisation (en) und Ihrem Abonnement (en) erhalten möchten, besuchen Sie Support.Unity3D.com.
 
 ## Pixyz
 
 ### Was ist in meiner Pixyz-Plug-in-Testversion enthalten?
 
-Eine 3-Monats-Pixyz-Plug-in-Testversion, die den Zugriff auf Pixyz ermöglicht, um Ready-to-use-Ressourcen mit perfekten tesselierte-Meshes, begrenzter Polygonanzahl und automatischer UV-Funktion zu erstellen. Die zugehörige Pixyz-Plug-in-Testphase hat keine Frist zum einlösen.
+Eine dreimonatige Pixyz-Plug-in-Testversion, die den Zugriff auf Pixyz ermöglicht, um Ready-to-use-Ressourcen mit perfekten tesselierte-Meshes, begrenzter Polygonanzahl und automatischer UV-Funktion zu erstellen. Die zugehörige Pixyz-Plug-in-Testphase hat keine Frist zum einlösen.
 
 Dieses Angebot richtet sich an neue Benutzer und wird nicht auf festgelegte Pixyz-Abonnements gestapelt. Das Pixyz-Plugin unterliegt möglicherweise zusätzlichen Bedingungen, die bei der Einlösung vorgenommen werden. Überprüfen [Sie &amp; die anwendbaren Bedingungen und](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) [Datenschutzrichtlinien](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0).
 

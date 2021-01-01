@@ -14,12 +14,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 5adc1b48c4603f3a9d3145bef4f1d8aa1867a9d1
-ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
+ms.openlocfilehash: 7c17cbf88fc2e7a6dcd9aa600ad6e6910edb29a8
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "11102324"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253232"
 ---
 # Registrieren von HoloLens in MDM
 
@@ -36,9 +36,9 @@ Sie können mehrere Microsoft HoloLens-Geräte gleichzeitig mit Lösungen wie [M
 
 Je nach dem Typ der Identität, die während der OOBE oder der Post Anmeldung ausgewählt wurde, gibt es verschiedene Methoden für die Registrierung. Wenn Sie mehr über die einzelnen Identitätstypen auf HoloLens erfahren möchten, besuchen Sie bitte [Diese Seite](hololens-identity.md).
 
-- Wenn Identity Aad ist, wählen Sie entweder während der OOBE-oder **Einstellungen-App**  ->  **Access work oder School**  ->  **Connect** .
-    - Bei Aad erfolgt die automatische MDM-Registrierung nur, wenn Aad mit Registrierungs-URLs konfiguriert wurde.
-- Wenn Identity Aad ist und Device für den InTune-MDM-Server mit einem bestimmten Konfigurationsprofil bereits registriert wurde, werden Aad-Join und die Registrierung automatisch während OOBE ausgeführt.
+- Wenn Identity Azure AD ist, klicken Sie entweder während der OOBE-oder **Einstellungen-App**  ->  **auf**die  ->  Schaltfläche "Arbeit" oder "Schule**verbinden** ".
+    - Bei Azure AD erfolgt die automatische MDM-Registrierung nur, wenn Azure AD mit Registrierungs-URLs konfiguriert wurde.
+- Wenn Identity Azure AD ist und Device bereits mit dem InTune-MDM-Server registriert wurde, dem ein bestimmtes Konfigurationsprofil zugewiesen ist, werden Azure AD-Join und die Registrierung automatisch während OOBE ausgeführt.
     - Auch als [Autopilot-Flow](hololens2-autopilot.md) verfügbar, der in [19041.1103 +-Builds](hololens-release-notes.md#windows-holographic-version-2004)verfügbar ist.
 - Wenn Identity MSA ist, verwenden Sie die **Einstellungen App**  ->  **Access work oder School**  ->  **Connect** .
     - Wird auch als Add work Account (AWA)-Flow bezeichnet.
@@ -49,11 +49,11 @@ Nachdem das Gerät für Ihren MDM-Server registriert wurde, wird in der Einstell
 
 ## Automatische Registrierung in MDM
 
-Wenn Ihre Organisation Azure Active Directory (Azure AD) und eine MDM-Lösung verwendet, die ein AAD-Token für die Authentifizierung akzeptiert (zurzeit nur in Microsoft Intune und AirWatch unterstützt), kann der IT-Administrator Azure AD so konfigurieren, dass die MDM-Registrierung automatisch zugelassen wird, wenn der Benutzer sich mit seinem Azure AD-Konto angemeldet hat. [Erfahren Sie, wie Sie die Azure AD-Registrierung konfigurieren.](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
+Wenn Ihre Organisation Azure Active Directory (Azure AD) und eine MDM-Lösung verwendet, die ein Azure AD-Token für die Authentifizierung akzeptiert (derzeit nur in Microsoft InTune und "flugwatch" unterstützt), kann Ihr IT-Administrator Azure AD so konfigurieren, dass die MDM-Registrierung automatisch zugelassen wird, nachdem sich der Benutzer mit seinem Azure AD-Konto angemeldet hat. [Erfahren Sie, wie Sie die Azure AD-Registrierung konfigurieren.](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
 
 Wenn die automatische Registrierung aktiviert ist, ist keine zusätzliche manuelle Registrierung erforderlich. Wenn der Benutzer sich mit einem Azure AD-Konto anmeldet, wird das Gerät nach der ersten Ausführung in MDM registriert.
 
-Wenn ein Gerät Aad beigetreten ist, kann dies Auswirkungen auf die Person haben, die den [Gerätebesitzer](security-adminless-os.md#device-owner)berücksichtigt hat.
+Wenn ein Gerät Azure AD beigetreten ist, kann dies Auswirkungen auf die Person haben, die den [Gerätebesitzer](security-adminless-os.md#device-owner)berücksichtigt hat.
 
 ## Abmelden von HoloLens aus InTune
 

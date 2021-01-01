@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f560dae725cbce8658bdf2a135c5061b5332f797
-ms.sourcegitcommit: 456a88907d606f4c4532b153d5a848e214b6b8e1
+ms.openlocfilehash: 777c90c4be397e176281ee72cb684a561ba78cfa
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "11182006"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253032"
 ---
 # Einrichten von HoloLens als Kiosk
 
@@ -82,8 +82,8 @@ In der folgenden Tabelle sind die Benutzer Unterstützungsfunktionen der verschi
 
 | &nbsp; |Unterstützte Benutzertypen | Automatische Anmeldung | Mehrere Zugriffsebenen |
 | --- | --- | --- | --- |
-|Single-App-Kiosk |Verwaltetes Dienstkonto (MSA) in Azure Active Directory (AAD) oder lokales Konto |Ja |Nein |
-|Multi-App-Kiosk |Aad-Konto |Nein |Ja |
+|Single-App-Kiosk |Verwaltetes Dienstkonto (MSA) in Azure Active Directory (Azure AD) oder lokales Konto |Ja |Nein |
+|Multi-App-Kiosk |Azure AD-Konto |Nein |Ja |
 
 Beispiele für die Verwendung dieser Funktionen finden Sie in der folgenden Tabelle.
 
@@ -143,7 +143,7 @@ Wenn Sie entweder die XML-Datei erstellen oder die Benutzeroberfläche von InTun
 In der Regel sind Kioske entweder für einen Benutzer oder eine Benutzergruppe aktiviert. Wenn Sie jedoch beabsichtigen, ihren eigenen XML-Kiosk zu schreiben, sollten Sie möglicherweise den Global zugewiesenen Zugriff in Frage stellen, in dem der Kiosk unabhängig von der Identität auf Geräteebene angewendet wird. Wenn Ihnen dies gefällt, [Lesen Sie mehr über global zugewiesene Access-Kioske.](hololens-global-assigned-access-kiosk.md)
 
 #### Wenn Sie eine XML-Datei erstellen:
--   Sie erstellen viele verschiedene Kiosk-Profile und weisen diese einzelnen Benutzern/Gruppen zu. Wie einen Kiosk für Ihre Aad-Gruppe, der viele apps enthält, und einen Besucher, der über einen mehr-App-Kiosk mit einer einmaligen App verfügt.
+-   Sie erstellen viele verschiedene Kiosk-Profile und weisen diese einzelnen Benutzern/Gruppen zu. Beispielsweise ein Kiosk für Ihre Azure Ad-Gruppe mit vielen apps und ein Besucher, der über einen mehr-App-Kiosk mit einer einmaligen App verfügt.
 -   Ihre Kiosk-Konfiguration wird als **Profil-ID** bezeichnet und besitzt eine GUID.
 -   Sie weisen dieses Profil im Abschnitt configs zu, indem Sie den Benutzertyp angeben und die gleiche GUID für die **DefaultProfile-ID**verwenden.
 - Eine XML-Datei kann erstellt, aber weiterhin auf ein Gerät über MDM angewendet werden, indem ein benutzerdefiniertes Oma-URI-Geräte Konfigurationsprofil erstellt und auf die HoloLens-Gerätegruppe mit dem URI-Wert angewendet wird:./Device/Vendor/MSFT/AssignedAccess/Configuration
@@ -151,7 +151,7 @@ In der Regel sind Kioske entweder für einen Benutzer oder eine Benutzergruppe a
 #### Wenn Sie einen Kiosk in InTune erstellen.
 -   Jedes Gerät erhält möglicherweise nur ein einzelnes Kiosk-Profil, da es sonst zu einem Konflikt führt und überhaupt keine Kiosk-Konfigurationen mehr erhält. 
     -   Andere Arten von Profilen und Richtlinien, wie Geräteeinschränkungen, die nicht mit dem Kiosk-Konfigurationsprofil verknüpft sind, haben keinen Konflikt mit dem Kiosk-Konfigurationsprofil.
--   Der Kiosk wird für alle Benutzer aktiviert, die Teil des Benutzeranmelde Typs sind, der für einen Benutzer oder eine Aad-Gruppe eingerichtet wird. 
+-   Der Kiosk wird für alle Benutzer aktiviert, die Teil des Benutzeranmelde Typs sind, der für einen Benutzer oder eine Azure Ad-Gruppe eingerichtet wird. 
 -   Nachdem die Kiosk Konfiguration eingestellt wurde und der **Benutzer Anmeldetyp** (Benutzer, die sich beim Kiosk anmelden können) und die apps ausgewählt sind, muss die Gerätekonfiguration weiterhin einer Gruppe zugewiesen werden. Die zugewiesene Gruppe (n) bestimmt, welche Geräte die Konfiguration des Kiosk Geräts empfangen, interagiert jedoch nicht mit, wenn der Kiosk aktiviert ist oder nicht. 
     - Eine vollständige Erläuterung der Auswirkungen der Zuweisung von Konfigurationsprofilen in InTune finden Sie unter [Zuweisen von Benutzer-und Geräteprofilen in Microsoft InTune](https://docs.microsoft.com/intune/configuration/device-profile-assign).
 
@@ -176,7 +176,7 @@ In der folgenden Tabelle sind die Funktionen und Vorteile der einzelnen Bereitst
 |Bereitstellen von Multi-App-Kiosken    | Nein            | Ja                  | Ja  |
 |Nur auf lokalen Geräten bereitstellen | Ja           | Ja                  | Nein   |
 |Bereitstellen mithilfe des Entwicklermodus |Erforderlich       | Nicht erforderlich            | Nicht erforderlich   |
-|Bereitstellen mithilfe von Azure Active Directory (AAD)  | Nicht erforderlich            | Nicht erforderlich                   | Erforderlich  |
+|Bereitstellen mithilfe von Azure Active Directory (Azure AD)  | Nicht erforderlich            | Nicht erforderlich                   | Erforderlich  |
 |Automatisches Bereitstellen      | Nein            | Nein                   | Ja  |
 |Bereitstellungsgeschwindigkeit            | Fast       | Fast                 | Verzögerte Anzeige |
 |Bereitstellen im Maßstab | Nicht empfohlen    | Empfohlen        | Empfohlen |
@@ -207,7 +207,7 @@ Weitere Informationen zum Registrieren der Geräte finden Sie unter Registrieren
 1. Wählen Sie **Microsoft InTune**  >  **Device Configuration (Profile**  >  **Create profile**) aus.
 1. Geben Sie einen Profilnamen ein.
 1. Wählen Sie **Platform**  >  **Windows 10 und höher**aus, und wählen Sie dann **Profiltyp**-  > **Geräteeinschränkungen**aus.
-1. Wählen **Configure**Sie  >  **Kiosk**konfigurieren aus, und wählen Sie dann eine der folgenden Optionen aus:
+1. Wählen **** Sie  >  **Kiosk**konfigurieren aus, und wählen Sie dann eine der folgenden Optionen aus:
    - Zum Erstellen eines Single-App-Kiosks wählen Sie **Kioskmodus**  >  **Single-App Kiosk**aus.
    - Zum Erstellen eines Multi-App-Kiosks wählen Sie **Kioskmodus**  >  **-Multi-App-Kiosk**aus.
 1. Um mit der Konfiguration des Kiosks zu beginnen, wählen Sie **Hinzufügen**aus.
@@ -230,7 +230,7 @@ In diesem Abschnitt werden die Einstellungen zusammengefasst, die für einen ein
 1. Wählen Sie **Benutzer Anmeldetyp**  >  **Lokales Benutzerkonto**aus, und geben Sie dann den Benutzernamen des lokalen (Geräte-) Kontos oder des Microsoft-Kontos (MSA) ein, das sich beim Kiosk anmelden kann.
    > [!NOTE]  
    > Die Typen von **Autologon** -Benutzerkonten werden in Windows holographisch für Unternehmen nicht unterstützt.
-1. Wählen **Application type**Sie  >  **App**-Typ Store-App aus, und wählen Sie dann in der Liste eine APP aus.
+1. Wählen **** Sie  >  **App**-Typ Store-App aus, und wählen Sie dann in der Liste eine APP aus.
 
 Der nächste Schritt besteht darin, das Profil einer Gruppe [zuzuweisen](#mdmassign) .
 
@@ -390,12 +390,12 @@ Speichern Sie das folgende Beispiel als XML-Datei. Sie können diese Datei verwe
 
    ![Screenshot des Felds MultiAppAssignedAccessSettings im Windows-Konfigurations-Designer](./images/multiappassignedaccesssettings.png)
 
-1. **Optional**. (Wenn Sie das Bereitstellungspaket nach der ersten Einrichtung des Geräts anwenden möchten und ein Administrator Benutzer bereits auf dem Kiosk Gerät verfügbar ist, überspringen Sie diesen Schritt.) Wählen Sie Benutzer der **Laufzeiteinstellungen** - &gt; **Konten** aus &gt; **Users**, und erstellen Sie dann ein Benutzerkonto. Geben Sie einen Benutzernamen und ein Kennwort ein, und wählen Sie dann **Benutzer**  >  **Gruppe-Administratoren**aus.  
+1. **Optional**. (Wenn Sie das Bereitstellungspaket nach der ersten Einrichtung des Geräts anwenden möchten und ein Administrator Benutzer bereits auf dem Kiosk Gerät verfügbar ist, überspringen Sie diesen Schritt.) Wählen Sie Benutzer der **Laufzeiteinstellungen** - &gt; **Konten** aus &gt; ****, und erstellen Sie dann ein Benutzerkonto. Geben Sie einen Benutzernamen und ein Kennwort ein, und wählen Sie dann **Benutzer**  >  **Gruppe-Administratoren**aus.  
   
      Mithilfe dieses Kontos können Sie den Bereitstellungsstatus und die Protokolle anzeigen.  
-1. **Optional**. (Wenn Sie bereits über ein Konto ohne Administratorrechte auf dem Kiosk Gerät verfügen, überspringen Sie diesen Schritt.) Wählen Sie Benutzer der **Laufzeiteinstellungen** - &gt; **Konten** aus &gt; **Users**, und erstellen Sie dann ein lokales Benutzerkonto. Stellen Sie sicher, dass der Benutzername mit dem Konto identisch ist, das Sie im Konfigurations-XML angeben. Wählen Sie **Benutzer**  >  **gruppenstandard-Benutzer**aus.
+1. **Optional**. (Wenn Sie bereits über ein Konto ohne Administratorrechte auf dem Kiosk Gerät verfügen, überspringen Sie diesen Schritt.) Wählen Sie Benutzer der **Laufzeiteinstellungen** - &gt; **Konten** aus &gt; ****, und erstellen Sie dann ein lokales Benutzerkonto. Stellen Sie sicher, dass der Benutzername mit dem Konto identisch ist, das Sie im Konfigurations-XML angeben. Wählen Sie **Benutzer**  >  **gruppenstandard-Benutzer**aus.
 1. Wählen Sie **Datei**  >  **Speichern**aus.
-1. Wählen **Export**Sie  >  **Bereitstellungspaket**exportieren aus, und wählen Sie dann **Besitzer**  >  **IT-Administrator**aus. Dadurch wird die Rangfolge dieses Bereitstellungspakets höher als Bereitstellungspakete festgelegt, die auf dieses Gerät aus anderen Quellen angewendet werden.
+1. Wählen **** Sie  >  **Bereitstellungspaket**exportieren aus, und wählen Sie dann **Besitzer**  >  **IT-Administrator**aus. Dadurch wird die Rangfolge dieses Bereitstellungspakets höher als Bereitstellungspakete festgelegt, die auf dieses Gerät aus anderen Quellen angewendet werden.
 1. Wählen Sie **Weiter** aus.
 1. Wählen Sie auf der Seite **Bereitstellungspaket Sicherheit** eine Sicherheitsoption aus.
    > [!IMPORTANT]  
@@ -475,10 +475,10 @@ Zu einem früheren Zeitpunkt, zu dem Fehler bei der Anwendung des Kioskmodus auf
 
 ![Abbildung dessen, was der Kiosk Modus jetzt sieht, wenn er fehlschlägt.](images/hololens-kiosk-failure-behavior.png )
 
-### Cache-Aad-Gruppenmitgliedschaft für Offline-Kiosk
-- Ermöglicht das Verwenden von Offline-Kiosken für Aad-Gruppen für bis zu 60 Tage.
+### Cache Azure AD-Gruppenmitgliedschaft für Offline-Kiosk
+- Offline-Kiosks können mit Azure AD Groups für bis zu 60 Tage verwendet werden.
 
-Diese Richtlinie steuert, wie viele Tage der Aad-Gruppen Mitgliedschafts Cache für zugewiesene Zugriffs Konfigurationen verwendet werden kann, die für Aad-Gruppen für signierten Benutzer vorgesehen sind. Sobald dieser Richtlinienwert auf den Wert größer als 0 gesetzt ist, wird der Cache andernfalls verwendet.  
+Diese Richtlinie steuert, wie viele Tage der Azure Ad Group-Mitgliedschafts Cache für zugewiesene Zugriffs Konfigurationen verwendet werden kann, die auf Azure AD Groups für Benutzer mit Anmeldung ausgerichtet sind. Sobald dieser Richtlinienwert auf den Wert größer als 0 gesetzt ist, wird der Cache andernfalls verwendet.  
 
 Name: AADGroupMembershipCacheValidityInDays URI-Wert:./Vendor/MSFT/Policy/config/MixedReality/AADGroupMembershipCacheValidityInDays
 
@@ -486,30 +486,30 @@ Min-0 Tage
 Max-60 Tage 
 
 Schritte zur korrekten Verwendung dieser Richtlinie: 
-1. Erstellen Sie ein Device-Konfigurationsprofil für Kiosk-Targeting-Aad-Gruppen, und weisen Sie es HoloLens-Geräten zu. 
+1. Erstellen Sie ein Geräte Konfigurationsprofil für Kiosk, das auf Azure AD Groups ausgerichtet ist, und weisen Sie es HoloLens-Geräten zu. 
 1. Erstellen Sie eine benutzerdefinierte Oma-URI-basierte Gerätekonfiguration, die diesen Richtlinienwert auf die gewünschte Anzahl von Tagen (> 0) festlegt und HoloLens-Device (s) zuweist. 
     1. Der URI-Wert sollte in Oma-URI-Textfeld als./Vendor/MSFT/Policy/config/MixedReality/AADGroupMembershipCacheValidityInDays eingegeben werden.
     1. Der Wert kann zwischen min/max zulässig sein.
 1. Registrieren Sie HoloLens-Geräte, und überprüfen Sie, ob beide Konfigurationen auf das Gerät angewendet werden. 
-1. Lassen Sie Aad Benutzer 1 anmelden, wenn Internet verfügbar ist, sobald die Benutzeranmeldung und die Aad-Gruppenmitgliedschaft erfolgreich bestätigt wurde, wird der Cache erstellt. 
-1. Jetzt kann Aad User 1 HoloLens offline schalten und für den Kioskmodus verwenden, solange der Richtlinienwert X Anzahl von Tagen zulässt. 
-1. Die Schritte 4 und 5 können für jeden anderen Aad-Benutzer N. entscheidend ist hier, dass sich jeder Aad-Benutzer bei einem Gerät mit Internet anmelden muss, damit mindestens einmal festgestellt werden kann, dass Sie Mitglied der Aad-Gruppe sind, auf die die Kiosk Konfiguration ausgerichtet ist. 
+1. Lassen Sie Azure AD User 1 anmelden, wenn Internet verfügbar ist, sobald die Benutzeranmeldung und die Azure AD-Gruppenmitgliedschaft erfolgreich bestätigt wurde, wird der Cache erstellt. 
+1. Azure AD-Benutzer 1 kann HoloLens offline schalten und für den Kioskmodus verwenden, sofern der Richtlinienwert die X-Anzahl von Tagen zulässt. 
+1. Die Schritte 4 und 5 können für jeden anderen Azure AD-Benutzer N. wichtiger Punkt hier ist, dass jeder Azure AD-Benutzer sich bei einem Gerät mit Internet anmelden muss, damit mindestens einmal festgestellt werden kann, dass Sie Mitglied der Azure Ad-Gruppe sind, auf die die Kiosk Konfiguration ausgerichtet ist. 
  
 > [!NOTE]
-> Bis zum Ausführen von Schritt 4 für einen Aad-Benutzer tritt ein Fehler Verhalten auf, das in "getrennte" Umgebungen erwähnt wird. 
+> Bis Schritt 4 für einen Azure AD-Benutzer ausgeführt wird, tritt das in "getrennte" Umgebungen erwähnte Fehler Verhalten auf. 
 
 
 ## XML-Kiosk Code Beispiele für HoloLens
 
-### Mehrere App-Kioskmodus, der auf eine Aad-Gruppe ausgerichtet ist. 
-Dieser Kiosk stellt einen Kiosk bereit, der für Benutzer in der Aad-Gruppe einen Kiosk aktiviert hat, der die drei apps: Einstellungen, Remote Unterstützung und Feedback-Hub umfasst. Um dieses Beispiel für die sofortige Verwendung zu ändern, stellen Sie sicher, dass Sie die unten hervorgehobene GUID so ändern, dass Sie einer eigenen Aad-Gruppe entspricht. 
+### Mehrere App-Kioskmodus, der auf eine Azure Ad-Gruppe ausgerichtet ist. 
+Dieser Kiosk stellt einen Kiosk bereit, der für Benutzer in der Azure Ad-Gruppe einen Kiosk aktiviert hat, der die drei apps: Einstellungen, Remote Unterstützung und Feedback-Hub umfasst. Um dieses Beispiel für die sofortige Verwendung zu ändern, stellen Sie sicher, dass Sie die unten hervorgehobene GUID so ändern, dass Sie einer eigenen Azure Ad-Gruppe entspricht. 
 
 
 :::code language="xml" source="samples/kiosk-sample-multi-aad-group.xml" highlight="20":::
 
 
-### Mehrere App-Kioskmodus, der auf das Aad-Konto ausgerichtet ist.
-Dieser Kiosk stellt einen Kiosk für einen einzelnen Benutzer bereit, auf dem ein Kiosk aktiviert ist, der die drei apps: Einstellungen, Remote Unterstützung und Feedback-Hub umfasst. Um dieses Beispiel für die sofortige Verwendung zu ändern, stellen Sie sicher, dass Sie das unten hervorgehobene Konto so ändern, dass es einem eigenen Aad-Konto entspricht. 
+### Mehrere App-Kioskmodus, der auf Azure AD-Konto ausgerichtet ist.
+Dieser Kiosk stellt einen Kiosk für einen einzelnen Benutzer bereit, auf dem ein Kiosk aktiviert ist, der die drei apps: Einstellungen, Remote Unterstützung und Feedback-Hub umfasst. Um dieses Beispiel für die sofortige Verwendung zu ändern, stellen Sie sicher, dass Sie das unten hervorgehobene Konto ändern, damit es mit einem eigenen Azure AD-Konto übereinstimmt. 
 
 
 :::code language="xml" source="samples/kiosk-sample-multi-aad-account.xml" highlight="20":::

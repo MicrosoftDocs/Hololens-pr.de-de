@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: beee64159415c0635812463f81c0b5565e44e4a8
-ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
+ms.openlocfilehash: 8117c73516d2775ec67f37bad524bcf377ece2e5
+ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11196308"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "11252696"
 ---
 # Verwalten-Cloud Connected-Leitfaden
 
@@ -33,7 +33,7 @@ Bei der Remote Unterstützung handelt es sich um eine In-Box-APP, die über die 
 
 ## Supportplan
 
-Ein Support Plan eignet sich hervorragend für den richtigen Ort. Wenn Sie eine Person oder eine Gruppe haben, die bei der Problembehandlung des Registrierungsvorgangs auf HoloLens-Geräten geschult wurde, und auch die allgemeine Verwendung des HoloLens-Geräts in Ihrer Organisation ist hilfreich. Damit Ihre Benutzer eine schnellere Lösung für Ihre Probleme erhalten, empfehlen wir, dass Ihr Eskalationsprozess auf ähnliche Weise wie folgt gehandhabt wird:
+Ein Support Plan eignet sich hervorragend für den richtigen Ort. Wenn Sie eine Person oder eine Gruppe haben, die bei der Problembehandlung des Registrierungsvorgangs auf HoloLens-Geräten geschult wurde, und auch die allgemeine Verwendung des HoloLens-Geräts in Ihrer Organisation ist hilfreich. Damit Ihre Benutzer eine schnellere Lösung ihrer Probleme erhalten können, empfehlen wir, dass Ihr Eskalationsprozess auf ähnliche Weise wie in dieser Reihenfolge gehandhabt wird:
 
 1. Ihr Support-Desk.
 2. Ihr HoloLens-Expertenteam
@@ -52,7 +52,7 @@ Wenn Sie noch keine eigene Lob-app erstellen oder sich noch im Prozess der Erste
 
 Während dieses Leitfadens zum Einrichten der Verwaltung mobiler Geräte (MDM) gesprochen wurde, wurde es nicht verwendet, um Geräteeinschränkungen anzuwenden oder Richtlinien auf Geräte anzuwenden. Die Geräteverwaltung kann sowohl dazu verwendet werden, um den Zugriff zu ermöglichen, indem Sie Zertifikate drücken, als auch den Zugriff mit einer Reihe von Geräteeinschränkungen einschränken. 
 
-In vielen Fällen können Geräte Verbindungseinschränkungen wie Bluetooth, VPN, USB oder sogar das Ausschalten des Zugriffs auf die Kamera oder das Mikrofon aufweisen. Wenn Sie von Interesse sind, empfehlen wir Ihnen, unsere Seite mit den [allgemeinen Geräteeinschränkungen](hololens-common-device-restrictions.md)zu lesen.
+In vielen Fällen können Geräte Verbindungseinschränkungen wie Bluetooth, VPN, USB oder sogar das Ausschalten des Zugriffs auf die Kamera oder das Mikrofon aufweisen. Wenn Ihnen eine dieser Interessen zusteht, empfehlen wir Ihnen, unsere [Seite mit den allgemeinen Geräteeinschränkungen](hololens-common-device-restrictions.md)zu lesen.
 
 Es gibt weitere komplexere Geräteeinschränkungen, die Sie verwenden können. Wie:
 

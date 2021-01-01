@@ -12,12 +12,12 @@ ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b12079142049cce28ec00803ad0a1f8dc92333e1
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: d337f9856eaeac433524d7bb8b60e9a24e264b80
+ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11163119"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "11252646"
 ---
 # Windows Defender Application Control – WDAC
 
@@ -38,7 +38,7 @@ $package1 = Get-AppxPackage -name *<applicationname>*
 
 Wenn Sie den vollständigen Namen des Pakets nicht kennen, müssen Sie möglicherweise ein paar Mal "Get-AppxPackage-Name \ * YourBestGuess \ *" ausführen, um es zu finden. Nachdem Sie den Namen ausgeführt haben, führen Sie "$Package 1 = Get-AppxPackage-Name ist. Paketname" aus.
 
-Wenn Sie beispielsweise Folgendes für Edge ausführen, wird mehr als ein Ergebnis zurückgegeben, doch aus dieser Liste können Sie erkennen, dass der vollständige Name Microsoft. MicrosoftEdge ist. 
+Wenn Sie beispielsweise Folgendes für Microsoft Edge ausführen, wird mehr als ein Ergebnis zurückgegeben, doch aus dieser Liste können Sie erkennen, dass der vollständige Name Microsoft. MicrosoftEdge ist.
 
 ```powershell
 Get-AppxPackage -name *edge*
@@ -46,7 +46,7 @@ Get-AppxPackage -name *edge*
 
 ## Paket Familiennamen für apps auf HoloLens
 
-Im obigen Leitfaden können Sie newPolicy.xml manuell bearbeiten und Regeln für Anwendungen hinzufügen, die nur auf HoloLens mit ihren Paket Familiennamen installiert sind. Manchmal gibt es apps, die Sie verwenden können, die nicht auf dem Desktop-PC vorhanden sind, den Sie der Richtlinie hinzufügen möchten. 
+Im obigen Leitfaden können Sie newPolicy.xml manuell bearbeiten und Regeln für Anwendungen hinzufügen, die nur auf HoloLens mit ihren Paket Familiennamen installiert sind. Manchmal gibt es apps, die Sie verwenden können, die nicht auf dem Desktop-PC vorhanden sind, den Sie der Richtlinie hinzufügen möchten.
 
 Nachfolgend finden Sie eine Liste der häufig verwendeten und In-Box-Apps für HoloLens 2-Geräte.
 
@@ -73,7 +73,7 @@ Nachfolgend finden Sie eine Liste der häufig verwendeten und In-Box-Apps für H
 
 ### So suchen Sie nach einem Paket Familiennamen
 
-Wenn eine APP nicht in dieser Liste enthalten ist, kann ein Benutzer Device Portal verwenden, das mit einem HoloLens 2 verbunden ist, das die APP, die blockiert werden soll, installiert hat, um die PackageRelativeID zu ermitteln, und dann den PackageFamilyName.
+Wenn eine APP nicht in dieser Liste enthalten ist, kann ein Benutzer das Geräte Portal verwenden, das mit einem HoloLens 2 verbunden ist, das die APP, die blockiert werden soll, installiert hat, um die PackageRelativeID zu ermitteln, und dann den PackageFamilyName.
 
 1. Installieren Sie die APP auf Ihrem HoloLens 2-Gerät. 
 1. Öffnen Sie Einstellungen – > Updates & Security-> für Entwickler, und aktivieren Sie den **Entwicklermodus** und dann **Device Portal**. 
@@ -81,6 +81,6 @@ Wenn eine APP nicht in dieser Liste enthalten ist, kann ein Benutzer Device Port
 1. Wenn Device Portal verbunden ist, navigieren Sie zu **Ansichten** und dann zu **apps**. 
 1. Verwenden Sie im Bereich installierte Apps die Dropdownliste, um die installierte App auszuwählen. 
 1. Suchen Sie nach dem PackageRelativeID. 
-1. Kopieren Sie App-Zeichen vor dem!, dies ist Ihr PackageFamilyName.
+1. Kopieren Sie App-Zeichen vor dem!, diese Zeichen sind Ihre PackageFamilyName.
 
 

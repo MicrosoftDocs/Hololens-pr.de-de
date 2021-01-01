@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 43b9db96a2c29d1e3a798d0c695ab6edaa8199ac
-ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
+ms.openlocfilehash: 042a29fe436b21ca37a2fcd7921fc53d6a9686d5
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11196309"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253042"
 ---
 # Konfigurieren-Cloud Connected-Leitfaden
 
@@ -27,22 +27,22 @@ In diesem Abschnitt des Leitfadens&#39;wir, wie Sie die automatische Registrieru
 
 ## Azure-Benutzer und-Gruppen
 
-Azure und InTune von dieser Erweiterung verwenden Benutzer und Gruppen, um die Zuweisung von Konfigurationen und Lizenzen zu unterstützen. Um diesen Bereitstellungs Fluss zu überprüfen und einen Remote Unterstützungs Anruf von einem Benutzer zu einem anderen durchführen zu können, benötigen Sie&#39;2 Benutzerkonten.
+Azure und InTune von dieser Erweiterung verwenden Benutzer und Gruppen, um die Zuweisung von Konfigurationen und Lizenzen zu unterstützen. Um diesen Bereitstellungs Fluss zu überprüfen und einen Remote Unterstützungs Anruf von einem Benutzer zu einem anderen durchführen zu können, benötigen Sie&#39;zwei Benutzerkonten.
 
 Wir können eine einzelne Benutzergruppe zum Zweck der Zuweisung von Lizenzen erstellen. Wir können beiden Benutzern dieselbe Gruppe hinzufügen und eine Lizenz für InTune und Remote Unterstützung für diese Gruppe anwenden.
 
-Wenn Sie Don&#39;t bereits Zugriff auf zwei Aad-Konten in einer Benutzergruppe haben, die Sie verwenden können; Im folgenden finden Sie die Schnellstart Handbücher für:
+Wenn Sie Don&#39;t bereits Zugriff auf zwei Azure Ad-Konten in einer Benutzergruppe haben, die Sie verwenden können, Im folgenden finden Sie die Schnellstart Handbücher für:
 
 - [Erstellen eines Benutzers](https://docs.microsoft.com/mem/intune/fundamentals/quickstart-create-user)
 - [Erstellen einer Gruppe](https://docs.microsoft.com/mem/intune/fundamentals/quickstart-create-group)
 - [Hinzufügen von Benutzern zu einer Gruppe](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal) – Hinzufügen von erstellten Benutzern zum Erstellen einer Gruppe
-- [Konfigurieren von Aad, um einer Benutzergruppe die Teilnahme an Geräten zu ermöglichen](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) – stellen Sie sicher, dass die neue Benutzergruppe die Berechtigung zum Registrieren von Geräten für Aad hat.
+- [Konfigurieren von Azure AD, um einer Benutzergruppe das beitreten zu Geräten zu ermöglichen](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) – stellen Sie sicher, dass die neue Benutzergruppe über die Berechtigung zum Registrieren von Geräten für Azure AD verfügt
 
 ## Automatische Registrierung auf HoloLens 2
 
-Um eine reibungslose und nahtlose Benutzeroberfläche zu haben, ist das Einrichten von Azure Active Directory Join (AADJ) und der automatischen Registrierung für InTune für HoloLens 2-Geräte die richtige Lösung. Dadurch können Benutzer ihre Anmeldeinformationen für Ihre Organisation einfach während OOBE eingeben und sich automatisch bei Aad registrieren und das Gerät in MDM registrieren.
+Um eine reibungslose und nahtlose Benutzeroberfläche zu haben, ist das Einrichten von Azure Active Directory Join (AADJ) und der automatischen Registrierung für InTune für HoloLens 2-Geräte die richtige Lösung. Dadurch können Benutzer während OOBE Ihre Anmeldeinformationen für Ihre Organisation eingeben und sich automatisch bei Azure AD registrieren und das Gerät in MDM registrieren.
 
-Mithilfe von [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home) können wir Dienste auswählen und auf einigen Seiten navigieren, bis wir eine Premium-Testversion auswählen können. Sie werden feststellen, dass es Azure Active Directory Premium 1 und 2 gibt, für die automatische Registrierung P1 genügt. Wir können InTune auswählen und den Benutzerbereich für die automatische Registrierung auswählen und die zuvor erstellte Gruppe auswählen.
+Mithilfe von [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home)können wir Dienste auswählen und auf einigen Seiten navigieren, bis wir eine Premium-Testversion auswählen können. Möglicherweise stellen Sie fest, dass Azure Active Directory Premium 1 und 2 zur automatischen Registrierung von P1 ausreicht. Wir können InTune auswählen und den Benutzerbereich für die automatische Registrierung auswählen und die zuvor erstellte Gruppe auswählen.
 
 Ausführliche Informationen und Schritte finden Sie im Leitfaden zum [Aktivieren der automatischen Registrierung für InTune](https://docs.microsoft.com/mem/intune/enrollment/quickstart-setup-auto-enrollment).
 

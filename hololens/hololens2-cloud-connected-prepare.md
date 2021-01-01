@@ -14,16 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0e9222df2c387fab8f61a585d3a7f3966b9ecd31
-ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
+ms.openlocfilehash: a4e99740d985a709683595cd5afef76094faaf76
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11196312"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253052"
 ---
 # Leitfaden "vorbereiten – Wolke verbunden"
 
-Am Ende dieses Artikels haben Sie Aad, MDM eingerichtet und mehr über die Verwendung von Aad-Konten und Netzwerkanforderungen erfahren. Dieser Abschnitt des Leitfadens hilft Ihnen und Ihrer Organisation, sich auf die Bereitstellung von HoloLens 2 in der Cloud vorzubereiten und die Verwendung von Dynamics 365-Remote Unterstützung zu verwenden. Es geht um die Wichtigkeit der einzelnen Teile Ihrer Infrastruktur sowie um Links zu Leitfäden, die Ihnen bei der Einrichtung dieser Komponenten bei Bedarf behilflich sein können.
+Am Ende dieses Artikels haben Sie Azure AD, MDM eingerichtet und mehr über die Verwendung von Azure Ad-Konten und Netzwerkanforderungen erfahren. Dieser Abschnitt des Leitfadens hilft Ihnen und Ihrer Organisation, sich auf die Bereitstellung von HoloLens 2 in der Cloud vorzubereiten und die Verwendung von Dynamics 365-Remote Unterstützung zu verwenden. Es geht um die Wichtigkeit der einzelnen Teile Ihrer Infrastruktur sowie um Links zu Leitfäden, die Ihnen bei der Einrichtung dieser Komponenten bei Bedarf behilflich sein können.
 
 ## Infrastruktur-Grundlagen
 
@@ -40,11 +40,11 @@ AzureAD ist ein cloudbasierter Verzeichnisdienst zur Identitäts- und Zugriffsve
 
 Mitarbeiter können nur ein Konto verwenden, um ein Gerät zu initialisieren, damit es&#39;wichtig ist, dass Ihre Organisation steuert, welches Konto zuerst aktiviert wird. Die Wahl des Kontos bestimmt, wer das Gerät kontrolliert und welche Verwaltungsfunktionen Ihnen zur Verfügung stehen.
 
-In diesem Leitfaden haben wir entschieden, dass für die verwendete [Identität](https://docs.microsoft.com/hololens/hololens-identity) Aad-Konten oder Azure Active Directory-Konten verwendet werden. Es gibt mehrere Vorteile für Aad-Konten, die wir verwenden möchten, wie beispielsweise:
+In diesem Leitfaden haben wir entschieden, dass für die verwendete [Identität](https://docs.microsoft.com/hololens/hololens-identity) Azure Ad-Konten oder Azure Active Directory-Konten verwendet werden. Es gibt mehrere Vorteile für Azure Ad-Konten, die Sie verwenden möchten, beispielsweise:
 
-- Mitarbeiter verwenden Ihr Azure AD-Konto, um das Gerät in Azure AD zu registrieren, und registrieren es automatisch bei der Organisation&#39;s MDM-Lösung (AAD + MDM – erfordert Azure AD Premium).
-- Aad-Konten unterstützen [einmaliges Anmelden](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on). Wenn sich ein Benutzer bei Remote Assist anmeldet, wird die Identität des Benutzers mit dem AAD-Benutzer erkannt, und der Benutzer wird bei der APP für eine optimierte Benutzeroberfläche angemeldet.
-- Aad-Konten verfügen über zusätzliche [Authentifizierungsoptionen](https://docs.microsoft.com/hololens/hololens-identity) über [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification). Neben der Iris-Anmeldung können sich Benutzer von einem anderen Gerät aus anmelden oder Fido-Sicherheitsschlüssel verwenden.
+- Mitarbeiter verwenden Ihr Azure AD-Konto, um das Gerät in Azure AD zu registrieren, und registrieren es automatisch bei der Organisation&#39;s MDM-Lösung (Azure AD + MDM – erfordert Azure AD Premium).
+- Azure Ad-Konten unterstützen [einmaliges Anmelden](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on). Wenn sich ein Benutzer bei Remote Assist anmeldet, wird dessen Identität vom signierten Azure AD-Benutzer erkannt, und der Benutzer wird bei der APP für eine optimierte Benutzeroberfläche angemeldet.
+- Azure Ad-Konten verfügen über zusätzliche [Authentifizierungsoptionen](https://docs.microsoft.com/hololens/hololens-identity) über [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification). Neben der Iris-Anmeldung können sich Benutzer von einem anderen Gerät aus anmelden oder Fido-Sicherheitsschlüssel verwenden.
 
 ### Verwaltung mobiler Geräte
 

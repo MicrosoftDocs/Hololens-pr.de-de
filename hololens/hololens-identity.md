@@ -1,7 +1,7 @@
 ---
 title: Verwalten der Benutzeridentität und der Anmeldung für HoloLens
 description: Verwalten von Benutzeridentität, Sicherheit und Anmeldung für HoloLens.
-keywords: HoloLens, Benutzer, Konto, AAD, ADFS, Microsoft-Konto, MSA, Anmeldeinformationen, Referenz
+keywords: HoloLens, Benutzer, Konto, AAD, Azure AD, ADFS, Microsoft-Konto, MSA, Anmeldeinformationen, Referenz
 ms.assetid: 728cfff2-81ce-4eb8-9aaa-0a3c3304660e
 author: scooley
 ms.author: scooley
@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 818f6c2be594b1d709acf7daef1d124c6b410ea4
-ms.sourcegitcommit: 74e9989240dc0c324df35e8651b2f307f9d42148
+ms.openlocfilehash: 96e3b90a24d297631d39a1eb62888e4f4aa1098e
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "11201359"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253222"
 ---
 # Verwalten der Benutzeridentität und der Anmeldung für HoloLens
 
@@ -36,11 +36,11 @@ HoloLens unterstützt verschiedene Arten von Benutzeridentitäten. Sie können e
 
 | Identity-Typ | Konten pro Gerät | Authentifizierungsoptionen |
 | --- | --- | --- |
-| [Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/) | 64 | <ul><li>Azure Web Credential-Anbieter</li><li>Azure Authenticator-App</li><li>Biometrische (IRIS) &ndash; HoloLens 2 nur <sup> 1</sup> </li><li>PIN &ndash; optional für HoloLens (1st Gen), erforderlich für HoloLens 2</li><li>Kennwort</li></ul> |
+| [Azure Active Directory (AzureAD)](https://docs.microsoft.com/azure/active-directory/) | 64 | <ul><li>Azure Web Credential-Anbieter</li><li>Azure Authenticator-App</li><li>Biometrische (IRIS) &ndash; HoloLens 2 nur <sup> 1</sup> </li><li>PIN &ndash; optional für HoloLens (1st Gen), erforderlich für HoloLens 2</li><li>Kennwort</li></ul> |
 | [Microsoft-Konto (MSA)](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts) | 1 | <ul><li>Nur biometrische (IRIS) &ndash; HoloLens 2</li><li>PIN &ndash; optional für HoloLens (1st Gen), erforderlich für HoloLens 2</li><li>Kennwort</li></ul> |
 | [Lokales Konto](https://docs.microsoft.com/windows/security/identity-protection/access-control/local-accounts) | 1 | Kennwort |
 
-Cloud-verbundene Konten (AAD und MSA) bieten weitere Funktionen, da Sie Azure-Dienste verwenden können.  
+Cloud-verbundene Konten (Azure AD und MSA) bieten weitere Features, da Sie Azure-Dienste verwenden können.  
 
 > [!NOTE]
 > 1 – während ein HoloLens 2-Gerät bis zu 64 Azure Ad-Konten unterstützenkann, können sich nur 10 dieser Konten bei der Iris-Authentifizierung registrieren. Dies ist an andere biometrische Authentifizierungsoptionen für Windows Hello for Business ausgerichtet. [Weitere Informationen finden Sie hier.](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer)
@@ -61,16 +61,16 @@ Wie in der Desktop Version von Windows können Sie zusätzliche Webkonto Anmelde
 
 Durch das Verknüpfen von Konten werden die auf dem Gerät erstellten Benutzerdaten wie Bilder oder Downloads nicht getrennt.  
 
-### Einrichten der Multi-User-Unterstützung (nur AAD)
+### Einrichten der Multi-User-Unterstützung (nur Azure AD)
 
-HoloLens unterstützt mehrere Benutzer des gleichen Aad-Mandanten. Um dieses Feature verwenden zu können, müssen Sie ein Konto verwenden, das zu Ihrer Organisation gehört, um das Gerät einzurichten. Anschließend können sich andere Benutzer desselben Mandanten über den Anmeldebildschirm oder durch Tippen auf die Kachel "Benutzer" im Start Bereich anmelden. Es kann jeweils nur ein Benutzer angemeldet werden. Wenn sich ein Benutzer anmeldet, zeichnet HoloLens den vorherigen Benutzer ab. Der erste Benutzer auf dem Gerät gilt als Gerätebesitzer, außer bei Aad Join finden [Sie weitere Informationen zu Geräte Besitzern](security-adminless-os.md#device-owner).
+HoloLens unterstützt mehrere Benutzer aus dem gleichen Azure AD-Mandanten. Um dieses Feature verwenden zu können, müssen Sie ein Konto verwenden, das zu Ihrer Organisation gehört, um das Gerät einzurichten. Anschließend können sich andere Benutzer desselben Mandanten über den Anmeldebildschirm oder durch Tippen auf die Kachel "Benutzer" im Start Bereich anmelden. Es kann jeweils nur ein Benutzer angemeldet werden. Wenn sich ein Benutzer anmeldet, zeichnet HoloLens den vorherigen Benutzer ab. Der erste Benutzer auf dem Gerät gilt als Gerätebesitzer, außer bei Azure AD Join finden [Sie weitere Informationen zu Geräte Besitzern](security-adminless-os.md#device-owner).
 
 Alle Benutzer können die auf dem Gerät installierten Apps verwenden. Jeder Benutzer verfügt jedoch über eigene APP-Daten und-Einstellungen. Wenn Sie eine APP vom Gerät entfernen, wird Sie für alle Benutzer entfernt.  
 
-Bei Geräten, die mit Aad-Konten eingerichtet sind, ist es nicht möglich, sich mit einem Microsoft-Konto bei dem Gerät anzumelden. Alle nachfolgenden Konten müssen Aad-Konten des gleichen Mandanten wie das Gerät sein. Sie können [sich mit einem Microsoft-Konto weiterhin für Apps anmelden](hololens-identity.md#setting-up-multi-user-support-aad-only) , die es unterstützen (wie etwa den Microsoft Store). Wenn Sie von der Verwendung von Aad-Konten zu Microsoft-Konten für die Anmeldung beim Gerät wechseln möchten, müssen Sie [das Gerät erneut Aufblinken](hololens-recovery.md#clean-reflash-the-device).
+Bei Geräten, die mit Azure Ad-Konten eingerichtet sind, ist es nicht möglich, sich mit einem Microsoft-Konto bei dem Gerät anzumelden. Alle nachfolgenden Konten müssen Azure Ad-Konten vom gleichen Mandanten wie das Gerät sein. Sie können [sich mit einem Microsoft-Konto weiterhin für Apps anmelden](hololens-identity.md#setting-up-multi-user-support-azure-ad-only) , die es unterstützen (wie etwa den Microsoft Store). Wenn Sie von Azure Ad-Konten zu Microsoft-Konten wechseln möchten, um sich beim Gerät anzumelden, müssen Sie [das Gerät erneut Aufblitzen](hololens-recovery.md#clean-reflash-the-device).
 
 > [!NOTE]
-> **HoloLens (1st Generation)** hat mit der Unterstützung von mehreren Aad-Benutzern im [Windows 10 April 2018-Update](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018) als Teil von [Windows holographisch für Unternehmen](hololens-upgrade-enterprise.md)begonnen.
+> **HoloLens (1st Generation)** unterstützt mehrere Azure AD-Benutzer im [Windows 10 April 2018-Update](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018) als Teil von [Windows holographisch für Unternehmen](hololens-upgrade-enterprise.md).
 
 ## Entfernen von Benutzern
 
