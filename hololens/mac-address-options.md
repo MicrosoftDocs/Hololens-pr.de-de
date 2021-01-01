@@ -13,12 +13,12 @@ audience: ITPro
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2b0ed266389ccc5a21117a604a6eb0abd214d4d1
-ms.sourcegitcommit: 1793f53f9e1cc63ac40edc09e65bb4beb80a4575
+ms.openlocfilehash: 3e06540dd7dca8892cd69abaf9a318d46ca0f3f2
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "11093232"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253142"
 ---
 # Enterprise-Registrierung von HoloLens-Geräten in einer auf MAC-Adressen beschränkten WLAN-Umgebung
 
@@ -26,7 +26,7 @@ In diesem Dokument wird ein gängiges Szenario beschrieben, das in Kundenumgebun
 
 ## Beispielszenario
 
-Viele Kunden in sicheren Umgebungen haben Beschränkungen in Ihren drahtlosen oder verkabelten Netzwerken, die nur genehmigten Geräten (basierend auf MAC-Adressen) das erfolgreiche Herstellen einer Verbindung ermöglichen (entweder mit der MAC-Adressfilterung auf einem Zugriffspunkt oder auf einem DHCP-Server). Außerdem können einige drahtlose Netzwerke mit PEAP geschützt werden, was erfordert, dass ein Zertifikat auf das Gerät angewendet wird, bevor das drahtlose Netzwerk erfolgreich authentifiziert werden kann.
+Viele Kunden in sicheren Umgebungen haben Beschränkungen in Ihren drahtlosen oder verkabelten Netzwerken, die nur genehmigten Geräten (basierend auf MAC-Adressen) das erfolgreiche Herstellen einer Verbindung ermöglichen (entweder mit der MAC-Adressfilterung auf einem Zugriffspunkt oder auf einem DHCP-Server). Außerdem können einige drahtlose Netzwerke mit PEAP geschützt werden, was erfordert, dass ein Zertifikat auf das Gerät angewendet ist, bevor das Drahtlose Netzwerk erfolgreich authentifiziert werden kann.
 
 Bei HoloLens-Geräten können zwei wichtige Probleme auftreten, die zu Verzögerungen und manueller Arbeit beim Verbinden der HoloLens-Geräte mit dem Netzwerk führen können.
 
@@ -41,12 +41,12 @@ Die wichtigsten Herausforderungen hierfür sind:
 
 ## Lösungen
 
-Es gibt eine Reihe von Möglichkeiten, diese Situation zu verbessern, abhängig von der in der Umgebung verfügbaren Infrastruktur.
+Es gibt viele Möglichkeiten, diese Situation zu verbessern, abhängig von der in der Umgebung verfügbaren Infrastruktur.
 
 | Lösung | Vorteile | Anforderungen |
 | --- | --- | --- |
 | Bereitstellungspaket mit Ethernet-Adapter | Verbessert die OOBE-Erfahrung und ermöglicht eine schnellere Techniker-Erfahrung. | HoloLens kompatibler USB-C-Hub. Der Techniker muss für die MAC-Erfassung und OOBE-Fertigstellung noch mit dem Gerät interagieren |
-| Autopilot mit Intune-Registrierung über Ethernet | Einstufige Verbindung und Registrierung des Geräts an die Kundenumgebung. Die MAC-Erfassung kann ohne Interaktion mit dem Gerät durchgeführt werden | Intune für den Kunden aktiviert. AAD TenantHoloLens kompatibler USB-C-Netzwerkadapter |
+| Autopilot mit Intune-Registrierung über Ethernet | Einstufige Verbindung und Registrierung des Geräts an die Kundenumgebung. Die MAC-Erfassung kann ohne Interaktion mit dem Gerät durchgeführt werden | Intune für den Kunden aktiviert. Azure AD TenantHoloLens kompatibler USB-C-Netzwerkadapter |
 | Automatisierte Berichterstattung von MAC-Adressen | Wenn Geräte innerhalb des Intune-Mandanten registriert wurden, skripten Sie die Berichterstattung der MAC-Adresse an den Techniker. | Intune PowerShell-Commandlets |
 
 ## Bereitstellungspaket mit Ethernet-Adapter
@@ -60,7 +60,7 @@ Es gibt eine Reihe von Möglichkeiten, diese Situation zu verbessern, abhängig 
 - HoloLens kompatibler USB-C-Hub mit einem Ethernet-Adapter – Jeder Hub, der keine zusätzlichen Treiber oder Anwendungsinstallationen erfordert, sollte geeignet sein.
 - Bereitstellungspaket enthält:
   - Informationen zum drahtlosen Netzwerk und Zertifikat
-  - Informationen zur Registrierung für Azure AD der Organisation (optional)
+  - Informationen zur Registrierung für Azure AD der Organisation&#39;s (optional)
   - Alle anderen erforderlichen Bereitstellungseinstellungen
 
 ### Process
@@ -125,13 +125,13 @@ Weitere Voraussetzungen sind wie unten aufgeführt erforderlich:
 
 ### Vorteile
 
-Dies ermöglicht dem Techniker eine &quot;"Heads off"&quot;-Bereitstellungserfahrung, bei der das Gerät von der Box zum AAD und Intune übergehen kann, ohne dass der Techniker das Gerät tragen oder manuell mit der HoloLens-Umgebung interagieren muss.
+Dies ermöglicht dem Techniker eine &quot;"Heads off"&quot;-Bereitstellungserfahrung, bei der das Gerät von der Box zum Azure AD und Intune übergehen kann, ohne dass der Techniker das Gerät tragen oder manuell mit der HoloLens-Umgebung interagieren muss.
 
 ## Berichterstattung von MAC-Adressen an den Techniker
 
 ### Anforderungen
 
-- Autorisierung der &quot;Intune Graph-Powershell&quot; gegenüber dem Kundenmandanten
+- Autorisierung der &quot;Intune Graph-PowerShell&quot; gegenüber dem Kundenmandanten
 - Installation der Intune Graph-PowerShell auf dem Computer des Technikers.
 - [https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1907.1.0](https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1907.1.0)
 - Lesezugriff auf die Elemente &quot;Verwaltete Geräte&quot; von Intune. (Helpdesk-Operator oder höher oder eine benutzerdefinierte Rolle)

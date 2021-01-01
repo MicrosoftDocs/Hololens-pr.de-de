@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d577bc23089650e47159a8a77004a984059b095e
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: 417412e6b7854d9d985faa13bcf072b98e17f264
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009513"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11252972"
 ---
 # Begrenzen der Verwendung von Kennwörtern
 
@@ -52,7 +52,7 @@ Wenn eine Windows Hello-Anmeldeinformation erstellt wird, stellt sie ein Vertrau
 
 Weitere Informationen können Sie der folgenden Infografik entnehmen:
 
-  ![Winows Hello-Anmeldung](images/security-hello-sign-in.png)
+  ![Windows Hello-Anmeldung](images/security-hello-sign-in.png)
   
 Beachten Sie in der vorstehenden Abbildung, dass "nonce" für "Nonce-Zahl" steht und eine Zufalls- oder halbzufällig generierte Zahl ist. Sobald die biometrischen oder PIN-Anmeldeinformationen für Windows Hello eingerichtet sind, verlassen sie nie das Gerät, auf dem sie bereitgestellt werden. Selbst wenn die Windows Hello-PIN des Benutzers gestohlen würde, z. B. bei einem Phishing-Angriff, wäre sie [ohne das physische Gerät des Benutzers nutzlos](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-why-pin-is-better-than-password). 
 
@@ -62,17 +62,17 @@ Die Iris-Authentifizierung greift auf die PIN zurück. Um eine neue PIN (ein sta
 
 ## Einmaliges Anmelden mit Web Account Manager 
 
-Einmaliges Anmelden (Single Sign-on, SSO) ermöglicht es kennwortfreien Benutzern, sich beim Gerät mit ihrem persönlichen Konto bzw. ihr Geschäfts- oder Uni-/Schulkonto anzumelden. Der Benutzer wird durch SSO automatisch zur Nutzung aller integrierten Apps und Dienste über die [Web Account Manager-APIs](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041) autorisiert.
+Einmaliges Anmelden (Single Sign-on, SSO) ermöglicht es kennwortfreien Benutzern, sich beim Gerät mit ihrem persönlichen Konto bzw. ihr Geschäfts- oder Uni-/Schulkonto anzumelden. Der Benutzer wird durch SSO automatisch zur Nutzung aller integrierten Apps und Dienste über die [Web Account Manager-APIs](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041&preserve-view=true) autorisiert.
 
 Nachdem eine Identität über eine Anwendung hinzugefügt wurde, kann sie, bei Einwilligung des Benutzers, über die systembasierte Integration für alle Apps und Dienste bereitgestellt werden. Dadurch wird die Mühe, um sich bei der App anzumelden, erheblich reduziert, und den Benutzern wird eine nahtlose Identitätsumgebung geboten.
 
 Weitere Informationen zum Implementieren von Web Account Manager-APIs finden Sie unter [Implementieren von Web Account Manager-APIs](https://docs.microsoft.com/windows/uwp/security/web-account-manager).
 
-  ![Winows Hello-Anmeldung](images/security-api-img.png)
+  ![Sicherheits-API](images/security-api-img.png)
   
 Bei App-Suites mit speziellen Authentifizierungsanforderungen ist das WAM-Framework (Web Account Manager) auf benutzerdefinierte Identitätsanbieter erweiterbar. Benutzer können den benutzerdefinierten Identitätsanbieter, der als universelle UWP-App (Universelle Windows Platform) gepackt ist, aus dem Microsoft Store herunterladen, um SSO auf weiteren Apps zu aktivieren, in die dieser Identitätsanbieter integriert ist. 
 
-Weitere Informationen zum Implementieren von benutzerdefinierten WAM-Identitätsanbietern finden Sie unter [API-Referenz für benutzerdefinierte WAM-Identitätsanbieter](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041).
+Weitere Informationen zum Implementieren von benutzerdefinierten WAM-Identitätsanbietern finden Sie unter [API-Referenz für benutzerdefinierte WAM-Identitätsanbieter](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041&preserve-view=true).
 
 ## Windows-Hello- und FIDO2-Anmeldung mittels WebAuthn
 
@@ -83,7 +83,7 @@ In HoloLens 2 können kennwortfreie Benutzeranmeldeinformationen (z. B. Windows 
 
 Wie bei Windows Hello generiert das Gerät (HoloLens 2 oder der FIDO2-Sicherheitsschlüssel), wenn der Benutzer FIDO2-Anmeldeinformationen erstellt und registriert, einen privaten und einen öffentlichen Schlüssel auf dem Gerät. Der private Schlüssel wird auf dem Gerät sicher gespeichert und kann nur verwendet werden, nachdem er mit einer lokalen Geste (z. B. einer biometrischen Information oder einer PIN) entsperrt wurde. Nachdem der private Schlüssel gespeichert wurde, wird der öffentliche Schlüssel an das Microsoft-Kontensystem in der Cloud gesendet und für das zugeordnete Benutzerkonto registriert.
 
-Nach der Anmeldung mit einem MSA- und AAD-Konto sendet das System eine generierte Nummer oder Datenvariable an das HoloLens 2- oder FIDO2-Gerät. HoloLens 2 oder das Gerät verwendet den privaten Schlüssel, um die Identifikation zu signieren. Die signierten Identifikations- und-Metadaten werden an das Microsoft-Kontensystem zurückgesendet und mithilfe des öffentlichen Schlüssels überprüft.
+Nach der Anmeldung mit einem MSA- und Azure AD-Konto sendet das System eine generierte Nummer oder Datenvariable an das HoloLens 2- oder FIDO2-Gerät. HoloLens 2 oder das Gerät verwendet den privaten Schlüssel, um die Identifikation zu signieren. Die signierten Identifikations- und-Metadaten werden an das Microsoft-Kontensystem zurückgesendet und mithilfe des öffentlichen Schlüssels überprüft.
 
 Windows Hello- und FIDO2-Geräte implementieren Anmeldeinformationen, die auf dem HoloLens-Gerät basieren, insbesondere der integrierten sicheren Trusted Platform Module-Enklave. Der private Schlüssel wird in der TPM-Enklave gespeichert und kann nur entweder über biometrische Informationen oder eine PIN entsperrt werden. In ähnlicher Weise ist ein FIDO2-Sicherheitsschlüssel ein kleines externes Gerät mit einer integrierten sicheren Enklave, in der der private Schlüssel gespeichert wird, für dessen Entsperrung biometrische Informationen oder eine PIN erforderlich ist.
 
@@ -91,7 +91,7 @@ Beide Optionen bieten eine zweistufige Authentifizierung in einem Schritt, bei d
 
   ![FIDO img](images/security-fido2-whfb.png)
 
-MSA und AAD gehören zu den ersten vertrauenden Parteien, die die kennwortlose Authentifizierung durch die Implementierung von WebAuthn unterstützen. 
+MSA und Azure AD gehören zu den ersten vertrauenden Parteien, die die kennwortlose Authentifizierung durch die Implementierung von WebAuthn unterstützen. 
 
 Weitere Informationen zum Verwenden von WebAuthn mit Anwendungen und/oder SDKs finden Sie unter [WebAuthn-APIs für die kennwortlose Authentifizierung unter Windows 10](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/webauthnapis).
 

@@ -13,12 +13,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f8434ffe2442f270d6360018bea4b64064168d0c
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: d8e68f73d05db397a7ee088382e82dfa762177b0
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009553"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253252"
 ---
 # Übersicht über die Sicherheit und Architektur
 
@@ -32,7 +32,7 @@ Die Architektur von Windows HoloLens 2 und des Betriebssystems bietet die folgen
   
   * **Datenschutz**: Wenn das Gerät eines Benutzers verloren geht oder gestohlen wird, hindert HoloLens 2 nicht autorisierte Anwendungen dank BitLocker-Datenverschlüsselung daran, vertrauliche Informationen zu lesen. 
   
-  * **Betriebssystem ohne Kennwort**: Bei älteren, kennwortbasierten Betriebssystemen könnten Benutzer versehentlich Phishing-Angriffen ausgesetzt werden, und diese sind häufig für kompromittierte Konten verantwortlich. Windows Holographic for Business eliminiert die Verwendung von Kennwörtern für MSA- und AAD-Anmeldungen und stärkt den Schutz der Benutzeridentität mit Windows Hello™ und FIDO2-Anmeldung. 
+  * **Betriebssystem ohne Kennwort**: Bei älteren, kennwortbasierten Betriebssystemen könnten Benutzer versehentlich Phishing-Angriffen ausgesetzt werden, und diese sind häufig für kompromittierte Konten verantwortlich. Windows Holographic for Business eliminiert die Verwendung von Kennwörtern für MSA- und Azure AD-Anmeldungen und stärkt den Schutz der Benutzeridentität mit Windows Hello™ und FIDO2-Anmeldung. 
   
     > [!NOTE]
     > Damit FIDO2 unterstützt wird, muss das Gerät Build 19041 oder höher aufweisen. 
