@@ -27,7 +27,7 @@ Dieses Feature konfiguriert das HoloLens 2-Gerät für den Multi-App-Kioskmodus,
 > [!NOTE]
 > Dieses Feature ist derzeit nur in Windows-Insider-Builds verfügbar. Wenn Sie dieses Feature ausprobieren möchten, bevor es in HoloLens-Versionen allgemein verfügbar sein wird, lesen Sie weitere Informationen zu [Windows-Insider-](hololens-insider.md)-Builds.
 
-## Zur Verwendung des Globalen zugewiesenen Zugriffs in Intune.
+## Zur Verwendung des global zugewiesenen Zugriffs in Intune.
 
 > [!NOTE]
 > Bitte beachten Sie die mit "<!-" markierten Bereiche. In diesen Bereichen müssen Sie Änderungen vornehmen, die Ihren Voreinstellungen entsprechen.
@@ -43,7 +43,7 @@ Dieses Feature konfiguriert das HoloLens 2-Gerät für den Multi-App-Kioskmodus,
 
     :::code language="xml" source="samples/global-assigned-access.xml" highlight="12-13,23":::
 
-## Zur Verwendung des Einrichten des Globalen zugewiesenen Zugriffs im Windows-Konfigurations-Designer.
+## Wie verwende ich den global zugewiesenen Zugriff im Windows Configuration Designer?
 
 1. Aktualisieren und speichern Sie den oben erwähnten XML-BLOB als XML-Datei. 
 
@@ -61,13 +61,13 @@ Hier ist ein Beispiel für die Verwendung von XML-BLOB:
 
 ## Ausschließen von DeviceOwners aus dem globalen zugewiesenen Access-Profil
 
-Diese Funktion ermöglicht es einem Benutzer, der auf HoloLens als "[Gerätebesitzer](security-adminless-os.md)" betrachtet wird, von dem globalen zugewiesenen Zugriff auszuschließen. Um dieses Feature nutzen zu können, stellen Sie sicher, dass in der XML-BLOB-Konfiguration für mehrere-App-Kiosks hervorgehobene Zeilen hinzugefügt werden:
+Diese Funktion macht es möglich, einen Benutzer, der auf HoloLens als "[Gerätebesitzer](security-adminless-os.md)" betrachtet wird, von dem global zugewiesenen Zugriff auszuschließen. Um dieses Feature nutzen zu können, stellen Sie sicher, dass in der XML-BLOB-Konfiguration für mehrere-App-Kiosks hervorgehobene Zeilen hinzugefügt werden:
 
  :::code language="xml" source="samples/exclude-device-owners-from-global.xml" highlight="6,16-18":::
 
-## Zusätzliche Beispiele für globalen Zugriff
+## Zusätzliche Beispiele für den global zugewiesenen Zugriff
 
-Dies ist ein Beispiel für einen globalen zugewiesenen Zugriffskiosk. Wenn sich ein Benutzer dort anmeldet, steht ihm ein Multi-App-Kiosk mit der Einstellungen-App, Feedback-Hub und Microsoft Edge zur Verfügung.
+Dies ist ein Beispiel für einen global zugewiesenen Zugriffskiosk. Wenn sich ein Benutzer dort anmeldet, steht ihm ein Multi-App-Kiosk mit der Einstellungen-App, Feedback-Hub und Microsoft Edge zur Verfügung.
 
 :::code language="xml" source="samples/kiosk-sample-global-assigned-access.xml":::
 

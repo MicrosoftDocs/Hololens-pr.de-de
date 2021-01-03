@@ -26,7 +26,7 @@ In diesem Dokument wird ein gängiges Szenario beschrieben, das in Kundenumgebun
 
 ## Beispielszenario
 
-Viele Kunden in sicheren Umgebungen haben Beschränkungen in Ihren drahtlosen oder verkabelten Netzwerken, die nur genehmigten Geräten (basierend auf MAC-Adressen) das erfolgreiche Herstellen einer Verbindung ermöglichen (entweder mit der MAC-Adressfilterung auf einem Zugriffspunkt oder auf einem DHCP-Server). Außerdem können einige drahtlose Netzwerke mit PEAP geschützt werden, was erfordert, dass ein Zertifikat auf das Gerät angewendet ist, bevor das Drahtlose Netzwerk erfolgreich authentifiziert werden kann.
+Viele Kunden in sicheren Umgebungen haben Beschränkungen in Ihren drahtlosen oder verkabelten Netzwerken, die nur genehmigten Geräten (basierend auf MAC-Adressen) das erfolgreiche Herstellen einer Verbindung ermöglichen (entweder mit der MAC-Adressfilterung auf einem Zugriffspunkt oder auf einem DHCP-Server). Außerdem können einige drahtlose Netzwerke mit PEAP geschützt werden, was erfordert, dass ein Zertifikat auf das Gerät angewendet ist, bevor das drahtlose Netzwerk erfolgreich authentifiziert werden kann.
 
 Bei HoloLens-Geräten können zwei wichtige Probleme auftreten, die zu Verzögerungen und manueller Arbeit beim Verbinden der HoloLens-Geräte mit dem Netzwerk führen können.
 
