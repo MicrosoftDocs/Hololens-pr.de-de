@@ -1,5 +1,5 @@
 ---
-title: Einrichten Ihrer HoloLens 2-Edition
+title: HoloLens 2-Editionen
 description: Wie jede HoloLens 2-Option identisch oder unterschiedlich ist und was Sie tun müssen, nachdem Sie eins erhalten haben.
 keywords: Hololens 2-Kauf Optionen, Hololens-Optionen, Developer Edition
 author: evmill
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 796fee002bd9ca4a67c3ce938aaf01295f406249
-ms.sourcegitcommit: d4eee928a39492b2d2d37e3ebf3a65e7b6f7cb63
+ms.openlocfilehash: d15dddc36a733adb3af2a0c2ae1fc8859c7a0d1e
+ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "11146143"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "11253568"
 ---
 # Übersicht für HoloLens 2
 
@@ -39,16 +39,15 @@ Ganz gleich, ob Sie ein [IT-Experte](https://www.microsoft.com/hololens/apps) si
 
 ## Übersicht über Optionen
 
-**HoloLens 2 (nur Gerät)** : HoloLens 2 bietet die komfortabelste und immersive Mixed-Reality-Erfahrung, die durch die Zuverlässigkeit, Sicherheit und Skalierbarkeit von Cloud-und AI-Diensten von Microsoft verbessert wird.
+**HoloLens 2 (nur Gerät)**: HoloLens 2 bietet die komfortabelste und immersive Mixed-Reality-Erfahrung, die durch die Zuverlässigkeit, Sicherheit und Skalierbarkeit von Cloud-und AI-Diensten von Microsoft verbessert wird.
 
-**HoloLens 2 mit Dynamics 365-Remote Unterstützung** : Erste Schritte mit HoloLens 2 und der ultimativen Mixed-Reality-Kommunikations-APP von Microsoft, die zusammen verfügbar ist. Helfen Sie Ihrem ganzen Unternehmen, produktiver und innovativer zu sein, mit mehr Zweck. Erleben Sie Mixed Reality jetzt mit Dynamics 365 und Lösungen von Branchenpartnern.
+**HoloLens 2 mit Dynamics 365-Remote Unterstützung**: Erste Schritte mit HoloLens 2 und der ultimativen Mixed-Reality-Kommunikations-APP von Microsoft, die zusammen verfügbar ist. Helfen Sie Ihrem ganzen Unternehmen, produktiver und innovativer zu sein, mit mehr Zweck. Erleben Sie Mixed Reality jetzt mit Dynamics 365 und Lösungen von Branchenpartnern.
 
-**HoloLens 2 Development Edition** : beginnen Sie mit dem Erstellen für Mixed Reality mit diesem Angebot, das HoloLens 2 mit kostenlosen Testversionen von Unity-Software und Azure-Guthaben für Cloud-Services kombiniert. Erfahren Sie, wie Sie über die Grundlagen hinausgehen und mit der Entwicklung für gemischte Realität beginnen.
+**HoloLens 2 Development Edition**: beginnen Sie mit dem Erstellen für Mixed Reality mit diesem Angebot, das HoloLens 2 mit kostenlosen Testversionen von Unity-Software und Azure-Guthaben für Cloud-Services kombiniert. Erfahren Sie, wie Sie über die Grundlagen hinausgehen und mit der Entwicklung für gemischte Realität beginnen.
 
 Informationen zu den verschiedenen [HoloLens 2-Editionen](https://www.microsoft.com/hololens/buy)
 
 ## Erste Schritte mit HoloLens 2-Optionen
-Wählen Sie eine Registerkarte aus, um mehr über Ihre HoloLens-Reise zu erfahren. 
+Wählen Sie eine Registerkarte aus, um mehr über Ihre HoloLens-Reise zu erfahren.
 
 [!INCLUDE[](includes/options-overview.md)]
-
