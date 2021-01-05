@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b2d95839ff394d61eec8f5c76baf9a151855794a
-ms.sourcegitcommit: e3056a433aeebb8bc45dc3f6db9a75f212fdf53b
+ms.openlocfilehash: 44b66d001e7a6f4bcd5fde9261a225f6aa21b666
+ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "10996403"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "11253561"
 ---
 # Einrichten Ihrer HoloLens 2 für die Verwendung
 
@@ -25,7 +25,7 @@ Die nachstehenden Verfahren unterstützen Sie beim erstmaligen Einrichten einer 
 
 ## Aufladen der HoloLens
 
-Schließen Sie das Netzteil mit dem mitgelieferten USB-C-Kabel an den Ladeanschluss an. Schließen Sie das Netzteil an eine Steckdose an. Die in der Lieferung des Geräts enthaltene Stromversorgung und das USB-C-zu-C-Kabel sind die beste Methode zum Aufladen Ihrer HoloLens2. Das Ladegerät liefert 18W (9V bei 2A).
+Schließen Sie das Netzteil mit dem mitgelieferten USB-C-Kabel an den Ladeanschluss an. Schließen Sie das Netzteil an eine Steckdose an. Die in der Lieferung des Geräts enthaltene Stromversorgung und das USB-C-zu-C-Kabel sind die beste Methode zum Aufladen Ihrer HoloLens2. Das Ladegerät liefert 18W (9V bei 2A). Mit dem mitgelieferten Wandladegerät können HoloLens 2-Geräte den Akku in weniger als 65 Minuten voll aufladen, wenn sich das Gerät im Standbymodus befindet.
 
 Die Lade- und Geschwindigkeitsrate kann je nach Umgebung, in der das Gerät ausgeführt wird, variieren.
 

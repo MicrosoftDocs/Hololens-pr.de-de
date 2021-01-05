@@ -14,18 +14,18 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: 872e9d3445df2601579ae81f4190458289fa2eea
-ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
+ms.openlocfilehash: ad162d1f415430e22e683280089cacf2e1cef02a
+ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11195598"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "11253581"
 ---
 # HoloLens 2 neu starten, zurücksetzen oder wiederherstellen
 
 ## Laden des Geräts
 
-Bevor Sie eine Problembehandlung starten, stellen Sie sicher, dass Ihr Gerät möglichst auf 20 bis 40 Prozent der Akkukapazität aufgeladen wurde. Verwenden Sie das Ladegerät und die USB-Typ-C-Kabel, die mit dem HoloLens2-Gerät geliefert wurden. Die in der Lieferung des Geräts enthaltene Stromversorgung und das USB-C-zu-C-Kabel sind die beste Methode zum Aufladen Ihrer HoloLens2. Das Ladegerät liefert 18W (9V bei 2A). Wenn das Zubehör nicht verfügbar ist, vergewissern Sie sich, dass das verfügbare Ladegerät mindestens 15W Leistung unterstützt.
+Bevor Sie eine Problembehandlung starten, stellen Sie sicher, dass Ihr Gerät möglichst auf 20 bis 40 Prozent der Akkukapazität aufgeladen wurde. Verwenden Sie das Ladegerät und die USB-Typ-C-Kabel, die mit dem HoloLens2-Gerät geliefert wurden. Die in der Lieferung des Geräts enthaltene Stromversorgung und das USB-C-zu-C-Kabel sind die beste Methode zum Aufladen Ihrer HoloLens2. Das Ladegerät liefert 18W (9V bei 2A). Mit dem mitgelieferten Wandladegerät können HoloLens 2-Geräte den Akku in weniger als 65 Minuten voll aufladen, wenn sich das Gerät im Standbymodus befindet. Wenn das Zubehör nicht verfügbar ist, vergewissern Sie sich, dass das verfügbare Ladegerät mindestens 15W Leistung unterstützt.
 
 > [!NOTE]
 > Vermeiden Sie nach Möglichkeit die Verwendung eines PCs, um das Gerät über USB zu laden, was sehr langsam ist.
