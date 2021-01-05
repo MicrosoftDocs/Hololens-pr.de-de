@@ -116,6 +116,8 @@
 # Versionshinweise für HoloLens
 ## [Veröffentlichungshinweise für HoloLens 2](hololens-release-notes.md)
 ## [Insider-Vorschau für Microsoft HoloLens](hololens-insider.md)
-## [Veröffentlichungshinweise für HoloLens (1. Generation)](hololens1-release-notes.md)
+## [Versionshinweise zu HoloLens (1. Generation)](hololens1-release-notes.md)
 
-# [Feedback senden](hololens-feedback.md)
+# [Feedback senden]
+## [Senden Sie uns Ihr Feedback über den Feedback-Hub](hololens-feedback.md)
+## [Anleitung zur Mitwirkung an der HoloLens-Dokumentation](contributing.md)
