@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 5995c0a1eaa7dad4e22791e9be5bf7d97b04a7ad
-ms.sourcegitcommit: d4eee928a39492b2d2d37e3ebf3a65e7b6f7cb63
+ms.openlocfilehash: 3af593ead9a6a3a18013852ac64d9991834b1250
+ms.sourcegitcommit: 8cea4c04c6d2e22225f4de43e10c05dab840736a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "11146144"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "11253934"
 ---
 # [HoloLens 2](#tab/device)
 
@@ -27,14 +27,14 @@ In diesem Abschnitt erhalten Sie und Ihre Organisation die Bereitstellung von Ho
 | Prüfpunkt     | Ergebnis  |
 |---|---|
 | Richten Sie Ihr [Netzwerk für HoloLens](../hololens-commercial-infrastructure.md)ein.  | Sie richten Ihr Netzwerk ein.  |
-| Vorbereiten der [Netzwerk-ceritifcates](../hololens-certificates-network.md)  | Sie haben Zertifikate vorbereitet.   |
+| [Netzwerk Zertifikate](../hololens-certificates-network.md)vorbereiten.  | Sie haben Zertifikate vorbereitet.   |
 | Wählen Sie eine [Geräteverwaltungslösung](https://docs.microsoft.com/hololens/hololens-csp-policy-overview) aus, und achten Sie auf die von Ihnen verwendeten [Geräteeinschränkungen](https://docs.microsoft.com/hololens/hololens-csp-policy-overview) .  | Sie wählen eine Lösung für die Geräteverwaltung aus.   |
 
 ### Bereitstellen
 | Prüfpunkt  | Ergebnis  |
 |---|---|
 | [Registrieren](../hololens-enroll-mdm.md) Sie Ihre Geräte.   | Sie wissen, wie Sie Ihre Geräte registrieren.   |
-| Stellen Sie Ihre [Anwendungen](../app-deploy-overview.md)bereit.  | Sie verstehen alle Anwendungs Bereitstellungsmethoden avalible und haben eine ausgewählt.  |
+| Stellen Sie Ihre [Anwendungen](../app-deploy-overview.md)bereit.  | Sie verstehen alle verfügbaren Methoden zur Anwendungsbereitstellung und haben eine ausgewählt.  |
 
 ### Warten
 | Prüfpunkt  |  Ergebnis  |
@@ -77,15 +77,17 @@ Jede HoloLens 2-Version verfügt über die gleiche Hardware, den gleichen [Inh
 
 ## 2. hier erfahren Sie, was Sie als nächstes tun müssen, mit der HoloLens 2 mit Dynamics 365 Remote Assist Edition
 
+Wir haben eine Anleitung speziell für die Bereitstellung von HoloLens-Geräten im Maßstab mit einer End-to-End-Einrichtung vom Einrichten von Azure Active Directory zum Überprüfen eines Remote Unterstützungs Anrufs erstellt. Schauen Sie sich dieses ** [Bereitstellungshandbuch an – Cloud Connected HoloLens 2 mit Remote Assist](https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview).**
+
 | Prüfpunkt  | Ergebnis                                |
 |-------------|----------------------------------------|
 | [Erste Schritte](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/overview-hololens) | Erste Schritte mit der Remote Unterstützung.        |
-| [Liscene](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/deploy-remote-assist#add-and-assign-licenses)     | Lizenz für Remote Assist einlösen.      |
+| [Lizenz](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/deploy-remote-assist#add-and-assign-licenses)     | Lizenz für Remote Assist einlösen.      |
 | [Verbinden](https://docs.microsoft.com/hololens/hololens-network)     | Verbinden Sie Ihr Gerät (e) mit Wi-Fi.       |
 | [Registrieren](https://docs.microsoft.com/hololens/hololens-enroll-mdm)      | Registrieren Sie Geräte für Ihre Organisation. |
 
 ## 3. Bereitstellen von HoloLens-Geräten für Ihre Organisation
-In diesem Abschnitt erhalten Sie und Ihre Organisation die Bereitstellung von HoloLens-Geräten. 
+In diesem Abschnitt erhalten Sie und Ihre Organisation die Bereitstellung von HoloLens-Geräten.
 
 ### Vorbereiten
 | Prüfpunkt  | Ergebnis  |
@@ -127,7 +129,7 @@ In diesem Abschnitt erhalten Sie und Ihre Organisation die Bereitstellung von Ho
 
 ## 1. informieren Sie sich über die Development Edition
 
-> [!NOTE] 
+> [!NOTE]
 > Die Development Edition darf nicht mit einer kommerziell verteilten Lösung bereitgestellt werden. Die Development Edition darf zur Unterstützung der Entwicklung und/oder Prüfung von Anwendungen in einer kommerziellen Umgebung bereitgestellt werden.  
 
 Die HoloLens 2 Development Edition umfasst eine HoloLens 2, $500 in Azure Credits, eine 3-monatige Unity pro-Testversion und eine 3-monatige PiXYZ-Plug-in-Testversion:
@@ -143,21 +145,21 @@ Jede HoloLens 2-Version verfügt über die gleiche Hardware, den gleichen [Inh
 ## 2. Guthaben einlösen
 
 ### Unity
-Sie haben einen eindeutigen Code erhalten. Anleitung zum Einlösen von Unity pro Trial: 
-1. Besuchen Sie [ID.Unity.com](http://id.unity.com/) 
+Sie haben einen eindeutigen Code erhalten. Anleitung zum Einlösen von Unity pro Trial:
+1. Besuchen Sie [ID.Unity.com](http://id.unity.com/)
 1. Mit ihrer Einheits-ID anmelden oder eine erstellen
-1. Klicken Sie auf **Produktcode einlösen** . 
+1. Klicken Sie auf **Produktcode einlösen** .
 1. Geben Sie den Produktcode ein, und klicken Sie auf **Produktcode einlösen** .
 
 Weitere Informationen [zum Aktivieren einer Unity-Lizenz](https://support.unity3d.com/hc/articles/211438683-How-do-I-activate-my-license-). Wenden Sie sich bei Bedarf an den [Unity-Support](https://support.unity3d.com/hc) .  
 
 ### Pixyz
-Sie haben einen eindeutigen Code erhalten. Anleitung zum Einlösen der Pixyz-Plugin-Testversion: 
+Sie haben einen eindeutigen Code erhalten. Anleitung zum Einlösen der Pixyz-Plugin-Testversion:
 1. Besuchen Sie [ID.Unity.com](http://id.unity.com/)
 1. Klicken Sie auf **Produktcode einlösen** .
 1. Geben Sie Ihren Pixyz-Plugin-Produktcode ein, und klicken Sie auf **Produktcode einlösen** .
 
-Weitere Informationen dazu, wie [Sie Ihre Pixyz-Lizenz einlösen können.](https://www.pixyz-software.com/documentations/html/2020.1/review/TrialLicense.html) Wenden Sie sich bei Bedarf an den [Pixyz-Support](https://www.pixyz-software.com/support/) . 
+Weitere Informationen dazu, wie [Sie Ihre Pixyz-Lizenz einlösen können.](https://www.pixyz-software.com/documentations/html/2020.1/review/TrialLicense.html) Wenden Sie sich bei Bedarf an den [Pixyz-Support](https://www.pixyz-software.com/support/) .
 
 ### Azure
 Nachfolgend finden Sie einige allgemeine [Azure-Produkte für Mixed-Reality-Lösungen](https://azure.microsoft.com/topic/mixed-reality/) , für die Sie möglicherweise Ihr Azure-Guthaben einlösen möchten.
@@ -170,20 +172,18 @@ So lösen Sie Azure Credits ein: um Ihr $500 Azure-Guthaben einzulösen, können
 
 Wählen Sie Ihr Modul aus, laden Sie Ihre Tools herunter, und wischen Sie die Tastatur ab. Willkommen im gemischten Realitäts-Ökosystem – es ist an der Zeit, zu erstellen.
 
-|     Prüfpunkt                              |     Ergebnis                                                                                                                    | 
+|     Prüfpunkt                              |     Ergebnis                                                                                                                    |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
 |     [Entwerfen und Erstellen von Prototypen](https://docs.microsoft.com/windows/mixed-reality/design/design)         |     Starten Sie Ihr Abenteuer in das Entwerfen von Mixed-Reality-Anwendungen über Kernkonzepte, Interaktionsmodelle und UX-Elemente.     |
 |     [Starten der Entwicklung für Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity)    |     Wählen Sie Ihr Modul aus, laden Sie Ihre Tools herunter, fügen Sie Kernbausteine hinzu, und beginnen Sie mit dem Erstellen heute.                                  |
 |     [Explore Azure Cloud Services](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     Erstellen Sie beeindruckende immersive Erfahrungen mit Azure Remote Rendering und Azure Spatial-Anker.                                 |
 
 ## Weitere Ressourcen
-- [Stellen Sie sicher, dass Sie die Tools für die HoloLens-Entwicklung installieren.](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity) 
+
+- [Stellen Sie sicher, dass Sie die Tools für die HoloLens-Entwicklung installieren.](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity)
 - [Erfahren Sie mehr über die Entwicklung für HoloLens 2 mit Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).
 - [Hier erfahren Sie, wie Sie MRTK mit Unity kombinieren](https://docs.microsoft.com/windows/mixed-reality/develop/unity/mrtk-getting-started).
-- [Hier erfahren Sie, wie Sie Ihre erstellten apps bereitstellen](https://docs.microsoft.com/hololens/app-deploy-overview). 
+- [Hier erfahren Sie, wie Sie Ihre erstellten apps bereitstellen](https://docs.microsoft.com/hololens/app-deploy-overview).
 - [Entdecken Sie alle Möglichkeiten für Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/).
 - [Erfahren Sie mehr über die Entwicklung für HoloLens 2 mit Unreal.](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
 - [Erreichen Sie Ihre Kollegen auf unserem HoloDevelopers Slack-Kanal](https://holodevelopersslack.azurewebsites.net/).
-
-
-

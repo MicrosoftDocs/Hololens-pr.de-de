@@ -5,12 +5,13 @@ author: hferrone
 ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
-ms.openlocfilehash: d17d9e30ca3699a7bd6c69b75043c6974a2bde1f
-ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
+ms.prod: hololens
+ms.openlocfilehash: 311da6bc52098d5ba16e4684f68fec9a01e7c23b
+ms.sourcegitcommit: 8cea4c04c6d2e22225f4de43e10c05dab840736a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/05/2021
-ms.locfileid: "11253645"
+ms.locfileid: "11253833"
 ---
 # Beitrag zur HoloLens-Dokumentation
 
@@ -51,19 +52,26 @@ Da das Veröffentlichungssystem mit GitHub verbunden ist, sind diese Schritte wi
 Verwenden Sie den folgenden Workflow, um in einem Webbrowser Updates zu *einem vorhandenen Artikel* über GitHub zu erstellen:
 
 1. Navigieren Sie im Ordner "Mixed-Reality-docs" zu dem Artikel, den Sie bearbeiten möchten.
+
 2. Klicken Sie oben rechts auf die Schaltfläche "Bearbeiten" (Stiftsymbol), die automatisch eine Wegwerf Verzweigung vom "Master"-Zweig abzweigt.
 
    ![Bearbeiten eines Artikels](images/editpage.png)
+   
 3. Bearbeiten Sie den Inhalt des Artikels gemäß den ["Grundlagen](#markdown-basics)der Abschriften".
+
 4. Aktualisieren Sie die Metadaten oben in jedem Artikel:
+
    * **Titel**: Seitentitel, der beim Anzeigen des Artikels auf der Registerkarte "Browser" angezeigt wird. Seitentitel werden für SEO und Indizierung verwendet, daher sollten Sie den Titel nur dann ändern, wenn dies erforderlich ist (Dies ist jedoch vor der öffentlichen Dokumentation eher unkritisch).
    * **Beschreibung**: Schreiben Sie eine kurze Beschreibung des Inhalts des Artikels, die SEO und Discovery steigert.
    * **Autor**: Wenn Sie der primäre Besitzer der Seite sind, fügen Sie hier Ihren GitHub-Alias hinzu.
    * **ms. Author**: Wenn Sie der primäre Besitzer der Seite sind, fügen Sie hier Ihren Microsoft-Alias hinzu (Sie brauchen @Microsoft. com nicht, sondern nur den Alias).
    * **ms. Date**: Aktualisieren Sie das Datum, wenn Sie der Seite Hauptinhalte hinzufügen, jedoch keine Korrekturen wie Klarstellung, Formatierung, Grammatik oder Rechtschreibung.
    * **Schlüsselwörter**: Hilfe für Keywords in SEO (Suchmaschinenoptimierung). Fügen Sie Stichwörter hinzu, die durch ein Komma und ein Leerzeichengetrennt sind, die für Ihren Artikel spezifisch sind, aber keine Interpunktion nach dem letzten Schlüsselwort in der Liste. Sie müssen keine globalen Stichwörter hinzufügen, die für alle Artikel gelten, da diese an anderer Stelle verwaltet werden. 
+   
 5. Wenn Sie Ihre Artikelbearbeitungen abgeschlossen haben, Scrollen Sie nach unten, und wählen Sie **Dateiänderung vorschlagen**aus.
+
 6. Wählen Sie auf der nächsten Seite **Pull Request erstellen** aus, um die automatisch erstellte Verzweigung in "Master" zusammenzuführen.
+
 7. Wiederholen Sie die obigen Schritte für den nächsten Artikel, den Sie bearbeiten möchten.
 
 ## Umbenennen oder Löschen eines vorhandenen Artikels
@@ -83,7 +91,9 @@ Wenn Sie eine Umleitung zu .openpublishing.redirection.jshinzufügen möchten, f
 ```
 
 - Hierbei `source_path` handelt es sich um den relativen Repository-Pfad zu dem alten Artikel, der entfernt werden soll. Achten Sie darauf, dass der Pfad mit beginnt `mixed-reality-docs` und endet `.md` .
+
 - Das `redirect_url` ist die relative öffentliche URL aus dem alten Artikel zum neuen Artikel. Stellen Sie sicher, dass diese **URL weder die** `mixed-reality-docs` `.md` öffentliche URL noch den Repository-Pfad enthält. Das Verknüpfen mit einem Abschnitt innerhalb des neuen Artikels `#section` ist zulässig. Sie können bei Bedarf auch hier einen absoluten Pfad zu einer anderen Website verwenden.
+
 - `redirect_document_id` Gibt an, ob Sie die Dokument-ID aus der vorherigen Datei beibehalten möchten. Der Standardwert ist `false` . Verwenden `true` Sie diese Eigenschaft, wenn Sie den `ms.documentid` Attributwert aus dem umgeleiteten Artikel beibehalten möchten. Wenn Sie die Dokument-ID beibehalten, werden Daten wie Seitenaufrufe und Rankings an den Ziel Artikel übertragen. Führen Sie diese Schritte aus, wenn die Umleitung in erster Linie ein umbenennen ist und kein Zeiger auf einen anderen Artikel, der nur einen Teil desselben Inhalts abdeckt.
 
 Wenn Sie eine Umleitung hinzufügen, müssen Sie auch die alte Datei löschen.
@@ -95,10 +105,12 @@ Verwenden Sie den folgenden Workflow zum *Erstellen neuer Artikel* im Dokumentat
 1. Erstellen Sie eine Abzweigung außerhalb des MicrosoftDocs/Mixed-Reality-"Master"-Zweigs (mithilfe der Schaltfläche " **Gabel** " oben rechts).
 
    ![Gabeln Sie die Master Verzweigung.](images/forkbranch.png)
+   
 2. Wählen Sie im Ordner "Mixed-Reality-docs" oben rechts die Option **neue Datei erstellen** aus.
+
 3. Erstellen Sie einen Seitennamen für den Artikel (verwenden Sie Bindestriche anstelle von Leerzeichen und verwenden Sie keine Interpunktions-oder Apostrophe), und fügen Sie ". MD" an.
 
-   ![Benennen Sie die neue Seite.](images/newpagetitle.PNG)
+   ![Benennen Sie die neue Seite.](images/newpagetitle.png)
    
    >[!IMPORTANT]
    >Stellen Sie sicher, dass Sie den neuen Artikel im Ordner "Mixed-Reality-docs" erstellen. Sie können dies bestätigen, indem Sie in der neuen Zeile für Dateinamen auf "/Mixed-Reality-docs/" überprüfen.
@@ -118,19 +130,22 @@ Verwenden Sie den folgenden Workflow zum *Erstellen neuer Artikel* im Dokumentat
    ```
 
 5. Füllen Sie die relevanten Metadatenfelder gemäß den Anweisungen im [obigen Abschnitt](#editing-an-existing-article)aus.
+
 6. Schreiben Sie Artikel Inhalte mithilfe von [Grundlagen](#markdown-basics)zum Abgleichen.
+
 7. Fügen Sie `## See also` am Ende des Artikels einen Abschnitt mit Links zu anderen relevanten Artikeln hinzu.
+
 8. Wenn Sie den Vorgang beenden, wählen Sie **neue Datei bestätigen**aus.
+
 9. Wählen Sie **neue Pull-Anforderung** aus, und führen Sie den "Master"-Zweig Ihrer Gabel in MicrosoftDocs/Mixed-Reality-Master ein (stellen Sie sicher, dass der Pfeil auf die richtige Weise zeigt).
 
-   ![Erstellen einer Pull-Anfrage von ihrer Gabelung in MicrosoftDocs/Mixed-Reality](images/pr_to_master.PNG)
+   ![Erstellen einer Pull-Anfrage von ihrer Gabelung in MicrosoftDocs/Mixed-Reality](images/pr-to-master.png)
 
 ## Grundlagen zu Abschriften
 
 Mit den folgenden Ressourcen erfahren Sie, wie Sie die Dokumentation unter Verwendung der Abzugs Sprache bearbeiten können:
 
 - [Grundlagen zu Abschriften](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
-- [Referenz Poster zu Abschlägen auf einen Blick](images/MarkdownPoster.pdf)
 - [Zusätzliche Ressourcen zum Schreiben von Abschlägen für docs.Microsoft.com](https://docs.microsoft.com/contribute/how-to-write-use-markdown)
 
 ### Hinzufügen von Tabellen
@@ -200,26 +215,32 @@ Verwenden Sie den folgenden Workflow, um Änderungen an der Dokumentation mit Vi
 >Alle Anleitungen für das [Bearbeiten](#editing-an-existing-article) und [Erstellen](#creating-a-new-article) von Artikeln und die [Grundlagen der Bearbeitung](#markdown-basics)von Abschlägen von oben gelten auch für die Verwendung von Visual Studio-Code.
 
 1. Stellen Sie sicher, dass Ihre geklonte Gabel mit dem offiziellen Repo auf dem neuesten Stand ist.
+
    1. Erstellen Sie in einem Webbrowser eine Pull-Anforderung, um kürzlich vorgenommene Änderungen von anderen Mitwirkenden in MicrosoftDocs/Mixed-Reality-"Master" an Ihre Gabel zu synchronisieren (stellen Sie sicher, dass der Pfeil auf die richtige Weise zeigt).
       
-      ![Synchronisieren von Änderungen von MicrosoftDocs/Mixed-Reality auf Ihre Gabel](images/sync_repos.PNG)
+      ![Synchronisieren von Änderungen von MicrosoftDocs/Mixed-Reality auf Ihre Gabel](images/sync-repos.png)
+      
    2. Wählen Sie in Visual Studio-Code die Schaltfläche synchronisieren aus, um den frisch aktualisierten Fork mit dem lokalen Klon zu synchronisieren.
       
-      ![Klicken Sie auf die Schaltfläche "synchronisieren".](images/sync_clone.png)
+      ![Klicken Sie auf die Schaltfläche "synchronisieren".](images/sync-clone.png)
+      
 2. Erstellen oder bearbeiten Sie Artikel in Ihrem geklonten Repo mithilfe von Visual Studio-Code.
+
    1. Bearbeiten Sie einen oder mehrere Artikel (bei Bedarf Bilder in den Ordner "Bilder" hinzufügen).
+   
    2. **Speichern** Sie die Änderungen im **Explorer**.
       
-      ![Wählen Sie im Explorer "Alle speichern" aus.](images/explorer_save.png)
+      ![Wählen Sie im Explorer "Alle speichern" aus.](images/explorer-save.png)
+      
    3. Übernehmen Sie **alle** Änderungen in der **Quellcodeverwaltung** (Commit-Nachricht schreiben, wenn Sie dazu aufgefordert werden).
       
-      ![Wählen Sie "alle commiten" in der Quellcodeverwaltung aus.](images/source_control_commit.png)
    4. Wählen Sie die Schaltfläche " **Synchronisieren** " aus, um Ihre Änderungen wieder in Origin zu synchronisieren (ihre Abzweigung auf GitHub).
       
-      ![Klicken Sie auf die Schaltfläche synchronisieren.](images/sync_back.png)
+      ![Klicken Sie auf die Schaltfläche synchronisieren.](images/sync-back.png)
+      
 3. Erstellen Sie in einem Webbrowser eine Pull-Anforderung, um neue Änderungen in Ihrer Gabel wieder in MicrosoftDocs/Mixed-Reality-Master zu synchronisieren (stellen Sie sicher, dass der Pfeil auf die richtige Weise zeigt).
 
-   ![Erstellen einer Pull-Anfrage von ihrer Gabelung in MicrosoftDocs/Mixed-Reality](images/pr_to_master.PNG)
+   ![Erstellen einer Pull-Anfrage von ihrer Gabelung in MicrosoftDocs/Mixed-Reality](images/pr-to-master.png)
 
 ### Nützliche Erweiterungen
 
