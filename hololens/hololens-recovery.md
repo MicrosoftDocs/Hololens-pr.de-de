@@ -14,12 +14,12 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: ad162d1f415430e22e683280089cacf2e1cef02a
-ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
+ms.openlocfilehash: 7845a00d1141fb721683c4e3f2a884ed0c37c735
+ms.sourcegitcommit: 33911e3b405732d0d31a27039c8f590d52b647c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "11253581"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "11254832"
 ---
 # HoloLens 2 neu starten, zurücksetzen oder wiederherstellen
 
@@ -49,6 +49,7 @@ Wenn das Gerät nicht ins Startmenü starten kann, beachten Sie das LED-Erschein
 Unter bestimmten Umständen möchten Sie das Gerät möglicherweise manuell zurücksetzen, ohne die Software-Benutzeroberfläche zu verwenden.
 
 ### Standardvorgehensweise
+
 1. Trennen Sie das Gerät von der Stromversorgung oder dem Host-PC, indem Sie das Typ-C-Kabel abziehen.
 
 2. Halten Sie den **Netzschalter** 15 Sekunden lang gedrückt. Alle LEDs sollten aus sein.
@@ -88,7 +89,7 @@ Dafür gibt es zwei Möglichkeiten. Für beide müssen Sie zuerst [Advanced Reco
 
 Standardmäßig ist Advanced Recovery Companion so eingestellt, dass der neueste Featurerelease-Build heruntergeladen wird. In unseren [Versionshinweisen](hololens-release-notes.md#) finden Sie weitere Informationen zu den neuesten Featurereleases. Wenn Sie das neueste HoloLens 2 Full Flash Update (FFU)-Paket herunterladen möchten, um Ihr Gerät über Advanced Recovery Companion zu reflashen, [klicken Sie hier, um das neueste monatliche HoloLens 2-Image herunterzuladen](https://aka.ms/hololens2download). Diese Version ist der neueste allgemein verfügbare Build.
 
-Stellen Sie vor dem Starten des Flashens sicher, dass die Anwendung auf Ihrem Windows 10-PC installiert ist, ausgeführt wird und bereit ist, das Gerät zu erkennen.
+Stellen Sie vor dem Starten des Flashens sicher, dass die Anwendung auf Ihrem Windows 10-PC installiert ist, ausgeführt wird und bereit ist, das Gerät zu erkennen. Stellen Sie außerdem sicher, dass Ihre HoloLens auf mindestens 40% aufgeladen ist.
 
 ![„Clean Reflash“ für HoloLens 2 – Screenshot](images/ARC1.png)
 
@@ -126,22 +127,21 @@ Wenn das HoloLens 2 nicht richtig startet, müssen Sie das Gerät möglicherweis
 
 Wenn eine IT-Umgebung die Verwendung der Windows Store-App verhindert oder den Zugriff auf das Einzelhandelsgeschäft einschränkt, können IT-Administratoren diese Anwendung über andere "Offline"-Bereitstellungspfade verfügbar machen.
 
- >[!NOTE] 
+ >[!NOTE]
  > - IT-Administratoren können diese Anwendung auch über System Center Configuration Manager (SCCM) oder Intune verteilen.
  > - Dieses Handbuch konzentriert sich auf Advanced Recovery Companion. Der Prozess kann aber auch für andere Offline-Apps verwendet werden.
 
 Führen Sie die folgenden Schritte aus, um den Bereitstellungspfad zu aktivieren:
 1. Wechseln Sie zum [Microsoft Store für Unternehmen](https://businessstore.microsoft.com), und melden Sie sich mit einer Azure Active Directory-Identität an.
 
-1. Wechseln Sie zu **Verwalten – Einstellungen**. Aktivieren Sie **Offline-Apps anzeigen** unter **Shopping-Erfahrung**. 
+1. Wechseln Sie zu **Verwalten – Einstellungen**. Aktivieren Sie **Offline-Apps anzeigen** unter **Shopping-Erfahrung**.
 1. Wechseln Sie zu **Shop für meine Gruppe**, und suchen Sie nach [**_Advanced Recovery Companion_*_](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8).
 1. Ändern Sie den _*Lizenztyp** in **_Offline_*_, und wählen Sie _* Manage** aus.
 1. Wählen Sie unter **Paket für Offline-Verwendung herunterladen** die zweite blaue Schaltfläche **Herunterladen** aus. Stellen Sie sicher, dass die Dateierweiterung *.appxbundle* lautet.
 
     - Wenn der Desktop-PC zu diesem Zeitpunkt über einen Internetzugang verfügt, doppelklicken Sie auf das Paket, um die App zu installieren.
 
-
-    - Wenn der Ziel-PC keine Internetverbindung hat, führen Sie die folgenden Schritte aus: 
+    - Wenn der Ziel-PC keine Internetverbindung hat, führen Sie die folgenden Schritte aus:
        1. Wählen Sie die nicht codierte Lizenz aus, und wählen Sie dann **Lizenz generieren** aus.
        2. Wählen Sie unter **Erforderliche Frameworks** die Option **Herunterladen** aus.
        3. Verwenden Sie DISM, um das Paket mit Abhängigkeit und Lizenz anzuwenden. Führen Sie an einer Administrator-Eingabeaufforderung den folgenden Befehl aus:
@@ -153,7 +153,7 @@ Führen Sie die folgenden Schritte aus, um den Bereitstellungspfad zu aktivieren
             > Die Versionsnummer in diesem Codebeispiel stimmt möglicherweise nicht mit der aktuell verfügbaren Version überein. Möglicherweise haben Sie auch einen anderen Download-Speicherort als im angegebenen Beispiel ausgewählt. Nehmen Sie nach Bedarf Änderungen am Befehl vor.
 
 > [!TIP]
-> Wenn Sie beabsichtigen, Advanced Recovery Companion zur Offlineinstallation eines FFU zu verwenden, ist es möglicherweise sinnvoll, Ihr Flash-Image herunterzuladen. [**Laden Sie das aktuelle Image für HoloLens 2 herunter**](https://aka.ms/hololens2download). 
+> Wenn Sie beabsichtigen, Advanced Recovery Companion zur Offlineinstallation eines FFU zu verwenden, ist es möglicherweise sinnvoll, Ihr Flash-Image herunterzuladen. [**Laden Sie das aktuelle Image für HoloLens 2 herunter**](https://aka.ms/hololens2download).
 
 Andere Ressourcen
 - [Verteilen von Offline-Apps](https://docs.microsoft.com/microsoft-store/distribute-offline-apps) 
