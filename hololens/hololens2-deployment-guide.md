@@ -1,28 +1,28 @@
 ---
-title: Bereitstellungshandbuch
-description: Bereitstellungshandbuch für HoloLens 2 (mit Remoteunterstützung als Beispiel)
+title: Bereitstellungshandbuch für externe Clients
+description: Bereitstellungshandbuch für HoloLens 2 für externe Clients (mit Remoteunterstützung als Beispiel)
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
 ms.author: pawinfie
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 1/7/2021
+ms.date: 1/12/2021
 ms.custom: ''
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0cd75fdbe5f6a4e6da87770768ce9f22bce491c0
-ms.sourcegitcommit: 58bffba63ed581351d80d13b1437aca74d7ed64a
+ms.openlocfilehash: c0ea468df2188700af408803ae1c55b9d0e4c763
+ms.sourcegitcommit: ea5fa6c970756025b77c00b4ea600d60ce033106
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "11266368"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "11268001"
 ---
 # Bereitstellen von HoloLens 2 auf externen Clients mit Remote Assist
 
-Dieses Dokument hilft IT-Berufen bei der Planung und Bereitstellung von HoloLens 2-Geräten mit schwerpunkt auf Remote Assist. [Erfahren Sie mehr über Remote Assist](https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview#learn-about-remote-assist).
+Dieses Dokument hilft IT-Berufen bei der Planung und Bereitstellung von HoloLens 2-Geräten, die sich auf Remote Assist konzentrieren. [Erfahren Sie mehr über Remote Assist](https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview#learn-about-remote-assist).
 
 ## Beschreibung des Szenarios
 
@@ -31,7 +31,7 @@ Für dieses Dokument möchte Contoso Company ein HoloLens 2-Gerät zur kurzfrist
 ### Anforderungen für dieses Szenario
 
 1. [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
-1. Mobile Device Manager – z. B. [Intune](https://docs.microsoft.com/mem/intune/fundamentals/free-trial-sign-up)
+1. Mobile Device Manager – z. [B. Intune](https://docs.microsoft.com/mem/intune/fundamentals/free-trial-sign-up)
 1. Remote Assist-Lizenz
     1. [Remote Assist kaufen](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-remote-assist)
     1. [Remote Assist für Testversionen](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist)
@@ -94,9 +94,9 @@ Für die Bereitstellungsschritte von HoloLens 2 wird Folgendes empfohlen:
     1. Benutzerbasierte und gerätebasierte Lizenzen führen beide die folgenden Schritte aus:
         1. [Erstellen Sie eine Gruppe in AAD, und fügen Sie Mitglieder](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal#create-a-basic-group-and-add-members) für HoloLens/RA-Benutzer hinzu.
         1. [Weisen Sie dieser Gruppe geräte- oder benutzerbasierte](https://docs.microsoft.com/azure/active-directory/enterprise-users/licensing-groups-assign#:~:text=In%20this%20article%201%20Assign%20the%20required%20licenses,3%20Check%20for%20license%20problems%20and%20resolve%20them) Lizenzen zu.
-        1. (Optional) Sie können Gruppen für MDM-Richtlinien anzielen.
+        1. (Optional) Sie können Zielgruppen für MDM-Richtlinien.
 
-1. Geräte sollten AAD mit Ihrem Mandanten verbunden, [automatisch](https://docs.microsoft.com/hololens/hololens-enroll-mdm#auto-enrollment-in-mdm)registriert und über [autopilot konfiguriert werden.](https://docs.microsoft.com/hololens/hololens2-autopilot)
+1. Geräte sollten AAD ihrem Mandanten beigetreten sein, [automatisch](https://docs.microsoft.com/hololens/hololens-enroll-mdm#auto-enrollment-in-mdm)registriert und über [autopilot konfiguriert werden.](https://docs.microsoft.com/hololens/hololens2-autopilot)
     1. Beachten Sie, dass der erste Benutzer auf dem Gerät der Gerätebesitzer ist.
     1. Beachten Sie, dass der Benutzer, der die Verknüpfung ausgeführt hat, gerätebesitzer wird, wenn das Gerät mit AAD verbunden ist.
     1. Weitere Informationen finden Sie unter ["Gerätebesitzer".](https://docs.microsoft.com/hololens/security-adminless-os#device-owner)
