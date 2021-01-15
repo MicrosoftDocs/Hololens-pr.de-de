@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 06c3faf573adabe158a72a66fc4b8a45afec48fb
-ms.sourcegitcommit: e26aa9059a7d8e73914205e80a89ea9637926e74
+ms.openlocfilehash: 5da96d2838cbe1a02956a3e567c6ecf6da9d6b10
+ms.sourcegitcommit: c93f23fe7c27dfa45fef300a4fc91aa811bc8126
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/14/2021
-ms.locfileid: "11269396"
+ms.locfileid: "11269480"
 ---
 # Insider-Vorschau für Microsoft HoloLens
 
@@ -103,7 +103,7 @@ Da es sich bei dem neuen Microsoft Edge um eine systemeigene Win32-App mit einer
 
 ### Neue Einstellungs-App
 
-In dieser Version wird eine neue Version der App "Einstellungen" eingeführt. Die neue Einstellungs-App umfasst neue Features und erweiterte Einstellungen für HoloLens 2 in den folgenden Bereichen: Audiogeräte für Eingabe/Ausgabe, einzelnes App-Volume, Energie und Ruhezustand, Ethernet-Adapter, Erleichterte Bedienung, Flugzeugmodus und Standard-Apps.
+In dieser Version wird eine neue Version der App "Einstellungen" eingeführt. Die neue Einstellungs-App umfasst neue Features und erweiterte Einstellungen für HoloLens 2 in den folgenden Bereichen: Sound, Power &-Ruhezustand, Netzwerk & Internet, Apps, Konten, Erleichterte Bedienung und vieles mehr.
 
 > [!NOTE]
 > Da sich die neue Einstellungs-App von der älteren Einstellungs-App unterscheidet, werden alle Einstellungsfenster, die Sie zuvor in Ihrer Umgebung platziert haben, nach dem Update entfernt.
@@ -112,17 +112,18 @@ In dieser Version wird eine neue Version der App "Einstellungen" eingeführt. Di
 
 **Neue Features und Einstellungen**
 - Einstellungssuche: Suchen Nach Einstellungen auf der Startseite "Einstellungen" mithilfe von Schlüsselwörtern oder dem Namen der Einstellung
-- Sound:
+- System > Sound:
   - Ein- und Ausgabeaudiogeräte: Wählen Sie unabhängig Ihre Ein- und Ausgabeaudiogeräte aus (z. B. hören Sie Audio über Bluetooth-Kopfhörer, oder verwenden Sie ein USB-C-Mikrofon für die Audioeingabe). Hinweis: Bluetooth werden von HoloLens 2 nicht unterstützt.
   - App-Volume: Anpassen der Lautstärke der einzelnen Apps unabhängig
-- Stromsparmodus: Aktivieren Sie den Stromsparmodus manuell, oder legen Sie einen Akkuschwellenwert für diesen Zeitpunkt ein, an dem der Stromsparmodus automatisch aktiviert wird
-- Energie &: Wählen Sie aus, wann das Gerät nach einer bestimmten Inaktivität in den Ruhezustand wechseln soll.
-- USB: Sie können usb-Verbindungen standardmäßig deaktivieren
+- System > Power &: Wählen Sie aus, wann das Gerät nach einer bestimmten Inaktivität in den Ruhezustand wechseln soll.
+- System > Akku: Manuelles Aktivieren des Stromsparmodus oder Festlegen eines Akkuschwellenwerts, an dem der Stromsparmodus automatisch aktiviert wird
+- Geräte > USB: Sie können standardmäßige USB-Verbindungen deaktivieren.
 - Netzwerk & Internet:
   - USB-C-Ethernet-Adapter werden jetzt im Netzwerk & angezeigt
   - Usb-C-Ethernet-Adaptereinstellungen sind jetzt verfügbar, einschließlich der #A0
   - Sie können jetzt den Flugzeugmodus auf HoloLens 2 aktivieren
 - Apps: Sie können die Für Datei- und Linktypen verwendeten Standard-Apps zurücksetzen. Weitere [Informationen finden Sie unter "Standardmäßige](#default-app-picker) App-Auswahl".
+- Konten > andere Benutzer: Gerätebesitzer können Benutzer hinzufügen, Standardbenutzer auf Gerätebesitzer aktualisieren, Gerätebesitzer auf Standardbenutzer herabstufen und Benutzer entfernen.
 - Erleichterte Bedienung: Ändern der Textgröße und einiger visueller Effekte
 
 **Bekannte Probleme**
