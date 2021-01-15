@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5299f56429adb6212074c16b67d2f10d418129f4
-ms.sourcegitcommit: b33dd8accef641578142e5234b9ad2d0222694ec
+ms.openlocfilehash: 8678e238ca17ad66873d4e4ea72ebef161ee6315
+ms.sourcegitcommit: d261604bf9e7ef04c2a947611715d0bec78b4f92
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "11134651"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "11270723"
 ---
 # HoloLens 2-Hardware
 
@@ -68,6 +68,11 @@ Um den Prozentsatz der internen Akkuladedauer beizubehalten bzw. zu verbessern, 
 | Tiefe | 1-MP-Time-of-Flight-Tiefensensor |
 | Trägheitsmaßeinheit (IMU) | Beschleunigungsmesser, Gyroskop, Magnetometer |
 | Kamera | 8-MP-Standbilder, 1080p30-Video |
+
+![HoloLens 2-Sensoren](images/hl2-sensors.png)
+
+> [!NOTE]
+> Decken Sie keinen der Sensoren ab, die im Bild aufgerufen sind. Die Kopfverfolgungskameras haben ein sehr breites Sichtfeld (FOV). Es sollte sich nichts um sie herum befinden und sie nicht verdecken.
 
 ### Audio und Sprache
 
