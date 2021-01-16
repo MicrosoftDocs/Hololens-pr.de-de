@@ -12,16 +12,16 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8678e238ca17ad66873d4e4ea72ebef161ee6315
-ms.sourcegitcommit: d261604bf9e7ef04c2a947611715d0bec78b4f92
+ms.openlocfilehash: 41508b8cdc2e8e34545c1e07136b69eea2e3aa48
+ms.sourcegitcommit: e97b2b8f47ac5ec2e3be3e5d69d8e026b6f21111
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/15/2021
-ms.locfileid: "11270723"
+ms.locfileid: "11271170"
 ---
 # HoloLens 2-Hardware
 
-![HoloLens 2 – Seitenansicht](images/hololens2-exploded-medium.png)
+![HoloLens 2 – Seitenansicht](images/hololens2-breakdown.png)
 
 Microsoft HoloLens 2 ist ein ungebundener holographischer Computer.  Er verfeinert die von HoloLens (1. Generation) begonnene holographische Computererfahrung und bietet ein komfortableres und umfassenderes Erlebnis, gepaart mit mehr Optionen für die Zusammenarbeit in Mixed Reality.
 
@@ -69,7 +69,7 @@ Um den Prozentsatz der internen Akkuladedauer beizubehalten bzw. zu verbessern, 
 | Trägheitsmaßeinheit (IMU) | Beschleunigungsmesser, Gyroskop, Magnetometer |
 | Kamera | 8-MP-Standbilder, 1080p30-Video |
 
-![HoloLens 2-Sensoren](images/hl2-sensors.png)
+![HoloLens 2-Sensoren](images/hololens2-front-view.png)
 
 > [!NOTE]
 > Decken Sie keinen der Sensoren ab, die im Bild aufgerufen sind. Die Kopfverfolgungskameras haben ein sehr breites Sichtfeld (FOV). Es sollte sich nichts um sie herum befinden und sie nicht verdecken.

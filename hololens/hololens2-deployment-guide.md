@@ -13,20 +13,28 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c0ea468df2188700af408803ae1c55b9d0e4c763
-ms.sourcegitcommit: ea5fa6c970756025b77c00b4ea600d60ce033106
+ms.openlocfilehash: 7658ace4879fef401accabb95ca22e307e5f80a8
+ms.sourcegitcommit: 50e4d61a31b94d5007776064b4012e26cf9ecbbb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "11268001"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271659"
 ---
-# Bereitstellen von HoloLens 2 auf externen Clients mit Remote Assist
+# Bereitstellen von HoloLens2 auf externen Clients mit Remote Assist
 
-Dieses Dokument hilft IT-Berufen bei der Planung und Bereitstellung von HoloLens 2-Geräten, die sich auf Remote Assist konzentrieren. [Erfahren Sie mehr über Remote Assist](https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview#learn-about-remote-assist).
+Dieses Handbuch unterstützt IT-Experten bei der Bereitstellung von Microsoft HoloLens 2-Geräten in ihrer Organisation:
+
+1. Cloud Connect HoloLens 2-Geräte
+1. Ausleihen von HoloLens 2-Geräten an externe Clients zur Verwendung
+1. Sichere ausgeliehene Geräte
+
+Dieses Handbuch enthält allgemeine [HoloLens 2-Bereitstellungsempfehlungen,](#general-deployment-recommendations-and-instructions) die für [](#common-concerns) die meisten HoloLens 2-Bereitstellungsszenarien gelten, sowie allgemeine Bedenken, die Kunden bei der Bereitstellung von Remote Assist für die externe Verwendung haben.
 
 ## Beschreibung des Szenarios
 
 Für dieses Dokument möchte Contoso Company ein HoloLens 2-Gerät zur kurzfristigen oder langfristigen Verwendung an das Werk eines externen Clients senden. Wenn der Client Unterstützung bei der Wartung von Wartungsleistungen benötigt, wird der Client sich mit den von Contoso Company bereitgestellten Anmeldeinformationen beim HoloLens 2-Gerät anmelden und remote Assist verwenden, um die Experten von Contoso Company zu kontaktieren.
+
+Weitere Informationen zu Remote Assist finden Sie [hier.](https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview#learn-about-remote-assist)
 
 ### Anforderungen für dieses Szenario
 
@@ -58,7 +66,7 @@ Es gibt zwei Optionen, die sie berücksichtigen sollten.
 Die erste Option ist ein Ansatz mit mehreren Ebenen:
 
 1. Weisen Sie nur Lizenzen zu, die der Benutzer benötigt. Wenn Sie dem Benutzer oneDrive, Outlook, SharePoint, Yammer usw. nicht zuweisen, hat er keinen Zugriff auf diese Ressourcen. Die einzigen Lizenzen, die die Benutzer benötigen, sind Remote Assist-, Intune- und AAD-Lizenzen, um zu beginnen.
-1. Blockieren von Apps (z. B. E-Mail), auf die Clients nicht zugreifen möchten (Siehe [So schränken Sie Apps ein).](#how-to-restrict-apps)
+1. Blockieren von Apps (z. B. E-Mail), auf die Clients nicht zugreifen möchten (siehe [So schränken Sie Apps ein).](#how-to-restrict-apps)
 1. Geben Sie keine Benutzernamen oder Kennwörter für Clients gemeinsam. Um sich bei HoloLens 2 anmelden zu können, ist eine E-Mail und eine numerische PIN erforderlich.
 
 Die zweite Option besteht im Erstellen eines separaten Mandanten, der Clients hostet (siehe Abbildung 1.1).
@@ -94,7 +102,7 @@ Für die Bereitstellungsschritte von HoloLens 2 wird Folgendes empfohlen:
     1. Benutzerbasierte und gerätebasierte Lizenzen führen beide die folgenden Schritte aus:
         1. [Erstellen Sie eine Gruppe in AAD, und fügen Sie Mitglieder](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal#create-a-basic-group-and-add-members) für HoloLens/RA-Benutzer hinzu.
         1. [Weisen Sie dieser Gruppe geräte- oder benutzerbasierte](https://docs.microsoft.com/azure/active-directory/enterprise-users/licensing-groups-assign#:~:text=In%20this%20article%201%20Assign%20the%20required%20licenses,3%20Check%20for%20license%20problems%20and%20resolve%20them) Lizenzen zu.
-        1. (Optional) Sie können Zielgruppen für MDM-Richtlinien.
+        1. (Optional) Sie können Gruppen für MDM-Richtlinien anzielen.
 
 1. Geräte sollten AAD ihrem Mandanten beigetreten sein, [automatisch](https://docs.microsoft.com/hololens/hololens-enroll-mdm#auto-enrollment-in-mdm)registriert und über [autopilot konfiguriert werden.](https://docs.microsoft.com/hololens/hololens2-autopilot)
     1. Beachten Sie, dass der erste Benutzer auf dem Gerät der Gerätebesitzer ist.
@@ -112,7 +120,7 @@ Für die Bereitstellungsschritte von HoloLens 2 wird Folgendes empfohlen:
 1. Verwenden [Sie WDAC,](https://docs.microsoft.com/hololens/windows-defender-application-control-wdac) um apps auf dem HoloLens 2-Gerät zu erlauben oder schwarze Apps zu verwenden.
 1. Aktualisieren Sie Remote Assist im Rahmen des Setups auf die neueste Version. Dazu gibt es zwei Möglichkeiten:
     1. Dies können Sie tun, indem Sie zu Windows **Microsoft Store --> Remote Assist --> und Update App gehen.**
-    1. Eine weitere Methode ist, die HoloLens 2 über Nacht für automatische Updates eingesteckt zu lassen.
+    1. Aktivieren Sie automatische Updates mithilfe des [ApplicationManagement/AllowAppStoreAutoUpdate-CSP,](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) und lassen Sie das Gerät angeschlossen, um Updates zu empfangen.
 1. [Deaktivieren Sie alle Einstellungsseiten](https://docs.microsoft.com/hololens/settings-uri-list) mit Ausnahme der Netzwerkeinstellungen, damit Benutzer eine Verbindung mit Gastnetzwerken an Clientstandorten herstellen können.
 1. [Verwalten von HoloLens-Updates](https://docs.microsoft.com/hololens/hololens-updates)
     1. Option zum [Steuern von Betriebssystemupdates](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure#create-and-assign-update-rings) oder zum freien Fluss.

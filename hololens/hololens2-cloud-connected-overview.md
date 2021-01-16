@@ -1,7 +1,7 @@
 ---
-title: Bereitstellungshandbuch – Cloud Connected HoloLens 2 mit Remote Assist – Übersicht
-description: Registrieren von HoloLens-Geräten über ein in der Cloud verbundenes Netzwerk
-keywords: HoloLens, Verwaltung, Cloud Connected, Remote Assist, AAD, Azure AD, MDM, Verwaltung mobiler Geräte
+title: Bereitstellungshandbuch – Mit der Cloud verbundene HoloLens 2 mit Remote Assist – Übersicht
+description: Registrieren von HoloLens-Geräten über ein mit der Cloud verbundenes Netzwerk
+keywords: HoloLens, Verwaltung, mit der Cloud verbunden, Remote Assist, AAD, Azure AD, MDM, Verwaltung mobiler Geräte
 author: evmill
 ms.author: v-evmill
 ms.reviewer: aboeger
@@ -14,75 +14,75 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7d954347c7c274b844d436c0d6fc96e8bbc59f10
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: fe83333c99f8dbf23b211c9b5155db256dcd20b3
+ms.sourcegitcommit: 50e4d61a31b94d5007776064b4012e26cf9ecbbb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253182"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271673"
 ---
-# Bereitstellungshandbuch – Cloud Connected HoloLens 2 mit Remote Assist – Übersicht
+# Bereitstellungshandbuch – Mit der Cloud verbundene HoloLens 2 mit Remote Assist – Übersicht
 
-Dieser Leitfaden unterstützt IT-Experten beim Planen und Bereitstellen von Microsoft HoloLens 2-Geräten für Ihre Organisation mit dem Gesamtziel, dass diese Geräte mit Ihrer Organisation in Verbindung mit der Dynamics 365-Remote Unterstützung einsatzbereit sind. Beachten Sie, dass dies als Modell für Machbarkeits orientierte Bereitstellungen für Ihre Organisation in einer Vielzahl von HoloLens 2-Anwendungsfällen dienen kann.
+Dieses Handbuch hilft IT-Experten bei der Planung und Bereitstellung von Microsoft HoloLens 2-Geräten in ihrer Organisation mit dem allgemeinen Ziel, dass diese Geräte cloudgebunden mit Ihrer Organisation mit Dynamics 365 Remote Assist betriebsbereit sind. Beachten Sie, dass dies als Modell für die Bereitstellung von Proof-of-Concept-Bereitstellungen für Ihre Organisation in einer Vielzahl von HoloLens 2-Verwendungsfällen dient.
 
-Während des Leitfadens wird erläutert, wie Sie Ihre Geräte in der Geräteverwaltung registrieren, Lizenzen nach Bedarf anwenden und überprüfen können, ob Ihre Endbenutzer die Remote Unterstützung unmittelbar nach der Einrichtung des Geräts verwenden können. Zu diesem Zweck gehen wir auf die wichtigen Infrastrukturkomponenten ein, die für die Einrichtung und Ausführung erforderlich sind, um die Bereitstellung im Maßstab mit HoloLens 2 zu erreichen.
+In diesem Leitfaden wird beschrieben, wie Sie Ihre Geräte bei der Geräteverwaltung registrieren, Lizenzen nach Bedarf anwenden und überprüfen, ob Ihre Endbenutzer remote Assist sofort beim Einrichten des Geräts verwenden können. Dazu werden wir die wichtigen Infrastrukturteile durchgehen, die für die Einrichtung und Ausführung erforderlich sind – die Bereitstellung mit HoloLens 2 wird im großen Maßstab erreicht.
 
 ## In diesem Leitfaden
 
-Dieser Leitfaden hat das spezifische Ziel, den Remote-Support in Ihrer Organisation auf Ihren HoloLens-Geräten einzurichten. Wir werden die Notwendigkeiten decken, die erforderlich sind, um dieses Ziel zu erreichen. Um die Fokussierung auf dieses Ziel zu gewährleisten, sind bestimmte Vorbereitungen und Konfigurationen bereits ausgewählt, um für diese Bereitstellung zu optimieren oder die für die Konfiguration erforderlichen Elemente zu reduzieren. Sie werden über diese Auswahlmöglichkeiten informiert und können Ihre Bereitstellung auf der Grundlage ihrer geschäftlichen Anforderungen anpassen.
+Dieses Handbuch hat das spezifische Ziel, Remote Assist in Ihrer Organisation auf Ihren HoloLens-Geräten einrichten. Wir werden die Notwendigkeiten zur Erreichung dieses Ziels abdecken. Um den Fokus auf diesem Ziel zu behalten, werden bestimmte Vorbereitungen und Konfigurationen vorab ausgewählt, um die Bereitstellung zu optimieren oder die zu konfigurierenden Elemente zu reduzieren. Sie werden über diese Auswahlmöglichkeiten informiert und können Ihre Bereitstellung an Ihre Geschäftlichen Anforderungen anpassen.
 
-Hierbei handelt es sich um eine Einrichtung, die mit [Szenario a vergleichbar ist: Bereitstellen auf Cloud Connect-Geräten](https://docs.microsoft.com/hololens/common-scenarios#scenario-a), was eine gute Option für viele Konzepte zur Machbarkeitsstudie ist, einschließlich:
+Diese Einrichtung ähnelt Szenario [A: Bereitstellen](https://docs.microsoft.com/hololens/common-scenarios#scenario-a)auf Cloud Connect-Geräten. Dies ist eine gute Option für viele Proof of Concept-Bereitstellungen, die Folgendes umfassen:
 
-- Wi-Fi Netzwerke sind in der Regel vollständig für das Internet und die Cloud-Dienste geöffnet.
-- Azure AD Join with MDM Auto Enrollment--MDM (InTune) verwaltet
-- Benutzer anmelden mit einem eigenen Unternehmenskonto (Azure AD)
+- Wi-Fi sind in der Regel vollständig für internet- und cloudbasierte Dienste geöffnet.
+- Azure AD Join mit automatischer MDM-Registrierung – MDM (Intune) Managed
+- Benutzer melden sich mit ihrem eigenen Unternehmenskonto an (Azure AD)
   - Einzelne oder mehrere Benutzer pro Gerät unterstützt
-- Unterschiedliche Ebenen der Geräte Sperrungs Konfigurationen werden basierend auf bestimmten Anwendungsfällen angewendet, vom vollständigen öffnen zum einzelnen App-Kiosk
+- Unterschiedliche Stufen von Gerätesperrmoduskonfigurationen werden basierend auf bestimmten Anwendungsfällen angewendet, von "Vollständig geöffnet" bis "Single App Kiosk".
 
-![Szenario mit Cloud-Verbindung](./images/cloud-connected-deployment-chart.png)
+![Mit der Cloud verbundenes Szenario](./images/cloud-connected-guide-diagram.png)
 
-In diesem Leitfaden werden keine weiteren Geräteeinschränkungen oder-Konfigurationen angewendet, wir empfehlen Ihnen jedoch, diese Optionen nach Abschluss zu untersuchen.
+In diesem Leitfaden werden keine weiteren Geräteeinschränkungen oder -konfigurationen angewendet, wir empfehlen Ihnen jedoch, diese Optionen nach abschluss zu erkunden.
 
-## Informationen zu Remote Unterstützung
+## Erfahren Sie mehr über Remote Assist
 
-Der Remote-Assistent ermöglicht die gemeinsame Wartung und Reparatur, die Remote Inspektion sowie den Austausch von Wissen und Schulungen. Durch die Verbindung von Personen mit unterschiedlichen Rollen und Speicherorten kann ein Techniker mit Remoteunterstützung eine Verbindung mit einem Remotemitarbeiter in Microsoft Teams herstellen. Sie können Video, Screenshots und Anmerkungen kombinieren, um Probleme in Echtzeit zu lösen, auch wenn Sie nicht am selben Ort&#39;t sind. Remote-Mitarbeiter können Referenzbilder, schematische und andere hilfreiche Informationen einfügen, um den physikalischen Platz des Technikers&#39;, damit Sie sich auf die Schaltplan Funktion beziehen können, während Sie Heads-up und freihändig auf HoloLens.
+Remote Assist ermöglicht gemeinsame Wartung und Reparatur, Remoteinspektion sowie Wissensfreigabe und Schulung. Durch das Verbinden von Personen an verschiedenen Rollen und Standorten kann ein Techniker mit Remote Assist eine Verbindung mit einem Remotemitarbeiter in Microsoft Teams herstellen. Sie können Videos, Screenshots und Anmerkungen kombinieren, um Probleme in Echtzeit zu lösen, auch wenn&#39;sich nicht am selben Speicherort befinden. Remotemitarbeiter können Referenzbilder, Schemata und andere hilfreiche Informationen einfügen, die der Techniker&#39;den physischen Raum eingibt, damit sie auf das Schema beim Arbeiten mit Kopf und Freisprechen auf HoloLens verweisen können.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## In diesem Leitfaden finden Sie folgende Informationen:
+## In diesem Leitfaden werden Sie:
 
-Vorbereiten
-
-> [!div class="checklist"]
-> - [Erfahren Sie mehr über die Infrastruktur-Grundlagen für HoloLens 2-Geräte.](hololens2-cloud-connected-prepare.md#infrastructure-essentials)
-> - [Weitere Informationen zu Azure AD und Einrichten einer, wenn Sie&#39;t haben.](hololens2-cloud-connected-prepare.md#azure-active-directory)
-> - [Erfahren Sie mehr über die Identitätsverwaltung und die optimale Einrichtung von Azure Ad-Konten.](hololens2-cloud-connected-prepare.md#identity-management)
-> - [Weitere Informationen zu MDM und zum Einrichten von InTune, wenn Sie&#39;t bereits eine bereit haben.](hololens2-cloud-connected-prepare.md#mobile-device-management)
-> - [Informieren Sie sich über die Netzwerkanforderungen der Remote Unterstützung.](hololens2-cloud-connected-prepare.md#network)
-> - [Optional: VPN zum Herstellen einer Verbindung mit organisatorischen Ressourcen](/hololens2-cloud-connected-prepare.md#optional-connect-your-hololens-to-vpn)
-
-Konfigurieren
+Bereiten Sie dies vor:
 
 > [!div class="checklist"]
-> - [Erstellen von Benutzern und Gruppen](hololens2-cloud-connected-configure.md#azure-users-and-groups)
-> - [Einrichten der automatischen Registrierung in Azure AD](hololens2-cloud-connected-configure.md#auto-enrollment-on-hololens-2)
-> - [So weisen Sie Ihre Anwendungslizenzen zu.](hololens2-cloud-connected-configure.md#application-licenses)
+> - [Erfahren Sie mehr über die grundlegenden Infrastruktur für HoloLens 2-Geräte.](hololens2-cloud-connected-prepare.md#infrastructure-essentials)
+> - [Erfahren Sie mehr über Azure AD, und richten Sie eins ein,&#39;nicht verfügen.](hololens2-cloud-connected-prepare.md#azure-active-directory)
+> - [Erfahren Sie mehr über die Identitätsverwaltung und die beste Einrichtung von Azure AD-Konten.](hololens2-cloud-connected-prepare.md#identity-management)
+> - [Erfahren Sie mehr über MDM, und richten Sie Intune ein,&#39;sie noch nicht bereit sind.](hololens2-cloud-connected-prepare.md#mobile-device-management)
+> - [Erfahren Sie mehr über die Netzwerkanforderungen von Remote Assist.](hololens2-cloud-connected-prepare.md#network)
+> - [Optional: VPN zum Herstellen einer Verbindung mit Organisationsressourcen](/hololens2-cloud-connected-prepare.md#optional-connect-your-hololens-to-vpn)
 
-Bereitstellen
-
-> [!div class="checklist"]
-> - [Richten Sie Ihre HoloLens 2 ein, und überprüfen Sie die Registrierung.](hololens2-cloud-connected-deploy.md#enrollment-validation)
-> - [Überprüfen Sie können einen Remote Unterstützungs Anruf führen.](hololens2-cloud-connected-deploy.md#remote-assist-call-validation)
-
-Pflegen
+Konfigurieren Sie:
 
 > [!div class="checklist"]
-> - [Aktualisieren von Remote Unterstützung mithilfe der Microsoft Store-App](hololens2-cloud-connected-maintain.md#updates)
-> - [Erstellen eines Support Plans](hololens2-cloud-connected-maintain.md#support-plan)
+> - [Erstellen von Benutzern und Gruppen.](hololens2-cloud-connected-configure.md#azure-users-and-groups)
+> - [Einrichten der automatischen Registrierung in Azure AD.](hololens2-cloud-connected-configure.md#auto-enrollment-on-hololens-2)
+> - [Zuweisen von Anwendungslizenzen.](hololens2-cloud-connected-configure.md#application-licenses)
+
+Bereitstellen:
+
+> [!div class="checklist"]
+> - [Richten Sie HoloLens 2 ein, und überprüfen Sie die Registrierung.](hololens2-cloud-connected-deploy.md#enrollment-validation)
+> - [Überprüfen Sie, ob Sie einen Remote assist-Anruf machen können.](hololens2-cloud-connected-deploy.md#remote-assist-call-validation)
+
+Warten Sie:
+
+> [!div class="checklist"]
+> - [So aktualisieren Sie Remote Assist mithilfe der Microsoft Store-App.](hololens2-cloud-connected-maintain.md#updates)
+> - [Erstellen eines Supportplans.](hololens2-cloud-connected-maintain.md#support-plan)
 > - [Entwicklungsplan.](hololens2-cloud-connected-maintain.md#development-plan)
 
 ## Nächster Schritt
 
 > [!div class="nextstepaction"]
-> [Cloud Connected-Bereitstellung – vorbereiten](hololens2-cloud-connected-prepare.md)
+> [Mit der Cloud verbundene Bereitstellung – Vorbereiten](hololens2-cloud-connected-prepare.md)
 
