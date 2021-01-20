@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 417412e6b7854d9d985faa13bcf072b98e17f264
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 2d9527c9fee2818dfe8aa1f88a2f193415323bb1
+ms.sourcegitcommit: 37910c10f0f98aa9cbdc29124cd8f14ee0af3fbd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11252972"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "11280664"
 ---
 # Begrenzen der Verwendung von Kennwörtern
 
@@ -97,7 +97,7 @@ Weitere Informationen zum Verwenden von WebAuthn mit Anwendungen und/oder SDKs f
 
 ## Lokale Konten
 
-Für die Bereitstellung im Offlinemodus kann ein einzelnes lokales Konto konfiguriert werden. Lokale Konten sind standardmäßig nicht aktiviert und müssen während der Gerätebereitstellung konfiguriert werden. Sie erfordern die Anmeldung mittels Kennwort und unterstützen keine alternativen Authentifizierungsmethoden (z. B. [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview) oder [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello)). 
+Für die Bereitstellung im Offlinemodus kann ein einzelnes lokales Konto konfiguriert werden. Lokale Konten sind standardmäßig nicht aktiviert und müssen während der Gerätebereitstellung konfiguriert werden. Es ist erforderlich, dass sie sich mittels eines Kennworts anmelden und keine alternativen Authentifizierungsmethoden (z. B. [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview) oder [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello)) unterstützen. 
 
 Weitere Informationen zu HoloLens-Benutzerkonten finden Sie unter [HoloLens-Identität](https://docs.microsoft.com/hololens/hololens-identity). 
 
