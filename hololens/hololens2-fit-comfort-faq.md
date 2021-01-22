@@ -1,6 +1,6 @@
 ---
 title: 'HoloLens2 komfortabel anpassen: Häufig gestellte Fragen'
-description: Hier erhalten Sie Antworten auf häufig gestellte Fragen zur Anpassung Ihrer HoloLens2.
+description: Bleiben Sie auf dem neuesten Stand hinsichtlich häufig gestellten Fragen zum Einpassen Ihrer HoloLens 2, und bleiben Sie mit Mixed Reality-Erlebnissen vertraut.
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
@@ -13,12 +13,12 @@ ms.reviewer: jarrettr
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 17b55ef165cbb9df47f822f742141f4460cd9c6b
-ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.openlocfilehash: 158354c23e93abe770875491af1ab559e47557a7
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929841"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283836"
 ---
 # HoloLens2 komfortabel anpassen: Häufig gestellte Fragen
 

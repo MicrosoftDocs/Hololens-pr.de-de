@@ -1,9 +1,9 @@
 ---
 title: Einrichten Ihrer HoloLens 2
-description: Dieser Leitfaden führt Sie durch die erstmalige Einrichtung.  Sie benötigen ein WLAN-Netzwerk und entweder ein Microsoft (MSA)-oder Azure Active Directory (AAD)-Konto.
+description: Erfahren Sie, wie Sie HoloLens 2 zum ersten Mal über ein Wi-Fi-Netzwerk mit einem Microsoft (MSA)- oder einem Azure Active Directory (AAD)-Konto einrichten.
 ms.assetid: 507305f4-e85a-47c5-a055-a3400ae8a10e
 ms.date: 9/17/2019
-keywords: hololens
+keywords: HoloLens
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a0ba32e3caff7695cd284ee3752bb91d80da2194
-ms.sourcegitcommit: 7edbb99e0972d3d857e5e87c062c3c64cacc1f41
+ms.openlocfilehash: 9824de1d81fd6ba9ccafc8627d660aebefeaed15
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "10903241"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283876"
 ---
 # Einrichten Ihrer HoloLens 2
 
