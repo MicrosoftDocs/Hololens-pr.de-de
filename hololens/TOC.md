@@ -12,7 +12,8 @@
 ### [Reinigen von HoloLens 2: Häufig gestellte Fragen](hololens2-maintenance.md)
 ### [Unterstützte Sprachen für HoloLens 2](hololens2-language-support.md)
 ### [Aufbau von HoloLens 2](hololens2-basic-usage.md)
-### [FAQ zu HoloLens 2 Development Edition](hololens2-development-edition-faq.md)
+### [FAQ zur HoloLens 2 Development Edition](hololens2-development-edition-faq.md)
+### [Verwalten der benutzerdefinierten Apps für HoloLens 2](hololens2-holographic-custom-apps.md)
 
 
 ## Erste Schritte mit HoloLens (1. Generation)
@@ -23,16 +24,17 @@
 ### [Installieren einer lokalisierten HoloLens-Version (1. Generation)](hololens1-install-localized.md)
 ### [Aufbau der HoloLens (1. Generation)](hololens1-basic-usage.md)
 ### [Verwenden des Clickers für HoloLens (1. Generation)](hololens1-clicker.md)
-### [Verwenden des 3D-Viewers mit HoloLens (1. Gen.)](holographic-3d-viewer-beta.md)
+### [Verwenden des 3D-Viewers mit HoloLens (1. Generation)](holographic-3d-viewer-beta.md)
+### [Verwalten der benutzerdefinierten Apps für HoloLens](holographic-custom-apps.md)
 
-## Navigieren in der Windows Holographic-Benutzeroberfläche
+
+## Navigieren der Windows Holographic-Benutzeroberfläche
 ### [Verwenden des Startmenüs und der Mixed Reality-Startseite](holographic-home.md)
 ### [Verwenden Ihrer Stimme zum Bedienen von HoloLens](hololens-cortana.md)
 ### [Suchen, Öffnen und Speichern von Dateien mit HoloLens](holographic-data.md)
 ### [Mixed Reality-Fotos und -Videos aufnehmen](holographic-photos-and-videos.md)
 ## Holografische Anwendungen
-### [Suchen, Installieren und Deinstallieren von Anwendungen](holographic-store-apps.md)
-### [Verwalten von benutzerdefinierten Apps für HoloLens](holographic-custom-apps.md)
+### [Suchen, installieren und deinstallieren von Anwendungen](holographic-store-apps.md)
 ## Hologramm-Optik und Platzierung im Raum
 ### [Verbessern der Grafikqualität und des Komforts](hololens-calibration.md)
 ### [Abbilden von physischen Räumen mit HoloLens](hololens-spaces.md) 
