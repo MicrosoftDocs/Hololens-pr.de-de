@@ -1,6 +1,6 @@
 ---
 title: Verwenden Ihrer Stimme zum Bedienen von HoloLens
-description: Cortana kann Ihnen helfen, alle möglichen Dinge auf Ihrem HoloLens zu erledigen.
+description: Erfahren Sie, wie Cortana Ihnen dabei helfen kann, mit Ihren Mixed Reality HoloLens-Geräten alle möglichen Dinge zu tun, einschließlich Sprachbefehle, diktieren und Hologramminteraktionen.
 ms.assetid: fd96fb0e-6759-4dbe-be1f-58bedad66fed
 ms.date: 03/10/2020
 keywords: hololens
@@ -15,11 +15,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d6fc83e81ce6f02047cff8a5d1944156f769e056
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: dd99744dfe27f52bb4ec51ad9fa9af4bfd1f0e96
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828380"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283326"
 ---
 # Verwenden Ihrer Stimme zum Bedienen von HoloLens
 
