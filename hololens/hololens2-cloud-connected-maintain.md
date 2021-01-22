@@ -1,7 +1,7 @@
 ---
-title: Bereitstellungshandbuch – Cloud Connected HoloLens 2-Bereitstellung im Maßstab mit Remote Unterstützung – verwalten
-description: Tipps zum Verwalten von HoloLens-Geräten über ein mit der Cloud verbundenes Netzwerk
-keywords: HoloLens, Verwaltung, Cloud Connected, Remote Assist, AAD, Azure AD, MDM, Verwaltung mobiler Geräte
+title: Bereitstellungshandbuch – Mit der Cloud verbundene HoloLens 2-Bereitstellung im großen Maßstab mit Remote Assist – Wartung
+description: Halten Sie sich mit unseren Tipps zur Wartung und Unterstützung von HoloLens-Geräten über ein cloudverbundenes Netzwerk auf dem Laufenden.
+keywords: HoloLens, Verwaltung, mit der Cloud verbunden, Remote Assist, AAD, Azure AD, MDM, Verwaltung mobiler Geräte
 author: evmill
 ms.author: v-evmill
 ms.reviewer: aboeger
@@ -14,55 +14,55 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8117c73516d2775ec67f37bad524bcf377ece2e5
-ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
+ms.openlocfilehash: bc34c4e41c5a6cee8f3f9a0a97407ee38d419bbc
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "11252696"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283896"
 ---
-# Verwalten-Cloud Connected-Leitfaden
+# Verwalten – Leitfaden mit Verbindung mit der Cloud
 
 ## Updates
 
 Microsoft hat Windows Update for Business entwickelt, um IT-Administratoren weitere Verwaltungsfunktionen rund um Windows Update bereitzustellen, wie beispielsweise die Möglichkeit, Updates für Gruppen von Geräten bereitzustellen oder Wartungszeitfenster für die Installation von Updates festzulegen.
 
-Hier erfahren Sie, wie Sie [HoloLens-Updates verwalten](https://docs.microsoft.com/hololens/hololens-updates) , einschließlich geplanter Tage, geplanter Zeit und festlegen aktiver Stunden auf dem Gerät, damit es außerhalb der Arbeitszeiten aktualisiert wird.
+Erfahren Sie, wie [Sie HoloLens-Updates](https://docs.microsoft.com/hololens/hololens-updates) verwalten, einschließlich geplanter Tage, geplanter Zeit und Festlegen der Aktiven Stunden auf dem Gerät, damit sie außerhalb der Arbeitszeiten aktualisiert werden.
 
-Bei der Remote Unterstützung handelt es sich um eine In-Box-APP, die über die Microsoft Store-APP aktualisiert werden kann. Für alle apps, die über den Microsoft Store heruntergeladen werden, können Sie [über die Microsoft Store](https://docs.microsoft.com/hololens/holographic-store-apps#update-apps) -APP selbst manuell aktualisiert werden.
+Remote Assist ist eine In-Box App und kann über die Microsoft Store-App aktualisiert werden. Für alle Apps, die über den Microsoft Store heruntergeladen werden, können sie manuell über [die Microsoft](https://docs.microsoft.com/hololens/holographic-store-apps#update-apps) Store-App selbst aktualisiert werden.
 
 ## Supportplan
 
-Ein Support Plan eignet sich hervorragend für den richtigen Ort. Wenn Sie eine Person oder eine Gruppe haben, die bei der Problembehandlung des Registrierungsvorgangs auf HoloLens-Geräten geschult wurde, und auch die allgemeine Verwendung des HoloLens-Geräts in Ihrer Organisation ist hilfreich. Damit Ihre Benutzer eine schnellere Lösung ihrer Probleme erhalten können, empfehlen wir, dass Ihr Eskalationsprozess auf ähnliche Weise wie in dieser Reihenfolge gehandhabt wird:
+Ein Supportplan ist eine hervorragende Sache. Es ist hilfreich, jemanden oder eine Gruppe in der Problembehandlung für den Registrierungsprozess auf HoloLens-Geräten und die allgemeine Verwendung des Geräts HoloLens in Ihrer Organisation zu trainieren. Damit Ihre Benutzer ihre Probleme schneller beheben können, empfehlen wir, dass Ihr Eskalationsprozess in ähnlicher Weise wie in dieser Reihenfolge behandelt wird:
 
-1. Ihr Support-Desk.
-2. Ihr HoloLens-Expertenteam
-3. [HoloLens-Dokumente](https://docs.microsoft.com/hololens/)  /  [HoloLens-Problembehandlungsdokumentation](https://docs.microsoft.com/hololens/hololens-troubleshooting)
+1. Ihr Supportdesk.
+2. Ihr HoloLens -Expertenteam
+3. [HoloLens Docs](https://docs.microsoft.com/hololens/)  /  [Dokumentation zur Problembehandlung bei HoloLens](https://docs.microsoft.com/hololens/hololens-troubleshooting)
 4. [Hilfe und Support zu Windows](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=e9391227-fa6d-927b-0fff-f96288631b8f)
 
-## Entwicklungs Plan
+## Entwicklungsplan
 
-Nachdem Sie Ihr Gerät erfolgreich registriert haben, sind Sie nun bereit, Geschäftsbereichs-Apps (Lob-Apps) auf Ihren Geräten bereitzustellen. Hierbei handelt es sich um benutzerdefinierte apps, die für Ihre Organisation&#39;Anforderungen entwickelt wurden.
+Nachdem Ihr Gerät erfolgreich registriert wurde, sind Sie nun bereit, Branchen-Apps (Line of Business Apps) auf Ihren Geräten bereitstellen. Dabei handelt es sich um benutzerdefinierte Apps, die für ihre&#39;erstellt wurden.
 
-Wenn Sie bereits über eine Branchen-App verfügen,&#39;Sie bereit, [Ihre APP über MDM bereitzustellen](https://docs.microsoft.com/hololens/app-deploy-intune). Wenn Sie eine andere Methode&#39;d bevorzugen, lesen Sie die [Übersicht zur Anwendungsbereitstellung für HoloLens 2](https://docs.microsoft.com/hololens/app-deploy-overview) , um weitere Methoden zum Bereitstellen Ihrer Lob-App auf Ihren Geräten zu erfahren.
+Wenn Sie bereits über eine Line-of-Business-App verfügen, können&#39;Über [MDM bereitstellen.](https://docs.microsoft.com/hololens/app-deploy-intune) Wenn Sie&#39;eine andere Methode bevorzugen, lesen Sie die Übersicht über die Anwendungsbereitstellung für [HoloLens 2,](https://docs.microsoft.com/hololens/app-deploy-overview) um weitere Methoden zum Bereitstellen Ihrer Branchen-App auf Ihren Geräten zu erhalten.
 
-Wenn Sie noch keine eigene Lob-app erstellen oder sich noch im Prozess der Erstellung befinden&#39;, überprüfen Sie unsere Dokumentation zur Mixed-Reality-Entwicklung, um mit dem [Entwerfen und Prototypen zu beginnen](https://docs.microsoft.com/windows/mixed-reality/design/design) oder die grundlegenden Konzepte für den Einstieg in die [Mixed-Reality-Entwicklung kennenzulernen.](https://docs.microsoft.com/windows/mixed-reality/discover/get-started-with-mr)
+Wenn Sie&#39;ihre eigene Branchen-App noch nicht erstellt haben oder sich noch im Erstellungsprozess [](https://docs.microsoft.com/windows/mixed-reality/design/design) befinden, lesen Sie unsere Mixed Reality-Entwicklungs-Dokumente, um mit dem Entwerfen und Erstellen von Prototypen zu beginnen oder die Kernkonzepte für die ersten Schritte bei der [Mixed -Reality-Entwicklung](https://docs.microsoft.com/windows/mixed-reality/discover/get-started-with-mr) zu erlernen.
 
 ## -Geräteverwaltung 
 
-Während dieses Leitfadens zum Einrichten der Verwaltung mobiler Geräte (MDM) gesprochen wurde, wurde es nicht verwendet, um Geräteeinschränkungen anzuwenden oder Richtlinien auf Geräte anzuwenden. Die Geräteverwaltung kann sowohl dazu verwendet werden, um den Zugriff zu ermöglichen, indem Sie Zertifikate drücken, als auch den Zugriff mit einer Reihe von Geräteeinschränkungen einschränken. 
+In diesem Handbuch wurde zwar von der Einrichtung der Mobile Device Management (MDM) gesprochen, es wurde jedoch nicht zum Anwenden von Geräteeinschränkungen oder Richtlinien auf Geräte verwendet. Die Geräteverwaltung kann verwendet werden, um den Zugriff durch Pushen von Zertifikaten zu ermöglichen oder den Zugriff mit einer Vielzahl von Geräteeinschränkungen einzuschränken. 
 
-In vielen Fällen können Geräte Verbindungseinschränkungen wie Bluetooth, VPN, USB oder sogar das Ausschalten des Zugriffs auf die Kamera oder das Mikrofon aufweisen. Wenn Ihnen eine dieser Interessen zusteht, empfehlen wir Ihnen, unsere [Seite mit den allgemeinen Geräteeinschränkungen](hololens-common-device-restrictions.md)zu lesen.
+In vielen Fällen können Geräte Konnektivitätseinschränkungen haben, z. B. Bluetooth, VPN, USB oder sogar das Deaktivieren des Zugriffs auf die Kamera oder das Mikrofon. Wenn Sie eines dieser Interessen haben, empfehlen wir Ihnen, unsere Seite mit den allgemeinen [Geräteeinschränkungen zu lesen.](hololens-common-device-restrictions.md)
 
-Es gibt weitere komplexere Geräteeinschränkungen, die Sie verwenden können. Wie:
+Es gibt weitere komplexere Geräteeinschränkungen, die Sie verwenden können. Beispiel:
 
-- Einschränken der Seiten, die mithilfe von [SettingsPageVisibility](settings-uri-list.md)in der Einstellungs-APP angezeigt werden können, sodass Benutzer nur auf die Einstellungen zugreifen können, die Sie anpassen müssen, beispielsweise das Ändern der Wi-Fi Verbindung.
-- Verwenden Sie den [Kiosk Modus](hololens-kiosk.md) , um die Benutzeroberfläche zu begrenzen, die Benutzern auf einem Gerät angezeigt wird. Sie können Kioske so einstellen, dass eine einzelne APP oder mehrere apps mit einer benutzerdefinierten Startseite angezeigt werden. Kioske können auch verschiedenen Benutzern unterschiedliche Erfahrungen präsentieren.  
-- [Windows-Anwendungssteuerung (WDAC)](windows-defender-application-control-wdac.md) , damit bestimmte Apps oder Prozesse nicht vollständig gestartet werden können.
+- Beschränken der Seiten, die in der App "Einstellungen" angezeigt werden können, mithilfe von [SettingsPageVisibility,](settings-uri-list.md)sodass Benutzer nur auf die Einstellungen zugreifen können, die sie anpassen müssen, z. B. ändern Wi-Fi Verbindung.
+- Verwenden [Sie den Kioskmodus,](hololens-kiosk.md) um die Benutzeroberfläche für Benutzer auf einem Gerät zu beschränken. Sie können kiosks so festlegen, dass eine einzelne App oder mehrere Apps mit einer benutzerdefinierten Startseite angezeigt werden. Kioske können auch verschiedenen Benutzern unterschiedliche Erfahrungen bieten.  
+- [Windows-Anwendungssteuerung (Windows Application Control, WDAC),](windows-defender-application-control-wdac.md) damit bestimmte Apps oder Prozesse nicht vollständig gestartet werden.
 
-Wenn Sie mehr über die unterschiedlichen Methoden der Geräteverwaltung oder Geräteeinschränkungen erfahren möchten, führen Sie den nächsten Schritt aus, und lesen Sie unsere Übersicht zur Geräteverwaltung.
+Wenn Sie mehr über die verschiedenen Methoden der Geräteverwaltung oder Geräteeinschränkungen erfahren möchten, gehen Sie wie im nächsten Schritt vor, und lesen Sie die Übersicht über die Geräteverwaltung.
 
 ## Nächster Schritt
 
 > [!div class="nextstepaction"]
-> [Lesen der Übersicht über LSP und Geräteverwaltung](hololens-csp-policy-overview.md)
+> [CsPs und Geräteverwaltung (Übersicht) lesen](hololens-csp-policy-overview.md)

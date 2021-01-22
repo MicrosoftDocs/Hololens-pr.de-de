@@ -1,6 +1,6 @@
 ---
 title: Windows Defender Application Control – WDAC
-description: Übersicht über die WDAC und die Verwendung zum Verwalten von HoloLens-Geräten.
+description: Übersicht darüber, was Windows Defender A0 ist und wie sie zum Verwalten von Mixed -Reality-HoloLens-Geräten verwendet wird.
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -12,45 +12,45 @@ ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d337f9856eaeac433524d7bb8b60e9a24e264b80
-ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
+ms.openlocfilehash: 23c9a274387424e8f084a4729ee621e130820716
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "11252646"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284136"
 ---
 # Windows Defender Application Control – WDAC
 
-WDAC ermöglicht es einem IT-Administrator, seine Geräte so zu konfigurieren, dass die Einführung von apps auf Geräten blockiert wird. Dies unterscheidet sich von den Methoden der Geräte Einschränkung wie dem Kiosk Modus, bei dem dem Benutzer eine Benutzeroberfläche angezeigt wird, auf der die apps auf dem Gerät verborgen sind, die jedoch weiterhin gestartet werden können. Während WDAC implementiert ist, sind die apps weiterhin in der Liste alle apps sichtbar, aber WDAC verhindert, dass diese apps und Prozesse vom Geräte Benutzer gestartet werden können.
+WDAC ermöglicht einem IT-Administrator, seine Geräte so zu konfigurieren, dass das Starten von Apps auf Geräten blockiert wird. Dies ist anders als Methoden zur Geräteeinschränkung wie z. B. der Kioskmodus, bei dem dem Benutzer eine Benutzeroberfläche angezeigt wird, die die Apps auf dem Gerät ausblendet, aber dennoch gestartet werden kann. Während WDAC implementiert ist, sind die Apps weiterhin in der Liste "Alle Apps" sichtbar, aber WDAC verhindert, dass diese Apps und Prozesse vom Gerätebenutzer gestartet werden können.
 
-Einem Gerät kann mehr als eine WDAC-Richtlinie zugewiesen werden. Wenn mehrere WDAC-Richtlinien auf einem System eingestellt sind, werden die meisten restriktiven wirksam. 
+Einem Gerät können mehrere WDAC-Richtlinien zugewiesen werden. Wenn mehrere WDAC-Richtlinien auf einem System festgelegt sind, werden die restriktivsten wirksam. 
 
 > [!NOTE]
-> Wenn Endbenutzer versuchen, eine APP zu starten, die von WDAC blockiert wird, erhalten Sie auf HoloLens keine Benachrichtigung darüber, dass Sie die APP nicht starten können.
+> Wenn Endbenutzer versuchen, eine von WDAC blockierte App zu starten, erhalten sie auf HoloLens keine Benachrichtigung darüber, dass sie diese App nicht starten können.
 
-Im folgenden finden Sie eine Anleitung für Benutzer, die erfahren möchten, wie Sie [mithilfe von WDAC und Windows PowerShell apps auf HoloLens 2-Geräten mit Microsoft InTune zulassen oder blockieren](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens).
+Im folgenden Leitfaden erfahren Benutzer, wie Sie WDAC und Windows PowerShell verwenden, um Apps auf [HoloLens 2-Geräten](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens)mit Microsoft Intune zu erlauben oder zu blockieren.
 
-Wenn Benutzer nach Apps suchen, die auf Ihrem Windows 10-PC mit dem ersten Beispiel Schritt installiert sind, müssen Sie möglicherweise einige Versuche Unternehmen, die Ergebnisse einzuschränken.
+Wenn Benutzer mithilfe des ersten Beispielschritts nach Apps suchen, die auf ihrem Windows 10-PC installiert sind, müssen sie möglicherweise einige Versuche zur Einschr nkung der Ergebnisse machen.
 
 ```powershell
 $package1 = Get-AppxPackage -name *<applicationname>*
 ``` 
 
-Wenn Sie den vollständigen Namen des Pakets nicht kennen, müssen Sie möglicherweise ein paar Mal "Get-AppxPackage-Name \ * YourBestGuess \ *" ausführen, um es zu finden. Nachdem Sie den Namen ausgeführt haben, führen Sie "$Package 1 = Get-AppxPackage-Name ist. Paketname" aus.
+Wenn Sie den vollständigen Namen des Pakets nicht kennen, müssen Sie möglicherweise mehrmals "Get-AppxPackage -name \*YourBestGuess\*" ausführen, um es zu finden. Führen Sie dann nach dem Namen "$package 1 = Get-AppxPackage -name Actual.PackageName" aus.
 
-Wenn Sie beispielsweise Folgendes für Microsoft Edge ausführen, wird mehr als ein Ergebnis zurückgegeben, doch aus dieser Liste können Sie erkennen, dass der vollständige Name Microsoft. MicrosoftEdge ist.
+Wenn Sie z. B. den folgenden Namen für Microsoft Edge ausführen, werden mehr als ein Ergebnis zurückgeben, aber aus dieser Liste können Sie erkennen, dass der vollständige Name, den Sie benötigen, "Microsoft.MicrosoftEdge" ist.
 
 ```powershell
 Get-AppxPackage -name *edge*
 ``` 
 
-## Paket Familiennamen für apps auf HoloLens
+## Paketfamiliennamen für Apps auf HoloLens
 
-Im obigen Leitfaden können Sie newPolicy.xml manuell bearbeiten und Regeln für Anwendungen hinzufügen, die nur auf HoloLens mit ihren Paket Familiennamen installiert sind. Manchmal gibt es apps, die Sie verwenden können, die nicht auf dem Desktop-PC vorhanden sind, den Sie der Richtlinie hinzufügen möchten.
+In dem oben verknüpften Handbuch können Sie die newPolicy.xml manuell bearbeiten und Regeln für Anwendungen hinzufügen, die nur auf HoloLens mit ihren Paketfamiliennamen installiert sind. Manchmal gibt es Apps, die Sie möglicherweise verwenden, die sich nicht auf Ihrem Desktop-PC befinden, die Sie der Richtlinie hinzufügen möchten.
 
-Nachfolgend finden Sie eine Liste der häufig verwendeten und In-Box-Apps für HoloLens 2-Geräte.
+Hier ist eine Liste der häufig verwendeten und In-Box für HoloLens 2-Geräte.
 
-| App-Name                   | Paket Familien Name                                |
+| App-Name                   | Paketfamilienname                                |
 |----------------------------|----------------------------------------------------|
 | 3D-Viewer                  | Microsoft.Microsoft3DViewer_8wekyb3d8bbwe          |
 | App-Installer              | Microsoft.DesktopAppInstaller_8wekyb3d8bbwe <sup> 1</sup>         |
@@ -65,22 +65,22 @@ Nachfolgend finden Sie eine Liste der häufig verwendeten und In-Box-Apps für H
 | Microsoft Store            | Microsoft.WindowsStore_8wekyb3d8bbwe               |
 | Filme & TV                | Microsoft.ZuneVideo_8wekyb3d8bbwe                  |
 | OneDrive                   | microsoft.microsoftskydrive_8wekyb3d8bbwe          |
-| Fotos                     | Microsoft.Windows.Photos_8wekyb3d8bbwe             |
+| Fotos                     | Microsoft.Windows.Fotos_8wekyb3d8bbwe             |
 | Einstellungen                   | HolographicSystemSettings_cw5n1h2txyewy            |
 | Tipps                       | Microsoft.HoloLensTips_8wekyb3d8bbwe               |
 
-- Das 1-blockierende App-Installationsprogramm blockiert nur die APP-Installer-app und keine apps, die aus anderen Quellen wie dem Microsoft Store oder aus ihrer MDM-Lösung installiert werden.
+- 1 – Durch das Blockieren des App-Installers wird nur die App-Installer-App blockiert, und keine Apps, die aus anderen Quellen wie dem Microsoft Store oder aus Ihrer MDM-Lösung installiert wurden.
 
-### So suchen Sie nach einem Paket Familiennamen
+### So finden Sie einen Paketfamiliennamen
 
-Wenn eine APP nicht in dieser Liste enthalten ist, kann ein Benutzer das Geräte Portal verwenden, das mit einem HoloLens 2 verbunden ist, das die APP, die blockiert werden soll, installiert hat, um die PackageRelativeID zu ermitteln, und dann den PackageFamilyName.
+Wenn eine App nicht in dieser Liste enthalten ist, kann ein Benutzer das Geräteportal verwenden, das mit einer HoloLens 2 verbunden ist, die die App installiert hat, die blockiert werden soll, um die PackageRelativeID zu ermitteln und von dort den PackageFamilyName zu erhalten.
 
-1. Installieren Sie die APP auf Ihrem HoloLens 2-Gerät. 
-1. Öffnen Sie Einstellungen – > Updates & Security-> für Entwickler, und aktivieren Sie den **Entwicklermodus** und dann **Device Portal**. 
-    1. Weitere Informationen hierzu finden Sie hier unter Weitere Informationen zum [Einrichten und Verwenden des Device Portals](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
-1. Wenn Device Portal verbunden ist, navigieren Sie zu **Ansichten** und dann zu **apps**. 
-1. Verwenden Sie im Bereich installierte Apps die Dropdownliste, um die installierte App auszuwählen. 
-1. Suchen Sie nach dem PackageRelativeID. 
-1. Kopieren Sie App-Zeichen vor dem!, diese Zeichen sind Ihre PackageFamilyName.
+1. Installieren Sie die App auf Ihrem HoloLens 2-Gerät. 
+1. Öffnen Sie "Einstellungen -> Updates & Sicherheit -> Für Entwickler, **** aktivieren Sie den Entwicklermodus und dann **das Geräteportal.** 
+    1. Weitere Informationen zur Einrichtung und Verwendung des Geräteportals finden Sie [hier.](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)
+1. Sobald das Geräteportal verbunden ist, navigieren Sie zu **"Ansichten"** und dann zu **"Apps".** 
+1. Wählen Sie im Bereich "Installierte Apps" in der Dropdownliste die installierte App aus. 
+1. Suchen Sie die PackageRelativeID. 
+1. Kopieren Sie die Zeichen der App vor !, diese Zeichen sind Ihr PackageFamilyName.
 
 
