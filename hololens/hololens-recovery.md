@@ -1,6 +1,6 @@
 ---
 title: HoloLens neu starten, zurücksetzen oder wiederherstellen
-ms.reviewer: Basic and advanced instructions for rebooting or resetting your HoloLens.
+ms.reviewer: Follow along with our basic and advanced instructions for rebooting or resetting your HoloLens 2 device.
 description: Verwenden von Advanced Recovery Companion (ARC), um einen Flashs eines Images in HoloLens 2 auszuführen.
 keywords: Hilfe & Anleitung, Neustart, zurücksetzen, wiederherstellen, Kaltstart, Warmstart, Energiezyklus, HoloLens, Herunterfahren, ARC, Advanced Recovery Companion
 ms.prod: hololens
@@ -14,12 +14,12 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: 7845a00d1141fb721683c4e3f2a884ed0c37c735
-ms.sourcegitcommit: 33911e3b405732d0d31a27039c8f590d52b647c4
+ms.openlocfilehash: 025ba8508eb930cdad6d502c381e5a07d9efc6e0
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "11254832"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284086"
 ---
 # <span data-ttu-id="d403c-104">HoloLens 2 neu starten, zurücksetzen oder wiederherstellen</span><span class="sxs-lookup"><span data-stu-id="d403c-104">Restart, reset, or recover HoloLens 2</span></span>
 
