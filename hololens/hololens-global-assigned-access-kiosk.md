@@ -1,6 +1,6 @@
 ---
 title: Global zugewiesener Zugriff
-description: Leitfaden für die Verwendung von Oma-URI für global zugewiesene Zugriff-Kioske
+description: Beginnen Sie mit unserem Leitfaden zur Verwendung von OMA-URI für Kioske mit global zugewiesenem Zugriff mit Intune und Windows-Konfigurations-Designer.
 author: evmill
 ms.author: v-evmill
 ms.date: 9/21/2020
@@ -13,12 +13,12 @@ ms.reviewer: lavinds
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f91b77be846b585de8d89c17e516923f97304d57
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: b86d88c7487043c6fcb057f03f353a57e44ef781
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253202"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283176"
 ---
 # Global zugewiesener Zugriff – Kiosk
 

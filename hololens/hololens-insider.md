@@ -1,6 +1,6 @@
 ---
 title: Insider-Vorschau für Microsoft HoloLens
-description: Es ist einfach, mit den Ersten Schritten mit Insider-Builds zu beginnen und wertvolles Feedback für unser nächstes wichtiges Betriebssystemupdate für HoloLens zu geben.
+description: Erfahren Sie, wie Sie mit Insider-Builds beginnen und wertvolles Feedback für unser nächstes großes Betriebssystemupdate für HoloLens bereitstellen.
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
@@ -16,16 +16,16 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6df24d3a8640edeb9196834f940500aa51e85af7
-ms.sourcegitcommit: 50e4d61a31b94d5007776064b4012e26cf9ecbbb
+ms.openlocfilehash: 5936f721c1279dce45fa3e92e160f10d880de207
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "11271708"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283196"
 ---
 # Insider-Vorschau für Microsoft HoloLens
 
-Willkommen bei den neuesten Insider -Preview-Builds für HoloLens! Die ersten Schritte sind einfach [und](hololens-insider.md#start-receiving-insider-builds) geben wertvolles Feedback für das nächste wichtige Betriebssystemupdate für HoloLens.
+Willkommen bei den neuesten Insider Preview-Builds für HoloLens! Die ersten Schritte sind einfach [und](hololens-insider.md#start-receiving-insider-builds) geben wertvolles Feedback für das nächste wichtige Betriebssystemupdate für HoloLens.
 
 ## Anmerkungen zur Windows-Insider-Version
 
@@ -34,14 +34,14 @@ Wir freuen uns, neue Features erneut für Windows-Insider zu verwenden. Wir werd
 | Featurename                                              | Kurze Beschreibung                                                                      | Im Build verfügbar |
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
 | [Neuer Microsoft Edge-Browser](#introducing-the-new-microsoft-edge) | Das neue Chromium-basierte Microsoft Edge ist jetzt für HoloLens 2 verfügbar.                         | 20279.1006 |
-| [Neue Einstellungs-App](#new-settings-app)                     | Die ältere Einstellungs-App wird durch eine aktualisierte Version durch neue Features und Einstellungen ersetzt. | 20279.1006 |
+| [Neue Einstellungs-App](#new-settings-app)                     | Die ältere Einstellungs-App wird durch eine aktualisierte Version mit neuen Features und Einstellungen ersetzt. | 20279.1006 |
 | [Standardmäßige App-Auswahl](#default-app-picker)                 | Auswählen, welche App für jeden Datei- oder Linktyp gestartet werden soll                                      | 20279.1006 |
 | [Office Web App](#office-web-app)                         | Eine Verknüpfung zur Office Web App ist jetzt in "Alle Apps" aufgeführt.                                   | 20279.1006 |
 | [Wischen zum Eingeben](#swipe-to-type)                           | Verwenden Sie die Fingerspitze, um Wörter auf der holografischen Tastatur zu "wischen".                        | 20279.1006 |
 | [UNTERSTÜTZUNG für externes USB-C-Mikrofon](#usb-c-external-microphone-support) | Verwenden Sie USB-C-Mikrofone für Apps und/oder Remote Assist.| 20279.1006 |
 | [Neue AUMIDs für neue Apps im Kioskmodus](#use-the-new-settings-and-edge-apps-in-kiosk-modes) | AUMIDs für neue Einstellungen und Edge-Apps | 20279.1006 |
-| [Verbesserte Übergabe von Fehlern im Kioskmodus](#kiosk-mode-behavior-changes-for-handling-of-failures) | Der Kioskmodus sucht vor dem leeren Startmenü nach dem globalen zugewiesenen Zugriff. | 20279.1006 |
-| [Konfigurieren der Fallbackdiagnose](#configuring-fallback-diagnostics-via-settings-app) | Festlegen des Fallbackdiagnoseverhaltens in der Einstellungs-App | 20279.1006 |
+| [Verbesserte Fehlerbeweise im Kioskmodus](#kiosk-mode-behavior-changes-for-handling-of-failures) | Der Kioskmodus sucht vor dem leeren Startmenü nach dem globalen zugewiesenen Zugriff. | 20279.1006 |
+| [Konfigurieren der Fallbackdiagnose](#configuring-fallback-diagnostics-via-settings-app) | Festlegen des Fallbackdiagnoseverhaltens in der App "Einstellungen" | 20279.1006 |
 
 ### Einführung in das neue Microsoft Edge
 
@@ -74,11 +74,11 @@ Hier sind einige hilfreiche Ressourcen, um mehr über das Verwalten von Richtlin
 > [!IMPORTANT]
 > Aufgrund der Anzahl von Browserrichtlinien, die vom neuen Microsoft Edge unterstützt werden, kann unser Team nicht garantieren, dass jede neue Richtlinie auf HoloLens 2 funktioniert. Wir haben jedoch getestet und bestätigt, dass das neue Microsoft Edge-Äquivalent jeder früher auf HoloLens 2 unterstützten Älteren Microsoft Edge-Richtlinie wie erwartet funktioniert. Informationen zur neuen Microsoft Edge-Entsprechung jeder älteren Microsoft Edge-Browserrichtlinie, die Sie mit HoloLens 2 verwendet haben, finden Sie unter ["Microsoft Edge Legacy-zu-Microsoft](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge) Edge-Richtlinienzuordnung".
 >
-> Es gibt mindestens zwei neue Microsoft Edge-Richtlinien, die wir *wissen, dass sie* nicht mit HoloLens 2 funktionieren:
+> Es gibt mindestens zwei neue Microsoft Edge-Richtlinien, von der wir wissen, dass *sie nicht* mit HoloLens 2 funktionieren:
 > - EnterpriseModeSiteList
 > - EnterpriseSiteListServiceURL
 
-#### Was Sie vom neuen Microsoft Edge auf HoloLens 2 erwarten können
+#### Was Sie von dem neuen Microsoft Edge auf HoloLens 2 erwarten können
 
 Da es sich bei dem neuen Microsoft Edge um eine systemeigene Win32-App mit einer neuen UWP-Adapterebene handelt, die die Ausführung auf Nur-UWP-Geräten wie HoloLens 2 ermöglicht, sind einige Features möglicherweise nicht sofort verfügbar. We'll be supporting new scenarios and features over the coming months, so please check this space for up-to-date information.
 
@@ -106,7 +106,16 @@ Da es sich bei dem neuen Microsoft Edge um eine systemeigene Win32-App mit einer
 
 **Die am besten bekannten Browserprobleme:**
 - Durch zurücksetzen des Geräts wird das neue Microsoft Edge entfernt.
-- Die Bildschirmlupevorschau auf der holografischen Tastatur zeigt falsche Inhalte an.
+- Die Bildschirmlupe in der holografischen Tastatur zeigt falsche Inhalte an.
+
+#### Microsoft Edge-Insider-Kanäle
+
+Das Microsoft Edge-Team stellt der Edge-Insider-Community drei Vorschaukanäle zur Verfügung: Beta, Dev und Canary. Durch das Installieren eines Vorschaukanals wird die veröffentlichte Version von Microsoft Edge auf HoloLens 2 nicht deinstalliert, und Sie können mehrere gleichzeitig installieren. 
+
+Besuchen Sie [die Microsoft Edge Insider-Homepage,](https://www.microsoftedgeinsider.com) um mehr über die Edge-Insider-Community zu erfahren. Weitere Informationen zu den verschiedenen Edge-Insider-Kanälen und den ersten Schritte finden Sie auf der [Edge-Insider-Downloadseite.](https://www.microsoftedgeinsider.com/download)
+
+> [!NOTE]
+> Während dieser Windows-Insider-Vorschau für HoloLens 2 ist die Version von Microsoft Edge auf Ihrem Gerät möglicherweise höher als die version, die in einigen (oder allen) Microsoft Edge-Insider-Kanälen verfügbar ist. Dadurch soll sichergestellt werden, dass neue Features und Fixes, die speziell auf den Webbrowser auf HoloLens 2 zielen, so schnell wie möglich an unsere Windows-Insider übermittelt werden. Kurz nach der öffentlichen Veröffentlichung des nächsten Windows-Updates werden die Microsoft Edge-Insider-Kanal-Builds die Version von Microsoft Edge auf Ihrer HoloLens 2 übertreffen und vor ihnen bleiben.
 
 ### Neue Einstellungs-App
 
@@ -120,11 +129,11 @@ In dieser Version wird eine neue Version der App "Einstellungen" eingeführt. Di
 **Neue Features und Einstellungen**
 - Einstellungssuche: Suchen Nach Einstellungen auf der Startseite "Einstellungen" mithilfe von Schlüsselwörtern oder dem Namen der Einstellung
 - System > Sound:
-  - Ein- und Ausgabeaudiogeräte: Wählen Sie unabhängig Ihre Ein- und Ausgabeaudiogeräte aus (z. B. hören Sie Audio über Bluetooth-Kopfhörer, oder verwenden Sie ein USB-C-Mikrofon für die Audioeingabe). Hinweis: Bluetooth werden von HoloLens 2 nicht unterstützt.
+  - Ein- und Ausgabeaudiogeräte: Wählen Sie unabhängig Ihre Ein- und Ausgabeaudiogeräte aus (z. B. Audio über Bluetooth-Kopfhörer abhören oder ein USB-C-Mikrofon für die Audioeingabe verwenden). Hinweis: Bluetooth werden von HoloLens 2 nicht unterstützt.
   - App-Volume: Anpassen der Lautstärke der einzelnen Apps unabhängig
 - System > Power &: Wählen Sie aus, wann das Gerät nach einer bestimmten Inaktivität in den Ruhezustand wechseln soll.
 - System > Akku: Manuelles Aktivieren des Stromsparmodus oder Festlegen eines Akkuschwellenwerts, an dem der Stromsparmodus automatisch aktiviert wird
-- Geräte > USB: Sie können standardmäßige USB-Verbindungen deaktivieren.
+- Geräte > USB: Sie können standardmäßig die Usb-Verbindungen deaktivieren.
 - Netzwerk & Internet:
   - USB-C-Ethernet-Adapter werden jetzt im Netzwerk & angezeigt
   - Usb-C-Ethernet-Adaptereinstellungen sind jetzt verfügbar, einschließlich der #A0
@@ -145,7 +154,7 @@ Wenn Sie einen Hyperlink aktivieren oder einen Dateityp mit mehr als einer insta
 
 ![Fenster "App-Auswahl"](images/default-app-picker.png)
 
-Wenn Sie "Immer" auswählen, aber später ändern möchten, welche App eine bestimmte Datei oder einen bestimmten Linktyp behandelt, können Sie ihre gespeicherten Standardeinstellungen unter "Einstellungen > **Apps" zurücksetzen.** Scrollen Sie zum unteren Rand **** der Seite, und wählen Sie die Schaltfläche "Löschen" unter "Standard-Apps für Dateitypen" und/oder "Standard-Apps für Linktypen" aus. Im Gegensatz zur ähnlichen Einstellung auf Desktop-PCs können Sie die Standardeinstellungen für einzelne Dateitypen nicht zurücksetzen.
+Wenn Sie "Immer" auswählen, aber später ändern möchten, welche App eine bestimmte Datei oder einen bestimmten Linktyp behandelt, können Sie ihre gespeicherten Standardwerte in den Einstellungen > **Apps zurücksetzen.** Scrollen Sie zum unteren Rand **** der Seite, und wählen Sie die Schaltfläche "Löschen" unter "Standard-Apps für Dateitypen" und/oder "Standard-Apps für Linktypen" aus. Im Gegensatz zur ähnlichen Einstellung auf Desktop-PCs können Sie die Standardeinstellungen für einzelne Dateitypen nicht zurücksetzen.
 
 ### Office Web App
 
@@ -155,14 +164,14 @@ Die Office Web App wurde der Liste "Alle Apps" im Startmenü hinzugefügt. Diese
 
 Einige Kunden finden es schneller, "einzugeben" auf virtuellen Tastaturen, indem sie die Form des Worts, das sie eingeben möchten, swipsen, und wir sehen uns diese Funktion für die holografische Tastatur in der Vorschau an. Sie können ein Wort nach dem anderen wischen, indem Sie die Fingerspitze durch die Fläche der holografischen Tastatur übergeben, die Form des Worts wischen und dann die Fingerspitze aus der Fläche der Tastatur ziehen. Sie können Nachworte wischen, ohne die LEERTASTE drücken zu müssen, indem Sie den Finger von der Tastatur zwischen Wörtern entfernen. Sie wissen, dass das Feature funktioniert, wenn eine Wischspur nach der Bewegung des Fingers auf der Tastatur angezeigt wird.
 
-Bitte beachten Sie, dass es schwierig sein kann, diese Funktion zu verwenden und zu mastern, da sie eine holografische Tastatur ist, auf der Sie (im Gegensatz zu einem Mobiltelefondisplay) keinen Widerstand gegen Ihren Finger verkraften. We are evaluating this feature for public release, so your feedback is important; Ob Sie das Feature hilfreich finden oder Feedback abgeben möchten, teilen Sie uns dies bitte über den [Feedback-Hub mit.](hololens-feedback.md)
+Bitte beachten Sie, dass diese Funktion aufgrund der Art einer holografischen Tastatur schwierig zu verwenden und zu mastern ist, bei der Sie (im Gegensatz zu einem Mobiltelefondisplay) keinen Widerstand gegen Ihren Finger verkraften. We are evaluating this feature for public release, so your feedback is important; Ob Sie das Feature hilfreich finden oder Feedback abgeben möchten, teilen Sie uns dies bitte über den [Feedback-Hub mit.](hololens-feedback.md)
 
 ### UNTERSTÜTZUNG für externes USB-C-Mikrofon
 
 > [!IMPORTANT]
-> Wenn Sie ein **USB-Mikrofon anschließen,** wird es nicht automatisch als Eingabegerät festgelegt. Beim Anschließen einer Gruppe von USB-C-Kopfhörern beobachten Benutzer, dass die Audiodaten des Kopfhörers automatisch an die Kopfhörer umgeleitet werden. Das #A0 priorisiert jedoch das interne Mikrofonarray über jedem anderen Eingabegerät. **Führen Sie die folgenden Schritte aus, um ein USB-C-Mikrofon zu verwenden.**
+> Wenn Sie ein **USB-Mikrofon anschließen,** wird es nicht automatisch als Eingabegerät festgelegt. Beim Anschließen einer Gruppe von USB-C-Kopfhörern werden Benutzer feststellen, dass die Audiodaten des Kopfhörers automatisch an die Kopfhörer umgeleitet werden. Das #A0 priorisiert jedoch das interne Mikrofonarray über jedem anderen Eingabegerät. **Führen Sie die folgenden Schritte aus, um ein USB-C-Mikrofon zu verwenden.**
 
-Benutzer können nun externe USB-C-angeschlossene Mikrofone über den Bereich **"Soundeinstellungen"** auswählen. Auf diese Weise können Benutzer ein eigenes Mikrofon verwenden, das über USB in Aufzeichnungen und Apps verbunden ist. USB-C-Mikrofone sind einfach zu aktivieren und zu verwenden.
+Benutzer können externe USB-C-angeschlossene Mikrofone über den Bereich **"Soundeinstellungen"** auswählen. USB-C-Mikrofone können für Anrufe, Aufzeichnungen usw. verwendet werden.
 
 Öffnen Sie die **Einstellungs-App,** und wählen **Sie**  ->  **Systemsound aus.**
 
@@ -173,7 +182,7 @@ Benutzer können nun externe USB-C-angeschlossene Mikrofone über den Bereich **
 >
 > Verwenden Sie dann die Dropdownliste, um das externe Mikrofon als Standard oder **Als** Standard **für Kommunikationen zu setzen.** Wenn Sie **"Standard"** auswählen, wird das externe Mikrofon überall verwendet.
 >
-> Wenn Sie **"Communications Default"** auswählen, wird das externe Mikrofon in Remote Assist und anderen Kommunikations-Apps verwendet, aber das HoloLens Mic Array kann weiterhin für andere Aufgaben verwendet werden.
+> Wenn Sie **"Communications Default"** auswählen, wird das externe Mikrofon in Remote Assist und anderen Kommunikations-Apps verwendet, aber das HoloLens-Mikrofonarray kann weiterhin für andere Aufgaben verwendet werden.
 
 ![Verwalten von Soundgeräten](images/usbc-mic-2.png)
 
@@ -197,7 +206,7 @@ Legen Sie in **den**Einstellungen für Systemsound explizit die integrierten Lau
 
 Wenn Sie Apps in [Kiosks](hololens-kiosk.md)hinzufügen, fügt ein IT-Administrator die App häufig zum Kiosk hinzu, verwendet aber die App-Benutzermodell-ID (App User Model ID, AUMID). Da sowohl die Einstellungs-App als auch die Microsoft Edge-App als neue Apps gelten und sich von den älteren Apps unterscheiden, die AUMIDs für diese Apps verwenden, müssen sie aktualisiert werden, um die neue AUMID zu verwenden.
 
-Wenn Sie einen Kiosk so ändern, dass er die neuen Apps enthält, empfehlen wir das Hinzufügen der neuen AUMID sowie das Verlassen der alten. Dies wird einen einfachen Übergang schaffen, wenn Benutzer das Betriebssystem aktualisieren und müssen keine neuen Richtlinien erhalten, um den Kiosk wie beabsichtigt weiter zu verwenden.
+Wenn Sie einen Kiosk so ändern, dass er die neuen Apps enthält, empfehlen wir, die neue AUMID zu hinzufügen und die alte zu verlassen. Dies wird einen einfachen Übergang schaffen, wenn Benutzer das Betriebssystem aktualisieren und müssen keine neuen Richtlinien erhalten, um den Kiosk wie beabsichtigt weiter zu verwenden.
 
 | App                    | AUMID                                                  |
 |------------------------|--------------------------------------------------------|
@@ -231,7 +240,7 @@ In der Einstellungs-App kann ein Benutzer nun das Verhalten der [Fallbackdiagnos
 > - Der Sprachbefehl "Gerät neu starten" funktioniert gut. 
 > - Sie können auch die Schaltfläche "Neustart" unter "Einstellungen/Windows-Insider-Programm" auswählen.
 >
-> Wir hatten einen Fehler auf dem Back-End, auf dem Sie möglicherweise aufgetreten sind, und dies wird Sie wieder auf kursverkn nen bringen.
+> Wir hatten einen Fehler auf dem Back-End, auf dem Sie möglicherweise aufgetreten sind, und dadurch sind Sie wieder auf dem Weg.
 
 On a HoloLens 2 device go to **Settings**  >  **Update & Security**Windows Insider  >  **Program** and select **Get started**. Verknüpfen Sie das Konto, mit dem Sie sich als Windows-Insider registriert haben.
 
@@ -246,7 +255,7 @@ Wählen Sie dann **"Aktive Entwicklung**von Windows" aus, wählen Sie aus, ob **
 Wählen **Sie "> Jetzt neu starten" aus,** um den Abschluss zu beenden. Nachdem Das Gerät neu gestartet wurde, wechseln Sie zu "Einstellungen **> Update & Sicherheit" > Suchen** Sie nach Updates, um den neuesten Build zu erhalten.
 
 ## FFU-Download- und Flash-Wegbeschreibungen
-Zum Testen mit einer ffu mit Test-Flight-Vorlauf müssen Sie ihr Gerät zunächst entsperren, bevor Sie die ffu mit Test-Flight-Signierten flashen.
+Um mit einer ffu zu testen, die mit einem Test-Flight signiert ist, müssen Sie zunächst ihr Gerät entsperren, bevor Sie die ffu mit Test-Flight-Signierten flashen.
 1. Auf DEM PC:
 
     1. Laden Sie ffu auf Ihren PC von [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) herunter.
@@ -273,7 +282,7 @@ Sie sind willkommen und möchten Versuchen, Ihre Anwendungen mit Insider-Builds 
 Wenn Sie keine Insider-Builds von Windows Holographic mehr erhalten möchten, können Sie abmelden, [](hololens-recovery.md) wann Ihre HoloLens einen Produktionsbuild ausgeführt, oder Sie können Ihr Gerät mithilfe des Advanced Recovery Companion wiederherstellen, um Ihr Gerät in einer Nicht-Insider-Version von Windows Holographic wiederhergestellt.
 
 > [!CAUTION]
-> Es gibt ein bekanntes Problem, bei dem Benutzer, die sich nach der manuellen Neuinstallation eines neuen Vorschaubuilds von Insider -Preview-Builds nicht registrieren, einen Blauen Bildschirm erhalten würden. Danach müssen sie ihr Gerät manuell wiederherstellen. Ausführliche Informationen dazu, ob sie betroffen sind oder nicht, finden Sie in diesem bekannten [Problem.](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)
+> Es gibt ein bekanntes Problem, bei dem Benutzer, die sich nach der manuellen Neuinstallation eines neuen Vorschaubuilds von Insider -Preview-Builds nicht registrieren, einen blauen Bildschirm erhalten würden. Danach müssen sie ihr Gerät manuell wiederherstellen. Ausführliche Informationen dazu, ob sie betroffen sind oder nicht, finden Sie unter diesem bekannten [Problem.](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)
 
 So stellen Sie sicher, dass Ihre HoloLens einen Produktions build ausgeführt:
 
