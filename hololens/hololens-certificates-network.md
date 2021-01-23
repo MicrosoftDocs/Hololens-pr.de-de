@@ -1,6 +1,6 @@
 ---
 title: Vorbereiten von Zertifikaten und Netzwerkprofilen für HoloLens 2
-description: Konfigurieren und Verwenden von Zertifikaten für Netzwerke auf HoloLens 2-Geräten
+description: Hier erfahren Sie, wie Sie Zertifikate für das Netzwerk auf Mixed-Reality-Geräten mit HoloLens 2 konfigurieren, verwenden und bereitstellen, und lernen, wie Sie Probleme behandeln.
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -13,12 +13,12 @@ audience: ITPro
 manager: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b5fe64a1843db5ba8dc31f3c17776f0717264fe1
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: 1bfac948b493c2e55207e45042d6b022c1818969
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11162986"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283436"
 ---
 # Vorbereiten von Zertifikaten und Netzwerkprofilen für HoloLens 2
 

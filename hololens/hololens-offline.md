@@ -1,6 +1,6 @@
 ---
 title: Verwalten von Verbindungsendpunkten für HoloLens
-description: Um HoloLens einzurichten, müssen Sie die Verbindung zu einem WLAN-Netzwerk herstellen.
+description: Hier erfahren Sie, wie Sie HoloLens über ein WLAN einrichten, während Sie Verbindungsendpunkte verwalten und konfigurieren.
 keywords: HoloLens offline Windows-Willkommensseite
 audience: ITPro
 ms.date: 07/01/2019
@@ -18,11 +18,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f40d5adec0a8c0dc4bde5583a080ceedc0950fdb
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 2208291aea5bfa9cbedd09d40fbbb83b1faa627b
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828368"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283946"
 ---
 # Verwalten von Verbindungsendpunkten für HoloLens
 

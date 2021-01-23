@@ -1,6 +1,6 @@
 ---
 title: Einrichten der HoloLens (1. Generation)
-description: Dieser Leitfaden führt Sie durch die erstmalige Einrichtung.  Sie benötigen ein WLAN-Netzwerk und entweder ein Microsoft (MSA)- oder Azure Active Directory-Konto (Azure AD).
+description: Hier erfahren Sie, wie Sie HoloLens (1. Generation) zum ersten Mal über ein Wi-Fi-Netzwerk mit einem Microsoft (MSA)- oder einem Azure Active Directory (AAD)-Konto einrichten.
 ms.assetid: 0136188e-1305-43be-906e-151d70292e87
 ms.prod: hololens
 author: Teresa-Motiv
@@ -11,12 +11,12 @@ manager: jarrettr
 ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 9a20a2ddd52c08a2b44dad452aac07ad9e69de85
-ms.sourcegitcommit: 7edbb99e0972d3d857e5e87c062c3c64cacc1f41
+ms.openlocfilehash: aca7b287b3d26ab37ddb90e4245a1e0b3adc17e2
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "10903231"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283926"
 ---
 # Einrichten von HoloLens (1. Generation)
 
@@ -24,7 +24,7 @@ Wenn Sie Ihre HoloLens zum ersten Mal einschalten, werden Sie durch die Kalibrie
 
 Im nächsten Abschnitt erfahren Sie, wie Sie mit HoloLens arbeiten und mit Hologrammen interagieren können. Informationen zu diesem Artikel finden Sie unter [Erste Schritte mit HoloLens (1. Generation)](hololens1-basic-usage.md).
 
-## Bevor Sie beginnen
+## Vorbereitung
 
 Bevor Sie beginnen, stellen Sie sicher, dass Sie Folgendes zur Verfügung haben:
 
@@ -71,7 +71,7 @@ Während der Kalibrierung fordert HoloLens Sie auf, Ihren Finger mit einer Reihe
 
 *IPD-Fingerausrichtungsbildschirm im zweiten Schritt*
 
-Gratulation! Die Einrichtung ist abgeschlossen, und Sie können mit der Verwendung von HoloLens beginnen.
+Herzlichen Glückwunsch! Die Einrichtung ist abgeschlossen, und Sie können mit der Verwendung von HoloLens beginnen.
 
 ## Nächste Schritte
 

@@ -1,6 +1,6 @@
 ---
 title: So laden und installieren Sie Apps über das HoloLens 2-App-Installationsprogramm
-description: Laden von Folien und Installieren von Apps über die Benutzeroberfläche
+description: Erfahren Sie, wie Sie Apps mit dem App-Installer installieren und über die Benutzeroberfläche laden und installieren.
 keywords: App-Verwaltung, App, HoloLens, App-Installer
 author: evmill
 ms.author: v-evmill
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ab0c58d5a97d5dbaf83adf321d1f9fbc01b3ad03
-ms.sourcegitcommit: 37910c10f0f98aa9cbdc29124cd8f14ee0af3fbd
+ms.openlocfilehash: 9e413963dbf34dd071fc9603487590065b967ee7
+ms.sourcegitcommit: af4e222a4f83ab82466a383099897986ddf6b8c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "11280654"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "11297290"
 ---
 # Installieren von Apps auf HoloLens 2 über das App-Installationsprogramm
 
@@ -30,7 +30,7 @@ Wir haben **eine neue Funktion (App-Installer)** hinzugefügt, mit der Sie Anwen
 
 Ein Gerät wird als "verwaltet" betrachtet, **wenn** eine der folgenden Bedingungen zutrifft:
 
-- MDM [Enrolled](hololens-enroll-mdm.md)
+- MdM [Enrolled](hololens-enroll-mdm.md)
 - Mit [Bereitstellungspaket konfiguriert](hololens-provisioning.md)
 - [Benutzeridentität](hololens-identity.md) ist Azure AD
 
@@ -40,9 +40,10 @@ Sie können jetzt Apps installieren, ohne den Entwicklermodus aktivieren oder da
 
 ### Für Ihre Geräte:
 
- Das Feature ist derzeit in Windows Holographic 20H2-Builds für HoloLens 2-Geräte verfügbar. Stellen Sie sicher, dass alle Geräte, die diese Methode verwenden, [aktualisiert werden.](hololens-update-hololens.md)
+Dieses Feature ist derzeit in Windows Holographic 20H2-Builds für HoloLens 2-Geräte verfügbar. Stellen Sie sicher, dass alle Geräte, die diese Methode verwenden, [aktualisiert werden.](hololens-update-hololens.md)
 
-### Für Ihre Apps: 
+### Für Ihre Apps:
+
 Die Lösungskonfiguration Ihrer App muss entweder **Master** oder **Release** sein, da der App Installer Abhängigkeiten aus dem Store verwendet. Weitere Informationen zum Erstellen [von App-Paketen.](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs)
 
 Apps, die über diese Methode installiert werden, müssen digital signiert sein. Sie müssen ein Zertifikat zum Signieren der App verwenden. Sie können entweder ein Zertifikat aus der [Liste](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)der vertrauenswürdigen MS-Zertifizierungsstellen erhalten. In diesem Fall müssen Sie keine zusätzlichen Maßnahmen ergreifen. Oder Sie können Ihr eigenes Zertifikat signieren, das Zertifikat muss jedoch auf das Gerät übertragen werden.
@@ -72,7 +73,7 @@ Apps, die über diese Methode installiert werden, müssen digital signiert sein.
 
 Die installierte App wird nach Abschluss der Installation automatisch gestartet.
 
-![Installieren von MRTK-Beispielen über den App-Installer](images/hololens-app-installer-picture.jpg)
+![Installieren von MRTK-Beispielen über das App-Installationsprogramm](images/hololens-app-installer-picture.jpg)
 
 ### Problembehandlung bei Installationen
 
