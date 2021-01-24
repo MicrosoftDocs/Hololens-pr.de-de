@@ -1,6 +1,6 @@
 ---
 title: Sichtbarkeit von Seiteneinstellungen
-description: Liste der von HoloLens unterstützten URIs für PageVisibilityList und Guide
+description: Bleiben Sie mit unserer Liste der unterstützten URIs für PageVisibilityList und Guide auf Mixed-Reality-HoloLens-Geräten auf dem Laufenden.
 author: evmill
 ms.author: v-evmill
 ms.date: 10/13/2020
@@ -13,12 +13,12 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8cd336ce64cf7d4549b031a7977f592ca82dd6e4
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: e4d4936595144f82a468883f26dae6e19eef4f84
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11163138"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284116"
 ---
 # Sichtbarkeit von Seiteneinstellungen
 
@@ -42,7 +42,8 @@ Dies kann über Intune mit OMA-URI erfolgen.
 1. Wählen Sie bei der Auswahl der Daten: **String**
 1. Wenn Sie den Wert eingeben, verwenden Sie:**showonly:network-wifi;network-proxy;bluetooth**
 1. Stellen Sie sicher, dass die benutzerdefinierte Gerätekonfiguration der Gruppe zugeordnet wird, zu der das Gerät gehören soll.
-Weitere Informationen zu Intune-Gruppen und Gerätekonfigurationen [finden Sie hier](hololens-mdm-configure.md).
+
+Weitere Informationen zu Intune-Gruppen und -Gerätekonfigurationen finden Sie unter [HoloLens MDM-Konfiguration.](hololens-mdm-configure.md)
 
 Unabhängig von der gewählten Methode, sollte Ihr Gerät nun die Änderungen erhalten, und die Benutzer erhalten die folgende Einstellungs-App. 
 
@@ -126,4 +127,4 @@ HoloLens-Geräte und Windows 10-Geräte weisen in der App „Einstellungen“ ei
 > - ms-settings:windowsupdate-options
 > - ms-settings:windowsupdate-restartoptions 
 
-Eine vollständige Liste der URIs von Windows 10-Einstellungen finden Sie [hier](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference). 
+Eine vollständige Liste der URIs für Windows 10-Einstellungen finden Sie in der Dokumentation [Starteinstellungen](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference). 
