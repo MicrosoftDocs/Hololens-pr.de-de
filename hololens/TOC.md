@@ -113,8 +113,8 @@
 ### [HoloLens (1. Generation) neu starten, zurücksetzen oder wiederherstellen ](hololens1-recovery.md)
 ### [Häufig gestellte Fragen](hololens-faq.md)
 ### [Bekannte Probleme bei HoloLens](hololens-known-issues.md)
-### [Sammeln und nutzen von Diagnoseinformationen von HoloLens-Geräten](hololens-diagnostic-logs.md)
-### [Support erhalten](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f)
+### [Sammeln und Nutzen von Diagnoseinformationen von HoloLens-Geräten](hololens-diagnostic-logs.md)
+### [Technischen Support erhalten](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f)
 
 # Versionshinweise für HoloLens
 ## [Veröffentlichungshinweise für HoloLens 2](hololens-release-notes.md)
