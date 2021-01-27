@@ -1,11 +1,10 @@
 ---
 title: Verbessern der Grafikqualität und des Komforts
-description: Die Kalibrierung Ihres Pupillenabstands (Interpupillary Distance, IPD) kann die Qualität der visuellen Elemente verbessern. Sowohl HoloLens- als auch Windows Mixed Reality-immersive Headsets bieten Möglichkeiten zum Anpassen des IPD.
+description: Erfahren Sie, wie Sie das Gerät auf Ihren Pupillenabstand (Interpupillary Distance, IPD) kalibrieren können, um die Qualität Ihrer visuellen Elemente auf HoloLens-Geräten zu verbessern.
 author: Teresa-Motiv
 ms.author: xerxesb
 ms.date: 9/13/2019
 ms.topic: article
-keywords: Kalibrierung, Komfort, visuelle Elemente, Qualität, IPD
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
@@ -14,12 +13,13 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 748475cb3e3c51e36904109ecfe03e65bdad6c1e
-ms.sourcegitcommit: 6446a80bece77d67077f36a390f13b8ce59af26e
+keywords: Kalibrierung, Komfort, visuelle Elemente, Qualität, IPD, HoloLens, Windows Mixed Reality, VR-Headsets
+ms.openlocfilehash: e975e2ccd978d4ec6b5331af0ae566af116711c5
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "11252529"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283546"
 ---
 # Verbessern der Grafikqualität und des Komforts
 
@@ -35,12 +35,12 @@ HoloLens 2 fordert einen Benutzer auf, das Gerät unter den folgenden Umständen
 
 - Der Benutzer verwendet das Gerät zum ersten Mal
 - Der Benutzer hat den Kalibrierungsvorgang zuvor deaktiviert
-- Der Kalibrierungsvorgang war bei der letzten Verwendung durch den Benutzer nicht erfolgreich
-- Der Benutzer hat seine Kalibrierungsprofile gelöscht.
-- Das Gerät wird deaktiviert und wieder aktiviert, und es gelten die vorstehenden Umstände. 
+- Der Kalibrierungsvorgang war bei der letzten Verwendung des Geräts durch den Benutzer nicht erfolgreich
+- Der Benutzer hat seine Kalibrierungsprofile gelöscht
+- Das Gerät wird ausgeschaltet und wieder eingeschaltet, und eine der oben genannten Bedingungen trifft zu 
 
 
-![Kalibrierungsaufforderung zur Anpassung an die Augen.](./images/07-et-adjust-for-your-eyes.png)
+![Kalibrierungsdialog zur Anpassung an die Augen.](./images/07-et-adjust-for-your-eyes.png)
 
 Während dieses Vorgangs sehen Sie sich eine Reihe von Zielen (Edelsteinen) an. Es ist in Ordnung, wenn Sie während der Kalibrierung blinzeln oder die Augen schließen. Versuchen Sie sich jedoch auf die Edelsteine zu konzentrieren, und nicht auf andere Gegenstände im Raum.  Durch die Fokussierung auf die Edelsteine kann HoloLens Ihre Augenposition ermitteln, um Ihre holografische Welt darzustellen.
 
@@ -50,9 +50,9 @@ Während dieses Vorgangs sehen Sie sich eine Reihe von Zielen (Edelsteinen) an. 
 
 ![Kalibrierung anpassen.](./images/09-et-adjusting.png)
 
-Wenn die Kalibrierung erfolgreich war, wird ein Erfolgsbildschirm angezeigt.  Wenn dies nicht der Fall ist, lesen Sie [hier](#troubleshooting-hololens-2-calibration) mehr über die Diagnose von Kalibrierungsfehlern.
+Wenn die Kalibrierung erfolgreich war, wird ein Erfolgsbildschirm angezeigt.  Falls nicht, lesen Sie mehr über die [Diagnose von Kalibrierungsfehlern](#troubleshooting-hololens-2-calibration).
 
-![Kalibrierung erfolgreich.](./images/10-et-success.png)
+![Dialogfenster zu erfolgreicher Kalibrierung.](./images/10-et-success.png)
 
 ### Kalibrierung beim Freigeben eines Geräts oder einer Sitzung
 
@@ -66,11 +66,11 @@ Mehrere Benutzer können ein HoloLens 2-Gerät gemeinsam nutzen, ohne dass jede 
 
    ![Die Einstellungs-App mit der Option „Kalibrierung der Augen ausführen”](./images/C-Settings.Calibration.png)
 
-### Automatische Unterstützung der Augenposition
+### Unterstützung der automatischen Augenstellung
 
 Bei HoloLens 2 wird durch die Augenstellungen eine genaue Hologramm-Positionierung, ein komfortables Seherlebnis und eine verbesserte Anzeigequalität ermöglicht. Die Augenstellungen werden intern im Rahmen der Eye-Tracking-Berechnung bestimmt. Dazu müssen alle Benutzer eine Eye Tracking-Kalibrierung durchführen, auch wenn keine Eingabe über Anvisieren erforderlich ist.
 
-**Auto Eye Position (AEP, automatische Augenstellung)** ermöglicht diese Szenarien durch eine interaktionsfreie Methode zur Berechnung der Augenstellungen des Benutzers. Auto Eye Position beginnt automatisch im Hintergrund zu arbeiten, sobald der Benutzer das Gerät anlegt. Wenn ein Benutzer zuvor keine Eye Tracking-Kalibrierung durchgeführt hat, beginnt Auto Eye Position nach einer kurzen Verarbeitungszeit von 20-30 Sekunden, die Augenstellungen des Benutzers an das Anzeigesystem zu übermitteln. Die Benutzerdaten werden nicht auf dem Gerät beibehalten. Deshalb wird dieser Vorgang wiederholt, wenn das Gerät wieder eingesetzt, neu gestartet oder aus dem Ruhezustand reaktiviert wird.
+**Auto Eye Position (AEP, automatische Augenstellung)** ermöglicht diese Szenarien durch eine interaktionsfreie Methode zur Berechnung der Stellung der Augen des Benutzers. Auto Eye Position beginnt automatisch im Hintergrund zu arbeiten, sobald der Benutzer das Gerät anlegt. Wenn ein Benutzer zuvor keine Eye Tracking-Kalibrierung durchgeführt hat, beginnt Auto Eye Position nach einer kurzen Verarbeitungszeit von 20-30 Sekunden, die Augenstellungen des Benutzers an das Anzeigesystem zu übermitteln. Die Benutzerdaten werden nicht auf dem Gerät gespeichert, und dieser Vorgang wird wiederholt, wenn der Benutzer das Gerät ausschaltet und wieder einschaltet, oder wenn das Gerät neu gestartet oder aus dem Ruhezustand reaktiviert wird.
 
 Es gibt ein paar Änderungen hinsichtlich des Systemverhaltens bei der Funktion Auto Eye Position, wenn ein nicht kalibrierter Benutzer das Gerät anlegt. In diesem Zusammenhang bezieht sich der Begriff „nicht kalibrierter Benutzer“ auf eine Person, die den Eye-Tracking-Kalibrierungsprozess auf dem Gerät zuvor noch nicht durchlaufen hat.
 
@@ -83,11 +83,11 @@ Wenn Benutzer von einer Anwendung ohne Eingabe über Anvisieren zu einer Anwendu
 
 Alle anderen Systemverhalten sind jenem ähnlich, wenn keine aktive Eye Tracking-Kalibrierung für den aktuellen Benutzer vorliegt. Beispielsweise wird die einhändige Startgeste nicht aktiviert sein. Bei der Ersteinrichtung wird es keine Änderung an der Standardumgebung geben.
 
-Bei Umgebungen, für die Blickdaten oder eine sehr präzise Hologramm-Positionierung erforderlich sind, empfehlen wir nicht kalibrierten Benutzern, die Eye Tracking-Kalibrierung durchzuführen. Sie kann über das Dialogfeld zur Eye-Tracking-Kalibrierung aufgerufen werden. Starten Sie alternativ die Einstellungs-App aus dem Startmenü, und wählen Sie dann **System > Kalibrierung > Augenkalibrierung > Augenkalibrierung auszuführen** aus.
+Bei Umgebungen, für die Blickdaten oder eine präzise Hologramm-Positionierung erforderlich sind, empfehlen wir nicht kalibrierten Benutzern, die Eye Tracking-Kalibrierung durchzuführen. Sie kann über das Dialogfeld zur Eye-Tracking-Kalibrierung aufgerufen werden. Starten Sie alternativ die Einstellungs-App aus dem Startmenü, und wählen Sie dann **System > Kalibrierung > Augenkalibrierung > Augenkalibrierung auszuführen** aus.
 
 #### Verzögerte Anzeige des Kalibrierungsdialogfelds
 
-Bei aktivierter Auto Eye Position wird die Anzeige des Dialogfelds zur Eye-Tracking-Kalibrierung so lange verzögert, bis eine Anwendung Blickdaten anfordert. Dadurch wird sichergestellt, dass dem Benutzer das Dialogfeld nicht angezeigt wird, wenn die aktive Anwendung keine Blickdaten erfordert. Wenn die Anwendung Blickdaten erfordert und der aktuelle Benutzer nicht kalibriert ist, wird ihm das Kalibrierungsdialogfeld angezeigt. Dieses Verhalten kann dazu genutzt werden, das Dialogfeld zur Eye-Tracking-Kalibrierung zu einem geeigneten Zeitpunkt während der Verwendung des Geräts anzuzeigen. Diese Methode empfiehlt sich aus den folgenden Gründen:
+Bei aktivierter Auto Eye Position-Funktion wird die Anzeige des Dialogfelds zur Eye-Tracking-Kalibrierung so lange verzögert, bis eine Anwendung Blickdaten anfordert. Dadurch wird sichergestellt, dass dem Benutzer das Dialogfeld nicht angezeigt wird, wenn die aktive Anwendung keine Blickdaten erfordert. Wenn die Anwendung Blickdaten erfordert und der aktuelle Benutzer nicht kalibriert ist, wird ihm das Kalibrierungsdialogfeld angezeigt. Dieses Verhalten kann dazu genutzt werden, das Dialogfeld zur Eye-Tracking-Kalibrierung zu einem geeigneten Zeitpunkt während der Verwendung des Geräts anzuzeigen. Diese Methode empfiehlt sich aus den folgenden Gründen:
 
 1.  Das Dialogfeld zur Eye-Tracking-Kalibrierung informiert den Benutzer darüber, warum das Eye-Tracking erforderlich ist.
 2.  Es bietet dem Benutzer eine Möglichkeit, die Kalibrierung seiner Augen abzulehnen.
@@ -116,17 +116,17 @@ Wenn die Kalibrierung nicht erfolgreich ist, versuchen Sie Folgendes:
 - Räumen Sie Gegenstände aus dem Weg des Visiers (z. B. Haare)
 - Schalten Sie Licht in Ihrem Zimmer ein oder weichen Sie direktem Sonnenlicht aus
 
-Wenn Sie alle Richtlinien befolgt haben und die Kalibrierung weiterhin fehlschlägt, können Sie die Eingabeaufforderung zur Kalibrierung unter Einstellungen deaktivieren. Bitte teilen Sie uns auch im [Feedback-Hub](hololens-feedback.md) Ihre Meinung mit.
+Wenn Sie alle Anweisungen befolgt haben und die Kalibrierung weiterhin fehlschlägt, können Sie das Kalibrierungsdialogfeld in den Einstellungen deaktivieren. Teilen Sie uns dies auch mit, indem Sie Feedback im [Feedback Hub](hololens-feedback.md) abgeben.
 
-Lesen Sie auch die entsprechenden Informationen zur [Problembehandlung bei Bildfarbe oder Helligkeit](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right).
+Lesen Sie auch entsprechende Informationen zum [Behandeln von Problemen bei Bildfarbe oder Helligkeit](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right).
 
-Beachten Sie, dass das Einstellen des IPD für HoloLens 2 nicht anwendbar ist, da die Augenpositionen vom System berechnet werden. 
+Das Einstellen des IPD ist für HoloLens 2 nicht anwendbar, da die Augenpositionen vom System berechnet werden. 
 
 ### Kalibrierungsdaten und Sicherheit
 
-Kalibrierinformationen werden lokal auf dem Gerät gespeichert und sind nicht mit Kontoinformationen verknüpft. Es gibt keine Aufzeichnung darüber, wer das Gerät ohne Kalibrierung verwendet hat. Dies bedeutet, dass neue Benutzer bei der ersten Verwendung des Geräts aufgefordert werden, visuelle Elemente zu kalibrieren, sowie Benutzer, die zuvor die Kalibrierung deaktiviert haben oder wenn die Kalibrierung nicht erfolgreich war.
+Kalibrierungsinformationen werden lokal auf dem Gerät gespeichert und keinem Konto zugeordnet. Es gibt keine Aufzeichnung darüber, wer das Gerät ohne Kalibrierung verwendet hat. Dies bedeutet, dass neue Benutzer bei der ersten Verwendung des Geräts aufgefordert werden, visuelle Elemente zu kalibrieren, sowie Benutzer, die zuvor die Kalibrierung deaktiviert haben oder wenn die Kalibrierung nicht erfolgreich war.
 
-Auf dem Gerät können bis zu 50-Kalibrierprofile lokal gespeichert werden. Wenn diese Zahl erreicht ist, löscht das Gerät automatisch das älteste nicht verwendete Profil.
+Auf dem Gerät können bis zu 50 Kalibrierungsprofile lokal gespeichert werden. Wenn diese Zahl erreicht ist, löscht das Gerät automatisch das älteste nicht verwendete Profil.
 
 Kalibrierinformationen können unter **Einstellungen** > **Datenschutz** > **Eyetracker** zu jeder Zeit vom Gerät gelöscht werden.  
 
@@ -146,13 +146,13 @@ Das Gerät verwendet seine Eye Tracking-Technologie, um die Anzeigequalität zu 
 > [!NOTE]
 > Das Einstellen des IPD ist für HoloLens 2 nicht anwendbar, da die Augenpositionen vom System berechnet werden.
 
-HoloLens-Anwendungen verwenden Eye Tracking, um in Echtzeit nachzuverfolgen, wo Sie hinschauen. Dies ist die wichtigste Funktion, die Entwickler nutzen können, um eine völlig neue Ebene von Kontext, menschlichem Verständnis und Interaktionen innerhalb der holographischen Erfahrung zu schaffen. Entwickler müssen nichts unternehmen, um diese Funktion zu nutzen.
+HoloLens-Anwendungen verwenden Eye Tracking, um in Echtzeit nachzuverfolgen, wo Sie hinschauen. Dies ist die Hauptfunktion, die Entwickler nutzen können, um eine ganz neue Ebene von Kontext, menschlichem Verständnis und Interaktionen innerhalb der holografischen Erfahrung zu ermöglichen. Entwickler müssen nichts unternehmen, um diese Funktion nutzen zu können.
 
 ## Kalibrieren Ihrer HoloLens (1. Generation)
 
-HoloLens (1. Generation) passt die Anzeige von Hologrammen entsprechend dem [Pupillenabstand](https://en.wikipedia.org/wiki/Interpupillary_distance) (IPD) an. Wenn der IPD nicht genau ist, erscheinen Hologramme möglicherweise instabil oder in einer falschen Entfernung. Sie können die Qualität Ihrer visuellen Elemente verbessern, indem Sie das Gerät auf Ihren Pupillenabstand (IPD) kalibrieren.
+HoloLens (1. Generation) passt die Anzeige von Hologrammen entsprechend dem [Pupillenabstand](https://en.wikipedia.org/wiki/Interpupillary_distance) (Interpupillary Distance, IPD) an. Wenn der IPD nicht genau ist, erscheinen Hologramme möglicherweise instabil oder in falschem Abstand. Sie können die Qualität der visuellen Darstellung verbessern, indem Sie das Gerät auf Ihren Pupillenabstand (IPD) kalibrieren.
 
-Beim Einrichten Ihrer Hololens (1. Generation) werden Sie aufgefordert, Ihre visuellen Elemente zu kalibrieren, nachdem Cortana sich vorgestellt hat. Es wird empfohlen, den Kalibrierungsvorgang während dieser Einrichtungsphase abzuschließen. Sie können ihn jedoch überspringen, indem Sie warten, bis Cortana Sie auffordert, und dann „Überspringen” sagen.
+Beim Einrichten Ihrer HoloLens (1. Generation) werden Sie aufgefordert, Ihre visuellen Elemente zu kalibrieren, nachdem Cortana sich vorgestellt hat. Es wird empfohlen, den Kalibrierungsvorgang während dieser Einrichtungsphase abzuschließen. Sie können ihn jedoch überspringen, indem Sie warten, bis Cortana Sie auffordert, und dann „Überspringen” sagen.
 
 Während des Kalibrierungsvorgangs fordert HoloLens Sie auf, Ihren Finger mit einer Reihe von sechs Zielen pro Auge auszurichten. HoloLens verwendet diesen Vorgang, um den IPD für Ihre Augen richtig einzustellen.
 
