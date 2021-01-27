@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: afbcfd0762bea9e7a6bc217d5e4a2910eaab7359
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: 1b4f95f43fc60dffa2ca75322466857a0a20a0a7
+ms.sourcegitcommit: 145bbabc390f626ba6633fa49423c38656cd2224
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283346"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "11302269"
 ---
 # Verbinden mit Bluetooth- und USB C-Geräten
 
@@ -61,9 +61,9 @@ HoloLens (1. Generation) unterstützt die folgenden Bluetooth-Geräteklassen:
 1. Verwenden Sie die Spitze eines Stifts, um die Schaltfläche "Clicker koppeln" zu drücken, bis die Statusanzeige des Clickers weiß blinkt.  Achten Sie darauf, dass Sie die Schaltfläche gedrückt halten, bis die Anzeige blinkt.  
 
    Die Schaltfläche "Koppeln" befindet sich auf der Unterseite des Clickers neben der Fingerschlaufe.
-   
+
    ![Die Schaltfläche "Koppeln" befindet sich neben der Fingerschlaufe.](images/use-hololens-clicker-1.png)
-   
+
 1. Wählen Sie auf dem Kopplungsbildschirm **Clicker-** > **paar**aus.
 
 ## Bluetooth deaktivieren
@@ -90,6 +90,15 @@ HoloLens 2 unterstützt die folgenden USB-C-Geräteklassen:
 > Einige mobile Geräte mit USB-C-Verbindungen stellen sich der HoloLens als Ethernet-Adapter dar und können daher in einer Anbindehaltung-Konfiguration verwendet werden, beginnend mit der holographischen Windows-Version 2004. USB LTE-Modems, die einen separaten Treiber und/oder eine für die Konfiguration installierte Anwendung erfordern, werden nicht unterstützt.
 
 Als Antwort auf das Kundenfeedback haben wir die eingeschränkte Unterstützung für die Mobilfunkverbindung aktiviert, die über USB-C direkt an das HoloLens angebunden ist.  Tethering funktioniert nur bei Geräten, die die generische Microsoft [RNDIS-](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) Treiber-Implementierung unterstützen und keine weiteren Treiber oder Anwendungen installieren müssen.  Ein solches Gerät wird, wenn es verbunden ist, automatisch als neue Ethernet-Verbindung in der Benutzeroberfläche der HoloLens 2-Netzwerkeinstellungen angezeigt. Bitte wenden Sie sich an den Hersteller Ihres Geräts, um weitere Informationen zu erhalten, ob es den generischen Microsoft RNDIS-Treiber unterstützt.
+
+### USB-C-Hubs
+
+Einige Benutzer müssen möglicherweise mehrere Geräte gleichzeitig verbinden. Wenn Benutzer eine Vorschau auf ein Insider-Feature wünschen und ein [USB-C-Mikrofon](hololens-insider.md#usb-c-external-microphone-support) zusammen mit einem anderen angeschlossenen Gerät verwenden möchten, sind USB-C-Hubs möglicherweise die Lösung. Diese Geräte wurden nicht von Microsoft getestet. Microsoft kann dazu keine bestimmten Marken empfehlen.
+
+**Anforderungen für USB-C-Hub und angeschlossene Geräte:**
+
+- Angeschlossene Geräte dürfen keinen Treiber benötigen, der installiert werden muss.
+- Die Gesamtleistung aller angeschlossenen Geräte muss unter 4,5Watt liegen.
 
 ## Herstellen einer Verbindung mit Miracast
 
