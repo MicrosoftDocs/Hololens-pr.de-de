@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: db8f7774bc3c5718a09a99d8d4137d2ed3271bc1
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: a339470e0c8be2b1cdf492bd14bad1ab724fdc3e
+ms.sourcegitcommit: c72a3c60d4105c77407e6d04c95fadd08f102775
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283036"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "11304968"
 ---
 # HoloLens 2-Hardware
 
@@ -29,8 +29,10 @@ Microsoft HoloLens 2 ist ein ungebundener holographischer Computer.  Er verfeine
 
 - **Visier**. Enthält die HoloLens-Sensoren und -Anzeigen. Sie können das Visier während des Tragens der HoloLens nach oben drehen.
 - **Stirnband**. Zum Aufsetzen der HoloLens verwenden Sie das Einstellrad, um das Stirnband zu erweitern. Ziehen Sie das Einstellrad bei aufgesetzter HoloLens nach rechts fest, bis das Stirnband angenehm sitzt.
-- **Tasten für Helligkeit**. Beim Tragen der HoloLens befinden sich die Helligkeitstasten auf der linken Seite des Geräts.
-- **Tasten für Lautstärke**. Beim Tragen der HoloLens befinden sich die Lautstärketasten auf der rechten Seite des Geräts.
+- **Tasten für Helligkeit**. Beim Tragen der HoloLens befinden sich die Helligkeitstasten auf der linken Seite des Visiers.
+- **Tasten für Lautstärke**. Beim Tragen der HoloLens befinden sich die Lautstärketasten auf der rechten Seite des Visiers.
+- **Netzschalter**. Beim Tragen der HoloLens befindet sich der Netzschalter auf der rechten Seite der hinteren äußeren Abdeckung.
+- **USB-C-Port.** Beim Tragen der HoloLens befindet sich der USB-C-Port auf der rechten Seite der hinteren äußeren Abdeckung unterhalb des Netzschalters.
 
 ## Inhalt der Verpackung
 
