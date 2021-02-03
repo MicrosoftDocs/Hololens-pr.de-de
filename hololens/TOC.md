@@ -13,7 +13,8 @@
 ### [Unterstützte Sprachen für HoloLens 2](hololens2-language-support.md)
 ### [Aufbau von HoloLens 2](hololens2-basic-usage.md)
 ### [FAQ zur HoloLens 2 Development Edition](hololens2-development-edition-faq.md)
-### [Verwalten der benutzerdefinierten Apps für HoloLens 2](hololens2-holographic-custom-apps.md)
+### [FAQ zur HoloLens 2 Industrial Edition](hololens2-industrial-edition-faq.md)
+
 
 
 ## Erste Schritte mit HoloLens (1. Generation)
@@ -35,6 +36,7 @@
 ### [Mixed Reality-Fotos und -Videos aufnehmen](holographic-photos-and-videos.md)
 ## Holografische Anwendungen
 ### [Suchen, installieren und deinstallieren von Anwendungen](holographic-store-apps.md)
+### [Verwalten der benutzerdefinierten Apps für HoloLens 2](hololens2-holographic-custom-apps.md)
 ## Hologramm-Optik und Platzierung im Raum
 ### [Verbessern der Grafikqualität und des Komforts](hololens-calibration.md)
 ### [Abbilden von physischen Räumen mit HoloLens](hololens-spaces.md) 
