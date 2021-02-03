@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 1/21/2021
+ms.date: 2/2/2021
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7cc08396925368be5230a078de6fb4c7cd0a8b24
-ms.sourcegitcommit: 063aa10baa190429b7248f7f1384afba7975861e
+ms.openlocfilehash: e36d25a31495b09e2e9f08f8ea5a8bf34fadafeb
+ms.sourcegitcommit: 12d96e5d0c733e733f6ff7da2f4efb8e0f96c27b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "11297765"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "11311829"
 ---
 # Insider-Vorschau für Microsoft HoloLens
 
@@ -34,6 +34,7 @@ Wir freuen uns, neue Features erneut für Windows-Insider zu verwenden. Wir werd
 | Featurename                                              | Kurze Beschreibung                                                                      | Im Build verfügbar |
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
 | [Neuer Microsoft Edge-Browser](#introducing-the-new-microsoft-edge) | Das neue Chromium-basierte Microsoft Edge ist jetzt für HoloLens 2 verfügbar.                         | 20279.1006 |
+| [WebXR und 360 Viewer](#webxr-and-360-viewer)             | Probieren Sie immersive Weberfahrungen und die 360-Videowiedergabe aus                                           | 20289.1000 |
 | [Neue Einstellungs-App](#new-settings-app)                     | Die ältere Einstellungs-App wird durch eine aktualisierte Version durch neue Features und Einstellungen ersetzt. | 20279.1006 |
 | [Standardmäßige App-Auswahl](#default-app-picker)                 | Auswählen, welche App für jeden Datei- oder Linktyp gestartet werden soll                                      | 20279.1006 |
 | [Office Web App](#office-web-app)                         | Eine Verknüpfung zur Office Web App ist jetzt in "Alle Apps" aufgeführt.                                   | 20279.1006 |
@@ -133,6 +134,57 @@ Es gibt mehrere Methoden zum Installieren von Microsoft Edge-Insider-Kanälen au
 
 > [!NOTE]
 > Während dieser Windows-Insider-Vorschau für HoloLens 2 ist die Version von Microsoft Edge auf Ihrem Gerät möglicherweise höher als die version, die in einigen (oder allen) Microsoft Edge-Insider-Kanälen verfügbar ist. Dadurch soll sichergestellt werden, dass neue Features und Fixes, die speziell auf den Webbrowser auf HoloLens 2 zielen, so schnell wie möglich an unsere Windows-Insider übermittelt werden. Kurz nach der öffentlichen Veröffentlichung des nächsten Windows-Updates werden die Microsoft Edge-Insider-Kanal-Builds die Version von Microsoft Edge auf Ihrer HoloLens 2 übertreffen und vor ihnen bleiben.
+
+### WebXR und 360 Viewer
+
+*Hinzugefügt in Windows Insider Build 20289.1000*
+
+Das neue Microsoft Edge bietet Unterstützung für WebXR. Dies ist der neue Standard zum Erstellen immersiver Weberfahrungen (ersetzt WebVR). Viele immersive Weberfahrungen wurden im Hinblick auf VR entworfen (sie ersetzen Ihr Sichtfeld durch eine virtuelle Umgebung), aber diese Erfahrungen werden auch von HoloLens 2 unterstützt. Der WebXR-Standard ermöglicht außerdem erweiterte und mixed Reality-immersive Weberfahrungen, die Ihre physische Umgebung nutzen. Da Entwickler mehr Zeit mit WebXR verbringen, erwarten wir, dass neue erweiterte und mixed Reality-immersive Erfahrungen für HoloLens 2-Kunden verfügbar sind.
+
+Die Erweiterung 360 Viewer baut auf WebXR auf und wird automatisch zusammen mit dem neuen Microsoft Edge auf HoloLens 2 installiert. Mit dieser Weberweiterung können Sie sich in 360-Grad-Videos eintauchen. YouTube bietet die größte Auswahl von 360 Videos, daher empfehlen wir Ihnen, hier zu beginnen.
+
+#### Verwenden von WebXR
+
+1. Navigieren Sie zu einer Website mit WebXR-Unterstützung.
+1. Wählen Sie auf der Website die Schaltfläche **"VR** eingeben" aus. Der Speicherort und die visuelle Darstellung dieser Schaltfläche können je nach Website variieren, sie sieht jedoch in etwa so aus:
+
+    ![Beispiel für die Eingabe der SCHALTFLÄCHE "VR"](images/75px-enter-vr.png)
+
+1. Wenn Sie zum ersten Mal versuchen, eine WebXR-Erfahrung in einer bestimmten Domäne zu starten, bittet der Browser um Zustimmung, um in eine immersive Ansicht eintauchen zu können. Wählen Sie **"Zulassen" aus.**
+1. Verwenden [Sie HoloLens 2-Gesten, um](hololens2-basic-usage.md#the-hand-tracking-frame) die Erfahrung zu bearbeiten.
+1. Wenn die Erfahrung nicht über eine Schaltfläche zum Beenden **verfügt,** verwenden Sie die [Startgeste,](hololens2-basic-usage.md#start-gesture) um nach Hause zurückzukehren.
+
+**Empfohlene WebXR-Beispiele**
+- 360 Viewer (siehe nächster Abschnitt)
+- [XR-Dinosaurier](https://www.xrdinosaurs.com/)
+- [Barista Express](https://constructarca.de/game/barista-express/)
+- [WebXR Paint](https://threejs.org/examples/webxr_vr_paint.html)
+
+#### So verwenden Sie 360 Viewer
+
+1. Navigieren Sie zu einem 360-Grad-Video auf YouTube.
+1. Wählen Sie im Videoframe die Mixed Reality-Headset-Schaltfläche aus:
+
+    ![Schaltfläche zum Aktivieren von 360 Viewer](images/enter-360-viewer.jpg)
+
+1. Wenn Sie versuchen, 360 Viewer zum ersten Mal in einer bestimmten Domäne zu starten, bittet der Browser um Zustimmung, um in eine immersive Ansicht eintauchen zu können. Wählen Sie **"Zulassen"** aus.
+1. [Tippen Sie in die](hololens2-basic-usage.md#select-using-air-tap) Luft, um die Wiedergabesteuerelemente zu starten. Verwenden [Sie Handstrahle und](hololens2-basic-usage.md#select-using-air-tap) Tippen in die Luft, um zu spielen/zu unterbrechen, vorwärts/zurück zu springen, Beschriftungen ein-/auszuschalten oder die Umgebung zu beenden (wodurch die immersive Ansicht beendet wird). Die Wiedergabesteuerelemente werden nach einigen Sekunden Inaktivität ausgeblendet.
+
+#### Bekannte Probleme mit WebXR und 360 Viewer
+- In WebXR-Umgebungen können Hologramme verschoben oder gekippt werden, wenn Sie Ihren Kopf neigen oder sich in Ihrer Umgebung bewegen.
+- Je nach Komplexität der WebXR-Erfahrung kann die Framerate drop- oder stuttern.
+- Handgelenke sind in WebXR noch nicht verfügbar.
+- Beim Beenden einer WebXR- oder 360-Viewer-Erfahrung kann es 30 Sekunden oder mehr dauern, bis Hologramme in der Mixed -Reality-Startseite erneut angezeigt werden.
+- 360 Videos von anderen Websites als YouTube funktionieren möglicherweise nicht wie erwartet.
+- Wenn 360 Videos nicht in die immersive Ansicht gelangen (oder die Mixed Reality-Headset-Schaltfläche nicht angezeigt wird), versuchen Sie, die Seite zu aktualisieren.
+- Beschriftungen sind im 360-Viewer auf HoloLens 2 noch nicht sichtbar.
+- Durch anhalten eines Videos im 360-Viewer wird das Rendern des Videos beendet (aber durch Auswählen der Wiedergabeschaltfläche wird die Wiedergabe ordnungsgemäß fortgesetzt).
+- Die Schaltfläche "Nächstes Video" in 360 Viewer funktioniert derzeit nicht.
+- Sie können 2D-Videos in einem immersiven "Theater"-Modus abspielen, die Framerate ist jedoch weniger als 30 fps.
+
+#### Bereitstellen von Feedback zu WebXR und 360 Viewer
+
+Bitte teilen Sie Feedback und Fehler mit unserem Team über das Feature **"Feedback senden"** im neuen Microsoft Edge mit.
 
 ### Neue Einstellungs-App
 
@@ -272,8 +324,8 @@ Wählen Sie dann **"Aktive Entwicklung**von Windows" aus, wählen Sie aus, ob **
 
 Wählen **Sie "> Jetzt neu starten" aus,** um den Abschluss zu beenden. Nachdem Das Gerät neu gestartet wurde, wechseln Sie zu "Einstellungen **> Update & Sicherheit" > Suchen** Sie nach Updates, um den neuesten Build zu erhalten.
 
-### Updatefehler 0x80070490– Fehlerumgearbeitung
-Wenn beim Aktualisieren im Dev- oder Betakanal ein Updatefehler 0x80070490 auftritt, versuchen Sie es mit der folgenden kurzfristigen Lösung. Dazu gehört das Verschieben Ihres Insider-Kanals, das Aufnehmen des Updates und das anschließende Zurück verschieben des Insider-Kanals.
+### Updatefehler 0x80070490 Fehlerumgearbeitung
+Wenn beim Aktualisieren im Dev- oder 0x80070490 Betakanal ein Updatefehler auftritt, versuchen Sie es mit der folgenden kurzfristigen Problemumgearbeitung. Dazu gehört das Verschieben Ihres Insider-Kanals, das Aufnehmen des Updates und das anschließende Zurück verschieben des Insider-Kanals.
 
 #### Phase 1 – Release Preview
 1.  Einstellungen, Update & Security, Windows-Insider-Programm, **Release Preview Channel auswählen.**
