@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d4275d8fe71e469eee3f8c63576794e6ea5adf3c
-ms.sourcegitcommit: b24acae8bdc56442ae0cb8290ab5e9464e6f564e
+ms.openlocfilehash: 1348e6f33f5ea64c6fd3572b09c18fdcb6ae63e6
+ms.sourcegitcommit: 39424078a75feaf6a1e9b0547cb7d5de9847faf3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "11306674"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "11312650"
 ---
 # Übersicht für HoloLens2
 
@@ -106,7 +106,7 @@ Die HoloLens2 Industrial Edition wurde um neue Materialien und Zertifizierungen 
 
 Zusätzlich zum aktualisierten Gerät besitzt die HoloLens2 Industrial Edition eine 2-Jahres-Garantie sowie ein Programm für schnellen Ersatz.
 
-Lesen Sie die [Häufig gestellten Fragen zur HoloLens2 Industrial Edition](https://github.com/MicrosoftDocs/Hololens-pr/blob/evmill-industrial-edition/hololens/hololens2-industrial-edition-faq.md).
+Lesen Sie die [Häufig gestellten Fragen zur HoloLens2 Industrial Edition](hololens2-industrial-edition-faq.md).
 
 #### Reinigung und Handhabung von HoloLens2
 Die HoloLens2 Industrial Edition kann mit einer Lösung aus 70%igem Isopropylalkohol und Wasser gereinigt werden, um die harten Oberflächen des Geräts zu reinigen, einschließlich Visier, Stirnpolster und Kopfriemen. Weitere Informationen finden Sie in den [Häufig gestellten Fragen zur HoloLens2-Reinigung](https://docs.microsoft.com/hololens/hololens2-maintenance). 

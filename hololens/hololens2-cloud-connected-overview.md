@@ -14,18 +14,20 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 835b4be101b665d2b86c2170a65c04697686e403
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: 69b31657a7efaebd5b25b742023dc8767f9c5038
+ms.sourcegitcommit: 39424078a75feaf6a1e9b0547cb7d5de9847faf3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283076"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "11312634"
 ---
-# Bereitstellungshandbuch – Mit der Cloud verbundene HoloLens 2 mit Remote Assist – Übersicht
+# Bereitstellungshandbuch – Mit der Cloud verbundene HoloLens2 mit Remote Assist – Übersicht
 
 Dieses Handbuch hilft IT-Experten bei der Planung und Bereitstellung von Microsoft HoloLens 2-Geräten in ihrer Organisation mit dem allgemeinen Ziel, dass diese Geräte cloudgebunden mit Ihrer Organisation mit Dynamics 365 Remote Assist betriebsbereit sind. Beachten Sie, dass dies als Modell für die Bereitstellung von Proof-of-Concept-Bereitstellungen für Ihre Organisation in einer Vielzahl von HoloLens 2-Verwendungsfällen dient.
 
 In diesem Leitfaden wird beschrieben, wie Sie Ihre Geräte bei der Geräteverwaltung registrieren, Lizenzen nach Bedarf anwenden und überprüfen, ob Ihre Endbenutzer remote Assist sofort beim Einrichten des Geräts verwenden können. Dazu werden wir die wichtigen Infrastrukturteile durchgehen, die für die Einrichtung und Ausführung erforderlich sind – die Bereitstellung mit HoloLens 2 wird im großen Maßstab erreicht.
+
+![Mit der Cloud verbundenes Banner](./images/cloud-connected-hololens-large.png)
 
 ## In diesem Leitfaden
 
@@ -33,7 +35,7 @@ Dieses Handbuch hat das spezifische Ziel, Remote Assist in Ihrer Organisation au
 
 Diese Einrichtung ähnelt Szenario [A: Bereitstellen](https://docs.microsoft.com/hololens/common-scenarios#scenario-a)auf Cloud Connect-Geräten. Dies ist eine gute Option für viele Proof of Concept-Bereitstellungen, die Folgendes umfassen:
 
-- Wi-Fi Netzwerke sind in der Regel vollständig für internet- und cloudbasierte Dienste geöffnet
+- Wi-Fi sind in der Regel vollständig für internet- und cloudbasierte Dienste geöffnet.
 - Azure AD Join mit automatischer MDM-Registrierung – MDM (Intune) Managed
 - Benutzer melden sich mit ihrem eigenen Unternehmenskonto an (Azure AD)
   - Einzelne oder mehrere Benutzer pro Gerät unterstützt
@@ -41,11 +43,11 @@ Diese Einrichtung ähnelt Szenario [A: Bereitstellen](https://docs.microsoft.com
 
 ![Mit der Cloud verbundenes Szenario](./images/cloud-connected-guide-diagram.png)
 
-In diesem Leitfaden werden keine weiteren Geräteeinschränkungen oder -konfigurationen angewendet. Wir empfehlen Ihnen jedoch, diese Optionen nach abschluss zu erkunden.
+In diesem Leitfaden werden keine weiteren Geräteeinschränkungen oder -konfigurationen angewendet, wir empfehlen Ihnen jedoch, diese Optionen nach abschluss zu erkunden.
 
 ## Erfahren Sie mehr über Remote Assist
 
-Remote Assist ermöglicht gemeinsame Wartung und Reparatur, Remoteinspektion sowie Wissensfreigabe und Schulung. Durch das Verbinden von Personen an unterschiedlichen Rollen und Standorten kann ein Techniker mit Remote Assist eine Verbindung mit einem Remotemitarbeiter in Microsoft Teams herstellen. Sie können Videos, Screenshots und Anmerkungen kombinieren, um Probleme in Echtzeit zu lösen, auch wenn&#39;sich nicht am selben Speicherort befinden. Remotemitarbeiter können Referenzbilder, Schemata und andere hilfreiche Informationen einfügen, die der Techniker&#39;den physischen Raum eingibt, damit sie auf das Schema beim Arbeiten mit Kopf und Freisprechen auf HoloLens verweisen können.
+Remote Assist ermöglicht gemeinsame Wartung und Reparatur, Remoteinspektion sowie Wissensfreigabe und Schulung. Durch das Verbinden von Personen an verschiedenen Rollen und Standorten kann ein Techniker mit Remote Assist eine Verbindung mit einem Remotemitarbeiter in Microsoft Teams herstellen. Sie können Videos, Screenshots und Anmerkungen kombinieren, um Probleme in Echtzeit zu lösen, auch wenn&#39;sich nicht am selben Speicherort befinden. Remotemitarbeiter können Referenzbilder, Schemata und andere hilfreiche Informationen einfügen, die der Techniker&#39;den physischen Raum eingibt, damit sie auf das Schema beim Arbeiten mit Kopf und Freisprechen auf HoloLens verweisen können.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
