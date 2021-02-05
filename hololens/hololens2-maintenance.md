@@ -1,6 +1,6 @@
 ---
 title: 'Reinigen von HoloLens 2: Häufig gestellte Fragen'
-description: Erhalten Sie aktuelle Antworten für alle häufig gestellten Fragen zum Bereinigen und Warten Ihres HoloLens 2-Geräts.
+description: Erhalten Sie aktuelle Antworten auf alle häufig gestellten Fragen zum Bereinigen und Warten Ihres HoloLens 2-Geräts.
 author: Teresa-Motiv
 ms.author: v-tea
 ms.date: 4/14/2020
@@ -15,12 +15,12 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ea6e4f32e804ee6c2f2f155da1f4290e1116bb74
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: c9016be7bba8f795e43339c2c93d3fe3b44d2c8c
+ms.sourcegitcommit: 1d44907cb7454ff96f1a9badb90db4cdc958e784
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283086"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "11313794"
 ---
 # Reinigen von HoloLens 2: Häufig gestellte Fragen
 
@@ -28,6 +28,10 @@ ms.locfileid: "11283086"
 > Microsoft kann keine Bestimmung der Effektivität eines bestimmten Desinfektionsprodukts gegenüber eines Krankheitserregers wie COVID-19 treffen. Bitte folgen Sie den Anweisungen Ihrer örtlichen Gesundheitsbehörde in Bezug darauf, wie Sie sich vor potenziellen Infektionen schützen können.  
 
 ## Was sind die allgemeinen Reinigungsanweisungen für HoloLens 2-Geräte?
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player]
+## Was sind die allgemeinen Reinigungsanweisungen für HoloLens 2-Geräte?
+<!-- <iframe src="https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player" width="960" height="540" allowFullScreen frameBorder="0" title="HoloLens 2 Use and Care - Microsoft Channel 9 Video"></iframe> -->
 
 **So säubern Sie das Gerät**
 
@@ -74,7 +78,7 @@ Zum Säubern des Stirnpolsters wischen Sie es mit einem Tuch ab, das mit Wasser 
 
 ## Kann ich ultraviolettes (UV-) Licht verwenden, um das Gerät zu reinigen?
 
-Die UVC-Bestrahlung mit UVC-LED, die bei 265nm bei einer Intensität von 0,5-0,6mW/cm 2 arbeitet und keine Empfindlichkeit aussentigt, kann zum Besen von <sup> </sup> HoloLens2 verwendet werden. Bitte befolgen Sie die Herstellerspezifikationen zur Handhabung und Belichtungszeit.
+Die UVC-Bestrahlung mit UVC-LED, die bei 265nm bei einer Intensität von 0,5-0,6 mW/cm 2 arbeitet und keine Empfindlichkeit aussentigt, kann zum Besen von <sup> </sup> HoloLens2 verwendet werden. Bitte befolgen Sie die Herstellerspezifikationen zur Handhabung und Belichtungszeit.
 
 > [!CAUTION]  
 > Eine hohe UV-A- und UV-B-Belastung kann die Anzeigequalität des Geräts verschlechtern und die Visierbeschichtung beschädigen. Zu starke UV-A- und UV-B-Strahlung hat, abhängig von der Dauer und Intensität der Bestrahlung, die folgenden Auswirkungen:
@@ -82,7 +86,7 @@ Die UVC-Bestrahlung mit UVC-LED, die bei 265nm bei einer Intensität von 0,5-0,6
 > 1. Das Stirnpolster und die Verschlüsse des Geräts können verfärben.
 > 1. Die Antireflex-Schicht (AR) des Visiers und die Sensorscheiben nehmen Schaden.
 > 1. Die Grundmaterialien des Visiers und der Sensorscheiben werden angegriffen.
-> 1. Die Anzeigeleistung wird beeinträchtigt.
+> 1. Die Anzeigeleistung verschlechtert sich.
 
 ## Ist das hintere Polster auswechselbar?
 
