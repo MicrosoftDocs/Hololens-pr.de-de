@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1348e6f33f5ea64c6fd3572b09c18fdcb6ae63e6
-ms.sourcegitcommit: 39424078a75feaf6a1e9b0547cb7d5de9847faf3
+ms.openlocfilehash: 9de0bbe4cc8d3056a1f34647c0779ebdff1476aa
+ms.sourcegitcommit: f122e2c0c7c0366d88fa3efa3590e9e237eaf925
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "11312650"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "11313552"
 ---
 # Übersicht für HoloLens2
 
@@ -87,7 +87,7 @@ Das Verwenden Ihrer HoloLens2-Geräte in einer kommerziellen Umgebung kann ein l
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### So sehen die nächsten Schritte mit der HoloLens2 mit Dynamics365 Remote Assist Edition aus
-Wir haben ein spezielles Handbuch erstellt, das Ihnen bei der Bereitstellung von HoloLens-Geräten im großen Maßstab helfen soll. Das Handbuch umfasst eine End-to-End-Einrichtung für Azure Active Directory bis hin zur Überprüfung eines Remote Assist-Anrufs. Weitere Informationen finden Sie in unserem [Bereitstellungshandbuch – Mit der Cloud verbundene HoloLens2 mit Remote Assist](hololens2-cloud-connected-overview.md).
+Wir haben ein spezielles Handbuch erstellt, das Ihnen bei der Bereitstellung von HoloLens-Geräten im großen Maßstab helfen soll. Das Handbuch enthält eine End-to-End-Einrichtung für Azure Active Directory bis hin zur Überprüfung eines Remote Assist-Anrufs. Weitere Informationen finden Sie in unserem [Bereitstellungshandbuch – Mit der Cloud verbundene HoloLens2 mit Remote Assist](hololens2-cloud-connected-overview.md).
 
 | Prüfpunkt  | Ergebnis                                |
 |-------------|----------------------------------------|
@@ -131,7 +131,7 @@ Die HoloLens2 Development Edition umfasst eine HoloLens2, ein Azure-Guthaben von
 |---|---|
 |  [Unity](https://unity.com/) | Eine 3D-Echtzeit-Entwicklungsplattform.   |
 |  [Pixyz-Plug-In für Unity](https://www.pixyz-software.com/plugin/) | Eine Brücke zum Verbinden der &amp; Engineering-CAD-Welten mit der Entwicklungswelt.   |
-| [Azure-Guthaben von 500USD für Azure-Dienste](https://azure.microsoft.com/resources/) | Das im Lieferumfang der HoloLens2 Development Edition enthaltene Azure-Guthaben dienen dem Zweck, möglichst schnell die ersten Schritte beim Erstellen und Testen von Mixed Reality-Anwendungen in Azure machen zu können. |
+| [Azure-Guthaben von 500USD für Azure-Dienste](https://azure.microsoft.com/resources/) | Die im Lieferumfang der HoloLens2 Development Edition enthaltene Azure-Gutschrift dient dazu, möglichst schnell die ersten Schritte beim Erstellen und Testen von Mixed Reality-Anwendungen in Azure machen zu können. |
 
 #### Einlösen Ihres Guthabens
 
