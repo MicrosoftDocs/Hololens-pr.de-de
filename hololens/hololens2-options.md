@@ -4,7 +4,7 @@ description: Erfahren Sie, wie sich die einzelnen HoloLens2-Geräteeditionen gle
 keywords: HoloLens 2-Einkaufsoptionen, HoloLens-Optionen, Developer Edition
 author: evmill
 ms.author: v-evmill
-ms.reviewer: sekerawa
+ms.reviewer: evmill
 ms.date: 1/01/2021
 ms.prod: hololens
 ms.topic: article
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9de0bbe4cc8d3056a1f34647c0779ebdff1476aa
-ms.sourcegitcommit: f122e2c0c7c0366d88fa3efa3590e9e237eaf925
+ms.openlocfilehash: df3fa8ba3fbf65fa0b59f2ba9a6ace2ea489308b
+ms.sourcegitcommit: c58747f312cf1fea2de146501ea2473e93bd8300
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "11313552"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "11314272"
 ---
 # Übersicht für HoloLens2
 
@@ -106,6 +106,8 @@ Die HoloLens2 Industrial Edition wurde um neue Materialien und Zertifizierungen 
 
 Zusätzlich zum aktualisierten Gerät besitzt die HoloLens2 Industrial Edition eine 2-Jahres-Garantie sowie ein Programm für schnellen Ersatz.
 
+![Industrial Edition in einem Reinraum verwendet](./images/ie-small-pic.png)
+
 Lesen Sie die [Häufig gestellten Fragen zur HoloLens2 Industrial Edition](hololens2-industrial-edition-faq.md).
 
 #### Reinigung und Handhabung von HoloLens2
@@ -115,6 +117,8 @@ Die HoloLens2 Industrial Edition kann mit einer Lösung aus 70%igem Isopropylalk
 
 #### Informationen zu TrimbleXR10
 TrimbleXR10 mit HoloLens2 ist das erste Gerät, das mit dem Microsoft HoloLens-Anpassungsprogramm erstellt wurde und die neueste Technologie für räumliches Computing zu einer zertifizierten Lösung integriert, die mit einem Schutzhelm verwendet werden kann, um Arbeiter zu schützen.
+
+![Trimble SKU](./images/trimble-ed.png)
 
 Weitere Informationen zum [TrimbleXR10](https://fieldtech.trimble.com/en/product/trimble-xr10-with-hololens-2).
 
@@ -132,6 +136,8 @@ Die HoloLens2 Development Edition umfasst eine HoloLens2, ein Azure-Guthaben von
 |  [Unity](https://unity.com/) | Eine 3D-Echtzeit-Entwicklungsplattform.   |
 |  [Pixyz-Plug-In für Unity](https://www.pixyz-software.com/plugin/) | Eine Brücke zum Verbinden der &amp; Engineering-CAD-Welten mit der Entwicklungswelt.   |
 | [Azure-Guthaben von 500USD für Azure-Dienste](https://azure.microsoft.com/resources/) | Die im Lieferumfang der HoloLens2 Development Edition enthaltene Azure-Gutschrift dient dazu, möglichst schnell die ersten Schritte beim Erstellen und Testen von Mixed Reality-Anwendungen in Azure machen zu können. |
+
+![HoloLens2 Development Edition](./images/hololens-2-dev-ed.png)
 
 #### Einlösen Ihres Guthabens
 
