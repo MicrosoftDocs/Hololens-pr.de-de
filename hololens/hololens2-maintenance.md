@@ -15,12 +15,12 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: bc46ffd4c980ae14f010a3b45533f8081845c946
-ms.sourcegitcommit: feccd0135ac567d1217a1ac78a36f03321554305
+ms.openlocfilehash: 65144a8c209b80ac32361933f94dd51447e095a6
+ms.sourcegitcommit: 17ad2c127ac9586e7644e6898585cbe4efa34bc1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "11313996"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "11319279"
 ---
 # Reinigen von HoloLens 2: Häufig gestellte Fragen
 
@@ -36,10 +36,7 @@ ms.locfileid: "11313996"
 **So säubern Sie das Gerät**
 
 1. Entfernen Sie Staub mit einem trockenen, fusselfreien Microfaser-Tuch, mit dem Sie die Oberfläche des Geräts vorsichtig abwischen.
-1. Benetzen Sie das Tuch mit medizinischem "70%" Isopropyl-Wasser leicht, und verwenden Sie dann das benetzte Tuch, um die Oberfläche des Geräts vorsichtig zu wischen.
-
-   ![Abbildung, die zeigt, wie das Visier gereinigt wird](images/hololens-cleaning-visor.png)
-
+1. Benetzen Sie das Tuch mit medizinischem "70%"-Isopropyl-Konsum, und verwenden Sie dann das benetzte Tuch, um die Oberfläche des Geräts vorsichtig zu wischen.
 1. Lassen Sie das Gerät vollständig trocknen.
 
 **Reinigen des Stirnpolsters**
@@ -86,7 +83,7 @@ Die UVC-Bestrahlung mit UVC-LED, die bei 265nm bei einer Intensität von 0,5-0,6
 > 1. Das Stirnpolster und die Verschlüsse des Geräts können verfärben.
 > 1. Die Antireflex-Schicht (AR) des Visiers und die Sensorscheiben nehmen Schaden.
 > 1. Die Grundmaterialien des Visiers und der Sensorscheiben werden angegriffen.
-> 1. Die Anzeigeleistung verschlechtert sich.
+> 1. Die Anzeigeleistung wird beeinträchtigt.
 
 ## Ist das hintere Polster auswechselbar?
 
