@@ -15,19 +15,19 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 65144a8c209b80ac32361933f94dd51447e095a6
-ms.sourcegitcommit: 17ad2c127ac9586e7644e6898585cbe4efa34bc1
+ms.openlocfilehash: 0d44a985d7f8a0ca7707e6471700320b832b0826
+ms.sourcegitcommit: 76a99370ab841c06e533cc2f4a0c78c1fb7eac70
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/09/2021
-ms.locfileid: "11319279"
+ms.locfileid: "11324782"
 ---
 # Reinigen von HoloLens 2: Häufig gestellte Fragen
 
 > [!IMPORTANT]  
 > Microsoft kann keine Bestimmung der Effektivität eines bestimmten Desinfektionsprodukts gegenüber eines Krankheitserregers wie COVID-19 treffen. Bitte folgen Sie den Anweisungen Ihrer örtlichen Gesundheitsbehörde in Bezug darauf, wie Sie sich vor potenziellen Infektionen schützen können.  
 
-## Was sind die allgemeinen Reinigungsanweisungen für HoloLens 2-Geräte?
+## Verwendung und Pflege von HoloLens 2
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player]
 
@@ -36,8 +36,12 @@ ms.locfileid: "11319279"
 **So säubern Sie das Gerät**
 
 1. Entfernen Sie Staub mit einem trockenen, fusselfreien Microfaser-Tuch, mit dem Sie die Oberfläche des Geräts vorsichtig abwischen.
-1. Benetzen Sie das Tuch mit medizinischem "70%"-Isopropyl-Konsum, und verwenden Sie dann das benetzte Tuch, um die Oberfläche des Geräts vorsichtig zu wischen.
-1. Lassen Sie das Gerät vollständig trocknen.
+
+   ![Bereinigen beim Halten vom Stirnpolster](images/hl2-cleaning.png)
+
+2. Benetzen Sie das Tuch mit medizinischem "70%"-Isopropyl-Konsum, und verwenden Sie dann das benetzte Tuch, um die Oberfläche des Geräts vorsichtig zu wischen.
+
+3. Lassen Sie das Gerät vollständig trocknen.
 
 **Reinigen des Stirnpolsters**
 
@@ -54,7 +58,7 @@ Nein. Objektivreiniger können die Beschichtungen auf dem Visier beschädigen. F
 
 ## Kann ich Desinfektionstücher verwenden, um das Gerät zu reinigen?
 
-Ja, falls die Desinfektionstücher keine Bleiche enthalten. Sie können Desinfektionstücher ohne Bleiche dazu verwenden, die [Oberflächen der HoloLens vorsichtig abzuwischen](#what-are-the-general-cleaning-instructions-for-hololens-2-devices).  
+Ja, falls die Desinfektionstücher keine Bleiche enthalten. Sie können Desinfektionstücher ohne Bleiche dazu verwenden, die [Oberflächen der HoloLens vorsichtig abzuwischen](#hololens-2-use-and-care).  
 
 > [!CAUTION]  
 > Vermeiden Sie die Verwendung von Desinfektionstüchern mit Bleiche zum Reinigen der Oberflächen der HoloLens. Sie können Desinfektionstücher mit Bleiche in kritischen Situationen verwenden, wenn absolut keine anderen Mittel verfügbar sind. Allerdings kann Bleiche dabei das HoloLens-Visier oder andere Oberflächen beschädigen.
