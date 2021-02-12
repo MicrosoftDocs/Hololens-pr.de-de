@@ -64,9 +64,10 @@
 ### [Verschlüsselung und Datenschutz](security-encryption-data-protection.md)
 ### [Netzwerksicherheit](security-network-security.md)
 ### [Sicherheits-Engineering ](security-engineering.md)
-### Sicherheit von HoloLens 1. Gen.
+### Sicherheit von HoloLens 1. Gen. 
 #### [Häufig gestellte Sicherheitsfragen zu HoloLens (1. Gen.)](hololens1-faq-security.md)
-#### [BitLocker-Verschlüsselung von HoloLens (1. Gen.) ](hololens1-encryption.md)
+#### [BitLocker-Verschlüsselung von HoloLens (1. Gen.)](hololens1-encryption.md)
+### [Datenschutzbestimmungen für HoloLens 2](hololens2-compliance.md)
 ## [Lizenzanforderungen](hololens-licenses-requirements.md)
 ## Umgebung
 ### [Umgebungsaspekte für HoloLens](hololens-environment-considerations.md)
@@ -121,7 +122,7 @@
 # Versionshinweise für HoloLens
 ## [Veröffentlichungshinweise für HoloLens 2](hololens-release-notes.md)
 ## [Insider-Vorschau für Microsoft HoloLens](hololens-insider.md)
-## [Versionshinweise zu HoloLens (1. Generation)](hololens1-release-notes.md)
+## [Veröffentlichungshinweise für HoloLens (1. Generation)](hololens1-release-notes.md)
 
 # Feedback senden
 ## [Senden Sie uns Ihr Feedback über den Feedback-Hub](hololens-feedback.md)
