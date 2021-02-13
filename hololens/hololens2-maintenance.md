@@ -15,12 +15,12 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0d44a985d7f8a0ca7707e6471700320b832b0826
-ms.sourcegitcommit: 76a99370ab841c06e533cc2f4a0c78c1fb7eac70
+ms.openlocfilehash: a110f711d402432e727be6f342156e7dee733157
+ms.sourcegitcommit: 23ee06b659d7a51f3000d386c8f67cbf212d5aa4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "11324782"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "11327379"
 ---
 # Reinigen von HoloLens 2: Häufig gestellte Fragen
 
@@ -29,7 +29,7 @@ ms.locfileid: "11324782"
 
 ## Verwendung und Pflege von HoloLens 2
 
-> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWwEFP]
 
 <!-- <iframe src="https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player" width="960" height="540" allowFullScreen frameBorder="0" title="HoloLens 2 Use and Care - Microsoft Channel 9 Video"></iframe> -->
 
@@ -79,7 +79,7 @@ Zum Säubern des Stirnpolsters wischen Sie es mit einem Tuch ab, das mit Wasser 
 
 ## Kann ich ultraviolettes (UV-) Licht verwenden, um das Gerät zu reinigen?
 
-Die UVC-Bestrahlung mit UVC-LED, die bei 265nm bei einer Intensität von 0,5-0,6mW/cm 2 arbeitet und keine Empfindlichkeit aussentigt, kann zum Besen von <sup> </sup> HoloLens2 verwendet werden. Bitte befolgen Sie die Herstellerspezifikationen zur Handhabung und Belichtungszeit.
+Die UVC-Bestrahlung mit UVC-LED, die bei 265nm bei einer Intensität von 0,5-0,6 mW/cm 2 arbeitet und keine Empfindlichkeit aussentigt, kann zum Besen von <sup> </sup> HoloLens2 verwendet werden. Bitte befolgen Sie die Herstellerspezifikationen zur Handhabung und Belichtungszeit.
 
 > [!CAUTION]  
 > Eine hohe UV-A- und UV-B-Belastung kann die Anzeigequalität des Geräts verschlechtern und die Visierbeschichtung beschädigen. Zu starke UV-A- und UV-B-Strahlung hat, abhängig von der Dauer und Intensität der Bestrahlung, die folgenden Auswirkungen:
@@ -87,7 +87,7 @@ Die UVC-Bestrahlung mit UVC-LED, die bei 265nm bei einer Intensität von 0,5-0,6
 > 1. Das Stirnpolster und die Verschlüsse des Geräts können verfärben.
 > 1. Die Antireflex-Schicht (AR) des Visiers und die Sensorscheiben nehmen Schaden.
 > 1. Die Grundmaterialien des Visiers und der Sensorscheiben werden angegriffen.
-> 1. Die Anzeigeleistung wird beeinträchtigt.
+> 1. Die Anzeigeleistung verschlechtert sich.
 
 ## Ist das hintere Polster auswechselbar?
 

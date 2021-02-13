@@ -16,37 +16,38 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 4573f3b2e88af36c397fd1735ec9c6a96b4c52d6
-ms.sourcegitcommit: 76a99370ab841c06e533cc2f4a0c78c1fb7eac70
+ms.openlocfilehash: 3d7c4b5347019682896bb695690190e633c80677
+ms.sourcegitcommit: 23ee06b659d7a51f3000d386c8f67cbf212d5aa4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "11324798"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "11327399"
 ---
 # Insider-Vorschau für Microsoft HoloLens
 
-Willkommen bei den neuesten Insider Preview-Builds für HoloLens! Die ersten Schritte sind einfach [und](hololens-insider.md#start-receiving-insider-builds) geben wertvolles Feedback für das nächste wichtige Betriebssystemupdate für HoloLens.
+Willkommen bei den neuesten Insider -Preview-Builds für HoloLens! Die ersten Schritte sind einfach [und](hololens-insider.md#start-receiving-insider-builds) geben wertvolles Feedback für das nächste wichtige Betriebssystemupdate für HoloLens.
 
 ## Anmerkungen zur Windows-Insider-Version
 
-Wir freuen uns, neue Features erneut für Windows-Insider zu verwenden. Wir werden einen Flight zum Dev Channel für die neuesten Updates machen. We will continue to update this page as we add more features and updates to our Windows Insider builds.  Freuen Sie sich und bereiten Sie sich darauf, diese Updates in Ihre Realität zu mischen.
+Wir freuen uns, neue Features erneut für Windows-Insider zu verwenden. Neue Builds werden für die neuesten Updates in den Dev Channel übertragen. We will continue to update this page as we add more features and updates to our Windows Insider builds.  Freuen Sie sich und bereiten Sie sich darauf, diese Updates in Ihre Realität zu mischen.
 
 > [!IMPORTANT]
 > Wenn Sie zuvor entweder die Einstellungs- oder die Microsoft Edge-App in einem Kiosk verwendet haben, haben wir diese Apps durch neue Apps ersetzt, die eine andere App-ID verwenden. Wir empfehlen Ihnen dringend, unten neue [AUMIDs für neue Apps im Kioskmodus zu](#use-the-new-settings-and-edge-apps-in-kiosk-modes) lesen. Dadurch wird sichergestellt, dass Sie entweder weiterhin die Einstellungs-App in Ihrem Kiosk haben oder die neue Microsoft Edge-App verwenden.
 
 <br>
 
-| Featurename                                              | Kurze Beschreibung                                                                      | In Build verfügbar |
+| Featurename                                              | Kurze Beschreibung                                                                      | Im Build verfügbar |
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
-| [Neuer Microsoft Edge-Browser](#introducing-the-new-microsoft-edge) | Der neue, Chromium-basierte Microsoft Edge ist jetzt für HoloLens 2 verfügbar.                         | 20279.1006 |
-| [WebXR und 360 Viewer](#webxr-and-360-viewer)             | Probieren Sie immersive Weberfahrungen und die 360-Videowiedergabe aus.                                           | 20289.1000 |
-| [App "Neue Einstellungen"](#new-settings-app)                     | Die ältere Einstellungs-App wird durch eine aktualisierte Version mit neuen Features und Einstellungen ersetzt. | 20279.1006 |
+| [Neuer Microsoft Edge-Browser](#introducing-the-new-microsoft-edge) | Das neue Chromium-basierte Microsoft Edge ist jetzt für HoloLens 2 verfügbar.                         | 20279.1006 |
+| [WebXR und 360 Viewer](#webxr-and-360-viewer)             | Probieren Sie immersive Weberfahrungen und die 360-Videowiedergabe aus                                           | 20289.1000 |
+| [Neue Einstellungs-App](#new-settings-app)                     | Die ältere Einstellungs-App wird durch eine aktualisierte Version mit neuen Features und Einstellungen ersetzt. | 20279.1006 |
 | [Standardmäßige App-Auswahl](#default-app-picker)                 | Auswählen, welche App für jeden Datei- oder Linktyp gestartet werden soll                                      | 20279.1006 |
 | [Office Web App](#office-web-app)                         | Eine Verknüpfung zur Office Web App ist jetzt in "Alle Apps" aufgeführt.                                   | 20279.1006 |
 | [Wischen zum Eingeben](#swipe-to-type)                           | Verwenden Sie die Fingerspitze, um Wörter auf der holografischen Tastatur zu "wischen".                        | 20279.1006 |
 | [UNTERSTÜTZUNG für externes USB-C-Mikrofon](#usb-c-external-microphone-support) | Verwenden Sie USB-C-Mikrofone für Apps und/oder Remote Assist.| 20279.1006 |
 | [Neue AUMIDs für neue Apps im Kioskmodus](#use-the-new-settings-and-edge-apps-in-kiosk-modes) | AUMIDs für neue Einstellungen und Edge-Apps | 20279.1006 |
-| [Verbesserte Fehlerbeweise im Kioskmodus](#kiosk-mode-behavior-changes-for-handling-of-failures) | Der Kioskmodus sucht vor dem leeren Startmenü nach dem globalen zugewiesenen Zugriff. | 20279.1006 |
+| [Neue SettingsURIs für Sichtbarkeit von Seiteneinstellungen](hololens-insider.md#new-settingsuris-for-page-settings-visibility) | Mehr als 20 neue SettingsURIs für Einstellungen/PageVisibilityList-Richtlinie | 20289.1000 |
+| [Verbesserte Übergabe von Fehlern im Kioskmodus](#kiosk-mode-behavior-changes-for-handling-of-failures) | Der Kioskmodus sucht vor dem leeren Startmenü nach dem globalen zugewiesenen Zugriff. | 20279.1006 |
 | [Konfigurieren der Fallbackdiagnose](#configuring-fallback-diagnostics-via-settings-app) | Festlegen des Fallbackdiagnoseverhaltens in der App "Einstellungen" | 20279.1006 |
 | [Teilen von Dingen mit Geräten in der Nähe](#share-things-with-nearby-devices) | Freigeben von Dateien oder URLs von einer HoloLens auf einem PC | 20279.1006 |
 | [Problembehandlung für neues Betriebssystemupdate](#new-os-update-troubleshooter) | Neue Problembehandlung in den Einstellungen für Betriebssystemupdates | 20279.1006 |
@@ -58,13 +59,13 @@ Wir freuen uns, neue Features erneut für Windows-Insider zu verwenden. Wir werd
 
 Das neue Microsoft Edge [führt das Open -Source-Projekt Chromium](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) ein, um eine bessere Kompatibilität für Kunden und eine geringere Fragmentierung des Webs für Webentwickler zu gewährleisten.
 
-Mit dieser Insider Preview ist der neue Microsoft Edge zum ersten Mal für HoloLens 2-Kunden verfügbar! Während das neue Microsoft Edge in der Vergangenheit Microsoft Edge auf HoloLens 2 ersetzt, sind beide Browser derzeit für Insider verfügbar. Bitte teilen Sie Feedback und Fehler mit unserem Team über das Feature **"Feedback** senden" im neuen Microsoft Edge oder über den [Feedback-Hub.](hololens-feedback.md)
+Mit dieser Insider Preview ist das neue Microsoft Edge zum ersten Mal für HoloLens 2-Kunden verfügbar! Während das neue Microsoft Edge in der Vergangenheit Microsoft Edge auf HoloLens 2 ersetzt, sind beide Browser derzeit für Insider verfügbar. Bitte teilen Sie Feedback und Fehler mit unserem Team über das Feature **"Feedback** senden" im neuen Microsoft Edge oder über den [Feedback-Hub.](hololens-feedback.md)
 
 ![Screenshot "Neuer Microsoft Edge"](images/new-edge-ui.png)
 
 #### Starten des neuen Microsoft Edge
 
-Insidern stehen zwei Versionen von Microsoft Edge zur Verfügung: das neue Neue Microsoft Edge-Symbol (dargestellt durch ein blaues und grünes Kabelsymbol) und das ältere Microsoft Edge (dargestellt durch das weiße ![ ](images/new_edge_logo.png) "e"-Symbol). Das neue Microsoft Edge ist an das Startmenü angeheftet und wird automatisch gestartet, wenn Sie einen Weblink aktivieren. Wenn Sie zur Verwendung von älteren Microsoft Edge als Standardwebbrowser zurückkehren möchten, lesen Sie die anweisungen unten zum Zurücksetzen [von Standard-Apps.](#default-app-picker)
+Insidern stehen zwei Versionen von Microsoft Edge zur Verfügung: das neue neue Microsoft Edge-Symbol (dargestellt durch ein blaues und grünes Kabelsymbol) und das ältere Microsoft Edge (dargestellt durch das weiße ![ ](images/new_edge_logo.png) "e"-Symbol). Das neue Microsoft Edge ist an das Startmenü angeheftet und wird automatisch gestartet, wenn Sie einen Weblink aktivieren. Wenn Sie zur Verwendung von älteren Microsoft Edge als Standardwebbrowser zurückkehren möchten, lesen Sie die anweisungen unten zum Zurücksetzen [von Standard-Apps.](#default-app-picker)
 
 > [!NOTE]
 > Wenn Sie das neue Microsoft Edge zum ersten Mal auf HoloLens 2 starten, werden Ihre Einstellungen und Daten aus der Vorgänger-Version von Microsoft Edge importiert. Wenn Sie nach dem Starten des neuen Microsoft Edge weiterhin Microsoft Edge der Vor-Vorgänger-Version verwenden, werden diese neuen Daten nicht von Microsoft Edge der Vor-Vorgänger-Version mit dem neuen Microsoft Edge synchronisiert.
@@ -81,7 +82,7 @@ Hier sind einige hilfreiche Ressourcen, um mehr über das Verwalten von Richtlin
 - Vollständige [Microsoft Edge Enterprise-Dokumentation](https://docs.microsoft.com/deployedge/)
 
 > [!IMPORTANT]
-> Aufgrund der Anzahl von Browserrichtlinien, die vom neuen Microsoft Edge unterstützt werden, kann unser Team nicht garantieren, dass jede neue Richtlinie auf HoloLens 2 funktioniert. Wir haben jedoch getestet und bestätigt, dass das neue Microsoft Edge-Äquivalent jeder früher auf HoloLens 2 unterstützten Älteren Microsoft Edge-Richtlinie wie erwartet funktioniert. Informationen zur neuen Microsoft Edge-Entsprechung jeder älteren Microsoft Edge-Browserrichtlinie, die Sie mit HoloLens 2 verwendet haben, finden Sie unter Microsoft [Edge Legacy-zu-Microsoft](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge) Edge-Richtlinienzuordnung.
+> Aufgrund der Anzahl von Browserrichtlinien, die vom neuen Microsoft Edge unterstützt werden, kann unser Team nicht garantieren, dass jede neue Richtlinie auf HoloLens 2 funktioniert. Wir haben jedoch getestet und bestätigt, dass die neue Microsoft Edge-Entsprechung jeder früheren Microsoft Edge-Richtlinie, die zuvor auf HoloLens 2 unterstützt wurde, wie erwartet funktioniert. Informationen zur neuen Microsoft Edge-Entsprechung jeder älteren Microsoft Edge-Browserrichtlinie, die Sie mit HoloLens 2 verwendet haben, finden Sie unter ["Microsoft Edge Legacy-zu-Microsoft](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge) Edge-Richtlinienzuordnung".
 >
 > Es gibt mindestens zwei neue Microsoft Edge-Richtlinien, von der wir wissen, dass *sie nicht* mit HoloLens 2 funktionieren:
 > - EnterpriseModeSiteList
@@ -89,7 +90,7 @@ Hier sind einige hilfreiche Ressourcen, um mehr über das Verwalten von Richtlin
 
 #### Was Sie von dem neuen Microsoft Edge auf HoloLens 2 erwarten können
 
-Da es sich bei dem neuen Microsoft Edge um eine systemeigene Win32-App mit einer neuen UWP-Adapterebene handelt, die die Ausführung auf Nur-UWP-Geräten wie HoloLens 2 ermöglicht, sind einige Features möglicherweise nicht sofort verfügbar. We'll be supporting new scenarios and features over the coming months, so please check this space for up-to-date information.
+Da es sich bei dem neuen Microsoft Edge um eine systemeigene Win32-App mit einer neuen UWP-Adapterebene handelt, die die Ausführung auf Nur-UWP-Geräten wie HoloLens 2 ermöglicht, sind einige Features möglicherweise nicht sofort verfügbar. We'll be supporting new scenarios and features over the coming months, so check this space for up-to-date information.
 
 **Szenarien und Features, die voraussichtlich funktionieren:**
 - Erste Ausführung, Anmelden beim Profil und Synchronisierung
@@ -114,7 +115,7 @@ Da es sich bei dem neuen Microsoft Edge um eine systemeigene Win32-App mit einer
 
 **Die am besten bekannten Browserprobleme:**
 - Durch zurücksetzen des Geräts wird das neue Microsoft Edge entfernt.
-- Die Bildschirmlupe in der holografischen Tastatur zeigt falsche Inhalte an.
+- Die Bildschirmlupevorschau auf der holografischen Tastatur zeigt falsche Inhalte an.
 
 #### Microsoft Edge-Insider-Kanäle
 
@@ -130,24 +131,24 @@ Es gibt mehrere Methoden zum Installieren von Microsoft Edge-Insider-Kanälen au
   1. Starten Sie die heruntergeladene .msix-Datei aus der Edge-Downloadwarteschlange oder aus dem Ordner "Downloads" Ihres Geräts (mithilfe des Datei-Explorers).
   1. [Das App-Installationsprogramm](app-deploy-app-installer.md) wird gestartet.
   1. Wählen Sie die **Schaltfläche "Installieren"** aus.
-  1. Nach der erfolgreichen Installation finden Sie Microsoft Edge Beta, Dev oder Canary als separaten Eintrag in der Liste **"Alle** Apps" im Startmenü.
+  1. Nach der erfolgreichen Installation finden Sie Microsoft Edge Beta, Dev **** oder Canary als separaten Eintrag in der Liste "Alle Apps" im Startmenü.
 
-**Installieren über DEN PC mit dem Windows Device Portal (erfordert, dass [der](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal) Entwicklermodus auf HoloLens 2 aktiviert ist)**
+**Installieren über PC mit dem Windows Device Portal [(entwicklermodus](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal) muss auf HoloLens 2 aktiviert sein)**
   1. Besuchen Sie auf Ihrem PC die [Edge-Insider-Downloadseite.](https://www.microsoftedgeinsider.com/download)
   1. Wählen Sie die Dropdownpfeilschaltfläche neben der Schaltfläche "Herunterladen für Windows 10" für den **Edge-Insider-Kanal** aus, den Sie installieren möchten.
   1. Wählen **Sie HoloLens 2** im Dropdownmenü aus.
   1. Speichern Sie die .msix-Datei im Ordner "Downloads" Ihres PCs (oder in einem anderen Ordner, den Sie leicht finden können).
   1. Verwenden [Sie das Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app) auf Ihrem PC, um die heruntergeladene .msix-Datei auf HoloLens 2 zu installieren.
-  1. Nach der erfolgreichen Installation finden Sie Microsoft Edge Beta, Dev oder Canary als separaten Eintrag in der Liste **"Alle** Apps" im Startmenü.
+  1. Nach der erfolgreichen Installation finden Sie Microsoft Edge Beta, Dev **** oder Canary als separaten Eintrag in der Liste "Alle Apps" im Startmenü.
 
 > [!NOTE]
-> Während dieser Windows-Insider-Vorschau für HoloLens 2 ist die Version von Microsoft Edge auf Ihrem Gerät möglicherweise höher als die, die in einigen (oder allen) Microsoft Edge-Insider-Kanälen verfügbar ist. Dadurch soll sichergestellt werden, dass neue Features und Fixes, die speziell auf den Webbrowser auf HoloLens 2 zielen, so schnell wie möglich an unsere Windows-Insider übermittelt werden. Kurz nach der öffentlichen Version des nächsten Windows-Updates werden die Microsoft Edge-Insider-Kanal-Builds die Version von Microsoft Edge auf Ihrer HoloLens 2 übertreffen und vor ihnen bleiben.
+> Während dieser Windows-Insider-Vorschau für HoloLens 2 ist die Version von Microsoft Edge auf Ihrem Gerät möglicherweise höher als die version, die in einigen (oder allen) Microsoft Edge-Insider-Kanälen verfügbar ist. Dadurch soll sichergestellt werden, dass neue Features und Fixes, die speziell auf den Webbrowser auf HoloLens 2 zielen, so schnell wie möglich an unsere Windows-Insider übermittelt werden. Kurz nach der öffentlichen Version des nächsten Windows-Updates werden die Microsoft Edge-Insider-Kanal-Builds die Version von Microsoft Edge auf Ihrer HoloLens 2 übertreffen und vor ihnen bleiben.
 
 ### WebXR und 360 Viewer
 
 *Hinzugefügt in Windows Insider Build 20289.1000*
 
-Das neue Microsoft Edge bietet Unterstützung für WebXR. Dies ist der neue Standard zum Erstellen immersiver Weberfahrungen (ersetzt WebVR). Viele immersive Weberfahrungen wurden im Hinblick auf VR entworfen (sie ersetzen Ihr Sichtfeld durch eine virtuelle Umgebung), aber diese Erfahrungen werden auch von HoloLens 2 unterstützt. Der WebXR-Standard ermöglicht außerdem erweiterte und mixed Reality-immersive Weberfahrungen, die Ihre physische Umgebung nutzen. Da Entwickler mehr Zeit mit WebXR verbringen, erwarten wir, dass neue erweiterte und mixed Reality-immersive Erfahrungen für HoloLens 2-Kunden verfügbar sind.
+Das neue Microsoft Edge bietet Unterstützung für WebXR. Dies ist der neue Standard zum Erstellen immersiver Weberfahrungen (ersetzt WebVR). Viele immersive Weberfahrungen wurden im Hinblick auf VR entworfen (sie ersetzen Ihr Sichtfeld durch eine virtuelle Umgebung), aber diese Erfahrungen werden auch von HoloLens 2 unterstützt. Der WebXR-Standard ermöglicht außerdem erweiterte und mixed Reality-immersive Weberfahrungen, die Ihre physische Umgebung verwenden. Da Entwickler mehr Zeit mit WebXR verbringen, erwarten wir, dass neue erweiterte und mixed Reality-immersive Erfahrungen für HoloLens 2-Kunden verfügbar sind.
 
 Die Erweiterung 360 Viewer baut auf WebXR auf und wird automatisch zusammen mit dem neuen Microsoft Edge auf HoloLens 2 installiert. Mit dieser Weberweiterung können Sie sich in 360-Grad-Videos eintauchen. YouTube bietet die größte Auswahl von 360 Videos, daher empfehlen wir Ihnen, hier zu beginnen.
 
@@ -186,17 +187,17 @@ Die Erweiterung 360 Viewer baut auf WebXR auf und wird automatisch zusammen mit 
 - 360 Videos von anderen Websites als YouTube funktionieren möglicherweise nicht wie erwartet.
 - Wenn 360 Videos nicht in die immersive Ansicht gelangen (oder die Mixed Reality-Headset-Schaltfläche nicht angezeigt wird), versuchen Sie, die Seite zu aktualisieren.
 - Beschriftungen sind im 360-Viewer auf HoloLens 2 noch nicht sichtbar.
-- Durch das Anhalten eines Videos im 360-Viewer wird das Rendern des Videos beendet (aber durch Auswählen der Wiedergabeschaltfläche wird die Wiedergabe ordnungsgemäß fortgesetzt).
+- Durch anhalten eines Videos im 360-Viewer wird das Rendern des Videos beendet (aber durch Auswählen der Wiedergabeschaltfläche wird die Wiedergabe ordnungsgemäß fortgesetzt).
 - Die Schaltfläche "Nächstes Video" in 360 Viewer funktioniert derzeit nicht.
 - Sie können 2D-Videos in einem immersiven "Theater"-Modus abspielen, die Framerate ist jedoch weniger als 30 fps.
 
 #### Bereitstellen von Feedback zu WebXR und 360 Viewer
 
-Bitte teilen Sie Feedback und Fehler mit unserem Team über das Feature **"Feedback** senden" im neuen Microsoft Edge.
+Bitte teilen Sie Feedback und Fehler mit unserem Team über das Feature **"Feedback senden"** im neuen Microsoft Edge mit.
 
-### App "Neue Einstellungen"
+### Neue Einstellungs-App
 
-In dieser Version wird eine neue Version der App "Einstellungen" eingeführt. Die neue Einstellungs-App umfasst neue Features und erweiterte Einstellungen für HoloLens 2 in den folgenden Bereichen: Sound, Energie &-Ruhezustand, Netzwerk & Internet, Apps, Konten, Erleichterte Bedienung und vieles mehr.
+In dieser Version wird eine neue Version der App "Einstellungen" eingeführt. Die neue Einstellungs-App umfasst neue Features und erweiterte Einstellungen für HoloLens 2 in den folgenden Bereichen: Sound, Power &-Ruhezustand, Netzwerk & Internet, Apps, Konten, Erleichterte Bedienung und vieles mehr.
 
 > [!NOTE]
 > Da sich die neue Einstellungs-App von der älteren Einstellungs-App unterscheidet, werden alle Einstellungsfenster, die Sie zuvor in Ihrer Umgebung platziert haben, nach dem Update entfernt.
@@ -214,10 +215,10 @@ In dieser Version wird eine neue Version der App "Einstellungen" eingeführt. Di
 - System > Akku: Aktivieren Sie den Stromsparmodus manuell, oder legen Sie einen Akkuschwellenwert ein, an dem der Stromsparmodus automatisch aktiviert wird.
 - Geräte > USB: Sie können usb-Verbindungen standardmäßig deaktivieren.
 - Netzwerk & Internet:
-  - USB-C-Ethernet-Adapter werden nun im Netzwerk & angezeigt.
+  - USB-C-Ethernet-Adapter werden jetzt im Netzwerk & angezeigt.
   - Usb-C-Ethernet-Adaptereinstellungen sind jetzt verfügbar, einschließlich der IP-Adresse.
   - Sie können jetzt den Flugzeugmodus auf HoloLens 2 aktivieren.
-- Apps: Sie können die Für Datei- und Linktypen verwendeten Standard-Apps zurücksetzen. Weitere [Informationen finden Sie unter "Standardmäßige](#default-app-picker) App-Auswahl".
+- Apps: Sie können die Für Datei- und Linktypen verwendeten Standard-Apps zurücksetzen. Weitere Informationen finden Sie unter ["Standardmäßige App-Auswahl".](#default-app-picker)
 - Konten > andere Benutzer: Gerätebesitzer können Benutzer hinzufügen, Standardbenutzer auf Gerätebesitzer aktualisieren, Gerätebesitzer auf Standardbenutzer herabstufen und Benutzer entfernen.
 - Erleichterte Bedienung: Ändern der Textgröße und einiger visueller Effekte.
 
@@ -226,11 +227,11 @@ In dieser Version wird eine neue Version der App "Einstellungen" eingeführt. Di
 - Beim Besuch der Seite "Benachrichtigungen" kann die Einstellungs-App abstürzen (wird untersucht).
 - Die Ethernetseite wird derzeit nicht angezeigt (wird in Kürze behoben).
 - Sie können Ihr Gerät nicht mehr mit der App "Einstellungen" umbenennen (IT-Administratoren können Bereitstellungspakete oder MDM verwenden, um Geräte umzubenennen).
-- Der Akkuverbrauch für das neue Microsoft Edge ist aufgrund seiner Art als win32-Desktopanwendung, die von einer UWP-Adapterschicht unterstützt wird, möglicherweise nicht korrekt (bald keine Korrektur mehr zu erwarten).
+- Der Akkuverbrauch für das neue Microsoft Edge ist aufgrund seiner Art als win32-Desktopanwendung, die von einer UWP-Adapterschicht unterstützt wird, möglicherweise nicht genau (bald wird keine Korrektur erwartet).
 
 ### Standardmäßige App-Auswahl
 
-Wenn Sie einen Hyperlink aktivieren oder einen Dateityp mit mehr als einer installierten App öffnen, die ihn unterstützt, wird ein neues Fenster geöffnet, in dem Sie aufgefordert werden, auszuwählen, welche installierte App die Datei oder den Linktyp verarbeiten soll. In diesem Fenster können Sie auch auswählen, dass die ausgewählte App die Datei oder den Linktyp "Einmal" oder "Immer" behandeln soll.
+Wenn Sie einen Hyperlink aktivieren oder einen Dateityp mit mehr als einer installierten App öffnen, die dies unterstützt, wird ein neues Fenster geöffnet, in dem Sie aufgefordert werden, auszuwählen, welche installierte App den Datei- oder Linktyp verarbeiten soll. In diesem Fenster können Sie auch auswählen, dass die ausgewählte App die Datei oder den Linktyp "Einmal" oder "Immer" behandeln soll.
 
 ![Fenster "App-Auswahl"](images/default-app-picker.png)
 
@@ -242,14 +243,14 @@ Die Office Web App wurde der Liste "Alle Apps" im Startmenü hinzugefügt. Diese
 
 ### Wischen zum Eingeben
 
-Einige Kunden finden es schneller, auf virtuellen Tastaturen "einzugeben", indem sie die Form des Worts swipsen, das sie eingeben möchten, und wir sehen uns diese Funktion für die holografische Tastatur in der Vorschau an. Sie können ein Wort nach dem anderen wischen, indem Sie die Fingerspitze durch die Fläche der holografischen Tastatur übergeben, die Form des Worts wischen und dann die Fingerspitze aus der Fläche der Tastatur ziehen. Sie können Nachworte wischen, ohne die LEERTASTE drücken zu müssen, indem Sie den Finger von der Tastatur zwischen Wörtern entfernen. Sie wissen, dass das Feature funktioniert, wenn eine Wischspur nach der Bewegung des Fingers auf der Tastatur angezeigt wird.
+Einige Kunden finden es schneller, auf virtuellen Tastaturen "einzugeben", indem sie die Form des Worts swipsen, das sie eingeben möchten, und wir sehen uns diese Funktion für die holografische Tastatur in der Vorschau an. Sie können ein Wort nach dem anderen wischen, indem Sie die Fingerspitze durch die Fläche der holografischen Tastatur übergeben, die Form des Worts wischen und dann die Fingerspitze aus der Fläche der Tastatur ziehen. Sie können nach folgenden Wörtern wischen, ohne die LEERTASTE drücken zu müssen, indem Sie den Finger von der Tastatur zwischen Wörtern entfernen. Sie wissen, dass das Feature funktioniert, wenn eine Wischspur nach der Bewegung des Fingers auf der Tastatur angezeigt wird.
 
-Bitte beachten Sie, dass diese Funktion aufgrund der Art einer holografischen Tastatur schwierig zu verwenden und zu mastern ist, bei der Sie (im Gegensatz zu einem Mobiltelefondisplay) keinen Widerstand gegen Ihren Finger verkraften. We are evaluating this feature for public release, so your feedback is important; Ob Sie das Feature hilfreich finden oder Feedback abgeben möchten, teilen Sie uns dies bitte über den [Feedback-Hub mit.](hololens-feedback.md)
+Bitte beachten Sie, dass es schwierig sein kann, diese Funktion zu verwenden und zu mastern, da sie eine holografische Tastatur ist, auf der Sie (im Gegensatz zu einem Mobiltelefondisplay) keinen Widerstand gegen Ihren Finger verkraften. We are evaluating this feature for public release, so your feedback is important; Ob Sie das Feature hilfreich finden oder Feedback abgeben möchten, teilen Sie uns dies bitte über den [Feedback-Hub mit.](hololens-feedback.md)
 
 ### UNTERSTÜTZUNG für externes USB-C-Mikrofon
 
 > [!IMPORTANT]
-> Wenn Sie ein **USB-Mikrofon anschließen,** wird es nicht automatisch als Eingabegerät festgelegt. Beim Anschließen einer Gruppe von USB-C-Kopfhörern werden Benutzer feststellen, dass die Audiodaten des Kopfhörers automatisch an die Kopfhörer umgeleitet werden. Das #A0 priorisiert jedoch das interne Mikrofonarray über jedem anderen Eingabegerät. **Führen Sie die folgenden Schritte aus, um ein USB-C-Mikrofon zu verwenden.**
+> Wenn Sie ein **USB-Mikrofon anschließen,** wird es nicht automatisch als Eingabegerät festgelegt. Beim Anschließen einer Gruppe von USB-C-Kopfhörern beobachten Benutzer, dass die Audiodaten des Kopfhörers automatisch an die Kopfhörer umgeleitet werden. Das #A0 priorisiert jedoch das interne Mikrofonarray über jedem anderen Eingabegerät. **Führen Sie die folgenden Schritte aus, um ein USB-C-Mikrofon zu verwenden.**
 
 Benutzer können externe USB-C-angeschlossene Mikrofone über den Bereich **"Soundeinstellungen"** auswählen. USB-C-Mikrofone können für Anrufe, Aufzeichnungen usw. verwendet werden.
 
@@ -284,7 +285,7 @@ Legen Sie in **den**Einstellungen für Systemsound explizit die integrierten Lau
 
 ### Verwenden der neuen Einstellungen und Edge-Apps im Kioskmodus
 
-Wenn Sie Apps in [Kiosks](hololens-kiosk.md)hinzufügen, fügt ein IT-Administrator die App häufig zum Kiosk hinzu, verwendet aber die App-Benutzermodell-ID (App User Model ID, AUMID). Da sowohl die Einstellungs-App als auch die Microsoft Edge-App als neue Apps gelten und sich von den älteren Apps unterscheiden, die AUMIDs für diese Apps verwenden, müssen sie aktualisiert werden, um die neue AUMID zu verwenden.
+Wenn Sie Apps in [Kiosks](hololens-kiosk.md)hinzufügen, fügt ein IT-Administrator die App häufig zum Kiosk hinzu, verwendet aber die App-Benutzermodell-ID (App User Model ID, AUMID). Da sowohl die Einstellungs- als auch die Microsoft Edge-App als neue Apps gelten und sich von den älteren Apps unterscheiden, müssen Kioske, die AUMIDs für diese Apps verwenden, aktualisiert werden, um die neue AUMID zu verwenden.
 
 Wenn Sie einen Kiosk so ändern, dass er die neuen Apps enthält, empfehlen wir, die neue AUMID zu hinzufügen und die alte zu verlassen. Dies wird einen einfachen Übergang schaffen, wenn Benutzer das Betriebssystem aktualisieren und müssen keine neuen Richtlinien erhalten, um den Kiosk wie beabsichtigt weiter zu verwenden.
 
@@ -294,6 +295,54 @@ Wenn Sie einen Kiosk so ändern, dass er die neuen Apps enthält, empfehlen wir,
 | Neue Einstellungs-App       | BAEAEF15-9BAB-47FC-800B-ACECAD2AE94B_cw5n1h2txyewy! App |
 | Alte Microsoft Edge-App | Microsoft.MicrosoftEdge_8wekyb3d8bbwe! MicrosoftEdge    |
 | Neue Microsoft Edge-App | Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe! MSEDGE    |
+
+### Neue SettingsURIs für Sichtbarkeit von Seiteneinstellungen
+
+In [Windows Holographic, Version 20H2,](hololens-release-notes.md#windows-holographic-version-20h2) haben wir die Richtlinie ["Einstellungen/PageVisibilityList"](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) hinzugefügt, um die In der App "Einstellungen" angezeigten Seiten einzuschränken. Die PageVisibilityList ist eine Richtlinie, die es IT-Administratoren ermöglicht, entweder zu verhindern, dass bestimmte Seiten in der Systemeinstellungs-App sichtbar oder zugänglich sind oder Sie können das für alle Seiten tun, außer den angegebenen.
+
+Wenn Sie die Sichtbarkeit der Seiteneinstellungen [besuchen,](settings-uri-list.md)finden Sie Anweisungen zur Verwendung dieses CSP und die Liste der URIs, die in früheren Versionen verfügbar waren.
+
+In Windows-Insider-Builds erweitern wir die Liste der verfügbaren Einstellungs-URIs, die von IT-Administratoren verwaltet werden können. Einige dieser URIs sind für neu verfügbare Bereiche innerhalb der neuen Einstellungs-App. Wenn Sie die Einstellungs-/PageVisibilityList-Richtlinie verwenden, überprüfen Sie die folgende Liste, und passen Sie Ihre zulässigen oder blockierten Seiten nach Bedarf an.
+
+> [!NOTE]
+> **Veraltet: ms-settings:network-proxy**
+>
+> Eine Einstellungsseite ist in diesen neueren Builds veraltet. Die alte **Seite & Internetproxy**ist nicht mehr  >  **** als globale Einstellung verfügbar. Die neuen Proxyeinstellungen pro Verbindung finden Sie unter **"Netzwerk-&**  >  **Internet-WLAN-Eigenschaften"** oder "Network  >  **** **& Internet**  >  **Ethernet"-Eigenschaften.**  >  ****
+
+<br>
+
+| Einstellungsseite                                        | URI                                              |
+|------------------------------------------------------|--------------------------------------------------|
+| Apps > Apps & Features                               | `ms-settings:appsfeatures`                         |
+| Features > Apps & Apps > erweiterte Optionen          | `ms-settings:appsfeatures-app`                     |
+| Apps > Offlinekarten                                  | `ms-settings:maps`                                 |
+| Apps > Offlinekarten > Karten herunterladen                  | `ms-settings:maps-downloadmaps`                    |
+| Geräte > Maus                                      | `ms-settings:mouse`                                |
+| Geräte > USB                                        | `ms-settings:usb`                                  |
+| Netzwerk & Internet > Flugzeugmodus                   | `ms-settings:network-airplanemode`                 |
+| Datenschutzrichtlinien > Allgemein                                    | `ms-settings:privacy-general`                      |
+| Datenschutz > Freihandeingabe & Personalisierung             | `ms-settings:privacy-speechtyping`                 |
+| Datenschutz > Bewegung                                     | `ms-settings:privacy-motion`                       |
+| Rahmen des > A0                         | `ms-settings:privacy-graphicsCaptureWithoutBorder` |
+| Datenschutz-> Screenshots und Apps                       | `ms-settings:privacy-graphicsCaptureProgrammatic`  |
+| System > Akku                                     | `ms-settings:batterysaver`                         |
+| System > Akku                                     | `ms-settings:batterysaver-settings`                |
+| System > Sound                                       | `ms-settings:sound`                                |
+| System > Sound > -App- und Geräteeinstellungen | `ms-settings:apps-volume`                          |
+| System > Sound > Verwalten von Soundgeräten              | `ms-settings:sound-devices`                        |
+| System > Storage > Configure Storage Sense         | `ms-settings:storagepolicies`                      |
+| Uhrzeit & Sprache > Datum & Uhrzeit                        | `ms-settings:dateandtime`                          |
+| Time & Language > Keyboard                           | `ms-settings:keyboard`                             |
+| Zeit & Sprache > Sprache                           | `ms-settings:language`                             |
+| Zeit & Sprache > Sprache                           | `ms-settings:regionlanguage-languageoptions`       |
+| Update & Security > Reset & Recovery               | `ms-settings:reset`                                |
+
+#### Aktualisierte URIs
+
+Die folgenden beiden URIs haben zuvor einen Benutzer nicht direkt zu den angegebenen Seiten weitergeleitet, sondern nur die Hauptaktualisierungsseite blockiert. Die folgenden Elemente wurden aktualisiert, um direkt zu ihren Seiten zu leitet:
+
+- `ms-settings:windowsupdate-options`
+- `ms-settings:windowsupdate-restartoptions`
 
 ### Verhaltensänderungen im Kioskmodus für die Behandlung von Fehlern
 
@@ -310,13 +359,13 @@ In der Einstellungs-App kann ein Benutzer nun das Verhalten der [Fallbackdiagnos
 
 ### Teilen von Dingen mit Geräten in der Nähe
 
-Teilen Sie Dinge mit Geräten in der Nähe von Windows 10, einschließlich PCs und anderen HoloLens 2-Geräten, auf denen HoloLens Insider Builds 20279.1006 und höher ausgeführt werden. Sie können es **** in den gemeinsamen Erfahrungen des Einstellungssystems ausprobieren, um Dateien oder URLs von einer  ->  ****  ->  **** HoloLens auf einem PC zu teilen. Weitere Informationen zum Freigeben von Dingen mit Geräten in der Nähe [in Windows 10 finden](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9)Sie unter .
+Teilen Sie Dinge mit Geräten in der Nähe von Windows 10, einschließlich PCs und anderen HoloLens 2-Geräten, auf denen HoloLens Insider Builds 20279.1006 und höher ausgeführt werden. Sie können es **** in den gemeinsamen Erfahrungen des Einstellungssystems ausprobieren, um Dateien oder URLs von einer  ->  ****  ->  **** HoloLens auf einem PC zu teilen. Weitere Informationen zum Freigeben von Dingen mit Geräten in der Nähe finden Sie [unter Windows 10.](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9)
 
 Dieses Feature kann über [Connectivity/AllowConnectedDevices verwaltet werden.](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowconnecteddevices)
 
 ### Problembehandlung für neues Betriebssystemupdate
 
-Zusätzlich zu den vorherigen Problembehandlungen in der Einstellungs-App wurde eine neue Problembehandlung mit der neuen Einstellungs-App für Betriebssystemupdates hinzugefügt. Navigieren **** Sie zu  ->  **"Sicherheitsprobleme beim Aktualisieren &amp; **  ->  **von Einstellungen" bei**Windows  ->  **Update,** und wählen Sie **"Start" aus.** Auf diese Weise können Sie Ablaufverfolgungen sammeln und gleichzeitig Ihr Problem mit Betriebssystemupdates zur besseren Problembehandlung mit Ihrer IT oder Ihrem Support beheben.
+Zusätzlich zu den vorherigen Problembehandlungen in der Einstellungs-App wurde eine neue Problembehandlung mit der neuen Einstellungs-App für Betriebssystemupdates hinzugefügt. Navigieren **** Sie zu  ->  **"Sicherheitsprobleme beim Aktualisieren &amp; **  ->  **von Einstellungen" bei**Windows  ->  **Update,** und wählen Sie **"Start" aus.** Auf diese Weise können Sie Ablaufverfolgungen sammeln und gleichzeitig Ihr Problem mit Betriebssystemupdates zur besseren Problembehandlung mit Ihrer IT oder Ihrem Support nachführen.
 
 ### Verbesserungen und Fehlerbehebungen im Update:
 
@@ -330,7 +379,7 @@ Zusätzlich zu den vorherigen Problembehandlungen in der Einstellungs-App wurde 
 ## Start receiving Insider builds
 
 > [!NOTE]
-> Wenn Sie vor kurzem noch nicht aktualisiert haben, starten Sie Ihr Gerät neu, um den Status zu aktualisieren und den neuesten Build zu erhalten.
+> Wenn Sie kürzlich noch nicht aktualisiert haben, starten Sie Ihr Gerät neu, um den Status zu aktualisieren und den neuesten Build zu erhalten.
 > - Der Sprachbefehl "Gerät neu starten" funktioniert gut. 
 > - Sie können auch die Schaltfläche "Neustart" unter "Einstellungen/Windows-Insider-Programm" auswählen.
 >
@@ -338,7 +387,7 @@ Zusätzlich zu den vorherigen Problembehandlungen in der Einstellungs-App wurde 
 
 On a HoloLens 2 device go to **Settings**  >  **Update & Security**Windows Insider  >  **Program** and select **Get started**. Verknüpfen Sie das Konto, mit dem Sie sich als Windows-Insider registriert haben.
 
-Windows-Insider werden nun zu Kanälen um- Der **"Fast"-Ring** wird **** zum **Dev Channel,** der langsame Ring wird zum **Betakanal,** und der **Release-Preview-Ring** wird zum **Release Preview Channel.** So sieht diese Zuordnung aus:
+Windows-Insider werden nun zu Kanälen um- Der **Schnelle** Ring wird der **** **Dev Channel,** der langsame Ring wird zum **Betakanal,** und der **Release** Preview Ring wird zum Release **Preview Channel.** So sieht diese Zuordnung aus:
 
 ![Erläuterung zu Windows-Insider-Kanälen](images/WindowsInsiderChannels.png)
 
@@ -360,7 +409,7 @@ Wenn beim Aktualisieren im Dev- oder 0x80070490 Betakanal ein Updatefehler auftr
 2. Einstellungen, Update & Security, Windows Update, **Check for updates**.
 
 ## FFU-Download- und Flash-Wegbeschreibungen
-Um mit einer ffu zu testen, die mit einem Test-Flight signiert ist, müssen Sie zunächst ihr Gerät entsperren, bevor Sie die ffu mit Test-Flight-Signierten flashen.
+Zum Testen mit einer ffu mit Test-Flight-Vorlauf müssen Sie ihr Gerät zunächst entsperren, bevor Sie die ffu mit Test-Flight-Signierten flashen.
 1. Auf DEM PC:
 
     1. Laden Sie ffu auf Ihren PC von [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) herunter.
