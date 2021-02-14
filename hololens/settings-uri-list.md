@@ -13,118 +13,124 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e4d4936595144f82a468883f26dae6e19eef4f84
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: f004f39f4b69748e8c36ad93111f4423d14c40f3
+ms.sourcegitcommit: 23ee06b659d7a51f3000d386c8f67cbf212d5aa4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11284116"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "11327389"
 ---
 # Sichtbarkeit von Seiteneinstellungen
 
-Zu den verwaltbaren Features für HoloLens-Geräte gehört die [Einstellungen/PageVisibilityList-Richtlinie](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist), mit der die in der App „Einstellungen“ angezeigten Seiten eingeschränkt werden können. Die PageVisibilityList ist eine Richtlinie, die es IT-Administratoren ermöglicht, entweder zu verhindern, dass bestimmte Seiten in der Systemeinstellungs-App sichtbar oder zugänglich sind oder Sie können das für alle Seiten tun, außer den angegebenen. 
+Zu den verwaltbaren Features für HoloLens-Geräte gehört die [Einstellungen/PageVisibilityList-Richtlinie](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist), mit der die in der App „Einstellungen“ angezeigten Seiten eingeschränkt werden können. Die PageVisibilityList ist eine Richtlinie, die es IT-Administratoren ermöglicht, entweder zu verhindern, dass bestimmte Seiten in der Systemeinstellungs-App sichtbar oder zugänglich sind oder Sie können das für alle Seiten tun, außer den angegebenen.
 
 > [!NOTE]
 > Diese Funktion ist nur in [Windows Holographic, Version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) für HoloLens 2-Geräte verfügbar. Stellen Sie sicher, dass die Geräte aktualisiert sind, wenn Sie die Funktion verwenden möchten.
 
+> [!NOTE]
+> Mehr als 20 neue SettingsURIs werden in Kürze hinzugefügt. Wenn Sie diese Einstellung in der Vorschauversion auf einem [HoloLens Insider-Build](hololens-insider.md) ausprobieren möchten, sehen Sie sich bitte [die Windows Insider-Seite „Neue SettingsURIs für die Sichtbarkeit von Seiteneinstellungen](hololens-insider.md#new-settingsuris-for-page-settings-visibility) an.
+
 Das folgende Beispiel zeigt eine Richtlinie, die nur Zugriff auf die Seiten „Über“ und „Bluetooth“ ermöglichen würde, die jeweils über URI „ms-settings:network-wifi“ und „ms-settings:bluetooth“ verfügen:
-- showonly:network-wifi;network-proxy;bluetooth
+- `showonly:network-wifi;network-proxy;bluetooth`
 
-So legen Sie dies über ein Provsioning-Paket fest: 
-1. Während Sie Ihr Paket im Windows Configuration Designer erstellen, navigieren Sie zu **Policies > Settings > PageVisibilityList**.
-1. Geben Sie den String **showonly:network-wifi;network-proxy;bluetooth**ein.
-1. Exportieren Sie Ihr Provsioning-Paket.
-1. Wenden des Paket auf Ihrem Gerät an. Ausführliche Informationen über die Erstellung und Anwendung eines Provsioning-Pakets finden Sie unter [this page](hololens-provisioning.md). 
+So legen Sie dies über ein Bereitstellungspaket fest:
 
-Dies kann über Intune mit OMA-URI erfolgen.
-1. Verwenden Sie eine **benutzerdefinierte Richtlinie**.
-1. Verwenden Sie beim Einstellen des OMA-URI den String: **./Device/Vendor/MSFT/Policy/Config/Settings/PageVisibilityList**
+1. Während Sie Ihr Paket im Windows Configuration Designer erstellen, navigieren Sie zu **Richtlinien > Einstellungen > PageVisibilityList**.
+1. Geben Sie die folgende Zeichenfolge ein: **`showonly:network-wifi;network-proxy;bluetooth`**
+1. Exportieren Sie Ihr Bereitstellungspaket.
+1. Wenden Sie das Paket auf Ihr Gerät an.
+Ausführliche Informationen zum Erstellen und Anwenden eines Bereitstellungspakets finden Sie [auf dieser Seite.](hololens-provisioning.md)
+
+Dies kann über Intune mithilfe von OMA-URI durchgeführt werden:
+
+1. Erstellen Sie eine **benutzerdefinierte Richtlinie**.
+1. Verwenden Sie beim Festlegen des OMA-URI die Zeichenfolge: **`./Device/Vendor/MSFT/Policy/Config/Settings/PageVisibilityList`**
 1. Wählen Sie bei der Auswahl der Daten: **String**
-1. Wenn Sie den Wert eingeben, verwenden Sie:**showonly:network-wifi;network-proxy;bluetooth**
-1. Stellen Sie sicher, dass die benutzerdefinierte Gerätekonfiguration der Gruppe zugeordnet wird, zu der das Gerät gehören soll.
+1. Verwenden Sie beim Eingeben des Werts Folgendes: **`showonly:network-wifi;network-proxy;bluetooth`**
+1. Stellen Sie sicher, dass die benutzerdefinierte Gerätekonfiguration einer Gruppe zugeordnet wird, zu der das Gerät gehören soll.
 
 Weitere Informationen zu Intune-Gruppen und -Gerätekonfigurationen finden Sie unter [HoloLens MDM-Konfiguration.](hololens-mdm-configure.md)
 
-Unabhängig von der gewählten Methode, sollte Ihr Gerät nun die Änderungen erhalten, und die Benutzer erhalten die folgende Einstellungs-App. 
+Unabhängig von der gewählten Methode sollte Ihr Gerät jetzt die Änderungen erhalten, und den Benutzern wird die folgende Einstellungs-App angezeigt.
 
 ![Screenshot der Nutzungszeit, die in der Einstellungs-App geändert werden](images/hololens-page-visibility-list.jpg)
 
-Um die Einstellungsseiten der App so zu konfigurieren, dass Sie Ihre eigene Auswahl an Seiten ein- oder ausblenden können, werfen Sie bitte einen Blick auf die auf HoloLens verfügbaren Einstellungs-URIs. 
+Um die Einstellungs-App-Seiten so zu konfigurieren, dass Ihre eigene Auswahl von Seiten ein- oder ausgeblendet wird, sehen Sie sich die Einstellungs-URIs an, die auf HoloLens verfügbar sind.
 
 ## Einstellungs-URIs
 
-HoloLens-Geräte und Windows 10-Geräte weisen in der App „Einstellungen“ eine unterschiedliche Seitenauswahl auf. Auf dieser Seite finden Sie nur die Einstellungen, die auf HoloLens vorhanden sind. 
+HoloLens-Geräte und Windows 10-Geräte weisen in der App „Einstellungen“ eine unterschiedliche Seitenauswahl auf. Auf dieser Seite finden Sie nur die Einstellungen, die auf HoloLens vorhanden sind.
 
 ### Konten
 | Einstellungsseite           | URI                                            |
 |-------------------------|------------------------------------------------|
-| Anmeldeoptionen         | ms-settings:signinoptions                      |
-| Iris-Registrierung       | ms-settings:signinoptions-launchirisenrollment |
-| Geschäfts- oder Schulkonto öffnen | ms-settings:workplace                          |
+| Anmeldeoptionen         | ` ms-settings:signinoptions `                   |
+| Iris-Registrierung       | `ms-settings:signinoptions-launchirisenrollment` |
+| Geschäfts- oder Schulkonto öffnen | `ms-settings:workplace`                         |
 
 ### Geräte
 | Einstellungsseite | URI                          |
 |---------------|------------------------------|
-| Bluetooth     | ms-settings:bluetooth <br> ms-settings:connecteddevices |
+| Bluetooth     | `ms-settings:bluetooth` <br> `ms-settings:connecteddevices` |
 
-### Vertraulichkeit
+### Datenschutz
 | Einstellungsseite            | URI                                             |
 |--------------------------|-------------------------------------------------|
-| Kontoinformationen             | ms-settings:privacy-accountinfo                 |
-| App-Diagnose        | ms-settings:privacy-appdiagnostics              |
-| Hintergrund-Apps        | ms-settings:privacy-backgroundapps              |
-| Benutzerbewegungen           | ms-settings:privacy-backgroundspatialperception |
-| Dateisystem              | ms-settings:privacy-broadfilesystemaccess       |
-| Calendar                 | ms-settings:privacy-calendar                    |
-| Anrufliste             | ms-settings:privacy-callhistory                 |
-| Kontakte                 | ms-settings:privacy-contacts                    |
-| Weitere Geräte            | ms-settings:privacy-customdevices               |
-| Dokumente                | ms-settings:privacy-documents                   |
-| E-Mail                    | ms-settings:privacy-email                       |
-| Diagnose und Feedback | ms-settings:privacy-feedback                    |
-| Pfad                 | ms-settings:privacy-location                    |
-| Microsoft-Nachrichten                | ms-settings:privacy-messaging                   |
-| Mikrofon               | ms-settings:privacy-microphone                  |
-| Benachrichtigungen            | ms-settings:privacy-notifications               |
-| Bilder                 | ms-settings:privacy-pictures                    |
-| Funkempfang                   | ms-settings:privacy-radios                      |
-| Spracherkennung                   | ms-settings:privacy-speech                      |
-| Aufgaben                    | ms-settings:privacy-tasks                       |
-| Videos                   | ms-settings:privacy-videos                      |
-| Stimmaktivierung       | ms-settings:privacy-voiceactivation             |
-| Kamera                   | ms-settings:privacy-webcam                      |
+| Kontoinformationen             | `ms-settings:privacy-accountinfo`              |
+| App-Diagnose        | `ms-settings:privacy-appdiagnostics`              |
+| Hintergrund-Apps        | `ms-settings:privacy-backgroundapps`              |
+| Benutzerbewegungen           | `ms-settings:privacy-backgroundspatialperception` |
+| Dateisystem              | `ms-settings:privacy-broadfilesystemaccess`       |
+| Kalender                 | `ms-settings:privacy-calendar`                    |
+| Anrufliste             | `ms-settings:privacy-callhistory`                 |
+| Kontakte                 | `ms-settings:privacy-contacts`                    |
+| Weitere Geräte            | `ms-settings:privacy-customdevices`               |
+| Dokumente                | `ms-settings:privacy-documents`                   |
+| E-Mail                    | `ms-settings:privacy-email`                       |
+| Diagnose und Feedback | `ms-settings:privacy-feedback`                    |
+| Ort                 | `ms-settings:privacy-location`                    |
+| Messaging                | `ms-settings:privacy-messaging`                   |
+| Mikrofon               | `ms-settings:privacy-microphone`                  |
+| Benachrichtigungen            | `ms-settings:privacy-notifications`               |
+| Bilder                 | `ms-settings:privacy-pictures`                    |
+| Funkempfang                   | `ms-settings:privacy-radios`                      |
+| Spracherkennung                   | `ms-settings:privacy-speech`                      |
+| Aufgaben                    | `ms-settings:privacy-tasks`                       |
+| Videos                   | `ms-settings:privacy-videos`                      |
+| Stimmaktivierung       | `ms-settings:privacy-voiceactivation`             |
+| Kamera                   | `ms-settings:privacy-webcam`                      |
 
 ### Netzwerk und Internet
 | Einstellungsseite | URI                              |
 |---------------|----------------------------------|
-| WLAN  | ms-settings:network-wifi<br>ms-settings:network-wifisettings<br>ms-settings:network-status<br>ms-settings:wifi-provisioning    |
-| VPN   | ms-settings:network-vpn          |
-| Proxy | ms-settings:network-proxy        |
+| WLAN  | `ms-settings:network-wifi`<br>`ms-settings:network-wifisettings`<br>`ms-settings:network-status`<br>`ms-settings:wifi-provisioning`    |
+| VPN   | `ms-settings:network-vpn`          |
+| Proxy | `ms-settings:network-proxy`        |
 
 ### System
 | Einstellungsseite      | URI                                |
 |--------------------|------------------------------------|
-| Gemeinsame Erfahrung | ms-settings:crossdevice            |
-| Farben             | ms-settings:colors<br>ms-settings:personalization-colors |
-| Benachrichtigungen & Infos  | ms-settings:notifications          |
-| Speicher            | ms-settings:storagesense           |
+| Gemeinsame Nutzung | `ms-settings:crossdevice`            |
+| Farben             | `ms-settings:colors`<br>`ms-settings:personalization-colors` |
+| Benachrichtigungen & Infos  | `ms-settings:notifications`          |
+| Speicher            | `ms-settings:storagesense`           |
 
 ### Zeit & Sprache
 | Einstellungsseite | URI                                           |
 |---------------|-----------------------------------------------|
-| Region        | ms-settings:regionformatting                  |
-| Sprache      | ms-settings:regionlanguage<br>ms-settings:regionlanguage-adddisplaylanguage<br>ms-settings:regionlanguage-setdisplaylanguage |
+| Region        | `ms-settings:regionformatting`                  |
+| Sprache      | `ms-settings:regionlanguage`<br>`ms-settings:regionlanguage-adddisplaylanguage`<br>`ms-settings:regionlanguage-setdisplaylanguage` |
 
 ### Update und Sicherheit
 | Einstellungsseite                         | URI                                       |
 |---------------------------------------|-------------------------------------------|
-| Windows-Insider-Programm               | ms-settings:windowsinsider <br>ms-settings:windowsinsider-optin          |
-| Windows Update                        | ms-settings:windowsupdate<br> ms-settings:windowsupdate-activehours  <br> ms-settings:windowsupdate-history <br> ms-settings:windowsupdate-optionalupdates <br><sup>1</sup>ms-settings:windowsupdate-options<br><sup>1</sup>ms-settings:windowsupdate-restartoptions |
-| Windows Update – Suche nach Updates | ms-settings:windowsupdate-action          |
-| Erweiterte Optionen                    | ms-settings:windowsupdate-options         |
+| Windows-Insider-Programm               | `ms-settings:windowsinsider` <br>`ms-settings:windowsinsider-optin`          |
+| Windows Update                        | `ms-settings:windowsupdate`<br> `ms-settings:windowsupdate-activehours`  <br> `ms-settings:windowsupdate-history` <br> `ms-settings:windowsupdate-optionalupdates` <br><sup>1</sup>`ms-settings:windowsupdate-options`<br><sup>1</sup>`ms-settings:windowsupdate-restartoptions` |
+| Windows Update – Suche nach Updates | `ms-settings:windowsupdate-action`          |
+| Erweiterte Optionen                    | `ms-settings:windowsupdate-options`         |
 
->  <sup>1 </sup> Die folgenden beiden URIs führen Sie nicht zu den Seiten **Erweiterte Optionen** oder **Optionen**; sie blockieren oder zeigen nur die Windows Update-Hauptseite an. 
+>  <sup>1 </sup> Die folgenden beiden URIs führen Sie nicht zu den Seiten **Erweiterte Optionen** oder **Optionen**; sie blockieren oder zeigen nur die Windows Update-Hauptseite an.
 > - ms-settings:windowsupdate-options
 > - ms-settings:windowsupdate-restartoptions 
 
-Eine vollständige Liste der URIs für Windows 10-Einstellungen finden Sie in der Dokumentation [Starteinstellungen](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference). 
+Eine vollständige Liste der URIs für Windows 10-Einstellungen finden Sie in der Dokumentation [Starteinstellungen](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference).

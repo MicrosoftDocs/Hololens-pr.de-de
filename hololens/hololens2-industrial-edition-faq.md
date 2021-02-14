@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ece60949c998f0388bbd6bbcb235ae9f02340247
-ms.sourcegitcommit: 9a5e101fad8627042b552872d5de7320c09552ac
+ms.openlocfilehash: 11ce1af46189605cbac898f69647bdca28c573dc
+ms.sourcegitcommit: 0d16c7dc4d18d550023da9f6b3cc942eb915a2c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "11311747"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "11328099"
 ---
 # HoloLens 2 – FAQ zur Industrial Edition
 
@@ -44,6 +44,10 @@ Weitere Informationen finden Sie unter [ISO-Standard 14644-1](https://www.iso.or
 Die HoloLens 2 Industrial Edition ist für die Verwendung in UL-Klasse I, Abteilung 2-Gruppen A, B, C und D HAZLOC-Umgebungen zertifiziert, in denen brennbare Gase, Dämpfe oder Flüssigkeiten vorhanden sein könnten.
 
 Weitere Informationen finden Sie unter [UL-Zertifizierungen](https://www.ul.com/services/ul-and-c-ul-hazardous-areas-certification-north-america?csrf-token=CIwNZNlR4XbisJF39I8yWnWX9wX4WFoz&amp;Search=UL+Class+I%2C+Dev+2+&amp;search-submit=Search).
+
+### Verfügt die HoloLens 2 Industrial Edition über eine ATEX-Zertifizierung?
+
+Nein. Die HoloLens 2 Industrial Edition verfügt nicht über eine ATEX-Zertifizierung. Die HoloLens 2 Industrial Edition besitzt eine Zertifizierung nach US/CAN Class 1, Division 2-Groups A, B, C und D.
 
 ### Kann das Gerät in Halbleiter- und Pharmaumgebungen eingesetzt werden?
 

@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8e0b5732c6dd2eba0a318a2b72694aacd404c68f
-ms.sourcegitcommit: a5b6e9fdc0fa61a93cb23a89348f5b49316e2748
+ms.openlocfilehash: 65d3ec2a8ecc7fc456f8e8d9d6820a5624da9e99
+ms.sourcegitcommit: 0d16c7dc4d18d550023da9f6b3cc942eb915a2c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "11306923"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "11328109"
 ---
 # HoloLens 2-Hardware
 
@@ -29,8 +29,8 @@ Microsoft HoloLens 2 ist ein ungebundener holographischer Computer.  Er verfeine
 
 - **Visier**. Enthält die HoloLens-Sensoren und -Anzeigen. Sie können das Visier während des Tragens der HoloLens nach oben drehen.
 - **Stirnband**. Zum Aufsetzen der HoloLens verwenden Sie das Einstellrad, um das Stirnband zu erweitern. Ziehen Sie das Einstellrad bei aufgesetzter HoloLens nach rechts fest, bis das Stirnband angenehm sitzt.
-- **Tasten für Helligkeit**. Beim Tragen der HoloLens befinden sich die Helligkeitstasten auf der linken Seite des Visiers.
-- **Tasten für Lautstärke**. Beim Tragen der HoloLens befinden sich die Lautstärketasten auf der rechten Seite des Visiers.
+- **Tasten für Helligkeit**. Beim Tragen der HoloLens befinden sich die Helligkeitstasten auf der linken Seite des Visiers in der Nähe Ihrer Schläfe.
+- **Tasten für Lautstärke**. Beim Tragen der HoloLens befinden sich die Lautstärketasten auf der rechten Seite des Visiers in der Nähe Ihrer Schläfe.
 - **Netzschalter**. Beim Tragen der HoloLens befindet sich der Netzschalter auf der rechten Seite der hinteren äußeren Abdeckung.
 - **USB-C-Port.** Beim Tragen der HoloLens befindet sich der USB-C-Port auf der rechten Seite der hinteren äußeren Abdeckung unterhalb des Netzschalters.
 
@@ -74,7 +74,7 @@ Um den Prozentsatz der internen Akkuladedauer beizubehalten bzw. zu verbessern, 
 ![HoloLens 2-Sensoren](images/hololens2-front-view.png)
 
 > [!NOTE]
-> Decken Sie keinen der Sensoren ab, die im Bild aufgerufen sind. Die Kopfverfolgungskameras haben ein sehr breites Sichtfeld (FOV). Es sollte sich nichts um sie herum befinden und sie nicht verdecken.
+> Decken Sie keine der Sensoren ab, die im Bild aufgerufen werden. Die Kopfverfolgungskameras haben ein sehr breites Sichtfeld (FOV). Es sollte sich nichts um sie herum befinden und sie nicht verdecken.
 
 ### Audio und Sprache
 
@@ -135,7 +135,7 @@ Um den Prozentsatz der internen Akkuladedauer beizubehalten bzw. zu verbessern, 
 |   |   |
 | - | - |
 | Windows Holographic Betriebssystem | Mit Windows Holographic können Windows 10-Benutzer einige ihrer Apps und Spiele über HoloLens 2 in einer Mixed -Reality-Umgebung verwenden.
-| 3D-Viewer | Mit dem [3D-Viewer](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) können Sie 3D-Modelle und Animationen ganz einfach in Echtzeit anzeigen.|
+| 3D-Viewer | [Mit dem 3D-Viewer](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) können Sie 3D-Modelle und Animationen ganz einfach in Echtzeit anzeigen.|
 | Cortana | [Cortana](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab), Ihr persönlicher Produktivitätsassistent, hilft Ihnen dabei, auf dem Laufenden zu bleiben und Zeit zu sparen, um das zu finden, was Sie benötigen.  |
 | Dynamics 365 Guides |  [Dynamics 365 Guides](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) helfen Mitarbeitern, schneller neue Fähigkeiten auf HoloLens-Geräten zu erlernen. |
 | Dynamics365 Remote Assist | [Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) ermöglicht Technikern die Zusammenarbeit und die Lösung von Problemen mit Remotemitarbeitern unter Verwendung von Microsoft Teams oder Dynamics 365 Remote Assist.  |
@@ -166,14 +166,14 @@ Um den Prozentsatz der internen Akkuladedauer beizubehalten bzw. zu verbessern, 
 
 |      Messwert               |      Metrische Einheiten für das Gerät     |      Imperiale Einheiten für das Gerät     |
 |--------------------------------|-----------------------|-------------------------|
-|     Länge des Geräts                |     378,97 mm          |     14,92 Zoll       |
-|     Breite des Geräts                 |     247,90 mm          |     9,76 Zoll        |
-|     Tiefe des Geräts                 |     163,07 mm          |     6,42 Zoll        |
-|     Gewicht des Geräts                |     2,88 kg           |     6,34 lbs           |
-|     Länge der Umverpackung    |     446,00 mm          |     17,56 Zoll       |
-|     Breite der Umverpackung     |     257,99 mm          |     10,16 Zoll       |
-|     Tiefe der Umverpackung     |     172,01 mm          |     6,77 Zoll        |
-|     Gewicht der Umverpackung    |     3,28 kg           |     7,24 lbs           |
+|     Länge des Geräts                |     378,97mm          |     14,92 Zoll       |
+|     Breite des Geräts                 |     247,90mm          |     9,76 Zoll        |
+|     Tiefe des Geräts                 |     163,07mm          |     6,42 Zoll        |
+|     Gewicht des Geräts                |     2,878kg           |     6,34 lbs           |
+|     Länge der Umverpackung    |     446,00mm          |     17,56 Zoll       |
+|     Breite der Umverpackung     |     257,99mm          |     10,16 Zoll       |
+|     Tiefe der Umverpackung     |     172,01mm          |     6,77 Zoll        |
+|     Gewicht der Umverpackung    |     3,284kg           |     7,24 lbs           |
 
 > [!NOTE]
 > - Einheit: Die schwarzen Box im Einzelhandelsstil, in der die HoloLens 2 verkauft wird.
@@ -182,10 +182,10 @@ Um den Prozentsatz der internen Akkuladedauer beizubehalten bzw. zu verbessern, 
 ## Ermitteln der Seriennummer
 
 Die Seriennummer für HoloLens 2-Geräte ist unterhalb des Visiers gedruckt.
+
 1. Heben Sie das Visier des Geräts nach oben.
 1. Sehen Sie sich das Stirnpolster an.
-1. Sie finden die Seriennummer in der Nähe des Scharniers. 
-
+1. Sie finden die Seriennummer in der Nähe des Scharniers.
 
 <img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />
 
