@@ -13,12 +13,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: befd2d892403b7b6c7050f48ba9beffb45b241fe
-ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
+ms.openlocfilehash: 0a89fa5e61e560f629444efd2728f6dd41db60d3
+ms.sourcegitcommit: ab35169529776f0682eeb8fa448c9d9e8f598513
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11016679"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11340524"
 ---
 # Hardwaregesicherter Integritäts- und Laufzeitnachweis
 
@@ -26,12 +26,12 @@ Hardwaregesicherter Integritäts- und Laufzeitnachweis schützt vor Bedrohungen,
 
 ## Sicherer UEFI-Start
 
-Mit HoloLens2 wird zu jedem Zeitpunkt der sichere UEFI-Start (Unified Extensible Firmware Interface) erzwungen, und UEFI startet nur Windows Holographic for Business.
-Der sichere Start gewährleistet, dass die gesamte Startkette auf Integrität überprüft und Windows immer mit den richtigen Sicherheitsrichtlinien gestartet wird. Weitere Informationen zum sicheren Start finden Sie hier.
+HoloLens 2 erzwingt den sicheren Start der Unified Extensible Firmware Interface (UEFI) immer, und UEFI startet nur Windows Holographic for Business. 
+Der sichere Start gewährleistet, dass die gesamte Startkette auf Integrität überprüft und Windows immer mit den richtigen Sicherheitsrichtlinien gestartet wird. Erfahren Sie mehr über [den sicheren Start](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-secure-boot).
 
 ## TPM
 
-Das Trusted Platform Module (TPM) ist ein spezieller Chip auf einem Endpunktgerät. HoloLens2 verwendet ein TPM 2.0, das hardwaregestützter Schlüsselisolation bietet.
+Das Trusted Platform Module (TPM) ist ein spezieller Chip auf einem Endpunktgerät. HoloLens 2 verwendet ein TPM 2.0, das Hardware-verstärkte Schlüsselisolierung bietet. Erfahren Sie mehr über [die Grundlagen von TPM](https://docs.microsoft.com/windows/security/information-protection/tpm/tpm-fundamentals).
 
 ## Schutz vor der Bedrohung durch dauerhaften Zugriff
 
@@ -39,9 +39,9 @@ Das Ziel der meisten Cyberangriffe besteht darin, einen dauerhaften Zugriff auf 
 
 Tatsächlich werden gezielte Angriffe aufgrund ihrer strategischen Notwendigkeit, den Zugriff auf ein Zielgerät oder -netzwerk aufrechtzuerhalten, als "fortgeschrittene persistente Bedrohungen" betrachtet. Aus diesem Grund erachtet Windows Holographic for Business die Verteidigung gegen dauerhaften Zugriff als absolut unerlässlich und setzt Antipersistenztechnologie ein, um den Kunden ein eisernes Sicherheitsversprechen zu geben.
 
-### Sicheres Starten 
+### Sicheres Starten
 
-HoloLens2 erzwingt den sicheren UEFI-Start (Unified Extensible Firmware Interface) auf allen Kernbetriebssystemen. UEFI startet nur vertrauenswürdige Microsoft-Plattformen, wodurch gewährleistet wird, dass die gesamte Startkette auf Integrität überprüft und Windows immer mit den richtigen Sicherheitsrichtlinien gestartet wird. Bei HoloLens2 lässt weder das Deaktivieren des sicheren Starts noch die Verwendung von Bootloadern von Drittanbietern zu.
+HoloLens2 erzwingt den sicheren UEFI-Start (Unified Extensible Firmware Interface) auf allen Kernbetriebssystemen. UEFI startet nur Microsoft-vertrauenswürdige Plattformen, wodurch sichergestellt wird, dass die gesamte Startkette auf Integrität überprüft wird und Windows immer mit den korrekten Sicherheitsrichtlinien gestartet wird.  Bei HoloLens2 lässt weder das Deaktivieren des sicheren Starts noch die Verwendung von Bootloadern von Drittanbietern zu.
 
 > [!Tip]
 > Weitere Informationen zum [sicheren Start](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-secure-boot).
@@ -50,8 +50,8 @@ HoloLens2 erzwingt den sicheren UEFI-Start (Unified Extensible Firmware Interfac
 
 Durch die Antipersistenzzusicherung garantiert HoloLens2 seinen Benutzern, dass selbst in dem unwahrscheinlichen Fall einer Laufzeitkompromittierung des Systems – wie z.B. bei einem Remote-Exploit – ein solches Ereignis abgemildert wird, indem der gesamte bösartige Code durch einfaches Ausschalten des Geräts aus dem System entfernt wird. Um die Antipersistenz noch weiter zu verbessern, hat HoloLens2 einen leistungsfähigen Integritätsschutz hinzugefügt und Schreibschutzmechanismen eingerichtet.
 
-Dauerhafter Zugriff auf Betriebssystemdaten in Form von Daten ist nach wie vor möglich, es sei denn, der Benutzer führt am Gerät ein Zurücksetzen mit einem Knopfdruck (PBR) durch, wodurch alle veränderbaren Partitionen gelöscht werden. Während der dauerhafte Zugriff auf unveränderliche Partitionen erheblich erschwert wird, muss der Benutzer Hololens2 durch PBR zurücksetzen, um mögliche Bedrohungspersistenz aus änderbaren Teilen zu entfernen.
+Dauerhafter Zugriff auf Betriebssystemdaten in Form von Daten ist nach wie vor möglich, es sei denn, der Benutzer führt am Gerät ein Zurücksetzen mit einem Knopfdruck (PBR) durch, wodurch alle veränderbaren Partitionen gelöscht werden. Während die Persistenz auf unveränderlichen Partitionen deutlich erschwert wird, muss der Benutzer die HoloLens 2 durch PBR zurücksetzen, um eine mögliche Bedrohungspersistenz von veränderlichen Teilen zu entfernen.
 
-## Codeintegritätsschutz 
+## Codeintegritätsschutz
 
 Codeintegrität (CI) ist eine wichtige Sicherheitseigenschaft eines modernen Betriebssystems. Durch Erzwingen von Codeintegrität lassen sich solide Sicherheitsentscheidungen treffen, da sie die Herkunft des Codes für den Benutzer und das Betriebssystem transparent macht. Die vollständige Codeintegrität muss die bisherige binäre Bildsignierung erweitern und die Durchsetzung zur Laufzeit umfassen, z.B. Kontrollflussintegrität und dynamische Codebeschränkungen. Codeintegrität ist entscheidend, um zahlreiche Angriffsklassen zu verhindern, einschließlich Social-Engineering-Schadsoftware, wie Ransomware, Remotecodeausführungs-Exploits und verschiedene andere Angriffsklassen.
