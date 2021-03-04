@@ -41,6 +41,7 @@
 ### [Verbessern der Grafikqualität und des Komforts](hololens-calibration.md)
 ### [Abbilden von physischen Räumen mit HoloLens](hololens-spaces.md) 
 ## [Aktualisieren von HoloLens](hololens-update-hololens.md)
+## [Microsoft Mesh (Vorschau)](/mesh/overview)
 
 # Vorbereiten
 ## [Bereitstellen von HoloLens in einer kommerziellen Umgebung](hololens-requirements.md)
@@ -93,7 +94,8 @@
 ### [HoloLens mit einem Netzwerk verbinden](hololens-network.md)
 ### [Vorbereiten von Zertifikaten und Netzwerkprofilen für HoloLens 2](hololens-certificates-network.md)
 ### [Verwalten von Verbindungsendpunkten für HoloLens](hololens-offline.md)
-### [Verbindung mit Bluetooth- und USB-C-Geräten](hololens-connect-devices.md)
+### [Herstellen einer Verbindung mit Bluetooth- und USB-C-Geräten](hololens-connect-devices.md)
+### [Herstellen einer Verbindung mit Mobilfunk und 5G](hololens-cellular.md)
 ## [Zertifikat-Manager](certificate-manager.md)
 
 # Bereitstellen
