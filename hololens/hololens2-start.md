@@ -12,20 +12,20 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9824de1d81fd6ba9ccafc8627d660aebefeaed15
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: 31c2c9ed7b2a35c759a0e1d86b89a2f0ab75d965
+ms.sourcegitcommit: fbc8ddb17e31fea8667ece43a511592b86ac3947
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283876"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "11385610"
 ---
-# Einrichten Ihrer HoloLens 2
+# <a name="set-up-your-hololens-2"></a>Einrichten Ihrer HoloLens 2
 
 Wenn Sie Ihre HoloLens zum ersten Mal einschalten, werden Sie durch die Einrichtung Ihres Geräts, die Anmeldung mit einem Benutzerkonto und die Kalibrierung der HoloLens für Ihre Augen geführt.  In diesem Abschnitt werden die ersten Schritte zur Einrichtung der HoloLens 2 erläutert.
 
 Im nächsten Abschnitt erfahren Sie, wie Sie mit HoloLens arbeiten und mit Hologrammen interagieren können. Weitere Informationen zu diesem Artikel finden Sie unter [Erste Schritte mit HoloLens 2](hololens2-basic-usage.md).
 
-## Vorbereitung
+## <a name="before-you-start"></a>Vorbereitung
 
 Bevor Sie beginnen, stellen Sie sicher, dass Sie Folgendes zur Verfügung haben:
 
@@ -37,7 +37,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie Folgendes zur Verfügung haben:
 
 Das **optionale Komfortzubehör**, das mit Ihrer HoloLens geliefert wurde, bietet Ihnen die bequemste Passform. [Weitere Informationen zu Passform und Komfort](hololens2-setup.md#adjust-fit).
 
-## Einrichten von Windows
+## <a name="set-up-windows"></a>Einrichten von Windows
 
 Wenn Sie HoloLens 2 zum ersten Mal starten, müssen Sie zunächst Windows Holographic einrichten.  Beim Starten Ihrer HoloLens hören Sie Musik und sehen ein Windows-Logo.
 
@@ -91,7 +91,10 @@ HoloLens 2 führt Sie durch die folgenden Schritte:
 
 Herzlichen Glückwunsch!  Die Einrichtung ist abgeschlossen, und Sie können HoloLens verwenden!
 
-## Nächste Schritte
+## <a name="next-steps"></a>Nächste Schritte
+
+1. Beginnen Sie sofort, mit Mixed Reality zu interagieren und in Windows 10 auf Ihrer HoloLens zu navigieren – in der **Tipps**-App finden Sie praktische Tutorials für Handinteraktionen. Verwenden Sie die Startgeste, um zum Startmenü zu wechseln oder sagen Sie „Zum Startmenü”, und wählen Sie „Tipps“ aus. 
+1. Klicken Sie unten, um weiter über den Umgang mit der HoloLens 2 zu lesen.
 
 > [!div class="nextstepaction"]
 > [Erste Schritte mit HoloLens 2](hololens2-basic-usage.md)

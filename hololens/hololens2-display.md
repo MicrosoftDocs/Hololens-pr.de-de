@@ -12,18 +12,18 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0001ff627b150a9ba79e76f8d995231186c46917
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: 6cb646ec1104952b5ecfe42391c24465fd074771
+ms.sourcegitcommit: fbc8ddb17e31fea8667ece43a511592b86ac3947
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11163014"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "11385593"
 ---
-# Das HoloLens 2-Display
+# <a name="hololens-2-display"></a>Das HoloLens 2-Display
 
 Das HoloLens 2-Display ist eine Kombination aus Wellenleitern und Lichtprojektoren. Benutzer blicken beim Tragen des Headsets durch die Wellenleiter, d. h. die Linsen im Visier. Die Lichtprojektoren befinden sich im Gehäuse über dem Stirnbereich. Das HoloLens 2-Display wird durch Laserlicht beleuchtet.
 
-## Problembehandlung
+## <a name="troubleshooting"></a>Problembehandlung
 
 Führen Sie für HoloLens 2 die folgenden Schritte aus, um die höchste visuelle Qualität von Hologrammen auf Displays zu gewährleisten:
 
@@ -32,15 +32,15 @@ Führen Sie für HoloLens 2 die folgenden Schritte aus, um die höchste visuelle
 * **Schieben Sie das Visier nach unten.** Versuchen Sie, das Stirnpolster auf der Stirn nach unten zu bewegen, was dazu führt, dass sich das Visier in einer tieferen Position und näher an der Nase befindet.
 * **Führen Sie die Kalibrierung der Augen aus.** Auf dem Display werden Bilder anhand Ihrer Pupillendistanz (PD) und der Blickerkennung optimiert. Wenn Sie keine Augenkalibrierung ausführen, kann sich die Bildqualität verschlechtern. Wenn Sie die Augenkalibrierung ausführen möchten, wechseln Sie zu **Einstellungen** > **System** > **Kalibrierung** > **Augenkalibrierung ausführen**.
 
-## FAQ
+## <a name="faq"></a>FAQ
 
-### Was sind die Muster, die gelegentlich in den unteren Ecken des Displays aufleuchten?
+### <a name="what-are-the-patterns-that-occasionally-flash-in-the-bottom-corners-of-the-display"></a>Was sind die Muster, die gelegentlich in den unteren Ecken des Displays aufleuchten?
 
 Auf dem Display Ihrer HoloLens 2 sind gelegentlich unterschiedliche Muster in den unteren linken und rechten Ecken zu sehen. Beispiele hierfür sind nachstehend dargestellt (animierte GIFs). Dieses Muster gehört zum normalen Betrieb des HoloLens 2-Geräts zum Kalibrieren des Displays für optimale Benutzerfreundlichkeit.
 
 ![Zweiphasiges Muster](./images/DAT-Biphase-Fiducial.gif) ![Geo-Muster](./images/DAT-GEO-Fiducial.gif)
 
-### Warum kann ich kein getreues Foto meines HoloLens 2-Displays aufnehmen?
+### <a name="why-am-i-unable-to-take-an-accurate-photograph-of-my-hololens-2-display"></a>Warum kann ich kein getreues Foto meines HoloLens 2-Displays aufnehmen?
 
 Das HoloLens 2-Display ist für die Betrachtung durch das menschliche Auge konzipiert. Das Gerät verfügt über ein aktives Farbkorrektursystem, das sich an die Augen eines Benutzers anpasst. Kameras „sehen“ Umgebungen anders als das menschliche Auge. Nachfolgend sind einige Faktoren aufgeführt, die zu Abweichungen zwischen Kameraaufnahmen und dem, was ein Benutzer sieht, führen können.
 
@@ -55,27 +55,27 @@ Das HoloLens 2-Display ist für die Betrachtung durch das menschliche Auge konzi
 
 Dennoch können spezielle Industriekameras gute Bilder des HoloLens 2-Displays aufnehmen. Leider erfassen Smartphone-, Consumer- und professionelle Kameras keine Bilder, die dem entsprechen, was ein Benutzer in HoloLens 2 sieht.
 
-### Wie wirkt sich die Augenkalibrierung auf die Qualität des angezeigten Bildes aus?
+### <a name="what-does-eye-calibration-do-to-display-image-quality"></a>Wie wirkt sich die Augenkalibrierung auf die Qualität des angezeigten Bildes aus?
 
 Das HoloLens 2-Display korrigiert aktiv die Farben von Bildern basierend auf der Position der Augen des Benutzers. Die [Augenkalibrierung](hololens-calibration.md) bietet zwei wichtige Eingaben: (1) die Pupillendistanz (PD) des Benutzers und (2) die Blickrichtung der einzelnen Augen. Ohne Augenkalibrierung gilt im System standardmäßig eine nominale Augenstellung ohne Augenbewegungen. Der Unterschied zwischen aktiver Farbkorrektur und keiner Korrektur hängt von den physischen Merkmalen des Benutzers ab. Bei einem Benutzer mit der gleichen PD wie der Systemstandard erfolgen beispielsweise weniger Farbkorrekturen. Während bei Benutzern mit einer viel engeren oder weiteren PD als die Systemstandardeinstellung mehr Änderungen am Anzeigebild vorgenommen werden.
 
 Hinweis: Eine neue Funktion in [Windows Holographic Version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) beginnt [automatisch mit der Erkennung der Augenposition](hololens-calibration.md#auto-eye-position-support). 
 
-### Was sind die Darstellungsunterschiede zwischen HoloLens (1. Generation) und HoloLens 2?
+### <a name="what-are-the-display-differences-between-hololens-1st-gen-and-hololens-2"></a>Was sind die Darstellungsunterschiede zwischen HoloLens (1. Generation) und HoloLens 2?
 
 Zu den häufigsten Wünschen, die Kunden nach der Erfahrung mit HoloLens 1 Microsoft gegenüber geäußert haben, zählten (1) ein größeres Sichtfeld und (2) größere Helligkeit. Technologische Entwicklungen ermöglichten Microsoft die Fertigung von Wellenleitern, die den Sichtbereich verdoppelten, und von Lichtprojektoren mit einer bis zu dreimal helleren Anzeige. Die Hardware bildet die Grundlage für drei miteinander in Konflikt stehende Elemente für die Qualität des Anzeigebilds: (1) Sichtfeld, (2) Helligkeit und (3) Farbhomogenität. Fortwährende technologische Fortschritte ermöglichen Verbesserungen in allen Bereichen, ohne dass bei einem Abstriche gemacht werden müssen. In der Zwischenzeit setzen die vorhandenen Technologien die Grenzen für die Lösung dieser Konflikte fest.
 
-### Welche Verbesserungen wird es in puncto Bildqualität bei HoloLens 2 geben?
+### <a name="what-improvements-are-coming-that-will-improve-hololens-2-image-quality"></a>Welche Verbesserungen wird es in puncto Bildqualität bei HoloLens 2 geben?
 
 Während wir in mehreren Bereichen Forschungen zur Verbesserung der Bildqualität betreiben, werden die folgenden Bereiche voraussichtlich in bevorstehenden Updates eingeführt:
 
 * **Automatische Augenstellung.** Mit dieser Funktion kann die Augenkalibrierung im Hintergrund ausgeführt werden. Benutzer müssen keine Augenkalibrierung mehr ausführen, damit die aktive Farbkorrektur funktioniert. Sie wird stattdessen einfach funktionieren.
 * **Verbesserungen bei der Farbkalibrierung.** Bei diesem Update stehen die Farbwerte dunklerer Farben (beispielsweise dunkelgrau) im Mittelpunkt. Derzeit nehmen dunklere Farben einen Rotstich an. Dieses Problem tritt auch auf, wenn das gesamte Display abgedunkelt wird – die gesamte Anzeige wird rötlich. Die Ursache dieses Problems ist zu viel Aktivität im roten Farbkanal für diese dunkleren Farben. Wir haben die Laser-Beleuchtungskurven für diese dunkleren Farben charakterisiert und arbeiten an einer Lösung für die Benutzerkalibrierung. Das Ergebnis wird eine höhere Farbgenauigkeit über das gesamte Helligkeitsspektrum hinweg sein. Die Darstellung weißer Hintergründe bei voller Helligkeit wird dadurch nicht geändert. Weiterhin empfehlen wir die Verwendung von Designmustern für den Dunkel Modus in Apps.
-* **Lesemodus.** App-Entwickler können das Display-Sichtfeld zugunsten einer höheren Winkelauflösung reduzieren. App-Entwickler können die Projektionsmatrix so überschreiben, dass Inhalte in der Zeichnen-Auflösung des Displays gerendert werden. Dieses Feature bewirkt eine Reduzierung des Sichtfelds um 30 % und eine entsprechende Erhöhung der Winkelauflösung. Wir arbeiten an der Einführung dieser Funktion in das Mixed Reality-Toolkit. Der Lesemodus wird auf jedem HoloLens 2-Betriebssystem funktionieren – er ist nicht von einem Betriebssystemupdate abhängig.
+* **Lesemodus.** App-Entwickler können das Display-Sichtfeld zugunsten einer höheren Winkelauflösung reduzieren. App-Entwickler können die Projektionsmatrix so überschreiben, dass Inhalte in der Zeichnen-Auflösung des Displays gerendert werden. Dieses Feature bewirkt eine Reduzierung des Sichtfelds um 30% und eine entsprechende Erhöhung der Winkelauflösung. Wir arbeiten an der Einführung dieser Funktion in das [Mixed Reality-Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity). Der Lesemodus wird auf jedem HoloLens 2-Betriebssystem funktionieren – er ist nicht von einem Betriebssystemupdate abhängig.
 
 Betriebssystemupdates werden automatisch bereitgestellt. Sie können auch frühe Veröffentlichungen von Software-Verbesserungen über das Insider Preview-Programm testen.
 
-### Welche Anleitungen stehen Entwicklern zum Anwenden von Designprinzipien für den dunklen Modus zur Verfügung?
+### <a name="what-guidance-is-available-for-developers-to-apply-dark-mode-design-principles"></a>Welche Anleitungen stehen Entwicklern zum Anwenden von Designprinzipien für den dunklen Modus zur Verfügung?
 
 Für Benutzer ist es am besten, wenn sie weiße Hintergründe vermeiden. Der dunkle Modus ist ein Designprinzip, das von Apps für schwarze oder dunkle Hintergründe verwendet wird. Bei den Systemeinstellungen wird standardmäßig der dunkle Modus festgelegt. Er kann über **Einstellungen** > **System** > **Farbe** angepasst werden.
 
@@ -86,6 +86,6 @@ Entwicklern wird empfohlen, die Designanleitung für den dunklen Modus zu beacht
 
 Wenn für ein Hologramm ein weißer Hintergrund erforderlich ist, sollte es kleiner als das vollständige Sichtfeld des Displays sein. Bei dieser Größe können Benutzer das Hologramm in die Mitte des Displays setzen.
 
-### Wie kann ich eine HoloLens 2-Anzeige reinigen?
+### <a name="how-do-you-clean-a-hololens-2-display"></a>Wie kann ich eine HoloLens 2-Anzeige reinigen?
 
 Reinigen Sie das Visier vorsichtig mit einem Mikrofasertuch. Verwenden Sie zur Desinfektion des Visiers 70 %igen Isopropylalkohol: Befeuchten Sie damit ein Tuch und wischen sie das Visier ab. Eine vollständige Anleitung finden Sie unter [Reinigen von HoloLens 2: Häufig gestellte Fragen](hololens2-maintenance.md).
