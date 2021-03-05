@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 2/23/2021
+ms.date: 3/4/2021
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ac408f100fb6e421a0ed0c85563ed920f1a25a83
-ms.sourcegitcommit: fbc8ddb17e31fea8667ece43a511592b86ac3947
+ms.openlocfilehash: 327701c2f618fc8958704cef5f174efed08fff3a
+ms.sourcegitcommit: f3e35e278f7841176982b411881f2791e9600e6a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "11385514"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "11388776"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider-Vorschau für Microsoft HoloLens
 
@@ -155,8 +155,6 @@ Da es sich bei der neuen Microsoft Edge um eine systemeigene Win32-App mit einer
 - Räumlicher Sound aus einem einzelnen Browserfenster
 - Automatische und manuelle Aktualisierung des Browsers
 - Speichern einer PDF aus dem Menü Drucken (mit der Option "In PDF speichern")
-
-**Szenarien und Features in Kürze:**
 - WebXR- und 360-Viewer-Erweiterung
 - Inhaltswiederherstellung zum Korrigieren des Fensters beim Durchsuchen mehrerer Fenster in Ihrer Umgebung
 
@@ -168,6 +166,9 @@ Da es sich bei der neuen Microsoft Edge um eine systemeigene Win32-App mit einer
 **Die am besten bekannten Browserprobleme:**
 - Durch zurücksetzen des Geräts wird das neue Microsoft Edge entfernt.
 - Die Vergrößerungsvorschau auf der holografischen Tastatur zeigt falsche Inhalte an.
+- Beim Scrollen kann es manchmal zu Unordnungen kommt
+- Weblinks in der Microsoft Store-App starten den Browser möglicherweise nicht
+- Audiowiedergabe aus dem falschen Browserfenster, wenn Sie zuvor Audio aus einem anderen Browserfenster abgespielt haben
 
 #### <a name="microsoft-edge-insider-channels"></a>Microsoft Edge-Insider-Kanäle
 
@@ -330,6 +331,7 @@ Wenn Sie mit dem in HoloLens 2 gespeicherten benutzerdefinierten Farbprofil nich
     - Problemumgehung: Wählen Sie eine andere Einstellungsseite aus, und wählen Sie dann die Seite Kalibrierung erneut aus.
 - Wenn HoloLens 2 während der Anzeigefarbkalibrierung in den Ruhezustand übergeht, wird es später wieder in das Mixed Reality Home aufgenommen, und Die Helligkeitsstufe der Anzeige wird weiterhin abgeblendet.
 - Möglicherweise müssen Sie versuchen, die Helligkeitsschaltflächen auf der linken Seite Des Geräts ein paar Mal nach oben/unten zu drücken, bevor sie wie erwartet funktionieren.
+- Lokalisierung ist nicht für alle Märkte abgeschlossen
 
 ### <a name="default-app-picker"></a>Standardmäßige App-Auswahl
 
@@ -350,6 +352,9 @@ Zum Festlegen der Lautstärke einer einzelnen App navigieren Sie zu **Einstellun
 ### <a name="office-web-app"></a>Office Web App
 
 Die Office-Web-App wurde der Liste "Alle Apps" im Startmenü hinzugefügt. Diese Web-App kann auch an Start angeheftet oder deinstalliert werden. Da es sich um eine Web-App handelt, entspricht ihre Funktionalität genau dem, was Sie beim Besuch erleben https://www.office.com würden. Office Web App-Funktionen sind nur verfügbar, wenn HoloLens 2 über eine aktive Internetverbindung verfügt.
+
+**Bekanntes Problem**
+- Durch zurücksetzen des Geräts wird die Office-Web-App entfernt.
 
 ### <a name="swipe-to-type"></a>Wischen zum Eingeben
 
