@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 327701c2f618fc8958704cef5f174efed08fff3a
-ms.sourcegitcommit: f3e35e278f7841176982b411881f2791e9600e6a
+ms.openlocfilehash: 7c11dfbdb78e59493d648fb3a172d3e1f73048c8
+ms.sourcegitcommit: 07ffe1bf2f45dcb2ba9d7fbe54b4773a0fb9d525
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "11388776"
+ms.locfileid: "11393879"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider-Vorschau für Microsoft HoloLens
 
@@ -283,8 +283,8 @@ Mit dieser Version stellen wir eine neue Version der Einstellungs-App vor. Die n
 
 **Bekannte Probleme**
 - Zuvor platzierte Einstellungsfenster werden entfernt (siehe Hinweis oben).
-- Die Seite "Ethernet" zeigt ein virtuelles Ethernet-Gerät ("UsbNcm") immer (untersuchend). Dieses virtuelle Ethernet-Gerät wird auch auf der Seite Netzwerk der Geräteeinrichtung angezeigt, kann jedoch ignoriert werden (Untersuchung).
-- Sie können Ihr Gerät nicht mehr mit der Einstellungs-App umbenennen (IT-Administratoren können Bereitstellungspakete oder MDM verwenden, um Geräte umzubenennen).
+- Sie können Ihr Gerät nicht mehr mit der Einstellungs-App umbenennen. #A0 können Geräte mithilfe der [Windows Autopilot für HoloLens 2-Gerätenamenvorlage](https://docs.microsoft.com/hololens/hololens2-autopilot) oder des Knotens MDM [DevDetail CSP](https://docs.microsoft.com/windows/client-management/mdm/devdetail-csp) Ext/Microsoft/DNSComputerName umbenennen.
+- Die Seite "Ethernet" zeigt ein virtuelles Ethernet-Gerät ("UsbNcm") immer an.
 - Der Akkuverbrauch für das neue Microsoft Edge ist aufgrund seiner Art als Win32-Desktopanwendung, die von einer UWP-Adapterschicht unterstützt wird, möglicherweise nicht genau (es wird keine Korrektur in Kürze erwartet).
 
 ### <a name="display-color-calibration"></a>Anzeigen der Farbkalibrierung
