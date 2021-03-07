@@ -15,14 +15,14 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: dd99744dfe27f52bb4ec51ad9fa9af4bfd1f0e96
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: f6e3dd8f7dc90cea158d000251973ec75dc76a90
+ms.sourcegitcommit: 07ffe1bf2f45dcb2ba9d7fbe54b4773a0fb9d525
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283326"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "11393869"
 ---
-# Verwenden Ihrer Stimme zum Bedienen von HoloLens
+# <a name="use-your-voice-to-operate-hololens"></a>Verwenden Ihrer Stimme zum Bedienen von HoloLens
 
 Mit Ihrer Stimme können Sie auf HoloLens die meisten Aufgaben erledigen, z. B. schnell ein Foto aufnehmen oder eine App öffnen. Viele Sprachbefehle sind in HoloLens integriert, während andere über Cortana zur Verfügung stehen.
 
@@ -33,11 +33,11 @@ In diesem Artikel erfahren Sie, wie Sie HoloLens und Ihre holografische Welt mit
 >  
 > Sie können die Windows-Anzeigesprache überprüfen, indem Sie **Einstellungen** > **Zeit und Sprache** > **Sprache** auswählen.
 
-## Integrierte Sprachbefehle
+## <a name="built-in-voice-commands"></a>Integrierte Sprachbefehle
 
 Mit den folgenden grundlegenden Befehlen können Sie sich schneller in HoloLens zurechtfinden. Um diese verwenden zu können, müssen Sie die Spracherkennung während der ersten Ausführung des Geräts oder unter **Einstellungen** > **Datenschutz** > **Spracherkennung** aktivieren. Anhand des Status oben im Startmenü können Sie jederzeit überprüfen, ob die Spracherkennung aktiviert ist. Für optimale Ergebnisse der Spracherkennung verwendet HoloLens 2 die Cloud-basierten Dienste von Microsoft. Sie können dieses Feature jedoch mithilfe des Menüs Einstellungen deaktivieren. Deaktivieren Sie dazu in den Einstellungen die **Online-Spracherkennung**. Nachdem Sie diese Einstellung geändert haben, verarbeitet HoloLens 2 Sprachdaten nur lokal zum Erkennen von Befehlen und Diktaten und Cortana ist nicht verfügbar.
 
-### Allgemeine Sprachbefehle
+### <a name="general-speech-commands"></a>Allgemeine Sprachbefehle
 
 Verwenden Sie diese Befehle in Windows Mixed Reality, um schneller zu navigieren. Einige Befehle verwenden den Anvisier-Cursor, den Sie mit dem Sprachbefehl "Auswählen" aufrufen.
 
@@ -47,11 +47,11 @@ Verwenden Sie diese Befehle in Windows Mixed Reality, um schneller zu navigieren
 | Sagen Sie das | Aufgabe |
 | - | - |
 | „Auswählen“ | Sagen Sie „Auswählen“, um den Anvisier-Cursor aufzurufen. Drehen Sie dann Ihren Kopf, um den Cursor auf das zu positionieren, was Sie auswählen möchten, und sagen Sie erneut „Auswählen“. |
-|Öffnen des Startmenüs | „Zum Startmenü” |
-|Startmenü schließen | „Schließen“ |
-|Eine immersive App schließen | Sagen Sie „Zum Startmenü“, um das Menü „Schnelle Aktionen“ zu öffnen, und sagen Sie dann „Mixed Reality Startumgebung“. |
-|Handstrahl ein- und ausblenden | „Handstrahl ausblenden“/„Handstrahl einblenden“ |
-|Anzeigen von verfügbaren Sprachbefehlen | Was kann ich sagen? |
+| „Zum Startmenü” |  Startmenü öffnen |
+| „Schließen“  | Startmenü schließen |
+| Sagen Sie „Zum Startmenü“, um das Menü „Schnelle Aktionen“ zu öffnen, und sagen Sie dann „Mixed Reality Startumgebung“.  | Eine immersive App schließen |
+| „Handstrahl ausblenden“/„Handstrahl einblenden“ | Handstrahl ein- und ausblenden |
+| „Was kann ich sagen?”  | Verfügbare Sprachbefehle anzeigen |
 
 Aber der Version 19041.x von HoloLens 2 können Sie auch die folgenden Befehle verwenden:
 
@@ -66,7 +66,7 @@ Aber der Version 19041.x von HoloLens 2 können Sie auch die folgenden Befehle v
 | „Video aufzeichnen“ | Beginnen Sie mit der Aufzeichnung eines Mixed-Reality-Videos. | 
 | „Aufzeichnung beenden“ | Stoppt die aktuelle Mixed-Reality-Videoaufzeichnung, wenn diese gerade läuft. |
 
-### Hologrammbefehle
+### <a name="hologram-commands"></a>Hologrammbefehle
 
 Wenn Sie diese Befehle verwenden möchten, visieren Sie ein 3D-Objekt, Hologramm oder App-Fenster an.
 
@@ -79,13 +79,13 @@ Wenn Sie diese Befehle verwenden möchten, visieren Sie ein 3D-Objekt, Hologramm
 | „Schließen“ | Schließen |
 | „Folgen beginnen“/„Folgen beenden“ | Ihren Bewegungen folgen lassen |
 
-### Sehen, sagen
+### <a name="see-it-say-it"></a>Sehen, sagen
 
 Viele Schaltflächen und andere Elemente auf HoloLens reagieren ebenfalls auf Ihre Stimme, z.B. **Folgen beginnen** und **Schließen** auf der App-Leiste oder die Schaltfläche **Zurück** in Edge. Wenn Sie ermitteln möchten, ob eine Schaltfläche sprachsteuerungsfähig ist, zeigen Sie einen Moment lang mit dem **Anvisier-Cursor**, dem **Touch-Cursor** oder einem **Handstrahl** darauf. Wenn die Schaltfläche für die Sprachausgabe aktiviert ist, wird ein Sprachausgabe-Tipp angezeigt.
 
-### Diktiermodus
+### <a name="dictation-mode"></a>Diktiermodus
 
-Keine Lust mehr auf Tippen? Wechseln Sie jederzeit in den Diktiermodus, wenn die holografische Tastatur aktiv ist. Wählen Sie zunächst die Schaltfläche „Mikrofon“ aus, oder sagen Sie „Starte diktieren“. Wenn Sie das Diktat beenden möchten, wählen Sie die Schaltfläche erneut aus, oder sagen Sie „Diktat beenden“. Um zu löschen, was Sie gerade diktiert haben, sagen Sie „Eingabe löschen“. 
+Keine Lust mehr auf Tippen? Wechseln Sie jederzeit in den Diktiermodus, wenn die holographische Tastatur aktiv ist. Wählen Sie zunächst die Schaltfläche „Mikrofon“ aus, oder sagen Sie „Starte diktieren“. Wenn Sie das Diktat beenden möchten, wählen Sie die Schaltfläche erneut aus, oder sagen Sie „Diktat beenden“. Um zu löschen, was Sie gerade diktiert haben, sagen Sie „Eingabe löschen“. 
 
 > [!NOTE]
 > Wenn Sie den Diktiermodus verwenden möchten, benötigen Sie eine Internetverbindung.
@@ -103,9 +103,9 @@ Sie können die folgenden Interpunktionsbefehle verwenden:
 
 Manchmal ist es hilfreich, Dinge wie E-Mail-Adressen zu buchstabieren. Zum Diktieren von „example@outlook.com“ würden Sie beispielsweise „E X A M P L E at outlook dot com“ sagen.
 
-## Mit Cortana sind Sie noch produktiver.
+## <a name="do-more-with-cortana"></a>Mit Cortana sind Sie noch produktiver.
 
-Cortana kann Ihnen dabei helfen, alle möglichen Aktionen mit Ihrem HoloLens auszuführen. Je nachdem, welche Windows-Version Sie verwenden, stehen Ihnen verschiedene Möglichkeiten zur Verfügung. Mehr über die aktuellen Möglichkeiten der neuesten Version von Cortana erfahren Sie [hier](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/). 
+Cortana kann Ihnen dabei helfen, alle Arten von Dingen auf Ihrem HoloLens zu tun, aber je nachdem, welche Version von Windows Holographic Sie verwenden, können die Funktionen unterschiedlich sein. Weitere Informationen zu den aktualisierten Funktionen der neuesten Version von Cortana finden Sie hier: [Cortana in der kommenden Windows 10-Version: Konzentriert auf Ihre Produktivität mit verbesserter Sicherheit und Datenschutz](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/). 
 
 ![Hey Cortana!](images/cortana-on-hololens.png)
 
@@ -138,7 +138,7 @@ Wenn Sie *Version 18362.x oder früher* nutzen, können Sie auch die folgenden B
 
 Einige Cortana-Features, die Sie von Windows auf Ihrem PC oder Smartphone kennen (beispielsweise Erinnerungen und Benachrichtigungen) werden in Microsoft HoloLens nicht unterstützt, und die Cortana-Erfahrung kann von Region zu Region variieren.
 
-### Cortana deaktivieren
+### <a name="turn-cortana-off"></a>Cortana deaktivieren
 
 Wenn Sie die Spracherkennung aktivieren, ist Cortana bei der ersten Verwendung von HoloLens eingeschaltet. Sie können Cortana in den Cortana-Einstellungen deaktivieren. Wählen Sie aus der Liste **Alle Apps** die Optionen **Cortana** > **Einstellungen** aus. Deaktivieren Sie dann „Cortana kann Vorschläge, Ideen, Erinnerungen, Warnungen und vieles mehr anbieten“.
 
