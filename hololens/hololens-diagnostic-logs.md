@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c8d9aa9fecff74a04e3f7cb395bffe5d239e18cf
-ms.sourcegitcommit: 7791e470fc2e03bdf51b19a816d7215018772860
+ms.openlocfilehash: 4a360e99a45b855957e36dd6ba31ede3da9631ba
+ms.sourcegitcommit: b5f1b7c197cb58b746efc3809c61cf7a2e8c08ef
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "11387514"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "11399807"
 ---
 # <a name="collect-and-use-diagnostic-information-from-hololens-devices"></a>Sammeln und Nutzen von Diagnoseinformationen von HoloLens-Geräten
 
@@ -102,6 +102,10 @@ Die Diagnoseinformationen bleiben an diesen Speicherorten, bis der Benutzer sie 
 
 In einer Mobile Device Management (MDM)-Umgebung kann der #A0 den [DiagnosticLog-Konfigurationsdienstanbieter (DiagnosticLog Configuration Service Provider, CSP)](https://docs.microsoft.com/windows/client-management/mdm/diagnosticlog-csp) verwenden, um Diagnoseeinstellungen auf registrierten HoloLens-Geräten zu konfigurieren. Der IT-Administrator kann diese Einstellungen so konfigurieren, dass Protokolle von registrierten Geräten gesammelt werden.
 
+Weitere Informationen:
+- [Sammeln von Diagnosen von einem Windows-Gerät](https://docs.microsoft.com/mem/intune/remote-actions/collect-diagnostics)
+- [Intune Public Preview – Windows 10-Gerätediagnose](https://techcommunity.microsoft.com/t5/intune-customer-success/intune-public-preview-windows-10-device-diagnostics/ba-p/2179712#:~:text=This%20first%20release%20of%20device%20diagnostics%20utilizes%20the,taking%20about%205%20minutes%20from%20start%20to%20finish.)
+
 ### <a name="prerequisites"></a>Voraussetzungen
 
 - Das Gerät ist mit einem Netzwerk verbunden.
@@ -125,12 +129,12 @@ Dies funktioniert, wenn das Gerät im Datei-Explorer angezeigt wird, nachdem es 
 > [!NOTE]
 > Die Generierung und Verwaltung der Offlinediagnose wird abhängig von Ihrer Betriebssystemversion unterschiedlich gesteuert. Zuvor wurde sie durch die Telemetrieeinstellung gesteuert, wird jetzt jedoch direkt über die MDM-Richtlinie gesteuert. Wenn dies über eine Einstellung oder eine MDM-Richtlinie deaktiviert ist, können Diagnoseprotokolle nicht mithilfe dieses Mechanismus erfasst werden.
 
-Verhalten vor [Windows Holographic, Verison 20H2](hololens-release-notes.md#windows-holographic-version-20h2):
+Verhalten vor [Windows Holographic, Version 20H2](hololens-release-notes.md#windows-holographic-version-20h2):
  - Die Offlinediagnose ist nur aktiviert, wenn der Benutzer entweder OOBE durch geht oder der Wert der [System\AllowTelemetry-Richtlinie](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) auf Full festgelegt ist (Basic ist der Standardwert für HoloLens). 
 - Um die Offlinediagnose zu deaktivieren, wechseln Sie zu Einstellungen **App > Seite** Datenschutz, und wählen Sie unter Diagnosedaten die Option **Standard** **aus.** Bei Builds, bei denen die Offlinediagnose von der Telemetrieeinstellung abhängt, wirkt sich dies nur darauf aus, ob Protokolle erfasst werden oder nicht. Es wirkt sich nicht auf die erfassten Dateien aus.
 - Wenn das Gerät gesperrt ist, werden keine Protokolle angezeigt.
 
-Auf Builds [von Windows Holographic, Verison 20H2](hololens-release-notes.md#windows-holographic-version-20h2) und mehr:
+Auf Builds [von Windows Holographic, Version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) und mehr:
 - Wenn die Fallbackdiagnose aktiviert ist, wird dies durch eine bestimmte MDM-Richtlinie mit der entsprechenden Einstellung [MixedReality/FallbackDiagnostics gesteuert.](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-fallbackdiagnostics)
 - Wenn das Gerät gesperrt ist, werden keine Protokolle angezeigt.
 
