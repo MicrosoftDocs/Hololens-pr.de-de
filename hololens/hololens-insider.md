@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7c11dfbdb78e59493d648fb3a172d3e1f73048c8
-ms.sourcegitcommit: 07ffe1bf2f45dcb2ba9d7fbe54b4773a0fb9d525
+ms.openlocfilehash: 33e16d75a95d62e2c8b881f298acdf692874ef94
+ms.sourcegitcommit: 1f3ad5b099e72491f436d851738d2b6f3d4dff31
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "11393879"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "11400705"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider-Vorschau für Microsoft HoloLens
 
@@ -90,6 +90,10 @@ Wenn Sie derzeit die [Sichtbarkeit](settings-uri-list.md) von Seiteneinstellunge
 #### <a name="updates-for-your-wdac-policy"></a>Updates für Ihre WDAC-Richtlinie
 
 Wenn Sie Microsoft Edge zuvor über WDAC blockiert haben, sollten Sie Ihre WDAC-Richtlinie aktualisieren. Überprüfen [Sie Folgendes,](#using-wdac-to-block-new-microsoft-edge) und verwenden Sie den bereitgestellten Beispielcode.
+
+#### <a name="enable-new-endpoints-for-edge"></a>Aktivieren neuer Endpunkte für Edge
+
+Wenn Sie über eine Infrastruktur verfügen, die das Konfigurieren von Netzwerkendpunkten wie Proxy oder Firewall umfasst, aktivieren Sie diese neuen Endpunkte für die [neue Microsoft Ege-App.](#managing-endpoints-for-the-new-microsoft-edge)
 
 #### <a name="newly-configurable-items"></a>Neu konfigurierbare Elemente
 
@@ -202,6 +206,12 @@ Es stehen mehrere Methoden zum Installieren von Microsoft Edge-Insider-Kanälen 
 Für IT-Administratoren, die ihre [WDAC-Richtlinie](windows-defender-application-control-wdac.md) aktualisieren möchten, um die neue Microsoft Edge-App zu blockieren, müssen Sie Ihrer Richtlinie Folgendes hinzufügen.
 
 ``` <Deny ID="ID_DENY_D_3_0" FriendlyName="C:\Data\Programs FileRule" PackageVersion="65535.65535.65535.65535" FileName="msedge.exe" /> ```
+
+#### <a name="managing-endpoints-for-the-new-microsoft-edge"></a>Verwalten von Endpunkten für das neue Microsoft Edge
+
+In einigen Umgebungen müssen möglicherweise Netzwerkeinschränkungen berücksichtigt werden. Um eine reibungslose Oberfläche mit dem neuen Edge zu gewährleisten, aktivieren Sie [diese Microsoft-Endpunkte.](https://docs.microsoft.com/deployedge/microsoft-edge-security-endpoints)
+
+Lesen Sie mehr über die derzeit [verfügbaren Endpunkte für HoloLens](hololens-offline.md).
 
 ### <a name="webxr-and-360-viewer"></a>WebXR und 360 Viewer
 
