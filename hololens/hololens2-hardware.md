@@ -12,20 +12,20 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 65d3ec2a8ecc7fc456f8e8d9d6820a5624da9e99
-ms.sourcegitcommit: 0d16c7dc4d18d550023da9f6b3cc942eb915a2c3
+ms.openlocfilehash: feedb0093b8766de75079a61c286c99817ab18f9
+ms.sourcegitcommit: 1f3ad5b099e72491f436d851738d2b6f3d4dff31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "11328109"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "11400695"
 ---
-# HoloLens 2-Hardware
+# <a name="hololens-2-hardware"></a>HoloLens 2-Hardware
 
 ![HoloLens 2 – Seitenansicht](images/hololens2-breakdown.png)
 
 Microsoft HoloLens 2 ist ein ungebundener holographischer Computer.  Er verfeinert die von HoloLens (1. Generation) begonnene holographische Computererfahrung und bietet ein komfortableres und umfassenderes Erlebnis, gepaart mit mehr Optionen für die Zusammenarbeit in Mixed Reality.
 
-## HoloLens-Komponenten
+## <a name="hololens-components"></a>HoloLens-Komponenten
 
 - **Visier**. Enthält die HoloLens-Sensoren und -Anzeigen. Sie können das Visier während des Tragens der HoloLens nach oben drehen.
 - **Stirnband**. Zum Aufsetzen der HoloLens verwenden Sie das Einstellrad, um das Stirnband zu erweitern. Ziehen Sie das Einstellrad bei aufgesetzter HoloLens nach rechts fest, bis das Stirnband angenehm sitzt.
@@ -34,15 +34,14 @@ Microsoft HoloLens 2 ist ein ungebundener holographischer Computer.  Er verfeine
 - **Netzschalter**. Beim Tragen der HoloLens befindet sich der Netzschalter auf der rechten Seite der hinteren äußeren Abdeckung.
 - **USB-C-Port.** Beim Tragen der HoloLens befindet sich der USB-C-Port auf der rechten Seite der hinteren äußeren Abdeckung unterhalb des Netzschalters.
 
-## Inhalt der Verpackung
+## <a name="in-the-box"></a>Inhalt der Verpackung
 
-- **Stirnpolster** Sie können das Stirnpolster nach Bedarf entfernen und ersetzen.
-- **Oberer Riemen**. Wenn Sie die HoloLens tragen, während Sie sich bewegen, verwenden Sie den oberen Riemen, um das Gerät an seiner Stelle zu halten. Wenn Sie die HoloLens über einen längeren Zeitraum tragen, kann der obere Riemen den Tragekomfort des Geräts erhöhen.
-- **USB-C-Kabel**. Verwenden Sie das USB-C-Kabel, um Ihre HoloLens zum Laden an das Netzteil anzuschließen, oder um sie an Ihren Computer anzuschließen.
-- **Netzteil**. Wird an eine Steckdose angeschlossen.
+- **[Stirnpolster](https://www.microsoft.com/p/microsoft-hololens-2-brow-pad/90z10rsslqp0)**. Sie können das Stirnpolster nach Bedarf entfernen und ersetzen.
+- **[Oberer Riemen](https://www.microsoft.com/p/microsoft-hololens-2-overhead-strap/8wxl8wmk1f7z)**. Wenn Sie die HoloLens tragen, während Sie sich bewegen, verwenden Sie den oberen Riemen, um das Gerät an seiner Stelle zu halten. Wenn Sie die HoloLens über einen längeren Zeitraum tragen, kann der obere Riemen den Tragekomfort des Geräts erhöhen.
+- **[USB-C-Ladegerät und Kabel](https://www.microsoft.com/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5)**. Das Netzteil wird an die Steckdose angeschlossen. Verwenden Sie das USB-C-Kabel, um Ihre HoloLens zum Laden an das Netzteil anzuschließen, oder um sie an Ihren Computer anzuschließen.
 - **Mikrofasertuch**. Wird zum Reinigen des HoloLens-Visiers verwendet.
 
-### Details zur Energieversorgung
+### <a name="power-supply-details"></a>Details zur Energieversorgung
 
 Die in der Lieferung des Geräts enthaltene Stromversorgung und das USB-Kabel sind die beste Methode zum Aufladen. Die Stromversorgung ist ein 18-W-Ladegerät.  Es liefert 9V bei 2A.
 
@@ -50,9 +49,9 @@ Die Lade- und Geschwindigkeitsrate kann je nach Umgebung, in der das Gerät ausg
 
 Um den Prozentsatz der internen Akkuladedauer beizubehalten bzw. zu verbessern, während das Gerät eingeschaltet ist, muss es mindestens mit einem 15-W-Ladegerät verbunden sein.
 
-## Gerätespezifikationen
+## <a name="device-specifications"></a>Gerätespezifikationen
 
-### Anzeige
+### <a name="display"></a>Anzeige
 
 |   |   |
 | - | - |
@@ -61,7 +60,7 @@ Um den Prozentsatz der internen Akkuladedauer beizubehalten bzw. zu verbessern, 
 | Holographische Dichte | >2,5K Strahler (Lichtpunkte pro Radiant) |
 | Augenbasiertes Rendering | Anzeigeoptimierung für die 3D-Augenposition |
 
-### Sensoren
+### <a name="sensors"></a>Sensoren
 
 |   |   |
 | - | - |
@@ -76,14 +75,14 @@ Um den Prozentsatz der internen Akkuladedauer beizubehalten bzw. zu verbessern, 
 > [!NOTE]
 > Decken Sie keine der Sensoren ab, die im Bild aufgerufen werden. Die Kopfverfolgungskameras haben ein sehr breites Sichtfeld (FOV). Es sollte sich nichts um sie herum befinden und sie nicht verdecken.
 
-### Audio und Sprache
+### <a name="audio-and-speech"></a>Audio und Sprache
 
 |   |   |
 | - | - |
 | Mikrofon-Array | 5 Kanäle |
 | Lautsprecher | Integrierter Raumklang |
 
-### Computing und Konnektivität
+### <a name="compute-and-connectivity"></a>Computing und Konnektivität
 
 |   |   |
 | - | - |
@@ -95,26 +94,26 @@ Um den Prozentsatz der internen Akkuladedauer beizubehalten bzw. zu verbessern, 
 | Bluetooth | 5.0 |
 | USB | USB-Typ-C |
 
-### Stromversorgung
+### <a name="power"></a>Leistung
 
 |   |   |
 | - | - |
-| Akkulaufzeit | 2-3 Stunden bei aktiver Nutzung. Bis zu 2 Wochen Standbyzeit. |
+| Akkulaufzeit | 2-3 Stunden bei aktiver Nutzung. Bis zu zwei Wochen Standbyzeit. |
 | Akku | [Lithium-Akkus](https://www.microsoft.com/download/details.aspx?id=43388) |
 | Verhalten beim Aufladen | Voll funktionsfähig beim Aufladen |
 | Art der Kühlung | Passiv gekühlt (keine Ventilatoren) |
 | Stromverbrauch | Um den Prozentsatz der internen Akkuladedauer beizubehalten bzw. zu verbessern, während das Gerät eingeschaltet ist, muss es mindestens mit einem 15-W-Ladegerät verbunden sein. |
 
-### Passung
+### <a name="fit"></a>Passung
 
 |   |   |
 | - | - |
 | Größe | Einheitsgröße mit verstellbarem Band.  Passt über Brillen |
 | Breite | 566 Gramm |
 
-## Gerätefunktionen
+## <a name="device-capabilities"></a>Gerätefunktionen
 
-### Menschliches Verständnis
+### <a name="human-understanding"></a>Menschliches Verständnis
 
 |   |   |
 | - | - |
@@ -122,7 +121,7 @@ Um den Prozentsatz der internen Akkuladedauer beizubehalten bzw. zu verbessern, 
 | Eye-Tracking (Blickverfolgung) | Echtzeit-Tracking (Nachverfolgung) |
 | Spracheingabe | Befehl und Steuerung auf dem Gerät; Cortana natürliche Sprache mit Internetverbindung |
 
-### Umgebungsverständnis
+### <a name="environment-understanding"></a>Umgebungsverständnis
 
 |   |   |
 | - | - |
@@ -130,7 +129,7 @@ Um den Prozentsatz der internen Akkuladedauer beizubehalten bzw. zu verbessern, 
 | Räumliche Zuordnung | Mesh für Echtzeitumgebung |
 | Mixed-Reality-Aufnahme | Gemischte Fotos und Videos aus Hologramm und physischer Umgebung |
 
-## Vorinstallierte Software
+## <a name="pre-installed-software"></a>Vorinstallierte Software
 
 |   |   |
 | - | - |
@@ -150,19 +149,27 @@ Um den Prozentsatz der internen Akkuladedauer beizubehalten bzw. zu verbessern, 
 | Einstellungen | Die App „Einstellungen“ ist der Ort, an dem Sie die Funktionsweise von Windows Holographic detailliert anpassen.  |
 | Tipps | Mit [Tipps](https://www.microsoft.com/p/microsoft-tips/9wzdncrdtbjj?activetab=pivot:overviewtab) können Sie überraschende und weniger bekannte Dinge in Windows Holographic meistern. |
 
-## Gerätezertifizierungen
+## <a name="device-certifications"></a>Gerätezertifizierungen
 
-### Sicherheit
+### <a name="safety"></a>Sicherheit
 
 * [Produktsicherheit](https://support.microsoft.com/en-us/help/4023454/safety-information)
 * [Warnungen und Anweisungen zur Produktsicherheit](https://support.microsoft.com/en-us/help/4558037/product-safety-warnings-and-instructions)
 * Augensicherheit: HoloLens 2 wurde getestet und entspricht den grundlegenden Anforderungen für den Aufprallschutz von ANSI Z87.1, CSA Z94.3 und EN 166.
 * [SAR-Informationen](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
 
-### Rechtliche Informationen
+### <a name="regulatory-information"></a>Rechtliche Informationen
 [Rechtliche Informationen zu HoloLens](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): Enthält Informationen zu Temperatur, Entsorgung, Funk- und TV-Interferenzen und vielem mehr.
 
-## Paketmaße
+## <a name="warranty-information"></a>Garantieinformationen
+
+Microsoft HoloLens 2 verfügt über eine standardmäßige eingeschränkte [Garantie](https://support.microsoft.com/topic/warranties-extended-service-plans-and-terms-conditions-for-your-device-eedf7a23-84a7-1a47-480b-0e10503eedf5). 
+
+Der Kauf unterliegt den [Nutzungs- und Verkaufsbedingungen für Windows Store](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1). 
+
+Mit dem Kauf von HoloLens 2 stimmen Sie dem [Softwarelizenzvertrag](https://www.microsoft.com/Useterms/) zu.
+
+## <a name="package-dimensions"></a>Paketmaße
 
 |      Messwert               |      Metrische Einheiten für das Gerät     |      Imperiale Einheiten für das Gerät     |
 |--------------------------------|-----------------------|-------------------------|
@@ -179,7 +186,7 @@ Um den Prozentsatz der internen Akkuladedauer beizubehalten bzw. zu verbessern, 
 > - Einheit: Die schwarzen Box im Einzelhandelsstil, in der die HoloLens 2 verkauft wird.
 > - Umverpackung: Die schützende Versandverpackung des Geräts.
 
-## Ermitteln der Seriennummer
+## <a name="finding-the-serial-number"></a>Ermitteln der Seriennummer
 
 Die Seriennummer für HoloLens 2-Geräte ist unterhalb des Visiers gedruckt.
 
@@ -198,7 +205,7 @@ Die Seriennummer kann auch über einen angeschlossenen PC gefunden werden:
 
 <img src="images/ResetRecovery2.png" alt=null line width="400" height="600" />
 
-## Nächster Schritt
+## <a name="next-step"></a>Nächster Schritt
 
 > [!div class="nextstepaction"]
 > [Einrichten und Starten Ihrer HoloLens 2](hololens2-setup.md)
