@@ -14,14 +14,14 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2c1cc7fb2ec362fde96df5f0cea23aab132b62ef
-ms.sourcegitcommit: 76a99370ab841c06e533cc2f4a0c78c1fb7eac70
+ms.openlocfilehash: 7e8e333471df139ced3613801d07a5bfaafd8d30
+ms.sourcegitcommit: fdae5b561d56d3d4e62da4db15f07bc10249398a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "11324768"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "11408405"
 ---
-# Übersicht für HoloLens2
+# <a name="hololens-2-overview"></a>Übersicht für HoloLens2
 
 HoloLens ist ein Mixed Reality-Gerät, das von *Hologrammen unterstützt wird* sowie Apps und Lösungen bereitstellt, die die Zusammenarbeit verbessern. Mit HoloLens2 erleben Sie neue Dimensionen von Produktivität und Innovation – zweckgerichtet – für intelligenteres Arbeiten.
 
@@ -41,14 +41,14 @@ Ganz gleich, ob Sie ein [IT-Experte](https://www.microsoft.com/hololens/apps) si
 | Entwicklerberechtigungen <sup>1</sup>                             |            |                               |                               |                                                  |                              |                ✔️               |
 | Programm für schnellen Ersatz <sup>2</sup>                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
 | Kommerzielle Nutzungsrechte                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
-| Garantie                                             |   1Jahr   |             1Jahr            |             2Jahre            |                      2Jahre                      |            1Jahr <sup>3</sup>            |             1Jahr             |
-| Grenzwert für Gerätekauf                                |    Keiner    |              Keine             |              Keine             |                       Keine                       |             Keiner             |       Eine pro Transaktion      |
+| [Garantie](hololens2-hardware.md#warranty-information)                                             |   1Jahr   |             1Jahr            |             2Jahre            |                      2Jahre                      |            1Jahr <sup>3</sup>            |             1Jahr             |
+| Grenzwert für Gerätekauf                                |    Keiner    |              Keiner             |              Keiner             |                       Keiner                       |             Keiner             |       Eine pro Transaktion      |
 
 - <sup>1</sup> – Umfasst 500USD Azure-Guthaben und 3-monatige Testversionen für Unity Pro und das Pixyz-Plug-In.
 - <sup>2</sup> – Sie erhalten über Nacht ein Ersatzgerät oder Expressversand (die schnellere der verfügbaren Optionen) vor Eingang des defekten Geräts bei Microsoft.
 - <sup>3</sup> – Bei Fragen zu Garantie, Support und Zertifizierung für das TrimbleXR10 mit HoloLens2-Edition [wenden Sie sich an Trimble](https://fieldtech.trimble.com/en/contact-support).
 
-## Übersicht der Optionen
+## <a name="options-overview"></a>Übersicht der Optionen
 
 **[HoloLens2 (nur Gerät)](hololens2-options.md#hololens-2-device-only)**: HoloLens2 bietet die komfortabelste und immersivste Mixed Reality-Erfahrung, die verfügbar ist – erweitert durch die Zuverlässigkeit, Sicherheit und Skalierbarkeit von Cloud- und KI-Diensten von Microsoft.
 
@@ -62,32 +62,32 @@ Ganz gleich, ob Sie ein [IT-Experte](https://www.microsoft.com/hololens/apps) si
 
 Erfahren Sie mehr über unser umfangreiches [HoloLens2-Portfolio](https://www.microsoft.com/hololens/buy).
 
-## Erste Schritte mit HoloLens2-Optionen
+## <a name="get-started-with-hololens-2-options"></a>Erste Schritte mit HoloLens2-Optionen
 
-### **HoloLens2 (nur Gerät)**
-#### Informationen zu HoloLens2
+### **<a name="hololens-2-device-only"></a>HoloLens2 (nur Gerät)**
+#### <a name="learn-about-hololens-2"></a>Informationen zu HoloLens2
 Das Verwenden Ihrer HoloLens2-Geräte in einer kommerziellen Umgebung kann ein leistungsstarkes Tool für Ihr Unternehmen oder Ihre Organisation sein. Jede HoloLens2 kann auch von einem Entwickler zum Erstellen von Mixed Reality-Apps verwendet werden. 
 
 <br>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XwOnHqiNAeU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-#### Die nächsten Schritte mit HoloLens2
+#### <a name="heres-what-to-do-next-with-the-hololens-2"></a>Die nächsten Schritte mit HoloLens2
 1. Sehen Sie sich dieses Video zur [Verwendung und Pflege von HoloLens 2](https://docs.microsoft.com/hololens/hololens2-maintenance##HoloLens-2-Use-and-Care) an.
 1. [Bereiten Sie Ihr Gerät für die Verwendung](https://docs.microsoft.com/hololens/hololens2-setup) vor, und [richten Sie es ein](https://docs.microsoft.com/hololens/hololens2-start)
 1. [Erfahren Sie mehr über die Handhabung von HoloLens2](https://docs.microsoft.com/hololens/holographic-home).
 1. Sobald Sie sich wohl fühlen, [nehmen Sie ein paar Mixed Reality-Fotos oder -Videos auf](https://docs.microsoft.com/hololens/holographic-photos-and-videos).
 1. Sehen Sie sich alle verfügbaren [Apps für HoloLens2 im Microsoft App Store an](https://docs.microsoft.com/hololens/holographic-store-apps).
 
-### **HoloLens2 mit Remote Assist**
+### **<a name="hololens-2-with-remote-assist"></a>HoloLens2 mit Remote Assist**
 
-#### Informationen zu HoloLens2 mit Remote Assist
+#### <a name="learn-about-hololens-2-with-remote-assist"></a>Informationen zu HoloLens2 mit Remote Assist
 - Sie können diese Geräte in einer kommerziellen Umgebung für Ihr Unternehmen verwenden. Bestellen Sie so viele wie nötig!
 - Eine der beliebtesten Verwendungsmöglichkeiten für HoloLens-Unternehmensumgebungen ist **Remote Assist**, womit Sie eine Lizenz pro Arbeitsplatz (pro Gerät) erhalten.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-#### So sehen die nächsten Schritte mit der HoloLens2 mit Dynamics365 Remote Assist Edition aus
+#### <a name="heres-what-to-do-next-with-the-hololens-2-with-dynamics-365-remote-assist-edition"></a>So sehen die nächsten Schritte mit der HoloLens2 mit Dynamics365 Remote Assist Edition aus
 Wir haben ein spezielles Handbuch erstellt, das Ihnen bei der Bereitstellung von HoloLens-Geräten im großen Maßstab helfen soll. Das Handbuch enthält eine End-to-End-Einrichtung für Azure Active Directory bis hin zur Überprüfung eines Remote Assist-Anrufs. Weitere Informationen finden Sie in unserem [Bereitstellungshandbuch – Mit der Cloud verbundene HoloLens2 mit Remote Assist](hololens2-cloud-connected-overview.md).
 
 | Prüfpunkt  | Ergebnis                                |
@@ -97,9 +97,9 @@ Wir haben ein spezielles Handbuch erstellt, das Ihnen bei der Bereitstellung von
 | [Verbinden](https://docs.microsoft.com/hololens/hololens-network)     | Verbinden Sie Ihre Geräte mit dem WLAN.       |
 | [Registrieren](https://docs.microsoft.com/hololens/hololens-enroll-mdm)      | Registrieren Sie Geräte bei Ihrer Organisation. |
 
-### **HoloLens 2 Industrial Edition**
+### **<a name="hololens-2-industrial-edition"></a>HoloLens 2 Industrial Edition**
 
-#### Informationen zur HoloLens2 Industrial Edition
+#### <a name="learn-about-hololens-2-industrial-edition"></a>Informationen zur HoloLens2 Industrial Edition
 Die HoloLens2 Industrial Edition wurde um neue Materialien und Zertifizierungen erweitert und umgestaltet, um eine breitere Palette von Industrieumgebungen zu unterstützen, darunter:
 
 - **Reinraumumgebungen**: Die HoloLens2 Industrial Edition unterstützt Reinräume ab den Standards ISO14644-1 Klasse5, in denen die Menge vorhandener Fremdpartikel begrenzt und eingeschränkt ist und wo Objekte in diesen Räumen Grenzwerten für Verschütten, Ausgasen und Verunreinigungsretention unterliegen.
@@ -111,21 +111,21 @@ Zusätzlich zum aktualisierten Gerät besitzt die HoloLens2 Industrial Edition e
 
 Lesen Sie die [Häufig gestellten Fragen zur HoloLens2 Industrial Edition](hololens2-industrial-edition-faq.md).
 
-#### Reinigung und Handhabung von HoloLens2
+#### <a name="cleaning-and-handling-hololens-2"></a>Reinigung und Handhabung von HoloLens2
 Die HoloLens2 Industrial Edition kann mit einer Lösung aus 70%igem Isopropylalkohol und Wasser gereinigt werden, um die harten Oberflächen des Geräts zu reinigen, einschließlich Visier, Stirnpolster und Kopfriemen. Weitere Informationen finden Sie in den [Häufig gestellten Fragen zur HoloLens2-Reinigung](https://docs.microsoft.com/hololens/hololens2-maintenance).
 
-### **Trimble XR10 mit HoloLens2**
+### **<a name="trimble-xr10-with-hololens-2"></a>Trimble XR10 mit HoloLens2**
 
-#### Informationen zu TrimbleXR10
+#### <a name="learn-about-trimble-xr10"></a>Informationen zu TrimbleXR10
 TrimbleXR10 mit HoloLens2 ist das erste Gerät, das mit dem Microsoft HoloLens-Anpassungsprogramm erstellt wurde und die neueste Technologie für räumliches Computing zu einer zertifizierten Lösung integriert, die mit einem Schutzhelm verwendet werden kann, um Arbeiter zu schützen.
 
 ![Trimble SKU](./images/trimble-ed.png)
 
 Weitere Informationen zum [TrimbleXR10](https://fieldtech.trimble.com/en/product/trimble-xr10-with-hololens-2).
 
-### **HoloLens2 Development Edition**
+### **<a name="hololens-2-development-edition"></a>HoloLens2 Development Edition**
 
-#### Informationen zur Development Edition
+#### <a name="learn-about-the-development-edition"></a>Informationen zur Development Edition
 
 > [!NOTE]
 > Die Development Edition darf nicht mit einer kommerziell verteilten Lösung bereitgestellt werden. Die Development Edition darf zur Unterstützung der Entwicklung und/oder des Testens von Anwendungen in einer kommerziellen Umgebung bereitgestellt werden.  
@@ -140,9 +140,9 @@ Die HoloLens2 Development Edition umfasst eine HoloLens2, ein Azure-Guthaben von
 
 ![HoloLens2 Development Edition](./images/hololens-2-dev-ed.png)
 
-#### Einlösen Ihres Guthabens
+#### <a name="redeem-your-credits"></a>Einlösen Ihres Guthabens
 
-##### Unity
+##### <a name="unity"></a>Unity
 Sie haben einen eindeutigen Code erhalten. Anweisungen zum Einlösen der Unity Pro-Testversion:
 1. Besuchen Sie [id.unity.com](http://id.unity.com/).
 1. Melden Sie sich mit Ihrer Unity-ID an, oder erstellen Sie eine.
@@ -151,7 +151,7 @@ Sie haben einen eindeutigen Code erhalten. Anweisungen zum Einlösen der Unity P
 
 Weitere Informationen zum [Aktivieren einer Unity-Lizenz](https://support.unity3d.com/hc/articles/211438683-How-do-I-activate-my-license-). Wenden Sie sich wegen Hilfe bei Bedarf an den [Unity-Support](https://support.unity3d.com/hc).  
 
-##### Pixyz
+##### <a name="pixyz"></a>Pixyz
 Sie haben einen eindeutigen Code erhalten. Anweisungen zum Einlösen der Testversion des Pixyz-Plug-Ins:
 1. Besuchen Sie [id.unity.com](http://id.unity.com/).
 1. Klicken Sie auf **Produktcode einlösen**.
@@ -159,14 +159,14 @@ Sie haben einen eindeutigen Code erhalten. Anweisungen zum Einlösen der Testver
 
 Weitere Informationen zum [Einlösen Ihrer Pixyz-Lizenz](https://www.pixyz-software.com/documentations/html/2020.1/review/TrialLicense.html). Wenden Sie sich wegen Hilfe bei Bedarf an den [Pixyz-Support](https://www.pixyz-software.com/support/).
 
-#### Azure
+#### <a name="azure"></a>Azure
 Hier sehen Sie einige gängige [Azure-Produkte für Mixed Reality](https://azure.microsoft.com/topic/mixed-reality/), für die Sie Ihre Azure-Gutschrift einlösen können.
 So lösen Sie Azure-Guthaben ein: Um Ihr Azure-Guthaben von 500USD einzulösen, lösen Sie Ihren Azure Pass-Angebotscode ein, und aktivieren Sie Ihr Abonnement. [Weitere Informationen.](hololens2-development-edition-faq.md#how-can-i-redeem-my-500-azure-credit)
 
 - [Erfahren Sie, wie Azure Spatial Anchors Ihnen beim Erstellen von Apps helfen können, die 3D-Inhalte zuordnen, teilen und dauerhaft speichern.](https://azure.microsoft.com/services/spatial-anchors/)
 - [Erfahren Sie, wie Azure Remote Rendering hochwertige, interaktive 3D-Inhalte rendern und in Echtzeit auf Ihre Geräte streamen kann.](https://azure.microsoft.com/services/remote-rendering/)
 
-#### Erste Schritte bei der Entwicklung
+#### <a name="get-started-developing"></a>Erste Schritte bei der Entwicklung
 
 Wählen Sie Ihre Engine aus, laden Sie Ihre Tools herunter, und entstauben Sie die Tastatur. Willkommen beim Mixed Reality-Ökosystem – es ist an der Zeit zu erstellen.
 
@@ -176,7 +176,7 @@ Wählen Sie Ihre Engine aus, laden Sie Ihre Tools herunter, und entstauben Sie d
 |     [Mit der Entwicklung für Mixed Reality beginnen](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity)    |     Wählen Sie Ihre Engine aus, laden Sie Ihre Tools herunter, fügen Sie Kernbausteine hinzu, und beginnen Sie noch heute mit dem Erstellen.                                  |
 |     [Erkunden von Azure Cloud Services](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     Erstellen Sie bestechende immersive Erfahrungen mit Azure Remote Rendering und Azure Spatial Anchors.                                 |
 
-#### Zusätzliche Ressourcen für die Developer Edition
+#### <a name="developer-edition-additional-resources"></a>Zusätzliche Ressourcen der Entwickler-Edition
 
 - [Stellen Sie sicher, dass Sie die Tools für die HoloLens-Entwicklung installieren.](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity)
 - [Informationen zum Entwickeln für HoloLens2 mit Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).
@@ -186,7 +186,7 @@ Wählen Sie Ihre Engine aus, laden Sie Ihre Tools herunter, und entstauben Sie d
 - [Informationen zum Entwickeln für HoloLens2 mit Unreal.](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
 - [Wenden Sie sich über unseren Slack-Kanal für HoloDevelopers an Ihre Mitentwickler](https://holodevelopersslack.azurewebsites.net/).
 
-## Bereitstellen von HoloLens-Geräten für Ihre Organisation
+## <a name="deploy-hololens-devices-for-your-organization"></a>Bereitstellen von HoloLens-Geräten für Ihre Organisation
 
 HoloLens 2-Geräte sind leistungsstarke Mixed Reality-Geräte, mit denen Sie Lösungen für Ihre Organisation bereitstellen können. Um Geräte effizient in Ihrer Organisation bereitzustellen und so die Vorteile der Azure Cloud nutzen zu können, empfehlen wir, die Infrastruktur Ihrer Organisation zu überprüfen.
 
@@ -197,7 +197,7 @@ Wir haben mehrere Bereitstellungshandbücher erstellt, die Ihnen helfen können.
 - [Bereitstellungshandbuch – Mit der Cloud verbundene HoloLens2 mit Remote Assist – Übersicht](hololens2-cloud-connected-overview.md)
 - [Gängige Szenarien – Offline sichere HoloLens2](hololens-common-scenarios-offline-secure.md)
 
-## Erkunden von Lösungen
+## <a name="explore-solutions"></a>Erkunden von Lösungen
 
 Erkunden Sie diese zusätzlichen Lösungen, die für Mixed Reality-HoloLens-Geräte entwickelt wurden.
 

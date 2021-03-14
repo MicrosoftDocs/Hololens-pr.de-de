@@ -12,18 +12,18 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: feedb0093b8766de75079a61c286c99817ab18f9
-ms.sourcegitcommit: 1f3ad5b099e72491f436d851738d2b6f3d4dff31
+ms.openlocfilehash: e48e596f46aaad1b2fc79abd0fe60bd2f44bab6d
+ms.sourcegitcommit: fdae5b561d56d3d4e62da4db15f07bc10249398a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "11400695"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "11408415"
 ---
 # <a name="hololens-2-hardware"></a>HoloLens 2-Hardware
 
 ![HoloLens 2 – Seitenansicht](images/hololens2-breakdown.png)
 
-Microsoft HoloLens 2 ist ein ungebundener holographischer Computer.  Er verfeinert die von HoloLens (1. Generation) begonnene holographische Computererfahrung und bietet ein komfortableres und umfassenderes Erlebnis, gepaart mit mehr Optionen für die Zusammenarbeit in Mixed Reality.
+Microsoft HoloLens 2 ist ein ungebundener holographischer Computer.  Er verfeinert die von HoloLens (1. Generation) begonnene holographische Computererfahrung und bietet ein komfortableres und umfassenderes Erlebnis, gepaart mit mehr Optionen für die Zusammenarbeit in Mixed Reality. Für die Verwendung von HoloLens 2 ist ein Benutzerkonto erforderlich.
 
 ## <a name="hololens-components"></a>HoloLens-Komponenten
 
@@ -165,9 +165,12 @@ Um den Prozentsatz der internen Akkuladedauer beizubehalten bzw. zu verbessern, 
 
 Microsoft HoloLens 2 verfügt über eine standardmäßige eingeschränkte [Garantie](https://support.microsoft.com/topic/warranties-extended-service-plans-and-terms-conditions-for-your-device-eedf7a23-84a7-1a47-480b-0e10503eedf5). 
 
-Der Kauf unterliegt den [Nutzungs- und Verkaufsbedingungen für Windows Store](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1). 
+
+Der Kauf unterliegt den [Nutzungs- und Verkaufsbedingungen für Microsoft Store](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1). Alle Verkäufe sind endgültig. Keine Rückerstattungen.
 
 Mit dem Kauf von HoloLens 2 stimmen Sie dem [Softwarelizenzvertrag](https://www.microsoft.com/Useterms/) zu.
+
+Nicht für die Verwendung durch Kinder unter 13 Jahren vorgesehen.
 
 ## <a name="package-dimensions"></a>Paketmaße
 
