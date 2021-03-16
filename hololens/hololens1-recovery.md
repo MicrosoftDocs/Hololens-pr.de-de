@@ -12,18 +12,18 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 ms.topic: article
-ms.localizationpriority: high
+ms.localizationpriority: medium
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: f0aa400be56d09a843a1b7c9bae78346551ad8af
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
-ms.translationtype: HT
+ms.openlocfilehash: f50a885f6cc82256d146d7f4914aca934e81c0c0
+ms.sourcegitcommit: 01c0b0a789e156a9d29aaf6f61e36dfd09b8c01a
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283916"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439041"
 ---
-# HoloLens (1. Generation) neustarten, zurücksetzen oder wiederherstellen
+# <a name="restart-reset-or-recover-hololens-1st-gen"></a>HoloLens (1. Generation) neustarten, zurücksetzen oder wiederherstellen
 
 Wenn Sie Probleme mit Ihrem HoloLens haben, können Sie versuchen, das Gerät neu zu starten, zurückzusetzen oder sogar neu zu flashen, indem Sie die Gerätewiederherstellung verwenden. Dieser Artikel führt Sie durch die empfohlenen Schritte für die Wiederherstellung.
 
@@ -32,9 +32,9 @@ Wenn Sie ein HoloLens 2 wiederherstellen möchten, finden Sie Informationen dazu
 > [!NOTE]
 > Dieser Artikel befasst sich mit dem HoloLens-Gerät und der entsprechenden Software. Wenn Ihre Hologramme nicht richtig aussehen, finden Sie Informationen zu Faktoren, die die Qualität des Hologramms verbessern, unter **[Umgebungsaspekte für HoloLens](hololens-environment-considerations.md)**.
 
-## Neu starten
+## <a name="restart"></a>Neu starten
 
-### Durchführen eines sicheren Neustarts mithilfe von Cortana
+### <a name="do-a-safe-restart-by-using-cortana"></a>Durchführen eines sicheren Neustarts mithilfe von Cortana
 
 Die sicherste Methode zum Neustarten des HoloLens ist die Verwendung von Cortana, was im Allgemeinen das erste ist, was Sie versuchen können, wenn ein Problem mit HoloLens auftritt.
 
@@ -48,7 +48,7 @@ Die sicherste Methode zum Neustarten des HoloLens ist die Verwendung von Cortana
 2. Sagen Sie "Hey Cortana, erneut starten" oder "Hey Cortana, Neustart".
 3. Cortana antwortet und fordert Sie zur Bestätigung auf. Warten Sie, bis nach der Frage ein Sound wiedergegeben wird, und sagen Sie dann "Ja". Das Gerät wird neu gestartet.
 
-### Verwenden des Netzschalters für einen sicheren Neustart
+### <a name="use-the-power-button-to-do-a-safe-restart"></a>Verwenden des Netzschalters für einen sicheren Neustart
 
 Wenn Sie Ihr Gerät immer noch nicht neu starten können, versuchen Sie, es mit dem **Netzschalter** neu zu starten:
 
@@ -59,14 +59,14 @@ Wenn Sie Ihr Gerät immer noch nicht neu starten können, versuchen Sie, es mit 
 1. Warten Sie 1 Minute, bis das Herunterfahren abgeschlossen ist. Beachten Sie, dass der Vorgang des Herunterfahrens möglicherweise weiterhin ausgeführt wird, auch wenn die Anzeigen deaktiviert sind.
 2. Schalten Sie das Gerät erneut ein, indem Sie den **Netzschalter** eine Sekunde lang gedrückt halten.
 
-### Durchführen eines sicheren Neustarts mithilfe des Windows-Geräteportals
+### <a name="do-a-safe-restart-by-using-windows-device-portal"></a>Durchführen eines sicheren Neustarts mithilfe des Windows-Geräteportals
 
 > [!NOTE]
 > Für diesen Vorgang muss HoloLens als Entwicklergerät konfiguriert sein. Weitere Informationen finden Sie im [Windows-Geräteportal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal).
 
 Wenn das vorstehende Verfahren nicht funktioniert, können Sie versuchen, das Gerät mithilfe des [Windows-Geräteportals](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal) neu zu starten. In der oberen rechten Ecke gibt es eine Option, um das Gerät neu zu starten oder herunterzufahren.
 
-### Durchführen eines unsicheren erzwungenen Neustarts
+### <a name="do-an-unsafe-forced-restart"></a>Durchführen eines unsicheren erzwungenen Neustarts
 
 Wenn die vorstehenden Methoden Ihr HoloLens nicht neu starten, erzwingen Sie einen Neustart. Diese Methode entspricht dem Entfernen und erneuten Einlegen der Batterie. Das ist gefährlich, da Ihr Gerät möglicherweise Schaden nimmt. In diesem Fall müssen Sie bei Ihrem HoloLens einen Flash ausführen.  
 
@@ -80,7 +80,7 @@ Wenn die vorstehenden Methoden Ihr HoloLens nicht neu starten, erzwingen Sie ein
 1. Halten Sie den **Netzschalter** 1 Sekunde lang gedrückt.
 1. Wenn Sie weiterhin Probleme haben, drücken Sie den **Netzschalter** 4 Sekunden lang, bis alle Akkuanzeigen aus sind und der Bildschirm keine Hologramme mehr anzeigt. Warten Sie 1 Minute, und drücken Sie dann erneut den **Netzschalter**, um das Gerät einzuschalten.
 
-## Zurücksetzen von Geräten auf Werkseinstellungen
+## <a name="reset-to-factory-settings"></a>Zurücksetzen von Geräten auf Werkseinstellungen
 
 > [!NOTE]
 > Der Akkustand muss mindestens bei 40 Prozent liegen, damit der Zurücksetzungsvorgang erfolgreich ausgeführt werden kann. 
@@ -95,7 +95,7 @@ Wenn Ihr HoloLens weiterhin ein Problem hat, versuchen Sie, es auf den Werkszust
 1. Bestätigen Sie das Zurücksetzen. Das Gerät wird neu gestartet, und es wird eine Reihe von rotierenden Zahnrädern mit einer Statusanzeige angezeigt.
 1. Warten Sie etwa 30 Minuten, bis dieser Vorgang durchgeführt wird. Das Zurücksetzen wird durchgeführt, und das Gerät wird in die sofort verwendbare Umgebung neu gestartet.
 
-## Neuinstallation des Betriebssystems
+## <a name="reinstall-the-operating-system"></a>Neuinstallation des Betriebssystems
 
 Wenn nach dem Neustart und Zurücksetzen des Geräts weiterhin ein Problem auftritt, können Sie auf Ihrem Computer ein Wiederherstellungstool verwenden, um das Betriebssystem und die Firmware des HoloLens neu zu installieren.  
 
@@ -107,7 +107,7 @@ Der Wiederherstellungsvorgang kann einige Zeit in Anspruch nehmen. Wenn Sie dami
 
 Wenn Sie das Tool verwenden möchten, benötigen Sie einen Computer mit Windows 10 oder höher mit mindestens 4 GB freien Speicherplatz. Sie können dieses Tool nicht auf einem virtuellen Computer ausführen.
 
-### Wiederherstellung Ihres HoloLens
+### <a name="recover-your-hololens"></a>Wiederherstellung Ihres HoloLens
 
 1. [Windows-Geräte Wiederherstellung Tool](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq) auf Ihrem Computer herunterladen und installieren.
 1. Schließen Sie Ihr HoloLens (1. Generation) an Ihren Computer an, indem Sie das Micro-USB-Kabel verwenden, das im Lieferumfang Ihres HoloLens enthalten war.
@@ -115,7 +115,7 @@ Wenn Sie das Tool verwenden möchten, benötigen Sie einen Computer mit Windows 
 
 Wenn das HoloLens (1. Generation) nicht automatisch erkannt wird, wählen Sie **Mein Gerät wurde nicht erkannt** aus. Folgen Sie dann den Anweisungen, um das Gerät in den Wiederherstellungsmodus zu versetzen.
 
-### Manueller Flashmodus
+### <a name="manual-flashing-mode"></a>Manueller Flashmodus
 
 Wenn Ihr Gerät nicht erkannt wird, führen Sie die folgenden Schritte aus, um es in den Flashmodus zu versetzen:
 

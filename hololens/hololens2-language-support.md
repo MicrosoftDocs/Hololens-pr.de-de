@@ -17,18 +17,18 @@ ms.reviewer: jarrettr
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 003f757715ca71d459a55e6375260f3bffec7860
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: dc3de0c95f17c821816bad278de5717bc24a2c29
+ms.sourcegitcommit: 01c0b0a789e156a9d29aaf6f61e36dfd09b8c01a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283826"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439001"
 ---
-# Unterstützte Sprachen für HoloLens 2
+# <a name="supported-languages-for-hololens-2"></a>Unterstützte Sprachen für HoloLens 2
 
-HoloLens 2 ist in die folgenden Sprachen lokalisiert. Zu den Lokalisierungsfeatures gehören Sprachbefehle und Diktat, Tastaturlayouts und die OCR-Erkennung in Apps.
+HoloLens 2 ist in die folgenden Sprachen lokalisiert. Die Lokalisierungsfeatures umfassen Sprachbefehle und Diktat, Tastaturlayouts und die OCR-Erkennung in Apps.
 
-- Chinesisch vereinfacht (China)
+- Chinesisch (vereinfacht) (China)
 - Englisch (Australien)
 - Englisch (Kanada)
 - Englisch (Großbritannien)
@@ -46,37 +46,37 @@ HoloLens 2 unterstützt auch die folgenden Sprachen. Diese Unterstützung umfass
 - Niederländisch (Niederlande)
 - Koreanisch (Korea)
 
-Einige Features von HoloLens 2 verwenden die Windows-Anzeigesprache. Die Anzeigesprache von Windows wirkt sich auf die folgenden Einstellungen für Windows und Apps aus, die die Lokalisierung unterstützen:
+Einige Features von HoloLens 2 verwenden die Windows-Anzeigesprache. Die Windows-Anzeigesprache wirkt sich auf die folgenden Einstellungen für Windows und Apps aus, die die Lokalisierung unterstützen:
 
 - Die Textsprache der Benutzeroberfläche.
 - Die Sprache.
 - Das Standardlayout der Bildschirmtastatur.
 
-## Ändern der Sprache oder des Tastaturlayouts
+## <a name="change-the-language-or-keyboard-layout"></a>Ändern des Sprach- oder Tastaturlayouts
 
-Der Einrichtungsprozess konfiguriert Ihre HoloLens für eine bestimmte Region und Sprache. Sie können diese Konfiguration **** ändern, indem Sie den & unter "Einstellungen" **verwenden.**
+Der Einrichtungsprozess konfiguriert Ihre HoloLens für eine bestimmte Region und Sprache. Sie können diese Konfiguration ändern, indem Sie den **Abschnitt Zeit & unter** Einstellungen **verwenden.**
 
 > [!NOTE]  
-> Ihre Sprache und Diktiersprache hängt von der Anzeigesprache von Windows ab (und ist mit dieser identisch).
+> Ihre Sprache und Diktiersprache hängt von der Windows-Anzeigesprache ab (und ist dieselbe).
 
-### So ändern Sie die Anzeigesprache von Windows
+### <a name="to-change-the-windows-display-language"></a>So ändern Sie die Windows-Anzeigesprache
 
-1. Öffnen Sie **das Startmenü,** und wählen Sie **"Einstellungszeit**  >  **und**  >  **Sprache" aus.**
-2. Wählen **Sie die Anzeigesprache von Windows**und dann eine Sprache aus.  
+1. Öffnen Sie **das Startmenü,** und wählen Sie **dann Einstellungen**Zeit  >  **und Sprache**  >  **aus.**
+2. Wählen **Sie Windows-Anzeigesprache**aus, und wählen Sie dann eine Sprache aus.  
 
 Wenn die unterstützte Sprache, nach der Sie suchen, nicht im Menü angezeigt wird, führen Sie die folgenden Schritte aus:  
 
-1. Wählen **Sie unter "Bevorzugte Sprachen"** die Option **"Sprache hinzufügen" aus.**
+1. Wählen **Sie unter Bevorzugte Sprachen**die Option Sprache hinzufügen **aus.**
 2. Suchen Sie die Sprache, und fügen Sie sie hinzu.
-3. Wählen Sie **erneut das Menü "Windows-Anzeigesprache"** aus, und wählen Sie dann die Sprache aus, die Sie im vorherigen Schritt hinzugefügt haben.
+3. Wählen Sie **das Menü Windows-Anzeigesprache** erneut aus, und wählen Sie dann die Sprache aus, die Sie im vorherigen Schritt hinzugefügt haben.
 
-### So ändern Sie das Tastaturlayout
+### <a name="to-change-the-keyboard-layout"></a>So ändern Sie das Tastaturlayout
 
-Um ein Tastaturlayout hinzuzufügen oder zu entfernen, öffnen **** Sie das **Startmenü,** und wählen Sie dann die Einstellungszeit  >  **& Tastatur**  >  **aus.**
+Um ein Tastaturlayout hinzuzufügen oder zu entfernen, öffnen **** Sie das **Menü Start,** und wählen Sie dann Einstellungen  >  **Zeit & Sprachtastatur**  >  **aus.**
 
-Wenn Ihre HoloLens über mehr als ein Tastaturlayout verfügt, verwenden Sie die **Layouttaste,** um zwischen diesen zu wechseln. Die **Layouttaste** befindet sich in der unteren rechten Ecke der Bildschirmtastatur.
+Wenn Ihr HoloLens über mehr als ein Tastaturlayout verfügt, wechseln Sie mit der **Layouttaste** zwischen ihnen. Die **Layouttaste** befindet sich in der unteren rechten Ecke der Bildschirmtastatur.
 
 > [!NOTE]  
-> Die Bildschirmtastatur kann den Eingabemethode-Editor (Input Method Editor, IME) verwenden, um Zeichen in Sprachen wie Chinesisch einzugeben. HoloLens unterstützt jedoch keine externen Bluetooth, die IME verwenden.
+> Die Bildschirmtastatur kann den Eingabemethode-Editor (Input Method Editor, IME) verwenden, um Zeichen in Sprachen wie Japanisch einzugeben. HoloLens unterstützt jedoch keine externen Bluetooth, die IME verwenden.
 >  
-> Während Sie IME zusammen mit der Bildschirmtastatur verwenden, können Sie weiterhin eine Bluetooth verwenden, um Englisch einzugeben. Um zwischen Tastaturen zu wechseln, drücken Sie die Tildezeichenschaltfläche ( **~** ).
+> Während Sie IME zusammen mit der Bildschirmtastatur verwenden, können Sie weiterhin eine Bluetooth verwenden, um in Englisch einzugeben. Um zwischen Tastaturen zu wechseln, drücken Sie die Tildezeichenschaltfläche ( **~** ).
