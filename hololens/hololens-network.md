@@ -10,51 +10,55 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: 6d11ae0907aa82df71d7c86bb37996dcce71d845
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: f1968afe7d450425776bac24532f2d84c4dc3c62
+ms.sourcegitcommit: 9f79ed9f76b930b8ceb97844d5f9eace9316b8a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283976"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "11442591"
 ---
-# HoloLens mit einem Netzwerk verbinden
+# <a name="connect-hololens-to-a-network"></a>HoloLens mit einem Netzwerk verbinden
 
-Für die Durchführung der meisten Aufgaben auf Ihrer HoloLens müssen Sie mit einem Netzwerk verbunden sein. Dieses Handbuch hilft Ihnen bei Folgendem:
+Für die Durchführung der meisten Aufgaben auf Ihrer HoloLens müssen Sie mit einem Netzwerk verbunden sein. HoloLens enthält ein 802.11ac-fähiges, 2x2 WLAN-Funk. Das Herstellen einer Verbindung mit einem Netzwerk ähnelt dem Verbinden eines Windows 10-Desktop- oder mobilen Geräts mit einem WLAN-Netzwerk. Dieses Handbuch hilft Ihnen bei Folgendem:
 
 - Herstellen einer Verbindung mit einem Netzwerk über WLAN oder (nur für HoloLens 2) Ethernet über USB-C
 - Deaktivieren und erneutes Aktivieren von WLAN
 
 Weitere Informationen finden Sie unter [Verwenden von HoloLens Offline](hololens-offline.md).
 
-## Erstmaliges Herstellen einer Verbindung
+## <a name="connecting-for-the-first-time"></a>Erstmaliges Herstellen einer Verbindung
 
 Bei der ersten Verwendung von HoloLens werden Sie beim Herstellen einer Verbindung mit einem WLAN-Netzwerk angeleitet. Wenn beim Einrichten Probleme beim Herstellen einer Verbindung zu WLAN auftreten, stellen Sie sicher, dass es sich um ein offenes, kennwortgeschütztes Netzwerk oder ein Captive-Portalnetzwerk handelt. Stellen Sie sicher, dass für das Netzwerk kein Zertifikat zum Herstellen einer Verbindung benötigt wird. Nach dem Einrichten können Sie eine Verbindung zu anderen Arten von WLAN-Netzwerken herstellen.
 
-Auf HoloLens2-Geräten kann ein Benutzer auch über einen [USB-C-zu-Ethernet-Adapter](hololens-connect-devices.md#hololens-2-connect-usb-c-devices) eine direkte Verbindung zu WLAN herstellen, um die Einrichtung des Geräts zu unterstützen. Sobald das Gerät eingerichtet wurde, kann ein Benutzer den Adapter entweder weiter verwenden oder das Gerät vom Adapter trennen und [nach dem Einrichten eine Verbindung zu WLAN herstellen](hololens-network.md#connecting-to-wi-fi-after-setup). 
+Auf HoloLens 2-Geräten kann ein Benutzer auch über einen [USB-C-zu-Ethernet-Adapter](hololens-connect-devices.md#hololens-2-connect-usb-c-devices) eine direkte Verbindung zu WLAN herstellen, um die Einrichtung des Geräts zu unterstützen. Sobald das Gerät eingerichtet wurde, kann ein Benutzer den Adapter entweder weiter verwenden oder das Gerät vom Adapter trennen und [nach dem Einrichten eine Verbindung zum WLAN herstellen](hololens-network.md#connecting-to-wi-fi-after-setup). 
 
-## Herstellen einer Verbindung zu WLAN nach dem Einrichten
+## <a name="connecting-to-wi-fi-after-setup"></a>Herstellen einer Verbindung zum WLAN nach dem Einrichten
 
 1. Führen Sie die **Startgeste** aus, und wählen Sie **Einstellungen** aus. Die Einstellungs-App wird automatisch vor Ihnen platziert.
 1. Wählen Sie **Netzwerk und Internet** > **WLAN** aus. Stellen Sie sicher, dass WLAN aktiviert ist. Wenn Ihr Netzwerk nicht angezeigt wird, scrollen Sie die Liste nach unten.
 1. Wählen Sie ein Netzwerk und dann **Verbinden** aus.
 1. Wenn Sie zur Eingabe eines Netzwerkkennworts aufgefordert werden, geben Sie es ein, und wählen Sie dann **Weiter** aus.
 
-HoloLens verfügt über einen 802.11ac-fähiges 2x2-WLAN-Funkanschluss. Das Verbinden von HoloLens mit einem WLAN-Netzwerk ähnelt dem Verbinden eines Windows 10-Desktops oder mobilen Geräts mit einem WLAN-Netzwerk.
+![WLAN-Einstellungen für HoloLens](./images/hololens-2-wifi-settings.jpg)
 
-![WLAN-Einstellungen für HoloLens](./images/wifi-hololens-600px.jpg)
-
-Sie können auch bestätigen, dass Sie mit einem WLAN-Netzwerk verbunden sind, indem Sie den WLAN-Status im **Startmenü** überprüfen:
+Um zu bestätigen, dass Sie mit einem WLAN verbunden sind, überprüfen Sie den WLAN-Status im **Startmenü** :
 
 1. Öffnen Sie das **Startmenü**.
 1. Suchen Sie oben links im **Startmenü** nach dem WLAN-Status. Der Status von WLAN und die SSID des verbundenen Netzwerks werden angezeigt.
 
-## Behandeln von Problemen mit Ihrer WLAN-Verbindung
+> [!TIP]
+> Wenn kein WLAN verfügbar ist, können Sie sich auch mit [Mobilen- und 5G-Netzwerken verbinden](https://docs.microsoft.com/hololens/hololens-cellular).
+
+> [!IMPORTANT]
+> Standardmäßig können Benutzer das WLAN-Roamingverhalten der HoloLens 2 nicht optimieren – **die einzige Möglichkeit zum Aktualisieren der WLAN-Liste besteht im Ein- und Ausschalten des WLANs**. Dadurch werden viele Probleme verhindert, z. B. wenn ein Gerät bei einem Zugriffspunkt „hängenbleibt“, sobald dieser außer Reichweite ist.
+
+## <a name="troubleshooting-your-connection-to-wi-fi"></a>Behandeln von Problemen mit Ihrer WLAN-Verbindung
 
 Wenn Sie Probleme beim Herstellen einer WLAN-Verbindung haben, lesen Sie [Ich kann keine WLAN-Verbindung herstellen](./hololens-faq.md#i-cant-connect-to-wi-fi).
 
 Melden Sie sich mit dem Gerät bei einem Unternehmens- oder Organisationskonto an, kann auch die Richtlinie für die mobile Geräteverwaltung (Mobile Device Management, MDM) gelten, wenn die Richtlinie von Ihrem IT-Administrator konfiguriert wurde.
 
-## HoloLens mit Enterprise WLAN-Netzwerk verbinden
+## <a name="connect-hololens-to-enterprise-wi-fi-network"></a>HoloLens mit Enterprise WLAN-Netzwerk verbinden
 
 Enterprise WLAN-Profile verwenden das Extensible Authentication Protocol (EAP) zur Authentifizierung von WLAN-Verbindungen. Das HoloLens Enterprise WLAN-Profil kann über MDM oder ein mit [Windows Configuration Designer](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages) erstelltes Bereitstellungspaket konfiguriert werden.
 
@@ -129,7 +133,7 @@ Weitere Ressourcen:
 - WLANv1Profil-Schema: [[MS-GPWL]: Schema des WLAN-Profils v1 | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/34054c93-cfcd-44df-89d8-5f2ba7532b67)
 - EAP-TLS-Schema: [[MS-GPWL]: Microsoft EAP TLS-Schema | Microsoft Docs ](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/9590925c-cba2-4ac5-b9a1-1e5292bb72cb)
 
-### EAP-Problembehandlung
+### <a name="eap-troubleshooting"></a>EAP-Problembehandlung
 
 1. Überprüfen Sie noch einmal, ob das WLAN-Profil die richtigen Einstellungen hat:
    1. EAP-Typ ist ordnungsgemäß konfiguriert, allgemeine EAP-Typen: EAP-TLS (13), EAP-TTLS (21) und PEAP (25).
@@ -142,10 +146,10 @@ Weitere Ressourcen:
 1. Wenn das Enterprise-Profil über ein WLAN-Bereitstellungspaket bereitgestellt wird, wenden Sie das Bereitstellungspaket auf einem Windows 10-PC an. Wenn es auch auf einem Windows 10 PC fehlschlägt, befolgen Sie die [Anleitung zur Problembehandlung bei der Windows-Client 802.1X-Authentifizierung](https://docs.microsoft.com/windows/client-management/advanced-troubleshooting-802-authentication).
 1. Senden Sie uns Feedback über den [Feedback Hub](https://docs.microsoft.com/hololens/hololens-feedback).
 
-### Weitere Ressourcen:
+### <a name="additional-resources"></a>Weitere Ressourcen:
 - [WLAN-Einstellungen von einem Windows-Gerät exportieren](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1#export-wi-fi-settings-from-a-windows-device)
 
-## VPN
+## <a name="vpn"></a>VPN
 Eine VPN-Verbindung kann Ihnen dabei helfen, eine sicherere Verbindung herzustellen sowie auf das Netzwerk Ihres Unternehmens und das Internet zuzugreifen. HoloLens2 unterstützt den integrierten VPN-Client und das VPN-Plug-In Universelle Windows-Plattform (UWP). 
 
 Unterstützte integrierte VPN-Protokolle:
@@ -159,7 +163,7 @@ Wenn für die Authentifizierung des integrierten VPN-Clients ein Zertifikat verw
 
 Weitere Informationen zum [Konfigurieren von VPN](https://support.microsoft.com/help/20510/windows-10-connect-to-vpn) finden Sie in [diesen Handbüchern](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-guide).  
 
-### VPN über die Benutzeroberfläche
+### <a name="vpn-via-ui"></a>VPN über die Benutzeroberfläche
 
 VPN ist standardmäßig nicht aktiviert, kann aber durch Öffnen der App **Einstellungen** und Navigieren zu **„Netzwerk und Internet“ –> „VPN“** manuell aktiviert werden.
 1. Wählen Sie einen VPN-Anbieter aus.
@@ -172,7 +176,7 @@ VPN ist standardmäßig nicht aktiviert, kann aber durch Öffnen der App **Einst
 
 ![HoloLens VPN-Einstellungen](./images/vpn-settings-ui.jpg)
 
-### VPN über Bereitstellungspaket einstellen
+### <a name="vpn-set-via-provisioning-package"></a>VPN über Bereitstellungspaket einstellen
 
 > [!TIP] 
 > In der Windows Holographic Version 20H2 haben wir ein Problem mit der Proxy-Konfiguration für die VPN-Verbindung behoben. Wenn Sie diesen Datenstrom verwenden möchten, aktualisieren Sie Geräte auf diesen Build.
@@ -191,7 +195,7 @@ VPN ist standardmäßig nicht aktiviert, kann aber durch Öffnen der App **Einst
 1. Um auf HoloLens das VPN.ppkg anzuwenden, öffnen Sie im Startmenü **Einstellungen** -> ** Konto** -> **Zugriff Arbeit oder Schule** -> **Bereitstellungspaket hinzufügen oder entfernen** -> Wählen Sie Ihr VPN-Paket aus.
 
 
-### VPN über Intune einrichten
+### <a name="setting-up-vpn-via-intune"></a>VPN über Intune einrichten
 Folgen Sie zunächst der Intune-Anleitung. Beachten Sie bei der Durchführung dieser Schritte die eingebauten VPN-Protokolle, die HoloLens-Geräte unterstützen. 
 
 [VPN-Profile zur Verbindung mit VPN-Servern in Intune erstellen](https://docs.microsoft.com/mem/intune/configuration/vpn-settings-configure).
@@ -200,7 +204,7 @@ Folgen Sie zunächst der Intune-Anleitung. Beachten Sie bei der Durchführung di
 
 Wenn Sie fertig sind, denken Sie daran, [das Profil zuzuweisen](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign).
 
-### VPN über die MDM-Lösungen von Drittanbietern
+### <a name="vpn-via-3rd-party-mdm-solutions"></a>VPN über die MDM-Lösungen von Drittanbietern
 Beispiel für eine VPN-Verbindung von Drittanbietern:
 ```xml
 <!-- Configure VPN Server Name or Address (PhoneNumber=) [Comma Separated]-->
@@ -290,9 +294,9 @@ Natives IKEv2-VPN-Beispiel:
         </Item>
       </Add>
 ```
-## WLAN auf HoloLens (1. Generation) deaktivieren
+## <a name="disabling-wi-fi-on-hololens-1st-gen"></a>WLAN auf HoloLens (1. Generation) deaktivieren
 
-### Verwenden der Einstellungs-App auf HoloLens
+### <a name="using-the-settings-app-on-hololens"></a>Verwenden der Einstellungs-App auf HoloLens
 
 1. Öffnen Sie das **Startmenü**.
 1. Wählen Sie die **Einstellungs**-App im **Startmenü** oder in der Liste **Alle Apps** auf der rechten Seite des **Startmenüs** aus. Die **Einstellungs**-App wird automatisch vor Ihnen platziert.
@@ -304,9 +308,9 @@ Natives IKEv2-VPN-Beispiel:
 
 1. Schieben Sie den Schieberegler in die Stellung **On** (Ein), um das WLAN zu aktivieren und die WLAN-Funktion auf Microsoft HoloLens wiederherzustellen. Der ausgewählte WLAN-Funkstatus (**Ein** oder **Aus**) bleibt bei einem Neustart erhalten.
 
-## Identifizieren der IP-Adresse Ihrer HoloLens im WLAN-Netzwerk
+## <a name="identifying-the-ip-address-of-your-hololens-on-the-wi-fi-network"></a>Identifizieren der IP-Adresse Ihrer HoloLens im WLAN-Netzwerk
 
-### Mithilfe der Einstellungs-App
+### <a name="by-using-the-settings-app"></a>Mithilfe der Einstellungs-App
 
 1. Öffnen Sie das **Startmenü**.
 1. Wählen Sie die **Einstellungs**-App im **Startmenü** oder in der Liste **Alle Apps** auf der rechten Seite des **Startmenüs** aus. Die **Einstellungs**-App wird automatisch vor Ihnen platziert.
@@ -317,11 +321,11 @@ Natives IKEv2-VPN-Beispiel:
 
    Die IP-Adresse wird neben **IPv4-Adresse** angezeigt.
 
-### Mithilfe von Sprachbefehlen
+### <a name="by-using-voice-commands"></a>Mithilfe von Sprachbefehlen
 
 Je nach dem Build Ihres Geräts können Sie entweder mithilfe von integrierten Sprachbefehlen oder Cortana Ihre IP-Adresse anzeigen. Sprechen Sie bei Builds nach [19041.1103](hololens-release-notes.md#windows-holographic-version-2004) „Wie lautet meine IP-Adresse?“ Dann wird sie angezeigt. Sagen Sie bei früheren Builds oder HoloLens (1.Generation)„Hey Cortana, wie lautet meine IP-Adresse?”. und Cortana wird Ihre IP-Adresse anzeigen und vorlesen.
 
-### Mithilfe des Windows-Geräteportals
+### <a name="by-using-windows-device-portal"></a>Mithilfe des Windows-Geräteportals
 
 1. Öffnen Sie in einem Webbrowser auf Ihrem PC das [Geräteportal](/windows/mixed-reality/using-the-windows-device-portal.md#networking).
 1. Navigieren Sie zum Abschnitt **Netzwerk**.  

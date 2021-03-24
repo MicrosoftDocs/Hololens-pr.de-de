@@ -10,26 +10,26 @@ ms.topic: article
 audience: ITPro
 ms.localizationpriority: high
 keywords: Holografischer Rahmen, Sichtfeld, fov, Kalibrierung, Räume, Umgebung, Hilfe & Anleitung, HoloLens, Mixed Reality, Mixed Reality Headsets
-ms.openlocfilehash: ae5c039387d247d1a2c795bc65d7ea56867b3843
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: 5297149114b6e06d68dcbff533edda8688b064a5
+ms.sourcegitcommit: 9f79ed9f76b930b8ceb97844d5f9eace9316b8a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283136"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "11442607"
 ---
-# Umgebungsaspekte für HoloLens
+# <a name="hololens-environment-considerations"></a>Umgebungsaspekte für HoloLens
 
 HoloLens mischt Holografie mit der „realen“ Welt und bringt Hologramme in Ihre unmittelbare Umgebung. Das Fenster einer holografischen Anwendung „hängt“ an der Wand, eine holografische Ballerina dreht sich auf der Tischplatte, oder Hasenohren befinden sich auf dem Kopf Ihres ahnungslosen Freundes. Wenn Sie ein immersives Spiel oder eine App verwenden, breitet sich die holografische Welt aus, um Ihre Umgebung zu füllen, aber Sie können den Raum immer noch sehen und sich darin bewegen.
 
 Die von Ihnen platzierten Hologramme bleiben an der Stelle, an der Sie sie platziert haben, auch wenn Sie Ihr Gerät ausschalten.
 
-## Einrichten einer Umgebung
+## <a name="setting-up-an-environment"></a>Einrichten einer Umgebung
 
 HoloLens-Geräte wissen, wie sie stabile und genaue Hologramme platzieren, indem sie Benutzer in einem Raum *verfolgen*. Ohne ordnungsgemäße Nachverfolgung versteht das Gerät die Umgebung oder den Benutzer nicht. Hologramme können an den falschen Stellen erscheinen, nicht immer an der gleichen Stelle erscheinen oder überhaupt nicht erscheinen. Die zum Verfolgen der Benutzer verwendeten Daten werden in der *räumlichen Zuordnung* dargestellt.  
 
 Die Leistung bei der Verfolgung ist stark von der Umgebung abhängig, in der sich der Benutzer befindet, und die Optimierung einer Umgebung für eine zuverlässige, konsistente Verfolgung ist eher eine Kunst als eine Wissenschaft. Es gibt viele verschiedene Umgebungsfaktoren, die die Verfolgung ermöglichen. Als Entwickler von Mixed Reality gibt es jedoch mehrere Faktoren, die Sie berücksichtigen können, um einen Raum für eine bessere Verfolgung zu optimieren.
 
-### Beleuchtung
+### <a name="lighting"></a>Beleuchtung
 
 Windows Mixed Reality nutzt sichtbares Licht, um die Position des Benutzers zu verfolgen. Wenn eine Umgebung zu hell ist, könnte eine Sättigung der Kameras auftreten, und es wird nichts gesehen. Wenn die Umgebung zu dunkel ist, können die Kameras nicht genügend Informationen erfassen, und es wird nichts gesehen. Die Beleuchtung sollte gleichmäßig und ausreichend hell sein, so dass ein Mensch ohne Anstrengung sehen kann, aber nicht so hell, dass das Licht beim Betrachten schmerzhaft ist.  
 
@@ -39,7 +39,7 @@ Auch jegliche Außenbeleuchtung kann auch zu Instabilitäten bei der Verfolgung 
 
 Wenn Sie einen Beleuchtungsmesser haben, sind stabile 500 bis 1.000 Lux ein guter Ausgangspunkt.  
 
-#### Arten von Beleuchtung
+#### <a name="types-of-lighting"></a>Arten von Beleuchtung
 
 Auch verschiedene Arten von Beleuchtung in einem Raum können die Verfolgung beeinflussen. Glühbirnen pulsieren mit dem durch sie fließenden Wechselstrom – wenn die Wechselstromfrequenz 50 Hz beträgt, dann pulsiert das Licht mit 50 Hz. Für einen Menschen wird dieses Pulsieren nicht wahrgenommen. Die 30-FPS-Kamera der HoloLens sieht diese Änderungen jedoch – einige Frames werden gut beleuchtet sein, einige schlecht beleuchtet, und einige werden überbelichtet sein, da die Kamera versucht, die Lichtimpulse zu kompensieren.  
 
@@ -47,7 +47,7 @@ In den USA ist die Stromfrequenz standardmäßig 60 Hz, so dass die Impulse der 
 
 Es gibt einige Dinge, die Sie zum Beheben von Flackern ausprobieren können. Temperatur, Alter der Glühbirne und Aufwärmzyklen sind häufige Ursachen für fluoreszierendes Flackern. Daher kann es unter Umständen helfen, die Glühbirnen auszutauschen. Die Glühbirnen festzuschrauben und sicherzustellen, dass die Stromentnahme konstant sind, kann ebenfalls hilfreich sein.  
 
-### Objekte in einem Raum
+### <a name="items-in-a-space"></a>Objekte in einem Raum
 
 HoloLens verwendet einzigartige Umgebungsmarker, die auch als *Features* bezeichnet werden, um sich in einem Raum zu lokalisieren.  
 
@@ -57,13 +57,13 @@ Sie sollten im gleichen Raum außerdem eindeutige Features verwenden. Wenn z.B. 
 
 Sie sollten sich einfach folgende Frage stellen: Wenn Sie nur einen kleinen Teil einer Szenerie sehen würden, könnten Sie sich im Raum eindeutig lokalisieren? Ist dies nicht der Fall, wird das Gerät wahrscheinlich auch Probleme mit der Verfolgung haben.
 
-#### Wurmlöcher
+#### <a name="wormholes"></a>Wurmlöcher
 
 Wenn Sie zwei Bereiche haben, die gleich aussehen, denkt der Tracker womöglich, dass sie identisch sind. Und dies führt dazu, dass das Gerät fälschlicherweise davon ausgeht, es wäre an einem anderen Ort. Wir nennen diese Arten von sich wiederholenden Bereichen *Wurmlöcher*.  
 
 Um Wurmlöcher zu vermeiden, versuchen Sie, identische Bereiche im gleichen Raum zu vermeiden. Zu identischen Bereichen können Werkstationen, Fenster in einem Gebäude, Server-Racks oder Arbeitsstationen gehören. Das Beschriften von Bereichen oder das Hinzufügen von eindeutigen Merkmalen zu jedem ähnlich aussehenden Bereich kann helfen, Wurmlöcher zu entschärfen.
 
-### Bewegung in einem Raum
+### <a name="movement-in-a-space"></a>Bewegung in einem Raum
 
 Wenn sich Ihre Umgebung ständig verschiebt und verändert, verfügt das Gerät über keine stabilen Features, anhand derer es sich lokalisieren könnte.  
 
@@ -71,29 +71,29 @@ Je mehr bewegliche Objekte sich in einem Raum befinden, einschließlich Personen
 
 HoloLens kann sich zwar schnell an diese Änderungen anpassen, allerdings nur, wenn dieser Bereich für das Gerät deutlich sichtbar ist. Bereiche, die nicht so häufig gesehen werden, können der Realität hinterherhinken, was zu Fehlern in der räumlichen Darstellung führen kann. Beispiel: Ein Benutzer scannt einen Freund und dreht sich dann um, während der Freund den Raum verlässt. Eine „Phantom“-Darstellung des Freundes verbleibt in den Raumzuordnungsdaten, bis der Benutzer den jetzt leeren Raum erneut scannt.
 
-### Nähe des Benutzers zu Objekten im Raum
+### <a name="proximity-of-the-user-to-items-in-the-space"></a>Nähe des Benutzers zu Objekten im Raum
 
 Ähnlich wie Menschen nicht gut auf Objekte in Augennähe fokussieren können, hat die HoloLens Schwierigkeiten, wenn sich Objekte in der Nähe der Kameras befinden. Wenn sich ein Objekt zu nahe im Sichtfeld der beiden Kameras befindet oder ein Objekt eine Kamera blockiert, hat das Gerät viel mehr Probleme mit der Verfolgung des Objekts.  
 
 Die Kameras können nicht näher als 15 cm an ein Objekt heransehen.
 
-### Oberflächen in einem Raum
+### <a name="surfaces-in-a-space"></a>Oberflächen in einem Raum
 
 Stark verspiegelte Oberflächen sehen je nach Winkel unterschiedlich aus, was sich auf die Verfolgung auswirkt. Denken Sie an ein brandneues Auto – wenn Sie es bewegen, wird das Licht reflektiert, und es werden dabei unterschiedliche Dinge auf der Oberfläche angezeigt. Für den Tracker stellen die unterschiedlichen Dinge, die auf der Oberfläche reflektiert werden, eine sich verändernde Umgebung dar, und das Gerät verliert die Orientierung.
 
 Weniger glänzende Objekte können leichter nachverfolgt werden.
 
-### Überlegungen zum WLAN-Fingerabdruck
+### <a name="wi-fi-fingerprint-considerations"></a>Überlegungen zum WLAN-Fingerabdruck
 
 Solange WLAN aktiviert ist, werden Kartendaten mit einem WLAN-Fingerabdruck korreliert, auch wenn sie nicht mit einem tatsächlichen WLAN-Netzwerk/-Router verbunden sind. Ohne WLAN-Informationen sind Raum und Hologramme möglicherweise etwas langsamer zu erkennen. Wenn sich die WLAN-Signale erheblich ändern, denkt das Gerät unter Umständen, dass es sich in einem ganz anderen Bereich befindet.
 
 Die Netzwerkkennung (z.B. SSID oder MAC-Adresse) wird nicht an Microsoft gesendet, und alle WLAN-Verweise werden lokal auf dem HoloLens gespeichert.
 
-## Abbildung neuer Räume
+## <a name="mapping-new-spaces"></a>Abbildung neuer Räume
 
 Wenn Sie einen neuen Raum betreten (oder einen vorhandenen Raum laden), wird eine Gittergrafik über dem Raum verteilt angezeigt. Dies bedeutet, dass Ihr Gerät gerade Ihre Umgebung abbildet. Eine HoloLens erlernt einen Raum zwar im Laufe der Zeit, es gibt jedoch ein paar Tipps und Tricks für die Raumzuordnung.
 
-## Umgebungsverwaltung
+## <a name="environment-management"></a>Umgebungsverwaltung
 
 Es gibt zwei Einstellungen, mit denen Benutzer Hologramme „bereinigen“ können und die dazu führen, dass HoloLens einen Raum „vergisst“. Sie befinden sich unter **Hologramme und Umgebungen** in der Einstellungs-App, wobei die zweite Einstellung auch unter **Datenschutz** in der Einstellungs-App angezeigt wird.  
 
@@ -101,7 +101,7 @@ Es gibt zwei Einstellungen, mit denen Benutzer Hologramme „bereinigen“ könn
 
 1. **Alle Hologramme löschen**. Wenn Sie diese Einstellung wählen, löscht HoloLens ALLE Kartendaten und verankerten Hologramme in den gesamten Datenbanken der Räume. Es werden keine Hologramme erneut ermittelt. Alle Hologramme müssen neu platziert werden, um wieder Zuordnungsabschnitte in der Datenbank zu speichern.
 
-## Hologrammqualität
+## <a name="hologram-quality"></a>Hologrammqualität
 
 Hologramme können in Ihrer gesamten Umgebung platziert werden – hoch, niedrig und ganz um Sie herum. Sie sehen sie aber durch einen [holografischen Rahmen](https://docs.microsoft.com/windows/mixed-reality/holographic-frame), der sich vor Ihren Augen befindet. Um die beste Ansicht zu erhalten, stellen Sie sicher, dass Sie das Gerät so anpassen, dass Sie den gesamten Rahmen sehen können. Und zögern Sie nicht, durch den Raum zu gehen und Ihre Umgebung zu erkunden!
 
@@ -109,7 +109,7 @@ Damit Ihre [Hologramme](https://docs.microsoft.com/windows/mixed-reality/hologra
 
 Wenn Sie Probleme beim Abbilden von Räumen haben, versuchen Sie, Hologramme in der Nähe zu löschen und den Raum erneut abzubilden.
 
-### Kalibrierung
+### <a name="calibration"></a>Kalibrierung
 
 Wenn Ihre Hologramme zittrig oder wackelig aussehen oder Sie Probleme beim Platzieren von Hologrammen haben, sollten Sie zunächst die [Kalibrierungs-App](hololens-calibration.md) ausprobieren. Diese App kann auch hilfreich sein, wenn Sie bei der Verwendung Ihrer HoloLens Beschwerden haben.
 
@@ -117,7 +117,7 @@ Um die Kalibrierungs-App aufzurufen, wechseln Sie zu **Einstellungen** > **Syste
 
 Wenn ein anderer Benutzer Ihre HoloLens verwendet, sollte er zuerst die Kalibrierungs-App ausführen, damit das Gerät ordnungsgemäß eingerichtet ist.
 
-## Temperatur und Rechtliche Informationen
+## <a name="temperature-and-regulatory-information"></a>Temperatur und Rechtliche Informationen
 
 [Rechtliche Informationen zu HoloLens](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): Enthält Informationen zu Temperaturbereich, Entsorgung, Funk- und TV-Interferenzen und vielem mehr.
 
@@ -126,10 +126,10 @@ Hier sind einige Richtlinien, die bei der Verwendung Ihres Geräts zu beachten s
 1. Lagern Sie das Gerät eine Stunde lang in einer Umgebung innerhalb des Temperaturbereichs (entweder im Standby-Modus oder ausgeschaltet), bevor Sie das Gerät verwenden.
 1. Verwenden Sie das Gerät in einer Umgebung innerhalb des Temperaturbereiches.
 1. Verwenden Sie das Gerät in Innenräumen.
-1. Verwenden Sie das Gerät im Schatten. Auch in Innenräumen direkte Sonneneinstrahlung durch Fenster oder Oberlichter vermeiden.
-1. Wenn Sie die obigen Richtlinien befolgen, aber unerwartete Überhitzungsprobleme auftreten, stellen Sie sicher, dass vollständige Telemetrie aktiviert ist, bevor Sie ein [Feedback](hololens-feedback.md) übermitteln.
+1. Verwenden Sie das Gerät im Schatten. Vermeiden Sie auch in Innenräumen direkte Sonneneinstrahlung durch Fenster oder Oberlichter.
+1. Wenn Sie die oben genannten Richtlinien befolgen, aber unerwartete Überhitzungsprobleme auftreten, stellen Sie sicher, dass die vollständige / optionale Telemetrie aktiviert ist, bevor Sie [Feedback](hololens-feedback.md) senden. Zur Untersuchung von Überhitzungsproblemen ist eine vollständige / optionale Telemetrie erforderlich.
 
-## Weitere Informationen
+## <a name="see-also"></a>Weitere Informationen
 
 - [Entwurf der Raumabbildung](https://docs.microsoft.com/windows/mixed-reality/spatial-mapping)
 - [Hologramme](https://docs.microsoft.com/windows/mixed-reality/hologram)
