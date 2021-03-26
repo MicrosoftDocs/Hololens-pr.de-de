@@ -54,6 +54,12 @@
 #### [Cloud Connected – Bereitstellen](hololens2-cloud-connected-deploy.md)
 #### [Cloud Connected – Pflegen](hololens2-cloud-connected-maintain.md)
 ### [Bereitstellen von HoloLens2 auf externen Clients mit Remote Assist](hololens2-deployment-guide.md)
+### Unternehmensverbundene HoloLens 2-Bereitstellung mit Dynamic 365 Guides
+#### [Unternehmensverbunden – Bereitstellungsübersicht](hololens2-corp-connected-overview.md)
+#### [Unternehmensverbunden – Vorbereiten](hololens2-corp-connected-prepare.md)
+#### [Unternehmensverbunden – Konfigurieren](hololens2-corp-connected-configure.md)
+#### [Unternehmensverbunden – Bereitstellen](hololens2-corp-connected-deploy.md)
+#### [Unternehmensverbunden – Verwalten](hololens2-corp-connected-maintain.md)
 ### [Offlinesicherheit](hololens-common-scenarios-offline-secure.md)
 ## Sicherheit
 ### [Sicherheitsübersicht](security-overview.md)
