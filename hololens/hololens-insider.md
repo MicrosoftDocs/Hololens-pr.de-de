@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 3/4/2021
+ms.date: 04/01/2021
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9b4ce7d05849191ae242396f50df740f25a2cdfe
-ms.sourcegitcommit: 86dba9e8a5e25f0bf29f4c0580970c25c44b7359
+ms.openlocfilehash: ebd3992458daa94726e73742b1fba4d7fa97a48b
+ms.sourcegitcommit: ad725427c2c88e73df2e5753001a26502b2327de
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "11470063"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "11474840"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider-Vorschau für Microsoft HoloLens
 
@@ -167,12 +167,15 @@ Da es sich bei der neuen Microsoft Edge um eine systemeigene Win32-App mit einer
 - "See it, say it"
 - Drucken
 
-**Die am besten bekannten Browserprobleme:**
-- Durch zurücksetzen des Geräts wird das neue Microsoft Edge entfernt.
-- Die Vergrößerungsvorschau auf der holografischen Tastatur zeigt falsche Inhalte an.
-- Beim Scrollen kann es manchmal zu Unordnungen kommt
+**Bekannte Probleme im Browser:**
+- Wi-Fi Proxykonfigurationen, bei denen es sich um Proxyrichtlinien handelt, die auf einzelne Wi-Fi-Verbindungen zielen, funktionieren derzeit nicht mit dem neuen Microsoft Edge. Wir arbeiten aktiv daran, dieses Problem vor der öffentlichen Veröffentlichung des Betriebssystemupdates zu entsperren.
+- Die Vergrößerungsvorschau in der holografischen Tastatur wurde für das neue Microsoft Edge deaktiviert. Wir hoffen, dieses Feature in einem zukünftigen Update wieder aktivieren zu können, sobald die Vergrößerung ordnungsgemäß funktioniert.
+- Zwei Zeichen auf der japanischen Tastatur funktionieren im neuen Microsoft Edge nicht wie erwartet. Dieses Problem wurde stammverursachet und sollte bald behoben werden.
 - Weblinks in der Microsoft Store-App starten den Browser möglicherweise nicht
-- Audiowiedergabe aus dem falschen Browserfenster, wenn Sie zuvor Audio aus einem anderen Browserfenster abgespielt haben
+- Die Audiowiedergabe kann im falschen Browserfenster angezeigt werden, wenn ein anderes Browserfenster geöffnet und aktiv ist. Sie können dieses Problem beheben, indem Sie das andere aktive Fenster schließen, das keine Audiowiedergabe sein soll.
+- Bei der Wiedergabe von Audio aus einem Browserfenster im [Modus "Folgen Sie mir"](hololens2-basic-usage.md#follow-me-stop-following)wird die Audiowiedergabe fortgesetzt, wenn Sie den Modus "Folgen" deaktivieren. Sie können dieses Problem beheben, indem Sie die Audiowiedergabe beenden, bevor Sie den Modus "Folgen" deaktivieren oder das Fenster mit der **Schaltfläche X** schließen.
+- Die Interaktion mit aktiven Microsoft Edge-Fenstern kann dazu führen, dass andere 2D-App-Fenster unerwartet inaktiv werden. Sie können diese Fenster reaktivieren, indem Sie erneut mit ihnen interagieren.
+- Das Öffnen eines Weblinks von einer anderen App oder bestimmten Dokumententypen wie PDFs kann dazu führen, dass eine zweite leere Registerkarte im Browser geöffnet wird (zusätzlich zur neuen Registerkarte, die mit dem Inhalt des Weblinks oder dateilinks erstellt wurde). Sie können dieses Problem beheben, indem Sie die zusätzliche leere Registerkarte schließen.
 
 #### <a name="microsoft-edge-insider-channels"></a>Microsoft Edge-Insider-Kanäle
 
@@ -249,16 +252,14 @@ Die Erweiterung 360 Viewer baut auf WebXR auf und wird automatisch zusammen mit 
 1. [Luft tippen,](hololens2-basic-usage.md#select-using-air-tap) um die Wiedergabesteuerelemente hoch zu bringen. Verwenden [Sie Handstrahlen](hololens2-basic-usage.md#select-using-air-tap) und Lufttippen, um zu spielen/zu pausieren, vorwärts/zurück zu überspringen, Beschriftungen ein-/auszuschalten oder die Erfahrung zu beenden (wodurch die immersive Ansicht beendet wird). Die Wiedergabesteuerelemente werden nach ein paar Sekunden Inaktivität ausgeblendet.
 
 #### <a name="top-webxr-and-360-viewer-known-issues"></a>Bekannte Probleme mit WebXR und 360 Viewer
-- In WebXR-Umgebungen können Hologramme verschoben oder gekippt werden, wenn Sie den Kopf kippen oder sich um Ihre Umgebung bewegen.
 - Abhängig von der Komplexität der WebXR-Erfahrung kann die Framerate fallen oder stottern.
-- Gelenkgelenke sind in WebXR noch nicht verfügbar.
+- Die Unterstützung für gelenkte Handgelenke in WebXR ist standardmäßig nicht aktiviert. Entwickler können die Unterstützung aktivieren, `edge://flags` indem sie "WebXR-Handeingabe" aktivieren.
 - Wenn Sie eine WebXR- oder 360-Viewer-Erfahrung beenden, kann es 30 Sekunden oder mehr dauern, bis Hologramme im Mixed-Reality-Heim wieder angezeigt werden.
 - 360 Videos von anderen Websites als YouTube funktionieren möglicherweise nicht wie erwartet.
-- Wenn 360 Videos nicht in die immersive Ansicht gelangen (oder die Mixed Reality-Headset-Schaltfläche nicht angezeigt wird), versuchen Sie, die Seite zu aktualisieren.
-- Captions are not visible in 360 Viewer on HoloLens 2.
+- Captions are currently disabled in 360 Viewer on HoloLens 2. Wir planen, dieses Feature in einem zukünftigen Update zu aktivieren.
 - Durch anhalten eines Videos in 360 Viewer wird das Rendern des Videos verhindert (das Auswählen der Wiedergabeschaltfläche setzt die Wiedergabe jedoch ordnungsgemäß fort).
 - Die Schaltfläche "Nächstes Video" in 360 Viewer funktioniert derzeit nicht.
-- Sie können 2D-Videos in einem immersiven "Theater"-Modus abspielen, die Framerate ist jedoch kleiner als 30 fps.
+- Sie können 2D-Videos in einem immersiven "Theater"-Modus abspielen, die Framerate kann jedoch weniger als 30 fps sein.
 
 #### <a name="providing-feedback-on-webxr-and-360-viewer"></a>Bereitstellen von Feedback zu WebXR und 360 Viewer
 
@@ -337,11 +338,8 @@ Wenn Sie mit dem in HoloLens 2 gespeicherten benutzerdefinierten Farbprofil nich
 
 #### <a name="top-display-color-calibration-known-issues"></a>Bekannte Probleme bei der Farbkalibrierung der obersten Anzeige
 
-- Auf der Seite Einstellungen ist die Statuszeichenfolge, die Ihnen mitteilt, wann das Farbprofil zuletzt geändert wurde, veraltet, bis Sie diese Seite der Einstellungen neu laden. 
+- Auf der Seite Einstellungen ist die Statuszeichenfolge, die Ihnen mitteilt, wann das Farbprofil zuletzt geändert wurde, veraltet, bis Sie diese Seite der Einstellungen neu laden.
     - Problemumgehung: Wählen Sie eine andere Einstellungsseite aus, und wählen Sie dann die Seite Kalibrierung erneut aus.
-- Wenn HoloLens 2 während der Anzeigefarbkalibrierung in den Ruhezustand übergeht, wird es später wieder in das Mixed Reality Home aufgenommen, und Die Helligkeitsstufe der Anzeige wird weiterhin abgeblendet.
-- Möglicherweise müssen Sie versuchen, die Helligkeitsschaltflächen auf der linken Seite Des Geräts ein paar Mal nach oben/unten zu drücken, bevor sie wie erwartet funktionieren.
-- Lokalisierung ist nicht für alle Märkte abgeschlossen
 
 ### <a name="default-app-picker"></a>Standardmäßige App-Auswahl
 
@@ -360,6 +358,9 @@ Zum Festlegen der Lautstärke einer einzelnen App navigieren Sie zu **Einstellun
  <img alt="App volume and device preferences." src="./images/volume-per-app.jpg" width="500" height="250" />
 
 ### <a name="office-web-app"></a>Office Web App
+
+>[!NOTE]
+>Ab Windows Insider Build 20325.1000 wird die Office-Web-App nicht mehr vorinstalliert (und nicht für die anstehende öffentliche Version des Betriebssystemupdates vorinstalliert). Um die Office-Web-App zu installieren, besuchen Sie die Schaltfläche App Verfügbar oder Installieren https://www.office.com von **Office** in der Adressleiste. **** Wählen **Sie Installieren aus,** um dies zu bestätigen.
 
 Die Office-Web-App wurde der Liste "Alle Apps" im Startmenü hinzugefügt. Diese Web-App kann auch an Start angeheftet oder deinstalliert werden. Da es sich um eine Web-App handelt, entspricht ihre Funktionalität genau dem, was Sie beim Besuch erleben https://www.office.com würden. Office Web App-Funktionen sind nur verfügbar, wenn HoloLens 2 über eine aktive Internetverbindung verfügt.
 
@@ -585,9 +586,15 @@ Einige Vorbehalte zu diesem Vorschauangebot:
 
 - [Die Offlinediagnose](hololens-diagnostic-logs.md#offline-diagnostics) enthält auch zusätzliche Geräteinformationen für Seriennummer und Betriebssystemversion.
 
+### <a name="known-issues-and-work-around"></a>Bekannte Probleme und Problemumarbeitung
 
+#### <a name="pairing-hololens-to-pc"></a>Koppeln von HoloLens mit DEM PC
 
+Vor dem Windows-Insider-Build 20325.1000, als ein Benutzer Kopplungsanmeldeinformationen für [Windows Holographic, Version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) oder [Windows Holographic, Version 2004,](hololens-release-notes.md#windows-holographic-version-2004) festgelegt und auf die Windows-Insider-Builds aktualisiert hatte, funktionierten ihre vorherigen Satzanmeldeinformationen zum Koppeln der HoloLens mit dem PC zum Bereitstellen und Debuggen von Apps wie über Visual Studio nicht mehr. Windows Insider Build 20325.1000 behebt dieses Problem und erfordert keine zusätzlichen Aktionen, um die Verwendung des Geräteportals fortsetzen zu können.
 
+Benutzer, die ihr Gerät mit einem [Insider-Build](#ffu-download-and-flash-directions) aufblitzen lassen, müssen nun ihre Geräte (entweder auf 20325.1000+ oder einen GA-Build) umschalten, um ihre Geräte mit ihrem PC zu koppeln.
+
+Benutzer, die sich nicht bei Windows-Insidern registriert haben und das Featureupdate verwenden, wenn es allgemein verfügbar ist, sind davon nicht betroffen.
 
 
 ## <a name="start-receiving-insider-builds"></a>Starten des Empfangens von Insiderbuilds
