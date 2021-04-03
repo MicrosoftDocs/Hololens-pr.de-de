@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 26fa6bfbbb1d9ec0408208513a4cd54b8ba93117
-ms.sourcegitcommit: b1362ab822d1cba97fe0b3fb4e666d9b68b6adbf
+ms.openlocfilehash: 9b4ce7d05849191ae242396f50df740f25a2cdfe
+ms.sourcegitcommit: 86dba9e8a5e25f0bf29f4c0580970c25c44b7359
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "11406771"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "11470063"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider-Vorschau für Microsoft HoloLens
 
@@ -79,7 +79,7 @@ Besucher können jetzt automatisch an einem Kiosk angemeldet werden. Dieses Verh
 
 [**Verbesserte Übergabe von Fehlern im Kioskmodus**](#kiosk-mode-behavior-changes-for-handling-of-failures)
 
-Dieses Update sorgt nun dafür, dass Geräte stärker vom Kioskmodus gesteuert werden, sodass es auf verschiedene Kiosktypen zurückfallen kann, bevor einfach ein leerer Kiosk angezeigt wird. Dies ist zwar nicht verwaltbar, aber dies kann etwas sein, um Ihre Supportabteilung zu informieren, wenn Sie Kioske so verwenden, dass dies möglicherweise für Ihre Konfiguration gilt.
+Wenn die AAD-Gruppenmitgliedschaft des angemeldeten AAD-Benutzers nicht erfolgreich ermittelt wird, wird die globale Kioskkonfiguration für das Startmenü verwendet (sofern vorhanden), andernfalls wird dem Benutzer ein leeres Startmenü angezeigt. Während das leere Startmenü keine Konfiguration ist, die Sie direkt festlegen können, kann diese neue Behandlung etwas sein, um Ihre Supportabteilung darüber zu informieren, ob Sie Kioske verwenden, da dies möglicherweise für Ihre Konfigurationen gilt oder Sie neue Anpassungen an Den zugewiesenen Zugriffskonfigurationen vornehmen möchten.
 
 #### <a name="updates-to-page-settings-visibility"></a>Aktualisierungen der Sichtbarkeit von Seiteneinstellungen
 
