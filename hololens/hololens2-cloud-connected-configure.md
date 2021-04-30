@@ -1,7 +1,7 @@
 ---
-title: Bereitstellungshandbuch – Mit der Cloud verbundene HoloLens 2-Bereitstellung im großen Maßstab mit Remote Assist – Konfigurieren
-description: Erfahren Sie, wie Sie Konfigurationen für die Registrierung von HoloLens-Geräten über ein cloudverbundenes Netzwerk im großen Maßstab mit Remote Assist einrichten.
-keywords: HoloLens, Verwaltung, mit der Cloud verbunden, Remote Assist, AAD, Azure AD, MDM, Verwaltung mobiler Geräte
+title: 'Bereitstellungshandbuch : Bereitstellung mit cloudbasierter HoloLens 2 im großen Stil mit Remote Assist – Konfigurieren'
+description: Erfahren Sie, wie Sie Konfigurationen einrichten, um HoloLens-Geräte über ein mit der Cloud verbundenes Netzwerk im großen Stil mit Remote Assist zu registrieren.
+keywords: HoloLens, Verwaltung, cloudverbunden, Remote Assist, AAD, Azure AD, MDM, Mobile Geräteverwaltung
 author: evmill
 ms.author: v-evmill
 ms.reviewer: aboeger
@@ -15,48 +15,48 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 00cc3f9df1fefafc9c4c084ff642364ae3ccb85c
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283886"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108308695"
 ---
-# Konfigurieren – Leitfaden mit Verbindung mit der Cloud
+# <a name="configure---cloud-connected-guide"></a>Konfigurieren – Leitfaden für cloudverknannte Verbindungen
 
-In diesem Abschnitt des Handbuchs erfahren&#39;, wie Sie die automatische Registrierung für Ihren Mandanten einrichten und wie Sie Lizenzen für Intune und Remote Assist anwenden.
+In diesem Abschnitt des Leitfadens&#39;wir erfahren, wie Sie die automatische Registrierung für Ihren Mandanten einrichten und Lizenzen sowohl für Intune als auch für Remote Assist anwenden.
 
-## Benutzer und Gruppen in Azure
+## <a name="azure-users-and-groups"></a>Azure-Benutzer und -Gruppen
 
-Azure und Intune durch diese Erweiterung verwenden Benutzer und Gruppen, um Konfigurationen und Lizenzen zuzuordnen. Um diesen Bereitstellungsfluss zu überprüfen und einen Remote assist-Anruf von einem Benutzer zu einem anderen zu machen, benötigen&#39;zwei Benutzerkonten.
+Azure und Intune von dieser Erweiterung verwenden Benutzer und Gruppen, um Konfigurationen und Lizenzen zuzuweisen. Um diesen Bereitstellungsablauf zu überprüfen und einen Remote Assist Aufruf von einem Benutzer an einen anderen durchführen zu können, benötigen Sie&#39;zwei Benutzerkonten.
 
-Wir können eine einzelne Benutzergruppe zum Zuweisen von Lizenzen erstellen. Wir können beide Benutzer derselben Gruppe hinzufügen und eine Lizenz für Intune und Remote Assist auf diese Gruppe anwenden.
+Wir können eine einzelne Benutzergruppe erstellen, um Lizenzen zuzuweisen. Wir können beide Benutzer derselben Gruppe beitreten und eine Lizenz für Intune und Remote Assist auf diese Gruppe anwenden.
 
-Wenn Sie&#39;noch nicht über Zugriff auf zwei Azure #A0 in einer Benutzergruppe verfügen, können Sie diese verwenden. Hier sind die Schnellstarthandbücher für:
+Wenn Sie&#39;noch keinen Zugriff auf zwei Azure AD Konten in einer Benutzergruppe haben, die Sie verwenden können. Hier sind die Schnellstartanleitungen für Folgendes:
 
 - [Erstellen eines Benutzers](https://docs.microsoft.com/mem/intune/fundamentals/quickstart-create-user)
 - [Erstellen einer Gruppe](https://docs.microsoft.com/mem/intune/fundamentals/quickstart-create-group)
-- [Hinzufügen von Benutzern zu einer Gruppe –](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal) Hinzufügen erstellter Benutzer zum Erstellen einer Gruppe
-- [Konfigurieren von Azure AD, um](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) einer Benutzergruppe den Beitritt zu Geräten zu ermöglichen – Stellen Sie sicher, dass die neue Benutzergruppe über die Berechtigung zum Registrieren von Geräten bei Azure AD verfügt.
+- [Hinzufügen von Benutzern zu einer Gruppe:](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal) Hinzufügen von erstellten Benutzern zum Erstellen einer Gruppe
+- [Konfigurieren Azure AD, um einer Benutzergruppe das Beitreten zu Geräten zu ermöglichen:](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) Stellen Sie sicher, dass eine neue Benutzergruppe über die Berechtigung zum Registrieren von Geräten für Azure AD
 
-## Automatische Registrierung auf HoloLens 2
+## <a name="auto-enrollment-on-hololens-2"></a>Automatische Registrierung bei HoloLens 2
 
-Um eine reibungslose und nahtlose Erfahrung zu bieten, sind das Einrichten von Azure Active Directory Join (AADJ) und die automatische Registrierung bei Intune für HoloLens 2-Geräte die erste Möglichkeit. Dadurch können Benutzer ihre Anmeldeinformationen für die Organisation während der OOBE eingeben und sich automatisch bei Azure AD registrieren und das Gerät bei MDM registrieren.
+Um eine reibungslose und nahtlose Benutzeroberfläche zu erhalten, ist das Einrichten von Azure Active Directory Join (AADJ) und der automatischen Registrierung bei Intune für HoloLens 2 Geräte die beste Vorgehensweise. Dadurch können Benutzer ihre Anmeldeinformationen für die Organisation während der OOBE eingeben und sich automatisch bei Azure AD registrieren und das Gerät bei MDM registrieren.
 
-Mithilfe von [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home)können wir Dienste auswählen und einige Seiten navigieren, bis wir eine Premium-Testversion auswählen können. You may notice there is Azure Active Directory Premium 1 and 2, for Automatic Enrollment P1 is sufficient. Wir können Intune und den Benutzerbereich für die automatische Registrierung auswählen und die zuvor erstellte Gruppe auswählen.
+Mithilfe von [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home)können wir Dienste auswählen und durch einige Seiten navigieren, bis wir Premium-Testversion abrufen auswählen können. Möglicherweise stellen Sie fest, dass Azure Active Directory Premium 1 und 2 vorhanden sind, da die automatische Registrierung P1 ausreichend ist. Wir können Intune und den Benutzerbereich für die automatische Registrierung auswählen und die Gruppe auswählen, die zuvor erstellt wurde.
 
-Ausführliche Informationen und Schritte finden Sie in der Anleitung [zum Aktivieren der automatischen Registrierung für Intune.](https://docs.microsoft.com/mem/intune/enrollment/quickstart-setup-auto-enrollment)
+Ausführliche Informationen und Schritte finden Sie im Leitfaden zum Aktivieren der [automatischen Registrierung für Intune.](https://docs.microsoft.com/mem/intune/enrollment/quickstart-setup-auto-enrollment)
 
-## Anwendungslizenzen
+## <a name="application-licenses"></a>Anwendungslizenzen
 
-Mit einer Anwendungslizenz kann ein Benutzer entweder vom Unternehmen erworbene Apps installieren oder ein Upgrade von einer kostenlosen Testversion auf die Vollversion einer App durchführen. Anwendungslizenzen können auf Benutzer, Benutzergruppen oder Gerätegruppen angewendet werden. Sie&#39;Remote Assist-Lizenzen für Benutzer in Ihrer Organisation benötigen, um Remote Assist verwenden zu können. Für den Zweck dieses Leitfadens weisen wir der Benutzergruppe, die wir oben in Azure Users and Groups erstellt haben, Remote [assist-Lizenzen zu.](hololens2-cloud-connected-configure.md#azure-users-and-groups)
+Mit einer Anwendungslizenz kann ein Benutzer entweder vom Unternehmen erworbene Apps installieren oder ein Upgrade von einer kostenlosen Testversion auf die Vollversion einer App durchführen. Anwendungslizenzen können entweder auf Benutzer, Benutzergruppen oder Gerätegruppen angewendet werden. Sie&#39;Lizenzen Remote Assist benutzer in Ihrer Organisation benötigen, um diese zu Remote Assist. Für die Zwecke dieses Leitfadens weisen wir Remote Assist Lizenzen der Benutzergruppe zu, die wir oben in [Azure-Benutzer und -Gruppen erstellt haben.](hololens2-cloud-connected-configure.md#azure-users-and-groups)
 
-Die Anforderungen für Lizenzen können unterschiedlich sein, je nachdem, ob der Benutzer den Remote -Assist-Anruf von einem Gerät aus macht oder ein Remotemitarbeiter von Microsoft Teams ist. Standardmäßig sind die Kontrollkästchen "Remote Assist" und "Teams" beide gekennzeichnet. Im Sinne dieses Leitfadens empfehlen wir, die Standardfelder aktiviert zu lassen.
+Die Anforderungen für Lizenzen können unterschiedlich sein, je nachdem, ob der Benutzer den Remote Assist von einem Gerät aus aufruft oder ein Remotemitarbeiter von Microsoft Teams ist. Standardmäßig sind die Remote Assist und Teams markiert. Für die Zwecke dieses Leitfadens empfehlen wir, die Standardfelder aktiviert zu lassen.
 
-1. Erfahren Sie mehr über die verschiedenen [Lizenzierungs- und Produktanforderungen pro Rolle.](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements#licensing-and-product-requirements-per-role) Es gibt einige verschiedene Arten von Remote Assist-Lizenzen. Stellen Sie daher sicher, dass Sie die richtigen Lizenzen für Ihre Anforderungen erhalten.
-2. Sie&#39;müssen die [Lizenz erwerben.](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-remote-assist)
+1. Erfahren Sie mehr über die verschiedenen [Lizenzierungs- und Produktanforderungen pro Rolle.](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements#licensing-and-product-requirements-per-role) Es gibt einige verschiedene Arten von Remote Assist, daher sollten Sie sicherstellen, dass Sie die richtigen Lizenzen für Ihre Anforderungen erhalten.
+2. Sie&#39;die Lizenz [erwerben müssen.](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-remote-assist)
 3. [Wenden Sie Ihre Lizenzen](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/deploy-remote-assist) auf die Gruppe an.
 
-## Nächster Schritt
+## <a name="next-step"></a>Nächster Schritt
 
 > [!div class="nextstepaction"]
-> [Mit der Cloud verbundene Bereitstellung – Bereitstellen](hololens2-cloud-connected-deploy.md)
+> [Mit der Cloud verbundene Bereitstellung: Bereitstellen](hololens2-cloud-connected-deploy.md)

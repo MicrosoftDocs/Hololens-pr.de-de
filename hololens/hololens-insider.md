@@ -1,6 +1,6 @@
 ---
 title: Insider-Vorschau für Microsoft HoloLens
-description: Erfahren Sie, wie Sie mit Insider-Builds beginnen und wertvolles Feedback für unser nächstes wichtiges Betriebssystemupdate für HoloLens bereitstellen.
+description: Erfahren Sie, wie Sie mit Insider-Builds beginnen, und geben Sie wertvolles Feedback für unser nächstes größeres Betriebssystemupdate für HoloLens.
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
@@ -17,227 +17,227 @@ manager: laurawi
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: ebd3992458daa94726e73742b1fba4d7fa97a48b
-ms.sourcegitcommit: ad725427c2c88e73df2e5753001a26502b2327de
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "11474840"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108309607"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider-Vorschau für Microsoft HoloLens
 
-Willkommen bei den neuesten Insider Preview-Builds für HoloLens! Es ist einfach, erste [Schritte zu machen](hololens-insider.md#start-receiving-insider-builds) und wertvolles Feedback für unser nächstes wichtiges Betriebssystemupdate für HoloLens zu geben.
+Willkommen bei den neuesten Insider Preview-Builds für HoloLens! Es ist einfach, [zu](hololens-insider.md#start-receiving-insider-builds) beginnen und wertvolles Feedback für unser nächstes größeres Betriebssystemupdate für HoloLens zu geben.
 
-## <a name="windows-insider-release-notes"></a>Hinweise zur Windows-Insider-Version
+## <a name="windows-insider-release-notes"></a>Windows-Insider Versionshinweise
 
-Wir freuen uns darauf, neue Features für Windows-Insider zu starten. Neue Builds werden für die neuesten Updates in den Dev Channel geroutet. Wir werden diese Seite weiterhin aktualisieren, wenn wir weitere Features und Updates zu unseren Windows-Insider-Builds hinzufügen.  Freuen Sie sich und bereiten Sie sich darauf vor, diese Updates in Ihre Realität zu mischen.
+Wir freuen uns, neue Features erneut an Windows-Insider zu stellen. Neue Builds werden an den Entwicklungskanal übertragen, um die neuesten Updates zu erhalten. Wir werden diese Seite weiterhin aktualisieren, wenn wir weitere Features und Updates zu unseren Windows-Insider hinzufügen.  Lassen Sie sich freuen und bereit sein, diese Updates in Ihre Realität zu mischen.
 
-Dieses Featureupdate enthält Features für zwei Zielgruppen. Features, die von jedem Benutzer auf einem Gerät verwendet werden können, und neue Geräteverwaltungsoptionen, die von IT-Administratoren konfiguriert werden können. Die folgende Featuretabelle gibt die Zielgruppen an, mit denen die einzelnen neuen Features verwendet werden können. Wenn Sie ein IT-Administrator sind, schauen Sie sich bitte unseren [IT-Administrator – Prüfliste zum Aktualisieren an.](#it-admin---update-checklist)
+Dieses Featureupdate enthält Features für zwei Zielgruppen. Features, die von jedem Benutzer auf einem Gerät verwendet werden können, sowie neue Geräteverwaltungsoptionen, die von IT-Administratoren konfiguriert werden können. In der folgenden Featuretabelle werden die Zielgruppen angegeben, die die einzelnen neuen Features verwenden können. Wenn Sie IT-Administrator sind, sehen Sie sich unsere [Checkliste für IT-Administratoren – Update an.](#it-admin---update-checklist)
 
 > [!IMPORTANT]
-> Wenn Sie zuvor entweder die Einstellungs-App oder die Microsoft Edge-App in einem Kiosk verwendet haben, haben wir diese Apps durch neue Apps ersetzt, die eine andere App-ID verwenden. Wir empfehlen Ihnen dringend, [neue AUMIDs für neue Apps im Kioskmodus weiter unten zu](#use-the-new-settings-and-edge-apps-in-kiosk-modes) lesen. Dadurch wird sichergestellt, dass Sie entweder weiterhin die Einstellungs-App in Ihrem Kiosk haben oder die neue Microsoft Edge-App enthalten.
+> Wenn Sie zuvor entweder die Einstellungs-App oder Microsoft Edge-App in einem Kiosk verwendet haben, haben wir diese Apps durch neue Apps ersetzt, die eine andere App-ID verwenden. Wir empfehlen Ihnen dringend, neue [AUMIDs für neue](#use-the-new-settings-and-edge-apps-in-kiosk-modes) Apps im Kioskmodus weiter unten zu lesen. Dadurch wird sichergestellt, dass Sie entweder weiterhin über die Einstellungs-App in Ihrem Kiosk verfügen oder die neue Microsoft Edge enthalten.
 
 <br>
 
-| Featurename                                              | Kurze Beschreibung                                                                      | Zielpublikum | Im Build verfügbar |
+| Funktionsname                                              | Kurze Beschreibung                                                                      | Zielgruppe | Im Build verfügbar |
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|------|
-| [Neuer Microsoft Edge-Browser](#introducing-the-new-microsoft-edge) | Das neue, Chromium-basierte Microsoft Edge ist jetzt für HoloLens 2 verfügbar.                         | Endbenutzer | 20279.1006 |
-| [WebXR und 360 Viewer](#webxr-and-360-viewer)             | Probieren Sie immersive Weberfahrungen und 360 Videowiedergabe aus                                           | Endbenutzer | 20289.1000 |
-| [App "Neue Einstellungen"](#new-settings-app)                     | Die Ältere Einstellungen-App wird durch eine aktualisierte Version mit neuen Features und Einstellungen ersetzt. | Endbenutzer | 20279.1006 |
-| [Anzeigen der Farbkalibrierung](#display-color-calibration)   | Auswählen eines alternativen Farbprofils für Ihre HoloLens 2-Anzeige                                | Endbenutzer | 20293.1000 |
-| [Standardmäßige App-Auswahl](#default-app-picker)                 | Auswählen, welche App für jeden Datei- oder Linktyp gestartet werden soll                                      | Endbenutzer | 20279.1006 |
-| [Volumensteuerung pro App](#per-app-volume-control) |  Steuern des Volumens auf App-Ebene unabhängig vom Systemvolume | Endbenutzer | 20293.1000 |
-| [Office Web App](#office-web-app)                         | Eine Verknüpfung zur Office-Web-App ist jetzt unter "Alle Apps" aufgeführt.                                   | Endbenutzer | 20279.1006 |
-| [Wischen zum Eingeben](#swipe-to-type)                           | Verwenden der Fingerspitze zum "Wischen" von Wörtern auf der holografischen Tastatur                        | Endbenutzer | 20279.1006 |
-| [Hauptmenü vom Start](#power-menu-from-start) | Starten Sie das HoloLens-Gerät im Startmenü neu, und fahren Sie es herunter. | Endbenutzer | 20293.1000 |
-| [Mehrere Benutzer auf dem Anmeldebildschirm aufgeführt](#multiple-users-listed-on-sign-in-screen) | Anzeigen mehrerer Benutzerkonten auf dem Anmeldebildschirm | Endbenutzer | 20293.1000 |
-| [Unterstützung für externes USB-C-Mikrofon](#usb-c-external-microphone-support) | Verwenden Sie USB-C-Mikrofone für Apps und/oder Remote Assist.| Endbenutzer | 20279.1006 |
-| [Automatische Besucheranmeldung für Kioske](#visitor-auto-logon-for-kiosks)                          | Ermöglicht die automatische Anmeldung für Besucherkonten für kiosk-Modi.                         | IT-Administrator | 20279.1006                 |
+| [Neue Microsoft Edge](#introducing-the-new-microsoft-edge) | Die neue Chromium-basierte Microsoft Edge jetzt für HoloLens 2                         | Endbenutzer | 20279.1006 |
+| [WebXR und 360 Viewer](#webxr-and-360-viewer)             | Immersive Weberfahrungen und 360 Videowiedergabe ausprobieren                                           | Endbenutzer | 20289.1000 |
+| [Neue Einstellungs-App](#new-settings-app)                     | Die Legacy-Einstellungs-App wird durch eine aktualisierte Version mit neuen Features und Einstellungen ersetzt. | Endbenutzer | 20279.1006 |
+| [Farbkalibrierung anzeigen](#display-color-calibration)   | Wählen Sie ein alternatives Farbprofil für Ihre HoloLens 2 Anzeige aus.                                | Endbenutzer | 20293.1000 |
+| [Standard-App-Auswahl](#default-app-picker)                 | Wählen Sie aus, welche App für die einzelnen Datei- oder Linktypen gestartet werden soll.                                      | Endbenutzer | 20279.1006 |
+| [Volumesteuerung pro App](#per-app-volume-control) |  Steuern des Volumes auf App-Ebene unabhängig vom Systemvolume | Endbenutzer | 20293.1000 |
+| [Office-Web-App](#office-web-app)                         | Eine Verknüpfung mit der Office-Web-App ist jetzt unter "Alle Apps" aufgeführt.                                   | Endbenutzer | 20279.1006 |
+| [Wischen zum Typ](#swipe-to-type)                           | Verwenden Sie die Fingerspitze, um Wörter auf der holografischen Tastatur zu "wischen".                        | Endbenutzer | 20279.1006 |
+| [Menü "Energie" über "Start"](#power-menu-from-start) | Starten Sie das HoloLens-Gerät im Startmenü neu, und fahren Sie es herunter. | Endbenutzer | 20293.1000 |
+| [Mehrere Benutzer, die auf dem Anmeldebildschirm aufgeführt sind](#multiple-users-listed-on-sign-in-screen) | Anzeigen mehrerer Benutzerkonten auf dem Anmeldebildschirm | Endbenutzer | 20293.1000 |
+| [Unterstützung externer USB-C-Mikrofone](#usb-c-external-microphone-support) | Verwenden Sie USB-C-Mikrofone für Apps und/oder Remote Assist.| Endbenutzer | 20279.1006 |
+| [Automatische Anmeldung von Besucher für Kioske](#visitor-auto-logon-for-kiosks)                          | Aktiviert die automatische Anmeldung bei Besucherkonten, die für Kioskmodi verwendet werden sollen.                         | IT-Administrator | 20279.1006                 |
 | [Neue AUMIDs für neue Apps im Kioskmodus](#use-the-new-settings-and-edge-apps-in-kiosk-modes) | AUMIDs für neue Einstellungen und Edge-Apps | IT-Administrator | 20279.1006 |
-| [Verbesserte Übergabe von Fehlern im Kioskmodus](#kiosk-mode-behavior-changes-for-handling-of-failures) | Der Kioskmodus sucht vor dem leeren Startmenü nach global zugewiesenem Zugriff. | IT-Administrator | 20279.1006 |
-| [Neue EinstellungenURIs für Sichtbarkeit von Seiteneinstellungen](hololens-insider.md#new-settingsuris-for-page-settings-visibility) | Mehr als 20 neue SettingsURIs für Einstellungen/PageVisibilityList-Richtlinie | IT-Administrator | 20289.1000 |
-| [Konfigurieren der Fallbackdiagnose](#configuring-fallback-diagnostics-via-settings-app) | Festlegen des Fallbackdiagnoseverhaltens in der App "Einstellungen" | IT-Administrator | 20279.1006 |
-| [Teilen von Dingen mit Geräten in der Nähe](#share-things-with-nearby-devices) | Freigeben von Dateien oder URLs von einer HoloLens auf einem PC | Alle | 20279.1006 |
-| [Problembehandlung für neues Betriebssystemupdate](#new-os-update-troubleshooter) | Neue Problembehandlung unter Einstellungen für Betriebssystemupdates | IT-Administrator | 20279.1006 |
-| [Vorschau der Übermittlungsoptimierung](#delivery-optimization-preview) | Verringern des Bandbreitenverbrauchs für Downloads von mehreren HoloLens-Geräten | IT-Administrator | 20301.1000 |
-| [Verbesserungen und Korrekturen im Update](#improvements-and-fixes-in-the-update) | Zusätzliche Korrekturen im Update. | Alle | 20279.1006 |
+| [Verbesserte Übergabe von Fehlern im Kioskmodus](#kiosk-mode-behavior-changes-for-handling-of-failures) | Im Kioskmodus wird vor dem leeren Startmenü nach Global Assigned Access (Globaler zugewiesener Zugriff) sucht. | IT-Administrator | 20279.1006 |
+| [Neue EinstellungenURIs für Sichtbarkeit von Seiteneinstellungen](hololens-insider.md#new-settingsuris-for-page-settings-visibility) | 20+ neue EinstellungenURIs für Einstellungen/PageVisibilityList-Richtlinie | IT-Administrator | 20289.1000 |
+| [Konfigurieren der Fallbackdiagnose](#configuring-fallback-diagnostics-via-settings-app) | Festlegen des Fallbackdiagnoseverhaltens in der Einstellungs-App | IT-Administrator | 20279.1006 |
+| [Freigeben von Dingen für Geräte in der Nähe](#share-things-with-nearby-devices) | Freigeben von Dateien oder URLs aus einer HoloLens für einen PC | Alle | 20279.1006 |
+| [Neue Problembehandlung für Betriebssystemupdates](#new-os-update-troubleshooter) | Neue Problembehandlung unter Einstellungen für Betriebssystemupdates | IT-Administrator | 20279.1006 |
+| [Übermittlungsoptimierung Preview](#delivery-optimization-preview) | Reduzieren des Bandbreitenverbrauchs für Downloads von mehreren HoloLens-Geräten | IT-Administrator | 20301.1000 |
+| [Verbesserungen und Fehlerbehebungen im Update](#improvements-and-fixes-in-the-update) | Zusätzliche Fehlerbehebungen im Update. | Alle | 20279.1006 |
 
-### <a name="it-admin---update-checklist"></a>IT-Administrator – Prüfliste für Updates
+### <a name="it-admin---update-checklist"></a>IT-Administrator – Checkliste aktualisieren
 
-Diese Prüfliste hilft Ihnen, die neuen Elemente zu kennen, die in diesem Featureupdate hinzugefügt werden, die sich auf Ihre aktuellen Geräteverwaltungskonfigurationen auswirken können, oder neue Features, die Sie möglicherweise verwenden möchten.
+Diese Prüfliste hilft Ihnen, die neuen Elemente zu kennen, die in diesem Featureupdate hinzugefügt werden und sich auf Ihre aktuellen Geräteverwaltungskonfigurationen auswirken können, oder neue Features, die Sie möglicherweise verwenden möchten.
 
 #### <a name="updates-to-kiosk-mode"></a>Updates für den Kioskmodus
 
 [**Neue AUMIDs für neue Apps im Kioskmodus**](#use-the-new-settings-and-edge-apps-in-kiosk-modes)
 
-Wenn Sie zuvor entweder die Einstellungs-App oder die Microsoft Edge-App in einem Kiosk verwendet haben, haben wir diese Apps durch neue Apps ersetzt, die eine andere App-ID verwenden. Wir empfehlen Ihnen dringend, [neue AUMIDs für neue Apps im Kioskmodus weiter unten zu](#use-the-new-settings-and-edge-apps-in-kiosk-modes) lesen. Dadurch wird sichergestellt, dass Sie entweder weiterhin die Einstellungs-App in Ihrem Kiosk haben oder die neue Microsoft Edge-App enthalten.
+Wenn Sie zuvor entweder die Einstellungs-App oder Microsoft Edge-App in einem Kiosk verwendet haben, haben wir diese Apps durch neue Apps ersetzt, die eine andere App-ID verwenden. Wir empfehlen Ihnen dringend, neue [AUMIDs für neue](#use-the-new-settings-and-edge-apps-in-kiosk-modes) Apps im Kioskmodus weiter unten zu lesen. Dadurch wird sichergestellt, dass Sie entweder weiterhin über die Einstellungs-App in Ihrem Kiosk verfügen oder die neue Microsoft Edge enthalten.
 
-Diese Änderungen können jetzt vorgenommen und auf allen Geräten bereitgestellt werden und ermöglichen einen reibungslosen Übergang beim Update.
+Diese Änderungen können jetzt vorgenommen und auf allen Geräten bereitgestellt werden, um einen reibungsloseren Übergang beim Update zu ermöglichen.
 
-[**Automatische Besucheranmeldung für Kioske**](#visitor-auto-logon-for-kiosks)
+[**Automatische Anmeldung von Besucher für Kioske**](#visitor-auto-logon-for-kiosks)
 
-Besucher können jetzt automatisch an einem Kiosk angemeldet werden. Dieses Verhalten ist standardmäßig aktiviert, kann jedoch verwaltet und deaktiviert werden.
+Besucher können jetzt automatisch an einem Kiosk angemeldet werden. Dieses Verhalten ist standardmäßig aktiviert, kann aber verwaltet und deaktiviert werden.
 
 [**Verbesserte Übergabe von Fehlern im Kioskmodus**](#kiosk-mode-behavior-changes-for-handling-of-failures)
 
-Wenn die AAD-Gruppenmitgliedschaft des angemeldeten AAD-Benutzers nicht erfolgreich ermittelt wird, wird die globale Kioskkonfiguration für das Startmenü verwendet (sofern vorhanden), andernfalls wird dem Benutzer ein leeres Startmenü angezeigt. Während das leere Startmenü keine Konfiguration ist, die Sie direkt festlegen können, kann diese neue Behandlung etwas sein, um Ihre Supportabteilung darüber zu informieren, ob Sie Kioske verwenden, da dies möglicherweise für Ihre Konfigurationen gilt oder Sie neue Anpassungen an Den zugewiesenen Zugriffskonfigurationen vornehmen möchten.
+Wenn die AAD-Gruppenmitgliedschaft eines angemeldeten AAD-Benutzers nicht erfolgreich bestimmt wurde, wird die globale Kioskkonfiguration für das Startmenü verwendet (sofern vorhanden). Andernfalls wird dem Benutzer ein leeres Startmenü angezeigt. Das leere Startmenü ist zwar keine Konfiguration, die Sie direkt festlegen können, aber diese neue Behandlung kann Ihre Supportabteilung darüber informieren, wenn Sie Kiosks verwenden, da dies möglicherweise für Ihre Konfigurationen gilt oder Sie neue Anpassungen an Ihren zugewiesenen Zugriffskonfigurationen vornehmen möchten.
 
 #### <a name="updates-to-page-settings-visibility"></a>Aktualisierungen der Sichtbarkeit von Seiteneinstellungen
 
 [**Neue EinstellungenURIs für Sichtbarkeit von Seiteneinstellungen**](hololens-insider.md#new-settingsuris-for-page-settings-visibility)
 
-Wenn Sie derzeit die [Sichtbarkeit](settings-uri-list.md) von Seiteneinstellungen verwenden, können Sie Anpassungen an Ihren vorhandenen URIs vornehmen, die Sie entweder zugelassen oder blockiert haben.
+Wenn Sie derzeit die [Sichtbarkeit](settings-uri-list.md) von Seiteneinstellungen verwenden, sollten Sie Anpassungen an Ihren vorhandenen URIs vornehmen, die Sie entweder zugelassen oder blockiert haben.
 
 #### <a name="updates-for-your-wdac-policy"></a>Updates für Ihre WDAC-Richtlinie
 
-Wenn Sie Microsoft Edge zuvor über WDAC blockiert haben, sollten Sie Ihre WDAC-Richtlinie aktualisieren. Überprüfen [Sie Folgendes,](#using-wdac-to-block-new-microsoft-edge) und verwenden Sie den bereitgestellten Beispielcode.
+Wenn Sie zuvor die Microsoft Edge WDAC blockiert haben, sollten Sie Ihre WDAC-Richtlinie aktualisieren. Sehen [Sie sich die folgenden Informationen an,](#using-wdac-to-block-new-microsoft-edge) und verwenden Sie den bereitgestellten Beispielcode.
 
 #### <a name="enable-new-endpoints-for-edge"></a>Aktivieren neuer Endpunkte für Edge
 
-Wenn Sie über eine Infrastruktur verfügen, die das Konfigurieren von Netzwerkendpunkten wie Proxy oder Firewall umfasst, aktivieren Sie diese neuen Endpunkte für [die neue Microsoft Edge-App.](#managing-endpoints-for-the-new-microsoft-edge)
+Wenn Sie über eine Infrastruktur verfügen, die die Konfiguration von Netzwerkendpunkten wie Proxy oder Firewall umfasst, aktivieren Sie diese neuen Endpunkte für die neue Microsoft Edge [App.](#managing-endpoints-for-the-new-microsoft-edge)
 
 #### <a name="newly-configurable-items"></a>Neu konfigurierbare Elemente
 
 - [Konfigurieren der Fallbackdiagnose](#configuring-fallback-diagnostics-via-settings-app)
-  - Sie können konfigurieren, ob und wer Fallbackdiagnosen sammeln kann.
-- [Teilen von Dingen mit Geräten in der Nähe](#share-things-with-nearby-devices)
-  - Sie können das neue Freigabefeature in der Nähe deaktivieren.
-- [Konfigurieren von Richtlinieneinstellungen für das neue Microsoft Edge](#configuring-policy-settings-for-the-new-microsoft-edge)
-  - Überprüfen Sie die neu für Microsoft Edge verfügbaren Konfigurationen.
+  - Sie können konfigurieren, ob und wer die Fallbackdiagnose erfassen darf.
+- [Freigeben von Dingen für Geräte in der Nähe](#share-things-with-nearby-devices)
+  - Sie können das neue Feature für die Freigabe in der Nähe deaktivieren.
+- [Konfigurieren von Richtlinieneinstellungen für die neue Microsoft Edge](#configuring-policy-settings-for-the-new-microsoft-edge)
+  - Überprüfen Sie die neu verfügbaren Konfigurationen für Microsoft Edge.
 
 #### <a name="new-diagnostic-tool"></a>Neues Diagnosetool
 
-- [Problembehandlung für neues Betriebssystemupdate](#new-os-update-troubleshooter)
+- [Neue Problembehandlung für Betriebssystemupdates](#new-os-update-troubleshooter)
   - Sammeln von Protokollen im Zusammenhang mit Betriebssystemupdates
 
-### <a name="introducing-the-new-microsoft-edge"></a>Einführung in das neue Microsoft Edge
+### <a name="introducing-the-new-microsoft-edge"></a>Einführung in die neue Microsoft Edge
 
-![Animation des älteren Microsoft Edge-Logos zum neuen Microsoft Edge-Logo](images/new-edge.gif)
+![Animation des Legacy-Microsoft Edge-Logos zu einem neuen Microsoft Edge-Logo](images/new-edge.gif)
 
-Das neue Microsoft Edge [übernimmt das Open -Source-Projekt Chromium,](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) um eine bessere Kompatibilität für Kunden und eine geringere Fragmentierung des Webs für Webentwickler zu schaffen.
+Die neue Microsoft Edge [übernimmt das Chromium-Open-Source-Projekt,](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) um eine bessere Kompatibilität für Kunden und eine geringere Fragmentierung des Webs für Webentwickler zu schaffen.
 
-Mit dieser Insidervorschau ist das neue Microsoft Edge zum ersten Mal für HoloLens 2-Kunden verfügbar! Während das neue Microsoft Edge schließlich microsoft Edge auf HoloLens 2 ersetzt, stehen beide Browser derzeit Insidern zur Verfügung. Bitte teilen Sie Feedback und Fehler mit unserem Team über das **Feature** Feedback senden im neuen Microsoft Edge oder über [den FeedbackHub.](hololens-feedback.md)
+Mit dieser Insider-Vorschau ist die neue Microsoft Edge zum ersten Mal für HoloLens 2 Kunden verfügbar! Während die neue Microsoft Edge ältere Microsoft Edge auf HoloLens 2 ersetzen wird, sind beide Browser derzeit für Insider verfügbar. Teilen Sie Feedback und Fehler mit unserem Team über das Feature **Feedback senden** im neuen Microsoft Edge oder über [Feedback-Hub](hololens-feedback.md).
 
-![Neuer Microsoft Edge-Screenshot](images/new-edge-ui.png)
+![Screenshot der neuen Microsoft Edge](images/new-edge-ui.png)
 
 #### <a name="launching-the-new-microsoft-edge"></a>Starten des neuen Microsoft Edge
 
-Insidern stehen zwei Versionen von Microsoft Edge zur Verfügung: das neue Microsoft Edge-Symbol (dargestellt durch ein blaues und grünes Wirbelsymbol) und das ältere Microsoft Edge (dargestellt durch das weiße ![ ](images/new_edge_logo.png) "e"-Symbol). Das neue Microsoft Edge ist an das Startmenü angeheftet und wird automatisch gestartet, wenn Sie einen Weblink aktivieren. Wenn Sie die Verwendung von Microsoft Edge als Standardwebbrowser wiederherstellen möchten, lesen Sie die Anweisungen unten zum Zurücksetzen [von Standard-Apps.](#default-app-picker)
+Insidern stehen zwei Versionen von Microsoft Edge zur Verfügung: die neue Microsoft Edge ![ neue Microsoft Edge ](images/new_edge_logo.png) (dargestellt durch ein blaues und grünes Verwirlsymbol) und legacy Microsoft Edge (dargestellt durch das weiße Symbol "e"). Die neue Microsoft Edge wird an die Startmenü angeheftet und automatisch gestartet, wenn Sie einen Weblink aktivieren. Wenn Sie die Verwendung von Legacy-Apps Microsoft Edge Standardwebbrowser zurücksetzen möchten, lesen Sie die anweisungen unten zum Zurücksetzen [von Standard-Apps.](#default-app-picker)
 
 > [!NOTE]
-> Wenn Sie das neue Microsoft Edge auf HoloLens 2 zum ersten Mal starten, werden Ihre Einstellungen und Daten aus älteren Microsoft Edge importiert. Wenn Sie microsoft Edge nach dem Starten des neuen Microsoft Edge weiterhin verwenden, werden diese neuen Daten nicht von Microsoft Edge mit dem neuen Microsoft Edge synchronisiert.
+> Wenn Sie die neue Microsoft Edge auf HoloLens 2 starten, werden Ihre Einstellungen und Daten aus legacy-Microsoft Edge. Wenn Sie legacy-Microsoft Edge nach dem Start des neuen Microsoft Edge weiterhin verwenden, werden diese neuen Daten nicht von legacy Microsoft Edge mit dem neuen Microsoft Edge.
 
-#### <a name="configuring-policy-settings-for-the-new-microsoft-edge"></a>Konfigurieren von Richtlinieneinstellungen für das neue Microsoft Edge
+#### <a name="configuring-policy-settings-for-the-new-microsoft-edge"></a>Konfigurieren von Richtlinieneinstellungen für die neue Microsoft Edge
 
-Das neue Microsoft Edge bietet IT-Administratoren einen wesentlich umfangreicheren Satz von Browserrichtlinien für HoloLens 2 als bisher mit Microsoft Edge verfügbar.
+Die neue Microsoft Edge bietet IT-Administratoren einen viel umfassenderen Satz von Browserrichtlinien für HoloLens 2, als zuvor bei Legacy-Microsoft Edge.
 
-Hier sind einige hilfreiche Ressourcen, um mehr über die Verwaltung von Richtlinieneinstellungen für das neue Microsoft Edge zu erfahren:
+Im Folgenden finden Sie einige hilfreiche Ressourcen, um mehr über das Verwalten von Richtlinieneinstellungen für die neue Microsoft Edge:
 
-- [Konfigurieren der Microsoft Edge-Richtlinieneinstellungen mit Microsoft Intune](https://docs.microsoft.com/deployedge/configure-edge-with-intune)
-- [Zuordnung von Richtlinien von Microsoft Edge-Vorgängerversionen zu Microsoft Edge](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge)
-- [Zuordnung von Richtlinien von Google Chrome zu Microsoft Edge](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-chrome-to-newedge)
+- [Konfigurieren Microsoft Edge Richtlinieneinstellungen mit Microsoft Intune](https://docs.microsoft.com/deployedge/configure-edge-with-intune)
+- [Vorgängerversion von Microsoft Edge, um Microsoft Edge richtlinienzuordnung zu erstellen](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge)
+- [Google Chrome zum Microsoft Edge der Richtlinienzuordnung](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-chrome-to-newedge)
 - Vollständige [Microsoft Edge Enterprise-Dokumentation](https://docs.microsoft.com/deployedge/)
 
 > [!IMPORTANT]
-> Aufgrund der Menge von Browserrichtlinien, die vom neuen Microsoft Edge unterstützt werden, kann unser Team nicht garantieren, dass jede neue Richtlinie auf HoloLens 2 funktioniert. Wir haben jedoch getestet und bestätigt, dass die neue Microsoft Edge-Entsprechung jeder früheren Microsoft Edge-Richtlinie, die zuvor für HoloLens 2 unterstützt wurde, wie erwartet funktioniert. Informationen zum neuen Microsoft Edge-Äquivalent jeder älteren Microsoft Edge-Browserrichtlinie, die Sie mit HoloLens 2 verwendet haben, finden Sie unter [Microsoft Edge Legacy to Microsoft Edge policy mapping.](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge)
+> Aufgrund des Umfangs der Browserrichtlinien, die von der neuen Microsoft Edge unterstützt werden, kann unser Team nicht garantieren, dass jede neue Richtlinie HoloLens 2. Wir haben jedoch getestet und bestätigt, dass das neue Microsoft Edge-Äquivalent jeder Legacy-Microsoft Edge-Richtlinie, die zuvor für HoloLens 2 unterstützt wurde, wie erwartet funktioniert. Unter [Vorgängerversion von Microsoft Edge sie](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge) Microsoft Edge, wie Sie die neue Microsoft Edge-Entsprechung jeder älteren Microsoft Edge-Browserrichtlinie finden, die Sie mit HoloLens 2.
 >
-> Es gibt mindestens zwei neue Microsoft ** Edge-Richtlinien, von deren Verwendung wir wissen, dass holoLens 2 nicht funktioniert:
+> Es gibt mindestens zwei neue Microsoft Edge, von denen wir wissen, *dass sie nicht* mit den HoloLens 2:
 > - EnterpriseModeSiteList
 > - EnterpriseSiteListServiceURL
 
-#### <a name="what-to-expect-from-the-new-microsoft-edge-on-hololens-2"></a>Was Sie vom neuen Microsoft Edge auf HoloLens 2 erwarten können
+#### <a name="what-to-expect-from-the-new-microsoft-edge-on-hololens-2"></a>Was Sie von der neuen Microsoft Edge auf HoloLens 2
 
-Da es sich bei der neuen Microsoft Edge um eine systemeigene Win32-App mit einer neuen UWP-Adapterebene handelt, die die Ausführung auf nur UWP-Geräten wie HoloLens 2 ermöglicht, sind einige Features möglicherweise nicht sofort verfügbar. Wir unterstützen in den kommenden Monaten neue Szenarien und Features. Überprüfen Sie daher diesen Bereich, um aktuelle Informationen zu erhalten.
+Da die neue Microsoft Edge eine native Win32-App mit einer neuen UWP-Adapterebene ist, die die Ausführung auf nur UWP-Geräten wie HoloLens 2 ermöglicht, sind einige Features möglicherweise nicht sofort verfügbar. Wir werden in den kommenden Monaten neue Szenarien und Features unterstützen. In diesem Bereich finden Sie aktuelle Informationen.
 
-**Szenarien und Features, die voraussichtlich funktionieren:**
-- Erste Ausführung, Anmelden beim Profil und Synchronisierung
-- Websites sollten wie erwartet gerendert und verhalten
-- Die meisten Browserfunktionen (Favoriten, Verlauf usw.) sollten wie erwartet funktionieren
+**Szenarien und Features, die funktionieren sollen:**
+- Erste Ausführung, Anmeldung beim Profil und Synchronisierung
+- Websites sollten wie erwartet gerendert werden und sich verhalten.
+- Die meisten Browserfunktionen (Favoriten, Verlauf usw.) sollten wie erwartet funktionieren.
 - Dunkler Modus
 - Installieren von Web-Apps auf dem Gerät
-- Installieren von Erweiterungen (teilen Sie uns bitte mit, ob Sie Erweiterungen verwenden, die auf HoloLens 2 nicht ordnungsgemäß funktionieren)
-- Anzeigen und Markieren einer PDF
+- Installieren von Erweiterungen (bitte teilen Sie uns mit, wenn Sie Erweiterungen verwenden, die auf HoloLens 2 nicht ordnungsgemäß funktionieren)
+- Anzeigen und Markieren einer PDF-Datei
 - Räumlicher Sound aus einem einzelnen Browserfenster
 - Automatische und manuelle Aktualisierung des Browsers
-- Speichern einer PDF aus dem Menü Drucken (mit der Option "In PDF speichern")
-- WebXR- und 360-Viewer-Erweiterung
-- Inhaltswiederherstellung zum Korrigieren des Fensters beim Durchsuchen mehrerer Fenster in Ihrer Umgebung
+- Speichern einer PDF-Datei aus dem Menü Drucken (mit der Option "In PDF speichern")
+- WebXR- und 360 Viewer-Erweiterung
+- Inhaltswiederherstellung im richtigen Fenster beim Durchsuchen mehrerer Fenster in Ihrer Umgebung
 
-**Szenarien und Features, die nicht funktionieren sollen:**
-- Räumlicher Sound aus mehreren Fenstern mit gleichzeitigen Audiodatenströmen
-- "See it, say it"
+**Szenarien und Features funktionieren voraussichtlich nicht:**
+- Räumlicher Sound aus mehreren Fenstern mit gleichzeitigen Audiostreams
+- "Sehen Sie es, sagen Sie es".
 - Drucken
 
 **Bekannte Probleme im Browser:**
-- Wi-Fi Proxykonfigurationen, bei denen es sich um Proxyrichtlinien handelt, die auf einzelne Wi-Fi-Verbindungen zielen, funktionieren derzeit nicht mit dem neuen Microsoft Edge. Wir arbeiten aktiv daran, dieses Problem vor der öffentlichen Veröffentlichung des Betriebssystemupdates zu entsperren.
-- Die Vergrößerungsvorschau in der holografischen Tastatur wurde für das neue Microsoft Edge deaktiviert. Wir hoffen, dieses Feature in einem zukünftigen Update wieder aktivieren zu können, sobald die Vergrößerung ordnungsgemäß funktioniert.
-- Zwei Zeichen auf der japanischen Tastatur funktionieren im neuen Microsoft Edge nicht wie erwartet. Dieses Problem wurde stammverursachet und sollte bald behoben werden.
+- Wi-Fi Proxykonfigurationen, bei denen es sich um Proxyrichtlinien handelt, die auf einzelne Wi-Fi Verbindungen ausgerichtet sind, funktionieren derzeit nicht mit dem neuen Microsoft Edge. Wir arbeiten aktiv daran, dieses Problem vor der öffentlichen Veröffentlichung des Betriebssystemupdates aufzuheben.
+- Die Bildschirmlupevorschau in der holografischen Tastatur wurde für die neue Microsoft Edge deaktiviert. Wir hoffen, dieses Feature in einem zukünftigen Update wieder zu ermöglichen, sobald die Vergrößerung ordnungsgemäß funktioniert.
+- Zwei Zeichen auf der japanischen Tastatur funktionieren in der neuen Version nicht wie erwartet Microsoft Edge. Dieses Problem wurde grundverursachet und sollte bald behoben werden.
 - Weblinks in der Microsoft Store-App starten den Browser möglicherweise nicht
-- Die Audiowiedergabe kann im falschen Browserfenster angezeigt werden, wenn ein anderes Browserfenster geöffnet und aktiv ist. Sie können dieses Problem beheben, indem Sie das andere aktive Fenster schließen, das keine Audiowiedergabe sein soll.
-- Bei der Wiedergabe von Audio aus einem Browserfenster im [Modus "Folgen Sie mir"](hololens2-basic-usage.md#follow-me-stop-following)wird die Audiowiedergabe fortgesetzt, wenn Sie den Modus "Folgen" deaktivieren. Sie können dieses Problem beheben, indem Sie die Audiowiedergabe beenden, bevor Sie den Modus "Folgen" deaktivieren oder das Fenster mit der **Schaltfläche X** schließen.
-- Die Interaktion mit aktiven Microsoft Edge-Fenstern kann dazu führen, dass andere 2D-App-Fenster unerwartet inaktiv werden. Sie können diese Fenster reaktivieren, indem Sie erneut mit ihnen interagieren.
-- Das Öffnen eines Weblinks von einer anderen App oder bestimmten Dokumententypen wie PDFs kann dazu führen, dass eine zweite leere Registerkarte im Browser geöffnet wird (zusätzlich zur neuen Registerkarte, die mit dem Inhalt des Weblinks oder dateilinks erstellt wurde). Sie können dieses Problem beheben, indem Sie die zusätzliche leere Registerkarte schließen.
+- Audiodaten werden möglicherweise aus dem falschen Browserfenster abspielt, wenn ein anderes Browserfenster geöffnet und aktiv ist. Sie können dieses Problem beheben, indem Sie das andere aktive Fenster schließen, das keine Audiowiedergabe verwenden soll.
+- Wenn Sie Audiodaten aus einem Browserfenster im [Modus "Folge mir"](hololens2-basic-usage.md#follow-me-stop-following)wieder geben, wird die Audiowiedergabe fortgesetzt, wenn Sie den Modus "Follow me" deaktivieren. Sie können dieses Problem beheben, indem Sie die Audiowiedergabe beenden, bevor Sie den Modus "Follow me" deaktivieren, oder indem Sie das Fenster mit der **Schaltfläche X** schließen.
+- Die Interaktion mit aktiven Microsoft Edge fenstern kann dazu führen, dass andere 2D-App-Fenster unerwartet inaktiv werden. Sie können diese Fenster reaktivieren, indem Sie erneut mit ihnen interagieren.
+- Das Öffnen eines Weblinks über eine andere App oder bestimmte Arten von Dokumenten wie PDFs kann dazu führen, dass eine zweite leere Registerkarte im Browser geöffnet wird (zusätzlich zur neuen Registerkarte, die mit dem Inhalt des Weblinks oder Dateilinks erstellt wurde). Sie können dieses Problem beheben, indem Sie die zusätzliche leere Registerkarte schließen.
 
-#### <a name="microsoft-edge-insider-channels"></a>Microsoft Edge-Insider-Kanäle
+#### <a name="microsoft-edge-insider-channels"></a>Microsoft Edge Insider-Kanäle
 
-Das Microsoft Edge-Team stellt der Edge-Insider-Community drei Vorschaukanäle zur Verfügung: Beta, Dev und Canary. Durch das Installieren eines Vorschaukanals wird die veröffentlichte Version von Microsoft Edge auf HoloLens 2 nicht deinstalliert, und Sie können mehrere gleichzeitig installieren. 
+Das Microsoft Edge stellt der Edge Insider-Community drei Vorschaukanäle zur Verfügung: Beta, Dev und Canary. Durch die Installation eines Vorschaukanals wird die veröffentlichte Version von Microsoft Edge auf Ihrem HoloLens 2 nicht deinstalliert, und Sie können mehrere gleichzeitig installieren. 
 
-Besuchen Sie [die Microsoft Edge Insider-Homepage,](https://www.microsoftedgeinsider.com) um mehr über die Edge-Insider-Community zu erfahren. Weitere Informationen zu den verschiedenen Edge-Insider-Kanälen und erste Schritte finden Sie auf der [Edge-Insider-Downloadseite.](https://www.microsoftedgeinsider.com/download)
+Besuchen Sie [die Microsoft Edge Insider-Homepage,](https://www.microsoftedgeinsider.com) um mehr über die Edge Insider-Community zu erfahren. Weitere Informationen zu den verschiedenen Edge Insider-Kanälen und den ersten Schritte finden Sie auf der [Downloadseite von Edge Insider.](https://www.microsoftedgeinsider.com/download)
 
-Es stehen mehrere Methoden zum Installieren von Microsoft Edge-Insider-Kanälen in HoloLens 2 zur Verfügung:
+Es gibt mehrere Methoden zum Installieren von Insider Microsoft Edge kanälen für HoloLens 2:
 
 **Direkte Installation auf dem Gerät (derzeit nur für nicht verwaltete Geräte verfügbar)**
-  1. Besuchen Sie auf Ihrer HoloLens 2 die [Edge-Insider-Downloadseite](https://www.microsoftedgeinsider.com/download).
-  1. Wählen Sie **die Schaltfläche Herunterladen für HoloLens 2** für den Edge-Insider-Kanal aus, den Sie installieren möchten.
+  1. Besuchen Sie HoloLens 2 Edge [Insider-Downloadseite.](https://www.microsoftedgeinsider.com/download)
+  1. Wählen Sie die Schaltfläche Download for HoloLens 2 (Herunterladen **für HoloLens 2)** für den Edge-Insider-Kanal aus, den Sie installieren möchten.
   1. Starten Sie die heruntergeladene MSIX-Datei aus der Edge-Downloadwarteschlange oder aus dem Ordner "Downloads" Ihres Geräts (mithilfe des Datei-Explorers).
   1. [Das App-Installationsprogramm](app-deploy-app-installer.md) wird gestartet.
-  1. Wählen Sie die **Schaltfläche Installieren** aus.
-  1. Nach der erfolgreichen Installation finden Sie Microsoft Edge Beta, Dev oder Canary als separaten Eintrag in der **Liste Alle** Apps im Startmenü.
+  1. Wählen Sie die Schaltfläche **Installieren** aus.
+  1. Nach der erfolgreichen Installation finden Sie Microsoft Edge Beta, Dev oder Canary als separaten Eintrag in der **Alle Apps** Liste der Startmenü.
 
-**Installieren über PC mit dem [](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal) Windows Device Portal (für HoloLens 2 muss der Entwicklermodus aktiviert sein)**
-  1. Besuchen Sie auf Ihrem PC die [Edge-Insider-Downloadseite](https://www.microsoftedgeinsider.com/download).
-  1. Wählen Sie **die Dropdownpfeilschaltfläche** neben der Schaltfläche "Für Windows 10 herunterladen" für den Edge-Insider-Kanal aus, den Sie installieren möchten.
-  1. Wählen **Sie holoLens 2** im Dropdownmenü aus.
+**Installation über PC mit Windows-Geräteportal (erfordert, dass der [Entwicklermodus](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal) auf HoloLens 2 aktiviert ist)**
+  1. Besuchen Sie auf Ihrem PC die [Edge Insider-Downloadseite.](https://www.microsoftedgeinsider.com/download)
+  1. Wählen Sie die **Dropdownpfeilschaltfläche** neben der Schaltfläche "Download for Windows 10" (Herunterladen für Windows 10) für den Edge-Insider-Kanal aus, den Sie installieren möchten.
+  1. Wählen Sie im Dropdownmenü **HoloLens 2** aus.
   1. Speichern Sie die MSIX-Datei im Ordner "Downloads" Ihres PCs (oder in einem anderen Ordner, den Sie leicht finden können).
-  1. Verwenden [Sie das Windows-Geräteportal](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app) auf Ihrem PC, um die heruntergeladene .msix-Datei auf HoloLens 2 zu installieren.
-  1. Nach der erfolgreichen Installation finden Sie Microsoft Edge Beta, Dev oder Canary als separaten Eintrag in der **Liste Alle** Apps im Startmenü.
+  1. Verwenden Sie [Windows-Geräteportal](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app) auf Ihrem PC, um die heruntergeladene MSIX-Datei auf HoloLens 2 zu installieren.
+  1. Nach der erfolgreichen Installation finden Sie Microsoft Edge Beta, Dev oder Canary als separaten Eintrag in der **Alle Apps** Liste der Startmenü.
 
 > [!NOTE]
-> Während dieser Windows-Insider-Vorschau für HoloLens 2 ist die Version von Microsoft Edge auf Ihrem Gerät möglicherweise höher als die version, die in einigen (oder allen) Microsoft Edge-Insider-Kanälen verfügbar ist. Dadurch soll sichergestellt werden, dass neue Features und Korrekturen, die speziell auf den Webbrowser in HoloLens 2 zielen, so schnell wie möglich zu unseren Windows-Insidern kommen. Kurz nach der öffentlichen Veröffentlichung des nächsten Windows-Updates werden die Microsoft Edge-Insider-Kanalbuilds die Version von Microsoft Edge auf HoloLens 2 übertreffen und vor ihnen bleiben.
+> Während dieser Windows-Insider Vorschauversion für HoloLens 2 ist die Version von Microsoft Edge auf Ihrem Gerät möglicherweise höher als die Version, die in einigen (oder allen) Microsoft Edge Insider-Kanälen verfügbar ist. Dadurch wird sichergestellt, dass neue Features und Fehlerbehebungen speziell für den Webbrowser auf HoloLens 2 so schnell wie möglich zu unseren Windows-Insidern gelangen. Kurz nach der Veröffentlichung des nächsten Windows-Updates werden die Builds des Microsoft Edge Insider-Kanals die Version von Microsoft Edge auf Ihrem HoloLens 2 über- und voraus halten.
 
-#### <a name="using-wdac-to-block-new-microsoft-edge"></a>Blockieren neuer Microsoft Edge mithilfe von WDAC
+#### <a name="using-wdac-to-block-new-microsoft-edge"></a>Verwenden von WDAC zum Blockieren neuer Microsoft Edge
 
-Für IT-Administratoren, die ihre [WDAC-Richtlinie](windows-defender-application-control-wdac.md) aktualisieren möchten, um die neue Microsoft Edge-App zu blockieren, müssen Sie Ihrer Richtlinie Folgendes hinzufügen.
+Für IT-Administratoren, die ihre [WDAC-Richtlinie](windows-defender-application-control-wdac.md) aktualisieren möchten, um die neue Microsoft Edge App zu blockieren, müssen Sie Ihrer Richtlinie Folgendes hinzufügen.
 
 ``` <Deny ID="ID_DENY_D_3_0" FriendlyName="C:\Data\Programs FileRule" PackageVersion="65535.65535.65535.65535" FileName="msedge.exe" /> ```
 
-#### <a name="managing-endpoints-for-the-new-microsoft-edge"></a>Verwalten von Endpunkten für das neue Microsoft Edge
+#### <a name="managing-endpoints-for-the-new-microsoft-edge"></a>Verwalten von Endpunkten für die neue Microsoft Edge
 
-In einigen Umgebungen müssen möglicherweise Netzwerkeinschränkungen berücksichtigt werden. Um eine reibungslose Oberfläche mit dem neuen Edge zu gewährleisten, aktivieren Sie [diese Microsoft-Endpunkte.](https://docs.microsoft.com/deployedge/microsoft-edge-security-endpoints)
+Für einige Umgebungen gelten möglicherweise Netzwerkeinschränkungen, die berücksichtigt werden müssen. Aktivieren Sie diese Microsoft-Endpunkte, um ein reibungsloses Erlebnis mit dem neuen [Edge zu gewährleisten.](https://docs.microsoft.com/deployedge/microsoft-edge-security-endpoints)
 
-Lesen Sie mehr über die derzeit [verfügbaren Endpunkte für HoloLens](hololens-offline.md).
+Erfahren Sie mehr über die derzeit [verfügbaren Endpunkte für HoloLens](hololens-offline.md).
 
 ### <a name="webxr-and-360-viewer"></a>WebXR und 360 Viewer
 
-*Hinzugefügt in Windows Insider Build 20289.1000*
+*Hinzugefügt in Windows-Insider Build 20289.1000*
 
-Das neue Microsoft Edge umfasst Unterstützung für WebXR, der neue Standard für die Erstellung immersiver Weberfahrungen (ersetzt WebVR). Viele immersive Weberfahrungen wurden im Hinblick auf VR entworfen (sie ersetzen Ihr Sichtfeld durch eine virtuelle Umgebung), aber diese Erfahrungen werden auch von HoloLens 2 unterstützt. Der WebXR-Standard ermöglicht auch immersive Weberfahrungen mit erweiterter und gemischter Realität, die Ihre physische Umgebung verwenden. Da Entwickler mehr Zeit mit WebXR verbringen, erwarten wir, dass neue immersive Augmented- und Mixed Reality-Erfahrungen für HoloLens 2-Kunden verfügbar sein werden.
+Die neue Microsoft Edge bietet Unterstützung für WebXR. Dies ist der neue Standard zum Erstellen immersiver Weberfahrungen (ersetzen von WebVR). Viele immersive Webumgebungen wurden im Hinblick auf VR entworfen (sie ersetzen Ihr Sichtfeld durch eine virtuelle Umgebung), aber diese Erfahrungen werden auch von HoloLens 2. Der WebXR-Standard ermöglicht auch immersive Webumgebungen mit Augmented und Mixed Reality, die Ihre physische Umgebung verwenden. Da Entwickler mehr Zeit mit WebXR verbringen, gehen wir davon aus, dass neue immersive Mixed Reality-Umgebungen für HoloLens 2 Kunden eintreffen werden!
 
-Die Erweiterung 360 Viewer baut auf WebXR auf und wird automatisch zusammen mit dem neuen Microsoft Edge auf HoloLens 2 installiert. Mit dieser Weberweiterung können Sie sich in 360-Grad-Videos eintauchen. YouTube bietet die größte Auswahl von 360 Videos, daher empfehlen wir Ihnen, dort zu beginnen.
+Die 360 Viewer-Erweiterung basiert auf WebXR und wird automatisch zusammen mit dem neuen Microsoft Edge auf HoloLens 2. Diese Weberweiterung bietet Ihnen die Möglichkeit, sich in 360-Grad-Videos zu vertiefen. YouTube bietet die größte Auswahl von 360 Videos, daher empfehlen wir Ihnen, dort zu beginnen.
 
 #### <a name="how-to-use-webxr"></a>Verwenden von WebXR
 
 1. Navigieren Sie zu einer Website mit WebXR-Unterstützung.
-1. Wählen Sie **die Schaltfläche VR** eingeben auf der Website aus. Der Speicherort und die visuelle Darstellung dieser Schaltfläche können je nach Website variieren, sie sieht jedoch ähnlich aus wie:
+1. Wählen Sie auf **der Website die Schaltfläche VR** eingeben aus. Der Speicherort und die visuelle Darstellung dieser Schaltfläche können je nach Website variieren, aber sie kann in etwa wie die folgenden aussehen:
 
-    ![Beispiel für die Eingabe von VR-Schaltflächen](images/75px-enter-vr.png)
+    ![Beispiel für VR-Schaltfläche eingeben](images/75px-enter-vr.png)
 
-1. Wenn Sie das erste Mal versuchen, eine WebXR-Umgebung in einer bestimmten Domäne zu starten, bittet der Browser um Zustimmung, um eine immersive Ansicht einzuholen, und wählen Sie **Zulassen aus.**
-1. Verwenden [Sie HoloLens 2-Gesten, um](hololens2-basic-usage.md#the-hand-tracking-frame) die Benutzererfahrung zu ändern.
-1. Wenn die Benutzererfahrung nicht über eine **Exit-Schaltfläche** verfügt, verwenden Sie die [Startgeste,](hololens2-basic-usage.md#start-gesture) um nach Hause zurückzukehren.
+1. Wenn Sie zum ersten Mal versuchen, eine WebXR-Umgebung in einer bestimmten Domäne zu starten, wird der Browser um Zustimmung für die Eingabe einer immersiven Ansicht bitten. Wählen Sie **Zulassen aus.**
+1. Verwenden [HoloLens 2 Gesten,](hololens2-basic-usage.md#the-hand-tracking-frame) um die Benutzererfahrung zu bearbeiten.
+1. Wenn die Beerfahrung nicht über die Schaltfläche **Beenden verfügen,** verwenden Sie die [Startgeste,](hololens2-basic-usage.md#start-gesture) um nach Hause zurückzukehren.
 
 **Empfohlene WebXR-Beispiele**
 - 360 Viewer (siehe nächster Abschnitt)
-- [XR-Dinosaurier](https://www.xrdinosaurs.com/)
+- [XR-Aussteller](https://www.xrdinosaurs.com/)
 - [Barista Express](https://constructarca.de/game/barista-express/)
 - [WebXR Paint](https://threejs.org/examples/webxr_vr_paint.html)
 
@@ -248,166 +248,166 @@ Die Erweiterung 360 Viewer baut auf WebXR auf und wird automatisch zusammen mit 
 
     ![Schaltfläche zum Aktivieren von 360 Viewer](images/enter-360-viewer.jpg)
 
-1. Wenn Sie versuchen, 360 Viewer zum ersten Mal in einer bestimmten Domäne zu starten, bittet der Browser um Zustimmung, um eine immersive Ansicht einzuholen. Wählen Sie **Zulassen**aus.
-1. [Luft tippen,](hololens2-basic-usage.md#select-using-air-tap) um die Wiedergabesteuerelemente hoch zu bringen. Verwenden [Sie Handstrahlen](hololens2-basic-usage.md#select-using-air-tap) und Lufttippen, um zu spielen/zu pausieren, vorwärts/zurück zu überspringen, Beschriftungen ein-/auszuschalten oder die Erfahrung zu beenden (wodurch die immersive Ansicht beendet wird). Die Wiedergabesteuerelemente werden nach ein paar Sekunden Inaktivität ausgeblendet.
+1. Wenn Sie zum ersten Mal versuchen, 360 Viewer für eine bestimmte Domäne zu starten, fordert der Browser um Zustimmung für die Eingabe einer immersiven Ansicht auf. Wählen Sie **Zulassen** aus.
+1. [Tippen Sie](hololens2-basic-usage.md#select-using-air-tap) in die Luft, um die Wiedergabesteuerelemente aufzuführen. Verwenden Sie [Handlicht und Luftabzweigung,](hololens2-basic-usage.md#select-using-air-tap) um zu spielen/anzuhalten, Vorwärts/Zurück zu überspringen, Untertitel ein-/auszuschalten oder die Benutzeroberfläche zu beenden (wodurch die immersive Ansicht beendet wird). Die Wiedergabesteuerelemente werden nach einigen Sekunden Inaktivität nicht mehr angezeigt.
 
-#### <a name="top-webxr-and-360-viewer-known-issues"></a>Bekannte Probleme mit WebXR und 360 Viewer
-- Abhängig von der Komplexität der WebXR-Erfahrung kann die Framerate fallen oder stottern.
-- Die Unterstützung für gelenkte Handgelenke in WebXR ist standardmäßig nicht aktiviert. Entwickler können die Unterstützung aktivieren, `edge://flags` indem sie "WebXR-Handeingabe" aktivieren.
-- Wenn Sie eine WebXR- oder 360-Viewer-Erfahrung beenden, kann es 30 Sekunden oder mehr dauern, bis Hologramme im Mixed-Reality-Heim wieder angezeigt werden.
+#### <a name="top-webxr-and-360-viewer-known-issues"></a>Top WebXR and 360 Viewer known issues (Top WebXR und 360 Viewer bekannte Probleme)
+- Abhängig von der Komplexität der WebXR-Benutzeroberfläche kann die Framerate fallen oder stuttern.
+- Die Unterstützung für artikulierte Handverbindungen in WebXR ist standardmäßig nicht aktiviert. Entwickler können die Unterstützung über `edge://flags` aktivieren, indem sie "WebXR Hand Input" aktivieren.
+- Beim Beenden einer WebXR- oder 360 Viewer-Benutzeroberfläche kann es 30 Sekunden oder mehr dauern, bis Hologramme im Mixed Reality Startumgebung erneut angezeigt werden.
 - 360 Videos von anderen Websites als YouTube funktionieren möglicherweise nicht wie erwartet.
-- Captions are currently disabled in 360 Viewer on HoloLens 2. Wir planen, dieses Feature in einem zukünftigen Update zu aktivieren.
-- Durch anhalten eines Videos in 360 Viewer wird das Rendern des Videos verhindert (das Auswählen der Wiedergabeschaltfläche setzt die Wiedergabe jedoch ordnungsgemäß fort).
+- Untertitel sind derzeit in 360 Viewer auf HoloLens 2 deaktiviert. Wir planen, dieses Feature in einem zukünftigen Update zu aktivieren.
+- Das Anhalten eines Videos in 360 Viewer verhindert, dass das Video gerendert wird (durch Auswählen der Wiedergabeschaltfläche wird die Wiedergabe jedoch ordnungsgemäß fortgesetzt).
 - Die Schaltfläche "Nächstes Video" in 360 Viewer funktioniert derzeit nicht.
-- Sie können 2D-Videos in einem immersiven "Theater"-Modus abspielen, die Framerate kann jedoch weniger als 30 fps sein.
+- Sie können 2D-Videos in einem immersiven "Ungsmodus" wieder geben, aber die Framerate kann kleiner als 30 Fps sein.
 
 #### <a name="providing-feedback-on-webxr-and-360-viewer"></a>Bereitstellen von Feedback zu WebXR und 360 Viewer
 
-Teilen Sie feedback und Bugs mit unserem Team über das **Feature** Feedback senden im neuen Microsoft Edge.
+Teilen Sie feedback und bugs mit unserem Team über das **Feature Feedback** senden in der neuen Microsoft Edge.
 
-### <a name="new-settings-app"></a>App "Neue Einstellungen"
+### <a name="new-settings-app"></a>Neue Einstellungs-App
 
-Mit dieser Version stellen wir eine neue Version der Einstellungs-App vor. Die neue Einstellungs-App enthält neue Features und erweiterte Einstellungen für HoloLens 2 in den folgenden Bereichen: Sound, Power & Sleep, Network & Internet, Apps, Accounts, Ease of Access und vieles mehr.
+Mit diesem Release führen wir eine neue Version der Einstellungs-App ein. Die neue Einstellungs-App enthält neue Features und erweiterte Einstellungen für HoloLens 2 in den folgenden Bereichen: Sound, Power & sleep, Network & Internet, Apps, Accounts, Erleichterte Bedienung und mehr.
 
 > [!NOTE]
-> Da sich die neue Einstellungs-App von der älteren Einstellungs-App unterscheidet, werden alle Einstellungen, die Sie zuvor in Ihrer Umgebung platziert haben, nach dem Update entfernt.
+> Da sich die neue Einstellungs-App von der älteren Einstellungs-App ab unterscheiden, werden alle Einstellungsfenster, die Sie zuvor in Ihrer Umgebung platziert haben, nach dem Update entfernt.
 
-![Startseite der App "Neue Einstellungen"](images/new-settings-app.png)
+![Neue Startseite der Einstellungs-App](images/new-settings-app.png)
 
 **Neue Features und Einstellungen**
-- Einstellungssuche: Suchen Sie auf der Startseite "Einstellungen" mithilfe von Schlüsselwörtern oder dem Namen der Einstellung nach Einstellungen.
+- Einstellungssuche: Suchen Sie auf der Startseite einstellungen nach Einstellungen, indem Sie Schlüsselwörter oder den Namen der Einstellung verwenden.
 - System > Sound:
-  - Eingabe- und Ausgabeaudiogeräte: Wählen Sie unabhängig Ihre Ein- und Ausgabeaudiogeräte aus (z. B. Audio über Bluetooth-Kopfhörer abhören oder ein USB-C-Mikrofon für die Audioeingabe verwenden).
+  - Eingabe- und Ausgabeaudiogeräte: Wählen Sie Ihre Eingabe- und Ausgabeaudiogeräte unabhängig aus (z. B. audio über Bluetooth-Anschlüsse lauschen oder ein USB-C-Mikrofon für die Audioeingabe verwenden).
     > [!NOTE]
-    > Bluetooth Mikrofone werden von HoloLens 2 nicht unterstützt.
-  - App-Volume: Passen Sie das Volumen der einzelnen Apps unabhängig an. Weitere [Informationen finden Sie unter Volume Control pro App.](#per-app-volume-control)
-- System > Power &: Wählen Sie aus, wann das Gerät nach einer Phase der Inaktivität in den Ruhezustand wechseln soll.
-- System > Battery: Aktivieren Sie den Stromsparmodus manuell, oder legen Sie einen Akkuschwellenwert ein, an dem der Stromsparmodus automatisch aktiviert wird.
-- Geräte > USB: Sie können USB-Verbindungen standardmäßig deaktivieren.
+    > Bluetooth-Mikrofone werden von der HoloLens 2.
+  - App-Volume: Passen Sie das Volumen jeder App unabhängig an. Siehe [pro App-Volumesteuerung.](#per-app-volume-control)
+- System > Power &: Wählen Sie aus, wann das Gerät nach einer Bestimmten Inaktivität in den Ruhezustand wechseln soll.
+- System > Akku: Aktivieren Sie den Stromsparmodus manuell, oder legen Sie einen Akkuschwellenwert fest, an dem der Stromsparmodus automatisch eingeschaltet wird.
+- Geräte > USB: USB-Verbindungen können standardmäßig deaktiviert werden.
 - Netzwerk & Internet:
   - USB-C-Ethernet-Adapter werden jetzt in Network & Internet angezeigt.
-  - Usb-C-Ethernet-Adaptereinstellungen sind jetzt verfügbar, einschließlich der IP-Adresse.
+  - Die Usb-C-Ethernet-Adaptereinstellungen sind jetzt verfügbar, einschließlich der IP-Adresse.
   - Sie können jetzt den Flugzeugmodus auf HoloLens 2 aktivieren.
-- Apps: Sie können die Standard-Apps zurücksetzen, die für Datei- und Linktypen verwendet werden. Weitere Informationen finden Sie unter [Standard-App-Auswahl](#default-app-picker).
+- Apps: Sie können die Standard-Apps zurücksetzen, die für Datei- und Linktypen verwendet werden. Weitere Informationen finden Sie unter [Standard-App-Auswahl.](#default-app-picker)
 - Konten > Andere Benutzer: Gerätebesitzer können Benutzer hinzufügen, Standardbenutzer auf Gerätebesitzer aktualisieren, Gerätebesitzer auf Standardbenutzer herabstufen und Benutzer entfernen.
-- Einfache Bedienung: Ändern der Textgröße und einiger visueller Effekte.
+- Erleichterte Bedienung: Ändern der Textgröße und einiger visueller Effekte.
 
 **Bekannte Probleme**
 - Zuvor platzierte Einstellungsfenster werden entfernt (siehe Hinweis oben).
-- Sie können Ihr Gerät nicht mehr mit der Einstellungs-App umbenennen. #A0 können Geräte mithilfe der [Windows Autopilot für HoloLens 2-Gerätenamenvorlage](https://docs.microsoft.com/hololens/hololens2-autopilot) oder des Knotens MDM [DevDetail CSP](https://docs.microsoft.com/windows/client-management/mdm/devdetail-csp) Ext/Microsoft/DNSComputerName umbenennen.
-- Die Seite "Ethernet" zeigt ein virtuelles Ethernet-Gerät ("UsbNcm") immer an.
-- Der Akkuverbrauch für das neue Microsoft Edge ist aufgrund seiner Art als Win32-Desktopanwendung, die von einer UWP-Adapterschicht unterstützt wird, möglicherweise nicht genau (es wird keine Korrektur in Kürze erwartet).
+- Sie können Ihr Gerät nicht mehr mit der App Einstellungen umbenennen. IT-Administratoren können Geräte umbenennen, indem sie die [Windows Autopilot für HoloLens 2](https://docs.microsoft.com/hololens/hololens2-autopilot) Gerätenamenvorlage oder den Knoten MDM [DevDetail CSP](https://docs.microsoft.com/windows/client-management/mdm/devdetail-csp) Ext/Microsoft/DNSComputerName verwenden.
+- Auf der Seite Ethernet wird jederzeit ein virtuelles Ethernet-Gerät ("UsbNcm") angezeigt.
+- Der Akkuverbrauch für die neue Microsoft Edge ist aufgrund ihrer Art als Win32-Desktopanwendung, die von einer UWP-Adapterebene unterstützt wird, möglicherweise nicht korrekt (es wird keine Korrektur in Kürze erwartet).
 
-### <a name="display-color-calibration"></a>Anzeigen der Farbkalibrierung
+### <a name="display-color-calibration"></a>Farbkalibrierung anzeigen
 
-*Hinzugefügt in Windows Insider Build 20293.1000*
+*Hinzugefügt in Windows-Insider Build 20293.1000*
 
-Mit dieser neuen Einstellung können Sie ein alternatives Farbprofil für Ihre HoloLens 2-Anzeige auswählen. Dies kann dazu beitragen, dass Farben genauer angezeigt werden, insbesondere bei niedrigeren Helligkeitsstufen. Die Anzeigefarbkalibrierung finden Sie in der App Einstellungen auf der Seite System > Kalibrierung.
+Mit dieser neuen Einstellung können Sie ein alternatives Farbprofil für Ihre HoloLens 2 Anzeigen auswählen. Dies kann dazu beitragen, dass Farben genauer angezeigt werden, insbesondere bei niedrigeren Helligkeitsstufen der Anzeige. Die Farbkalibrierung für die Anzeige finden Sie in der App Einstellungen auf der Seite System > Kalibrierung.
 
 > [!NOTE]
-> Da mit dieser Einstellung ein neues Farbprofil in Ihrer Anzeigefirmware gespeichert wird, handelt es sich um eine Geräteeinstellung (und nicht für jedes Benutzerkonto eindeutig).
+> Da diese Einstellung ein neues Farbprofil in Ihrer Anzeigefirmware speichert, handelt es sich um eine Geräteeinstellung (die nicht für jedes Benutzerkonto eindeutig ist).
 
-#### <a name="how-to-use-display-color-calibration"></a>Verwenden der Anzeigefarbkalibrierung
+#### <a name="how-to-use-display-color-calibration"></a>Verwenden der Kalibrierung von Anzeigefarben
 
-1. Starten **** Sie die Einstellungs-App, und navigieren Sie zu **System > Kalibrierung**.
-1. Wählen **Sie unter Farbkalibrierung anzeigen**die Schaltfläche **Farbkalibrierung anzeigen** aus.
-1. Die Anzeigefarbkalibrierung wird gestartet und Sie ermutigen, sicherzustellen, dass sich Ihr Visier an der richtigen Position befindet.
-1. Nachdem Sie die Dialogfelder der Anweisung durchdunkelt haben, wird die Anzeige automatisch auf 30 % Helligkeit abgeblendet.
+1. Starten Sie die **App Einstellungen,** und navigieren Sie zu **System > Kalibrierung.**
+1. Wählen **Sie unter Farb kalibrierung anzeigen** die Schaltfläche Farb **kalibrierung der Anzeige** ausführen aus.
+1. Die Kalibrierung der Anzeigefarbe wird gestartet, und Sie werden dazu ermutigen, sicherzustellen, dass sich Ihr Visor an der richtigen Position befindet.
+1. Nachdem Sie die Anweisungsdialogfelder geöffnet haben, wird die Anzeige automatisch auf eine Helligkeit von 30 % abgeblendet.
     > [!TIP]
-    > Wenn Sie probleme haben, die abgeblendete Szene in Ihrer Umgebung zu sehen, können Sie die Helligkeit von HoloLens 2 manuell mithilfe der Helligkeitsschaltflächen auf der linken Seite des Geräts anpassen.
-1. Wählen Sie die Schaltflächen 1 bis 6 aus, um jedes Farbprofil sofort auszuprobieren, und suchen Sie eins, das für Ihre Augen am besten aussieht (dies bedeutet in der Regel, dass das Profil, das die Szene am neutralsten erscheinen lässt, mit dem Graustufenmuster und den Skintönen wie erwartet aussieht).)
+    > Wenn Sie Probleme haben, die abgeblendete Szene in Ihrer Umgebung zu sehen, können Sie die Helligkeitsstufe von HoloLens 2 mithilfe der Helligkeitsschaltflächen auf der linken Seite des Geräts manuell anpassen.
+1. Wählen Sie die Schaltflächen 1 bis 6 aus, um jedes Farbprofil sofort auszuprobieren, und suchen Sie eins, das für Ihre Augen am besten aussieht (dies bedeutet in der Regel das Profil, das der Szene hilft, am neutralsten zu erscheinen, und das Graustufenmuster und die Skintons sehen wie erwartet aus.)
 
-    ![Anzeigen der Farbkalibrierungsszene](images/color-cal-ui.png)
+    ![Anzeigen der Farb kalibrierungsszene](images/color-cal-ui.png)
     
-1. Wenn Sie mit dem ausgewählten Profil zufrieden sind, wählen Sie die Schaltfläche & **Beenden** speichern aus.
-1. Wenn Sie keine Änderungen vornehmen möchten, wählen Sie die Schaltfläche Abbrechen **& Beenden** aus, und Ihre Änderungen werden zurückgesetzt.
+1. Wenn Sie mit dem ausgewählten Profil zufrieden sind, wählen Sie die Schaltfläche Save **& Exit (Beenden)** aus.
+1. Wenn Sie keine Änderungen vornehmen möchten, wählen Sie die Schaltfläche Abbrechen **& Beenden** aus, und Ihre Änderungen werden zurückgewollt.
 
 > [!TIP]
-> Im Folgenden finden Sie einige hilfreiche Tipps, die Sie bei der Verwendung der Einstellung für die Farbkalibrierung beachten sollten:
-> - Sie können die Farbkalibrierung in den Einstellungen jederzeit erneut ausführen.
-> - Wenn jemand auf dem Gerät zuvor die Einstellung zum Ändern von Farbprofilen verwendet hat, wird das Datum/die Uhrzeit der letzten Änderung auf der Seite Einstellungen angezeigt.
-> - Wenn Sie die Farbkalibrierung erneut ausführen, wird das zuvor gespeicherte Farbprofil hervorgehoben, und Profil 0 wird nicht angezeigt (da Profil 0 das ursprüngliche Farbprofil der Anzeige darstellt)
-> - Wenn Sie zum ursprünglichen Farbprofil der Anzeige zurückkehren möchten, können Sie dies über die Seite Einstellungen (siehe Zurücksetzen [des Farbprofils) tun.](#how-to-reset-color-profile)
+> Im Folgenden finden Sie einige hilfreiche Tipps, die Sie bei der Verwendung der Einstellung für die Kalibrierung der Anzeigefarbe beachten sollten:
+> - Sie können die Kalibrierung der Anzeigefarbe in den Einstellungen jederzeit erneut ausführen.
+> - Wenn jemand auf dem Gerät die Einstellung zuvor zum Ändern von Farbprofilen verwendet hat, wird das Datum bzw. die Uhrzeit der letzten Änderung auf der Seite Einstellungen angezeigt.
+> - Wenn Sie die Farb kalibrierung der Anzeige erneut ausführen, wird das zuvor gespeicherte Farbprofil hervorgehoben, und Profil 0 wird nicht angezeigt (da Profil 0 das ursprüngliche Farbprofil der Anzeige darstellt).
+> - Wenn Sie zum ursprünglichen Farbprofil der Anzeige zurückgesetzt werden möchten, können Sie dies auf der Seite Einstellungen tun (siehe Zurücksetzen [des Farbprofils](#how-to-reset-color-profile)).
 
 #### <a name="how-to-reset-color-profile"></a>Zurücksetzen des Farbprofils
 
-Wenn Sie mit dem in HoloLens 2 gespeicherten benutzerdefinierten Farbprofil nicht unzufrieden sind, können Sie das ursprüngliche Farbprofil des Geräts wiederherstellen:
-1. Starten **** Sie die Einstellungs-App, und navigieren Sie zu **System > Kalibrierung**.
-1. Wählen **Sie unter Farbkalibrierung anzeigen**die Schaltfläche Auf **Standardfarbprofil zurücksetzen** aus.
-1. Wenn das Dialogfeld geöffnet wird, wählen Sie **Neustarten** aus, wenn Sie HoloLens 2 neu starten und Ihre Änderungen anwenden möchten.
+Wenn Sie nicht mit dem benutzerdefinierten Farbprofil in Ihrem HoloLens 2 sind, können Sie das ursprüngliche Farbprofil des Geräts wiederherstellen:
+1. Starten Sie die **App Einstellungen,** und navigieren Sie zu **System > Calibration**.
+1. Wählen Sie unter **Farbkalibrierung anzeigen** die Schaltfläche **Auf Standardfarbprofil zurücksetzen** aus.
+1. Wenn das Dialogfeld geöffnet wird, wählen Sie **Neu starten** aus, wenn Sie bereit sind, HoloLens 2 neu zu starten und Ihre Änderungen zu übernehmen.
 
 #### <a name="top-display-color-calibration-known-issues"></a>Bekannte Probleme bei der Farbkalibrierung der obersten Anzeige
 
-- Auf der Seite Einstellungen ist die Statuszeichenfolge, die Ihnen mitteilt, wann das Farbprofil zuletzt geändert wurde, veraltet, bis Sie diese Seite der Einstellungen neu laden.
-    - Problemumgehung: Wählen Sie eine andere Einstellungsseite aus, und wählen Sie dann die Seite Kalibrierung erneut aus.
+- Auf der Seite Einstellungen ist die Statuszeichenfolge, die Anzeigt, wann das Farbprofil zuletzt geändert wurde, veraltet, bis Sie diese Seite der Einstellungen erneut laden.
+    - Problemumgehung: Wählen Sie eine andere Seite Einstellungen aus, und wählen Sie dann die Seite Kalibrierung erneut aus.
 
-### <a name="default-app-picker"></a>Standardmäßige App-Auswahl
+### <a name="default-app-picker"></a>Standard-App-Auswahl
 
-Wenn Sie einen Hyperlink aktivieren oder einen Dateityp mit mehr als einer installierten App öffnen, die ihn unterstützt, wird ein neues Fenster geöffnet, in dem Sie aufgefordert werden, auszuwählen, welche installierte App die Datei oder den Linktyp verarbeiten soll. In diesem Fenster können Sie auch festlegen, dass die ausgewählte App die Datei oder den Linktyp "Einmal" oder "Immer" verarbeiten soll.
+Wenn Sie einen Link aktivieren oder einen Dateityp mit mehreren installierten Apps öffnen, die dies unterstützen, wird ein neues Fenster geöffnet, in dem Sie aufgefordert werden, auszuwählen, welche installierte App die Datei oder den Linktyp verarbeiten soll. In diesem Fenster können Sie auch festlegen, dass die ausgewählte App die Datei oder den Linktyp "Einmal" oder "Immer" verarbeitet.
 
-![App-Auswahlfenster](images/default-app-picker.png)
+![Fenster "App-Auswahl"](images/default-app-picker.png)
 
-Wenn Sie "Immer" auswählen, aber später ändern möchten, welche App eine bestimmte Datei oder einen bestimmten Linktyp verarbeitet, können Sie ihre gespeicherten Standardeinstellungen unter Einstellungen **> Apps zurücksetzen.** Scrollen Sie zum unteren Rand **** der Seite, und wählen Sie die Schaltfläche Löschen unter "Standard-Apps für Dateitypen" und/oder "Standard-Apps für Linktypen" aus. Im Gegensatz zur ähnlichen Einstellung auf Desktop-PCs können Sie die Standardeinstellungen für einzelne Dateitypen nicht zurücksetzen.
+Wenn Sie "Immer" auswählen, aber später ändern möchten, welche App eine bestimmte Datei oder einen bestimmten Linktyp verarbeitet, können Sie Die gespeicherten Standardwerte unter **Einstellungen > Apps** zurücksetzen. Scrollen Sie zum unteren Rand der Seite, und wählen Sie die Schaltfläche **Löschen** unter "Standard-Apps für Dateitypen" und/oder "Standard-Apps für Linktypen" aus. Im Gegensatz zur ähnlichen Einstellung auf Desktop-PCs können Sie die Standardwerte einzelner Dateitypen nicht zurücksetzen.
 
-### <a name="per-app-volume-control"></a>Volumensteuerung pro App
+### <a name="per-app-volume-control"></a>Volumesteuerung pro App
 
-In diesem Windows-Insider-Build können Benutzer nun die Lautstärke der einzelnen Apps manuell anpassen. Dies ermöglicht Benutzern, sich besser auf die Apps zu konzentrieren, die sie benötigen, oder besser zu hören, wenn sie mehrere Apps verwenden. Beispielsweise muss die Lautstärke einer App heruntergefahren werden, während eine andere Person zur Remoteunterstützung in einer anderen Person aufruft.
+In diesem Windows-Insider können Buildbenutzer die Volumeebene jeder App manuell anpassen. Dies ermöglicht Benutzern, sich besser auf die Apps zu konzentrieren, die sie benötigen, oder besser zu hören, wenn sie mehrere Apps verwenden. Beispielsweise muss das Volumen einer App beim Aufrufen einer anderen Person für Remoteunterstützung in einer anderen App heruntergesetzt werden.
 
-Zum Festlegen der Lautstärke einer einzelnen App navigieren Sie zu **Einstellungen**Systemsound , und wählen Sie unter Erweiterte Soundoptionen die Option  ->  ****  ->  **** **App-Volume- und Geräteeinstellungen aus.**
+Navigieren Sie zum Festlegen der Lautstärke einer einzelnen App zu **Einstellungen**  ->    ->  **Systemsound,** und wählen Sie unter Erweiterte Soundoptionen **die Option App-Lautstärke und Geräteeinstellungen aus.**
 
  <img alt="App volume and device preferences." src="./images/volume-per-app.jpg" width="500" height="250" />
 
-### <a name="office-web-app"></a>Office Web App
+### <a name="office-web-app"></a>Office-Web-App
 
 >[!NOTE]
->Ab Windows Insider Build 20325.1000 wird die Office-Web-App nicht mehr vorinstalliert (und nicht für die anstehende öffentliche Version des Betriebssystemupdates vorinstalliert). Um die Office-Web-App zu installieren, besuchen Sie die Schaltfläche App Verfügbar oder Installieren https://www.office.com von **Office** in der Adressleiste. **** Wählen **Sie Installieren aus,** um dies zu bestätigen.
+>Ab Windows-Insider Build 20325.1000 wird die Office-Web-App nicht mehr vorinstalliert (und nicht für die bevorstehende öffentliche Version des Betriebssystemupdates vorinstalliert). Um die Office-Web-App zu installieren, besuchen Sie die Schaltfläche App verfügbar oder https://www.office.com **Office** installieren in der Adressleiste, und wählen Sie sie aus.  Wählen Sie **Installieren aus,** um dies zu bestätigen.
 
-Die Office-Web-App wurde der Liste "Alle Apps" im Startmenü hinzugefügt. Diese Web-App kann auch an Start angeheftet oder deinstalliert werden. Da es sich um eine Web-App handelt, entspricht ihre Funktionalität genau dem, was Sie beim Besuch erleben https://www.office.com würden. Office Web App-Funktionen sind nur verfügbar, wenn HoloLens 2 über eine aktive Internetverbindung verfügt.
+Die Office-Web-App wurde der Liste "Alle Apps" im Startmenü. Diese Web-App kann auch an Start oder Deinstallation angeheftet werden. Da es sich um eine Web-App handelt, entspricht ihre Funktionalität genau der Funktionalität, die Sie beim Besuchen von erleben https://www.office.com würden. Die Office-Web-App-Funktionalität ist nur verfügbar, wenn HoloLens 2 eine aktive Internetverbindung hat.
 
 **Bekanntes Problem**
-- Durch zurücksetzen des Geräts wird die Office-Web-App entfernt.
+- Durch zurücksetzen Ihres Geräts wird die Office-Web-App entfernt.
 
 ### <a name="swipe-to-type"></a>Wischen zum Eingeben
 
-Für einige Kunden ist es schneller, auf virtuellen Tastaturen "einzugeben", indem sie die Form des Worts, das sie eingeben möchten, schwenken, und wir sehen uns diese Funktion für die holografische Tastatur in der Vorschau an. Sie können ein Wort gleichzeitig wischen, indem Sie die Fingerspitze durch die Ebene der holografischen Tastatur übergeben, die Form des Worts wischen und dann die Fingerspitze aus der Tastaturebene ziehen. Sie können Nach-oben-Wörter wischnen, ohne die Leertaste drücken zu müssen, indem Sie den Finger von der Tastatur zwischen Wörtern entfernen. Sie wissen, dass das Feature funktioniert, wenn auf der Tastatur ein Wischpfad nach der Bewegung des Fingers angezeigt wird.
+Einige Kunden finden es schneller, auf virtuellen Tastaturen zu "tippen", indem sie die Form des Worts wischen, das sie eingeben möchten, und wir zeigen diese Funktion für die holografische Tastatur in der Vorschau an. Sie können ein Wort nach dem anderen wischen, indem Sie die Fingerspitze durch die Ebene der holografischen Tastatur übergeben, die Form des Worts wischen und dann die Fingerspitze von der Tastaturebene abziehen. Sie können Nach-oben-Wörter wischen, ohne die Abstandsleiste drücken zu müssen, indem Sie den Finger von der Tastatur zwischen Wörtern entfernen. Sie werden wissen, dass das Feature funktioniert, wenn Sie einen Wischpfad sehen, der der Bewegung Des Fingers auf der Tastatur folgt.
 
-Bitte beachten Sie, dass diese Funktion aufgrund der Art einer holografischen Tastatur, bei der Sie keinen Widerstand gegen Ihren Finger spüren (im Gegensatz zu einem Mobiltelefondisplay), schwierig zu verwenden und zu mastern sein kann. Wir bewerten dieses Feature für die öffentliche Veröffentlichung, daher ist Ihr Feedback wichtig. Ob Sie das Feature nützlich finden oder ein positives Feedback haben, teilen Sie uns bitte über [den Feedback Hub mit.](hololens-feedback.md)
+Beachten Sie, dass dieses Feature aufgrund der Natur einer holografischen Tastatur, bei der Sie keinen Widerstand gegen Ihren Finger haben (im Gegensatz zu einer Mobiltelefonanzeige), schwierig zu verwenden und zu mastern sein kann. Wir bewerten dieses Feature für die öffentliche Veröffentlichung, daher ist Ihr Feedback wichtig. Unabhängig davon, ob Sie das Feature nützlich finden oder feedbacken möchten, teilen Sie uns dies über [Feedback-Hub.](hololens-feedback.md)
 
-### <a name="power-menu-from-start"></a>Hauptmenü vom Start
+### <a name="power-menu-from-start"></a>Menü "Energie" über "Start"
 
-Ein neues Menü, mit dem der Benutzer das Gerät abmelden, herunterfahren und neu starten kann. Ein Indikator auf dem HoloLens-Startbildschirm, der zeigt, wann ein Systemupdate verfügbar ist.
+Ein neues Menü, mit dem sich der Benutzer abmelden, herunterfahren und das Gerät neu starten kann. Ein Indikator im HoloLens-Startbildschirm, der zeigt, wann ein Systemupdate verfügbar ist.
 
 #### <a name="how-to-use"></a>Verwendung
 
-1. Öffnen Sie den HoloLens-Startbildschirm mit der [Startgeste](hololens2-basic-usage.md#start-gesture) oder dem Spruch "Go to Start".
+1. Öffnen Sie die HoloLens-Startbildschirm, indem Sie die [Start-Geste](hololens2-basic-usage.md#start-gesture) verwenden oder "Gehe zu Start" sagen.
 
-2. Beachten Sie das Auslassungssymbol (...) neben dem Benutzerprofilbild:
+2. Beachten Sie das Auslassungszeichen (...) neben dem Benutzerprofilbild:
 
    <img alt="ser context dots, ..." src="./images/powertransition_icon_default_cropped.png" width="586" height="330" />
 
 3. Wählen Sie das Benutzerprofilbild mit Ihren Händen oder dem Sprachbefehl "Power" aus.
 
-4. Es wird ein Menü mit Optionen zum Abmelden, Neustarten oder Herunterfahren des Geräts angezeigt:
+4. Es wird ein Menü mit den Optionen Abmelden, Neustarten oder Herunterfahren des Geräts angezeigt:
 
    <img alt="User context menu" src="./images/powertransition_aad_options_cropped.png" width="586" height="330" />
 
-5. Wählen Sie die Menüoptionen zum Abmelden, Neustarten oder Herunterfahren Ihrer HoloLens aus. Die Option Abmelden ist möglicherweise nicht verfügbar, wenn das Gerät für ein einzelnes [Microsoft-Konto (MSA) oder ein lokales Konto eingerichtet ist.](hololens-identity.md)
+5. Wählen Sie die Menüoptionen zum Abmelden, Neustarten oder Herunterfahren Ihrer HoloLens aus. Die Option Abmelden ist möglicherweise nicht verfügbar, wenn das Gerät für ein [einzelnes Microsoft-Konto (MSA) oder lokales Konto](hololens-identity.md)eingerichtet ist.
 
-6. Schließen Sie das Menü, indem Sie eine andere Stelle berühren oder das Startmenü mit der Startgeste schließen.
+6. Schließen Sie das Menü, indem Sie eine andere Stelle berühren oder die Startmenü mit der Startgeste schließen.
 
 #### <a name="update-indicator"></a>Updateindikator
 
-Wenn ein Update verfügbar ist, wird das Auslassungssymbol angezeigt, um anzugeben, dass ein Neustart das Update installiert. Die Menüoptionen ändern sich auch, um das Vorhandensein des Updates wider zuspiegeln.<br/><br/>
+Wenn ein Update verfügbar ist, wird das Symbol mit den Auslassungszeichen angezeigt, um anzugeben, dass das Update bei einem Neustart installiert wird. Die Menüoptionen ändern sich ebenfalls, um das Vorhandensein des Updates widerzuspiegeln.<br/><br/>
 
 <img alt="User context menu showing update" src="./images/powertransition_aad_options_update_cropped.png" width="470" height="313" />
 
-### <a name="multiple-users-listed-on-sign-in-screen"></a>Mehrere Benutzer auf dem Anmeldebildschirm aufgeführt
+### <a name="multiple-users-listed-on-sign-in-screen"></a>Mehrere Benutzer, die auf dem Anmeldebildschirm aufgeführt sind
 
-Zuvor wurde auf dem Anmeldebildschirm nur der zuletzt angemeldete Benutzer sowie ein Einstiegspunkt "Anderer Benutzer" angezeigt. Wir haben Kundenfeedback erhalten, dass dies nicht ausreicht, wenn sich mehrere Benutzer am Gerät angemeldet haben. Sie mussten ihren Benutzernamen usw. noch neu eingeben.
+Zuvor wurden auf dem Anmeldebildschirm nur der zuletzt angemeldete Benutzer sowie ein Einstiegspunkt "Anderer Benutzer" angezeigt. Wir haben Kundenfeedback erhalten, dass dies nicht ausreicht, wenn sich mehrere Benutzer am Gerät angemeldet haben. Sie mussten weiterhin ihren Benutzernamen usw. erneut eingeben.
 
-In diesem Windows-Insider-Build **** eingeführt, zeigt der Anmeldebildschirm beim Auswählen eines anderen Benutzers, der sich rechts neben dem PIN-Eintragsfeld befindet, mehrere Benutzer mit zuvor beim Gerät angemeldeten Benutzern an. Auf diese Weise können Benutzer ihr Benutzerprofil auswählen und sich dann mit ihren Windows Hello-Anmeldeinformationen anmelden. Ein neuer Benutzer kann dem Gerät auch über die Schaltfläche Konto hinzufügen auf dieser Seite Andere **Benutzer hinzugefügt** werden.
+In diesem Windows-Insider Build eingeführt: Wenn Sie **Anderer Benutzer** auswählen, der sich rechts neben dem PIN-Eingabefeld befindet, zeigt der Anmeldebildschirm mehrere Benutzer an, die sich zuvor beim Gerät angemeldet haben. Dadurch können Benutzer ihr Benutzerprofil auswählen und sich dann mit ihren Windows Hello Anmeldeinformationen anmelden. Ein neuer Benutzer kann dem Gerät auch auf dieser Seite Andere Benutzer über die Schaltfläche **Konto hinzufügen** hinzugefügt werden.
 
-Wenn sie im Menü Andere Benutzer angezeigt werden, zeigt die Schaltfläche Andere Benutzer den letzten benutzer an, der am Gerät angemeldet ist. Wählen Sie diese Schaltfläche aus, um zum Anmeldebildschirm für diesen Benutzer zurückzukehren.
+Im Menü Andere Benutzer zeigt die Schaltfläche Andere Benutzer den letzten Benutzer an, der sich am Gerät angemeldet hat. Wählen Sie diese Schaltfläche aus, um zum Anmeldebildschirm für diesen Benutzer zurückzukehren.
 
 ![Standardeinstellung des Anmeldebildschirms](./images/multiusers1.jpg)
 
@@ -415,39 +415,39 @@ Wenn sie im Menü Andere Benutzer angezeigt werden, zeigt die Schaltfläche Ande
 
 ![Anmeldebildschirm für andere Benutzer](./images/multiusers2.jpg)
 
-### <a name="usb-c-external-microphone-support"></a>Unterstützung für externes USB-C-Mikrofon
+### <a name="usb-c-external-microphone-support"></a>Unterstützung externer USB-C-Mikrofone
 
 > [!IMPORTANT]
-> Wenn Sie ein **USB-Mikrofon anschließen,** wird es nicht automatisch als Eingabegerät festgelegt. Beim Anschließen einer Reihe von USB-C-Kopfhörern werden Benutzer feststellen, dass die Audiodaten des Kopfhörers automatisch an die Kopfhörer umgeleitet werden, aber das HoloLens-Betriebssystem priorisiert das interne Mikrofonarray über jedem anderen Eingabegerät. **Führen Sie die folgenden Schritte aus, um ein USB-C-Mikrofon zu verwenden.**
+> Wenn Sie ein **USB-Mikrofon anschließen, wird** es nicht automatisch als Eingabegerät festgelegt. Beim Einstecken einer Reihe von USB-C-Anschlüssen werden Benutzer feststellen, dass die Audiodaten des Geräts automatisch an die Geräte umgeleitet werden, aber das HoloLens-Betriebssystem priorisiert das interne Mikrofonarray vor jedem anderen Eingabegerät. **Führen Sie die folgenden Schritte aus, um ein USB-C-Mikrofon zu verwenden.**
 
-Benutzer können externe USB-C-verbundene Mikrofone im Bereich **Soundeinstellungen** auswählen. USB-C-Mikrofone können für Anrufe, Aufzeichnungen usw. verwendet werden.
+Benutzer können externe Mikrofone mit USB-C-Verbindung über den **Bereich Soundeinstellungen** auswählen. USB-C-Mikrofone können zum Aufrufen, Aufzeichnen usw. verwendet werden.
 
-Öffnen Sie die **Einstellungs-App,** und wählen **Sie**  >  **Systemsound aus.**
+Öffnen Sie die **App Einstellungen,** und wählen **Sie System sound**  >  **aus.**
 
 ![Soundeinstellungen](images/usbc-mic-1.jpg)
 
 > [!IMPORTANT]
-> Um externe Mikrofone mit **Remoteunterstützung**zu verwenden, müssen Benutzer auf den Link "Soundgeräte verwalten" klicken.
+> Um externe Mikrofone mit **Remote Assist** verwenden zu können, müssen Benutzer auf den Link "Soundgeräte verwalten" klicken.
 >
-> Verwenden Sie dann die Dropdownliste, um das externe Mikrofon entweder als **Standard** oder als **Kommunikations-Standard zu setzen.** Wenn Sie **Standard auswählen,** wird das externe Mikrofon überall verwendet.
+> Verwenden Sie dann die Dropdownliste, um das externe Mikrofon entweder auf **Standard oder** Kommunikations **default (Kommunikationseinstellung) zu setzen.** Die Auswahl **von Standard** bedeutet, dass das externe Mikrofon überall verwendet wird.
 >
-> Die Auswahl **von Communications Default** bedeutet, dass das externe Mikrofon in remote assist und anderen Kommunikations-Apps verwendet wird, aber das HoloLens-Mikrofonarray kann weiterhin für andere Aufgaben verwendet werden.
+> Die Auswahl **von Kommunikations standard** bedeutet, dass das externe Mikrofon in Remote Assist und anderen Kommunikations-Apps verwendet wird, aber das HoloLens-Mikrofonarray kann weiterhin für andere Aufgaben verwendet werden.
 
 ![Verwalten von Soundgeräten](images/usbc-mic-2.png)
 
 <br>
 
-![Festlegen der Standardeinstellung des Mikrofons](images/usbc-mic-3.jpg)
+![Festlegen der Mikrofon-Standardeinstellung](images/usbc-mic-3.jpg)
 
-#### <a name="what-about-bluetooth-microphone-support"></a>Wie sieht es mit Bluetooth Mikrofonunterstützung aus?
+#### <a name="what-about-bluetooth-microphone-support"></a>Wie sieht es mit der Bluetooth-Mikrofonunterstützung aus?
 
-Leider Bluetooth Mikrofone derzeit noch nicht in HoloLens 2 unterstützt.
+Leider werden Bluetooth-Mikrofone auf dem Gerät derzeit HoloLens 2.
 
 #### <a name="troubleshooting-usb-c-microphones"></a>Problembehandlung bei USB-C-Mikrofonen
 
-Beachten Sie, dass einige USB-C-Mikrofone sich fälschlicherweise sowohl als Mikrofon als auch *als Lautsprecher* melden. Dies ist ein Problem mit dem Mikrofon und nicht mit HoloLens. Wenn Eines dieser Mikrofone in HoloLens angeschlossen wird, geht der Sound möglicherweise verloren. Glücklicherweise gibt es eine einfache Lösung.  
+Beachten Sie, dass einige USB-C-Mikrofone sich fälschlicherweise sowohl als Mikrofon als auch als *Lautsprecher* melden. Dies ist ein Problem mit dem Mikrofon und nicht mit HoloLens. Wenn Sie eines dieser Mikrofone an HoloLens anschließen, kann der Sound verloren gehen. Glücklicherweise gibt es eine einfache Lösung.  
 
-Legen **Sie**  ->  **unter Einstellungen Systemsound**die integrierten Lautsprecher  ->  **** **(Analog Feature Audio Driver)** explizit als **Standardgerät fest.** HoloLens sollte diese Einstellung auch dann beachten, wenn das Mikrofon entfernt und später wieder verbunden wird.
+Legen Sie unter **Systemsound** für Einstellungen  ->    ->  die integrierten Lautsprecher **(Analog Feature Audio Driver)** explizit als **Standardgerät** fest. HoloLens sollte sich diese Einstellung auch dann merken, wenn das Mikrofon entfernt und später erneut verbunden wird.
 
 ![Problembehandlung bei USB-C-Mikrofonen](images/usbc-mic-4.png)
 
@@ -455,113 +455,113 @@ Legen **Sie**  ->  **unter Einstellungen Systemsound**die integrierten Lautsprec
 
 Mit diesem neuen Feature kann die automatische Anmeldung für Besucherkonten für Kioskmodi verwendet werden.
 
-Für eine Nicht-AAD-Konfiguration, um ein Gerät für die automatische Besucheranmeldung zu konfigurieren:
+Für eine Nicht-AAD-Konfiguration, um ein Gerät für die automatische Anmeldung durch Besucher zu konfigurieren:
 
 1. Erstellen Sie ein Bereitstellungspaket, das:
-    1. Konfiguriert **Laufzeiteinstellungen/AssignedAccess so,** dass Besucherkonten zulässig sind.
-    1. Registriert das Gerät optional in MDM **(Laufzeiteinstellungen/Workplace/Enrollments),** damit es später verwaltet werden kann.
-    1. Kein lokales Konto erstellen
+    1. Konfiguriert **Laufzeiteinstellungen/AssignedAccess,** um Besucherkonten zuzulassen.
+    1. Registriert das Gerät optional bei MDM **(Laufzeiteinstellungen/Arbeitsplatz/Registrierungen),** damit es später verwaltet werden kann.
+    1. Erstellen Sie kein lokales Konto.
 1. [Wenden Sie das Bereitstellungspaket an.](hololens-provisioning.md)
 
-Bei einer AAD-Konfiguration können Benutzer heute ohne diese Änderung ähnliche Ergebnisse erzielen. AAD-angeschlossene Geräte, die für den Kioskmodus konfiguriert sind, können sich bei einem Besucherkonto anmelden, wenn sie mit einer einzelnen Schaltfläche auf dem Anmeldebildschirm tippen. Nach der Anmeldung beim Besucherkonto wird das Gerät erst dann zur erneuten Anmeldung aufgefordert, wenn der Besucher explizit aus dem Startmenü abmeldet oder das Gerät neu gestartet wird.
+Bei einer AAD-Konfiguration können Benutzer heute ohne diese Änderung ähnliches erreichen. In AAD eingebundene Geräte, die für den Kioskmodus konfiguriert sind, können sich mit einer einzigen Schaltfläche vom Anmeldebildschirm aus bei einem Besucherkonto anmelden. Nach der Anmeldung beim Besucherkonto fordert das Gerät erst dann zur erneuten Anmeldung auf, wenn der Besucher explizit über das Startmenü abgemeldet oder das Gerät neu gestartet wurde.
 
-Die automatische Anmeldung von Besuchern kann über eine benutzerdefinierte [OMA-URI-Richtlinie verwaltet](https://docs.microsoft.com/mem/intune/configuration/custom-settings-windows-10) werden:
+Die automatische Anmeldung des Besuchers kann über [eine benutzerdefinierte OMA-URI-Richtlinie](https://docs.microsoft.com/mem/intune/configuration/custom-settings-windows-10) verwaltet werden:
 
 - URI-Wert: ./Device/Vendor/MSFT/MixedReality/VisitorAutoLogon
 
-| Richtlinie  | Beschreibung   | Konfigurationen  |
+| Richtlinie  | BESCHREIBUNG   | Configurations  |
 |---|---|---|
-| MixedReality/VisitorAutoLogon  | Ermöglicht die automatische Anmeldung eines Besuchers bei einem Kiosk   | 1 (Ja), 0 (Nein, Standard).)  |
+| MixedReality/VisitorAutoLogon  | Ermöglicht es einem Besucher, sich automatisch bei einem Kiosk zu anmelden.   | 1 (Ja), 0 (Nein, Standard)  |
 
 ### <a name="use-the-new-settings-and-edge-apps-in-kiosk-modes"></a>Verwenden der neuen Einstellungen und Edge-Apps im Kioskmodus
 
-Beim Hinzufügen von Apps in [Kioske](hololens-kiosk.md)fügt ein IT-Administrator die App häufig zum Kiosk hinzu, verwendet jedoch die App User Model ID (AUMID). Da sowohl die Einstellungs-App als auch die Microsoft Edge-App als neue Apps gelten und sich von den älteren Apps unterscheiden, müssen Kioske, die AUMIDs für diese Apps verwenden, aktualisiert werden, um die neue AUMID zu verwenden.
+Beim Hinzufügen von Apps in [Kiosks](hololens-kiosk.md)fügt ein IT-Administrator die App häufig dem Kiosk hinzu, verwendet aber die App-Benutzermodell-ID (AUMID). Da sowohl die Einstellungen-App als auch die Microsoft Edge-App als neue Apps betrachtet werden und sich von den älteren Apps unterscheiden, müssen Kiosks, die AUMIDs für diese Apps verwenden, aktualisiert werden, um die neue AUMID zu verwenden.
 
-Wenn Sie einen Kiosk so ändern, dass die neuen Apps hinzugefügt werden, wird empfohlen, die neue AUMID zu hinzufügen und die alte zu verlassen. Dadurch wird ein einfacher Übergang erstellt, wenn Benutzer das Betriebssystem aktualisieren und keine neuen Richtlinien erhalten müssen, um den Kiosk weiterhin wie beabsichtigt zu verwenden.
+Wenn Sie einen Kiosk so ändern, dass er die neuen Apps enthält, empfiehlt es sich, die neue AUMID-Datei zu verwenden und die alte zu verlassen. Dies ermöglicht einen einfachen Übergang, wenn Benutzer das Betriebssystem aktualisieren und keine neuen Richtlinien erhalten müssen, um den Kiosk weiterhin wie vorgesehen zu verwenden.
 
 | App                    | AUMID                                                  |
 |------------------------|--------------------------------------------------------|
-| App "Alte Einstellungen"       | HolographicSystemSettings_cw5n1h2txyewy! App            |
-| App "Neue Einstellungen"       | BAEAEF15-9BAB-47FC-800B-ACECAD2AE94B_cw5n1h2txyewy! App |
+| Alte Einstellungs-App       | HolographicSystemSettings_cw5n1h2txyewy! App            |
+| Neue Einstellungs-App       | BAEAEF15-9BAB-47FC-800B-ACECAD2AE94B_cw5n1h2txyewy! App |
 | Alte Microsoft Edge-App | Microsoft.MicrosoftEdge_8wekyb3d8bbwe! MicrosoftEdge    |
 | Neue Microsoft Edge-App | Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe! MSEDGE    |
 
 ### <a name="kiosk-mode-behavior-changes-for-handling-of-failures"></a>Verhaltensänderungen im Kioskmodus für die Behandlung von Fehlern
 
-Wenn ein Gerät in älteren Builds eine Kioskkonfiguration hat, bei der es sich um eine Kombination aus dem globalen zugewiesenen[](https://docs.microsoft.com/hololens/hololens-kiosk#kiosk-mode-behavior-changes-for-handling-of-failures)Zugriff und dem zugewiesenen Zugriff des AAD-Gruppenmitglieds handelt, wird dem Benutzer beim Ermitteln der AAD-Gruppenmitgliedschaft nichts im Startmenü angezeigt.
+Wenn ein Gerät in älteren Builds über eine Kioskkonfiguration (eine Kombination aus global zugewiesenem Zugriff und zugewiesenem Zugriff eines AAD-Gruppenmitglieds) verfehlt, wird dem Benutzer im Menü["Nichts](https://docs.microsoft.com/hololens/hololens-kiosk#kiosk-mode-behavior-changes-for-handling-of-failures)im Startmenü" angezeigt, wenn die AAD-Gruppenmitgliedschaft nicht bestimmt werden konnte.
 
-Ab Windows-Insider-Version wird die Kioskerfahrung bei Fehlern im Kioskmodus der AAD-Gruppe auf die globale Kioskkonfiguration (sofern vorhanden) zurückfallen.
+Ab dem Windows-Insider fallt die Kioskerfahrung auf die globale Kioskkonfiguration (falls vorhanden) zurück, falls es während des Kioskmodus der AAD-Gruppe zu Fehlern kommt.
 
 ### <a name="new-settingsuris-for-page-settings-visibility"></a>Neue EinstellungenURIs für Sichtbarkeit von Seiteneinstellungen
 
-In [Windows Holographic, Version 20H2,](hololens-release-notes.md#windows-holographic-version-20h2) haben wir die [Richtlinie Einstellungen/PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) hinzugefügt, um die Seiten einzuschränken, die in der Einstellungs-App angezeigt werden. Die PageVisibilityList ist eine Richtlinie, die es IT-Administratoren ermöglicht, entweder zu verhindern, dass bestimmte Seiten in der Systemeinstellungs-App sichtbar oder zugänglich sind oder Sie können das für alle Seiten tun, außer den angegebenen.
+In [Windows Holographic, Version 20H2,](hololens-release-notes.md#windows-holographic-version-20h2) haben wir die Richtlinie [Einstellungen/PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) hinzugefügt, um die Seiten einzuschränken, die in der Einstellungs-App angezeigt werden. PageVisibilityList ist eine Richtlinie, mit der IT-Administratoren entweder verhindern können, dass bestimmte Seiten in der Systemeinstellungen-App sichtbar oder zugänglich sind, oder dies für alle Seiten mit Ausnahme der angegebenen Seiten zu tun.
 
-Wenn Sie die [Sichtbarkeit von Seiteneinstellungen besuchen,](settings-uri-list.md)finden Sie Anweisungen zur Verwendung dieses CSP und die Liste der URIs, die in früheren Versionen verfügbar sind.
+Wenn Sie Die [Sichtbarkeit von Seiteneinstellungen besuchen,](settings-uri-list.md)finden Sie Anweisungen zur Verwendung dieses CSP und die Liste der URIs, die in früheren Versionen verfügbar waren.
 
-In Windows-Insider-Builds erweitern wir die Liste der verfügbaren UrIs für Einstellungen, die von IT-Administratoren verwaltet werden können. Einige dieser URIs sind für neu verfügbare Bereiche innerhalb der neuen Einstellungs-App. Wenn Sie Einstellungen/PageVisibilityList-Richtlinie verwenden, überprüfen Sie die folgende Liste, und passen Sie die zulässigen oder blockierten Seiten nach Bedarf an.
+In Windows-Insider builds erweitern wir die Liste der verfügbaren Einstellungs-URIs, die IT-Administratoren verwalten können. Einige dieser URIs gelten für neu verfügbare Bereiche in der neuen Einstellungs-App. Wenn Sie die Richtlinie Settings/PageVisibilityList verwenden, überprüfen Sie die folgende Liste, und passen Sie Ihre zulässigen oder blockierten Seiten nach Bedarf an.
 
 > [!NOTE]
 > **Veraltet: ms-settings:network-proxy**
 >
-> Eine Einstellungsseite ist in diesen neueren Builds veraltet. Die alte **Seite & Internetproxy**  >  **** ist nicht mehr als globale Einstellung verfügbar. Die neuen Proxyeinstellungen pro Verbindung finden Sie unter **Network & Internet**  >  **Wi-Fi**  >  **Properties** oder Network **& Internet**  >  **Ethernet**  >  **Properties**.
+> Eine Einstellungsseite ist in diesen neueren Builds veraltet. Die alte Seite **Netzwerk-&**  >  **Internetproxy** ist nicht mehr als globale Einstellung verfügbar. Die neuen Proxyeinstellungen pro Verbindung finden Sie unter **Network & Internet**  >  **WI-Fi**  >  **Properties** oder Network **& Internet**  >  **Ethernet**  >  **Properties**.
 
 <br>
 
-| Einstellungsseite                                        | URI                                              |
+| Seite "Einstellungen"                                        | URI                                              |
 |------------------------------------------------------|--------------------------------------------------|
 | Apps > Apps & Features                               | `ms-settings:appsfeatures`                         |
-| Apps > Apps & features > Advanced options          | `ms-settings:appsfeatures-app`                     |
-| Apps > Offlinekarten                                  | `ms-settings:maps`                                 |
-| Apps > Offlinekarten > Karten herunterladen                  | `ms-settings:maps-downloadmaps`                    |
+| Apps > Apps & Features > Erweiterte Optionen          | `ms-settings:appsfeatures-app`                     |
+| Apps > Offlinezuordnungen                                  | `ms-settings:maps`                                 |
+| Apps > Offlinezuordnungen > Karten herunterladen                  | `ms-settings:maps-downloadmaps`                    |
 | Geräte > Maus                                      | `ms-settings:mouse`                                |
 | Geräte > USB                                        | `ms-settings:usb`                                  |
 | Netzwerk & Internet > Flugzeugmodus                   | `ms-settings:network-airplanemode`                 |
 | Datenschutz > Allgemein                                    | `ms-settings:privacy-general`                      |
-| Datenschutz > Freihandeingabe & Personalisierung             | `ms-settings:privacy-speechtyping`                 |
-| Datenschutz > Bewegung                                     | `ms-settings:privacy-motion`                       |
-| Datenschutz > Screenshot-Rahmen                         | `ms-settings:privacy-graphicsCaptureWithoutBorder` |
+| Datenschutz > Ink-& Eingeben der Personalisierung             | `ms-settings:privacy-speechtyping`                 |
+| Datenschutz > Motion                                     | `ms-settings:privacy-motion`                       |
+| Datenschutz > Screenshot: Rahmen                         | `ms-settings:privacy-graphicsCaptureWithoutBorder` |
 | Datenschutz > Screenshots und Apps                       | `ms-settings:privacy-graphicsCaptureProgrammatic`  |
-| System > Akku                                     | `ms-settings:batterysaver`                         |
-| System > Akku                                     | `ms-settings:batterysaver-settings`                |
+| System > Battery                                     | `ms-settings:batterysaver`                         |
+| System > Battery                                     | `ms-settings:batterysaver-settings`                |
 | System > Sound                                       | `ms-settings:sound`                                |
-| System > Sound >-App-Volume- und Geräteeinstellungen | `ms-settings:apps-volume`                          |
+| System > Sound > App-Volume und Geräteeinstellungen | `ms-settings:apps-volume`                          |
 | System > Sound > Verwalten von Soundgeräten              | `ms-settings:sound-devices`                        |
-| System > Storage > Configure Storage Sense         | `ms-settings:storagepolicies`                      |
-| Zeit & Sprache > Datum & Uhrzeit                        | `ms-settings:dateandtime`                          |
+| System > Storage > Konfigurieren Speicheroptimierung         | `ms-settings:storagepolicies`                      |
+| Time & Language > Date & Time                        | `ms-settings:dateandtime`                          |
 | Time & Language > Keyboard                           | `ms-settings:keyboard`                             |
-| Zeit & Sprache > Sprache                           | `ms-settings:language`                             |
-| Zeit & Sprache > Sprache                           | `ms-settings:regionlanguage-languageoptions`       |
+| Time & Language > Language                           | `ms-settings:language`                             |
+| Time & Language > Language                           | `ms-settings:regionlanguage-languageoptions`       |
 | Update & Security > Reset & Recovery               | `ms-settings:reset`                                |
 
 #### <a name="updated-uris"></a>Aktualisierte URIs
 
-Zuvor haben die folgenden beiden URIs einen Benutzer nicht direkt zu den angegebenen Seiten weitergeleitet, sondern nur die Hauptaktualisierungsseite blockiert. Die folgenden Elemente wurden aktualisiert, um direkt auf ihre Seiten zu folgen:
+Zuvor haben die folgenden beiden URIs einen Benutzer nicht direkt zu den angegebenen Seiten gelangt, sondern nur die Hauptseite der Updates blockiert. Die folgenden Elemente wurden aktualisiert, um sie an ihre Seiten weiter zu leitet:
 
 - `ms-settings:windowsupdate-options`
 - `ms-settings:windowsupdate-restartoptions`
 
-### <a name="configuring-fallback-diagnostics-via-settings-app"></a>Konfigurieren der Fallbackdiagnose über die Einstellungs-App
+### <a name="configuring-fallback-diagnostics-via-settings-app"></a>Konfigurieren der Fallbackdiagnose über die App "Einstellungen"
 
-Jetzt kann ein Benutzer in der Einstellungs-App das Verhalten der [Fallbackdiagnose konfigurieren.](hololens-diagnostic-logs.md) Navigieren Sie auf **** der Seite Einstellungen-App zu  ->  **Datenschutzbehandlung,** um diese Einstellung zu konfigurieren.
+Jetzt kann ein Benutzer in der Einstellungs-App das Verhalten der [Fallbackdiagnose konfigurieren.](hololens-diagnostic-logs.md) Navigieren Sie in der App Einstellungen zur Seite  ->  **Problembehandlung beim** Datenschutz, um diese Einstellung zu konfigurieren.
 
 > [!NOTE]
-> Wenn für das Gerät eine MDM-Richtlinie konfiguriert ist, kann der Benutzer dieses Verhalten nicht außer Kraft setzen.  
+> Wenn eine MDM-Richtlinie für das Gerät konfiguriert ist, kann der Benutzer dieses Verhalten nicht außer Kraft setzen.  
 
-### <a name="share-things-with-nearby-devices"></a>Teilen von Dingen mit Geräten in der Nähe
+### <a name="share-things-with-nearby-devices"></a>Freigeben von Geräten in der Nähe
 
-Teilen Sie Dinge mit Near von Windows 10-Geräten, einschließlich PCs und anderen HoloLens 2-Geräten, auf denen HoloLens Insider Builds 20279.1006+ ausgeführt wird. Sie können es unter **Einstellungen**System freigegebene Erfahrungen ausprobieren, um Dateien oder URLs von  ->  ****  ->  **** einer HoloLens auf einem PC zu teilen. Weitere Informationen finden Sie unter Teilen von Dingen mit Geräten in der Nähe [in Windows 10](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9).
+Teilen Sie Dinge mit geräten in der Nähe von Windows 10, einschließlich PCs und anderen HoloLens 2-Geräten, auf denen HoloLens Insider-Builds ab 20279.1006 ausgeführt werden. Sie können es unter Freigegebene Systemerfahrungen für Einstellungen ausprobieren, um Dateien oder URLs von  ->    ->   einer HoloLens an einen PC zu teilen. Weitere Informationen finden Sie unter Freigeben von Geräten in der [Nähe in Windows 10](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9).
 
-Dieses Feature kann über [Connectivity/AllowConnectedDevices verwaltet werden.](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowconnecteddevices)
+Dieses Feature kann über [Connectivity/AllowConnectedDevices](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowconnecteddevices)verwaltet werden.
 
-### <a name="new-os-update-troubleshooter"></a>Problembehandlung für neues Betriebssystemupdate
+### <a name="new-os-update-troubleshooter"></a>Neue Problembehandlung für Betriebssystemupdates
 
-Zusätzlich zu den vorherigen Problembehandlungen in der Einstellungs-App wurde mit der neuen Einstellungs-App für Betriebssystemupdates eine neue Problembehandlung hinzugefügt. Navigieren Sie zu **Einstellungen**  ->  **Update &amp; Security**  >  **Troubleshoot**  >  **Windows Update,** und wählen Sie Start **aus.** Auf diese Weise können Sie Ablaufverfolgungen sammeln, während Sie Ihr Problem mit Betriebssystemupdates reprodukieren, um die Problembehandlung mit Ihrer IT oder Ihrem Support zu verbessern.
+Zusätzlich zu den vorherigen Problembehandlungen in der Einstellungs-App wurde eine neue Problembehandlung mit der neuen App "Einstellungen" für Betriebssystemupdates hinzugefügt. Navigieren Sie zu  ->  **&amp; Sicherheitsupdate** für Einstellungen  >  **problembehandlung**  >  **Windows Update,** und wählen Sie **Starten** aus. Dadurch können Sie Ablaufverfolgungen erfassen, während Sie Ihr Problem mit Betriebssystemupdates reproduzieren, um die Problembehandlung für Ihre IT oder Ihren Support zu verbessern.
 
-### <a name="delivery-optimization-preview"></a>Vorschau der Übermittlungsoptimierung
+### <a name="delivery-optimization-preview"></a>Übermittlungsoptimierung Preview
 
-Mit diesem HoloLens-Insider-Update ermöglicht Windows Holographic for Business eine frühe Vorschau für Übermittlungsoptimierungseinstellungen, um den Bandbreitenverbrauch für Downloads von mehreren HoloLens-Geräten zu reduzieren. Eine vollständigere Beschreibung dieser Funktionalität zusammen mit der empfohlenen Netzwerkkonfiguration finden Sie hier: [Übermittlungsoptimierung für Windows 10-Updates](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization).
+Mit diesem HoloLens Insider-Update ermöglicht Windows Holographic for Business eine frühe Vorschau für Einstellungen zur Übermittlungsoptimierung, um den Bandbreitenverbrauch für Downloads von mehreren HoloLens-Geräten zu reduzieren. Eine umfassendere Beschreibung dieser Funktionalität zusammen mit der empfohlenen Netzwerkkonfiguration finden Sie hier: [Übermittlungsoptimierung für Windows 10 Updates.](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
 
-Die folgenden Einstellungen sind als Teil der Verwaltungsoberfläche aktiviert und [können über Intune konfiguriert werden:](https://docs.microsoft.com/mem/intune/configuration/delivery-optimization-settings)
+Die folgenden Einstellungen werden als Teil der Verwaltungsoberfläche aktiviert und [können über Intune konfiguriert werden:](https://docs.microsoft.com/mem/intune/configuration/delivery-optimization-settings)
 
 - [DOCacheHost](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-docachehost)
 - [DOCacheHostSource](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-docachehostsource)
@@ -575,98 +575,98 @@ Die folgenden Einstellungen sind als Teil der Verwaltungsoberfläche aktiviert u
 - [DOSetHoursToLimitForegroundDownloadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
 - [DOSetHoursToLimitBackgroundDownloadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
 
-Einige Vorbehalte zu diesem Vorschauangebot:
+Einige Einschränkungen zu diesem Vorschauangebot:
 
-- Die HoloLens-Unterstützung ist in dieser Vorschau nur auf Betriebssystemupdates beschränkt.
-- Windows Holographic for Business unterstützt nur #A0 und -Downloads von einem [Microsoft Connected Cache-Endpunkt;](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) Peer-zu-Peer-Downloadmodi und Gruppenzuweisungen werden derzeit für HoloLens-Geräte nicht unterstützt.
-- HoloLens unterstützt keine Bereitstellungs- oder Übermittlungsoptimierung für Windows Server Update Services-Endpunkte.
-- Für die Problembehandlung ist entweder eine Diagnose auf dem Verbundenen Cacheserver **** erforderlich, oder es ist eine Ablaufverfolgung für HoloLens auf HoloLens über Einstellungen  >  **update & Security**  >   **Troubleshooting**Windows  >   **Update erforderlich.**
+- Die HoloLens-Unterstützung ist in dieser Vorschauversion auf Betriebssystemupdates beschränkt.
+- Windows Holographic for Business unterstützt nur HTTP-Downloadmodi und Downloads von einem [Microsoft Connected Cache-Endpunkt.](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) Peer-zu-Peer-Downloadmodi und Gruppenzuweisungen werden für HoloLens-Geräte derzeit nicht unterstützt.
+- HoloLens unterstützt keine Bereitstellungs- oder Übermittlungsoptimierung für Windows Server Update Services Endpunkte.
+- Für die Problembehandlung ist entweder eine Diagnose auf dem Connected Cache-Server oder das Sammeln einer Ablaufverfolgung auf HoloLens auf HoloLens über das Einstellungsupdate &  >  **Security**  >   **Troubleshooting**  >   **Windows Update**.
 
-### <a name="improvements-and-fixes-in-the-update"></a>Verbesserungen und Korrekturen im Update:
+### <a name="improvements-and-fixes-in-the-update"></a>Verbesserungen und Fehlerbehebungen im Update:
 
 - [Die Offlinediagnose](hololens-diagnostic-logs.md#offline-diagnostics) enthält auch zusätzliche Geräteinformationen für Seriennummer und Betriebssystemversion.
 
-### <a name="known-issues-and-work-around"></a>Bekannte Probleme und Problemumarbeitung
+### <a name="known-issues-and-work-around"></a>Bekannte Probleme und Problemumknung
 
-#### <a name="pairing-hololens-to-pc"></a>Koppeln von HoloLens mit DEM PC
+#### <a name="pairing-hololens-to-pc"></a>Koppeln von HoloLens mit dem PC
 
-Vor dem Windows-Insider-Build 20325.1000, als ein Benutzer Kopplungsanmeldeinformationen für [Windows Holographic, Version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) oder [Windows Holographic, Version 2004,](hololens-release-notes.md#windows-holographic-version-2004) festgelegt und auf die Windows-Insider-Builds aktualisiert hatte, funktionierten ihre vorherigen Satzanmeldeinformationen zum Koppeln der HoloLens mit dem PC zum Bereitstellen und Debuggen von Apps wie über Visual Studio nicht mehr. Windows Insider Build 20325.1000 behebt dieses Problem und erfordert keine zusätzlichen Aktionen, um die Verwendung des Geräteportals fortsetzen zu können.
+Vor dem Windows-Insider-Build 20325.1000 funktionierten die zuvor festgelegten Anmeldeinformationen zum Koppeln der HoloLens mit dem PC zum Bereitstellen und Debuggen von Apps wie über Visual Studio nicht mehr, als ein Benutzer Anmeldeinformationen für die Kopplung von Anmeldeinformationen unter [Windows Holographic, Version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) oder [Windows Holographic, Version 2004](hololens-release-notes.md#windows-holographic-version-2004) festgelegt und auf die Windows-Insider-Builds aktualisiert hatte. Windows-Insider Build 20325.1000 behebt dieses Problem und erfordert keine zusätzlichen Aktionen, die über das Geräteportal fortgesetzt werden müssen.
 
-Benutzer, die ihr Gerät mit einem [Insider-Build](#ffu-download-and-flash-directions) aufblitzen lassen, müssen nun ihre Geräte (entweder auf 20325.1000+ oder einen GA-Build) umschalten, um ihre Geräte mit ihrem PC zu koppeln.
+Benutzer, die ihr Gerät mit einem [Insider-Build](#ffu-download-and-flash-directions) flasht haben, müssen nun ihre Geräte (auf 20325.1000 oder einen ga-Build) umschalten, um ihre Geräte mit ihrem PC zu koppeln.
 
-Benutzer, die sich nicht bei Windows-Insidern registriert haben und das Featureupdate verwenden, wenn es allgemein verfügbar ist, sind davon nicht betroffen.
+Benutzer, die sich nicht bei Windows-Insidern registriert haben und das Featureupdate nutzen, wenn es allgemein verfügbar ist, sind davon nicht betroffen.
 
 
-## <a name="start-receiving-insider-builds"></a>Starten des Empfangens von Insiderbuilds
+## <a name="start-receiving-insider-builds"></a>Starten des Empfangs von Insider-Builds
 
 > [!NOTE]
-> Wenn Sie vor kurzem noch nicht aktualisiert wurden, starten Sie ihr Gerät neu, um den Status zu aktualisieren und den neuesten Build zu erhalten.
+> Wenn Sie vor Kurzem noch nicht aktualisiert haben, starten Sie Ihr Gerät neu, um den Status zu aktualisieren und den neuesten Build zu erhalten.
 > - Der Sprachbefehl "Gerät neu starten" funktioniert gut. 
-> - Sie können auch die Schaltfläche Neustart unter Einstellungen/Windows-Insider-Programm auswählen.
+> - Sie können auch die Schaltfläche "Neu starten" unter Einstellungen/Windows-Insider auswählen.
 >
-> Wir hatten einen Fehler im Back-End, auf den Sie möglicherweise gestoßen sind, und dies wird Sie wieder auf kurs bringen.
+> Es ist ein Fehler auf dem Back-End aufgetreten, der möglicherweise aufgetreten ist, sodass Sie wieder auf kursierten Stand kommen.
 
-Wechseln Sie auf einem HoloLens 2-Gerät zu Einstellungen ****  >  **Update &**  >  **Windows-Insider-Sicherheitsprogramm,** und wählen Sie **Erste Schritte aus.** Verknüpfen Sie das Konto, mit dem Sie sich als Windows-Insider registriert haben.
+Wechseln Sie auf einem HoloLens 2 Gerät zu **Einstellungen**  >  **aktualisieren & Security** Windows-Insider  >  **Program,** und wählen Sie Erste Schritte **aus.** Verknüpfen Sie das Konto, das Sie zum Registrieren als Windows-Insider verwendet haben.
 
-Windows-Insider ziehen jetzt zu Kanäle. Der **Fast-Ring** wird zum **Dev Channel,** der **langsame** Ring zum **Betakanal**und der **Release Preview-Ring** wird zum Release **Preview Channel**. So sieht diese Zuordnung aus:
+Windows-Insider wechselt jetzt zu Channels. Der **Fast-Ring** wird zum **Dev-Kanal,** der **langsame** Ring zum **Betakanal** und der **Release preview-Ring** zum **Releasevorschaukanal.** Diese Zuordnung sieht wie folgt aus:
 
-![Erläuterung von Windows-Insider-Kanälen](images/WindowsInsiderChannels.png)
+![Erläuterung zu Windows-Insider Kanälen](images/WindowsInsiderChannels.png)
 
-Weitere Informationen finden Sie unter [Introducing Windows Insider Channels](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) on Windows Blogs.
+Weitere Informationen finden Sie unter Introducing Windows-Insider Channels on Windows Blogs [(Einführung in Windows-Insider Kanäle](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) in Windows-Blogs).
 
-Wählen Sie dann **Aktive Entwicklung von Windows**aus, wählen Sie aus, ob Sie Dev **Channel-** oder **Betakanalbuilds** erhalten möchten, und überprüfen Sie die Programmbedingungen.
+Wählen Sie dann **Aktive Entwicklung von Windows** aus, wählen Sie aus, ob Sie Dev **Channel** oder **Betakanal** Builds erhalten möchten, und überprüfen Sie die Programmbedingungen.
 
-Wählen **Sie Bestätigen > Jetzt neu starten aus,** um fertig zu werden. Nachdem Ihr Gerät neu gestartet wurde, wechseln Sie zu Einstellungen **> Update & Security > Suchen** Sie nach Updates, um den neuesten Build zu erhalten.
+Wählen Sie **Confirm > Restart Now (Jetzt neu starten)** aus, um den Vorgang abzuschließen. Wechseln Sie nach dem Neustart Ihres Geräts zu **Einstellungen > Update & Security > Suchen nach Updates,** um den neuesten Build zu erhalten.
 
-### <a name="update-error-0x80070490-work-around"></a>Updatefehler 0x80070490 work-around
-Wenn beim Aktualisieren auf dem Dev- oder Betakanal ein Updatefehler 0x80070490, versuchen Sie es mit der folgenden kurzfristigen Arbeit. Dazu gehört das Verschieben Ihres Insiderkanals, das Aufnehmen des Updates und das anschließende Verschieben des Insider-Kanals.
+### <a name="update-error-0x80070490-work-around"></a>Updatefehler 0x80070490 Problembearbeitung
+Wenn beim Aktualisieren im Dev- oder Betakanal ein Updatefehler 0x80070490 wird, versuchen Sie es mit der folgenden kurzfristigen Problemumgemeinung. Dies umfasst das Verschieben Ihres Insider-Kanals, das Aufnehmen des Updates und das anschließende Verschieben Ihres Insider-Kanals zurück.
 
-#### <a name="stage-one---release-preview"></a>Phase 1 – Release Preview
-1.  Einstellungen, Update & Security, Windows Insider Program, wählen **Sie Release Preview Channel aus.**
-2.  Einstellungen, Update & Security, Windows Update, **Check for updates**. Fahren Sie nach dem Update mit Phase 2 fort.
+#### <a name="stage-one---release-preview"></a>Phase 1: Releasevorschau
+1.  Einstellungen, Update & Security, Windows-Insider Program, wählen Release **Preview Channel** aus.
+2.  Einstellungen, Update & Security, Windows Update, **Suchen nach Updates.** Fahren Sie nach dem Update mit Phase 2 fort.
 
-#### <a name="stage-two---dev-channel"></a>Phase 2 – Dev Channel
-1. Einstellungen, Update & Security, Windows Insider Program, wählen Sie **Dev Channel aus.**
-2. Einstellungen, Update & Security, Windows Update, **Check for updates**.
+#### <a name="stage-two---dev-channel"></a>Phase 2: Entwicklungskanal
+1. Einstellungen, Update & Security, Windows-Insider Program, wählen **Sie Dev Channel** aus.
+2. Einstellungen, Update & Security, Windows Update, **Suchen nach Updates.**
 
-## <a name="ffu-download-and-flash-directions"></a>FFU-Download- und Flash-Wegbeschreibungen
-Zum Testen mit einem flight-signierten ffu müssen Sie zunächst ihr Gerät entsperren, bevor Sie die ffu mit Flight-Signierten blinken.
+## <a name="ffu-download-and-flash-directions"></a>FFU-Download und Flash-Anweisungen
+Zum Testen mit einem FFU mit Flugsignierung müssen Sie ihr Gerät zunächst entsperren, bevor Sie den FFU-Test mit Flugsignierung blinken.
 1. Auf dem PC:
 
     1. Laden Sie ffu von auf Ihren PC [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) herunter.
     
-    1. Installieren sie ARC (Advanced Recovery Companion) aus dem Microsoft Store: [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8) .
+    1. Installieren Sie ARC (Advanced Recovery Companion) über Microsoft Store: [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8) .
     
-1. Auf HoloLens – Flight Unlock: **Öffnen**Sie Einstellungen  >  **Update & Windows**  >  **Insider-Sicherheitsprogramm,** registrieren Sie sich, starten Sie das Gerät neu.
+1. Auf HoloLens – Flight Unlock: Öffnen Sie das Einstellungsupdate &  >  **Security**  >  **Windows-Insider Program,** registrieren Sie sich, starten Sie das Gerät neu.
 
-1. Flash FFU – Jetzt können Sie die flight-signierte FFU mithilfe von ARC blitzen.
+1. Flash FFU: Jetzt können Sie die FFU mit Flugsignierung mit ARC flashen.
 
-## <a name="provide-feedback-and-report-issues"></a>Bereitstellen von Feedback und Berichtsproblemen
+## <a name="provide-feedback-and-report-issues"></a>Bereitstellen von Feedback und Melden von Problemen
 
-Verwenden Sie [die FeedbackHub-App](hololens-feedback.md) auf Ihrer HoloLens, um Feedback zu geben und Probleme zu melden. Die Verwendung des Feedbackhubs stellt sicher, dass alle erforderlichen Diagnoseinformationen enthalten sind, damit unsere Techniker das Problem schnell debuggen und beheben können.  Probleme mit der chinesischen und japanischen Version von HoloLens sollten auf die gleiche Weise gemeldet werden.
+Verwenden Sie [die Feedback-Hub-App](hololens-feedback.md) auf Ihrer HoloLens, um Feedback zu geben und Probleme zu melden. Durch Feedback-Hub wird sichergestellt, dass alle erforderlichen Diagnoseinformationen enthalten sind, damit unsere Techniker das Problem schnell debuggen und beheben können.  Probleme mit der chinesischen und japanischen Version von HoloLens sollten auf die gleiche Weise gemeldet werden.
 
 > [!NOTE]
-> Achten Sie darauf, die Eingabeaufforderung zu akzeptieren, in der **** Gefragt wird, ob Der Feedbackhub auf Ihren Ordner "Dokumente" zugreifen soll (wählen Sie Ja aus, wenn Sie dazu aufgefordert werden).
+> Stellen Sie sicher, dass Sie die Eingabeaufforderung akzeptieren, in der  Sie gefragt werden, ob Sie Feedback-Hub Auf Ihren Ordner Dokumente zugreifen möchten (wählen Sie Ja aus, wenn Sie dazu aufgefordert werden).
 
 ## <a name="note-for-developers"></a>Hinweis für Entwickler
 
-Sie sind willkommen und ermutigt, Ihre Anwendungen mithilfe von Insider-Builds von HoloLens zu entwickeln.  Erste Schritte finden Sie in [der HoloLens Developer Documentation.](https://developer.microsoft.com/windows/mixed-reality/development) Diese Anweisungen funktionieren auch für Insider-Builds von HoloLens.  Sie können die gleichen Builds von Unity und Visual Studio verwenden, die Sie bereits für die HoloLens-Entwicklung verwenden.
+Sie sind willkommen und werden aufgefordert, Ihre Anwendungen mitHilfe von Insider-Builds von HoloLens zu entwickeln.  Sehen Sie sich die [HoloLens-Entwicklerdokumentation an,](https://developer.microsoft.com/windows/mixed-reality/development) um zu beginnen. Diese Anweisungen funktionieren mit Insider-Builds von HoloLens.  Sie können die gleichen Builds von Unity und Visual Studio, die Sie bereits für die HoloLens-Entwicklung verwenden.
 
-## <a name="stop-receiving-insider-builds"></a>Beenden des Empfangs von Insiderbuilds
+## <a name="stop-receiving-insider-builds"></a>Beenden des Empfangs von Insider-Builds
 
-Wenn Sie keine Insiderbuilds von Windows Holographic mehr erhalten möchten, können Sie abmelden, [](hololens-recovery.md) wann Ihre HoloLens einen Produktionsbuild ausgeführt hat, oder Sie können Ihr Gerät mithilfe des Advanced Recovery Companion wiederherstellen, um Ihr Gerät in einer Nicht-Insider-Version von Windows Holographic wiederhergestellt zu haben.
+Wenn Sie keine Insider-Builds von Windows Holographic mehr erhalten möchten, können Sie dies deaktivieren, wenn Ihre HoloLens einen Produktions build ausgeführt, oder Sie können Ihr Gerät mit dem Advanced Recovery Companion wiederherstellen, um Ihr Gerät auf eine Nicht-Insider-Version von Windows Holographic wiederhergestellt zu haben. [](hololens-recovery.md)
 
 > [!CAUTION]
-> Es gibt ein bekanntes Problem, bei dem Benutzer, die sich nicht bei Insider Preview-Builds registrieren, nach der manuellen Neuinstallation eines neuen Vorschaubuilds einen blauen Bildschirm erhalten würden. Anschließend müssen sie ihr Gerät manuell wiederherstellen. Ausführliche Informationen dazu, ob Sie betroffen sind oder nicht, finden Sie unter diesem bekannten [Problem.](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)
+> Es gibt ein bekanntes Problem, bei dem Benutzer, die die Registrierung bei Insider Preview-Builds nach der manuellen Neuinstallation eines neuen Vorschaubuilds aufheben, einen Bluescreen erhalten. Anschließend müssen sie ihr Gerät manuell wiederherstellen. Ausführliche Informationen dazu, ob Sie betroffen sind oder nicht, finden Sie in diesem [bekannten Problem.](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)
 
-So überprüfen Sie, ob Ihre HoloLens einen Produktions build ausgeführt:
+So überprüfen Sie, ob HoloLens einen Produktionsbuild ausführt:
 
-1. Wechseln Sie **zu Einstellungen > System > Informationen**, und suchen Sie die Buildnummer.
+1. Wechseln Sie zu **Einstellungen > System > Informationen**, und suchen Sie die Buildnummer.
 
-1. [Weitere Informationen finden Sie in den Versionshinweisen zu Produktions build numbers](hololens-release-notes.md).
+1. [Informationen zu den Buildnummern für die Produktion finden Sie in den Versionshinweisen.](hololens-release-notes.md)
 
-So melden Sie Insiderbuilds ab:
+So deaktivieren Sie Insider-Builds:
 
-1. Wechseln Sie auf einer HoloLens, die einen Produktionsbuild ausgeführt, zu Einstellungen **> Update & Security > Windows Insider Program,** und wählen Sie Insiderbuilds beenden **aus.**
+1. Wechseln Sie auf einer HoloLens, die einen Produktionsbuild ausführt, zu **Einstellungen > Update & Security > Windows-Insider Program**, und wählen Sie **Insider-Builds beenden** aus.
 
-1. Befolgen Sie die Anweisungen, um Ihr Gerät abmelden.
+1. Befolgen Sie die Anweisungen, um Ihr Gerät zu deaktivieren.
