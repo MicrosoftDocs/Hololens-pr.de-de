@@ -16,12 +16,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens 1 (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 7cedf2af90744477c33736087c85a43168167707
-ms.sourcegitcommit: 6f2ec9ced776166f96eddcd601bef5de715703a5
+ms.openlocfilehash: 992b17160eb6ba6ca2f6c8b12e112b98ab154774
+ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "10931837"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "10828242"
 ---
 # Abbilden von physischen Räumen mit HoloLens
 
@@ -38,7 +38,7 @@ In diesem Artikel wird erläutert, wie HoloLens Räume erfasst, wie die räumlic
 
 Bestimmte Merkmale in Ihrer Umgebung erschweren es HoloLens, einen Raum zu erfassen. Belichtungsstufen, Materialien im Raum, die Anordnung von Objekten und vieles mehr, können sich auf die Art und Weise auswirken, wie HoloLens einen Bereich kartiert.
 
-HoloLens funktioniert am besten in bestimmten Umgebungen. Um die beste räumliche Karte zu erstellen, wählen Sie einen Raum mit ausreichend Licht und viel Platz. Vermeiden Sie dunkle Räume und Räume mit vielen dunklen, glänzenden oder durchscheinenden Oberflächen (z.B. Spiegel oder lichtdurchlässige Gardinen).
+HoloLens funktioniert am besten in bestimmten Umgebungen. Um die beste räumliche Karte zu erstellen, wählen Sie einen Raum mit ausreichend Licht und viel Platz. Vermeiden Sie dunkle Räume und Räume mit vielen dunklen, glänzenden oder durchscheinenden Oberflächen (z. B. Spiegel oder lichtdurchlässige Gardinen).
 
 HoloLens ist für den Inneneinsatz optimiert. Die räumliche Zuordnung funktioniert am besten bei aktiviertem WLAN, auch wenn es nicht mit einem Netzwerk verbunden ist. HoloLens kann WLAN-Zugriffspunkte abrufen, auch wenn es nicht verbunden oder authentifiziert ist. Die HoloLens-Funktionalität ändert sich nicht, wenn die Zugriffspunkte mit dem Internet, Intranet oder lokal verbunden sind.
 
@@ -52,11 +52,11 @@ Hier finden Sie Anleitungen zum Erstellen einer großartigen räumlichen Karte.
 
 ### Grundlegende Informationen zu den Szenarien der Umgebung
 
-Es ist wichtig, dass Sie die meiste Zeit dort verbringen, wo HoloLens verwendet wird, damit die Karte relevant und vollständig ist. Wenn z.B. ein Benutzerszenario für HoloLens die Bewegung von Punkt A nach Punkt B erfordert, gehen Sie diesen Pfad zwei bis dreimal und sehen Sie sich dabei in alle Richtungen um.  
+Es ist wichtig, dass Sie die meiste Zeit dort verbringen, wo HoloLens verwendet wird, damit die Karte relevant und vollständig ist. Wenn z. B. ein Benutzerszenario für HoloLens die Bewegung von Punkt A nach Punkt B erfordert, gehen Sie diesen Pfad zwei bis dreimal und sehen Sie sich dabei in alle Richtungen um.  
 
 ### Gehen Sie langsam im Raum herum
 
-Wenn Sie sich zu schnell bewegen, fehlen HoloLens möglicherweise einige Zuordnungsbereiche. Gehen Sie langsam durch den Raum, halten Sie alle 1,5–2,5m an und sehen Sie sich in Ihrer Umgebung um.  
+Wenn Sie sich zu schnell bewegen, fehlen HoloLens möglicherweise einige Zuordnungsbereiche. Gehen Sie langsam durch den Raum, halten Sie alle 1,5–2,5 m an und sehen Sie sich in Ihrer Umgebung um.  
 
 Mit weichen Bewegungen wird Ihre HoloLens-Karte genauer.
 
@@ -119,4 +119,4 @@ Solange WLAN aktiviert ist, korreliert HoloLens Kartendaten mit WLAN-Zugriffspun
 
 ## Verwandte Themen
 
-- [Entwurf der Raumabbildung](https://docs.microsoft.com/windows/mixed-reality/spatial-mapping)
+- [Entwurf der Raumabbildung](https://docs.microsoft.com/windows/mixed-reality/spatial-mapping-design)

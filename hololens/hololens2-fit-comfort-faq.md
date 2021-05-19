@@ -1,5 +1,5 @@
 ---
-title: 'HoloLens2 komfortabel anpassen: Häufig gestellte Fragen'
+title: 'HoloLens 2 komfortabel anpassen: Häufig gestellte Fragen'
 description: Bleiben Sie auf dem neuesten Stand hinsichtlich häufig gestellten Fragen zum Einpassen Ihrer HoloLens 2, und bleiben Sie mit Mixed Reality-Erlebnissen vertraut.
 ms.prod: hololens
 ms.sitesec: library
@@ -20,11 +20,11 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 01/21/2021
 ms.locfileid: "11283836"
 ---
-# HoloLens2 komfortabel anpassen: Häufig gestellte Fragen
+# HoloLens 2 komfortabel anpassen: Häufig gestellte Fragen
 
 Hier sind einige Tipps für Ihren Komfort und eine optimale Benutzererfahrung mit HoloLens.
 
-Schritt-für-Schritt-Anleitungen und ein Video zur Einstellung und zum Anpassen Ihres Geräts finden Sie unter [Vorbereiten von HoloLens2](hololens2-setup.md).
+Schritt-für-Schritt-Anleitungen und ein Video zur Einstellung und zum Anpassen Ihres Geräts finden Sie unter [Vorbereiten von HoloLens 2](hololens2-setup.md).
 
 > [!NOTE]
 > Die in diesem Thema enthaltenen Tipps zum Anpassen und Komfort des Geräts gelten nur als allgemeine Richtlinien – sie sind kein Ersatz für Gesetze und Regeln oder Ihr gesundes Urteilsvermögen bei der Verwendung von HoloLens. Seien Sie vorsichtig – viel Spaß!

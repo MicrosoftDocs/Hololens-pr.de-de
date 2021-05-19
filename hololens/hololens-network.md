@@ -150,14 +150,14 @@ Weitere Ressourcen:
 - [WLAN-Einstellungen von einem Windows-Gerät exportieren](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1#export-wi-fi-settings-from-a-windows-device)
 
 ## <a name="vpn"></a>VPN
-Eine VPN-Verbindung kann Ihnen dabei helfen, eine sicherere Verbindung herzustellen sowie auf das Netzwerk Ihres Unternehmens und das Internet zuzugreifen. HoloLens2 unterstützt den integrierten VPN-Client und das VPN-Plug-In Universelle Windows-Plattform (UWP). 
+Eine VPN-Verbindung kann Ihnen dabei helfen, eine sicherere Verbindung herzustellen sowie auf das Netzwerk Ihres Unternehmens und das Internet zuzugreifen. HoloLens 2 unterstützt den integrierten VPN-Client und das VPN-Plug-In Universelle Windows-Plattform (UWP). 
 
 Unterstützte integrierte VPN-Protokolle:
 - IKEv2
 - L2TP
 - PPTP
 
-Wenn für die Authentifizierung des integrierten VPN-Clients ein Zertifikat verwendet wird, muss das erforderliche Clientzertifikat zum Benutzerzertifikatspeicher hinzugefügt werden. Wenn Sie herausfinden möchten, ob das VPN-Plug-In eines Drittanbieters HoloLens2 unterstützt, wechseln Sie zu „Speicher“, um die VPN-App zu suchen, und überprüfen Sie, ob HoloLens als unterstütztes Gerät aufgeführt ist und ob die App auf der Seite „Systemanforderungen“ die ARM- oder ARM64-Architektur unterstützt. HoloLens unterstützt nur Universelle Windows-Plattform-Anwendungen für VPN von Drittanbietern.
+Wenn für die Authentifizierung des integrierten VPN-Clients ein Zertifikat verwendet wird, muss das erforderliche Clientzertifikat zum Benutzerzertifikatspeicher hinzugefügt werden. Wenn Sie herausfinden möchten, ob das VPN-Plug-In eines Drittanbieters HoloLens 2 unterstützt, wechseln Sie zu „Speicher“, um die VPN-App zu suchen, und überprüfen Sie, ob HoloLens als unterstütztes Gerät aufgeführt ist und ob die App auf der Seite „Systemanforderungen“ die ARM- oder ARM64-Architektur unterstützt. HoloLens unterstützt nur Universelle Windows-Plattform-Anwendungen für VPN von Drittanbietern.
 
  VPN kann durch MDM über [Einstellungen/AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn) verwaltet und über die Richtlinie [Vpnv2-csp](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp) festgelegt werden.
 
@@ -323,7 +323,7 @@ Natives IKEv2-VPN-Beispiel:
 
 ### <a name="by-using-voice-commands"></a>Mithilfe von Sprachbefehlen
 
-Je nach dem Build Ihres Geräts können Sie entweder mithilfe von integrierten Sprachbefehlen oder Cortana Ihre IP-Adresse anzeigen. Sprechen Sie bei Builds nach [19041.1103](hololens-release-notes.md#windows-holographic-version-2004) „Wie lautet meine IP-Adresse?“ Dann wird sie angezeigt. Sagen Sie bei früheren Builds oder HoloLens (1.Generation)„Hey Cortana, wie lautet meine IP-Adresse?”. und Cortana wird Ihre IP-Adresse anzeigen und vorlesen.
+Je nach dem Build Ihres Geräts können Sie entweder mithilfe von integrierten Sprachbefehlen oder Cortana Ihre IP-Adresse anzeigen. Sprechen Sie bei Builds nach [19041.1103](hololens-release-notes.md#windows-holographic-version-2004) „Wie lautet meine IP-Adresse?“ Dann wird sie angezeigt. Sagen Sie bei früheren Builds oder HoloLens (1. Generation)„Hey Cortana, wie lautet meine IP-Adresse?”. und Cortana wird Ihre IP-Adresse anzeigen und vorlesen.
 
 ### <a name="by-using-windows-device-portal"></a>Mithilfe des Windows-Geräteportals
 

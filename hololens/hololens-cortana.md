@@ -42,7 +42,7 @@ Mit den folgenden grundlegenden Befehlen können Sie sich schneller in HoloLens 
 Verwenden Sie diese Befehle in Windows Mixed Reality, um schneller zu navigieren. Einige Befehle verwenden den Anvisier-Cursor, den Sie mit dem Sprachbefehl "Auswählen" aufrufen.
 
 > [!NOTE]
-> Handstrahlen werden auf HoloLens (1.Generation) nicht unterstützt.
+> Handstrahlen werden auf HoloLens (1. Generation) nicht unterstützt.
 
 | Sagen Sie das | Aufgabe |
 | - | - |
@@ -81,7 +81,7 @@ Wenn Sie diese Befehle verwenden möchten, visieren Sie ein 3D-Objekt, Hologramm
 
 ### <a name="see-it-say-it"></a>Sehen, sagen
 
-Viele Schaltflächen und andere Elemente auf HoloLens reagieren ebenfalls auf Ihre Stimme, z.B. **Folgen beginnen** und **Schließen** auf der App-Leiste oder die Schaltfläche **Zurück** in Edge. Wenn Sie ermitteln möchten, ob eine Schaltfläche sprachsteuerungsfähig ist, zeigen Sie einen Moment lang mit dem **Anvisier-Cursor**, dem **Touch-Cursor** oder einem **Handstrahl** darauf. Wenn die Schaltfläche für die Sprachausgabe aktiviert ist, wird ein Sprachausgabe-Tipp angezeigt.
+Viele Schaltflächen und andere Elemente auf HoloLens reagieren ebenfalls auf Ihre Stimme, z. B. **Folgen beginnen** und **Schließen** auf der App-Leiste oder die Schaltfläche **Zurück** in Edge. Wenn Sie ermitteln möchten, ob eine Schaltfläche sprachsteuerungsfähig ist, zeigen Sie einen Moment lang mit dem **Anvisier-Cursor**, dem **Touch-Cursor** oder einem **Handstrahl** darauf. Wenn die Schaltfläche für die Sprachausgabe aktiviert ist, wird ein Sprachausgabe-Tipp angezeigt.
 
 ### <a name="dictation-mode"></a>Diktiermodus
 

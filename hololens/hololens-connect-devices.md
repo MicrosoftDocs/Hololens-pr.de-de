@@ -82,7 +82,7 @@ Einige Benutzer müssen möglicherweise mehrere Geräte gleichzeitig verbinden. 
 **Anforderungen für USB-C-Hub und angeschlossene Geräte:**
 
 - Angeschlossene Geräte dürfen keinen Treiber benötigen, der installiert werden muss.
-- Die Gesamtleistung aller angeschlossenen Geräte muss unter 4,5Watt liegen.
+- Die Gesamtleistung aller angeschlossenen Geräte muss unter 4,5 Watt liegen.
 
 ## <a name="connect-to-miracast"></a>Herstellen einer Verbindung mit Miracast
 

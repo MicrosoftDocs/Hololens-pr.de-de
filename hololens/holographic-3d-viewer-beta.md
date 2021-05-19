@@ -96,9 +96,9 @@ Wenn Sie nach dem Lesen dieser Themen auf Probleme stoßen, lesen Sie [Problembe
 
 Es gibt feste Beschränkungen hinsichtlich der Dateigröße sowie der Anzahl der Modelle, Scheitelpunkte und Gittermodelle, die im 3D-Viewer (Beta) gleichzeitig geöffnet sein können:
 
-- 500MB maximale Dateigröße pro Modell
-- Scheitelpunkte:600.000insgesamt in allen geöffneten Modellen
-- Gittermodelle:1.600insgesamt in allen geöffneten Modellen
+- 500 MB maximale Dateigröße pro Modell
+- Scheitelpunkte: 600.000 insgesamt in allen geöffneten Modellen
+- Gittermodelle: 1.600 insgesamt in allen geöffneten Modellen
 - Höchstens 40 Modelle gleichzeitig geöffnet
 
 ## Optimieren von 3D-Modellen für 3D-Viewer (Beta)
@@ -107,13 +107,13 @@ Es gibt feste Beschränkungen hinsichtlich der Dateigröße sowie der Anzahl der
 
 - Vermeiden Sie schwarze Materialien oder schwarze Bereiche in Textkurkarten. Hologramme bestehen aus Licht. Deshalb rendert HoloLens schwarz (die Abwesenheit von Licht) als transparent.
 - Vergewissern Sie sich vor dem Exportieren nach FBX aus dem Erstellungstool, dass alle Geometrien sichtbar und entriegelt sind und keine Ebenen, die Geometrie enthalten, deaktiviert oder mit einer Vorlage versehen sind. Sichtbarkeit wird nicht beachtet.
-- Vermeiden Sie sehr große Translation-Offsets zwischen den Knoten (beispielsweise 100.000Einheiten). Das kann dazu führen, dass das Modell während des Verschiebens/Skalierens/Drehens wackelt.
+- Vermeiden Sie sehr große Translation-Offsets zwischen den Knoten (beispielsweise 100.000 Einheiten). Das kann dazu führen, dass das Modell während des Verschiebens/Skalierens/Drehens wackelt.
 
 ### Leistungsoptimierung
 
 Berücksichtigen Sie beim Erstellen von Inhalten die Leistung und validieren Sie in der 3D-Viewer-App (Beta) auf HoloLens während des Erstellungsprozesses, um optimale Ergebnisse zu erzielen. 3D-Viewer (Beta) rendert Inhalte in Echtzeit. Die Leistung unterliegt den HoloLens-Hardwarefunktionen.  
 
-Ein 3D-Modell enthält zahlreiche Variablen, die sich auf die Leistung auswirken können. Im 3D-Viewer (Beta) wird beim Laden eine Warnung angezeigt, wenn mehr als 150.000Scheitelpunkte oder mehr als 400 Gittermodelle vorhanden sind. Animationen können sich auf die Leistung anderer offener Modelle auswirken. Es gibt feste Beschränkungen hinsichtlich der Dateigröße sowie der Anzahl der Modelle, Scheitelpunkte und Gittermodelle, die im 3D-Viewer (Beta) gleichzeitig geöffnet sein können (siehe [Datei- und Modellbeschränkungen](#file-and-model-limitations)).  
+Ein 3D-Modell enthält zahlreiche Variablen, die sich auf die Leistung auswirken können. Im 3D-Viewer (Beta) wird beim Laden eine Warnung angezeigt, wenn mehr als 150.000 Scheitelpunkte oder mehr als 400 Gittermodelle vorhanden sind. Animationen können sich auf die Leistung anderer offener Modelle auswirken. Es gibt feste Beschränkungen hinsichtlich der Dateigröße sowie der Anzahl der Modelle, Scheitelpunkte und Gittermodelle, die im 3D-Viewer (Beta) gleichzeitig geöffnet sein können (siehe [Datei- und Modellbeschränkungen](#file-and-model-limitations)).  
 
 Wenn das 3D-Modell aufgrund der Komplexität des Modells nicht ordnungsgemäß ausgeführt wird, ziehen Sie Folgendes in Betracht:
 

@@ -25,7 +25,7 @@ ms.locfileid: "11408425"
 
 ## <a name="charge-the-device"></a>Laden des Geräts
 
-Bevor Sie eine Problembehandlung starten, stellen Sie sicher, dass Ihr Gerät wenn möglich auf 20 bis 40 Prozent der Akkukapazität aufgeladen wurde. Verwenden Sie [das Ladegerät und das USB Type-C-Kabel,](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1) das mit dem HoloLens 2-Gerät geliefert wird. Das in der Lieferung des Geräts enthaltene Netzteil und das USB-C-zu-C-Kabel bieten die beste Methode zum Aufladen Ihrer HoloLens2. Das Ladegerät liefert 18W (9V bei 2A). Mit dem mitgelieferten Wandladegerät können HoloLens 2-Geräte den Akku in weniger als 65 Minuten voll aufladen, wenn sich das Gerät im Standbymodus befindet. Wenn das Zubehör nicht verfügbar ist, vergewissern Sie sich, dass das verfügbare Ladegerät mindestens 15W Leistung unterstützt.
+Bevor Sie eine Problembehandlung starten, stellen Sie sicher, dass Ihr Gerät wenn möglich auf 20 bis 40 Prozent der Akkukapazität aufgeladen wurde. Verwenden Sie [das Ladegerät und das USB Type-C-Kabel,](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1) das mit dem HoloLens 2-Gerät geliefert wird. Das in der Lieferung des Geräts enthaltene Netzteil und das USB-C-zu-C-Kabel bieten die beste Methode zum Aufladen Ihrer HoloLens 2. Das Ladegerät liefert 18 W (9 V bei 2 A). Mit dem mitgelieferten Wandladegerät können HoloLens 2-Geräte den Akku in weniger als 65 Minuten voll aufladen, wenn sich das Gerät im Standbymodus befindet. Wenn das Zubehör nicht verfügbar ist, vergewissern Sie sich, dass das verfügbare Ladegerät mindestens 15 W Leistung unterstützt.
 
 > [!NOTE]
 > Vermeiden Sie nach Möglichkeit die Verwendung eines PCs, um das Gerät über USB zu laden, was sehr langsam ist.
@@ -36,7 +36,7 @@ Wenn das Gerät korrekt hochgefahren und ausgeführt wird, gibt es drei verschie
 - Sehen Sie sich die LEDs in der Nähe des Netzschalters an (bei 40 % sollten mindestens zwei LEDs ununterbrochen leuchten).
     - Während des Ladevorgangs leuchtet die Akkuanzeige auf, um den aktuellen Ladezustand anzuzeigen.  Die letzte Anzeige leuchtet auf und erlischt, um den aktiven Ladevorgang anzuzeigen.
     - Wenn Ihre HoloLens eingeschaltet ist, zeigt die Akkuanzeige den Akkustand in fünf Schritten an.
-    - Wenn nur eine der fünf LEDs leuchtet, ist der Akkustand unter 20%.
+    - Wenn nur eine der fünf LEDs leuchtet, ist der Akkustand unter 20 %.
     - Wenn der Akkuladestand kritisch niedrig ist und Sie versuchen, das Gerät einzuschalten, blinkt eine LED kurz und erlischt anschließend.
 - Öffnen Sie auf Ihrem Host-PC den **Datei-Explorer**, und suchen Sie Ihr HoloLens 2-Gerät auf der linken Seite unter **Dieser PC**. Klicken Sie mit der rechten Maustaste auf das Gerät, und wählen Sie **Eigenschaften** aus. Ein Dialogfeld mit dem Akkuladezustand wird angezeigt.
 

@@ -64,7 +64,7 @@ HoloLens 2 führt Sie durch die folgenden Schritte:
 
     ![Herstellen einer WLAN-Verbindung](images/11-network.png)
 > [!NOTE] 
-> Wenn Sie den WLAN-Schritt auslassen und später zu einem anderen Netzwerk wechseln müssen, während Sie sich noch im Setup befinden, können Sie die Tasten **Leiser** und **Ein/Aus** gleichzeitig drücken, um zu diesem Schritt zurückzukehren, sofern Sie eine Betriebssystemversion von Oktober2019 oder später ausführen. Bei früheren Versionen müssen Sie [das Gerät ggf. zurücksetzen](hololens-recovery.md) oder an einem Ort neu starten, an dem das WLAN-Netzwerk nicht verfügbar ist, um zu verhindern, dass es automatisch eine Verbindung herstellt.
+> Wenn Sie den WLAN-Schritt auslassen und später zu einem anderen Netzwerk wechseln müssen, während Sie sich noch im Setup befinden, können Sie die Tasten **Leiser** und **Ein/Aus** gleichzeitig drücken, um zu diesem Schritt zurückzukehren, sofern Sie eine Betriebssystemversion von Oktober 2019 oder später ausführen. Bei früheren Versionen müssen Sie [das Gerät ggf. zurücksetzen](hololens-recovery.md) oder an einem Ort neu starten, an dem das WLAN-Netzwerk nicht verfügbar ist, um zu verhindern, dass es automatisch eine Verbindung herstellt.
 > 
 > Beachten Sie außerdem, dass beim HoloLens-Setup für Anmeldeinformationen eine Zeitüberschreitung von zwei Minuten besteht. Der Benutzername/das Kennwort muss innerhalb von zwei Minuten eingegeben werden, andernfalls wird der Wert im Feld „Benutzername“ automatisch gelöscht.
 

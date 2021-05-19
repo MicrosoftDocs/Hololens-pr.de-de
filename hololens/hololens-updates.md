@@ -107,7 +107,7 @@ HoloLens 2 unterstützt mehr Update-Automatisierungsfeatures als HoloLens (1. Ge
 
 Windows Updates for Business unterstützt Zurückstellungsrichtlinien. Nachdem Microsoft ein Update veröffentlicht hat, können Sie mithilfe einer Zurückstellungsrichtlinie definieren, wie lange die Installation dieses Updates auf den Geräten verzögert werden soll. Sie können eine Update-Rollout-Strategie für Ihre Organisation koordinieren, indem Sie Teilmengen Ihrer Geräte (als *Update-Ringe* bezeichnet) unterschiedlichen Zurückstellungsrichtlinien zuordnen.
 
-Gehen wir beispielsweise von einer Organisation mit 1.000Geräten aus, die in fünf Wellen aktualisiert werden müssen. Die Organisation kann fünf Updateringe erstellen, wie in der folgenden Tabelle gezeigt.
+Gehen wir beispielsweise von einer Organisation mit 1.000 Geräten aus, die in fünf Wellen aktualisiert werden müssen. Die Organisation kann fünf Updateringe erstellen, wie in der folgenden Tabelle gezeigt.
 
 |Gruppe |Anzahl der Geräte |Verzögerung (Tage) |
 | ---| :---: | :---: |
@@ -130,7 +130,7 @@ Sie können unterschiedliche Verzögerungen für Feature- und Qualitätsupdates 
 |Kategorie |Richtlinie |Maximale Verzögerung |
 | --- | --- | --- |
 |Funktionsupdates |DeferFeatureUpdatesPeriodInDays |365 Tage |
-|Qualitätsupdates |DeferQualityUpdatesPeriodInDays |30Tage |
+|Qualitätsupdates |DeferQualityUpdatesPeriodInDays |30 Tage |
 
 #### Updates über ein Gerät anhalten
 
@@ -213,5 +213,5 @@ Falls WDRT Ihr HoloLens-Gerät nicht erkennt, starten Sie Ihren Computer neu und
 
 - [Veröffentlichungshinweise für HoloLens 2](https://docs.microsoft.com/hololens/hololens-release-notes)
 - [Was ist Windows Update for Business?](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb)
-- [Zuweisen von Geräten zu Servicing-Kanälen für Windows10-Updates](https://docs.microsoft.com/windows/deployment/update/waas-servicing-channels-windows-10-updates)
+- [Zuweisen von Geräten zu Servicing-Kanälen für Windows 10-Updates](https://docs.microsoft.com/windows/deployment/update/waas-servicing-channels-windows-10-updates)
 - [Verwalten von Windows 10-Softwareupdates in Intune](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)

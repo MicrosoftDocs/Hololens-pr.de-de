@@ -38,7 +38,7 @@ Die meisten Mobilfunkverbindungsanforderungen können mit einem Hotspot erfüllt
 
 ## <a name="usb-c-tethering"></a>USB-C-Tethering
 
-USB-C-Tethering kann erweiterten Workloads, die dies benötigen, eine niedrigere Latenz bereitstellen. [Azure Remote Rendering](https://azure.microsoft.com/services/remote-rendering) kann z.B. vom Tethering profitieren. Beachten Sie, dass das Tethering eine Kabelverbindung zwischen dem Mobilfunkgerät und HoloLens erfordert, und dass das Tethering von einer begrenzten Anzahl von Geräten unterstützt wird.
+USB-C-Tethering kann erweiterten Workloads, die dies benötigen, eine niedrigere Latenz bereitstellen. [Azure Remote Rendering](https://azure.microsoft.com/services/remote-rendering) kann z. B. vom Tethering profitieren. Beachten Sie, dass das Tethering eine Kabelverbindung zwischen dem Mobilfunkgerät und HoloLens erfordert, und dass das Tethering von einer begrenzten Anzahl von Geräten unterstützt wird.
 
 ### <a name="usb-c-compatibility"></a>USB-C-Kompatibilität
 

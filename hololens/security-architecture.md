@@ -28,7 +28,7 @@ HoloLens 2 kombiniert Hardware, Software, Netzwerk und Dienste, um End-to-End-Si
 
 Die Architektur von Windows HoloLens 2 und des Betriebssystems bietet die folgenden innovativen Sicherheitsfeatures:
 
-  * **Statustrennung und -isolation**: Diese neue Architektur schützt kritische Teile des HoloLens 2-Betriebssystems vor Veränderungen – wie z.B. diejenigen, die erforderlich sind, damit das Kernbetriebssystem in einen vertrauenswürdigen Status booten kann. Die Isolationstechnologie wird verwendet, um nicht vertrauenswürdige Apps in einem Sandkastenbereich zu beschränken, sodass sichergestellt ist, dass sie keine Auswirkungen auf die Systemsicherheit haben. Das gesamte Betriebssystem ist in sichere Abschnitte unterteilt, wobei jeder Abschnitt durch eine Kombination unterschiedlicher Sicherheitstechnologien geschützt ist.
+  * **Statustrennung und -isolation**: Diese neue Architektur schützt kritische Teile des HoloLens 2-Betriebssystems vor Veränderungen – wie z. B. diejenigen, die erforderlich sind, damit das Kernbetriebssystem in einen vertrauenswürdigen Status booten kann. Die Isolationstechnologie wird verwendet, um nicht vertrauenswürdige Apps in einem Sandkastenbereich zu beschränken, sodass sichergestellt ist, dass sie keine Auswirkungen auf die Systemsicherheit haben. Das gesamte Betriebssystem ist in sichere Abschnitte unterteilt, wobei jeder Abschnitt durch eine Kombination unterschiedlicher Sicherheitstechnologien geschützt ist.
   
   * **Datenschutz**: Wenn das Gerät eines Benutzers verloren geht oder gestohlen wird, hindert HoloLens 2 nicht autorisierte Anwendungen dank BitLocker-Datenverschlüsselung daran, vertrauliche Informationen zu lesen. 
   

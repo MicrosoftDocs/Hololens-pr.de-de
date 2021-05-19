@@ -43,7 +43,7 @@ Microsoft HoloLens 2 ist ein ungebundener holographischer Computer.  Er verfeine
 
 ### <a name="power-supply-details"></a>Details zur Energieversorgung
 
-Die in der Lieferung des Geräts enthaltene Stromversorgung und das USB-Kabel sind die beste Methode zum Aufladen. Die Stromversorgung ist ein 18-W-Ladegerät.  Es liefert 9V bei 2A.
+Die in der Lieferung des Geräts enthaltene Stromversorgung und das USB-Kabel sind die beste Methode zum Aufladen. Die Stromversorgung ist ein 18-W-Ladegerät.  Es liefert 9 V bei 2 A.
 
 Die Lade- und Geschwindigkeitsrate kann je nach Umgebung, in der das Gerät ausgeführt wird, variieren.
 
@@ -137,7 +137,7 @@ Um den Prozentsatz der internen Akkuladedauer beizubehalten bzw. zu verbessern, 
 | 3D-Viewer | [Mit dem 3D-Viewer](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) können Sie 3D-Modelle und Animationen ganz einfach in Echtzeit anzeigen.|
 | Cortana | [Cortana](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab), Ihr persönlicher Produktivitätsassistent, hilft Ihnen dabei, auf dem Laufenden zu bleiben und Zeit zu sparen, um das zu finden, was Sie benötigen.  |
 | Dynamics 365 Guides |  [Dynamics 365 Guides](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) helfen Mitarbeitern, schneller neue Fähigkeiten auf HoloLens-Geräten zu erlernen. |
-| Dynamics365 Remote Assist | [Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) ermöglicht Technikern die Zusammenarbeit und die Lösung von Problemen mit Remotemitarbeitern unter Verwendung von Microsoft Teams oder Dynamics 365 Remote Assist.  |
+| Dynamics 365 Remote Assist | [Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) ermöglicht Technikern die Zusammenarbeit und die Lösung von Problemen mit Remotemitarbeitern unter Verwendung von Microsoft Teams oder Dynamics 365 Remote Assist.  |
 | Feedback-Hub | Mit dem [Feedback-Hub](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab) können Sie Feedback zu Windows und Apps bereitstellen, indem Sie Ihre Vorschläge oder Probleme teilen.  |
 | Datei-Explorer | Der Datei-Explorer stellt eine grafische Benutzeroberfläche für den Zugriff auf die Dateisysteme bereit. |
 | E-Mail und Kalender | Die Apps für [E-Mail- und Kalender](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab) helfen Ihnen, mit Ihren E-Mails auf dem Laufenden zu bleiben, Ihren Terminplan zu verwalten und mit Ihren Kontakten verbunden zu bleiben. |  
@@ -176,14 +176,14 @@ Nicht für die Verwendung durch Kinder unter 13 Jahren vorgesehen.
 
 |      Messwert               |      Metrische Einheiten für das Gerät     |      Imperiale Einheiten für das Gerät     |
 |--------------------------------|-----------------------|-------------------------|
-|     Länge des Geräts                |     378,97mm          |     14,92 Zoll       |
-|     Breite des Geräts                 |     247,90mm          |     9,76 Zoll        |
-|     Tiefe des Geräts                 |     163,07mm          |     6,42 Zoll        |
-|     Gewicht des Geräts                |     2,878kg           |     6,34 lbs           |
-|     Länge der Umverpackung    |     446,00mm          |     17,56 Zoll       |
-|     Breite der Umverpackung     |     257,99mm          |     10,16 Zoll       |
-|     Tiefe der Umverpackung     |     172,01mm          |     6,77 Zoll        |
-|     Gewicht der Umverpackung    |     3,284kg           |     7,24 lbs           |
+|     Länge des Geräts                |     378,97 mm          |     14,92 Zoll       |
+|     Breite des Geräts                 |     247,90 mm          |     9,76 Zoll        |
+|     Tiefe des Geräts                 |     163,07 mm          |     6,42 Zoll        |
+|     Gewicht des Geräts                |     2,878 kg           |     6,34 lbs           |
+|     Länge der Umverpackung    |     446,00 mm          |     17,56 Zoll       |
+|     Breite der Umverpackung     |     257,99 mm          |     10,16 Zoll       |
+|     Tiefe der Umverpackung     |     172,01 mm          |     6,77 Zoll        |
+|     Gewicht der Umverpackung    |     3,284 kg           |     7,24 lbs           |
 
 > [!NOTE]
 > - Einheit: Die schwarzen Box im Einzelhandelsstil, in der die HoloLens 2 verkauft wird.

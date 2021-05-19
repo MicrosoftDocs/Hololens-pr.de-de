@@ -110,7 +110,7 @@ Um das Startmenü zu **schließen**, führen Sie die Startgeste aus, wenn das St
 > [!IMPORTANT]
 > Voraussetzungen, damit die einhändige Startgeste funktioniert:
 >
-> 1. Sie müssen auf das Update vom November2019 (Build 18363.1039) oder höher aktualisieren.
+> 1. Sie müssen auf das Update vom November 2019 (Build 18363.1039) oder höher aktualisieren.
 > 1. Ihre Augen müssen am Gerät kalibriert sein, damit die Blickverfolgung ordnungsgemäß funktioniert. Wenn Sie beim Betrachten des Startsymbols keine umlaufenden Punkte sehen, sind Ihre Augen nicht auf das Gerät [kalibriert](https://docs.microsoft.com/hololens/hololens-calibration#calibrating-your-hololens-2).
 
 Sie können die Startgeste auch mit nur einer Hand ausführen. Halten Sie dazu Ihre Hand mit der Handfläche nach oben und visieren Sie das **Startsymbol** auf der Innenseite Ihres Handgelenks an. **Behalten Sie das Symbol im Auge** und drücken Sie Daumen und Zeigefinger zusammen.

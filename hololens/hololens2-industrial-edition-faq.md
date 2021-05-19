@@ -78,7 +78,7 @@ Der Transportbehälter besteht aus einem porösem Material und sollte nicht in R
 
 ### <a name="can-i-use-the-same-cleaning-materials-for-hololens-2-industrial-edition-as-the-other-editions"></a>Kann ich die gleichen Reinigungsmaterialien für HoloLens 2 Industrial Edition verwenden wie die anderen Editionen?
 
-Die HoloLens2 Industrial Edition kann mit einer Lösung aus &quot;70%&quot; Isopropylalkohol und Wasser gereinigt werden, um die harten Oberflächen des Geräts zu reinigen, einschließlich Visier, Stirnpolster und Kopfriemen. Weitere Informationen finden Sie in den [Häufig gestellten Fragen zur HoloLens2-Reinigung](https://docs.microsoft.com/hololens/hololens2-maintenance).
+Die HoloLens 2 Industrial Edition kann mit einer Lösung aus &quot;70%&quot; Isopropylalkohol und Wasser gereinigt werden, um die harten Oberflächen des Geräts zu reinigen, einschließlich Visier, Stirnpolster und Kopfriemen. Weitere Informationen finden Sie in den [Häufig gestellten Fragen zur HoloLens 2-Reinigung](https://docs.microsoft.com/hololens/hololens2-maintenance).
 
 ### <a name="how-do-i-clean-hololens-2-industrial-edition"></a>Wie reinige ich die HoloLens 2 Industrial Edition?
 

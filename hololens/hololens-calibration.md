@@ -138,7 +138,7 @@ Sie können die Aufforderung zur Kalibrierung auch deaktivieren, indem Sie die f
 1. Deaktivieren Sie die Option **Wenn eine neue Person diese HoloLens verwendet, automatische Aufforderung zur Ausführung der Augenkalibrierung**.
 
 > [!IMPORTANT]
-> Diese Einstellung kann die Qualität und den Komfort der Hologrammwiedergabe beeinträchtigen.  Wenn Sie diese Einstellung deaktivieren, funktionieren Features, die von Eye Tracking abhängig sind (z.B. Textbildlauf), nicht mehr in immersiven Anwendungen.
+> Diese Einstellung kann die Qualität und den Komfort der Hologrammwiedergabe beeinträchtigen.  Wenn Sie diese Einstellung deaktivieren, funktionieren Features, die von Eye Tracking abhängig sind (z. B. Textbildlauf), nicht mehr in immersiven Anwendungen.
 
 ### HoloLens 2 Eye Tracking-Technologie
 

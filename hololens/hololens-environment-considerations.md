@@ -53,7 +53,7 @@ HoloLens verwendet einzigartige Umgebungsmarker, die auch als *Features* bezeich
 
 In einem Bereich, in dem es kaum Features gibt, ist einem Gerät die Verfolgung kaum möglich, da es keine Möglichkeit hat zu wissen, wo es sich im Raum befindet. Sie können die Verfolgung verbessern, wenn Sie Features an den Wänden eines Raums anbringen. Poster, an die Wand geklebte Symbole, Pflanzen, eindeutige Gegenstände oder ähnliche Elemente sind hier hilfreich. Ein unordentlicher Schreibtisch ist ein gutes Beispiel für eine Umgebung, die eine einwandfreie Verfolgung ermöglicht, denn hier gibt es viele verschiedene Features in einem einzigen Bereich.  
 
-Sie sollten im gleichen Raum außerdem eindeutige Features verwenden. Wenn z.B. an einer Wand mehrfach das gleiche Poster hängt, stiftet dies Verwirrung, da HoloLens nicht weiß, welches der sich wiederholenden Poster es gerade sieht. Eine gängige Methode zum Hinzufügen von eindeutigen Features ist die Verwendung von Kreppband. Damit können Sie eindeutige, sich nicht wiederholende Muster entlang der Wände und des Bodens eines Raums anbringen.  
+Sie sollten im gleichen Raum außerdem eindeutige Features verwenden. Wenn z. B. an einer Wand mehrfach das gleiche Poster hängt, stiftet dies Verwirrung, da HoloLens nicht weiß, welches der sich wiederholenden Poster es gerade sieht. Eine gängige Methode zum Hinzufügen von eindeutigen Features ist die Verwendung von Kreppband. Damit können Sie eindeutige, sich nicht wiederholende Muster entlang der Wände und des Bodens eines Raums anbringen.  
 
 Sie sollten sich einfach folgende Frage stellen: Wenn Sie nur einen kleinen Teil einer Szenerie sehen würden, könnten Sie sich im Raum eindeutig lokalisieren? Ist dies nicht der Fall, wird das Gerät wahrscheinlich auch Probleme mit der Verfolgung haben.
 
@@ -87,7 +87,7 @@ Weniger glänzende Objekte können leichter nachverfolgt werden.
 
 Solange WLAN aktiviert ist, werden Kartendaten mit einem WLAN-Fingerabdruck korreliert, auch wenn sie nicht mit einem tatsächlichen WLAN-Netzwerk/-Router verbunden sind. Ohne WLAN-Informationen sind Raum und Hologramme möglicherweise etwas langsamer zu erkennen. Wenn sich die WLAN-Signale erheblich ändern, denkt das Gerät unter Umständen, dass es sich in einem ganz anderen Bereich befindet.
 
-Die Netzwerkkennung (z.B. SSID oder MAC-Adresse) wird nicht an Microsoft gesendet, und alle WLAN-Verweise werden lokal auf dem HoloLens gespeichert.
+Die Netzwerkkennung (z. B. SSID oder MAC-Adresse) wird nicht an Microsoft gesendet, und alle WLAN-Verweise werden lokal auf dem HoloLens gespeichert.
 
 ## <a name="mapping-new-spaces"></a>Abbildung neuer Räume
 

@@ -22,7 +22,7 @@ ms.locfileid: "11282806"
 ---
 # Statustrennung und -isolation
 
-Statustrennung und -isolation schützt kritische Teile des HoloLens 2-Betriebssystems vor Veränderungen – wie z.B. diejenigen, die erforderlich sind, damit das Betriebssystem in einen vertrauenswürdigen Status booten kann. Bei der Isolationstechnologie werden nicht vertrauenswürdige Anwendungen in eine isolierte Sandbox-Umgebung verschoben, um sicherzustellen, dass sie die Systemsicherheit nicht beeinträchtigen.
+Statustrennung und -isolation schützt kritische Teile des HoloLens 2-Betriebssystems vor Veränderungen – wie z. B. diejenigen, die erforderlich sind, damit das Betriebssystem in einen vertrauenswürdigen Status booten kann. Bei der Isolationstechnologie werden nicht vertrauenswürdige Anwendungen in eine isolierte Sandbox-Umgebung verschoben, um sicherzustellen, dass sie die Systemsicherheit nicht beeinträchtigen.
 
 ## Statustrennung
 
@@ -60,7 +60,7 @@ Durch den Schutz dieser im unveränderlichen Status (Integrität und schreibgesc
 #### Betriebssystemdaten 
 
 Es ist wichtig zu beachten, dass ausführbare Dateien und Daten, die zur Laufzeit veränderbar sind (und nicht kritisch für die Funktion des Betriebssystems sind), verworfen und neu erstellt werden können, wenn die Daten beschädigt oder kompromittiert sind. Ein hochwertiger änderbarer Status ist entweder funktional erforderlich, damit er vom Betriebssystem aufrechterhalten wird, oder es wird erwartet, dass er beim Herunterfahren des Betriebssystems und/oder bei Neustarts durch unterstützte Windows-Betriebssystem- und Geräte-Szenarien weiterhin bestehen bleibt. Beispiele für einen hochwertigen veränderbaren Status sind:
-  * Globale Geräteeinstellungen, wie z.B. die Deaktivierung des Speicherorts für alle Benutzer, die vom IT-Administrator konfiguriert wurden.
+  * Globale Geräteeinstellungen, wie z. B. die Deaktivierung des Speicherorts für alle Benutzer, die vom IT-Administrator konfiguriert wurden.
   * Zugriff auf an Datengeräte erinnernde Netzwerke und zugehörige Verbindungspasswörter über Wi-Fi-Netzwerkverbindungen.
   * Absturzabbilder einschließlich Einstellungen, Protokolle.
   * Treiber, die bei Bedarf für neu entdeckte Geräte heruntergeladen werden.

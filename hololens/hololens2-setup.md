@@ -25,13 +25,13 @@ Die nachstehenden Verfahren unterstützen Sie beim erstmaligen Einrichten einer 
 
 ## Aufladen der HoloLens
 
-Schließen Sie das Netzteil mit dem mitgelieferten USB-C-Kabel an den Ladeanschluss an. Schließen Sie das Netzteil an eine Steckdose an. Die in der Lieferung des Geräts enthaltene Stromversorgung und das USB-C-zu-C-Kabel sind die beste Methode zum Aufladen Ihrer HoloLens2. Das Ladegerät liefert 18W (9V bei 2A). Mit dem mitgelieferten Wandladegerät können HoloLens 2-Geräte den Akku in weniger als 65 Minuten voll aufladen, wenn sich das Gerät im Standbymodus befindet.
+Schließen Sie das Netzteil mit dem mitgelieferten USB-C-Kabel an den Ladeanschluss an. Schließen Sie das Netzteil an eine Steckdose an. Die in der Lieferung des Geräts enthaltene Stromversorgung und das USB-C-zu-C-Kabel sind die beste Methode zum Aufladen Ihrer HoloLens 2. Das Ladegerät liefert 18 W (9 V bei 2 A). Mit dem mitgelieferten Wandladegerät können HoloLens 2-Geräte den Akku in weniger als 65 Minuten voll aufladen, wenn sich das Gerät im Standbymodus befindet.
 
 Die Lade- und Geschwindigkeitsrate kann je nach Umgebung, in der das Gerät ausgeführt wird, variieren.
 
 - Während des Ladevorgangs leuchtet die Akkuanzeige auf, um den aktuellen Ladezustand anzuzeigen.  Die letzte Anzeige leuchtet auf und erlischt, um den aktiven Ladevorgang anzuzeigen.
 - Wenn Ihre HoloLens eingeschaltet ist, zeigt die Akkuanzeige den Akkustand in Schritten an.
-- Wenn nur eine der fünf LEDs leuchtet, ist der Akkustand unter 20%.
+- Wenn nur eine der fünf LEDs leuchtet, ist der Akkustand unter 20 %.
 - Wenn der Akkuladestand kritisch niedrig ist und Sie versuchen, das Gerät einzuschalten, blinkt eine LED kurz und erlischt anschließend.
 
 Die vollständigen [Details zum Laden von Geräten finden Sie hier](hololens-recovery.md#charge-the-device), wenn weitere Informationen erforderlich sind. 

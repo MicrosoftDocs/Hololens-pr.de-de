@@ -187,7 +187,7 @@ Das Gerät zeichnet seinen Hardware-Hash während des OOBE-Prozesses in einer CS
 
    - **Sprache (Region)**: Wählen Sie die Sprache für OOBE aus. Wir empfehlen, dass Sie eine Sprache aus der Liste der [unterstützten Sprachen für HoloLens 2](hololens2-language-support.md) auswählen.
    - **Tastatur automatisch konfigurieren**: Um sicherzustellen, dass die Tastatur mit der ausgewählten Sprache übereinstimmt, wählen Sie **Ja** aus.
-   - **Vorlage für Gerätenamen anwenden**: Um den Gerätenamen während des OOBE-Vorgangs automatisch festzulegen, wählen Sie **Ja** aus, und geben Sie dann den Vorlagenausdruck und die Platzhalter in **Namen eingeben** ein. Geben Sie z.B. ein Präfix und `%RAND:4%`&mdash; einen Platzhalter für eine vierstellige Zufallszahl ein.
+   - **Vorlage für Gerätenamen anwenden**: Um den Gerätenamen während des OOBE-Vorgangs automatisch festzulegen, wählen Sie **Ja** aus, und geben Sie dann den Vorlagenausdruck und die Platzhalter in **Namen eingeben** ein. Geben Sie z. B. ein Präfix und `%RAND:4%`&mdash; einen Platzhalter für eine vierstellige Zufallszahl ein.
      > [!NOTE]  
      > Wenn Sie eine Vorlage für Gerätenamen verwenden, startet der OOBE-Vorgang das Gerät ein weiteres Mal neu, nachdem der Gerätenamen angewendet und bevor das Gerät mit Azure AD verbunden wird. Mit diesem Neustart wird der neue Name wirksam.  
 

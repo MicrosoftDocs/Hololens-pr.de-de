@@ -64,7 +64,7 @@ Vergewissern Sie sich, dass [diese Liste](hololens-offline.md) der Endpunkte auf
 1. Stellen Sie sicher, dass diese Ports und URLs in Ihrer Netzwerkfirewall zulässig sind, damit Microsoft Teams funktioniert. Bleiben Sie auf dem neuesten Stand mit der [neuesten Liste der Ports](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams).
 
 - Informieren Sie sich ausführlicher über die spezifischen [Netzwerkanforderungen für Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements#network-requirements). 
-- Informieren Sie sich ausführlicher über [Vorbereiten des Netzwerks Ihrer Organisation für MicrosoftTeams](https://docs.microsoft.com/MicrosoftTeams/prepare-network).
+- Informieren Sie sich ausführlicher über [Vorbereiten des Netzwerks Ihrer Organisation für Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/prepare-network).
 
 ### Spezifische Netzwerkanforderungen für Guides
 
