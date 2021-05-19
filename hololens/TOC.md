@@ -7,7 +7,7 @@
 ### [HoloLens 2-Hardware](hololens2-hardware.md)
 ### [Vorbereiten von HoloLens 2](hololens2-setup.md)
 ### [Einrichten von HoloLens 2](hololens2-start.md)
-### [HoloLens2 komfortabel anpassen: Häufig gestellte Fragen](hololens2-fit-comfort-faq.md)
+### [HoloLens 2 komfortabel anpassen: Häufig gestellte Fragen](hololens2-fit-comfort-faq.md)
 ### [HoloLens 2-Anzeige](hololens2-display.md)
 ### [Reinigen von HoloLens 2: Häufig gestellte Fragen](hololens2-maintenance.md)
 ### [Unterstützte Sprachen für HoloLens 2](hololens2-language-support.md)
@@ -53,7 +53,7 @@
 #### [Cloud Connected – Konfigurieren](hololens2-cloud-connected-configure.md)
 #### [Cloud Connected – Bereitstellen](hololens2-cloud-connected-deploy.md)
 #### [Cloud Connected – Pflegen](hololens2-cloud-connected-maintain.md)
-### [Bereitstellen von HoloLens2 auf externen Clients mit Remote Assist](hololens2-deployment-guide.md)
+### [Bereitstellen von HoloLens 2 auf externen Clients mit Remote Assist](hololens2-deployment-guide.md)
 ### Unternehmensverbundene HoloLens 2-Bereitstellung mit Dynamic 365 Guides
 #### [Unternehmensverbunden – Bereitstellungsübersicht](hololens2-corp-connected-overview.md)
 #### [Unternehmensverbunden – Vorbereiten](hololens2-corp-connected-prepare.md)
