@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2d84658ef76ff2c5d8ef7dabe857892e7129a965
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: f8dcc8619715871db0aaba306dd19d252d73ac47
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108309887"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397831"
 ---
 # <a name="manage-user-identity-and-sign-in-for-hololens"></a>Verwalten der Benutzeridentität und Anmeldung für HoloLens
 
@@ -51,9 +51,9 @@ Die gängigste Methode zum Einrichten eines neuen Benutzers ist die Out-of-Box-B
 
 Wie bei Windows auf anderen Geräten wird bei der Anmeldung während des Setups ein Benutzerprofil auf dem Gerät erstellt. Das Benutzerprofil speichert Apps und Daten. Dasselbe Konto bietet auch einmaliges Anmelden für Apps wie Edge oder Skype mithilfe der Windows-Konto-Manager-APIs.  
 
-Wenn Sie sich mit einem Unternehmens- oder Organisationskonto bei HoloLens anmelden, registriert sich HoloLens in der IT-Infrastruktur des Unternehmens. Mit dieser Registrierung kann Ihr IT-Administrator Mobile Geräteverwaltung (MDM) konfigurieren, um Gruppenrichtlinien an Ihre HoloLens zu senden.
+Wenn Sie sich mit einem Unternehmens- oder Organisationskonto bei HoloLens anmelden, registriert sich HoloLens in der IT-Infrastruktur des Unternehmens. Mit dieser Registrierung kann Ihr IT-Administrator Mobile Geräteverwaltung (MDM) so konfigurieren, dass Gruppenrichtlinien an HoloLens gesendet werden.
 
-Standardmäßig müssen Sie sich wie bei anderen Windows 10 Geräten erneut anmelden, wenn HoloLens neu gestartet oder aus dem Standbymodus fortgesetzt wird. Sie können dieses Verhalten mithilfe der Einstellungs-App ändern, oder das Verhalten kann durch Gruppenrichtlinien gesteuert werden.
+Standardmäßig müssen Sie sich wie bei anderen Windows 10 Geräten erneut anmelden, wenn HoloLens neu gestartet oder aus dem Standbymodus fortgesetzt wird. Sie können die App Einstellungen verwenden, um dieses Verhalten zu ändern, oder das Verhalten kann durch Gruppenrichtlinien gesteuert werden.
 
 ### <a name="linked-accounts"></a>Verknüpfte Konten
 
@@ -72,9 +72,23 @@ Geräte, die mit Azure AD-Konten eingerichtet sind, lassen die Anmeldung beim Ge
 > [!NOTE]
 > **HoloLens (1. Generation)** hat damit begonnen, [](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018) mehrere Azure AD-Benutzer in der Windows 10 April 2018 Update im Rahmen von [Windows Holographic for Business.](hololens-upgrade-enterprise.md)
 
+### <a name="multiple-users-listed-on-sign-in-screen"></a>Mehrere Benutzer, die auf dem Anmeldebildschirm aufgeführt sind
+
+Zuvor wurde auf dem Bildschirm Anmelden nur der zuletzt angemeldete Benutzer sowie ein Einstiegspunkt "Anderer Benutzer" angezeigt. Wir haben Kundenfeedback erhalten, dass dies nicht ausreicht, wenn sich mehrere Benutzer beim Gerät angemeldet haben. Sie mussten weiterhin ihren Benutzernamen usw. erneut eingeben.
+
+In [Windows Holographic, Version 21H1](hololens-release-notes.md#windows-holographic-version-21h1)eingeführt, zeigt der Anmeldebildschirm mehrere Benutzer an, die sich zuvor beim Gerät angemeldet haben, wenn Sie Auf der rechten Seite des PIN-Eingabefelds die Option **Anderer Benutzer** auswählen. Dadurch können Benutzer ihr Benutzerprofil auswählen und sich dann mit ihren Windows Hello Anmeldeinformationen anmelden. Ein neuer Benutzer kann dem Gerät auch auf dieser Seite Andere Benutzer über die Schaltfläche **Konto hinzufügen** hinzugefügt werden.
+
+Im Menü Andere Benutzer zeigt die Schaltfläche Andere Benutzer den letzten Benutzer an, der sich am Gerät angemeldet hat. Wählen Sie diese Schaltfläche aus, um zum Anmeldebildschirm für diesen Benutzer zurückzukehren.
+
+![Standardeinstellung des Anmeldebildschirms](./images/multiusers1.jpg)
+
+<br>
+
+![Anmeldebildschirm für andere Benutzer](./images/multiusers2.jpg)
+
 ## <a name="removing-users"></a>Entfernen von Benutzern
 
-Sie können einen Benutzer vom Gerät entfernen, indem Sie zu **Einstellungen**  >  **Konten Andere**  >  **Personen.** Diese Aktion gibt auch Speicherplatz frei, indem alle App-Daten dieses Benutzers vom Gerät entfernt werden.  
+Sie können einen Benutzer vom Gerät entfernen, indem Sie zu **Einstellungen**  >  **Konten**  >  **Andere Personen**. Diese Aktion gibt auch Speicherplatz frei, indem alle App-Daten dieses Benutzers vom Gerät entfernt werden.  
 
 ## <a name="using-single-sign-on-within-an-app"></a>Verwenden des einmaligen Anmeldens in einer App
 
@@ -82,21 +96,21 @@ Als App-Entwickler können Sie verknüpfte Identitäten auf HoloLens wie auf and
 
 Kontounterbrechungen, die auftreten können, z. B. das Anfordern der Benutzereinwilligung für Kontoinformationen, die zweistufige Authentifizierung usw., müssen behandelt werden, wenn die App ein Authentifizierungstoken anfordert.
 
-Wenn Ihre App einen bestimmten Kontotyp erfordert, der zuvor nicht verknüpft wurde, kann Ihre App das System auffordern, den Benutzer aufzufordern, einen hinzuzufügen. Diese Anforderung löst den Kontoeinstellungsbereich aus, der als modales untergeordnetes Element Ihrer App gestartet wird. Bei 2D-Apps wird dieses Fenster direkt über die Mitte Ihrer App gerendert. Bei Unity-Apps nimmt diese Anforderung den Benutzer kurz aus Ihrer holografischen App heraus, um das untergeordnete Fenster zu rendern. Informationen zum Anpassen der Befehle und Aktionen in diesem Bereich finden Sie unter [WebAccountCommand-Klasse.](https://docs.microsoft.com/uwp/api/Windows.UI.ApplicationSettings.WebAccountCommand)
+Wenn Ihre App einen bestimmten Kontotyp erfordert, der zuvor nicht verknüpft wurde, kann Ihre App das System auffordern, den Benutzer zum Hinzufügen eines Kontos aufzufordern. Diese Anforderung löst den Kontoeinstellungsbereich aus, der als modales untergeordnetes Element Ihrer App gestartet wird. Bei 2D-Apps wird dieses Fenster direkt über die Mitte Ihrer App gerendert. Bei Unity-Apps nimmt diese Anforderung den Benutzer kurz aus Ihrer holografischen App heraus, um das untergeordnete Fenster zu rendern. Informationen zum Anpassen der Befehle und Aktionen in diesem Bereich finden Sie unter [WebAccountCommand-Klasse.](https://docs.microsoft.com/uwp/api/Windows.UI.ApplicationSettings.WebAccountCommand)
 
 ## <a name="enterprise-and-other-authentication"></a>Unternehmensauthentifizierung und andere Authentifizierung
 
-Wenn Ihre App andere Authentifizierungstypen wie NTLM, Basic oder Kerberos verwendet, können Sie die [Windows-Anmeldeinformations-Benutzeroberfläche](https://docs.microsoft.com/uwp/api/Windows.Security.Credentials.UI) verwenden, um die Anmeldeinformationen des Benutzers zu erfassen, zu verarbeiten und zu speichern. Die Benutzeroberfläche zum Sammeln dieser Anmeldeinformationen ähnelt sehr anderen cloudgesteuerten Kontounterbrechungen und wird als untergeordnete App auf Ihrer 2D-App angezeigt oder hält eine Unity-App kurz an, um die Benutzeroberfläche anzuzeigen.
+Wenn Ihre App andere Authentifizierungstypen verwendet, z. B. NTLM, Basic oder Kerberos, können Sie die [Benutzeroberfläche](https://docs.microsoft.com/uwp/api/Windows.Security.Credentials.UI) für Windows-Anmeldeinformationen verwenden, um die Anmeldeinformationen des Benutzers zu erfassen, zu verarbeiten und zu speichern. Die Benutzererfahrung zum Sammeln dieser Anmeldeinformationen ähnelt stark anderen cloudgesteuerten Kontounterbrechungen und wird als untergeordnete App über Ihrer 2D-App angezeigt oder unterbricht kurz eine Unity-App, um die Benutzeroberfläche anzuzeigen.
 
 ## <a name="deprecated-apis"></a>Nicht mehr unterstützte APIs
 
-Eine Möglichkeit, wie sich die Entwicklung für HoloLens von der Entwicklung für Desktop unterscheidet, besteht darin, dass die [OnlineIDAuthenticator-API](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.OnlineId.OnlineIdAuthenticator) nicht vollständig unterstützt wird. Obwohl die API ein Token zurückgibt, wenn das primäre Konto fehlerfrei ist, zeigen Unterbrechungen wie die in diesem Artikel beschriebenen keine Benutzeroberfläche für den Benutzer an und können das Konto nicht ordnungsgemäß authentifizieren.
+Eine Möglichkeit, wie sich die Entwicklung für HoloLens von der Entwicklung für Desktop unterscheidet, ist, dass die [OnlineIDAuthenticator-API](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.OnlineId.OnlineIdAuthenticator) nicht vollständig unterstützt wird. Obwohl die API ein Token zurückgibt, wenn sich das primäre Konto in einem guten Zustand befindet, zeigen Unterbrechungen wie die in diesem Artikel beschriebenen keine Benutzeroberfläche für den Benutzer an und können das Konto nicht ordnungsgemäß authentifizieren.
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
-### <a name="is-windows-hello-for-business-supported-on-hololens-1st-gen"></a>Wird Windows Hello for Business auf HoloLens (1. Generation) unterstützt?
+### <a name="is-windows-hello-for-business-supported-on-hololens-1st-gen"></a>Wird Windows Hello for Business HoloLens (1. Generation) unterstützt?
 
-Windows Hello for Business (die die Verwendung einer PIN für die Anmeldung unterstützt) wird für HoloLens (1. Generation) unterstützt. So lassen Sie Windows Hello for Business PIN-Anmeldung bei HoloLens zu:
+Windows Hello for Business (die die Verwendung einer PIN für die Anmeldung unterstützt) wird für HoloLens (1. Generation) unterstützt. So lassen Windows Hello for Business PIN-Anmeldung bei HoloLens zu:
 
 1. Das HoloLens-Gerät muss von [MDM verwaltet werden.](hololens-enroll-mdm.md)
 1. Sie müssen die Windows Hello for Business für das Gerät aktivieren. ([Siehe Anweisungen für Microsoft Intune.](https://docs.microsoft.com/intune/windows-hello))
@@ -109,21 +123,21 @@ Windows Hello for Business (die die Verwendung einer PIN für die Anmeldung unte
 
 HoloLens 2 unterstützt die Iris-Authentifizierung. Iris basiert auf Windows Hello-Technologie und wird für die Verwendung durch Azure Active Directory microsoft-Konten unterstützt. Iris wird auf die gleiche Weise wie andere Windows Hello implementiert und erreicht die biometrische Sicherheit FAR von 1/100.000.
 
-Weitere Informationen [finden Sie in den biometrischen Anforderungen Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-biometric-requirements) Spezifikationen. Erfahren Sie mehr [über Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) [und Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification). 
+Weitere Informationen [finden Sie in den biometrischen Anforderungen Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-biometric-requirements) Spezifikationen. Erfahren Sie mehr über [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) und [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification). 
 
 ### <a name="how-does-the-type-of-account-affect-sign-in-behavior"></a>Wie wirkt sich der Kontotyp auf das Anmeldeverhalten aus?
 
-Wenn Sie Richtlinien für die Anmeldung anwenden, wird die Richtlinie immer beachtet. Wenn keine Richtlinie für die Anmeldung angewendet wird, sind dies die Standardverhalten für jeden Kontotyp:
+Wenn Sie Richtlinien für die Anmeldung anwenden, wird die Richtlinie immer beachtet. Wenn keine Richtlinie für die Anmeldung angewendet wird, sind dies die Standardverhaltensweisen für jeden Kontotyp:
 
-- **Azure AD**: fordert standardmäßig zur Authentifizierung auf  und kann von den Einstellungen konfiguriert werden, um keine Authentifizierung mehr zu erfragen.
-- **Microsoft-Konto:** Das Sperrverhalten ist anders, sodass die automatische Entsperrung ermöglicht wird, aber die Anmeldeauthentifizierung ist beim Neustart weiterhin erforderlich.
-- **Lokales Konto:** Fordert immer die Authentifizierung in Form eines Kennworts an, das in den Einstellungen nicht konfigurierbar **ist.**
+- **Azure AD:** fordert standardmäßig die Authentifizierung an und kann über **Einstellungen** konfiguriert werden, um keine Authentifizierung mehr anzufordern.
+- **Microsoft-Konto:** Das Sperrverhalten unterscheidet sich, sodass das automatische Entsperren möglich ist, die Anmeldeauthentifizierung ist jedoch nach dem Neustart weiterhin erforderlich.
+- **Lokales Konto:** Fordert immer die Authentifizierung in Form eines Kennworts an, das in **den Einstellungen** nicht konfiguriert werden kann.
 
 > [!NOTE]
-> Inaktivitäts-Timer werden derzeit nicht unterstützt. Dies bedeutet, dass die **Richtlinie AllowIdleReturnWithoutPassword** nur berücksichtigt wird, wenn das Gerät in StandBy übergeht.
+> Inaktivitätstimer werden derzeit nicht unterstützt. Dies bedeutet, dass die **Richtlinie AllowIdleReturnWithoutPassword** nur berücksichtigt wird, wenn das Gerät in StandBy wechselt.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-Weitere Informationen zum Schutz der Benutzeridentität und zur Authentifizierung finden Sie in der Windows 10 security and identity documentation (Sicherheits- [und Identitätsdokumentation).](https://docs.microsoft.com/windows/security/identity-protection/)
+Weitere Informationen zum Schutz und zur Authentifizierung von Benutzeridentitäten finden Sie [in der Dokumentation zu sicherheit und identitätsbasierten Windows 10](https://docs.microsoft.com/windows/security/identity-protection/).
 
 Weitere Informationen zum Einrichten der Hybrididentitätsinfrastruktur finden Sie in der Dokumentation zur [Azure-Hybrididentität.](https://docs.microsoft.com/azure/active-directory/hybrid/)

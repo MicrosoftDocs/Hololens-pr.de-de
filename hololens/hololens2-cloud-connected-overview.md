@@ -14,21 +14,20 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 69b31657a7efaebd5b25b742023dc8767f9c5038
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 43fbcc3a841f6c3f15006f285188e55d22f10599
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308564"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397651"
 ---
 # <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>Bereitstellungshandbuch – Cloud-verbundene HoloLens 2 mit Remote Assist – Übersicht
 
-Dieser Leitfaden unterstützt IT-Experten bei der Planung und Bereitstellung von Microsoft HoloLens 2-Geräten in ihrer Organisation mit dem allgemeinen Ziel, dass diese Geräte in der Cloud mit Ihrer Organisation verbunden sind und Dynamics 365 Remote Assist einsatzbereit sind. Beachten Sie, dass dies als Modell für Proof of Concept-Bereitstellungen in Ihrer Organisation in einer Vielzahl von HoloLens 2 Anwendungsfällen dient.
+Dieser Leitfaden unterstützt IT-Experten bei der Planung und Bereitstellung von Microsoft HoloLens 2 Geräten in ihrer Organisation mit dem allgemeinen Ziel, dass diese Geräte mit Ihrer Organisation verbunden sind und Dynamics 365 Remote Assist einsatzbereit sind. Beachten Sie, dass dies als Modell für Proof of Concept-Bereitstellungen in Ihrer Organisation in einer Vielzahl von HoloLens 2 Anwendungsfällen dient.
 
 In diesem Leitfaden wird erläutert, wie Sie Ihre Geräte bei der Geräteverwaltung registrieren, Lizenzen nach Bedarf anwenden und überprüfen, ob Ihre Endbenutzer Remote Assist sofort bei der Geräteeinrichtung verwenden können. Zu diesem Zeitpunkt werden die wichtigen Teile der Infrastruktur behandelt, die für die Einrichtung und Ausführung erforderlich sind, um eine bedarfsorientierte Bereitstellung mit HoloLens 2 zu erreichen.
 
-![Banner mit Cloudverbindung](./images/cloud-connected-hololens-large.png)
-
+[Szenario mit ![ ](./images/deployment-guides-revised-scenario-a.png) Cloudverbindung ](./images/deployment-guides-revised-scenario-a.png#lightbox)
 ## <a name="in-this-guide"></a>In diesem Handbuch
 
 Dieser Leitfaden hat das spezifische Ziel, Remote Assist in Ihrer Organisation auf Ihren HoloLens-Geräten einzurichten. Wir werden die Notwendigkeiten abdecken, die erforderlich sind, um dieses Ziel zu erreichen. Um den Fokus auf dieses Ziel zu behalten, werden bestimmte Vorbereitungen und Konfigurationen vorab ausgewählt, um für diese Bereitstellung zu optimieren oder die für die Konfiguration erforderlichen Elemente zu reduzieren. Sie werden über diese Optionen informiert und können Ihre Bereitstellung an Ihre geschäftlichen Anforderungen anpassen.
@@ -36,12 +35,12 @@ Dieser Leitfaden hat das spezifische Ziel, Remote Assist in Ihrer Organisation a
 Dies ist eine Einrichtung, die dem [Szenario A: Bereitstellen auf Cloudverbindungsgeräten](https://docs.microsoft.com/hololens/common-scenarios#scenario-a)ähnelt. Dies ist eine gute Option für viele Proof of Concept-Bereitstellungen, die Folgendes umfassen:
 
 - Wi-Fi Netzwerke sind in der Regel vollständig für internet- und cloudbasierte Dienste geöffnet.
-- Azure AD Beitreten zur automatischen MDM-Registrierung – MDM (Intune) verwaltet
+- Azure AD Mit automatischer MDM-Registrierung beitreten – MDM (Intune) verwaltet
 - Benutzer melden sich mit ihrem eigenen Unternehmenskonto (Azure AD) an.
   - Einzelne oder mehrere Benutzer pro Gerät unterstützt
 - Verschiedene Ebenen von Gerätesperrungskonfigurationen werden basierend auf bestimmten Anwendungsfällen angewendet, von "Vollständig geöffnet" bis "Kiosk für einzelne Apps".
 
-![Cloud verbundenes Szenario](./images/cloud-connected-guide-diagram.png)
+
 
 In diesem Leitfaden werden keine anderen Geräteeinschränkungen oder Konfigurationen angewendet. Wir empfehlen Ihnen jedoch, diese Optionen nach Abschluss des Handbuchs zu untersuchen.
 
