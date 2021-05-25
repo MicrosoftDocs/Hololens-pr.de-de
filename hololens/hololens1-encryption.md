@@ -1,6 +1,6 @@
 ---
 title: HoloLens-BitLocker-Verschlüsselung
-description: Erfahren Sie, wie Sie die BitLocker-Geräteverschlüsselung aktivieren, um Auf Ihren HoloLens Mixed Reality-Geräten gespeicherte Dateien zu schützen.
+description: Erfahren Sie, wie Sie die BitLocker-Geräteverschlüsselung aktivieren, um Dateien zu schützen, die auf Ihren HoloLens Mixed Reality-Geräten gespeichert sind.
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,12 +11,14 @@ ms.localizationpriority: medium
 ms.date: 01/26/2019
 ms.reviewer: ''
 manager: laurawi
-ms.openlocfilehash: 268c3650b85e7e7f102618ccc5a94c25de54dcfe
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+appliesto:
+- HoloLens (1st gen)
+ms.openlocfilehash: 2929cbea826e0cc92a72550c7874995506b94257
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308547"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397281"
 ---
 # <a name="hololens-1st-gen-bitlocker-encryption"></a>HoloLens-BitLocker-Verschlüsselung (1. Generation)
 
@@ -28,7 +30,7 @@ Auf HoloLens (1. Generation) können Sie die BitLocker-Geräteverschlüsselung m
 
 ## <a name="enable-device-encryption-using-mdm"></a>Aktivieren der Geräteverschlüsselung mit MDM
 
-Sie können Ihren Mdm-Anbieter (Mobile Geräteverwaltung) verwenden, um eine Richtlinie anzuwenden, die geräteverschlüsselung erfordert. Die zu verwendende Richtlinie ist die [Einstellung Security/RequireDeviceEncryption](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-requiredeviceencryption) im Richtlinien-CSP.
+Sie können Ihren Mobile Geräteverwaltung(MDM)-Anbieter verwenden, um eine Richtlinie anzuwenden, die Geräteverschlüsselung erfordert. Die zu verwendende Richtlinie ist die [Einstellung Security/RequireDeviceEncryption](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-requiredeviceencryption) im Richtlinien-CSP.
 
 [Weitere Informationen finden Sie in den Anweisungen zum Aktivieren der Geräteverschlüsselung mithilfe von Microsoft Intune.](https://docs.microsoft.com/intune/compliance-policy-create-windows#windows-holographic-for-business)
 

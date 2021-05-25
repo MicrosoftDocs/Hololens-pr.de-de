@@ -13,14 +13,14 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: Issues, Bug, Troubleshoot, Fix, Help, Support, HoloLens
-ms.openlocfilehash: f57aea52337f7ca7e15bda1363f73a3a7265a025
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 1039af533b5039eb4eef6599c7cbb480955b0661
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308814"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397261"
 ---
-# <a name="troubleshooting"></a>Problembehandlung
+# <a name="troubleshoot-common-issues"></a>Häufig auftretende Probleme und Problembehandlung
 
 In diesem Artikel wird beschrieben, wie Sie verschiedene häufige HoloLens-Probleme beheben.
 
@@ -65,7 +65,7 @@ Um sicherzustellen, dass HoloLens Ihre Hände sehen kann, müssen Sie sie im Ges
 
 Viele immersive Apps folgen Eingabemustern, die Mixed Reality Home ähneln.  Erfahren Sie mehr über die Verwendung von Handeingaben in [HoloLens (1. Generation)](hololens1-basic-usage.md#use-hololens-with-your-hands) und [HoloLens 2](hololens2-basic-usage.md#the-hand-tracking-frame).
 
-Beachten Sie, dass einige Handlangentypen bei der Handnachverfolgung nicht funktionieren, wenn Sie Hand tragen.  Ein häufiges Beispiel sind schwarze Handbänder, die dazu tendieren, Licht zu absorbieren und nicht von der Tiefenkamera aufgenommen werden.  Wenn Es bei Ihrer Arbeit um Handbänder geht, empfiehlt es sich, eine hellere Farbe wie Blau oder Grau zu versuchen.  Ein weiteres Beispiel sind große baggy-Handstücke, die dazu tendieren, die Form Ihrer Hand zu verbergen. Wir empfehlen die Verwendung von Handlangen, die so formanpassend wie möglich sind, um optimale Ergebnisse zu erzielen.
+Beachten Sie, dass einige Arten von Handlangen nicht mit Handtracking funktionieren, wenn Sie Handschutz tragen.  Ein häufiges Beispiel sind schwarze Handbänder, die dazu tendieren, Licht zu absorbieren und nicht von der Tiefenkamera aufgenommen werden.  Wenn Es bei Ihrer Arbeit um Handbänder geht, empfiehlt es sich, eine hellere Farbe wie Blau oder Grau zu probieren.  Ein weiteres Beispiel sind große baggy-Handstücke, die dazu tendieren, die Form Ihrer Hand zu verbergen. Wir empfehlen die Verwendung von Handlangen, die so formanpassend wie möglich sind, um optimale Ergebnisse zu erzielen.
 
 Wenn Ihr Visier Fingerabdrücke oder Smudges hat, verwenden Sie die Microfiber-Bereinigungsanlage, die mit der HoloLens stammt, um Ihr Visier sauber zu bereinigen.
 
@@ -80,7 +80,7 @@ Wenn HoloLens Ihren Raum nicht zuordnen oder laden kann, wechselt er in den Eing
 - Stellen Sie sicher, dass genügend Licht in Ihrer Umgebung vorhanden ist, damit HoloLens den Raum sehen und zuordnen kann.
 - Stellen Sie sicher, dass Sie mit einem Wi-Fi Netzwerk verbunden sind. Wenn Sie nicht mit dem WLAN verbunden sind, kann HoloLens einen bekannten Bereich nicht identifizieren und laden.
 - Wenn Sie einen neuen Bereich erstellen müssen, stellen Sie eine Wlan-Verbindung her, und starten Sie Dann Ihre HoloLens neu.
-- Um festzustellen, ob der richtige Speicherplatz aktiv ist, oder um manuell ein Leerzeichen zu laden, wechseln Sie zu **Einstellungen**  >    >  **Systemräume**.
+- Um festzustellen, ob der richtige Speicherplatz aktiv ist, oder um ein Leerzeichen manuell zu laden, wechseln Sie zu **Einstellungen**  >    >  **Systemräume**.
 - Wenn der richtige Speicherplatz geladen wird und weiterhin Probleme auftreten, ist der Speicherplatz möglicherweise beschädigt. Um dieses Problem zu beheben, wählen Sie den Bereich und dann **Entfernen aus.** Nachdem Sie den Raum entfernt haben, beginnt HoloLens, Ihre Umgebung zu zuordnen und einen neuen Raum zu erstellen.
 
 ## <a name="my-hololens-cant-tell-what-space-im-in"></a>Meine HoloLens kann nicht erkennen, in welchem Raum ich bin.

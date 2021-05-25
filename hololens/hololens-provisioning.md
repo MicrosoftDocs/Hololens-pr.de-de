@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: b22baa62488bbdf6d2a8a43b6487bbe5ec3277cb
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: cf2abe249e40e522b4d8993449b9f19033a64744
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108309858"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397401"
 ---
 # <a name="configure-hololens-by-using-a-provisioning-package"></a>Konfigurieren von HoloLens mithilfe eines Bereitstellungspakets
 
@@ -43,7 +43,7 @@ Mit dem HoloLens-Assistenten können Sie die folgenden Einstellungen in einem Be
 - Upgrade auf die Enterprise Edition
 
     > [!NOTE]
-    > Dies sollte nur für HoloLens-Geräte der ersten Generation verwendet werden. Einstellungen in einem Bereitstellungspaket werden nur angewendet, wenn das Bereitstellungspaket eine Editionsupgradelizenz für Windows Holographic for Business enthält oder [wenn das Gerät bereits auf Windows Holographic for Business aktualisiert wurde.](hololens1-upgrade-enterprise.md)
+    > Dies sollte nur für HoloLens-Geräte der 1. Generation verwendet werden. Einstellungen in einem Bereitstellungspaket werden nur angewendet, wenn das Bereitstellungspaket eine Editionsupgradelizenz für Windows Holographic for Business enthält oder [wenn das Gerät bereits auf Windows Holographic for Business aktualisiert wurde.](hololens1-upgrade-enterprise.md)
 
 - Konfigurieren der ersten HoloLens-Benutzeroberfläche (OOBE)
 - Konfigurieren des Wi-Fi Netzwerks
@@ -92,7 +92,7 @@ Verwenden Sie das Windows-Konfigurations-Designer-Tool, um ein Bereitstellungspa
 <tr><td style="width:45%" valign="top"><a id="two"></a><img src="images/two.png" alt="step two"/>  <img src="images/set-up-network.png" alt="set up network"/></br></br>In diesem Abschnitt können Sie die Details des Wi-Fi drahtlosnetzwerks eingeben, mit dem das Gerät automatisch eine Verbindung herstellen soll. Wählen Sie hierzu <strong>Ein</strong>aus, geben Sie die SSID, den Netzwerktyp<strong>(Open</strong> oder <strong>WPA2-Personal)</strong>und (bei <strong>WPA2-Personal)</strong>das Kennwort für das Drahtlosnetzwerk ein.</td><td><img src="images/set-up-network-details-desktop.png" alt="Enter network SSID and type"/></td></tr>
 <tr><td style="width:45%" valign="top"><a id="three"></a><img src="images/three.png" alt="step three"/>  <img src="images/account-management.png" alt="account management"/></br></br>Sie können das Gerät bei Azure Active Directory registrieren oder ein lokales Konto auf dem Gerät erstellen.</br></br>Bevor Sie einen Windows-Konfigurations-Designer-Assistenten zum Konfigurieren der Massenregistrierung Azure AD verwenden, richten Sie <a href="https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup" data-raw-source="[set up Azure AD join in your organization](https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup)">Azure AD in Ihrer Organisation ein.</a> Die <strong>maximale Anzahl von Geräten pro Benutzereinstellung</strong> in Ihrem Azure AD Mandanten bestimmt, wie oft das Massentoken verwendet werden kann, das Sie im Assistenten erhalten. Um das Gerät bei Azure AD zu registrieren, wählen Sie diese Option aus, und geben Sie einen Anzeigenamen für das Massentoken ein, das Sie mit dem Assistenten erhalten. Legen Sie ein Ablaufdatum für das Token fest (maximal 30 Tage ab dem Datum, an dem Sie das Token erhalten). Wählen <strong>Sie Massentoken abrufen</strong>aus. Geben Sie im Fenster Let&#39;s get you signed in (&#39;anmelden) ein Konto ein, das über Berechtigungen zum Beitreten eines <strong>Geräts</strong> zu Azure AD verfügt, und geben Sie dann das Kennwort ein. Wählen Sie <strong>Akzeptieren</strong> aus, um dem Windows-Konfigurations-Designer die erforderlichen Berechtigungen zu erteilen. </br></br>Um ein lokales Konto zu erstellen, wählen Sie diese Option aus, und geben Sie einen Benutzernamen und ein Kennwort ein. </br></br><strong>Wichtig:</strong> <br />(Nur für Windows 10 Version 1607) Wenn Sie ein lokales Konto im Bereitstellungspaket erstellen, müssen Sie das Kennwort alle 42 Tage mithilfe der <strong>App Einstellungen</strong> ändern. Wenn das Kennwort innerhalb dieses Zeitraums nicht geändert wird, wird das Konto möglicherweise gesperrt, und eine Anmeldung ist nicht möglich.  </td><td><img src="images/account-management-details.png" alt="join  Azure AD or create a local  account"/></td></tr>
 <tr><td style="width:45%" valign="top"><a id="four"></a><img src="images/four.png" alt="step four"/> <img src="images/add-certificates.png" alt="add certificates"/></br></br>Klicken Sie zum Bereitstellen des Geräts mit einem Zertifikat auf <strong>Zertifikat hinzufügen.</strong> Geben Sie einen Namen für das Zertifikat ein, navigieren Sie zu dem zu verwendenden Zertifikat, und wählen Sie es aus.</td><td><img src="images/add-certificates-details.png" alt="add a certificate"/></td></tr> 
-<tr><td style="width:45%" valign="top"><a id="five"></a><img src="images/five.png" alt="step five"/> <img src="images/developer-setup.png" alt="Developer Setup"/></br></br>Schalten Sie <strong>Ja</strong> oder <strong>Nein</strong> ein, um den Entwicklermodus auf der HoloLens zu aktivieren. <a href="https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode" data-raw-source="[Learn more about Developer Mode.](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode)">Weitere Informationen zum Entwicklermodus</a></td><td><img src="images/developer-setup-details.png" alt="Enable Developer Mode"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="five"></a><img src="images/five.png" alt="step five"/> <img src="images/developer-setup.png" alt="Developer Setup"/></br></br>Umschalten <strong>Sie Ja</strong> oder <strong>Nein,</strong> um den Entwicklermodus auf der HoloLens zu aktivieren. <a href="https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode" data-raw-source="[Learn more about Developer Mode.](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode)">Weitere Informationen zum Entwicklermodus</a></td><td><img src="images/developer-setup-details.png" alt="Enable Developer Mode"/></td></tr>
 <tr><td style="width:45%" valign="top"><a id="six"></a><img src="images/six.png" alt="step six"/> <img src="images/finish.png" alt="finished"/></br></br>Legen Sie kein Kennwort fest, um Ihr Bereitstellungspaket zu schützen. Wenn das Bereitstellungspaket durch ein Kennwort geschützt ist, schlägt die Bereitstellung des HoloLens-Geräts fehl.</td><td><img src="images/finish-details.png" alt="Protect your package"/></td></tr>
 </table>
 
@@ -160,7 +160,7 @@ HoloLens 2 Geräte unter [Windows Holographic Version 20H2](hololens-release-not
 - [Automatische Bestätigung von Bereitstellungspaketen in OOBE](hololens-provisioning.md#auto-confirm-provisioning-packages-in-oobe)
 - [Automatische Bereitstellung ohne Benutzeroberfläche](hololens-provisioning.md#automatic-provisioning-without-using-ui)
 
-1. Verwenden Sie das USB-Kabel, um das Gerät mit einem PC (oder einem USB-Laufwerk für HoloLens 2 wie oben erwähnt) zu verbinden, und starten Sie dann das Gerät. Fahren Sie nicht über die Seite **First interactable moment (Erster interaktiver Moment)** von OOBE fort.   
+1. Verwenden Sie das USB-Kabel, um das Gerät mit einem PC (oder einem USB-Laufwerk für HoloLens 2 wie oben erwähnt) zu verbinden, und starten Sie dann das Gerät. Fahren Sie nicht über die Seite **First interactable moment (Erster interaktionsfähiger Moment)** von OOBE fort.   
     - Auf HoloLens (1. Generation) enthält diese Seite ein blaues Feld. 
     - Auf HoloLens 2 enthält diese Seite das -Blatt.
 
@@ -185,7 +185,7 @@ HoloLens 2 Geräte unter [Windows Holographic Version 20H2](hololens-release-not
 
 Vor diesem Release mussten Benutzer den Bereitstellungsbildschirm während der OOBE manuell starten, um die Bereitstellung mithilfe einer Schaltflächenkombination zu ermöglichen. Jetzt können Benutzer die Schaltflächenkombination überspringen, indem sie ein Bereitstellungspaket auf einem USB-Speicherlaufwerk verwenden. 
 
-1. Schließen Sie das USB-Laufwerk mit dem Bereitstellungspaket während des ersten interaktionsfähigen OoBE-Moments an.
+1. Anschließen des USB-Laufwerks mit dem Bereitstellungspaket während des ersten interaktionsfähigen OoBE-Moments
 1. Wenn das Gerät bereit für die Bereitstellung ist, wird automatisch die Eingabeaufforderung mit der Bereitstellungsseite geöffnet. 
 
 Hinweis: Wenn ein USB-Laufwerk angeschlossen bleibt, während das Gerät gestartet wird, werden vorhandene USB-Speichergeräte von OOBE enumeriert, und es wird darauf achten, dass zusätzliche USB-Speichergeräte angeschlossen werden.
@@ -212,20 +212,20 @@ Durch die Kombination des automatischen Starts der Bereitstellung von USB-Gerät
 
 Ihr Gerät ist jetzt konfiguriert und zeigt den Bildschirm Bereitstellung erfolgreich an.
 
-## <a name="apply-a-provisioning-package-to-hololens-after-setup"></a>Anwenden eines Bereitstellungspakets auf HoloLens nach dem Setup
+## <a name="applyremove-a-provisioning-package-to-hololens-after-setup"></a>Anwenden/Entfernen eines Bereitstellungspakets auf HoloLens nach dem Setup
 
 > [!NOTE]
-> Diese Schritte gelten nur für Windows 10, Version 1809.
+> Diese Schritte gelten für alle HoloLens 2- und HoloLens-Geräte (1. Generation) unter Windows Holographic, Version 1809 und höher.
 
 Führen Sie auf Ihrem PC die folgenden Schritte aus:
-1. Erstellen Sie ein Bereitstellungspaket, wie unter [Erstellen eines Bereitstellungspakets für HoloLens mithilfe des HoloLens-Assistenten](hololens-provisioning.md)beschrieben.
+1. Erstellen Sie ein Bereitstellungspaket, wie unter [Erstellen eines Bereitstellungspakets für HoloLens mit dem HoloLens-Assistenten](hololens-provisioning.md)beschrieben.
 2. Verbinden Sie das HoloLens-Gerät mithilfe eines USB-Kabels mit einem PC. HoloLens wird im Datei-Explorer auf dem PC als Gerät angezeigt.
-3. Ziehen Sie das Bereitstellungspaket per Drag &amp; Drop in den Ordner Dokumente auf der HoloLens.
+3. Ziehen Sie das Bereitstellungspaket per Drag & Drop in den Ordner Dokumente auf der HoloLens.
 
 Führen Sie auf Ihrer HoloLens die folgenden Schritte aus:
 1. Navigieren Sie zu **Einstellungen** > **Konten** > **Access work or school** (Zugriff auf Geschäfts-, Schul- oder Unikonto). 
 2. Wählen Sie **unter Verwandte Einstellungen** die Option **Bereitstellungspaket hinzufügen oder entfernen** aus.
-3. Wählen Sie auf der nächsten Seite **Paket hinzufügen** aus, um die Dateiauswahl zu starten, und wählen Sie Ihr Bereitstellungspaket aus. Wenn der Ordner leer ist, stellen Sie sicher, dass Sie **Dieses Gerät** und **dann Dokumente** auswählen.
+3. Wählen Sie auf der nächsten Seite **Paket hinzufügen** aus, um die Dateiauswahl zu starten, und wählen Sie Ihr Bereitstellungspaket aus. Wenn der Ordner leer ist, stellen Sie sicher, dass Sie **Dieses Gerät** und **dokumente** auswählen.
 
 Nachdem Das Paket angewendet wurde, wird es in der Liste **installierter Pakete angezeigt.** Um die Paketdetails anzuzeigen oder das Paket vom Gerät zu entfernen, wählen Sie das aufgeführte Paket aus.
 
@@ -237,7 +237,7 @@ Wenn Sie im Windows-Konfigurations-Designer ein Bereitstellungspaket für Window
 
 ![Allgemeine Laufzeiteinstellungen für HoloLens](images/icd-settings.png)
 
-| Einstellung | BESCHREIBUNG |
+| Einstellung | Beschreibung |
 | --- | --- |
 | **Zertifikate** | Stellen Sie ein Zertifikat für HoloLens bereit.  |
 | **ConnectivityProfiles** | Stellen Sie ein WLAN-Profil für HoloLens bereit.   |
@@ -246,7 +246,7 @@ Wenn Sie im Windows-Konfigurations-Designer ein Bereitstellungspaket für Window
 
 ## <a name="app-install-via-provisioning-package"></a>App-Installation über Bereitstellungspaket
 
-Apps können über Bereitstellungspakete auf HoloLens 2 Geräten installiert werden. Dies ermöglicht ein leicht wiederverwendebares Paket, mit dem Sie Ihre Apps verteilen können. Lesen Sie die vollständige Anleitung zum [Bereitstellen von Apps über Bereitstellungspakete.](app-deploy-provisioning-package.md)  
+Apps können über Bereitstellungspakete auf HoloLens 2 Geräten installiert werden. Dies ermöglicht ein leicht wiederverwendebares Paket, mit dem Sie Ihre Apps verteilen können. Lesen Sie die vollständigen Anweisungen zum [Bereitstellen von Apps über Bereitstellungspakete.](app-deploy-provisioning-package.md)  
 
 > [!NOTE]
 > HoloLens (1. Generation) bietet eingeschränkte Unterstützung für die Installation von Apps (**UniversalAppInstall**) mithilfe eines Bereitstellungspakets. HoloLens-Geräte (1. Generation) unterstützen nur die Installation einer App über PPKG nur während oobe und nur mit Benutzerkontext-Installationen.

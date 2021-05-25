@@ -11,12 +11,14 @@ audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 11/04/2020
-ms.openlocfilehash: 9458a6fd02cf96dd265580cb099e39fa221d4206
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+appliesto:
+- HoloLens 2
+ms.openlocfilehash: e6aebfca076294de34068cd075d954220d7f4686
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308815"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397221"
 ---
 # <a name="hololens-2-enterprise-deployment-and-management"></a>HoloLens 2 Enterprise-Bereitstellung und -Verwaltung
 
@@ -33,13 +35,13 @@ Wenn Sie sich auf die Bereitstellung HoloLens 2 in Ihrer Unternehmensumgebung vo
 Für HoloLens 2 in einem Unternehmensbereitstellungsszenario sind bestimmte grundlegende Infrastrukturdienste erforderlich, um den vollständigen Satz von Funktionen zu unterstützen. HoloLens 2 wurde mit [modernen mobilen Geräteverwaltung](https://www.microsoft.com/itshowcase/managing-windows-10-devices-with-microsoft-intune) für die Bereitstellung und Verwaltung erstellt. Mit Azure AD join + MDM als primäres Mittel, um dies in einer ständig wachsenden mobilen Mitarbeiterzahl zu erreichen. Die folgenden Themen bieten eine kurze Übersicht über die einzelnen Infrastrukturkomponenten, die in Ihrer Bereitstellungsplanung für HoloLens 2.
 
 ### <a name="azure-active-directory"></a>Azure Active Directory
-Azure AD ist ein cloudbasierter Verzeichnisdienst zur Identitäts- und Zugriffsverwaltung. Dank der Möglichkeit zur Integration in bereits vorhandene lokale Verzeichnisse lässt sich eine Hybrid-Identitätslösung realisieren. Organisationen, die Microsoft Office 365 oder Intune verwenden, verwenden bereits Azure AD mit drei Editionen: Free, Premium P1 und Premium P2 (siehe [Azure Active Directory Editionen).](https://azure.microsoft.com/documentation/articles/active-directory-editions/) Alle Editionen unterstützen Azure AD Geräteregistrierung, aber Premium P1 ist erforderlich, um die automatische MDM-Registrierung zu aktivieren. HoloLens 2 erfordert Azure Active Directory Join, um die meisten Features und Funktionen auf Unternehmensebene zu ermöglichen.
+Azure AD ist ein cloudbasierter Verzeichnisdienst zur Identitäts- und Zugriffsverwaltung. Dank der Möglichkeit zur Integration in bereits vorhandene lokale Verzeichnisse lässt sich eine Hybrid-Identitätslösung realisieren. Organisationen, die Microsoft Office 365 oder Intune verwenden, verwenden bereits Azure AD mit drei Editionen: Free, Premium P1 und Premium P2 (siehe [Azure Active Directory Editionen).](https://azure.microsoft.com/documentation/articles/active-directory-editions/) Alle Editionen unterstützen Azure AD Geräteregistrierung, aber Premium P1 ist erforderlich, um die automatische MDM-Registrierung zu aktivieren. HoloLens 2 erfordert Azure Active Directory Join, um die meisten Features und Funktionen auf Unternehmensebene zu aktivieren.
 
 > [!NOTE]
 > Die lokale Active Directory-Verknüpfung wird auf HoloLens 2 nicht unterstützt.
 
 ### <a name="mobile-device-management"></a>Verwaltung mobiler Geräte
-HoloLens 2 wurde speziell für die Verwaltung durch Mobile Geräteverwaltung-Systeme (MDM) in einer Unternehmensumgebung entwickelt. Microsoft [Intune](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/microsoft-intune)ist Teil der Enterprise Mobility + Security und ist ein cloudbasiertes MDM-System, das Geräte im Unternehmen verwaltet. Wie Office 365 verwendet Intune Azure AD für die Identitätsverwaltung, sodass Mitarbeiter die gleichen Anmeldeinformationen verwenden, um Geräte bei Intune zu registrieren, die sie für die Anmeldung bei Office 365 verwenden. Mehrere MDM-Systeme unterstützen Windows 10, und die meisten unterstützen Bereitstellungsszenarien für persönliche und unternehmenseigene Geräte. MDM-Systeme können auch Anwendungsbereitstellungen und Updates für die HoloLens 2 verwalten. Andere MDM-Anbieter, die HoloLens 2 derzeit unterstützen, sind: AirWatch, MobileIron und andere. Alle MDM-Systemanbieter haben gleichen Zugriff auf Windows 10 Konfigurationsdienstanbieter für die Geräteverwaltung (Device Management Configuration Service Provider, CSP), sodass IT-Organisationen unabhängig davon, welches System ihren Verwaltungsanforderungen am besten entspricht, unabhängig davon, ob Microsoft Intune oder ein MDM-Produkt eines Drittanbieters, die Wahl haben.
+HoloLens 2 wurde speziell für die Verwaltung durch Mobile Geräteverwaltung-Systeme (MDM) in einer Unternehmensumgebung entwickelt. Microsoft [Intune](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/microsoft-intune)ist Teil der Enterprise Mobility + Security und ist ein cloudbasiertes MDM-System, das Geräte im Unternehmen verwaltet. Wie Office 365 verwendet Intune Azure AD für die Identitätsverwaltung, sodass Mitarbeiter die gleichen Anmeldeinformationen verwenden, um Geräte in Intune zu registrieren, die sie für die Anmeldung bei Office 365 verwenden. Mehrere MDM-Systeme unterstützen Windows 10, und die meisten unterstützen Bereitstellungsszenarien für persönliche und unternehmenseigene Geräte. MDM-Systeme können auch Anwendungsbereitstellungen und Updates für die HoloLens 2 verwalten. Andere MDM-Anbieter, die HoloLens 2 derzeit unterstützen, sind: AirWatch, MobileIron und andere. Alle MDM-Systemanbieter haben gleichen Zugriff auf Windows 10 Konfigurationsdienstanbieter für die Geräteverwaltung (Device Management Configuration Service Provider, CSP), sodass IT-Organisationen unabhängig davon, welches System ihren Verwaltungsanforderungen am besten entspricht– unabhängig davon, ob es sich um Microsoft Intune oder ein MDM-Produkt eines Drittanbieters– am besten eignet.
 
 > [!NOTE]
 > Herkömmliche lokale PC-Verwaltungssysteme wie System Center Konfigurations-Manager werden auf HoloLens 2 nicht unterstützt.
@@ -48,7 +50,7 @@ HoloLens 2 wurde speziell für die Verwaltung durch Mobile Geräteverwaltung-Sys
 Microsoft hat Windows Update for Business entwickelt, um IT-Administratoren weitere Verwaltungsfunktionen rund um Windows Update bereitzustellen, wie beispielsweise die Möglichkeit, Updates für Gruppen von Geräten bereitzustellen oder Wartungszeitfenster für die Installation von Updates festzulegen. Ausführliche Informationen zum Verwalten HoloLens 2 Updates finden Sie in der Dokumentation zu [HoloLens-Updates.](https://docs.microsoft.com/hololens/hololens-updates)
 
 ### <a name="certificates"></a>Zertifikate
-HoloLens 2 unterstützt die Bereitstellung von Zertifikaten über MDM, wenn Ihre Umgebung Zertifikate für corp Wi-Fi Netzwerkauthentifizierung oder Zugriff auf andere Ressourcen erfordert. Einige MDM-Infrastrukturkonfigurationen sind möglicherweise erforderlich, um Zertifikatbereitstellungen für HoloLens 2 zu aktivieren. Erfahren Sie, wie Sie [Zertifikate und Netzwerkprofile für HoloLens 2 vorbereiten.](https://docs.microsoft.com/hololens/hololens-certificates-network) Wenn Sie Intune verwenden, sehen Sie sich die Details zur [Zertifizierungskonfiguration](https://docs.microsoft.com/mem/intune/protect/certificates-configure) an.
+HoloLens 2 unterstützt die Bereitstellung von Zertifikaten über MDM, wenn Ihre Umgebung Zertifikate für corp Wi-Fi Netzwerkauthentifizierung oder Zugriff auf andere Ressourcen erfordert. Einige MDM-Infrastrukturkonfigurationen sind möglicherweise erforderlich, um Zertifikatbereitstellungen für HoloLens 2 zu aktivieren. Erfahren Sie mehr über das Vorbereiten von [Zertifikaten und Netzwerkprofilen für HoloLens 2](https://docs.microsoft.com/hololens/hololens-certificates-network). Wenn Sie Intune verwenden, sehen Sie sich die Details zur [Zertifizierungskonfiguration](https://docs.microsoft.com/mem/intune/protect/certificates-configure) an.
 
 ## <a name="configure"></a>Konfigurieren
 

@@ -14,16 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3041a31e6a4f8b51385fa02dfddc21d56993721d
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: ee6c24f65e5990f1e84a71d86b24dd782cf9f4cc
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108309777"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397199"
 ---
 # <a name="deployment-guide---corporate-connected-hololens-2-with-dynamics-365-guides---overview"></a>Bereitstellungshandbuch – Unternehmensverknannte HoloLens 2 mit Dynamics 365-Handbüchern – Übersicht
 
-Dieser Leitfaden unterstützt IT-Experten bei der Planung und Bereitstellung von Microsoft HoloLens 2-Geräten mit Dynamics 365 Guides (Guides) für ihre Organisation. Dieser Leitfaden eignet sich hervorragend für Pilot- und Produktionsbereitstellungen und ähnelt dem [Leitfaden Szenario B: Bereitstellen innerhalb des Netzwerks Ihrer Organisation.](https://docs.microsoft.com/hololens/common-scenarios#scenario-b-deploy-inside-your-organizations-network) Nachdem Sie Ihren Proof of Concept getestet haben, verwenden Sie diesen Leitfaden, um mit der Integration von HoloLens in Ihre Organisation fortzugehen.
+Dieser Leitfaden unterstützt IT-Experten bei der Planung und Bereitstellung Microsoft HoloLens 2-Geräte mit Dynamics 365-Handbüchern (Handbüchern) für ihre Organisation. Dieser Leitfaden eignet sich hervorragend für Pilot- und Produktionsbereitstellungen und ähnelt dem [Leitfaden Szenario B: Bereitstellen innerhalb des Netzwerks Ihrer Organisation.](https://docs.microsoft.com/hololens/common-scenarios#scenario-b-deploy-inside-your-organizations-network) Nachdem Sie Ihren Proof of Concept getestet haben, verwenden Sie diesen Leitfaden, um mit der Integration von HoloLens in Ihre Organisation fortzugehen.
 
 In diesem Leitfaden erfahren Sie, wie Sie Ihre Geräte bei Ihrer vorhandenen Geräteverwaltung registrieren, Lizenzen nach Bedarf anwenden und überprüfen, ob Ihre Endbenutzer nach der Geräteeinrichtung einen Dynamics 365-Leitfaden betreiben und benutzerdefinierte Branchen-Apps verwenden können. 
 
@@ -52,9 +52,11 @@ Die folgende Infrastruktur sollte bereits vorhanden sein:
 - Power BI Desktop
 - Netzwerkverbindung
 
-![Diagramm des verbundenen Unternehmensnetzwerks](./images/corpconnected-diagHL2-guides.png)
+[![Diagramm des verbundenen Unternehmensnetzwerks, Phase 1 ](./images/deployment-guides-revised-scenario-b-01-1.png)](./images/deployment-guides-revised-scenario-b-01-1.png#lightbox)
 
-## <a name="stages-of-deployment"></a>Bereitstellungsphasen
+[![Diagramm des verbundenen Unternehmensnetzwerks, Phase 2 ](./images/deployment-guides-revised-scenario-b-02-1.png)](./images/deployment-guides-revised-scenario-b-02-1.png#lightbox)
+
+## <a name="in-this-guide-you-will"></a>In dieser Anleitung lernen Sie Folgendes:
 ### <a name="prepare"></a>Vorbereiten
 > [!div class="checklist"]
 >- [Erfahren Sie mehr über die Infrastruktur essentials für HoloLens 2 Geräte.](hololens2-corp-connected-prepare.md#infrastructure-essentials)
