@@ -1,6 +1,6 @@
 ---
 title: Verwenden des HoloLens-Clickers
-description: In diesem Artikel wird beschrieben, wie Sie den HoloLens-Clicker verwenden, einschließlich Clicker-Kopplung, -Aufladung und -Wiederherstellung.
+description: In diesem Artikel wird beschrieben, wie Sie den HoloLens-Clicker verwenden, einschließlich Clicker-Kopplung, Ladevorgang und Wiederherstellung.
 ms.assetid: 7d4a30fd-cf1d-4c9a-8eb1-1968ccecbe59
 ms.date: 09/16/2019
 manager: jarrettr
@@ -13,33 +13,33 @@ ms.topic: article
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 4b17fc134846a66046a819c56755d87206c5643e
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 83e5a746b6900c547778c71a0855426563458032
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108309998"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924059"
 ---
-# <a name="use-the-hololens-1st-gen-clicker"></a>Verwenden des HoloLens-Clickers (1. Generation)
+# <a name="use-the-hololens-1st-gen-clicker"></a>Verwenden des Clickers für HoloLens (1. Generation)
 
-Der Clicker wurde speziell für HoloLens (1. Generation) entwickelt und bietet Ihnen eine weitere Möglichkeit, mit Hologrammen zu interagieren. Es ist mit HoloLens (1. Generation) in einem separaten Feld erhältlich.
+Der Clicker wurde speziell für HoloLens (1. Generation) entwickelt und bietet Ihnen eine weitere Möglichkeit, mit Hologrammen zu interagieren. Es enthält HoloLens (1. Generation) in einem separaten Feld.
 
-Verwenden Sie sie anstelle von Handgesten, um Apps auszuwählen, zu scrollen, zu verschieben und die Größe zu ändern.
+Verwenden Sie es statt Handgesten zum Auswählen, Scrollen, Verschieben und Ändern der Größe von Apps.
 
 ## <a name="clicker-hardware-and-pairing"></a>Clickerhardware und Kopplung
 
-Der HoloLens-Clicker (1. Generation) verfügt über eine Fingerschleife, um das Halten zu vereinfachen, und ein Indikatorlicht.
+Der HoloLens-Klicker (1. Generation) verfügt über eine Fingerschleife, um das Halten zu vereinfachen, und ein Indikatorlicht.
 
 ![HoloLens-Clicker](images/use-hololens-clicker-1.png)
 
 ### <a name="clicker-indicator-lights"></a>Clicker-Indikatorlichter
 
-Dies bedeutet, was die Beleuchtung am Clicker bedeutet.
+Dies ist das, was die Beleuchtung auf dem Klicker bedeutet.
 
 - **Blinkend weiß.** Der Clicker befindet sich im Kopplungsmodus.
-- **Schnell blinkendes weiß.** Die Kopplung war erfolgreich.
-- **Einfarbig weiß.** Der Clicker wird geladen.
-- **Blinkend ablendend**. Der Akku ist niedrig.
+- **Schnelles Blinken von weiß**. Die Kopplung war erfolgreich.
+- **Voll weiß.** Der Klicker wird geladen.
+- **Blinkendes,ber .** Der Akku ist niedrig.
 - **Solid amber**. Der Clicker ist auf einen Fehler gelaufen, und Sie müssen ihn neu starten. Klicken Und halten Sie beim Drücken der Kopplungsschaltfläche 15 Sekunden lang gedrückt.
 
 ### <a name="pair-the-clicker-with-your-hololens-1st-gen"></a>Koppeln des Clickers mit Ihrer HoloLens (1. Generation)
@@ -66,28 +66,37 @@ Klickgesten sind kleine Handdrehungen, nicht die größeren Bewegungen, die für
 
 - **Wählen Sie aus.** Um ein Hologramm, eine Schaltfläche oder ein anderes Element auszuwählen, betrachten Sie es, und klicken Sie dann auf .
 
-- **Klicken Sie auf , und halten Sie fest.** Klicken Sie auf die Schaltfläche, und halten Sie den Daumen gedrückt, um einige der gleichen Dinge wie beim Tippen und Halten zu erledigen, z. B. das Verschieben oder Ändern der Größe eines Hologramms.
+- **Klicken Sie auf , und halten Sie es bei.** Klicken Sie auf die Schaltfläche, und halten Sie den Daumen gedrückt, um einige der gleichen Dinge zu tun, die Sie beim Tippen und Halten tun würden, z. B. verschieben oder die Größe eines Hologramms ändern.
 
-- **Scrollen Sie**. Wählen Sie auf der App-Leiste **Scrolltool** aus. Klicken Und halten Sie die Maustaste gedrückt, und drehen Sie dann den Klick nach oben, unten, links oder rechts. Um schneller zu scrollen, bewegen Sie Ihre Hand weiter von der Mitte des Scrolltools.
+- **Scrollen Sie**. Wählen Sie auf der App-Leiste **Scrolltool aus.** Klicken sie auf und halten Sie sie, und drehen Sie die Clicker nach oben, unten, links oder rechts. Um schneller zu scrollen, bewegen Sie Ihre Hand weiter von der Mitte des Bildlauftools.
 
-- **Zoom**. Wählen Sie auf der App-Leiste **Zoomtool aus.** Klicken sie, halten Sie sie gedrückt, und drehen Sie dann den Clicker nach oben, um die Ansicht zu vergrößern, oder verkleinern Sie sie, um sie zu verkleinern.
+- **Zoom**. Wählen Sie auf der App-Leiste **Zoomtool aus.** Klicken Und halten Sie die Maustaste, drehen Sie die Klickfunktion nach oben, um sie zu vergrößern, oder verkleinern Sie sie, um sie zu verkleinern.
 
 > [!TIP]
-> Wenn Sie Microsoft Edge verwenden, können Sie eine Seite anverfolgen und doppelklicken, um sie zu vergrößern oder zu verkleinern.
+> Wenn Sie die Ansicht vergrößern oder verkleinern Microsoft Edge, sehen Sie sich eine Seite an, und doppelklicken Sie darauf.
 
-## <a name="restart-or-recover-the-clicker"></a>Neustarten oder Wiederherstellen des Clickers
+## <a name="im-having-problems-using-the-hololens-clicker"></a>Ich habe Probleme mit dem HoloLens-Clicker.
+
+Verwenden Sie [den Clicker,](hololens1-clicker.md) um Hologramme auszuwählen, zu scrollen, zu verschieben und ihre Größe zu ändern. Einzelne Apps unterstützen möglicherweise zusätzliche Klickgesten.
+
+Wenn Sie Probleme bei der Verwendung des Clickers haben, stellen Sie sicher, dass es in Rechnung gestellt und mit Ihrer HoloLens gekoppelt ist. Wenn der Akku niedrig ist, blinkt das Indikatorlicht imBern. Um zu überprüfen, ob der Klicker gekoppelt ist, wechseln Sie zu **Einstellungen** Geräte, und überprüfen Sie, ob  >   er dort angezeigt wird. Weitere Informationen finden Sie unter [Koppeln des Clickers.](hololens1-clicker.md)
+
+Wenn der Klicker in Rechnung gestellt und gekoppelt ist und weiterhin Probleme auftreten, setzen Sie ihn zurück, indem Sie die Hauptschaltfläche und die Kopplungsschaltfläche 15 Sekunden lang gedrückt halten. Koppeln Sie den Clicker dann erneut mit Ihrer HoloLens.
+
+Wenn das Zurücksetzen des Clickers nicht hilft, finden Sie weitere Informationen unter Neustarten oder [Wiederherstellen des HoloLens-Clickers.](hololens1-clicker.md#restart-or-recover-the-clicker)
+## <a name="restart-or-recover-the-clicker"></a>Neustarten oder Wiederherstellen des Klickers
 
 Hier sind einige Dinge, die Sie ausprobieren sollten, wenn der HoloLens-Clicker nicht reagiert oder nicht gut funktioniert.
 
-### <a name="restart-the-clicker"></a>Starten Sie den Clicker neu.
+### <a name="restart-the-clicker"></a>Neustarten des Klickers
 
-Verwenden Sie die Spitze eines Stifts, um die Kopplungsschaltfläche zu drücken und zu halten. Klicken Sie gleichzeitig, und halten Sie den Clicker 15 Sekunden lang gedrückt. Wenn der Clicker bereits mit Ihrer HoloLens gekoppelt war, bleibt er nach dem Neustart gekoppelt.
+Verwenden Sie die Spitze eines Stifts, um die Kopplungsschaltfläche zu drücken und zu halten. Klicken Sie gleichzeitig, und halten Sie den Klicker 15 Sekunden lang gedrückt. Wenn der Clicker bereits mit Ihrer HoloLens gekoppelt wurde, bleibt er nach dem Neustart gekoppelt.
 
-Wenn der Clicker nicht aktiviert oder neu gestartet wird, versuchen Sie, ihn mithilfe der HoloLens-Brille zu laden. Wenn der Akku sehr niedrig ist, kann es einige Minuten dauern, bis das weiße Indikatorlicht eingeschaltet ist.
+Wenn der Clicker nicht ein- oder neu gestartet wird, versuchen Sie, ihn mithilfe der HoloLens-Kurve zu laden. Wenn der Akku sehr niedrig ist, kann es einige Minuten dauern, bis das weiße Indikatorlicht ein-/aus ist.
 
 ### <a name="re-pair-the-clicker"></a>Erneutes Koppeln des Clickers
 
-Wählen Sie **Einstellungen**  >  **Geräte** und dann den Clicker aus. Wählen **Sie Entfernen** aus, warten Sie einige Sekunden, und koppeln Sie den Clicker erneut.
+Wählen **Sie Einstellungen**  >  **Geräte** und dann das Klickfeld aus. Wählen **Sie Entfernen** aus, warten Sie einige Sekunden, und koppeln Sie den Klicker erneut.
 
 ### <a name="recover-the-clicker"></a>Wiederherstellen des Klickers
 
@@ -100,3 +109,4 @@ So stellen Sie den Clicker wieder wieder auf:
 1. Führen Sie das Windows-Tool zur Gerätewiederherstellung aus, und befolgen Sie die Anweisungen.
 
 Wenn der Klicker nicht automatisch erkannt wird, wählen Sie **Mein** Gerät wurde nicht erkannt aus, und befolgen Sie die Anweisungen, um Ihr Gerät in den Wiederherstellungsmodus zu bringen.
+

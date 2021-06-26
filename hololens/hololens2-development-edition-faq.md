@@ -14,14 +14,14 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f7ee1849e51132f0e3d30585cfed6a89ecfee2a9
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: a3e54bd586502207d24e28d7d2eeadd659b3e019
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397631"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924552"
 ---
-# <a name="hololens-2-development-edition-faq"></a>HoloLens 2 Development Edition – Häufig gestellte Fragen
+# <a name="hololens-2-development-edition-faq"></a>HoloLens 2 Development Edition: Häufig gestellte Fragen
 
 ## <a name="general-questions"></a>Allgemeine Fragen
 
@@ -51,37 +51,37 @@ Unity Pro ist eine 3D-Echtzeitplattform für kleine/mittelgroße Studio-/Unterne
 
 ### <a name="what-is-pixyz-plugin"></a>Was ist das Pixyz-Plug-In?
 
-Das Pixyz-Plug-In liest und konvertiert fast jedes Format, optimiert es und fügt es in Unity ein und stellt es bereit, um einsatzbereite Ressourcen für Echtzeitanwendungen bereitzustellen. [Weitere Informationen](https://unity.com/products/pixyz)
+Das Pixyz-Plug-In liest und konvertiert fast jedes Format, optimiert und legt es in Unity ab und stellt es bereit, um sofort einsatzbereite Ressourcen für Echtzeitanwendungen zu bieten. [Weitere Informationen](https://unity.com/products/pixyz)
 
 ### <a name="is-financing-for-the-hololens-2-development-edition--available"></a>Ist die HoloLens 2 Development Edition verfügbar?
 
-Ja, [die HoloLens 2 Development Edition](https://ms.liftforward.com/hololens?product=hololens-development-edition) ist jetzt nur noch im USA verfügbar. 
+Ja, [die HoloLens 2 Development Edition](https://ms.liftforward.com/hololens?product=hololens-development-edition) ist jetzt nur in der USA. 
 
-### <a name="who-do-i-contact-with-questions-about-my-hololens-2-development-edition-entitlements"></a>An wen kann ich mich wenden, wenn ich Fragen zu meinen HoloLens 2 Development Edition-Berechtigungen habe?
+### <a name="who-do-i-contact-with-questions-about-my-hololens-2-development-edition-entitlements"></a>An wen kann ich mich wenden, wenn ich Fragen zu HoloLens 2 Development Edition-Berechtigungen habe?
 
-Wenn Sie Fragen zu Berechtigungen haben, wenden Sie sich unter 866-425-4709, Mo bis Fr, 6:00 bis 18:00 Uhr, PST an Ihren Vertriebsexperten.
+Wenden Sie sich bei Fragen zu Berechtigungen unter 866-425-4709, Mo bis Fr, 6:00 bis 18:00 Uhr PST an Ihren Vertriebsspezialisten.
 
-### <a name="can-my-company-buy-multiple-hololens-2-development-edition-devices"></a>Kann mein Unternehmen mehrere HoloLens 2 Development Edition-Geräte erwerben? 
+### <a name="can-my-company-buy-multiple-hololens-2-development-edition-devices"></a>Kann mein Unternehmen mehrere HoloLens 2 Development Edition-Geräte kaufen? 
 
-Dieses Gerät ist für Entwickler vorgesehen, die Mixed Reality-Lösungen erstellen. Wir beschränken einen Kauf pro Kundentransaktion. Wenn Ihr Unternehmen mehrere Development Edition-Geräte kaufen möchte, sind separate Transaktionen erforderlich, um HoloLens 2 Development Edition-Geräte im Auftrag des Unternehmens zu erwerben. 
+Dieses Gerät ist für Entwickler, die Mixed Reality-Lösungen erstellen. Wir beschränken einen Kauf pro Kundentransaktion. Wenn Ihr Unternehmen mehrere Development Edition-Geräte kaufen möchte, sind separate Transaktionen erforderlich, um HoloLens 2 Development Edition-Geräte im Auftrag des Unternehmens zu erwerben. 
 
-### <a name="can-i-show-my-hololens-2-development-edition-device-to-my-customers"></a>Kann ich mein HoloLens 2 Development Edition-Gerät meinen Kunden anzeigen? 
+### <a name="can-i-show-my-hololens-2-development-edition-device-to-my-customers"></a>Kann ich meinen Kunden mein HoloLens 2 Development Edition-Gerät anzeigen? 
 
 Ja, dieses Gerät ist für die Prototyperstellung und das Testen von Mixed Reality-Lösungen vorgesehen.
 
 ### <a name="where-can-i-buy-the-hololens-2-development-edition"></a>Wo kann ich die HoloLens 2 Development Edition erwerben? 
 
-HoloLens 2 Development Edition wird ausschließlich auf Microsoft Store verkauft.  
+HoloLens 2 Development Edition wird ausschließlich auf Microsoft Store.  
 
 ### <a name="can-i-return-my-hololens-2-development-edition"></a>Kann ich meine HoloLens 2 Development Edition zurückgeben?  
 
-Alle Verkäufe sind final, und es sind keine Rückerstattungen für HoloLens 2 Development Edition verfügbar.
+Alle Verkäufe sind endgültig, und es sind keine Rückerstattungen für HoloLens 2 Development Edition verfügbar.
 
-### <a name="does-developer-edition-have-different-hardware-requirements-that-differ-from-the-hololens-2"></a>Gibt es bei der Developer Edition unterschiedliche Hardwareanforderungen, die sich von den HoloLens 2 unterscheiden?
+### <a name="does-developer-edition-have-different-hardware-requirements-that-differ-from-the-hololens-2"></a>Gelten für Developer Edition andere Hardwareanforderungen als für HoloLens 2?
 
-Nein, dieses Gerät ist aus Sicht der Hardwareanforderungen identisch. Die Development Edition darf zur Unterstützung der Entwicklung und/oder des Testens von Anwendungen in einer kommerziellen Umgebung bereitgestellt werden. 
+Nein, dieses Gerät ist aus der Perspektive der Hardwareanforderungen identisch. Die Development Edition kann zur Unterstützung der Entwicklung und/oder des Testens von Anwendungen in einer kommerziellen Umgebung bereitgestellt werden. 
 
-### <a name="how-can-i-use-mixed-reality-toolkit--unity-for-developing-on-my-hololens-2-development-edition"></a>Wie kann ich Mixed Reality Toolkit – Unity für die Entwicklung auf meiner HoloLens 2 Development Edition verwenden?
+### <a name="how-can-i-use-mixed-reality-toolkit--unity-for-developing-on-my-hololens-2-development-edition"></a>Wie kann ich Mixed Reality Toolkit – Unity für die Entwicklung in meiner HoloLens 2 Development Edition verwenden?
 
 MRTK-Unity ist ein von Microsoft vorangetriebenes Projekt, das einen Satz von Komponenten und Funktionen bereitstellt, die zum Beschleunigen der Entwicklung von plattformübergreifenden MR-Apps in Unity dienen. [Weitere Informationen](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
 
@@ -125,28 +125,28 @@ Dieses Angebot ist für neue Benutzer und gilt nicht für eingerichtete Unity Pr
 
 Einlösen von Anweisungen
 
-1. Besuchen Sie id.unity.com
+1. Besuchen Id.unity.com
 2. Melden Sie sich mit Ihrer Unity-ID an, oder erstellen Sie ein Konto.
-3. Auswählen &#39;Einlösen eines Produktcodes&#39;
-4. Geben Sie den Produktcode ein, und wählen Sie &#39;Einlösen eines Produktcodes aus,&#39;
+3. Wählen sie &#39;Einlösen eines Produktcodes&#39;
+4. Geben Sie den Produktcode ein, und wählen Sie &#39;Einlösen eines Produktcodes&#39;
 
-Weitere Informationen finden [Sie](https://docs.microsoft.com/hololens/hololens2-options?tabs=device) in der Dokumentation zu HoloLens 2 Development Edition.
+Weitere Informationen HoloLens 2 sie in der Dokumentation zur Development [Edition.](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
 
-### <a name="can-i-build-applications-with-versions-of-unity-other-than-pro-license"></a>Kann ich Anwendungen mit anderen Versionen von Unity als PRO-Lizenzen erstellen?
+### <a name="can-i-build-applications-with-versions-of-unity-other-than-pro-license"></a>Kann ich Anwendungen mit anderen Versionen als der PRO-Lizenz von Unity erstellen?
 
 Ja, Sie können Anwendungen mit allen kompatiblen Versionen von Unity erstellen.
 
-### <a name="how-do-i-contact-unity-support"></a>Gewusst wie sich an den Unity-Support wenden?
+### <a name="how-do-i-contact-unity-support"></a>Gewusst wie an den Unity-Support?
 
-Hilfe zu Fragen zu Ihrer Unity-ID, Ihrem Konto, Ihren Organisationen und Ihren Abonnements finden Sie unter support.unity3d.com.
+Wenn Sie Hilfe bei Fragen zu Ihrer Unity-ID, Ihrem Konto, Ihren Organisationen und Ihren Abonnements erhalten möchten, besuchen Sie support.unity3d.com.
 
 ## <a name="pixyz"></a>Pixyz
 
 ### <a name="what-is-included-with-my-pixyz-plugin-trial"></a>Was ist in meiner Pixyz-Plug-In-Testversion enthalten?
 
-Eine dreimonatige Pixyz-Plug-In-Testversion, die den Zugriff auf Pixyz ermöglicht, um einsatzbereite Ressourcen mit perfekten Mosaikgittern, begrenzter Polygonanzahl und automatischem UV zu erstellen. Die zugehörige Pixyz-Plug-In-Testversion hat keine Frist zum Einlösen.
+Eine Drei-Kalender-Testversion des Pixyz-Plug-Ins, die den Zugriff auf Pixyz ermöglicht, um sofort einsatzbereite Objekte mit perfekten Mosaikgittern, begrenzter Polygonanzahl und automatischem UV zu erstellen. Für die zugehörige Pixyz-Plug-In-Testversion gibt es keine Frist zum Einlösen.
 
-Dieses Angebot ist für neue Benutzer vorgesehen und wird nicht auf eingerichtete Pixyz-Abonnements gestapelt. Das Pixyz-Plug-In unterliegt möglicherweise zusätzlichen Bedingungen, die beim Einlösen vorgenommen werden. Lesen Sie die geltenden [ &amp; Geschäftsbedingungen](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) und [die Datenschutzrichtlinie.](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)
+Dieses Angebot ist für neue Benutzer und nicht für eingerichtete Pixyz-Abonnements verfügbar. Das Pixyz-Plug-In unterliegt möglicherweise zusätzlichen Bedingungen, die bei der Einlösung getroffen werden. Sehen Sie sich [die geltenden &amp; Geschäftsbedingungen und](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) die [Datenschutzrichtlinie an.](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)
 
 ### <a name="how-can-i-redeem-my-pixyz-plugin-trial"></a>Wie kann ich meine Pixyz-Plug-In-Testversion einlösen?
 
@@ -161,27 +161,27 @@ Weitere Informationen HoloLens 2 sie in der Dokumentation zur Development [Editi
 
 ### <a name="how-do-i-contact-pixyz-support"></a>Gewusst wie wenden Sie sich an den Pixyz-Support?
 
-Wenn Sie Hilfe bei Fragen zu Ihrer Unity-ID, Ihrem Konto, Ihren Organisationen und Ihren Abonnements erhalten möchten, besuchen Sie support.unity3d.com
+Hilfe zu Fragen zu Ihrer Unity-ID, Ihrem Konto, Ihren Organisationen und Ihren Abonnements finden Sie unter support.unity3d.com
 
-Informationen zum Pixyz-spezifischen Support (nach dem Einlösen Ihrer Testversion) finden Sie [unter Pixyz-software.com/support](http://pixyz-software.com/support)
+Pixyz-spezifischer Support (nach dem Einlösen Ihrer Testversion) finden Sie unter [Pixyz-software.com/support](http://pixyz-software.com/support)
 
 
 ## <a name="azure"></a>Azure
 
 ### <a name="how-can-i-redeem-my-500-azure-credit"></a>Wie kann ich mein Azure-Guthaben in Höhe von 500 USD einlösen?
 
-Um Ihr Azure-Guthaben in Höhe von 500 USD einzulösen, lösen Sie Azure Pass Promocode ein, und aktivieren Sie Ihr Abonnement. [Weitere Informationen](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
+Um Ihr Azure-Guthaben von 500 USD einzulösen, lösen Sie Ihren Azure Pass Promocode ein, und aktivieren Sie Ihr Abonnement. [Weitere Informationen](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
 
-Sehen Sie sich Azure Pass [Abonnementvertrag und](https://azure.microsoft.com/support/legal/subscription-agreement/?country=US) [Angebotsdetails an.](https://azure.microsoft.com/en-us/offers/azure-pass/)
+Lesen Sie den Azure Pass [Abonnementvertrag](https://azure.microsoft.com/support/legal/subscription-agreement/?country=US) und [die Angebotsdetails.](https://azure.microsoft.com/en-us/offers/azure-pass/)
 
 ### <a name="when-does-my-500-azure-credit-expire"></a>Wann läuft mein Azure-Guthaben von 500 USD ab?
 
-Ihr Azure-Guthaben in Höhe von 500 USD läuft 90 Tage nach der Aktivierung Ihres Azure-Schlüsselcodes ab.
+Ihr Azure-Guthaben von 500 USD läuft 90 Tage nach der Aktivierung Ihres Azure-Schlüsselcodes ab.
 
 ### <a name="what-can-i-do-with-my-azure-credits"></a>Was kann ich mit meinem Azure-Guthaben tun?
 
-Mit Ihrem Azure-Guthaben können Sie mit der Entwicklung&#39;microsoft&#39;ständig wachsenden Clouddiensten beginnen. Das in der HoloLens 2 Development Edition enthaltene Azure-Guthaben ermöglicht Kunden den schnellen Einstieg in das Erstellen und Testen von Mixed Reality-Anwendungen in Azure. Vollständige Informationen zum Erstellen in Azure finden Sie unter [Azure-Ressourcen.](https://azure.microsoft.com/en-us/resources/)
+Mit Ihrem Azure-Guthaben können Sie mit der Erstellung von Microsoft&#39;ständig wachsenden Clouddiensten beginnen. Die in der HoloLens 2 Development Edition enthaltenen Azure-Gutschriften sollen Es Kunden ermöglichen, schnell mit dem Erstellen und Testen von Mixed Reality-Anwendungen in Azure zu beginnen. Ausführliche Informationen zum Erstellen in Azure finden Sie unter [Azure-Ressourcen.](https://azure.microsoft.com/en-us/resources/)
 
-### <a name="where-can-i-learn-more-about-azure-mixed-reality-services"></a>Wo kann ich mehr über Azure Mixed Reality-Dienste erfahren?
+### <a name="where-can-i-learn-more-about-azure-mixed-reality-services"></a>Wo finde ich weitere Informationen zu Azure Mixed Reality-Diensten?
 
 Microsoft bietet eine Reihe von Mixed Reality-Diensten, mit denen Entwickler Mixed Reality-Lösungen erstellen und testen können. [Weitere Informationen](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)

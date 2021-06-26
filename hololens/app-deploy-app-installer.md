@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9e413963dbf34dd071fc9603487590065b967ee7
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: d8be5c2ed7fba38b6710aba9c122557a36073a79
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308640"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924127"
 ---
 # <a name="install-apps-on-hololens-2-via-app-installer"></a>Installieren von Apps auf HoloLens 2 über App-Installer
 
@@ -36,7 +36,7 @@ Ein Gerät gilt als "verwaltet", **wenn** eine der folgenden Bedingungen zutriff
 
 Sie können Apps jetzt installieren, ohne den Entwicklermodus zu aktivieren oder Geräteportal.  Laden Sie (über USB oder über Microsoft Edge) das Appx Bundle auf Ihr Gerät herunter, und navigieren Sie im Datei-Explorer zum Appx Bundle, um zum Starten der Installation aufgefordert zu werden.  Alternativ können Sie [eine Installation über eine Webseite initiieren.](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)  Genau wie Apps, die Sie über die Microsoft Store installieren oder mithilfe der Bereitstellungsfunktion für [](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) branchenseitige Apps [](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) von MDM sideload verwenden, müssen Apps digital mit dem Signierungstool signiert werden, und das Zertifikat, das zum Signieren verwendet wird, muss vom HoloLens-Gerät als vertrauenswürdig eingestuft werden, bevor die App bereitgestellt werden kann.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 
 ### <a name="for-your-devices"></a>Für Ihre Geräte:
 
@@ -44,29 +44,29 @@ Dieses Feature ist derzeit in Windows Holographic 20H2-Builds für HoloLens 2 ve
 
 ### <a name="for-your-apps"></a>Für Ihre Apps:
 
-Die Projektmappenkonfiguration Ihrer App muss entweder **Master** oder **Release** sein, da der App-Installer Abhängigkeiten aus dem Speicher verwendet. Weitere Informationen finden Sie unter [Erstellen von App-Paketen.](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs)
+Die Projektmappenkonfiguration Ihrer App muss entweder **"Master"** oder **"Release"** sein, da die App-Installer Abhängigkeiten aus dem Speicher verwendet. Weitere Informationen zum Erstellen [von App-Paketen finden Sie hier.](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs)
 
-Apps, die über diese Methode installiert werden, müssen digital signiert sein. Sie müssen ein Zertifikat verwenden, um die App zu signieren. Sie können entweder ein Zertifikat aus der Liste der [vertrauenswürdigen](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)MS-Zertifizierungsstellen abrufen. In diesem Fall müssen Sie keine zusätzlichen Maßnahmen ergreifen. Sie können auch Ihr eigenes Zertifikat signieren, aber dieses Zertifikat muss per Push auf das Gerät übertragen werden.
+Apps, die über diese Methode installiert werden, müssen digital signiert werden. Sie müssen ein Zertifikat verwenden, um die App zu signieren. Sie können entweder ein Zertifikat aus der Liste der [vertrauenswürdigen](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)MS-Zertifizierungsstellen erhalten. In diesem Fall müssen Sie keine zusätzlichen Maßnahmen ergreifen. Oder Sie können Ihr eigenes Zertifikat signieren, aber dieses Zertifikat muss auf das Gerät übertragen werden.
 
 - Signieren von Apps [mit dem Signieren-Tool](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool)
 
 **Zertifikatoptionen:**
 
-- [Liste vertrauenswürdiger MS-Zertifizierungsstellen](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)
+- [Liste der vertrauenswürdigen MS-Zertifizierungsstellen](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)
 
 **Wählen Sie eine Zertifikatbereitstellungsmethode aus.**
 
 - [Bereitstellungspakete](hololens-provisioning.md) können auf lokale Geräte angewendet werden.
-- MDM kann verwendet werden, um [Zertifikate mit Gerätekonfigurationen anzuwenden.](https://docs.microsoft.com/mem/intune/protect/certificates-configure)
-- Verwenden Sie den auf dem Gerät [Zertifikat-Manager](certificate-manager.md).
+- MDM kann verwendet werden, [um Zertifikate mit Gerätekonfigurationen anzuwenden.](https://docs.microsoft.com/mem/intune/protect/certificates-configure)
+- Verwenden Sie den [Zertifikat-Manager auf dem Gerät.](certificate-manager.md)
 
 ## <a name="installation-method"></a>Installationsmethode
 
-1. Vergewissern Sie sich, dass Ihr Gerät nicht als verwaltet angesehen wird.
-1. Überprüfen Sie, ob Ihr HoloLens 2 Gerät eingeschaltet ist und Sie angemeldet sind.
-1. Navigieren Sie auf Ihrem PC zu Ihrer benutzerdefinierten App, und kopieren Sie "app.appxbundle" in "IhrGerätename\Interner Speicher\Downloads".
-    Nachdem Sie das Kopieren der Datei abgeschlossen haben, können Sie das Gerät trennen und die Installation später abschließen.
-1. Wählen Sie auf Ihrem HoloLens 2 Gerät Das **Startmenü** öffnen aus, wählen Sie **Alle Apps** aus, und starten Sie die **Datei-Explorer-App.**
+1. Überprüfen Sie, ob Ihr Gerät nicht als verwaltet gilt.
+1. Überprüfen Sie, HoloLens 2 Gerät eingeschaltet ist und Sie angemeldet sind.
+1. Navigieren Sie auf Ihrem PC zu Ihrer benutzerdefinierten App, und kopieren Sie Yourapp.appxbundle in "IhrGerätename\Interner Speicher\Downloads".
+    Nachdem Sie die Datei kopiert haben, können Sie das Gerät trennen und die Installation später beenden.
+1. Öffnen Sie HoloLens 2-Gerät das **Startmenü,** wählen Sie Alle Apps **aus,** und starten Sie die **Datei-Explorer-App.**
 1. Navigieren Sie zum Ordner Downloads. Möglicherweise müssen Sie im linken Bereich  der App zuerst Dieses Gerät auswählen und dann zu Downloads navigieren.
 1. Wählen Sie die Datei yourapp.appxbundle aus.
 1. Die App-Installer wird gestartet. Wählen Sie die **Schaltfläche Installieren** aus, um Ihre App zu installieren.
@@ -98,17 +98,15 @@ Benutzer können eine App direkt von einem Webserver installieren. Dieser Flow n
 1. Der Benutzer empfängt und installiert das Zertifikat auf dem Gerät mithilfe einer zuvor ausgewählten Methode.
 1. Der Benutzer besucht die URL, die im obigen Schritt erstellt wurde.
 
-Die App wird nun auf dem Gerät installiert. Um die App zu finden, öffnen Sie die **Startmenü,** und wählen Sie die Schaltfläche **Alle Apps** aus, um Ihre App zu finden.
+Die App wird jetzt auf dem Gerät installiert. Um die App zu finden, öffnen Sie die **Startmenü,** und klicken Sie auf **Alle Apps,** um Ihre App zu suchen.
 
-- Weitere Hilfe zur Problembehandlung bei der Installationsmethode des App-Installers finden Sie unter Beheben von Problemen mit dem [App-Installationsprogramm.](https://docs.microsoft.com/windows/msix/app-installer/troubleshoot-appinstaller-issues)
+- Weitere Hilfe zur Problembehandlung bei der Installationsmethode des App-Installationsprogramms finden Sie unter [Beheben von Problemen mit dem App-Installationsprogramm.](https://docs.microsoft.com/windows/msix/app-installer/troubleshoot-appinstaller-issues)
 
 > [!NOTE]
-> Die Benutzeroberfläche während des Updateprozesses wird nicht unterstützt. Daher werden die Option ShowPrompt auf [dieser Seite](https://docs.microsoft.com/windows/msix/app-installer/update-settings) und verwandte Optionen nicht unterstützt.
+> Die Benutzeroberfläche während des Updatevorgangs wird nicht unterstützt. Daher werden die Option ShowPrompt auf [dieser Seite und](https://docs.microsoft.com/windows/msix/app-installer/update-settings) zugehörige Optionen nicht unterstützt.
 
 ## <a name="sample-apps"></a>Beispiel-Apps
 
-Um die App-Installer mit einigen Beispiel-Apps auszuprobieren, sehen Sie sich einige unserer verfügbaren Beispiele an:
-
-- [MRTK-Beispiele-Hub](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html)
-- [Surface](https://docs.microsoft.com/windows/mixed-reality/develop/unity/sampleapp-surfaces)
-- [UWP-Beispiel-Apps, die für Tests verwendet werden können](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples)
+Testen Sie die App-Installer mit einer unserer verfügbaren Beispiel-Apps. 
+> [!div class="nextstepaction"]
+> [Beispiel-Apps](https://docs.microsoft.com/windows/mixed-reality/develop/features-and-samples?tabs=unity#sample-apps)
