@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a4949ab68121cb772fdb8a62411ed70868a6ccb6
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 8b8c3c26ff743a4df0010110d0fe6e2930646c86
+ms.sourcegitcommit: add53aa73588986a3430cdc0310af7665a038cfc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924365"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "112977237"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider Preview für Microsoft HoloLens
 
@@ -29,10 +29,14 @@ Willkommen bei den neuesten Insider Preview-Builds für HoloLens! Es ist einfach
 
 ## <a name="windows-insider-release-notes"></a>Windows-Insider Anmerkungen zu dieser Version
 
-Wir freuen uns, wieder neue Features für Windows-Insider nutzen zu können. Neue Builds werden in den Entwicklungs- und Betakanälen bereitgestellt, um die neuesten Updates zu erhalten. Wir werden diese Seite weiterhin aktualisieren, wenn wir unseren Windows-Insider Builds weitere Features und Updates hinzufügen. Freuen Sie sich darauf, diese Updates in Ihre Realität zu integrieren. 
+Wir freuen uns, wieder neue Features für Windows-Insider nutzen zu können. Neue Builds werden in den Entwicklungs- und Betakanälen bereitgestellt, um die neuesten Updates zu erhalten. Wir werden diese Seite weiterhin aktualisieren, wenn wir unseren Windows-Insider Builds weitere Features und Updates hinzufügen. Freuen Sie sich darauf, diese Updates in Ihre Realität zu integrieren.
+
+| Funktion                 | Beschreibung                | Zielbenutzer | Build eingeführt |
+|-------------------------|----------------------------|--------------|------------------|
+| CSP-Änderungen auf HoloLens | Neue CSPs für zum Abfragen von Daten | IT-Administratoren    | 20348.1403                 |
 
 ### <a name="csp-changes-on-hololens"></a>CSP-Änderungen auf HoloLens
- 
+
 - Eingeführt in Windows-Insider Build, 20348.1403
 
 #### <a name="devdetail-csp"></a>DevDetail CSP
