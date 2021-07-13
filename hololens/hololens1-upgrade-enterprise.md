@@ -1,5 +1,5 @@
 ---
-title: Entsperren Windows Holographic for Business Features
+title: Effiziente Nutzung der Features von Windows Holographic for Business
 description: Wenn Sie ein Upgrade auf Windows Holographic for Business durchführen, bietet HoloLens zusätzliche Features, die für Unternehmen konzipiert sind.
 ms.prod: hololens
 ms.sitesec: library
@@ -12,30 +12,30 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 8d42c935e698f156aed894e4fa5012c9f04d8d49
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: b5ae9b0d6859c0f916b5b906e2e9ec54cad6cbd9
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308779"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635193"
 ---
-# <a name="unlock-windows-holographic-for-business-features"></a>Entsperren Windows Holographic for Business Features
+# <a name="unlock-windows-holographic-for-business-features"></a>Effiziente Nutzung der Features von Windows Holographic for Business
 
 > [!IMPORTANT]
 > Diese Seite gilt nur für HoloLens 1. Generation.
 
-Microsoft HoloLens ist in der *Development Edition* verfügbar, in der Windows Holographic (eine Edition von Windows 10, die für HoloLens entwickelt wurde) und in der [Commercial Suite](hololens-commercial-features.md)ausgeführt wird, die zusätzliche Features für Unternehmen bereitstellt.
+Microsoft HoloLens ist in der *Development Edition* verfügbar, die Windows Holographic (eine Edition von Windows 10, die für HoloLens entwickelt wurde) und in der [Commercial Suite](hololens-commercial-features.md)ausgeführt wird, die zusätzliche Features für Unternehmen bereitstellt.
 
-Wenn Sie die Commercial Suite erwerben, erhalten Sie eine Lizenz, mit der Windows Holographic auf Windows Holographic for Business aktualisiert wird. Sie können diese Lizenz auf das Gerät anwenden, indem Sie entweder den [MDM-Anbieter (Mobile Device Management)](#edition-upgrade-by-using-mdm) der Organisation oder ein [Bereitstellungspaket](#edition-upgrade-by-using-a-provisioning-package)verwenden.
+Wenn Sie die Commercial Suite erwerben, erhalten Sie eine Lizenz, die Windows Holographic auf Windows Holographic for Business aktualisiert. Sie können diese Lizenz auf das Gerät anwenden, indem Sie entweder den [MDM-Anbieter (Mobile Device Management)](#edition-upgrade-by-using-mdm) der Organisation oder ein [Bereitstellungspaket](#edition-upgrade-by-using-a-provisioning-package)verwenden.
 
 > [!TIP]
-> In Windows 10 Version 1803 können Sie überprüfen, ob holoLens auf die Business Edition aktualisiert wurde, indem Sie **Einstellungen**  >  **System** auswählen.
+> In Windows 10 Version 1803 können Sie überprüfen, ob die HoloLens auf die Business Edition aktualisiert wurde, indem Sie **Einstellungen**  >  **System** auswählen.
 
 ## <a name="edition-upgrade-by-using-mdm"></a>Editionsupgrade mit MDM
 
 Die Enterprise-Lizenz kann von jedem MDM-Anbieter angewendet werden, der den [WindowsLicensing-Konfigurationsdienstanbieter (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn904983.aspx) unterstützt. Die neueste Version der Microsoft-MDM-API unterstützt den WindowsLicensing CSP.
 
-Eine Schritt-für-Schritt-Anleitung zum Aktualisieren von HoloLens mithilfe von Microsoft Intune finden Sie unter [Upgrade devices running Windows Holographic to Windows Holographic for Business (Aktualisieren von Geräten mit Windows Holographic auf Windows Holographic for Business).](https://docs.microsoft.com/intune/holographic-upgrade)
+Eine Schritt-für-Schritt-Anleitung zum Aktualisieren von HoloLens mithilfe von Microsoft Intune finden Sie unter Upgrade devices [running Windows Holographic to Windows Holographic for Business](/intune/holographic-upgrade).
 
  Im Fall anderer MDM-Anbieter können die einzelnen Schritte zum Einrichten und Bereitstellen der Richtlinie abweichen.
 
@@ -55,7 +55,7 @@ Bereitstellungspakete sind Dateien, die vom Windows-Konfigurations-Designer-Tool
     > [!NOTE]
     > Sie können [zusätzliche Einstellungen im Bereitstellungspaket](hololens-provisioning.md) konfigurieren.
 
-1. Klicken Sie im Menü **File** (Datei) auf **Save** (Speichern). 
+1. Klicken Sie im Menü **Datei** auf **Speichern**. 
 
 1. Lesen Sie die Warnung, dass Projektdateien vertrauliche Informationen enthalten können, und klicken Sie auf **OK.**
 
@@ -64,36 +64,36 @@ Bereitstellungspakete sind Dateien, die vom Windows-Konfigurations-Designer-Tool
 
 1. Wählen Sie im Menü **Exportieren** die Option **Bereitstellungspaket** aus.
 
-1. Ändern **Sie Besitzer** in **IT-Administrator,** wodurch die Rangfolge dieses Bereitstellungspakets höher ist als bei anderen, die aus verschiedenen Quellen auf dieses Gerät angewendet werden, und wählen Sie dann **Weiter aus.**
+1. Ändern Sie **Besitzer** in **IT-Administrator,** wodurch die Rangfolge dieses Bereitstellungspakets höher ist als bei anderen, die auf dieses Gerät aus verschiedenen Quellen angewendet werden, und wählen Sie dann **Weiter** aus.
 
 1. Legen Sie einen Wert für **Paketversion** fest.
 
     > [!TIP]
     > Sie können Änderungen an vorhandenen Paketen vornehmen und die Versionsnummer ändern, um bereits angewendete Pakete zu aktualisieren.
 
-1. Wählen **Sie unter Sicherheitsdetails für das Bereitstellungspaket auswählen** die Option Weiter **aus.**
+1. Wählen Sie unter **Sicherheitsdetails für das Bereitstellungspaket** auswählen die Option **Weiter** aus.
 
-1. Wählen **Sie Weiter** aus, um den Ausgabespeicherort anzugeben, an den das Bereitstellungspaket gehen soll, nachdem es erstellt wurde. Standardmäßig verwendet Windows ICD den Projektordner als Ausgabespeicherort.
+1. Wählen Sie **Weiter** aus, um den Ausgabespeicherort anzugeben, an den das Bereitstellungspaket nach derEntstellung wechseln soll. Standardmäßig verwendet Windows ICD den Projektordner als Ausgabespeicherort.
 
-    Optional können Sie Durchsuchen auswählen, **um** den Standardausgabespeicherort zu ändern.
+    Optional können Sie **Durchsuchen** auswählen, um den Standardausgabespeicherort zu ändern.
 
 1. Wählen Sie **Weiter** aus.
 
-1. Wählen Sie **Erstellen aus,** um mit dem Erstellen des Pakets zu beginnen. Auf der Buildseite werden die Projektinformationen angezeigt, und die Statusanzeige gibt den Buildstatus an.
+1. Wählen Sie **Erstellen** aus, um mit dem Erstellen des Pakets zu beginnen. Auf der Buildseite werden die Projektinformationen angezeigt, und die Statusanzeige gibt den Buildstatus an.
 
-1. Wenn der Build abgeschlossen ist, wählen Sie **Fertig stellen aus.**
+1. Wenn der Build abgeschlossen ist, wählen Sie **Fertig stellen** aus.
 
 ### <a name="apply-the-provisioning-package-to-hololens"></a>Anwenden des Bereitstellungspakets auf HoloLens
 
-1. Verbinden Sie das Gerät über das USB-Kabel mit einem PC. Starten Sie das Gerät, aber  fahren Sie nicht über die Anpassungsseite der anfänglichen Einrichtung hinaus (die erste Seite mit dem blauen Feld). Auf dem PC wird HoloLens als Gerät im Datei-Explorer angezeigt.
+1. Verbinden Sie das Gerät über das USB-Kabel mit einem PC. Starten Sie das Gerät, aber fahren Sie nicht über die **Seite "Anpassen"** der anfänglichen Einrichtung hinaus (die erste Seite mit dem blauen Feld). Auf dem PC wird HoloLens im Datei-Explorer als Gerät angezeigt.
 
     > [!NOTE]
-    > Wenn auf dem HoloLens-Gerät Windows 10, Version 1607 oder früher, ausgeführt wird, öffnen Sie den Datei-Explorer, indem Sie auf dem Gerät kurz die Schaltflächen **Volume down** und **Power** gleichzeitig drücken und freigeben.
+    > Wenn auf dem HoloLens Gerät Windows 10 Version 1607 oder früher ausgeführt wird, öffnen Sie den Datei-Explorer, indem Sie auf dem Gerät die Schaltflächen **"Herunterfahren"** und **"Einschalten"** kurz drücken und loslassen.
 
 1. Verschieben Sie das Bereitstellungspaket (.ppkg) im Datei-Explorer per Drag & Drop zum Gerätespeicher.
 
-1. Während HoloLens noch  auf der Anpassungsseite ist, drücken Sie kurz, und lassen Sie die Schaltflächen **Volume Down** und **Power** gleichzeitig wieder frei.
+1. Während sich HoloLens noch auf der **Seite "Anpassen"** befindet, drücken sie kurz, und lassen Sie die Schaltflächen **"Herunterfahren"** und **"Einschaltfläche"** gleichzeitig wieder los.
 
-1. HoloLens fragt Sie, ob Sie dem Paket vertrauen und es anwenden möchten. Bestätigen Sie, dass Sie dem Paket vertrauen.
+1. HoloLens fragen Sie, ob Sie dem Paket vertrauen und es anwenden möchten. Bestätigen Sie, dass Sie dem Paket vertrauen.
 
-1. Sie können erkennen, ob das Paket erfolgreich angewendet wurde oder nicht. Wenn sie nicht erfolgreich angewendet wurde, können Sie das Paket korrigieren und es erneut versuchen. Wenn dies erfolgreich ist, fahren Sie mit der Geräteeinrichtung fort.
+1. Sie können erkennen, ob das Paket erfolgreich angewendet wurde oder nicht. Wenn es nicht erfolgreich angewendet wurde, können Sie das Paket korrigieren und es erneut versuchen. Wenn dies erfolgreich ist, fahren Sie mit der Geräteeinrichtung fort.

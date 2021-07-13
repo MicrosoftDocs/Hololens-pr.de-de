@@ -1,6 +1,6 @@
 ---
 title: Insider Preview für Microsoft HoloLens
-description: Erfahren Sie, wie Sie mit Insider-Builds beginnen und wertvolles Feedback zu unserem nächsten wichtigen Betriebssystemupdate für HoloLens geben.
+description: Erfahren Sie, wie Sie mit Insider-Builds beginnen, und geben Sie wertvolles Feedback zu unserem nächsten wichtigen Betriebssystemupdate für HoloLens.
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
@@ -16,43 +16,50 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8b8c3c26ff743a4df0010110d0fe6e2930646c86
-ms.sourcegitcommit: add53aa73588986a3430cdc0310af7665a038cfc
+ms.openlocfilehash: 87b606e634d4035da02802ddd1a8e1a980f1f1d6
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "112977237"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113636092"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider Preview für Microsoft HoloLens
 
-Willkommen bei den neuesten Insider Preview-Builds für HoloLens! Es ist einfach, [zu beginnen](hololens-insider.md#start-receiving-insider-builds) und wertvolles Feedback zu unserem nächsten wichtigen Betriebssystemupdate für HoloLens zu geben.
+Willkommen bei den neuesten Insider Preview-Builds für HoloLens! Es ist einfach, [zu](hololens-insider.md#start-receiving-insider-builds) beginnen und wertvolles Feedback für unser nächstes größeres Betriebssystemupdate für HoloLens.
 
-## <a name="windows-insider-release-notes"></a>Windows-Insider Anmerkungen zu dieser Version
+## <a name="windows-insider-release-notes"></a>Windows Insider-Versionshinweise
 
-Wir freuen uns, wieder neue Features für Windows-Insider nutzen zu können. Neue Builds werden in den Entwicklungs- und Betakanälen bereitgestellt, um die neuesten Updates zu erhalten. Wir werden diese Seite weiterhin aktualisieren, wenn wir unseren Windows-Insider Builds weitere Features und Updates hinzufügen. Freuen Sie sich darauf, diese Updates in Ihre Realität zu integrieren.
+Wir freuen uns, mit der Entwicklung neuer Features zu beginnen, Windows Insider zu erhalten. Neue Builds werden an die Entwicklungs- und Betakanäle übertragen, um die neuesten Updates zu erhalten. Wir werden diese Seite weiterhin aktualisieren, wenn wir unseren Insider-Builds weitere Features und Windows hinzufügen. Lassen Sie sich freuen und bereit sein, diese Updates in Ihre Realität zu mischen.
 
-| Funktion                 | Beschreibung                | Zielbenutzer | Build eingeführt |
+| Feature                 | Beschreibung                | Benutzer oder Szenario | Build eingeführt |
 |-------------------------|----------------------------|--------------|------------------|
-| CSP-Änderungen auf HoloLens | Neue CSPs für zum Abfragen von Daten | IT-Administratoren    | 20348.1403                 |
+| [CSP-Änderungen für die Berichterstellung HoloLens Details](#csp-changes-for-reporting-hololens-details) | Neue CSPs für zum Abfragen von Daten | IT-Administratoren    | 20348.1403                 |
+| [Richtlinie für die automatische Anmeldung, die von CSP gesteuert wird](#auto-login-policy-controlled-by-csp) | Wird zum automatischen Anmelden eines Kontos verwendet. | IT-Administratoren | 20348.1405 |
+| [PFX-Dateiunterstützung für den Zertifikat-Manager](#pfx-file-support-for-certificate-manager) | Hinzufügen von PFX-Zertifikaten über Einstellungen Benutzeroberfläche | Endbenutzer | 20348.1405 |
+| [Anzeigen des erweiterten Diagnoseberichts in Einstellungen auf HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | Anzeigen von MDM-Diagnoseprotokollen auf dem Gerät | Problembehandlung | 20348.1405 |
+| [Offlinediagnosebenachrichtigungen](#offline-diagnostics-notifications) | Feedback zur Protokollsammlung | Problembehandlung | 20348.1405 |
 
-### <a name="csp-changes-on-hololens"></a>CSP-Änderungen auf HoloLens
 
-- Eingeführt in Windows-Insider Build, 20348.1403
+### <a name="csp-changes-for-reporting-hololens-details"></a>CSP-Änderungen für die Berichterstellung HoloLens Details
 
-#### <a name="devdetail-csp"></a>DevDetail CSP
+- Eingeführt in Windows Insider-Build, 20348.1403
 
-DevDetail CSP meldet jetzt auch freien Speicherplatz auf HoloLens-Geräten. Dies sollte ungefähr mit dem Wert übereinstimmen, der auf der Seite Speicher der Einstellungs-App angezeigt wird. Im Folgenden finden Sie den spezifischen Knoten, der diese Informationen enthält.
+Die folgenden CSPs wurden mit neuen Möglichkeiten zum Melden von Informationen von Ihren HoloLens aktualisiert.
+
+#### <a name="devdetail-csp---free-storage"></a>DevDetail-CSP – kostenlose Storage
+
+DevDetail-CSP meldet jetzt auch freien Speicherplatz auf HoloLens Gerät. Dies sollte ungefähr mit dem Wert übereinstimmen, der auf Einstellungen-Seite der App Storage wird. Im Folgenden finden Sie den spezifischen Knoten, der diese Informationen enthält.
 
 - ./DevDetail/Ext/Microsoft/FreeStorage (nur GET-Vorgang)
 
-#### <a name="devicestatus-csp"></a>DeviceStatus CSP
+#### <a name="devicestatus-csp---ssid-and-bssid"></a>DeviceStatus-CSP: SSID und BSSID
 
-DeviceStatus CSP meldet jetzt auch SSID und BSSID des Wlan-Netzwerks, mit dem HoloLens aktiv verbunden ist. Im Folgenden werden die spezifischen Knoten mit diesen Informationen angezeigt.
+DeviceStatus-CSP meldet jetzt auch SSID und BSSID des Wi-Fi Netzwerks, mit dem HoloLens aktiv verbunden ist. Im Folgenden finden Sie die spezifischen Knoten, die diese Informationen enthalten.
 
 - ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*mac address of Wi-Fi adapter*/SSID
 - ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*mac address of Wi-Fi adapter*/BSSID
 
-Syncml-Beispielblob (für MDM-Anbieter) zum Abfragen von NetworkIdentifiers
+Beispiel für ein syncml-Blob (für MDM-Anbieter) zum Abfragen von NetworkIdentifiers
 
 ```xml
 <SyncML>
@@ -72,53 +79,132 @@ Syncml-Beispielblob (für MDM-Anbieter) zum Abfragen von NetworkIdentifiers
 </SyncML>
 ```
 
+### <a name="auto-login-policy-controlled-by-csp"></a>Richtlinie für die automatische Anmeldung, die von CSP gesteuert wird
+
+Diese neue AutoLogonUser-Richtlinie steuert, ob ein Benutzer automatisch angemeldet wird. Einige Kunden möchten Geräte einrichten, die an eine Identität gebunden sind, aber keine Anmeldeerfahrung wünschen. Imagine sofort ein Gerät aufnehmen und die Remoteunterstützung verwenden. Oder sie haben den Vorteil, dass sie schnell HoloLens verteilen und ihren Endbenutzern ermöglichen, die Anmeldung zu beschleunigt.
+
+Wenn die Richtlinie auf einen nicht leeren Wert festgelegt ist, wird die E-Mail-Adresse des Benutzers mit automatischer Anmeldung angegeben. Der angegebene Benutzer muss sich mindestens einmal beim Gerät anmelden, um die automatische Anmeldung zu aktivieren.
+
+Der OMA-URI des neuen `./Device/Vendor/MSFT/Policy/Config/MixedReality/AutoLogonUser` Richtlinienzeichenfolgenwerts
+
+- Für Benutzer mit der gleichen E-Mail-Adresse ist die automatische Anmeldung aktiviert.
+
+Auf einem Gerät, auf dem diese Richtlinie konfiguriert ist, muss sich der in der Richtlinie angegebene Benutzer mindestens einmal anmelden. Bei nachfolgenden Neustarts des Geräts nach der ersten Anmeldung wird der angegebene Benutzer automatisch angemeldet. Es wird nur ein einzelner Benutzer für die automatische Anmeldung unterstützt. Nach der Aktivierung kann sich der automatisch angemeldete Benutzer nicht mehr manuell abmelden. Um sich als anderer Benutzer zu anmelden, muss die Richtlinie zuerst deaktiviert werden.
+
+> [!NOTE]
+> - Für einige Ereignisse, z. B. wichtige Betriebssystemupdates, muss sich der angegebene Benutzer möglicherweise erneut beim Gerät anmelden, um das Verhalten der automatischen Anmeldung wieder aufzunehmen. 
+> - Die automatische Anmeldung wird nur für MSA- und AAD-Benutzer unterstützt.
+
+### <a name="pfx-file-support-for-certificate-manager"></a>PFX-Dateiunterstützung für den Zertifikat-Manager
+
+Eingeführt in Windows Insider-Build 20348.1405. Wir haben dem [Zertifikat-Manager](certificate-manager.md) Unterstützung für die Verwendung von PFX-Zertifikaten hinzugefügt. Wenn Benutzer zu **Einstellungen** Update &-Sicherheitszertifikate navigieren und Zertifikat installieren auswählen, unterstützt die Benutzeroberfläche jetzt  >    >  die PFX-Zertifikatdatei. 
+Benutzer können das PFX-Zertifikat mit privatem Schlüssel in den Benutzer- oder Computerspeicher importieren.
+
+### <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>Anzeigen des erweiterten Diagnoseberichts in Einstellungen auf HoloLens
+
+Bei verwalteten Geräten bei der Problembehandlung ist die Bestätigung, dass eine erwartete Richtlinienkonfiguration angewendet wird, ein wichtiger Schritt. Zuvor musste dies auf dem Gerät über MDM oder in der Nähe des Geräts erfolgen, nachdem mdm-Diagnoseprotokolle exportiert wurden, die über **Einstellungen-Konten** gesammelt wurden. Wählen Sie anschließend Die Verwaltungsprotokolle exportieren und auf einem pc in der Nähe anzeigen  ->    >  aus. 
+
+Die MDM-Diagnose kann nun mithilfe des Edge-Browsers auf dem Gerät angezeigt werden. Um den MDM-Diagnosebericht einfacher anzuzeigen, navigieren Sie zur Seite Auf Arbeits- oder Schulsystem zugreifen, und wählen **Sie Erweiterten Diagnosebericht anzeigen aus.** Dadurch wird der Bericht in einem neuen Edgefenster generiert und geöffnet.
+
+![Zeigen Sie den erweiterten Diagnosebericht in Einstellungen an.](./images/view-advanced-diagnostic-report.jpg)
+
+### <a name="offline-diagnostics-notifications"></a>Offlinediagnosebenachrichtigungen
+
+Dies ist ein Update für ein vorhandenes Feature namens [Offlinediagnose.](hololens-diagnostic-logs.md#offline-diagnostics) Zuvor gab es keinen eindeutigen Hinweis für Benutzer, dass sie die Diagnosesammlung ausgelöst oder abgeschlossen hatten.
+Jetzt in Windows Insider-Builds hinzugefügt, gibt es zwei Formen von Feedback zur Offlinediagnose. Das erste sind Popupbenachrichtigungen, die sowohl beim Start als auch beim Abschluss der Sammlung angezeigt werden. Diese werden angezeigt, wenn der Benutzer angemeldet ist und über Visuals verfügt.
+
+![Popup zum Sammeln von Protokollen.](./images/logcollection1.jpg)
+
+![Popup, wenn die Protokollsammlung abgeschlossen ist.](./images/logcollection2.jpg)
+ 
+Da Benutzer die Offlinediagnose häufig als Mechanismus für die Fallbackprotokollsammlung verwenden, wenn sie keinen Zugriff auf eine Anzeige haben, sich nicht anmelden können oder sich noch in oobe befinden, wird auch ein Audio-Hinweis abgespielt, wenn Protokolle gesammelt werden. Dieser Sound wird zusätzlich zur Popupbenachrichtigung abgespielt.
+
+Dieses neue Feature wird aktiviert, wenn Ihr Gerät aktualisiert wird, und muss nicht aktiviert oder verwaltet werden. In jedem Fall, in dem dieses neue Feedback nicht angezeigt oder gehört werden kann, wird weiterhin die Offlinediagnose generiert.
+
+Wir hoffen, dass es mit diesem neueren Feedback einfacher ist, Diagnosedaten zu sammeln und Ihre Probleme schneller beheben zu können.
+
+
+
 ### <a name="fixes-and-improvements"></a>Fehlerbehebungen und Verbesserungen:
 
-- Es wurde ein [bekanntes Problem für Geräteportal behoben, bei dem keine Aufforderung zum Herunterladen gesperrter Dateien angezeigt wurde.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
-- Ein [bekanntes Problem für Geräteportal mit Dateiupload- und Downloadtime outs](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out) wurde behoben.
+- Es wurde ein [bekanntes Problem für Geräteportal, bei dem keine Aufforderung zum Herunterladen gesperrter Dateien angezeigt wurde.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
+- Es wurde ein [bekanntes Problem bei Geräteportal dateiupload- und download-Time outs behoben.](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
+
 
 ## <a name="start-receiving-insider-builds"></a>Starten des Empfangs von Insider-Builds
-> [!NOTE]
-> Wenn Sie vor Kurzem noch nicht aktualisiert haben, starten Sie Ihr Gerät neu, um den Zustand zu aktualisieren und den neuesten Build zu erhalten.
-> - Der Sprachbefehl "Gerät neu starten" funktioniert gut. 
-> - Sie können auch die Schaltfläche "Neu starten" unter Einstellungen/Windows-Insider Programm auswählen.
->
-> Es ist ein Fehler auf dem Back-End aufgetreten, der möglicherweise aufgetreten ist, sodass Sie wieder auf kursierten Stand kommen.
 
-Wechseln Sie auf einem HoloLens 2 Gerät zu **Einstellungen**  >  **aktualisieren & Security** Windows-Insider  >  **Program,** und wählen Sie Erste Schritte **aus.** Verknüpfen Sie das Konto, das Sie zum Registrieren als Windows-Insider verwendet haben.
-Windows-Insider wechselt jetzt zu Channels. Der **Fast-Ring** wird zum **Dev-Kanal,** der **langsame** Ring zum **Betakanal** und der **Release preview-Ring** zum **Releasevorschaukanal.** Diese Zuordnung sieht wie folgt aus: ![ Windows-Insider Erläuterung zu Kanälen Weitere Informationen finden ](images/WindowsInsiderChannels.png) Sie unter Introducing Windows-Insider Channels on Windows Blogs [(Einführung in Windows-Insider Kanäle](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) in Windows-Blogs).
+> [!NOTE]
+> Wenn Sie vor Kurzem noch nicht aktualisiert haben, starten Sie Ihr Gerät neu, um den Status zu aktualisieren und den neuesten Build zu erhalten.
+> - Der Sprachbefehl "Gerät neu starten" funktioniert gut. 
+> - Sie können auch die Schaltfläche "Neu starten" im Einstellungen/Windows Insider-Programm auswählen.
+>
+> Es ist ein Fehler auf dem Back-End aufgetreten, den Sie möglicherweise gefunden haben, damit Sie wieder auf Kurs sind.
+
+Wechseln Sie HoloLens 2 gerät zu Einstellungen  >  **Update & Security** Windows Insider Program, und wählen Sie Erste Schritte  >   **aus.** Verknüpfen Sie das Konto, das Sie für die Registrierung als Windows Insider verwendet haben.
+
+Windows Insider geht jetzt zu Kanälen. Der **Fast-Ring** wird zum **Dev-Kanal,** der **langsame** Ring zum **Betakanal** und der **Release preview-Ring** zum **Releasevorschaukanal.** Diese Zuordnung sieht wie folgt aus:
+
+![Windows Erklärung zu Insiderkanälen](images/WindowsInsiderChannels.png)
+
+Weitere Informationen finden Sie unter [Introducing Windows Insider Channels (Einführung Windows Insider Channels)](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) in Windows Blogs.
 Wählen Sie dann **Aktive Entwicklung von Windows** aus, wählen Sie aus, ob Sie Dev **Channel** oder **Betakanal** Builds erhalten möchten, und überprüfen Sie die Programmbedingungen.
 Wählen Sie **Confirm > Restart Now (Jetzt neu starten)** aus, um den Vorgang abzuschließen. Wechseln Sie nach dem Neustart Ihres Geräts zu **Einstellungen > Update & Security > Suchen nach Updates,** um den neuesten Build zu erhalten.
+
 ### <a name="update-error-0x80070490-work-around"></a>Updatefehler 0x80070490 Problembearbeitung
+
 Wenn beim Aktualisieren im Dev- oder Betakanal ein Updatefehler 0x80070490 wird, versuchen Sie es mit der folgenden kurzfristigen Problemumgemeinung. Dies umfasst das Verschieben Ihres Insider-Kanals, das Aufnehmen des Updates und das anschließende Verschieben Ihres Insider-Kanals zurück.
+
 #### <a name="stage-one---release-preview"></a>Phase 1: Releasevorschau
-1.  Einstellungen, Update & Security, Windows-Insider Program, wählen Release **Preview Channel** aus.
-2.  Einstellungen, Update & Security, Windows Update, **Suchen nach Updates.** Fahren Sie nach dem Update mit Phase 2 fort.
+
+1.  Einstellungen, Update & Security, Windows Insider Program, wählen Sie **Release Preview Channel (Releasevorschaukanal)** aus.
+
+2.  Einstellungen, Update & Security, Windows Update, Suchen **nach Updates.** Fahren Sie nach dem Update mit Phase 2 fort.
+
 #### <a name="stage-two---dev-channel"></a>Phase 2: Entwicklungskanal
-1. Einstellungen, Update & Security, Windows-Insider Program, wählen **Sie Dev Channel** aus.
-2. Einstellungen, Update & Security, Windows Update, **Suchen nach Updates.**
+
+1. Einstellungen, Update & Security, Windows Insider Program, wählen Sie **Dev Channel** aus.
+
+2. Einstellungen, Update & Security, Windows Update, Suchen **nach Updates.**
+
 ## <a name="ffu-download-and-flash-directions"></a>FFU-Download und Flash-Anweisungen
+
 Zum Testen mit einer Flugsignierungs-FFU müssen Sie zunächst ihr Gerät entsperren, bevor Sie die flugsigniert-FFU blinken lassen.
+
 1. Auf dem PC:
     1. Laden Sie FFU von auf Ihren PC [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) herunter.
     
     1. Installieren Sie ARC (Advanced Recovery Companion) über die Microsoft Store: [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8) .
     
-1. Auf HoloLens – Flight Unlock: Open **Settings** Update & Security Windows-Insider Program (Auf HoloLens – Flight Unlock: Open Settings  >  **Update & Security** Windows-Insider  >  **Program)** registrieren Sie sich, und starten Sie das Gerät neu.
-1. Flash-FFU: Jetzt können Sie die flugsignieren FFU mit ARC flashen.
+1. Bei HoloLens – Flight Unlock: Öffnen **Sie Einstellungen** Update  >  **& Security** Windows Insider  >  **Program,** und starten Sie das Gerät neu.
+
+1. Flash-FFU: Jetzt können Sie die mit Flugsignieren signierte FFU mit ARC flashen.
+
 ### <a name="provide-feedback-and-report-issues"></a>Bereitstellen von Feedback und Melden von Problemen
-Verwenden Sie [die Feedback-Hub-App](hololens-feedback.md) auf Ihrer HoloLens, um Feedback zu geben und Probleme zu melden. Die Verwendung von Feedback-Hub stellt sicher, dass alle erforderlichen Diagnoseinformationen enthalten sind, damit unsere Techniker das Problem schnell debuggen und beheben können.  Probleme mit der chinesischen und japanischen Version von HoloLens sollten auf die gleiche Weise gemeldet werden.
+
+Verwenden Sie [die Feedback-Hub-App](hololens-feedback.md) auf Ihrem HoloLens, um Feedback zu geben und Probleme zu melden. Die Verwendung von Feedback-Hub stellt sicher, dass alle erforderlichen Diagnoseinformationen enthalten sind, damit unsere Techniker das Problem schnell debuggen und beheben können.  Probleme mit der chinesischen und japanischen Version von HoloLens sollten auf die gleiche Weise gemeldet werden.
+
 > [!NOTE]
 > Achten Sie darauf, dass Sie die Eingabeaufforderung akzeptieren, in der Sie gefragt werden, ob sie Feedback-Hub möchten, auf Ihren Ordner Dokumente zuzugreifen (wählen Sie **Ja** aus, wenn Sie dazu aufgefordert werden).
+
 ## <a name="note-for-developers"></a>Hinweis für Entwickler
-Sie sind willkommen und werden empfohlen, Ihre Anwendungen mit Insider-Builds von HoloLens zu entwickeln.  Sehen Sie sich die [HoloLens-Entwicklerdokumentation](https://developer.microsoft.com/windows/mixed-reality/development) an, um zu beginnen. Die gleichen Anweisungen funktionieren mit Insider-Builds von HoloLens.  Sie können die gleichen Builds von Unity und Visual Studio verwenden, die Sie bereits für die HoloLens-Entwicklung verwenden.
+
+Sie sind willkommen und sollten versuchen, Ihre Anwendungen mit Insider-Builds von HoloLens zu entwickeln.  Sehen Sie sich die [HoloLens Developer-Dokumentation](https://developer.microsoft.com/windows/mixed-reality/development) an, um zu beginnen. Die gleichen Anweisungen funktionieren mit Insider-Builds von HoloLens.  Sie können die gleichen Builds von Unity und Visual Studio verwenden, die Sie bereits für HoloLens Entwicklung verwenden.
+
 ## <a name="stop-receiving-insider-builds"></a>Beenden des Empfangs von Insider-Builds
-Wenn Sie keine Insider-Builds von Windows Holographic mehr erhalten möchten, können Sie sich abmelden, wenn Ihre HoloLens einen Produktionsbuild ausführt, oder Sie können Ihr Gerät mit dem Advanced Recovery Companion wiederherstellen, um Ihr Gerät in einer Nicht-Insider-Version von Windows Holographic [wiederherzustellen.](hololens-recovery.md)
+
+Wenn Sie keine Insider-Builds von Windows Holographic mehr erhalten möchten, können Sie sich abmelden, wenn Ihr HoloLens einen Produktionsbuild ausführt, oder Sie können Ihr Gerät mit dem Advanced Recovery Companion wiederherstellen, um Ihr Gerät in einer Nicht-Insider-Version von Windows Holographic [wiederherzustellen.](hololens-recovery.md)
+
 > [!CAUTION]
 > Es gibt ein bekanntes Problem, bei dem Benutzer, die die Registrierung bei Insider Preview-Builds nach der manuellen Neuinstallation eines neuen Vorschaubuilds aufheben, einen Bluescreen erhalten. Anschließend müssen sie ihr Gerät manuell wiederherstellen. Ausführliche Informationen dazu, ob Sie betroffen sind oder nicht, finden Sie in diesem [bekannten Problem.](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
-So überprüfen Sie, ob HoloLens einen Produktionsbuild ausführt:
-1. Wechseln Sie zu **Einstellungen > System > Informationen**, und suchen Sie die Buildnummer.
+
+So überprüfen Sie, ob ihr HoloLens einen Produktionsbuild ausführt:
+
+1. Wechseln Sie zu **Einstellungen > System > About**, und suchen Sie die Buildnummer.
+
 1. [Informationen zu den Buildnummern für die Produktion finden Sie in den Versionshinweisen.](hololens-release-notes.md)
+
 So deaktivieren Sie Insider-Builds:
-1. Wechseln Sie auf einer HoloLens, die einen Produktionsbuild ausführt, zu **Einstellungen > Update & Security > Windows-Insider Program**, und wählen Sie **Insider-Builds beenden** aus.
+
+1. Wechseln Sie auf einer HoloLens, die einen Produktionsbuild ausführt, zu **Einstellungen > Update & Security > Windows Insider Program,** und wählen Sie **Insider-Builds beenden** aus.
+
 1. Befolgen Sie die Anweisungen, um Ihr Gerät zu deaktivieren.
