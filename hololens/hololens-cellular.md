@@ -12,12 +12,12 @@ ms.date: 02/24/2021
 manager: evmill
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8318d011d6a593c1036b6bcf6f7973870b0dc294
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 6f7da0263e8637486f0151fd2b9da55da8feccc1
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397491"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635839"
 ---
 # <a name="connect-to-cellular-and-5g"></a>Herstellen einer Verbindung mit Mobilfunk und 5G
 
@@ -44,7 +44,7 @@ Eine USB-C-Tethering kann erweiterten Workloads, die dies benötigen, eine niedr
 
 Eine begrenzte Anzahl von Geräten, die sich als Ethernet-Adapter präsentieren, können mit Windows Holographic Version 2004 und höher verwendet werden.
 
-Geräte, die sich nicht als Ethernet-Adapter präsentieren, müssen den generischen [RNDIS](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) Treiber von Microsoft unterstützen. Allerdings ist nur eine begrenzte Anzahl dieser Geräte mit HoloLens 2 kompatibel. Bitte wenden Sie sich an den Hersteller Ihres Geräts, um Informationen zu erhalten, ob es den generischen Microsoft RNDIS-Treiber unterstützt.
+Geräte, die sich nicht als Ethernet-Adapter präsentieren, müssen den generischen [RNDIS](/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) Treiber von Microsoft unterstützen. Allerdings ist nur eine begrenzte Anzahl dieser Geräte mit HoloLens 2 kompatibel. Bitte wenden Sie sich an den Hersteller Ihres Geräts, um Informationen zu erhalten, ob es den generischen Microsoft RNDIS-Treiber unterstützt.
 
 Geräte, die nicht RNDIS-kompatibel sind oder die Installation eines Treibers oder einer Anwendung erfordern, werden nicht unterstützt.
 

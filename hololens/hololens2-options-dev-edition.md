@@ -2,7 +2,7 @@
 title: HoloLens 2 Development Edition
 description: Erfahren Sie mehr über HoloLens 2 – Development Edition und was zu tun ist, wenn Sie ein eigenes Gerät erhalten haben.
 keywords: HoloLens 2-Kaufoptionen, HoloLens-Optionen, Development Edition
-author: bogenera
+author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
 ms.date: 4/12/2021
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6ecb881f694ca919f9c37a9d6094a708eafcb414
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 613f0a24d1d0d0740ebc448b2c92238a76350958
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924467"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639674"
 ---
 # <a name="hololens-2-development-edition"></a>HoloLens 2 Development Edition
 
@@ -61,7 +61,7 @@ Weitere Informationen zum Einlösen [Ihrer Pixyz-Lizenz](https://www.pixyz-softw
 
 ### <a name="azure"></a>Azure
 Hier sind einige gängige [Azure-Produkte für Mixed Reality](https://azure.microsoft.com/topic/mixed-reality/), für die Sie möglicherweise Ihre Azure-Gutschrift einlösen möchten.
-So lösen Sie eine Azure-Gutschrift ein: Um Ihre Azure-Gutschrift von 500 USD einzulösen, lösen Sie Ihren Azure Pass-Angebotscode ein, und aktivieren Sie Ihr Abonnement. [Weitere Informationen.](hololens2-development-edition-faq.md#how-can-i-redeem-my-500-azure-credit)
+So lösen Sie eine Azure-Gutschrift ein: Um Ihre Azure-Gutschrift von 500 USD einzulösen, lösen Sie Ihren Azure Pass-Angebotscode ein, und aktivieren Sie Ihr Abonnement. [Weitere Informationen.](hololens2-development-edition-faq.yml#how-can-i-redeem-my--500-azure-credit-)
 
 - [Erfahren Sie, wie Azure Spatial Anchors Ihnen beim Erstellen von Apps helfen kann, die 3D-Inhalte kartieren, teilen und dauerhaft speichern.](https://azure.microsoft.com/services/spatial-anchors/)
 - [Erfahren Sie, wie Sie mit Azure Remote Rendering hochwertige, interaktive 3D-Inhalte rendern und in Echtzeit auf Ihre Geräte streamen können.](https://azure.microsoft.com/services/remote-rendering/)
@@ -72,19 +72,19 @@ Wählen Sie Ihre Engine aus, laden Sie Ihre Tools herunter, und entstauben Sie I
 
 |     Prüfpunkt                              |     Ergebnis                                                                                                                    |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-|     [Einstieg in das Entwerfen und die Prototyperstellung](https://docs.microsoft.com/windows/mixed-reality/design/design)         |     Beginnen Sie mit dem Entwerfen von Mixed Reality-Anwendungen über Kernkonzepte, Interaktionsmodelle und UX-Elemente hinweg.     |
-|     [Mit der Entwicklung für Mixed Reality beginnen](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity)    |     Wählen Sie Ihre Engine, laden Sie Ihre Tools herunter, fügen Sie Kernbausteine hinzu, und beginnen Sie noch heute mit der Entwicklung.                                  |
-|     [Erkunden von Azure Cloud Services](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     Entwickeln Sie mit Azure Remote Rendering und Azure Spatial Anchors bestechende immersive Erfahrungen.                                 |
+|     [Einstieg in das Entwerfen und die Prototyperstellung](/windows/mixed-reality/design/design)         |     Beginnen Sie mit dem Entwerfen von Mixed Reality-Anwendungen über Kernkonzepte, Interaktionsmodelle und UX-Elemente hinweg.     |
+|     [Mit der Entwicklung für Mixed Reality beginnen](/windows/mixed-reality/develop/development?tabs=unity)    |     Wählen Sie Ihre Engine, laden Sie Ihre Tools herunter, fügen Sie Kernbausteine hinzu, und beginnen Sie noch heute mit der Entwicklung.                                  |
+|     [Erkunden von Azure Cloud Services](/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     Entwickeln Sie mit Azure Remote Rendering und Azure Spatial Anchors bestechende immersive Erfahrungen.                                 |
 
 ## <a name="developer-edition-additional-resources"></a>Zusätzliche Ressourcen der Development Edition
 
-- [HoloLens 2 Development Edition: häufig gestellte Fragen](hololens2-development-edition-faq.md)
-- [Installieren der Tools für die HoloLens-Entwicklung](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity)
-- [Informationen zum Entwickeln für HoloLens 2 mit Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2)
-- [Informationen zum Kombinieren von MRTK mit Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/mrtk-getting-started)
+- [HoloLens 2 Development Edition: häufig gestellte Fragen](hololens2-development-edition-faq.yml)
+- [Installieren der Tools für die HoloLens-Entwicklung](/windows/mixed-reality/develop/install-the-tools?tabs=unity)
+- [Informationen zum Entwickeln für HoloLens 2 mit Unity](/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2)
+- [Informationen zum Kombinieren von MRTK mit Unity](/windows/mixed-reality/develop/unity/mrtk-getting-started)
 - [Informationen zum Bereitstellen Ihrer entwickelten Apps](app-deploy-overview.md)
-- [Erkunden aller Möglichkeiten für Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/)
-- [Informationen zum Entwickeln für HoloLens 2 mit Unreal](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
+- [Erkunden aller Möglichkeiten für Mixed Reality](/windows/mixed-reality/)
+- [Informationen zum Entwickeln für HoloLens 2 mit Unreal](/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
 - [Kommunizieren mit anderen Entwicklern über den HoloDevelopers-Kanal auf Slack](https://holodevelopersslack.azurewebsites.net/)
 
 ## <a name="next-steps"></a>Nächste Schritte

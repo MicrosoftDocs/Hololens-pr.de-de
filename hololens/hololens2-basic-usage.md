@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8acf5659739d58d24add3f299daeacab7132a086
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: d2804742fdcf9d6562fce0c693552d4a9241398f
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924586"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635210"
 ---
 # <a name="getting-around-hololens-2"></a>Immer auf dem richtigen Weg in HoloLens 2
 
@@ -111,7 +111,7 @@ Um das Startmenü zu **schließen**, führen Sie die Startgeste aus, wenn das St
 > Voraussetzungen, damit die einhändige Startgeste funktioniert:
 >
 > 1. Sie müssen auf das Update vom November 2019 (Build 18363.1039) oder höher aktualisieren.
-> 1. Ihre Augen müssen auf dem Gerät kalibriert sein, damit die Blickverfolgung ordnungsgemäß funktioniert. Wenn Sie beim Betrachten des Startsymbols keine umlaufenden Punkte sehen, sind Ihre Augen nicht für das Gerät [kalibriert](https://docs.microsoft.com/hololens/hololens-calibration#calibrating-your-hololens-2).
+> 1. Ihre Augen müssen auf dem Gerät kalibriert sein, damit die Blickverfolgung ordnungsgemäß funktioniert. Wenn Sie beim Betrachten des Startsymbols keine umlaufenden Punkte sehen, sind Ihre Augen nicht für das Gerät [kalibriert](/hololens/hololens-calibration#calibrating-your-hololens-2).
 
 Sie können die Startgeste auch mit nur einer Hand ausführen. Halten Sie dazu Ihre Hand mit der Handfläche zu sich gerichtet, und blicken Sie auf das **Startsymbol** auf der Innenseite Ihres Handgelenks. **Während Sie das Symbol im Auge behalten**, führen Sie Daumen und Zeigefinger zusammen.
 

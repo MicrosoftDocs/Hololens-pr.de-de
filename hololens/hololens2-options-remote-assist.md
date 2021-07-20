@@ -2,7 +2,7 @@
 title: HoloLens 2 Remote Assist
 description: Erfahren Sie mehr über HoloLens 2 Remote Assist und was zu tun ist, nachdem Sie Ihre eigene bekommen haben.
 keywords: HoloLens 2 Kaufoptionen, HoloLens Optionen, Remote Assist
-author: bogenera
+author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
 ms.date: 4/12/2021
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b10bdb55a5d9cb3c059cb85c29a0ed4f4cf7c7d7
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 540bdcaefafcc50cc38d5e9a67dea3b9cb596f05
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110398830"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639470"
 ---
 # <a name="hololens-2-with-remote-assist"></a>HoloLens 2 mit Remote Assist
 
@@ -37,15 +37,15 @@ Wir haben ein spezielles Handbuch erstellt, das Ihnen bei dem Einsatz von HoloLe
 
 | Prüfpunkt  | Ergebnis                                |
 |-------------|----------------------------------------|
-| [Erste Schritte](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/overview-hololens) | Erste Schritte mit Remote Assist.        |
-| [Lizenz](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/deploy-remote-assist#add-and-assign-licenses)     | Einlösen der Lizenz für Remote Assist.      |
-| [Herstellen einer Verbindung](https://docs.microsoft.com/hololens/hololens-network)     | Verbinden Sie Ihr(e) Gerät(e) mit dem WLAN.       |
-| [Registrieren](https://docs.microsoft.com/hololens/hololens-enroll-mdm)      | Registrieren Sie Geräte bei Ihrem Unternehmen. |
+| [Erste Schritte](/dynamics365/mixed-reality/remote-assist/overview-hololens) | Erste Schritte mit Remote Assist.        |
+| [Lizenz](/dynamics365/mixed-reality/remote-assist/deploy-remote-assist#add-and-assign-licenses)     | Einlösen der Lizenz für Remote Assist.      |
+| [Herstellen einer Verbindung](/hololens/hololens-network)     | Verbinden Sie Ihr(e) Gerät(e) mit dem WLAN.       |
+| [Registrieren](/hololens/hololens-enroll-mdm)      | Registrieren Sie Geräte bei Ihrem Unternehmen. |
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-1. Beginnen Sie sofort, mit Mixed Reality zu interagieren und der Navigation in Windows 10 auf Ihrer HoloLens – in der **Tipps**-App finden Sie praktische Tutorials für Handinteraktionen. Verwenden Sie die Startgeste, um zum Start zu gelangen oder sagen Sie „Zum Startmenü gehen“, und wählen Sie Tipps aus.
-1. Klicken Sie unten, um mehr über den Umgang mit HoloLens 2 zu lesen.
+1. Beginnen Sie sofort, mit Mixed Reality zu interagieren und der Navigation in Windows 10 auf Ihrer HoloLens – in der App **Tipps** finden Sie praktische Tutorials für Handinteraktionen. Verwenden Sie die Startgeste, um zum Startmenü zu wechseln. Oder sagen Sie „Zum Startmenü”, und wählen Sie „Tipps“ aus.
+1. Klicken Sie unten, um mehr über den Umgang mit HoloLens 2 zu erfahren.
 
 > [!div class="nextstepaction"]
 > [Erste Schritte mit HoloLens 2](hololens2-basic-usage.md)
