@@ -3,27 +3,27 @@ title: Weitere Informationen zu Mixed Reality Supportoptionen
 ms.author: rajhawar
 author: raunakjhawar
 ms.reviewer: asergaz
-description: Mixed Reality support options for small to large enterprise customers
+description: Mixed Reality Supportoptionen für kleine bis große Unternehmenskunden
 ms.prod: hololens
 ms.topic: article
 ms.date: 3/19/2021
-ms.openlocfilehash: ee75944575cacb75b213fcd9d732e5bd91265061
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 0ddc4eb15036a4f5aa2ecf86893d5f671584f9bf
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636213"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659096"
 ---
-# <a name="what-are-the-mixed-reality-support-and-help-options"></a>Welche Support- und Mixed Reality stehen zur Verfügung?
+# <a name="what-are-the-mixed-reality-support-and-help-options"></a>Welche support- und hilfeoptionen gibt es Mixed Reality?
 
-Möchten Sie die Blockierung bei der Entwicklung Ihrer Anwendung entsperren, oder haben Sie ein Problem mit Ihrem HoloLens 2 oder Windows Mixed Reality Headset? Vielleicht verwenden Sie einen Azure Mixed Reality-Dienst und haben eine technische Frage. 
+Möchten Sie die Blockierung für die Entwicklung Ihrer Anwendung aufheben, oder haben Sie ein Problem mit Ihrem HoloLens 2 oder Windows Mixed Reality Headset? Vielleicht verwenden Sie einen Azure Mixed Reality-Dienst und haben eine technische Frage. 
 
-Hier finden Sie die Supportoptionen für die folgenden Optionen, um sicherzustellen, dass Sie mit dem richtigen Ort verbunden werden. Wir behandeln auch Communityressourcen und Self-Service-Inhaltsoptionen, die Sie erkunden können:
+Hier finden Sie die Supportoptionen für die folgenden Optionen, um sicherzustellen, dass Sie mit dem richtigen Ort verbunden werden. Außerdem werden Communityressourcen und Self-Service-Inhaltsoptionen behandelt, die Sie untersuchen können:
 
 - [Community Hilfeoptionen für Entwickler](#community-help-options)
 - [Hilfe bei der Verwendung und Konfiguration Ihres HoloLens 2 Geräts](#help-with-technical-support-for-your-hololens-2)
-- [Hilfe beim Kauf eines HoloLens 2 Geräts](#help-with-commercial-store-support-for-your-hololens-2)
-- [Hilfe beim Programmieren eines HoloLens 2 Geräts oder eines immersiven Headsets](#help-with-technical-support-for-your-hololens-2) 
+- [Hilfe beim Erwerb eines HoloLens 2 Geräts](#help-with-commercial-store-support-for-your-hololens-2)
+- [Hilfe beim Programmieren eines HoloLens 2-Geräts oder eines immersiven Headsets](#help-with-technical-support-for-your-hololens-2) 
 - [Hilfe zu Azure Mixed Reality-Diensten](#azure-mixed-reality-services-support)
 
 ## <a name="community-help-options"></a>Community Hilfeoptionen
@@ -32,7 +32,7 @@ Hier finden Sie die Supportoptionen für die folgenden Optionen, um sicherzustel
 <div class='icon is-large'>
     <img alt='Azure Q&A' src='/media/logos/logo_azure.svg'>
 </div><br/>
-Um schnelle und zuverlässige Antworten auf Ihre Azure Mixed Reality- und HoloLens 2-Programmierfragen von Microsoft Engineers, Most Valuable Professionals (MVPs) oder unserer Experten-Community zu erhalten, wenden Sie sich mit uns an Microsoft Q&A, microsofts bevorzugtes Ziel für Communitysupport.
+Um schnelle und zuverlässige Antworten auf Ihre Azure Mixed Reality und HoloLens 2 Programmierfragen von Microsoft Engineers, Most Valuable Professionals (MVPs) oder unserer Expertencommunity zu erhalten, wenden Sie sich an Microsoft Q&A, das bevorzugte Ziel von Microsoft für Communitysupport.
 
 Wenn Sie über die Suche keine Lösung für Ihr Problem finden können, übermitteln Sie eine neue Frage an Microsoft Q&A (Fragen und Antworten). Verwenden Sie für Ihre Frage eins der folgenden Tags:
 
@@ -69,23 +69,24 @@ Verwenden Sie beim Übermitteln einer neuen Frage an Stack Overflow bei der Erst
 
 ### <a name="help-with-technical-support-for-your-hololens-2"></a>Hilfe beim technischen Support für Ihre HoloLens 2
 
-- Erhalten HoloLens 2 Programmierhilfe von der Community unter [Microsoft Q&A](#post-a-question-on-microsoft-qa)
+- Erhalten Sie HoloLens 2 Programmierhilfe von der Community auf der [Microsoft Q&A.](#post-a-question-on-microsoft-qa)
 - Erfahren Sie mehr über Hilfe und Support und Dienstzustand Ihrer [Azure Mixed Reality-Dienste.](#azure-mixed-reality-services-support)
-- Erstellen einer Supportanfrage für die Programmierung HoloLens 2 immersiven Headsets bei [der MR-Unterstützung](https://aka.ms/mrsupport) 
-- Erstellen Sie eine Supportanfrage für HoloLens 2 Geräteprobleme, z. B. hardware- & Konfiguration HoloLens 2 [Gerätesupport.](https://aka.ms/hlsupport) 
+- Erstellen einer Supportanfrage für HoloLens 2- oder Immersive Headset-Programmierung beim [MR-Support](https://aka.ms/mrsupport) 
+- Erstellen Sie eine Supportanfrage für HoloLens 2 Geräteprobleme, einschließlich Hardware, Nutzung & Konfiguration bei [HoloLens 2 Gerätesupport.](https://aka.ms/hlsupport) 
 
 
-### <a name="help-with-commercial-store-support-for-your-hololens-2"></a>Hilfe beim Support Store kommerziellen HoloLens 2
+### <a name="help-with-commercial-store-support-for-your-hololens-2"></a>Hilfe zum Kommerziellen Store-Support für Ihre HoloLens 2
 
-- [Kaufoptionen HoloLens 2](https://www.microsoft.com/hololens/buy) diese Option verwenden, um weitere Informationen zu HoloLens 2 und Optionen zu erhalten.
-- Sehen Sie sich die unten aufgeführte Liste der Geschäftstelefonnummern an, um mit unseren Support-Kollegen für kommerzielle Store zu sprechen, wenn Sie Hilfe per Telefonsupport benötigen.
+- [Erwerben Sie HoloLens 2](https://www.microsoft.com/hololens/buy) verwenden Sie diese Option, um mehr über HoloLens 2 Preise und Optionen zu erfahren.
+- Sehen Sie sich die folgende Liste der Business Desk-Nummern an, um mit unseren Kollegen für den Kommerziellen Store-Support zu sprechen, wenn Sie Hilfe per Telefonsupport benötigen.
+- Verweisen Sie für Käufe außerhalb der Microsoft Store auf diese [Liste der autorisierten HoloLens 2 Handelspartner](hololens2-purchase.md) und Länder, in denen HoloLens 2 verfügbar ist.
 
-### <a name="commercial-store-support-numbers"></a>Supportnummern Store kommerziellen Unternehmen
+### <a name="commercial-store-support-numbers"></a>Supportnummern für kommerzielle Store
 >[!Note]
->Verwenden Sie eine der unten angegebenen Geschäftlichen Telefonnummern für den kommerziellen Support, um Ihren Kauf abschließen zu können. 
+>Verwenden Sie eine der geschäftlichen Telefonnummern des kommerziellen Supports weiter unten, um Ihren Kauf abzuschließen. 
 
 >[!Note]
->Wenn Sie support von einem Markt aus anrufen, der unten nicht aufgeführt ist, können Sie Ihren Anruf an unsere Us Business Desk-Nummer richten.
+>Wenn Sie Support von einem Markt fordern, der unten nicht aufgeführt ist, wenden Sie sich an unsere US-Business Desk-Nummer.
 
 | Märkte | Business Desk-Nummer | Geschäftszeiten |
 |-----------------|-------------------|-----------------------|
@@ -136,9 +137,9 @@ So öffnen Sie ein Ticket für den technischen Support im Azure-Portal für Azur
 
     ![Felder im Supportticket im Azure-Portal](../hololens/images/azure-help-support3.png)
 
-    1. Klicken Sie unten auf der Seite auf **Weiter: Lösungen,** um weitere Details zum Problem hinzuzufügen.
+    1. Klicken Sie unten auf der Seite auf **Weiter: Lösungen,** um weitere Details hinzuzufügen, um mehr über das Problem zu erfahren.
 
-    2. Füllen Sie das Formular so präzise und detailliert wie möglich aus, und erreichen Sie sie nach Wunsch.
+    2. Füllen Sie das Formular so präzise und detailliert wie möglich sowie Ihre bevorzugte Methode aus, um Sie zu erreichen.
 
     3. Überprüfen Sie alle Informationen, die Sie in den vorherigen Abschnitten ausgefüllt haben, und übermitteln Sie jetzt die Supportanfrage.
 

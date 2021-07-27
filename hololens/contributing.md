@@ -1,17 +1,17 @@
 ---
 title: Anleitungen für Mitwirkende
-description: Erfahren Sie, wie Sie mithilfe von GitHub-Flavored Markdown zur HoloLens-Dokumentation auf der docs.microsoft.com-Plattform beitragen.
+description: Erfahren Sie, wie Sie mit GitHub-Flavored Markdown zur HoloLens-Dokumentation auf der docs.microsoft.com-Plattform beitragen.
 author: hferrone
 ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
-ms.openlocfilehash: 73b6e8bcd634cb4d45171bda0a85f2e991a977c9
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: b1efaa77a4b96ed4b55e84147448cbfbc706d677
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635669"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659113"
 ---
 # <a name="contributing-to-the-hololens-documentation"></a>Mitwirken an der HoloLens-Dokumentation
 
@@ -45,7 +45,7 @@ Beim Einrichten Ihres GitHub-Kontos empfehlen wir auch die folgenden Sicherheits
    - Es wird empfohlen, ein Profilbild hochzuladen, da eine Miniaturansicht auf Dokumentationsseiten angezeigt wird, zu der sie beitragen.
 - Wenn Sie die Befehlszeile verwenden möchten, sollten Sie [Git Anmeldeinformationsverwaltung für Windows](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest)einrichten. Auf diese Weise müssen Sie nicht jedes Mal Ihr Kennwort eingeben, wenn Sie einen Beitrag leisten.
 
-Das Veröffentlichungssystem ist an GitHub gebunden, daher sind diese Schritte wichtig. Sie werden entweder als Autor oder Mitwirkender für jeden Artikel aufgeführt, indem Sie Ihren GitHub-Alias verwenden.
+Das Veröffentlichungssystem ist an GitHub gebunden, daher sind diese Schritte wichtig. Sie werden entweder als Autor oder Mitwirkender für jeden Artikel mit Ihrem GitHub-Alias aufgeführt.
 
 ## <a name="editing-an-existing-article"></a>Bearbeiten eines vorhandenen Artikels
 
@@ -53,11 +53,16 @@ Verwenden Sie den folgenden Workflow, um einen *vorhandenen Artikel* über GitHu
 
 1. Navigieren Sie zu dem Artikel, den Sie bearbeiten möchten, im Ordner "mixed-reality-docs".
 
-2. Wählen Sie oben rechts die Schaltfläche Bearbeiten (Stiftsymbol) aus, die automatisch eine verwerfbare Verzweigung aus der Verzweigung "master" verzweigt.
+2. Wählen Sie oben rechts die Schaltfläche Bearbeiten (Stiftsymbol) aus.
 
    ![Bearbeiten sie einen Artikel.](images/editpage.png)
+
+   Dadurch wird automatisch eine verwerfbare Verzweigung aus der Standardverzweigung _master_ gezweigt.
+
+   > [!NOTE]
+   > Dieser Artikel enthält Verweise auf _master_, einen Begriff, den Microsoft nicht mehr verwendet. Sobald der Begriff aus der Software entfernt wurde, wird er auch aus diesem Artikel entfernt.
    
-3. Bearbeiten Sie den Inhalt des Artikels gemäß den [Markdowngrundstücken.](#markdown-basics)
+3. Bearbeiten Sie den Inhalt des Artikels gemäß den [Markdown-Grundlagen.](#markdown-basics)
 
 4. Aktualisieren Sie die Metadaten am Anfang jedes Artikels:
 
@@ -65,12 +70,12 @@ Verwenden Sie den folgenden Workflow, um einen *vorhandenen Artikel* über GitHu
    * **description:** Schreiben Sie eine kurze Beschreibung der Inhalte des Artikels, die SEO und Discovery verstärken.
    * **author:** Wenn Sie der primäre Besitzer der Seite sind, fügen Sie hier Ihren GitHub Alias hinzu.
    * **ms.author:** Wenn Sie der primäre Besitzer der Seite sind, fügen Sie hier Ihren Microsoft-Alias hinzu (Sie benötigen nicht @microsoft.com , nur den Alias).
-   * **ms.date:** Aktualisieren Sie das Datum, wenn Sie der Seite Hauptinhalte hinzufügen, aber nicht für Korrekturen wie Erläuterungen, Formatierung, Grammatik oder Rechtschreibung.
-   * **keywords:** Schlüsselwörter helfen bei SEO (Suchmaschinenoptimierung). Fügen Sie Schlüsselwörter hinzu, die durch ein Komma und ein Leerzeichen getrennt sind, die für Ihren Artikel spezifisch sind, aber keine Interpunktion nach dem letzten Schlüsselwort in Der Liste. Sie müssen keine globalen Schlüsselwörter hinzufügen, die für alle Artikel gelten, da diese an anderer Stelle verwaltet werden. 
+   * **ms.date:** Aktualisieren Sie das Datum, wenn Sie der Seite Hauptinhalte hinzufügen, jedoch nicht für Korrekturen wie Erläuterungen, Formatierung, Grammatik oder Rechtschreibung.
+   * **keywords:** Schlüsselwörter helfen bei der SUCHMASCHINENOPTIMIERUNG (Suchmaschinenoptimierung). Fügen Sie Schlüsselwörter hinzu, die durch ein Komma und ein Leerzeichen getrennt sind, die für Ihren Artikel spezifisch sind, aber keine Interpunktion nach dem letzten Schlüsselwort in Der Liste. Sie müssen keine globalen Schlüsselwörter hinzufügen, die für alle Artikel gelten, da diese an anderer Stelle verwaltet werden. 
    
-5. Wenn Sie ihre Artikelbearbeitungen abgeschlossen haben, scrollen Sie nach unten, und wählen **Sie Dateiänderung vorschlagen** aus.
+5. Scrollen Sie nach Abschluss der Bearbeitung Ihres Artikels nach unten, und wählen Sie **Dateiänderung vorschlagen** aus.
 
-6. Wählen Sie auf der nächsten Seite **Pull Request erstellen** aus, um ihren automatisch erstellten Branch in "master" zusammenzuführen.
+6. Wählen Sie auf der nächsten Seite **Pull Request erstellen** aus, um ihren automatisch erstellten Branch mit dem Standardverzweigung _master_ zusammenzuführen.
 
 7. Wiederholen Sie die obigen Schritte für den nächsten Artikel, den Sie bearbeiten möchten.
 
@@ -94,7 +99,7 @@ Um eine Umleitung zu .openpublishing.redirection.jshinzuzufügen, fügen Sie dem
 
 - ist `redirect_url` die relative öffentliche URL aus dem alten Artikel zum neuen Artikel. Stellen Sie sicher, dass diese URL **nicht** `mixed-reality-docs` oder `.md` enthält, da sie auf die öffentliche URL und nicht auf den Repositorypfad verweist. Das Verknüpfen mit einem Abschnitt innerhalb des neuen Artikels mit `#section` ist zulässig. Sie können hier bei Bedarf auch einen absoluten Pfad zu einer anderen Website verwenden.
 
-- `redirect_document_id` gibt an, ob Sie die Dokument-ID aus der vorherigen Datei beibehalten möchten. Der Standardwert ist `false`. Verwenden `true` Sie , wenn Sie den `ms.documentid` Attributwert aus dem umgeleiteten Artikel beibehalten möchten. Wenn Sie die Dokument-ID beibehalten, werden Daten wie Seitenaufrufe und Rangfolgen an den Zielartikel übertragen. Dies geschieht, wenn die Umleitung in erster Linie eine Umbenennung und kein Zeiger auf einen anderen Artikel ist, der nur einen Teil desselben Inhalts behandelt.
+- `redirect_document_id` gibt an, ob Sie die Dokument-ID aus der vorherigen Datei beibehalten möchten. Der Standardwert lautet `false`. Verwenden `true` Sie , wenn Sie den `ms.documentid` Attributwert aus dem umgeleiteten Artikel beibehalten möchten. Wenn Sie die Dokument-ID beibehalten, werden Daten wie Seitenaufrufe und Rangfolgen an den Zielartikel übertragen. Legen Sie das so fest, wenn die Umleitung in erster Linie eine Umbenennung und kein Zeiger auf einen anderen Artikel ist, der nur einen Teil desselben Inhalts abdeckt.
 
 Wenn Sie eine Umleitung hinzufügen, löschen Sie auch die alte Datei.
 
@@ -102,9 +107,12 @@ Wenn Sie eine Umleitung hinzufügen, löschen Sie auch die alte Datei.
 
 Verwenden Sie den folgenden Workflow, um neue Artikel im Dokumentations-Repository über GitHub in einem Webbrowser zu *erstellen:*
 
-1. Erstellen Sie eine Verzweigung aus dem Branch MicrosoftDocs/mixed-reality "master" (mithilfe der **Verzweigungsschaltfläche** oben rechts).
+1. Erstellen Sie mithilfe der Verzweigungsschaltfläche rechts oben eine  Verzweigung des Standardzweigs _master_ von MicrosoftDocs/Mixed Reality.
 
-   ![Fork der Masterverzweigung.](images/forkbranch.png)
+   ![Verzweigen Sie den Standardverzweigung, der derzeit den Namen "master" hat.](images/forkbranch.png)
+
+   > [!NOTE]
+   > Dieser Artikel enthält Verweise auf _master_, einen Begriff, den Microsoft nicht mehr verwendet. Sobald der Begriff aus der Software entfernt wurde, wird er auch aus diesem Artikel entfernt.
    
 2. Wählen Sie im Ordner "mixed-reality-docs" oben rechts die Option **Neue Datei erstellen** aus.
 
@@ -129,15 +137,15 @@ Verwenden Sie den folgenden Workflow, um neue Artikel im Dokumentations-Reposito
    ---
    ```
 
-5. Füllen Sie die relevanten Metadatenfelder gemäß den Anweisungen im [Obigen Abschnitt](#editing-an-existing-article)aus.
+5. Füllen Sie die relevanten Metadatenfelder aus, wie weiter oben in [Bearbeiten eines vorhandenen Artikels](#editing-an-existing-article)beschrieben.
 
-6. Schreiben von Artikelinhalten mit [markdown-Grundlagen.](#markdown-basics)
+6. Schreiben von Artikelinhalten mit [markdown basics](#markdown-basics).
 
 7. Fügen Sie am Ende des Artikels einen `## See also` Abschnitt mit Links zu anderen relevanten Artikeln hinzu.
 
-8. Wählen Sie abschließend **Commit new file (Neue Datei committen)** aus.
+8. Wenn Sie fertig sind, wählen Sie **Commit new file (Neue Datei committen)** aus.
 
-9. Wählen Sie **Neuer Pull Request** aus, und führen Sie den Branch "master" Ihres Forks in MicrosoftDocs/mixed-reality "master" zusammen (stellen Sie sicher, dass der Pfeil auf die richtige Weise zeigt).
+9. Wählen Sie **Neuer Pull Request** aus, und führen Sie den _Master-Branch_ Ihres Forks in MicrosoftDocs/Mixed _Reality-Master_ zusammen (stellen Sie sicher, dass der Pfeil auf das richtige Ziel zeigt).
 
    ![Erstellen eines Pull Requests aus Ihrer Verzweigung in MicrosoftDocs/Mixed-Reality](images/pr-to-master.png)
 
@@ -150,81 +158,81 @@ In den folgenden Ressourcen erfahren Sie, wie Sie die Dokumentation mithilfe der
 
 ### <a name="adding-tables"></a>Hinzufügen von Tabellen
 
-Aufgrund der Art und Weise, wie Tabellen formatiert docs.microsoft.com, haben sie keine Rahmen oder benutzerdefinierten Stile, auch wenn Sie INLINE-CSS ausprobieren. Es scheint für einen kurzen Zeitraum zu funktionieren, aber schließlich entfernt die Plattform den Stil aus der Tabelle. Planen Sie also voraus, und halten Sie Ihre Tabellen einfach. [Hier ist eine Website, die Markdowntabellen einfach macht.](https://www.tablesgenerator.com/markdown_tables)
+Aufgrund der Art und Weise, wie Tabellen formatiert docs.microsoft.com, haben sie keine Rahmen oder benutzerdefinierten Stile, auch wenn Sie INLINE-CSS ausprobieren. Es scheint für einen kurzen Zeitraum zu funktionieren, aber schließlich entfernt die Plattform den Stil aus der Tabelle. Planen Sie also voraus, und halten Sie Ihre Tabellen einfach. Hier ist eine Website, die Markdowntabellen einfach macht: [Tabellengenerator]]( https://www.tablesgenerator.com/markdown_tables) .
 
 Die [Docs Markdown-Erweiterung für Visual Studio Code](/teamblog/docs-extension) vereinfacht auch die Tabellengenerierung, wenn Sie Visual Studio Code verwenden [(siehe unten),](#using-visual-studio-code) um die Dokumentation zu bearbeiten.
 
 ### <a name="adding-images"></a>Hinzufügen von Bildern
 
-Sie müssen Ihre Bilder in den Ordner "mixed-reality-docs/images" im Repository hochladen und dann im Artikel entsprechend darauf verweisen. Bilder werden automatisch in voller Größe angezeigt, was bedeutet, dass große Bilder die gesamte Breite des Artikels ausfüllen. Es wird empfohlen, die Größe Ihrer Bilder vorab zu dimensionieren, bevor Sie sie hochladen. Die empfohlene Breite liegt zwischen 600 und 700 Pixel. Sie sollten die Größe jedoch nach oben oder unten anpassen, wenn es sich um einen dichten Screenshot bzw. einen Bruchteil eines Screenshots handelt.
+Sie müssen Ihre Bilder in den Ordner "mixed-reality-docs/images" im Repository hochladen und dann im Artikel entsprechend darauf verweisen. Bilder werden automatisch in voller Größe gezeigt, was bedeutet, dass große Bilder die gesamte Breite des Artikels ausfüllen. Es wird empfohlen, ihre Bilder vorab zu sizingen, bevor Sie sie hochladen. Die empfohlene Breite liegt zwischen 600 und 700 Pixeln, aber Sie sollten die Größe nach oben oder unten ändern, wenn es sich um einen dichten Screenshot oder einen Bruchteil eines Screenshots handelt.
 
 >[!IMPORTANT]
->Sie können Bilder nur vor dem Zusammenführen in Ihr gezweigtes Repository hochladen. Wenn Sie also einem Artikel Bilder hinzufügen möchten, müssen Sie [Visual Studio Code verwenden,](#using-visual-studio-code) um die Bilder zuerst dem Ordner "images" Ihrer Verzweigung hinzuzufügen, oder stellen Sie sicher, dass Sie folgende Schritte in einem Webbrowser ausgeführt haben:
+>Sie können Bilder nur vor dem Zusammenführen in Ihr ge forktete Repository hochladen. Wenn Sie also einem Artikel Bilder hinzufügen möchten, müssen Sie [Visual Studio Code](#using-visual-studio-code) verwenden, um die Bilder zuerst dem Ordner "images" Ihres Forks hinzuzufügen, oder stellen Sie sicher, dass Sie die folgenden Schritte in einem Webbrowser durchgeführt haben:
 >
 >1. Forked the MicrosoftDocs/mixed-reality repo.
->2. Der Artikel in Ihrer Verzweigung wurde bearbeitet.
->3. Laden Sie die Bilder, auf die Sie in Ihrem Artikel verweisen, in den Ordner "mixed-reality-docs/images" in Ihrer Verzweigung hoch.
->4. Es wurde ein **Pull Request** erstellt, um Ihre Verzweigung mit dem MicrosoftDocs/Mixed Reality-Branch "master" zusammenzuführen.
+>2. Der Artikel wurde in Ihrem Fork bearbeitet.
+>3. Sie haben die Bilder, auf die Sie in Ihrem Artikel verweisen, in den Ordner "mixed-reality-docs/images" in Ihrem Fork hochgeladen.
+>4. Es wurde ein **Pull Request erstellt,** um Ihren Fork mit dem Master-Branch MicrosoftDocs/Mixed Reality _zusammen_ zu führen.
 >
->Um zu erfahren, wie Sie Ihr eigenes gezweigtes Repository einrichten, befolgen Sie die Anweisungen zum [Erstellen eines neuen Artikels](#creating-a-new-article).
+>Um zu erfahren, wie Sie Ihr eigenes ge forkiertes Repository einrichten, befolgen Sie die Anweisungen zum [Erstellen eines neuen Artikels.](#creating-a-new-article)
 
 ## <a name="previewing-your-work"></a>Anzeigen einer Vorschau Ihrer Arbeit
 
-Beim Bearbeiten in GitHub über einen Webbrowser können Sie die Registerkarte **Vorschau** oben auf der Seite auswählen, um eine Vorschau Ihrer Arbeit anzuzeigen, bevor Sie einen Commit ausführen. 
+Beim Bearbeiten in GitHub über einen Webbrowser können  Sie oben auf der Seite die Registerkarte Vorschau auswählen, um eine Vorschau Ihrer Arbeit anzuzeigen, bevor Sie einen Commit committen. 
 
 >[!NOTE]
 >Die Vorschau Ihrer Änderungen auf review.docs.microsoft.com ist nur für Microsoft-Mitarbeiter verfügbar.
 
-Microsoft-Mitarbeiter: Nachdem Ihre Beiträge mit dem Branch "master" zusammengeführt wurden, können Sie den Inhalt überprüfen, bevor er unter </hololens?branch=master> veröffentlicht wird. Suchen Sie ihren Artikel mithilfe des Inhaltsverzeichnisses in der linken Spalte.
+Microsoft-Mitarbeiter: Wenn Ihre Beiträge in der Standardverzweigung master zusammengeführt _wurden,_ können Sie den Inhalt überprüfen, bevor er unter </hololens?branch=master>. Suchen Sie Ihren Artikel mithilfe des Inhaltsverzeichnis in der linken Spalte.
 
 ## <a name="editing-in-the-browser-vs-editing-with-a-desktop-client"></a>Bearbeiten im Browser im Vergleich zur Bearbeitung mit einem Desktopclient
 
-Die Bearbeitung im Browser ist die einfachste Möglichkeit, schnelle Änderungen vorzunehmen. Es gibt jedoch einige Nachteile:
+Die Bearbeitung im Browser ist die einfachste Möglichkeit, um schnelle Änderungen vorzunehmen, es gibt jedoch einige Nachteile:
 
 - Sie erhalten keine Rechtschreibprüfung.
 - Sie erhalten keine intelligente Verknüpfung mit anderen Artikeln (Sie müssen den Dateinamen des Artikels manuell eingeben).
-- Es kann sehr mühsam sein, Bilder hochzuladen und darauf zu verweisen.
+- Es kann mühsam sein, Bilder hochzuladen und darauf zu verweisen.
 
-Wenn Sie diese Probleme nicht behandeln möchten, verwenden Sie einen Desktopclient wie [Visual Studio Code](https://code.visualstudio.com/) mit einigen [hilfreichen Erweiterungen,](#useful-extensions) wenn Sie mitwirken.
+Wenn Sie diese Probleme nicht behandeln möchten, verwenden Sie einen Desktopclient [](#useful-extensions) wie [Visual Studio Code](https://code.visualstudio.com/) mit einigen hilfreichen Erweiterungen, wenn Sie mitwirken.
 
 ## <a name="using-visual-studio-code"></a>Verwendung von Visual Studio Code
 
-Aus den [oben](#editing-in-the-browser-vs-editing-with-a-desktop-client)aufgeführten Gründen bevorzugen Sie möglicherweise die Verwendung eines Desktopclients zum Bearbeiten der Dokumentation anstelle eines Webbrowsers. Wir empfehlen die Verwendung von [Visual Studio Code](https://code.visualstudio.com/).
+Aus den oben [genannten Gründen](#editing-in-the-browser-vs-editing-with-a-desktop-client)können Sie die Verwendung eines Desktopclients zum Bearbeiten der Dokumentation anstelle eines Webbrowsers bevorzugen. Wir empfehlen die Verwendung von [Visual Studio Code](https://code.visualstudio.com/).
 
-### <a name="setup"></a>Einrichten
+### <a name="setup"></a>Setup
 
 Führen Sie die folgenden Schritte aus, um Visual Studio Code für die Arbeit mit diesem Repository zu konfigurieren:
 
 1. In einem Webbrowser:
-    1. Installieren Sie [Git für Ihren PC.](https://git-scm.com/downloads)
+    1. Installieren [Sie Git für Ihren PC.](https://git-scm.com/downloads)
     2. Installieren Sie [Visual Studio Code](https://code.visualstudio.com/).
-    3. [Forken Sie MicrosoftDocs/Mixed Reality,](#creating-a-new-article) falls noch nicht erfolgt.
-    4. Wählen Sie in Ihrer Verzweigung **Klonen oder herunterladen** aus, und kopieren Sie die URL.
-2. Erstellen Sie einen lokalen Klon Ihrer Verzweigung in Visual Studio Code:
-    1. Wählen **Sie** im Menü Ansicht die **Option Befehlspalette** aus.
+    3. [Forken Sie MicrosoftDocs/mixed-reality,](#creating-a-new-article) sofern noch nicht vorhanden.
+    4. Wählen Sie in Ihrem Fork **Klonen oder herunterladen aus,** und kopieren Sie die URL.
+2. Erstellen Sie einen lokalen Klon Ihres Forks in Visual Studio Code:
+    1. Wählen Sie **im Menü** Ansicht die Option **Befehlspalette aus.**
     2. Geben Sie "Git: Clone" ein.
     3. Fügen Sie die kopierte URL ein.
     4. Wählen Sie aus, wo der Klon auf Ihrem PC gespeichert werden soll.
-    5. Wählen Sie im Popupfenster **Repository öffnen** aus.
+    5. Wählen **Sie im Popupfenster** Open repo (Repository öffnen) aus.
 
 ### <a name="editing-documentation"></a>Bearbeiten der Dokumentation
 
-Verwenden Sie den folgenden Workflow, um änderungen an der Dokumentation mit Visual Studio Code vorzunehmen:
+Verwenden Sie den folgenden Workflow, um Änderungen an der Dokumentation mit Visual Studio Code:
 
 >[!NOTE]
->Alle Anleitungen zum [Bearbeiten](#editing-an-existing-article) und [Erstellen von](#creating-a-new-article) Artikeln sowie die Grundlagen der Bearbeitung [von Markdown](#markdown-basics)von oben gelten auch bei Verwendung von Visual Studio Code.
+>Alle Oben [genannten](#editing-an-existing-article) Anleitungen zum [Bearbeiten](#creating-a-new-article) und Erstellen von Artikeln sowie die Grundlagen der Bearbeitung von [Markdown](#markdown-basics)gelten auch für Visual Studio Code Benutzer.
 
 1. Stellen Sie sicher, dass Ihr geklonter Fork mit dem offiziellen Repository auf dem neuesten Stand ist.
 
-   1. Erstellen Sie in einem Webbrowser einen Pull Request, um aktuelle Änderungen anderer Mitwirkender in MicrosoftDocs/mixed-reality "master" mit Ihrer Verzweigung zu synchronisieren (stellen Sie sicher, dass der Pfeil den richtigen Weg zeigt).
+   1. Erstellen Sie in einem Webbrowser einen Pull Request, um aktuelle Änderungen anderer Mitwirkender im Standardzweig von MicrosoftDocs/mixed-reality, _master,_ mit Ihrer Verzweigung zu synchronisieren (stellen Sie sicher, dass der Pfeil auf das richtige Ziel zeigt).
       
-      ![Synchronisieren von Änderungen von MicrosoftDocs/Mixed Reality mit Ihrer Verzweigung](images/sync-repos.png)
+      ![Synchronisieren von Änderungen von MicrosoftDocs/Mixed Reality mit Ihrem Fork](images/sync-repos.png)
       
-   2. Wählen Sie in Visual Studio Code die Schaltfläche sync aus, um ihre neu aktualisierte Verzweigung mit dem lokalen Klon zu synchronisieren.
+   2. Wählen Visual Studio Code Synchronisierungsschaltfläche aus, um Den neu aktualisierten Fork mit dem lokalen Klon zu synchronisieren.
       
       ![Klicken Sie auf das Bild der Synchronisierungsschaltfläche.](images/sync-clone.png)
       
-2. Erstellen oder bearbeiten Sie Artikel in Ihrem geklonten Repository mithilfe Visual Studio Code.
+2. Erstellen oder bearbeiten Sie Artikel in Ihrem geklonten Repository mit Visual Studio Code.
 
    1. Bearbeiten Sie einen oder mehrere Artikel (fügen Sie bei Bedarf Bilder zum Ordner "images" hinzu).
    
@@ -232,25 +240,25 @@ Verwenden Sie den folgenden Workflow, um änderungen an der Dokumentation mit Vi
       
       ![Auswählen von "Alle speichern" im Explorer](images/explorer-save.png)
       
-   3. **Committen Sie alle** Änderungen in der **Quellcodeverwaltung** (schreiben Sie eine Commitnachricht, wenn Sie dazu aufgefordert werden).
+   3. **Commit für alle** Änderungen in **der Quellcodeverwaltung** ausführen (Commitnachricht schreiben, wenn sie dazu aufgefordert wird).
    
       ![Auswählen von "Commit all" in der Quellcodeverwaltung](images/source-control-commit.png)
       
-   4. Wählen Sie die **Synchronisierungsschaltfläche** aus, um Ihre Änderungen wieder mit dem Ursprung zu synchronisieren (Ihre Verzweigung auf GitHub).
+   4. Wählen Sie die **Synchronisierungsschaltfläche** aus, um Ihre Änderungen wieder mit dem Ursprung zu synchronisieren (Ihr Fork auf GitHub).
       
       ![Klicken Sie auf die Schaltfläche "Synchronisieren".](images/sync-back.png)
       
-3. Erstellen Sie in einem Webbrowser einen Pull Request, um neue Änderungen in Ihrer Verzweigung mit MicrosoftDocs/mixed-reality "master" zu synchronisieren (stellen Sie sicher, dass der Pfeil auf die richtige Weise zeigt).
+3. Erstellen Sie in einem Webbrowser einen Pull Request, um neue Änderungen in Ihrem Fork mit MicrosoftDocs/Mixed _Reality-Master_ zurück zu synchronisieren (stellen Sie sicher, dass der Pfeil auf das richtige Ziel zeigt).
 
-   ![Erstellen eines Pull Requests aus Ihrer Verzweigung in MicrosoftDocs/Mixed-Reality](images/pr-to-master.png)
+   ![Erstellen eines Pull Requests aus Ihrem Fork in MicrosoftDocs/Mixed Reality](images/pr-to-master.png)
 
 ### <a name="useful-extensions"></a>Nützliche Erweiterungen
 
-Die folgenden Visual Studio Code Erweiterungen sind beim Bearbeiten der Dokumentation nützlich:
+Die folgenden Visual Studio Code sind beim Bearbeiten der Dokumentation nützlich:
 
-- [Docs Markdown Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) - Use **ALT+M** to bring up a menu of docs authoring options wie:
-   - Suchen Sie bilder, die Sie hochgeladen haben, und verweisen Sie darauf.
-   - Fügen Sie Formatierungen wie Listen, Tabellen und dokumentationsspezifische Aufrufe wie `>[!NOTE]` hinzu.
+- [Docs Markdown-Erweiterung für Visual Studio Code:](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) Verwenden Sie **ALT+M,** um ein Menü mit Dokumenterstellungsoptionen wie den folgenden zu öffnen:
+   - Suchen sie bilder, und verweisen Sie auf Bilder, die Sie hochgeladen haben.
+   - Fügen Sie Formatierungen wie Listen, Tabellen und dokumentspezifische Aufrufe wie `>[!NOTE]` hinzu.
    - Suchen und Verweisen auf interne Links und Lesezeichen (Links zu bestimmten Abschnitten auf einer Seite).
-   - Formatierungsfehler werden hervorgehoben (zeigen Sie mit der Maus auf den Fehler, um mehr zu erfahren).
-- [Code spell checker ( Rechtschreibprüfung](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) für Code): Falsch geschriebene Wörter werden unterstrichen. Klicken Sie mit der rechten Maustaste auf ein falsch geschriebenes Wort, um es zu ändern oder im Wörterbuch zu speichern.
+   - Formatierungsfehler sind hervorgehoben (bewegen Sie den Mauszeiger über den Fehler, um mehr zu erfahren).
+- [Rechtschreibprüfung für Code:](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) Falsch geschriebene Wörter werden unterstrichen. Klicken Sie mit der rechten Maustaste auf ein falsch geschriebenes Wort, um es zu ändern oder im Wörterbuch zu speichern.
