@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: be33eb5d06ee7d63f1f598792ff75605b0eb4424
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 0124453ef9e3b21722acaf2c6b438ebdfbd65043
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112923634"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635941"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>Neustarten, Zurücksetzen oder Wiederherstellen von HoloLens 2
 
@@ -72,6 +72,7 @@ Wenn das Standard Zurücksetzungsverfahren nicht funktioniert, verwenden Sie das
 2. Halten Sie Tasten **Lautstärke senken** + und den **Netzschalter** 15 Sekunden lang gedrückt. Das Gerät wird automatisch neu gestartet.
 
 4. Verbinden Sie das Gerät mit dem Host-PC.
+
 
 5. Öffnen Sie den Geräte-Manager (drücken Sie unter Windows 10 die **Windows**-Taste und dann die **X**-Taste und wählen Sie dann **Gerätemanager** aus). Stellen Sie sicher, dass das Gerät ordnungsgemäß als *Microsoft HoloLens* aufgeführt wird, wie in der folgenden Abbildung dargestellt:
 
@@ -131,9 +132,15 @@ Wenn die HoloLens 2 nicht ordnungsgemäß gestartet wird oder Advanced Recovery 
 
 1. Stellen Sie sicher, dass Ihr Gerät 40 % oder mehr aufgeladen ist, bevor Sie versuchen zu „flashen“.
 
-2. Stellen Sie sicher, dass Ihr Gerät entsperrt ist.
+2. Überprüfen Sie, ob Ihr Gerät entsperrt ist.
 
-3. Wenn ARC Ihr Gerät nicht erkennt, stellen Sie sicher, dass Sie über den Datei-Explorer auf Ihrem PC eine Verbindung mit Ihrem Gerät herstellen können. Wenn das nicht möglich ist:
+1. Überprüfen Sie, ob Ihr Gerät direkt an den Host-PC angeschlossen ist, nicht an einen Hub.
+
+1. Wenn Ihr Gerät unter USB-Treiber (Universeller serieller Bus) nicht als HoloLens/HoloLens Recovery-Gerät angezeigt wird, überprüfen Sie:
+    1. **Ports**, als Qualcomm HS-USB-Gerät
+    1.   **Sonstige Geräte**, als QUSB_BULK-Gerät: Auf Ihrem Hostcomputer fehlen die erforderlichen Treiber, um Ihre HoloLens zu erkennen. Klicken Sie mit der rechten Maustaste, wählen Sie Treiber aktualisieren aus, und suchen Sie online nach Treibern, oder [aktivieren Sie „Optionale Updates“ in Ihren Windows-Updateeinstellungen](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/improving-the-update-discoverability-experience/ba-p/1585674). Nachdem der Treiber heruntergeladen wurde, sollte ARC in der Lage sein, ihn zu erkennen.
+ 
+1. Wenn ARC Ihr Gerät nicht erkennt, stellen Sie sicher, dass Sie über den Datei-Explorer auf Ihrem PC eine Verbindung mit Ihrem Gerät herstellen können. Wenn das nicht möglich ist:
 
     1.  Möglicherweise verfügt Ihr Gerät über USB-Richtlinien, die diese Verbindung deaktivieren. Wenn ja, versuchen Sie den [Manuellen Flash-Modus](hololens-recovery.md#manual-procedure).
     2.  Wenn keine Richtlinien vorhanden sind, versuchen Sie es mit einem anderen USB-Kabel.

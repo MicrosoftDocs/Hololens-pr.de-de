@@ -1,57 +1,57 @@
 ---
-title: Hardwaregesicherter Integritäts- und Laufzeitnachweis
-description: Hardwaregesicherter Integritäts- und Laufzeitnachweis
+title: Hardwaregestützter Integritäts- und Laufzeitnachweis
+description: Hardwaregestützter Integritäts- und Laufzeitnachweis
 author: evmill
 ms.author: v-evmill
 ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.prod: hololens
 ms.topic: article
-keywords: Sicherheit, HoloLens, hardwaregesicherte Integrität, Laufzeitnachweis, UEFI, UEFI Secure Boot, Secure Boot, TPM, Threat Protection, Windows-Antipersistenzzusicherung (Windows Anti-Persistence Assurance), Codeintegrität, Codeschutz,
+keywords: Sicherheit, Hololens, hardwaregestützte Integrität, Laufzeitnachweis, UEFI, sicherer UEFI-Start, sicherer Start, TPM, Bedrohungsschutz, Windows-Antipersistenzsicherheit, Codeintegrität, Codeschutz,
 ms.sitesec: library
 ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0a89fa5e61e560f629444efd2728f6dd41db60d3
-ms.sourcegitcommit: ab35169529776f0682eeb8fa448c9d9e8f598513
+ms.openlocfilehash: 037f9325555244314518c81d7814bf983c345af6
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "11340524"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639334"
 ---
-# Hardwaregesicherter Integritäts- und Laufzeitnachweis
+# <a name="hardware-backed-integrity-and-runtime-attestation"></a>Hardwaregestützter Integritäts- und Laufzeitnachweis
 
-Hardwaregesicherter Integritäts- und Laufzeitnachweis schützt vor Bedrohungen, die vor dem Start eines Betriebssystems, während der Laufzeit entstehen, wenn das Gerät Hardware und Remotenachweisdienste verwendet, um sicherzustellen, dass die Integrität beim Start und während der gesamten Laufzeit beibehalten wird.
+Der hardwaregestützte Integritäts- und Laufzeitnachweis schützt vor Bedrohungen, deren Ursprung noch vor dem Zeitpunkt des Betriebssystemstarts liegt, während der Laufzeit, wenn das Gerät Hardware verwendet, und bietet Remotenachweisdienste, um sicherzustellen, dass die Integrität beim Systemstart und während des Betriebs ständig aufrecht erhalten wird.
 
-## Sicherer UEFI-Start
+## <a name="uefi-secure-boot"></a>Sicherer UEFI-Start
 
-HoloLens 2 erzwingt den sicheren Start der Unified Extensible Firmware Interface (UEFI) immer, und UEFI startet nur Windows Holographic for Business. 
-Der sichere Start gewährleistet, dass die gesamte Startkette auf Integrität überprüft und Windows immer mit den richtigen Sicherheitsrichtlinien gestartet wird. Erfahren Sie mehr über [den sicheren Start](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-secure-boot).
+HoloLens 2 erzwingt immer einen sicheren UEFI-Start (Unified Extensible Firmware Interface), und UEFI startet nur Windows Holographic for Business.
+Sicherer Start stellt sicher, dass die gesamte Startkette auf Integrität überprüft wird und Windows immer mit den richtigen Sicherheitsrichtlinien gestartet wird. Weitere Informationen dazu finden Sie unter [Sicherer Start](/windows-hardware/design/device-experiences/oem-secure-boot).
 
-## TPM
+## <a name="tpm"></a>TPM
 
-Das Trusted Platform Module (TPM) ist ein spezieller Chip auf einem Endpunktgerät. HoloLens 2 verwendet ein TPM 2.0, das Hardware-verstärkte Schlüsselisolierung bietet. Erfahren Sie mehr über [die Grundlagen von TPM](https://docs.microsoft.com/windows/security/information-protection/tpm/tpm-fundamentals).
+Das Trusted Platform Module (TPM) ist ein spezialisierter Chip auf einem Endpunktgerät. HoloLens 2 verwendet TPM 2.0, das mithilfe von Hardware durchgesetzte Schlüsselisolation bereitstellt. Mehr dazu erfahren Sie unter [TPM-Grundlagen](/windows/security/information-protection/tpm/tpm-fundamentals).
 
-## Schutz vor der Bedrohung durch dauerhaften Zugriff
+## <a name="persistence-access-threat-protection"></a>Bedrohungsschutz vor Persistenzzugriff
 
-Das Ziel der meisten Cyberangriffe besteht darin, einen dauerhaften Zugriff auf ein Gerät aufrecht zu erhalten. Im Rahmen der Cyberkriminalität können Angreifer durch Aufrechterhalten dieses dauerhaften Zugriffs (Persistenz) mit einem kompromittierten Windows-Gerät an einem Botnet teilnehmen, Zugriff auf das Gerät oder an andere ruchlosen Benutzer verkaufen oder wiederholt Datendiebstahl begehen. In der Welt der gezielten Angriffe ist dauerhafter Zugriff für erfolgreiche Cyberangriffe unerlässlich – ganz gleich, ob auf einem Gerät oder (häufiger) in einem ganzen Netzwerk.  
+Das Ziel der meisten Cyberangriffe besteht darin, dauerhaften Zugriff auf ein Gerät zu erreichen und aufrecht zu erhalten. In einem Cybercrime-Szenario ermöglicht diese Dauerhaftigkeit den Beitritt eines kompromittierten Windows-Geräts zu einem Botnet, den Verkauf von Zugriff zu dem Gerät an andere skrupellose Benutzer oder wiederholten Datendiebstahl. In der Welt der gezielten Angriffe ist Persistenz für einen erfolgreichen Cyberangriff unerlässlich – ganz gleich, ob auf einem Gerät oder (häufiger) in einem gesamten Netzwerk.  
 
-Tatsächlich werden gezielte Angriffe aufgrund ihrer strategischen Notwendigkeit, den Zugriff auf ein Zielgerät oder -netzwerk aufrechtzuerhalten, als "fortgeschrittene persistente Bedrohungen" betrachtet. Aus diesem Grund erachtet Windows Holographic for Business die Verteidigung gegen dauerhaften Zugriff als absolut unerlässlich und setzt Antipersistenztechnologie ein, um den Kunden ein eisernes Sicherheitsversprechen zu geben.
+Tatsächlich werden gezielte Angriffe aufgrund ihrer strategischen Notwendigkeit, den Zugriff auf ein Zielgerät oder Netzwerk beizubehalten, als „erweiterte persistente Bedrohungen“ betrachtet. Aus diesem Grund betrachtet Windows Holographic for Business die Verteidigung gegen Persistenz als absolut entscheidend und verwendet Antipersistenztechnologie, um eine hieb- und stichfeste Kundensicherheitszusage zu geben.
 
-### Sicheres Starten
+### <a name="secure-boot"></a>Sicherer Start
 
-HoloLens 2 erzwingt den sicheren UEFI-Start (Unified Extensible Firmware Interface) auf allen Kernbetriebssystemen. UEFI startet nur Microsoft-vertrauenswürdige Plattformen, wodurch sichergestellt wird, dass die gesamte Startkette auf Integrität überprüft wird und Windows immer mit den korrekten Sicherheitsrichtlinien gestartet wird.  Bei HoloLens 2 lässt weder das Deaktivieren des sicheren Starts noch die Verwendung von Bootloadern von Drittanbietern zu.
+HoloLens 2 erzwingt den sicheren UEFI-Start (Unified Extensible Firmware Interface) für alle Betriebssystemstatus des Kerns. UEFI startet nur Plattformen, die einen Microsoft-Vertrauensstatus besitzen, wodurch sichergestellt ist, dass die gesamte Startkette auf Integrität überprüft wird und Windows immer mit den richtigen Sicherheitsrichtlinien gestartet wird. HoloLens 2 erlaubt keine Deaktivierung des sicheren Systemstarts und lässt auch keine Startladeprogramme von Drittanbietern zu.
 
 > [!Tip]
-> Weitere Informationen zum [sicheren Start](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-secure-boot).
+> Weitere Informationen zum [Sicheren Start](/windows-hardware/design/device-experiences/oem-secure-boot).
 
-### Windows-Antipersistenzzusicherung
+### <a name="windows-anti-persistence-assurance"></a>Windows-Antipersistenzsicherheit
 
-Durch die Antipersistenzzusicherung garantiert HoloLens 2 seinen Benutzern, dass selbst in dem unwahrscheinlichen Fall einer Laufzeitkompromittierung des Systems – wie z. B. bei einem Remote-Exploit – ein solches Ereignis abgemildert wird, indem der gesamte bösartige Code durch einfaches Ausschalten des Geräts aus dem System entfernt wird. Um die Antipersistenz noch weiter zu verbessern, hat HoloLens 2 einen leistungsfähigen Integritätsschutz hinzugefügt und Schreibschutzmechanismen eingerichtet.
+HoloLens 2-Antipersistenz garantiert den Benutzern, dass selbst in der seltenen Situation, dass jemals eine Laufzeitkompromittierung des Systems auftritt (z. B. ein Remote-Exploit), ein solches Ereignis durch einfaches Ausschalten des Geräts entschärft und der gesamte Schadcode vom System entfernt würde. Zum weiteren Stärken der Antipersistenz verfügt HoloLens 2 zusätzlich über leistungsstarken Integritätsschutz und weist schreibgeschützte Schutzmaßnahmen auf.
 
-Dauerhafter Zugriff auf Betriebssystemdaten in Form von Daten ist nach wie vor möglich, es sei denn, der Benutzer führt am Gerät ein Zurücksetzen mit einem Knopfdruck (PBR) durch, wodurch alle veränderbaren Partitionen gelöscht werden. Während die Persistenz auf unveränderlichen Partitionen deutlich erschwert wird, muss der Benutzer die HoloLens 2 durch PBR zurücksetzen, um eine mögliche Bedrohungspersistenz von veränderlichen Teilen zu entfernen.
+Persistenz ist für Betriebssystemdaten in Form von Daten weiterhin möglich, es sei denn, der Benutzer führt ein Zurücksetzen des Geräts auf Knopfdruck (Push-Button Reset, PBR) aus, das alle veränderlichen Partitionen zurücksetzt. Zwar ist der Persistenzschutz für unveränderliche Partitionen stark verbessert, jedoch muss der Benutzer einen PBR von HoloLens 2 ausführen, um jede mögliche Bedrohungspersistenz aus veränderlichen Teilen zu entfernen.
 
-## Codeintegritätsschutz
+## <a name="code-integrity-protection"></a>Schutz der Codeintegrität
 
-Codeintegrität (CI) ist eine wichtige Sicherheitseigenschaft eines modernen Betriebssystems. Durch Erzwingen von Codeintegrität lassen sich solide Sicherheitsentscheidungen treffen, da sie die Herkunft des Codes für den Benutzer und das Betriebssystem transparent macht. Die vollständige Codeintegrität muss die bisherige binäre Bildsignierung erweitern und die Durchsetzung zur Laufzeit umfassen, z. B. Kontrollflussintegrität und dynamische Codebeschränkungen. Codeintegrität ist entscheidend, um zahlreiche Angriffsklassen zu verhindern, einschließlich Social-Engineering-Schadsoftware, wie Ransomware, Remotecodeausführungs-Exploits und verschiedene andere Angriffsklassen.
+Codeintegrität (CI) ist eine zentrale Sicherheitseigenschaft moderner Betriebssysteme. Das Durchsetzen von CI ermöglicht fundierte Sicherheitsentscheidungen, da dadurch sichergestellt wird, dass die Herkunft von Code sowohl für den Benutzer als auch für das Betriebssystem transparent ist. Vollständige Codeintegrität muss sich über das Signieren von binären Images hinaus erstrecken und Durchsetzung zur Laufzeit beinhalten, etwa in Form von Steuerungsflussintegrität und dynamischen Codeeinschränkungen. CI ist wichtig, um mehrere Klassen von Angriffen zu verhindern, einschließlich Social Engineering-Schadsoftware, z. B. Ransomware, Exploits für Remotecodeausführung und verschiedene andere Angriffsklassen.

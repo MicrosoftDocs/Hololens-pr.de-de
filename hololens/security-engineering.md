@@ -1,37 +1,37 @@
 ---
-title: Sicherheits-Engineering
-description: Sicherheits-Engineering
+title: Sicherheitsentwicklung
+description: Sicherheitsentwicklung
 author: evmill
 ms.author: v-evmill
 ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.topic: article
-keywords: Sicherheit, hololens, Sicherheit, Engineering
+keywords: Sicherheit, Hololens, Sicherheit, Entwicklung
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cecc556841033ee394f36915f4cae8839dad08df
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: 1c043b721590e8245f694b3e4f6e5b6ce57f1ecf
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009533"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639351"
 ---
-# Sicherheits-Engineering
+# <a name="security-engineering"></a>Sicherheitsentwicklung
 
-Microsoft verfügt über mehrere Ressourcen und Teams, die sich mit der Optimierung der Engineering-Protokolle des Unternehmens, der Compliance und der Förderung des Vertrauens von Kunden befasst. 
+Microsoft verfügt über mehrere Ressourcen und Teams, die sich mit der Optimierung der Engineering-Protokolle des Unternehmens, Compliance-Aspekten und der Förderung des Kundenvertrauens befassen. 
 
-  * Weitere Informationen zu den Entwicklungspraktiken von Microsoft für Sicherheits-Engineering finden Sie unter [Security Development Lifecycle (SDL)](https://www.microsoft.com/securityengineering/sdl).
-  * Microsoft, und damit auch HoloLens 2, bieten Kunden die Möglichkeit, Entscheidungen darüber zu treffen, wie und warum Daten gesammelt und verwendet werden. Weitere Informationen dazu finden Sie in der [Microsoft-Datenschutzrichtlinie](https://privacy.microsoft.com/). 
-  * [Microsoft Security Response Center (MSRC)](https://www.microsoft.com/msrc) ist ein Teil der Defender-Community und bietet eine effiziente Berichterstellung über Sicherheitsanfälligkeiten sowie eine effektive Kategorisierung und Reaktion auf Sicherheitsprobleme. 
+  * Weitere Informationen zu den Entwicklungspraktiken für Sicherheitsentwicklung bei Microsoft finden Sie unter [Security Development Lifecycle (SDL)](https://www.microsoft.com/securityengineering/sdl).
+  * Microsoft, und damit auch HoloLens 2, bietet Kunden die Möglichkeit, Entscheidungen darüber zu treffen, wie und warum Daten gesammelt und verwendet werden. Weitere Informationen dazu finden Sie in der [Microsoft-Datenschutzrichtlinie](https://privacy.microsoft.com/). 
+  * Das [Microsoft Security Response Center (MSRC)](https://www.microsoft.com/msrc) ist Teil der Defender-Community und bietet eine effiziente Berichterstellung über Sicherheitsanfälligkeiten sowie eine effektive Kategorisierung und Reaktion auf Sicherheitsprobleme. 
 
-## Updates und Patches
+## <a name="updates-and-patches"></a>Updates und Patches
 
-Sicherheitsupdates und Patches werden am zweiten Dienstag jeden Monats veröffentlicht. Wenn Sie wissen möchten, welche Kriterien Microsoft zum Auswerten der nächsten Schritte für eine berichtete Sicherheitsanfälligkeit verwendet, lesen Sie die Seite mit den [Kriterien für die Sicherheitswartung](https://www.microsoft.com/msrc/windows-security-servicing-criteria). 
+Sicherheitsupdates und Patches werden am zweiten Dienstag jeden Monats veröffentlicht. Wenn Sie wissen möchten, welche Kriterien Microsoft zum Auswerten der nächsten Schritte für eine gemeldete Sicherheitsanfälligkeit verwendet, lesen Sie die Seite mit den [Kriterien für die Sicherheitswartung](https://www.microsoft.com/msrc/windows-security-servicing-criteria) im Microsoft Security Response Center. 
 
-Anweisungen zum Verwalten von HoloLens 2-Updates über MDM finden Sie unter [Verwalten von HoloLens-Updates](https://docs.microsoft.com/hololens/hololens-updates). Der Rhythmus für Betriebssystemupdates für HoloLens 2 entspricht dem von Windows 10. Es gibt zwei Updates pro Jahr, eines im Frühjahr und das andere im Herbst. Weitere Informationen dazu, wie Geräte während der Betriebssystemupdates geschützt werden, finden Sie unter [Statustrennung und -isolation](security-state-separation-isolation.md). 
+Anleitungen zum Verwalten von HoloLens 2-Updates mithilfe von MDM finden Sie unter [Verwalten von HoloLens-Updates](hololens-updates.md). Der Rhythmus für Betriebssystemupdates für HoloLens 2 entspricht dem von Windows 10. Es gibt zwei Updates pro Jahr, eins im Frühjahr und das andere im Herbst. Weitere Informationen dazu, wie Geräte während Betriebssystemupdates geschützt werden, finden Sie unter [Zustandstrennung und -isolation](security-state-separation-isolation.md). 
 
-IT-Administratoren können unter [Richtlinien-Konfigurationsdienstanbieter – Update](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update) mehr erfahren. 
+IT-Administratoren finden weitere Informationen zur Updaterichtlinie unter [Richtlinien-CSP: Update](/windows/client-management/mdm/policy-csp-update). 

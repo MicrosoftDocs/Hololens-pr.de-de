@@ -14,12 +14,12 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 keywords: Kalibrierung, Komfort, visuelle Elemente, Qualität, IPD, HoloLens, Windows Mixed Reality, VR-Headsets
-ms.openlocfilehash: 62d83aa5c6032d15b26fbc7938859bdaf74151f4
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: f72bdfb980fc20b3812e0377d9486539d34f437c
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924144"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635975"
 ---
 # <a name="improve-visual-quality-and-comfort"></a>Verbessern von Grafikqualität und Komfort
 
@@ -60,7 +60,7 @@ Mehrere Benutzer können ein HoloLens 2-Gerät gemeinsam nutzen, ohne dass jede 
 
 ### <a name="manually-starting-the-calibration-process"></a>Manuelles Starten des Kalibrierungsvorgangs
 
-1. Verwenden Sie die Startgeste, um das [**Start** menü](hololens2-basic-usage.md#start-gesture) zu öffnen.
+1. Verwenden Sie die Startgeste, um das [**Startmenü**](hololens2-basic-usage.md#start-gesture) zu öffnen.
 1. Wenn die Einstellungen-App nicht an **Start** angeheftet ist, wählen Sie **Alle Apps** aus.
 1. Wählen Sie **Einstellungen** und dann **System** > **Kalibrierung** > **Augenkalibrierung** > **Augenkalibrierung ausführen** aus.
 
@@ -109,8 +109,11 @@ Sie können die Kalibrierungsaufforderung auch deaktivieren, indem Sie die folge
 1. Wählen Sie **Einstellungen** > **System** > **Kalibrierung**.
 1. Deaktivieren Sie **Wenn eine neue Person diese HoloLens benutzt, automatisch dazu auffordern, eine Augenkalibrierung durchzuführen**.
 
-> [!IMPORTANT]
-> Diese Einstellung kann die Qualität und den Komfort der Hologrammwiedergabe ungünstig beeinträchtigen.  Wenn Sie diese Einstellung deaktivieren, funktionieren Funktionen, die von Eye Tracking abhängig sind (z, B. Textbildlauf), nicht mehr in immersiven Anwendungen.
+   > [!IMPORTANT]
+   > Diese Einstellung kann die Qualität und den Komfort der Hologrammwiedergabe ungünstig beeinträchtigen.  Wenn Sie diese Einstellung deaktivieren, funktionieren Funktionen, die von Eye Tracking abhängig sind (z, B. Textbildlauf), nicht mehr in immersiven Anwendungen.
+
+> [!NOTE]
+> Der Schalter „Einstellungen“ wurde entfernt, beginnend mit Windows Holographic, Version 20H2, mit der Einführung der [Auto Eye Position-Unterstützung](hololens-release-notes.md#auto-eye-position-support). Die Kalibrierungsaufforderung wird nur dann automatisch angezeigt, wenn ein nicht kalibrierter Benutzer eine App verwendet, für die Eye Tracking aktiviert ist.
 
 ### <a name="hololens-2-eye-tracking-technology"></a>HoloLens 2 Eye Tracking-Technologie
 
@@ -140,9 +143,9 @@ Führen Sie die folgenden Schritte aus, um die Kalibrierung-App über das **Star
 1. Wählen Sie **+** aus, um alle Apps anzuzeigen.
 1. Wählen Sie **Kalibrierung** aus.
 
-![Zugreifen auf die Kalibrierung-App aus der Shell](./images/calibration-shell.png)
+   ![Zugreifen auf die Kalibrierung-App aus der Shell](./images/calibration-shell.png)
 
-![Die Kalibrierung-App wird nach dem Start als Live-Cube angezeigt](./images/calibration-livecube-200px.png)
+   ![Die Kalibrierung-App wird nach dem Start als Live-Cube angezeigt](./images/calibration-livecube-200px.png)
 
 Führen Sie die folgenden Schritte aus, um die Kalibrierung-App über die Einstellungen-App auszuführen:
 
@@ -151,7 +154,7 @@ Führen Sie die folgenden Schritte aus, um die Kalibrierung-App über die Einste
 1. Wählen Sie **Settings** aus.
 1. Wählen Sie **System** > **Dienstprogramme** > **Kalibrierung öffnen** aus.
 
-![Starten der Kalibrierung-App aus der Einstellungen-App](./images/calibration-settings-500px.jpg)
+   ![Starten der Kalibrierung-App aus der Einstellungen-App](./images/calibration-settings-500px.jpg)
 
 ## <a name="immersive-headsets"></a>Immersive Headsets
 

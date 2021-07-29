@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0d087037e94bcaed2cd79d9cff77ed3039919a09
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: a5c0e28eff9bb71135309ec5e484fc5b88f02d08
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112923781"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113636682"
 ---
 # <a name="set-up-your-hololens-2"></a>Einrichten von HoloLens 2
 
@@ -42,6 +42,14 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie Folgendes zur Verfügung haben:
 Wenn Sie Ihre HoloLens 2 zum ersten Mal starten, müssen Sie zunächst Windows Holographic einrichten.  Beim Starten Ihrer HoloLens hören Sie Musik und sehen ein Windows-Logo.
 
 ![Erster Bildschirm während des ersten Starts](images/01-magic-moment.png)
+
+Sie sehen einen umherfliegenden Kolibri.
+
+![Fliegender Kolibri](images/hummingbird-1.png)
+
+Folgen Sie ihm mit Ihrer Hand.
+
+![Fliegender Kolibri in Nahaufnahme](images/hummingbird-2.png)
 
 HoloLens 2 führt Sie durch die folgenden Schritte:
 
@@ -88,6 +96,7 @@ HoloLens 2 führt Sie durch die folgenden Schritte:
 
 1. Melden Sie sich bei Ihrem Benutzerkonto an. Sie wählen zwischen **Die Lizenz gehört meinem Arbeitgeber oder meiner Bildungseinrichtung** und **Die Lizenz gehört mir**.
 
+    ![Benutzer festlegen](images/13-device-owner.png)
     - Wenn Sie **Meinem Arbeitgeber oder meiner Bildungseinrichtung** gewählt haben, melden Sie sich mit dem Azure AD-Konto an. Wenn Ihr Unternehmen Azure AD Premium verwendet und die automatische MDM-Registrierung konfiguriert hat, wird HoloLens automatisch in MDM registriert. Wenn in Ihrer Organisation kein Azure AD Premium verwendet wird, ist die automatische MDM-Registrierung nicht verfügbar. In diesem Fall müssen Sie [HoloLens manuell in der Geräteverwaltung registrieren](hololens-enroll-mdm.md#different-ways-to-enroll).
 
         1. Geben Sie Ihre Unternehmenskontodaten ein.
@@ -100,8 +109,7 @@ HoloLens 2 führt Sie durch die folgenden Schritte:
         1. Geben Sie Ihre Microsoft-Kontoinformationen ein.
         2. Geben Sie das Kennwort ein. Wenn für Ihr Microsoft-Konto [eine Überprüfung in zwei Schritten (2FA)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/) erforderlich ist, schließen Sie den entsprechenden Prozess ab.
 
-    ![Benutzer festlegen](images/13-device-owner.png)
-
+        
 1. Anmeldung per Iriserkennung einrichten indem Sie **Weiter** auswählen. Sie werden eine ähnliche Vorgehensweise wie bei der Augenkalibrierung anwenden. Wählen Sie **Fertig** aus, wenn der Scan abgeschlossen ist. Sie können auch **Überspringen** auswählen, um diesen Schritt zu umgehen.
     
     ![Iriserkennung einrichten](images/setup-iris.png) ![Iriserkennung ist abgeschlossen](images/iris-setup-complete.png) 
@@ -137,7 +145,7 @@ Herzlichen Glückwunsch!  Die Einrichtung ist abgeschlossen, und Sie können Hol
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-1. Beginnen Sie sofort, mit Mixed Reality zu interagieren und der Navigation in Windows 10 auf Ihrer HoloLens – in der **Tipps**-App finden Sie praktische Tutorials für Handinteraktionen. Verwenden Sie die Startgeste, um zum Start zu gelangen oder sagen Sie „Zum Startmenü gehen“, und wählen Sie Tipps aus.
+1. Beginnen Sie sofort, mit Mixed Reality zu interagieren und der Navigation in Windows 10 auf Ihrer HoloLens – in der App **Tipps** finden Sie praktische Tutorials für Handinteraktionen. Verwenden Sie die Startgeste, um zum Startmenü zu wechseln. Oder sagen Sie „Zum Startmenü”, und wählen Sie „Tipps“ aus.
 
 1. Klicken Sie unten, um mehr über den Umgang mit HoloLens 2 zu lesen.
 

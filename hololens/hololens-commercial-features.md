@@ -1,9 +1,9 @@
 ---
-title: Kommerzielle Features
-description: Hier erfahren Sie mehr über Microsoft HoloLens Commercial Suite-Funktionen, die es für Unternehmen einfacher machen, HoloLens-Geräte zu verwalten.
-author: scooley
-ms.author: scooley
-ms.date: 08/26/2019
+title: HoloLens 2-Funktionen und -Lösungen
+description: Hier erfahren Sie mehr über Microsoft HoloLens Commercial-Funktionen, die es für Unternehmen einfacher machen, HoloLens-Geräte zu verwalten.
+author: joyjaz
+ms.author: v-jjaswinski
+ms.date: 06/28/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
@@ -13,74 +13,69 @@ ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
-manager: jarrettr
+manager: skerewa
 appliesto:
-- HoloLens (1st gen)
 - HoloLens 2
-keywords: HoloLens, kommerziell, Funktionen, MDM, Verwaltung mobiler Geräte, Kioskmodus
-ms.openlocfilehash: 3682a2633477d68f61dba8a674846857947a3d15
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+keywords: HoloLens 2, kommerziell, Features, MDM, Verwaltung mobiler Geräte, Kioskmodus, Anwendungen, Identität, BitLocker, Iris, Windows Hello, Azure-gestützt, Autopilot, Mixed Reality, WDAC
+ms.openlocfilehash: 5a68c4199cba20bba9d3aaa5183819975ea7b3f4
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397861"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635811"
 ---
-# <a name="commercial-features"></a>Kommerzielle Features
+# <a name="hololens-2-capabilities-and-solutions"></a>HoloLens 2-Funktionen und -Lösungen
 
-HoloLens enthält Funktionen, die es für Unternehmen einfacher machen, HoloLens-Geräte zu verwalten.
+## <a name="what-can-hololens-2-do-for-you"></a>Was kann HoloLens 2 für Sie tun?
 
-Für jedes HoloLens 2-Gerät stehen kommerzielle Funktionen zur Verfügung.
+Arbeiten Sie grenzenlos zusammen, und agieren Sie präzise, um die Produktivität der Mitarbeiter mit Mixed Reality-Anwendungen auf HoloLens 2 zu steigern. Dank integrierter Sprachbefehle, Eye-Tracking und Weltanker können Sie sich länger und bequemer auf die sichere und fehlerfreie Erledigung von Aufgaben konzentrieren. Stellen Sie Verbindungen zu remote arbeitenden Kollegen in Echtzeit her, und arbeiten Sie in einem umfangreichen holografischen Zeichenbereich zusammen, der Ihrer physischen Umgebung überlagert ist, um Probleme am Arbeitsplatz schnell zu beheben. Realisieren Sie ROI direkt ohne weitere Anpassungen dank eines robusten Ökosystems von Anwendungen, die mit der Sicherheit, Zuverlässigkeit und Skalierbarkeit von Microsoft unterstützt werden.  
 
-HoloLens (1. Generation) hat zwei Lizenzierungsoptionen, die Entwicklerlizenz und eine kommerzielle Lizenz. Um die kommerziellen Funktionen von HoloLens zu entsperren, führen Sie ein Upgrade von der Entwicklerlizenz auf eine kommerzielle Lizenz durch. Wenn Sie die Microsoft HoloLens Commercial Suite erwerben möchten, wenden Sie sich an Ihren lokalen Microsoft-Konto-Manager.
+[!INCLUDE [solutions](includes/hlsolutions.md)]
 
->[!VIDEO https://www.youtube.com/embed/tNd0e2CiAkE]
+## <a name="hololens-2-capabilities"></a>HoloLens 2-Funktionen
 
-## <a name="key-commercial-features"></a>Wichtige kommerzielle Funktionen
+Was macht die HoloLens 2 so leistungsfähig?
 
-- **Kioskmodus** Sie können HoloLens in Demo-oder Showcase-Umgebungen mithilfe des Kioskmodus verwenden, um zu begrenzen, welche Apps ausgeführt werden können.
+| Funktion | BESCHREIBUNG |
+|---------|-------------|
+| Weltanker | Verankerte Hologramme bleiben genau an Ort und Stelle. HoloLens 2 versteht Ihren Arbeitsbereich. Daher bleiben digitale Inhalte über die Zeit erhalten – verankert an Objekten oder Oberflächen, an denen Sie arbeiten. |
+| Handtracking | Berühren, greifen und verschieben Sie Hologramme auf eine Weise, die sich natürlich anfühlt. HoloLens 2 passt sich an Ihre Hände an und erlaubt es Ihnen, eine neue Zufriedenheit in Ihren Interaktionen zu finden. |
+| Eyetracking – Blickverfolgung | Profitieren Sie von einem neuen Niveau von Kontext und menschlichem Verstehen. HoloLens 2 versteht genau, wohin Sie blicken, und kann daher Ihre Absichten verstehen und die Hologramme in Echtzeit an Ihre Augen anpassen. |
+| Mit Sprachunterstützung | Dank integrierter Sprachbefehle können Sie HoloLens 2 schnell navigieren und betreiben, wenn Ihre Hände mit einer Aufgabe beschäftigt sind. |
+| Ergonomie | HoloLens 2 ist leicht (3,28 kg) und bietet ein System zur optionalen Anpassung, um die Verwendung über längere Zeiträume zu unterstützen. |
+| Großer Blickwinkel | Erweitern Sie Ihren holografischen Zeichenbereich mit hochauflösenden Displays mit großem Blickwinkel. |
+| Ungebunden | Bewegen Sie sich frei, ohne Kabel oder externe Pakete, und gestalten Sie Ihre Arbeit nach Ihren Vorlieben. |
+| Azure-gestützt | Streamen Sie 3D-Inhalte mit hoher Genauigkeit, die an einer Position und/oder einem Objekt verankert werden können, die bzw. das in Azure Mixed Reality-Diensten benutzerübergreifend erhalten bleibt.
+| Mixed-Reality-Aufnahme | Dokumentieren Sie ein Erlebnis als Foto oder Video, das Sie mit anderen in Echtzeit teilen können. |
+| Windows Hello for Business | Dank der irisgestützten biometrischen Authentifizierung gelangen Sie schnell und sicher zu Ihrer Arbeitsroutine. |
+| Windows Autopilot | Dienste für HoloLens 2 können vorab eingerichtet und konfiguriert werden, damit sie über verteilte Arbeitsstandorte hinweg sofort einsatzbereit sind. |
+| Betriebssystemupdates | Schützen Sie sich mit monatlichen Wartungsupdates, und profitieren Sie von neuen Produktivitäts- und Verwaltungsfunktionen in zweijährlichen Releases. |
+| Einfache Geräteverwaltung | Verwalten Sie mehrere HoloLens 2-Geräte gleichzeitig mithilfe von Lösungen wie Microsoft Intune, VMware Workspace One, MobileIron und vielen mehr. |
+| Betrieb in regulierten Umgebungen | HoloLens 2 verfügt über ein umfangreiches Geräteportfolio, das stark regulierte Umgebungen unterstützt, einschließlich Umgebungen, die der ISO-Klasse 5.0 und der UL Class I, Division 2 entsprechen. |
 
-  ![Mit dem Kioskmodus startet HoloLens direkt in die App Ihrer Wahl.](images/201608-kioskmode-400px.png)
 
-- **Verwaltung mobiler Geräte (MDM, Mobile Device Management) für HoloLens.** Ihre IT-Abteilung kann mehrere HoloLens-Geräte gleichzeitig mithilfe von Lösungen wie Microsoft Intune verwalten. Sie können Einstellungen verwalten, zu installierende Apps auswählen und Sicherheitskonfigurationen einrichten, die auf die Anforderungen Ihrer Organisation zugeschnitten sind.
+## <a name="managing-hololens-2-in-your-organization"></a>Verwalten von HoloLens 2 in Ihrer Organisation
+HoloLens 2 enthält Funktionen, die es für Unternehmen einfacher machen, HoloLens-Geräte zu verwalten und zu nutzen. Einige Funktionen sind im Gerät enthalten, während andere über die [Mobile Geräteverwaltung (MDM) für HoloLens](hololens-mdm-configure.md) oder über [Bereitstellungspakete](hololens-provisioning.md) mithilfe von [Windows Configuration Designer](app-deploy-provisioning-package.md#setup) aktiviert werden können.
 
-  ![Die Verwaltung mobiler Geräte auf HoloLens bietet unternehmensweite Geräteverwaltung auf mehreren Geräten.](images/201608-enterprisemanagement-400px.png)
+| Ich möchte... | Lösung | BESCHREIBUNG |  
+|---------| ------------|------------|
+die Anmeldung von Endbenutzern verwalten | [**Identity**](hololens-identity.md) | HoloLens 2 unterstützt verschiedene Arten von Benutzeridentitäten: Azure Active Directory (AAD), Microsoft-Konto (MSA) und lokale Konten.  |
+| Benutzerdaten verschlüsseln | [**Datensicherheit**](security-encryption-data-protection.md) | Die BitLocker-Datenverschlüsselung ist auf HoloLens 2 aktiviert, um dasselbe Maß an Schutz der Sicherheit wie jedes andere Windows-Gerät zu bieten. | 
+Hololens-Geräten in meiner Organisation verwalten | [**Mobile Geräteverwaltung**](hololens-mdm-configure.md) | Sie können an einem zentralen Ort für mehrere HoloLens 2-Geräte Einstellungen verwalten, zu installierende Apps auswählen und für die Anforderungen Ihrer Organisation maßgeschneiderte Sicherheitskonfigurationen festlegen. | 
+|die Setupzeit für neue Benutzer und Geräte minimieren | [**Autopilot**](hololens2-autopilot.md) | Konfigurieren Sie die Out-of-Box-Benutzererfahrung (OOBE) in Microsoft Endpunkt Manager, und ermöglichen Sie Endbenutzern die Vorbereitung von Geräten für die geschäftliche Nutzung mit minimaler oder ganz ohne Interaktion. |  
+| Betriebssystemupdates für meine Geräte steuern | [**Windows Update for Business**](hololens-updates.md#managing-updates-by-using-windows-update-for-business) | Windows Update für Unternehmen bietet kontrollierte Betriebssystemaktualisierungen für Geräte und Unterstützung für den langfristigen Servicing Channel. |  
+| das Herunterladen bestimmter und branchenspezifischer Apps zulassen |[**Anwendungsverwaltung**](app-deploy-overview.md) | Wählen Sie aus, wie Apps für ausgewählte Gruppen von HoloLens 2 Benutzern verteilt und gesteuert werden sollen. | 
+| bestimmte Apps im Startmenü anzeigen oder ausblenden |[**Kioskmodus**](hololens-kiosk.md) | Konfigurieren Sie HoloLens 2 für die Verwendung in App-Demos oder dedizierten Geschäfts-Apps als Gerät mit festem Verwendungszweck. 
+| die Umgebung durch Sperren von Apps schützen | [**WDAC**](windows-defender-application-control-wdac.md) | WDAC (Windows Defender Application Control) verhindert das Starten von Apps und Prozessen durch den Gerätebenutzer.
+| die Gerätesicherheit mit Regeln für Apps und Prozesse verwalten | [**Richtlinien (CSPs)**](hololens-csp-policy-overview.md) | IT-Administratoren können Richtlinieneinstellungen mithilfe einer vorhandenen Liste unterstützter Richtlinien-CSPs auf HoloLens 2 definieren und implementieren. |  
+| die Verbindung eines Geräts mit dem Internet verwalten | [**Netzwerk und Konnektivität**](hololens-certificates-network.md) | Verwenden Sie zertifikatbasierte Authentifizierung für den Zugriff auf WLAN, VPNs oder interne Ressourcen. | 
+| ein Geräts für mehrere Benutzer verwenden | [**Automatisch angepasste Anzeige**](hololens-calibration.md#auto-eye-position-support) | HoloLens 2-Displays werden automatisch mithilfe von AEP (Auto Eye Position) angepasst, sodass kein manueller Kalibrierungsprozess ausgeführt werden muss, wenn das Gerät [von Benutzern gemeinsam genutzt](hololens-multiple-users.md) wird. |
 
-- **Windows Update für Unternehmen.** Windows Update für Unternehmen bietet kontrollierte Betriebssystemaktualisierungen für Geräte und Unterstützung für den langfristigen Servicing Channel.
-- **Datensicherheit**. Die BitLocker-Datenverschlüsselung ist auf HoloLens aktiviert, um dasselbe Maß an Sicherheitsschutz wie jedes andere Windows-Gerät bereitzustellen.
-- **Arbeitsplatzzugriff.** Jeder in Ihrem Unternehmen kann über ein virtuelles privates Netzwerk (VPN) auf einer HoloLens eine Remoteverbindung mit dem Unternehmensnetzwerk herstellen. HoloLens kann auch auf WLAN-Netzwerke zugreifen, die Anmeldeinformationen erfordern.
-- **Microsoft Store für Unternehmen.** Ihre IT-Abteilung kann auch einen privaten Unternehmensspeicher einrichten, in dem nur die Apps Ihres Unternehmens für Ihre spezifische HoloLens-Nutzung enthalten sind. Verteilen Sie Ihre Unternehmenssoftware auf sichere Weise an ausgewählte Gruppen von Unternehmensbenutzern.
+Erfahren Sie mehr über die [Lizenzierungsanforderungen](hololens-licenses-requirements.md) für die oben genannten Lösungen.
 
-## <a name="feature-comparison-between-editions"></a>Funktionsvergleich zwischen den Editionen
+## <a name="next-steps"></a>Nächste Schritte
+> [!div class="nextstepaction"]
+> [Kennenlernen der HoloLens 2-Optionen](hololens2-options.md)
 
-|Features |HoloLens (1. Generation) Development Edition |HoloLens (1. Generation) Commercial Suite |HoloLens 2 |
-|---|:---:|:---:|:---:|
-|Geräteverschlüsselung (BitLocker) | |✔️ |✔️ |
-|Virtuelles privates Netzwerk (VPN): | |✔️ |✔️ |
-|[Kioskmodus](hololens-kiosk.md) | |✔️ |✔️ |
-|**Verwaltung und Bereitstellung** | | | |
-|Mobile Geräteverwaltung (MDM) | |✔️ |✔️ |
-|Möglichkeit zum Blockieren der Registrierungsaufhebung | |✔️ |✔️ |
-|CERT-basierter Corporate WLAN-Zugriff | |✔️ |✔️ |
-|Microsoft Store (Verbraucher) |Consumer |Filtern mithilfe der MDM |Filtern mithilfe der MDM |
-|[Business Store-Portal](https://docs.microsoft.com/microsoft-store/working-with-line-of-business-apps) | |✔️ |✔️ |
-|**Sicherheit und Identität** | | | |
-|Anmelden mit dem Azure Active Directory-Konto (Azure AD) |✔️ |✔️ |✔️ |
-|Anmelden mit dem Microsoft-Konto (MSA) |✔️ |✔️ |✔️ |
-|Anmeldeinformationen der nächsten Generation mit PIN-Entsperrung |✔️ |✔️ |✔️ |
-|[Sicherer Start](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-secure-boot) |✔️ |✔️ |✔️ |
-|**Wartung und Support** | | | |
-|Automatische Systemaktualisierungen, sobald sie eintreffen |✔️ |✔️ |✔️ |
-|[Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb) | |✔️ |✔️ |
-|Long-Term Servicing Channel (LTSC) | |✔️ |✔️ |
-
-## <a name="enabling-commercial-features"></a>Aktivieren von kommerziellen Funktionen
-
-Der IT-Administrator Ihres Unternehmens kann kommerzielle Funktionen wie Microsoft Store für Unternehmen, Kioskmodus und Enterprise-WLAN-Zugriff einrichten. In der [Microsoft HoloLens](index.yml) Dokumentation finden Sie schrittweise Anleitungen zum Registrieren von Geräten und zum Installieren von Apps aus dem Microsoft Store für Unternehmen.
-
-## <a name="see-also"></a>Siehe auch
-
-- [Microsoft HoloLens](index.yml)
-- [Kioskmodus](hololens-kiosk.md)
-- [In HoloLens-Geräten unterstützte CSPs](/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices)
-- [Microsoft Store für Unternehmen und Branchenanwendungen](https://blogs.technet.microsoft.com/sbucci/2016/04/13/windows-store-for-business-and-line-of-business-applications/)
-- [Arbeiten mit Branchen-Apps](/microsoft-store/working-with-line-of-business-apps)
+> [!div class="nextstepaction"]
+>[Planen der HoloLens 2-Bereitstellung](hololens-requirements.md) 
