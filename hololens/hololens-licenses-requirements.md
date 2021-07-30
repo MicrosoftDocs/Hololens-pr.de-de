@@ -13,51 +13,45 @@ ms.reviewer: ''
 manager: bradke
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: bd7a7d03c81dced4fb66d8ebb176887811e823c9
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 6224cd5e07794d9fca3c0a406e787d1a3fd88b43
+ms.sourcegitcommit: bd55edcc855e20d6709c7e535573f43785155d41
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640276"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114661711"
 ---
 # <a name="license-requirements"></a>Lizenzanforderungen
 
-## <a name="hololens-2-device-managed"></a>HoloLens 2-Gerät (verwaltet)
+## <a name="overview"></a>Übersicht
+Diese Seite bietet eine allgemeine Übersicht der Lizenzen und Konten, die zum Bereitstellen sowohl verwalteter als auch nicht verwalteter HoloLens 2-Geräte in Ihrer Organisation erforderlich sind. Sie enthält ferner Informationen zur Lizenzierung von Dynamics 365 [Remote Assist](#dynamics-365-remote-assist) und [Guides](#dynamics-365-guides).
 
-[Azure AD-Konto](/azure/active-directory/)
+## <a name="hololens-2-license-and-account-requirements"></a>HoloLens 2 Lizenz- und Kontoanforderungen
+
+ 
+|       &nbsp;      | Verwaltete HoloLens | Nicht verwaltete HoloLens |
+|-------------------|-----------------|---------------------|
+| **Geschäftlicher Anwendungsfall** | | |
+| [Bereitstellen auf mit der Cloud verbundenen Geräten: Proof-of-Concept/Pilotbereitstellung](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices)  | ✔️| |
+| [Bereitstellen innerhalb des Netzwerks einer Organisation: Bereitstellung im großen Maßstab](hololens-requirements.md#scenario-b-deploy-inside-your-organizations-network) | ✔️| |
+| [Bereitstellen in einer sicheren Offlineumgebung](hololens-requirements.md#scenario-c-deploy-in-secure-offline-environment) | | ✔️ |
+| **Lizenzen** | | |
+| Azure Active Directory | ✔️ | |
+| MDM (Intune<sup>1</sup> oder <sup>2</sup>) | ✔️  | |
+| **Konten** |  | |
+| Azure AD-Administratorkonto | ✔️ |  |
+| Azure AD-Benutzerkonto | ✔️ | |
+| [Microsoft-Konto (MSA)](/windows/security/identity-protection/access-control/microsoft-accounts)| | ✔️ |
+| [Lokales Konto](/windows/security/identity-protection/access-control/local-accounts)<sup>3</sup> | | ✔️ |
+- <sup>1</sup> [Automatische Registrierung](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) während der Geräte-Ersteinrichtung, die die Registrierung bei und den Beitritt zu Azure Active Directory beinhaltet und die Verwaltung des Geräts durch Intune ermöglicht.
+- <sup>2</sup> [Windows Autopilot für HoloLens 2](hololens2-autopilot.md) vereinfacht die Bereitstellungserfahrung sowohl für IT-Administratoren als auch für Endbenutzer. IT-Administratoren können HoloLens 2-Richtlinien vorkonfigurieren, und die Geräte werden beim ersten Systemstart ohne Benutzereingriff in betriebsbereitem Zustand bereitgestellt.
+- <sup>3</sup> Dieses Konto muss im Voraus mit dem Windows Configuration Designer (WCD) [bereitgestellt](hololens-provisioning.md#provisioning-package-hololens-wizard) werden.
 
 > [!IMPORTANT]
 > Active Directory (AD) kann nicht zur Verwaltung von HoloLens-Geräten verwendet werden.
-
-[Microsoft Intune](/mem/intune/fundamentals/what-is-intune) oder eine andere MDM-Lösung.
-- [Windows Autopilot für HoloLens 2](hololens2-autopilot.md): vereinfacht die Bereitstellung für IT-Administratoren und Endbenutzer. IT-Administratoren können HoloLens 2-Richtlinien vorkonfigurieren, und die Geräte werden beim ersten Systemstart ohne Benutzereingriff in betriebsbereitem Zustand bereitgestellt. 
-
-  > [!NOTE]
-  > Für Windows Autopilot müssen [Azure P1](/azure/active-directory/fundamentals/active-directory-whatis) und [Automatische Registrierung](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) vorab konfiguriert worden sein, damit der Autopilot-Ablauf und die Gerätebereitstellung mit geringem Arbeitsaufwand durchgeführt werden können. 
-
-### <a name="business-use-case"></a>Geschäftlicher Anwendungsfall: 
-
-- [Bereitstellungsszenario A](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices): Proof-of-Concept- oder Pilotbereitstellung.
-
-- [Bereitstellungsszenario B](hololens-requirements.md#scenario-b-deploy-inside-your-organizations-network): Bereitstellung im großen Maßstab.
-
-## <a name="hololens-2-device-only-non-managed"></a>Nur HoloLens 2-Gerät (nicht verwaltet)
-
-Wenn Sie entweder ein Microsoft-Konto (MSA) oder ein lokales Konto verwenden, sind für diese Konten keine zusätzlichen Lizenzen erforderlich.
-
-[Lokales Konto](/windows/security/identity-protection/access-control/local-accounts)
-
-- Dieses Konto muss im Voraus mit dem Windows Configuration Designer (WCD) [bereitgestellt](hololens-provisioning.md#provisioning-package-hololens-wizard) werden.
-
-[Microsoft-Konto (MSA)](/windows/security/identity-protection/access-control/microsoft-accounts)
-
-> [!WARNING]
-> Mehrere Benutzer werden für ein Gerät, das eins dieser Konten verwendet, nicht unterstützt.
-
-### <a name="business-use-case"></a>Geschäftlicher Anwendungsfall: 
-
-- [Bereitstellungsszenario C](hololens-requirements.md#scenario-c-deploy-in-secure-offline-environment): Offlinebereitstellung oder sichere Bereitstellung.
  
+> [!WARNING]
+> Mehrere Benutzer werden für ein Gerät, das entweder ein MSA- oder ein lokales Konto verwendet, nicht unterstützt.
+
 ## <a name="dynamics-365-licensing-and-requirements"></a>Dynamics 365-Lizenzierung und -Anforderungen
 
 ### <a name="dynamics-365-remote-assist"></a>Dynamics 365 Remote Assist 
@@ -82,7 +76,7 @@ Wenn Sie entweder ein Microsoft-Konto (MSA) oder ein lokales Konto verwenden, si
 
 - Azure AD-Konto
 
-- Microsoft Teams oder [Teams Freemium](https://products.office.com/microsoft-teams/free).
+- Microsoft Teams oder [Teams Freemium](https://products.office.com/microsoft-teams/free)
 
 - Netzwerkverbindungen
 
@@ -92,8 +86,8 @@ Wenn Sie dieses [mandantenübergreifende Szenario](/dynamics365/mixed-reality/re
 
 #### <a name="admin"></a>Admin
 
-- Azure AD-Konto (erforderlich für den Erwerb des Abonnements und die Zuweisung von Lizenzen)
-- Dynamics 365 [Guides-Abonnement oder kostenlose Testversion](/dynamics365/mixed-reality/guides/setup-step-one)
+1. Azure AD-Konto (erforderlich für den Erwerb des Abonnements und die Zuweisung von Lizenzen)
+2. Dynamics 365 [Guides-Abonnement oder kostenlose Testversion](/dynamics365/mixed-reality/guides/setup-step-one)
 
 #### <a name="guides-author"></a>Guides-Autor
 
