@@ -12,50 +12,51 @@ ms.date: 10/13/2020
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f9dcf98cbd200ac54cd786648fdfe286bff1aa00
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 8b1869e786e3f3324494cecbfd596f61811e1893
+ms.sourcegitcommit: 78e5f26014e55c13fee9c2b75a80810fd2e77877
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397451"
+ms.lasthandoff: 07/31/2021
+ms.locfileid: "115009322"
 ---
 # <a name="certificate-manager"></a>Zertifikat-Manager
 
 - Verbesserte Überwachungs-, Diagnose- und Überprüfungstools für Gerätesicherheit und -konformität über den neuen Zertifikat-Manager. Mit dieser Funktion können Sie Ihre Zertifikate in kommerziellen Umgebungen im großen Stil bereitstellen, behandeln und überprüfen.
 
-In Windows Holographic, Version 20H2, fügen wir einen Zertifikat-Manager in der HoloLens 2-App hinzu. Wechseln Sie **zu Einstellungen > Update & Security > Certificates**. Dieses Feature bietet eine einfache und benutzerfreundliche Möglichkeit zum Anzeigen, Installieren und Entfernen von Zertifikaten auf Ihrem Gerät. Mit dem neuen Zertifikat-Manager verfügen Administratoren und Benutzer jetzt über verbesserte Überwachungs-, Diagnose- und Validierungstools, um sicherzustellen, dass Geräte sicher und konform bleiben. 
+In Windows Holographic, Version 20H2, fügen wir der App einen Zertifikat-Manager HoloLens 2 Einstellungen hinzu. Wechseln Sie **zu Einstellungen > Update & Security > Certificates**. Dieses Feature bietet eine einfache und benutzerfreundliche Möglichkeit zum Anzeigen, Installieren und Entfernen von Zertifikaten auf Ihrem Gerät. Mit dem neuen Zertifikat-Manager verfügen Administratoren und Benutzer jetzt über verbesserte Überwachungs-, Diagnose- und Validierungstools, um sicherzustellen, dass Geräte sicher und konform bleiben. 
 
 -   **Überwachung:** Möglichkeit, zu überprüfen, ob ein Zertifikat ordnungsgemäß bereitgestellt wurde, oder um zu bestätigen, dass es ordnungsgemäß entfernt wurde. 
 -   **Diagnose:** Wenn Probleme auftreten, spart die Validierung, ob die entsprechenden Zertifikate auf dem Gerät vorhanden sind, Zeit und hilft bei der Problembehandlung. 
--   **Überprüfung:** Die Überprüfung, ob ein Zertifikat den beabsichtigten Zweck erfüllt und funktionsfähig ist, kann insbesondere in kommerziellen Umgebungen viel Zeit sparen, bevor Zertifikate in größerem Umfang bereitgestellt werden.
+-   **Überprüfung:** Die Überprüfung, ob ein Zertifikat dem beabsichtigten Zweck dient und funktionsfähig ist, kann insbesondere in kommerziellen Umgebungen viel Zeit sparen, bevor Zertifikate in größerem Umfang bereitgestellt werden.
 
 Um ein bestimmtes Zertifikat schnell in der Liste zu finden, gibt es Optionen zum Sortieren nach Name, Speicher oder Ablaufdatum. Benutzer können auch direkt nach einem Zertifikat suchen. Wählen Sie zum Anzeigen einzelner Zertifikateigenschaften das Zertifikat aus, und klicken Sie auf **Info**. 
 
-Die Zertifikatinstallation unterstützt derzeit CER- und CRT-Dateien. Gerätebesitzer können Zertifikate auf dem lokalen Computer und dem aktuellen Benutzer installieren.  alle anderen Benutzer können nur unter Aktueller Benutzer installieren. Benutzer können zertifikate, die direkt über die Benutzeroberfläche "Einstellungen" installiert wurden, nur entfernen. Wenn ein Zertifikat auf andere Weise installiert wurde, muss es auch mit demselben Mechanismus entfernt werden.
+Die Zertifikatinstallation unterstützt derzeit CER- und CRT-Dateien. Gerätebesitzer können Zertifikate auf dem lokalen Computer und dem aktuellen Benutzer installieren.  alle anderen Benutzer können nur in Current User installieren.
 
 ## <a name="to-install-a-certificate"></a>So installieren Sie ein Zertifikat: 
 
-1.  Verbinden Sie ihre HoloLens 2 mit einem PC.
+1.  Verbinden Sie ihre HoloLens 2 pc.
 1.  Platzieren Sie die Zertifikatdatei, die Sie installieren möchten, an einem Speicherort auf Ihrem HoloLens 2.
-1.  Navigieren Sie zu **Einstellungen App > Update & Security > Certificates**, und wählen Sie Zertifikat installieren aus.
-1.  Klicken Sie auf **Datei importieren,** und navigieren Sie zu dem Speicherort, an dem Sie das Zertifikat gespeichert haben.
-1.  Wählen Sie **Store Location (Speicherort) aus.**
-1.  Wählen Sie **Zertifikatspeicher** aus.
+1.  Navigieren Sie **zu Einstellungen App > Update & Security > Certificates**, und wählen Sie Zertifikat installieren aus.
+1.  Klicken **Sie auf Datei** importieren, und navigieren Sie zu dem Speicherort, an dem Sie das Zertifikat gespeichert haben.
+1.  Wählen Sie **Store Speicherort aus.**
+1.  Wählen Sie **Zertifikat Store.**
 1.  Klicken Sie auf **Installieren**.
 
-Das Zertifikat sollte nun auf dem Gerät installiert sein.
+Das Zertifikat sollte jetzt auf dem Gerät installiert sein.
 
-## <a name="to-remove-a-certificate"></a>So entfernen Sie ein Zertifikat: 
->[!WARNING]
-> Obwohl Sie MDM-bereitgestellte Zertifikate im Zertifikat-Manager anzeigen können, können Sie sie nicht im Zertifikat-Manager deinstallieren. Sie müssen sie über MDM deinstallieren.
-1. Navigieren Sie zu **Einstellungen App > Update- und Sicherheitszertifikate >**.
-1. Suchen Sie im Suchfeld nach dem Zertifikat anhand des Namens.
+![Zertifikatanzeige in der Einstellungen-App unter Zertifikate.](images/certificate-viewer-device.jpg)
+
+![Abbildung: Verwenden der Zertifikatbenutzeroberfläche zum Installieren eines Zertifikats in Einstellungen.](images/certificate-device-install.jpg)
+
+## <a name="to-remove-a-certificate"></a>So entfernen Sie ein Zertifikat:
+
+> [!WARNING]
+> Mithilfe des Zertifikat-Managers können Benutzer nur Zertifikate entfernen, die direkt über die benutzeroberfläche Einstellungen wurden. Wenn ein Zertifikat auf andere Weise installiert wurde, muss es auch mit demselben Mechanismus entfernt werden und kann nicht aus dem Zertifikat-Manager entfernt werden. Sie können mit MDM bereitgestellte Zertifikate zwar im Zertifikat-Manager anzeigen, aber nicht im Zertifikat-Manager deinstallieren. Sie müssen sie über MDM deinstallieren.
+
+1. Navigieren Sie **zu Einstellungen App > Update- und > Zertifikate.**
+1. Suchen Sie im Suchfeld nach dem Namen des Zertifikats.
 1. Wählen Sie das Zertifikat aus.
-1. Klicken Sie auf **Entfernen.**
+1. Klicken Sie **auf Entfernen.**
 1. Wählen Sie **Ja** aus, wenn Sie zur Bestätigung aufgefordert werden.
 
-
-
-![Zertifikatanzeige in der Einstellungs-App unter Zertifikate](images/certificate-viewer-device.jpg)
-
-![Abbildung: Verwenden der Zertifikat-Benutzeroberfläche zum Installieren eines Zertifikats in den Einstellungen](images/certificate-device-install.jpg)
