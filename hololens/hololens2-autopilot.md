@@ -13,21 +13,23 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: cc73f5cbb438119f4c626ae76db9c91373e19aff
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 273dcd2180225cf953686ed1c2e5b6524996dba3
+ms.sourcegitcommit: 78e5f26014e55c13fee9c2b75a80810fd2e77877
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635363"
+ms.lasthandoff: 07/31/2021
+ms.locfileid: "115009356"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>Windows Autopilot für HoloLens 2
+
+> [!NOTE]
+> Die Autopilot-Konfiguration für HoloLens in Microsoft Endpunkt-Manager geht von **Öffentliche Vorschau** in **Allgemeine Verfügbarkeit** über. Alle Mandanten können dann Autopilot im MEM Admin Center einrichten.
 
 Ab Windows Holographic Version 2004 unterstützt HoloLens 2 den Windows Autopilot [Self-Deployment-Modus](/mem/autopilot/self-deploying) mit Microsoft Intune (MDMs von Drittanbietern werden nicht unterstützt). Administratoren können die Out-of-Box-Benutzererfahrung (OOBE) in Microsoft Endpunkt Manager konfigurieren. Dadurch können Endbenutzer die Geräte mit wenig bis gar keiner Interaktion für die geschäftliche Nutzung vorbereiten. Das reduziert den Aufwand für die Bestandsverwaltung, verringert die Vorbereitungskosten für die Geräte und die Supportanrufe der Mitarbeiter während der Einrichtung. Weitere Informationen finden Sie in der [Windows Autopilot](/mem/autopilot/windows-autopilot)-Dokumentation.
 
 Wie bei den Surface-Geräten wird empfohlen, dass Kunden mit ihrem Microsoft [Cloudlösungsanbieter](https://partner.microsoft.com/cloud-solution-provider) (Wiederverkäufer oder Händler) zusammenarbeiten, um Geräte über das Partner Center für den Autopilot-Service registrieren zu lassen. Andere Methoden für die Geräteregistrierung werden in der Dokumentation zum [Hinzufügen von Geräten](/mem/autopilot/add-devices) beschrieben, aber die Nutzung von Microsofts Channel-Partnern gewährleistet den effektivsten End-to-End-Pfad.
 
-> [!NOTE]
-> Ab dem 20.11.2020 geht die Autopilot-Konfiguration für HoloLens in Microsoft Endpunkt Manager in die **Public Preview** über. Kunden müssen sich nicht mehr für die private Vorschau anmelden, und alle Mandanten können Autopilot im Admin Center einrichten.
+
 
 Wenn ein Benutzer den Prozess der selbsttätigen Bereitstellung von Autopilot startet, führt dieser folgende Schritte aus:
 
@@ -329,3 +331,7 @@ Verwenden Sie eine der folgenden Methoden, um Feedback zu geben oder Probleme zu
 - Wenn Ihr Gerät für den Autopilot-Dienst registriert ist und das Profil auf dem MEM-Portal zugeordnet ist, wenden Sie sich an den [Support](/hololens/) (siehe Karte „Support“). Eröffnen Sie bitte ein Support-Ticket und fügen Sie gegebenenfalls Screenshots und Protokolle bei, indem Sie [Offline Diagnostik Protokolle](hololens-diagnostic-logs.md#offline-diagnostics) während der Out-of-Box Benutzererfahrung (OOBE) erfassen.
 - Um ein Problem mit dem Gerät zu melden, verwenden Sie die App „Feedback Hub“ auf Ihrer HoloLens. Wählen Sie im Feedback-Hub die Kategorie **Enterprise Management** > **Gerät** aus.
 - Wenn Sie ein allgemeines Feedback zu Autopilot für HoloLens geben möchten, können Sie diese [Umfrage](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7vUmjNI0XhCp1T72ODD84xUMEM3TVJPOURBRkNVWkYwM0RWWEhJNVdJSi4u&wdLOR=cEF1F57F6-AD9B-4CCE-B919-AB5AE320A993) absenden
+
+## <a name="delete-autopilot-devices"></a>Löschen von Autopilot-Geräten
+
+Möglicherweise möchten Sie kein Gerät mehr für Autopilot verwenden oder Ihre Geräte bei einem anderen Mandanten registrieren. Lesen Sie in diesem Fall [Löschen von Autopilot-Geräten](/mem/autopilot/add-devices#delete-autopilot-devices).
