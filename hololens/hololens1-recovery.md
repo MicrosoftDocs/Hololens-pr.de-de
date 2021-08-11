@@ -1,8 +1,8 @@
 ---
 title: Neustarten, Zurücksetzen oder Wiederherstellen HoloLens 1
 ms.reviewer: Keep up to date on the basic and advanced instructions for rebooting or resetting your HoloLens mixed reality device.
-description: Verwenden Windows Device Recovery-Tools zum Flashen eines Images in HoloLens 1. Generation.
-keywords: 'Gewusst wie: Vorgehensweise, Neustart, Zurücksetzen, Wiederherstellen, Hartes Zurücksetzen, Soft Reset, Energiezyklus, HoloLens, herunterfahren, WDRT, Windows-Gerätewiederherstellungstool'
+description: Verwenden Windows Device Recovery Tools zum Flashen eines Images in HoloLens 1. Generation.
+keywords: 'Gewusst wie: Vorgehensweise, Neustart, Zurücksetzen, Wiederherstellen, hard reset, Soft Reset, Energiezyklus, HoloLens, herunterfahren, wdrt, Windows-Gerätewiederherstellungstool'
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -16,18 +16,18 @@ ms.localizationpriority: medium
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 4840535030cc81f222cb25357474f1c751426e91
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: d6eb706c50e97a81910180c70be1d9dbc52bc6603cbc77ad130c1dd3b6a9010e
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635227"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115661804"
 ---
 # <a name="restart-reset-or-recover-hololens-1st-gen"></a>Neustarten, Zurücksetzen oder Wiederherstellen HoloLens (1. Generation)
 
-Wenn Sie Probleme mit Ihrem HoloLens haben, können Sie versuchen, das Gerät mithilfe der Gerätewiederherstellung neu zu starten oder zurückzusetzen. In diesem Artikel werden die empfohlenen Wiederherstellungsschritte in der gewünschten Reihenfolge erläutert.
+Wenn Sie Probleme mit Ihrem HoloLens haben, können Sie einen Neustart oder eine Zurücksetzung versuchen oder das Gerät mithilfe der Gerätewiederherstellung zurücksetzen. In diesem Artikel werden die empfohlenen Wiederherstellungsschritte in der gewünschten Reihenfolge erläutert.
 
-Wenn Sie eine HoloLens 2 wiederherstellen möchten, finden Sie weitere Informationen unter [Wiederherstellen eines HoloLens 2](hololens-recovery.md), da sich dieser Prozess unterscheidet.
+Wenn Sie eine HoloLens 2 wiederherstellen möchten, lesen Sie [Wiederherstellen eines HoloLens 2](hololens-recovery.md), da sich dieser Prozess unterscheidet.
 
 > [!NOTE]
 > Dieser Artikel konzentriert sich auf die HoloLens Gerät und Software. Wenn Ihre Hologramme nicht richtig aussehen, finden Sie unter **[Überlegungen HoloLens Umgebung](hololens-environment-considerations.md)** Informationen zu Faktoren, die die Hologrammqualität verbessern.
@@ -36,7 +36,7 @@ Wenn Sie eine HoloLens 2 wiederherstellen möchten, finden Sie weitere Informati
 
 ### <a name="do-a-safe-restart-by-using-cortana"></a>Durchführen eines sicheren Neustarts mithilfe von Cortana
 
-Die sicherste Möglichkeit, die HoloLens neu zu starten, ist die Verwendung von Cortana. Dies ist in der Regel der erste Versuch, wenn ein Problem mit HoloLens vorliegt.
+Die sicherste Möglichkeit zum Neustarten des HoloLens ist die Verwendung von Cortana. Dies ist in der Regel das erste, was Sie ausprobieren sollten, wenn ein Problem mit HoloLens vorliegt.
 
 > [!NOTE] 
 > Cortana ist nicht auf allen Geräten verfügbar.
@@ -91,20 +91,20 @@ Führen Sie die folgenden Schritte aus, um zu einer früheren Version von HoloLe
 
 1. Stellen Sie sicher, dass keine Telefone oder Windows Geräte an Ihren PC angeschlossen sind.
 1. Laden Sie auf Ihrem PC das [Windows Device Recovery Tool (WDRT)](https://support.microsoft.com/help/12379)herunter.
-1. Laden Sie das [HoloLens Anniversary Update-Wiederherstellungspaket](https://aka.ms/hololensrecovery)herunter.
-1. Öffnen Sie nach Abschluss der Downloads **den Datei-Explorer**  >  **Downloads**. Klicken Sie mit der rechten Maustaste auf den gezippten Ordner, den Sie gerade heruntergeladen haben, und wählen Sie Extract all Extract (Alle Extrahieren **extrahieren)**  >   aus, um ihn zu entzippen.
+1. Laden Sie das [HoloLens Anniversary Update-Wiederherstellungspaket](https://aka.ms/hololensrecovery) herunter.
+1. Wenn die Downloads abgeschlossen sind, öffnen **Sie Den Datei-Explorer**  >  **lädt herunter.** Klicken Sie mit der rechten Maustaste auf den gezippten Ordner, den Sie gerade heruntergeladen haben, und wählen **Sie Alle**  >  **extrahieren** aus, um ihn zu entzippen.
 1. Verbinden Ihre HoloLens mithilfe des Micro-USB-Kabels an Ihren PC. (Auch wenn Sie andere Kabel verwendet haben, um Ihre HoloLens zu verbinden, funktioniert dieses am besten.)
-1. Das WDRT erkennt automatisch Ihre HoloLens. Wählen Sie die **Kachel Microsoft HoloLens** aus.
+1. Das WDRT erkennt automatisch Ihre HoloLens. Wählen Sie die Kachel **Microsoft HoloLens** aus.
 1. Klicken Sie auf dem nächsten Bildschirm auf **Manuelle Paketauswahl,** und wählen Sie die Installationsdatei aus, die in dem Ordner enthalten ist, den Sie in Schritt 4 entpackt haben. (Suchen Sie nach einer Datei mit der FFU-Erweiterung.)
 1. Wählen Sie **Software installieren** aus, und befolgen Sie die Anweisungen.
 
 > [!NOTE]
-> Wenn WDRT Ihre HoloLens nicht erkennt, versuchen Sie, Ihren PC neu zu starten. Wenn dies nicht funktioniert, wählen Sie **Mein Gerät wurde nicht erkannt** aus, wählen Sie **Microsoft HoloLens** aus, und befolgen Sie dann die Anweisungen.
+> Wenn WDRT Ihre HoloLens nicht erkennt, versuchen Sie, Ihren PC neu zu starten. Falls dies nicht funktioniert, wählen Sie **Mein Gerät wurde nicht erkannt** und dann **Microsoft HoloLens** aus, und befolgen Sie die Anweisungen.
 
 ## <a name="reset-to-factory-settings"></a>Zurücksetzen auf Werkseinstellungen
 
 > [!NOTE]
-> Für die Akkukapazität ist mindestens eine Gebühr von 40 Prozent erforderlich.
+> Der Akku benötigt mindestens eine Gebühr von 40 Prozent, um zurückgesetzt zu werden.
 
 Wenn ihr HoloLens weiterhin ein Problem hat, versuchen Sie, ihn auf den Werkszustand zurückzusetzen. Dieser Schritt behält die Version der Windows Holographic-Software bei, die darauf installiert ist, und gibt alles andere an die Werkseinstellungen zurück.
 
@@ -131,7 +131,7 @@ Um das Tool verwenden zu können, benötigen Sie einen Computer mit Windows 10 o
 ### <a name="recover-your-hololens"></a>Wiederherstellen Ihrer HoloLens
 
 1. Laden Sie das [Windows Device Recovery Tool](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq) herunter, und installieren Sie es auf Ihrem Computer.
-1. Verbinden die HoloLens (1. Generation) mithilfe des Micro-USB-Kabels, das im Lieferumfang Ihres HoloLens war, auf Ihren Computer.
+1. Verbinden die HoloLens (1. Generation) mithilfe des Micro-USB-Kabels, das im Lieferumfang Ihrer HoloLens war, an Ihren Computer.
 1. Öffnen Sie das Windows Device Recovery Tool, und befolgen Sie die Anweisungen.
 
 Wenn die HoloLens (1. Generation) nicht automatisch erkannt wird, wählen Sie **Mein Gerät wurde nicht erkannt aus.** Befolgen Sie dann die Anweisungen, um das Gerät in den Wiederherstellungsmodus zu versetzen.

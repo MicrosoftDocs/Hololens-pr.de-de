@@ -14,34 +14,34 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6407517bca9efd02fdaf45a78cba7a215ec05670
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: f9435ce94986a851bb7744eeea48fa6e411454f5090d7ae11c869ba6f27dc942
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637063"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660203"
 ---
 # <a name="deploy---corporate-connected-guide"></a>Bereitstellen – Leitfaden für verbundene Unternehmen
 
 Ein wichtiger Teil jeder Bereitstellung besteht in der Sicherstellung, dass Ihre Bereitstellung ordnungsgemäß eingerichtet ist, bevor Sie sie selbst testen, um eine reibungslose Benutzererfahrung zu gewährleisten.
 
-Da wir das Wi-Fi-Zertifikat über MDM bereitstellen, müssen wir zunächst HoloLens einrichten und Geräte in einem offenen Wi-Fi-Netzwerk oder einem Netzwerk registrieren, für das das Zertifikat nicht erforderlich ist. Nachdem die HoloLens oobe und enrolled abgeschlossen haben, erhält das Gerät das Netzwerkzertifikat und die zuvor konfigurierte LOB, und wir können überprüfen, ob beide vom Gerät empfangen wurden.
+Da wir das Wi-Fi-Zertifikat über MDM bereitstellen, müssen wir zunächst HoloLens einrichten und Geräte in einem offenen Wi-Fi-Netzwerk oder einem Netzwerk registrieren, für das das Zertifikat nicht erforderlich ist. Nachdem die HoloLens OOBE abgeschlossen und registriert wurde, erhält das Gerät das Netzwerkzertifikat und die zuvor konfigurierte LOB, und wir können überprüfen, ob beide vom Gerät empfangen wurden.
 
 Anschließend können Sie bestätigen, dass Sie einen Testleitfaden erstellen und betreiben können.
 
 ## <a name="enrollment-validation"></a>Registrierungsüberprüfung
 
-Nachdem nun alles ordnungsgemäß für Azure AD und MDM-Registrierung konfiguriert ist, sollte der Rest jetzt ein Snap-Programm sein. Sie benötigen eine Wi-Fi Verbindung und das HoloLens-Gerät sowie eines der zuvor konfigurierten Azure AD Benutzerkonten.
+Nachdem nun alles ordnungsgemäß für Azure AD und MDM-Registrierung konfiguriert ist, sollte der Rest jetzt ein Snap-Programm sein. Sie benötigen eine Wi-Fi verbindung und das HoloLens-Gerät sowie eines der zuvor konfigurierten Azure AD Benutzerkonten.
 
 Wenn sich Ihr Gerät derzeit nicht im Zustand "Factoryeinstellungen" befindet, ist jetzt ein guter Zeitpunkt, um das Gerät neu [zu bereinen.](/hololens/hololens-recovery#clean-reflash-the-device)
 
 1. Sobald sich Ihr Gerät in oobe befindet, müssen Sie mit der Interaktion beginnen und den Anweisungen folgen.
 
-2. Verbinden in ein offenes Wi-Fi netzwerk, für das keine Zertifikate erforderlich sind, um dem WLAN beitreten zu können. Auf diese Weise kann das Gerät das Zertifikat herunterladen, das nach der erst eingerichteten Einrichtung auf dem Wi-Fi der Organisation verwendet werden soll.
+2. Verbinden in ein offenes Wi-Fi netzwerk, für das keine Zertifikate erforderlich sind, um dem WLAN beitreten zu können. Dadurch kann das Gerät das Zertifikat herunterladen, das nach der erst eingerichteten Einrichtung auf dem Wi-Fi verwendet werden soll.
 
-3. Die kritische Eingabeaufforderung wird angezeigt, wenn Sie gefragt **werden, Wer diese Rolle HoloLens?** Wählen Sie My work or school owns it (Mein Arbeits-, Schul- oder **Schulkonto besitzt)** aus, und geben Sie Azure AD Kontoanmeldeinformationen ein.
+3. Die kritische Eingabeaufforderung wird angezeigt, wenn Sie gefragt **werden, Wer diese HoloLens?** Wählen **Sie My work or school owns it** (Mein Arbeits-, Schul- oder Schulkonto besitzt) aus, und geben Sie Azure AD Kontoanmeldeinformationen ein.
 
-4. Wenn die Registrierung erfolgreich ist, werden Sie aufgefordert, eine PIN zu einrichten. Diese PIN ist für dieses Gerät für diesen Benutzer eindeutig. Außerdem werden Sie zur Eingabe von Iris-Scans, Sprachdaten und Telemetrieeinstellungen aufgefordert, und schließlich erfahren Sie, wie Sie das Startmenü öffnen und die OOBE abschließen.
+4. Wenn die Registrierung erfolgreich ist, werden Sie aufgefordert, eine PIN zu einrichten. Diese PIN ist für dieses Gerät für diesen Benutzer eindeutig. Außerdem werden Sie zur Eingabe von Iris-Scans, Sprachdaten und Telemetrieeinstellungen aufgefordert, und schließlich erfahren Sie, wie Sie das Startmenü öffnen und oobe abschließen.
 
 5. Öffnen Sie nach dem Öffnen Mixed Reality Start die Startmenü mithilfe der soeben **gelernten** Startgeste.
 
@@ -49,13 +49,13 @@ Wenn sich Ihr Gerät derzeit nicht im Zustand "Factoryeinstellungen" befindet, i
 
 7. Notieren Sie sich diesen Namen.
 
-    ![HoloLens 2 Einstellungen-Bildschirm](./images/hololens2-settings-about.jpg)
+    ![HoloLens 2 Einstellungen Bildschirm](./images/hololens2-settings-about.jpg)
 
 8. Vergewissern Sie sich, dass Ihr Gerät erfolgreich mit dem Azure AD. Es gibt zwei Möglichkeiten:
 
-    1.  Die Einstellungen-App. Wählen **Einstellungen** Konten **Auf**  ->  **Arbeits- oder Schulkonto zugreifen aus.** Auf diesem Bildschirm können Sie überprüfen, ob Sie erfolgreich registriert sind, indem Sie &quot; Connected to nameofAAD&#39;nameofAAD Azure AD. Verbunden mit *yourusername@nameofAAD.onmicrosoft.com* . Dadurch wird überprüft, ob Ihr Gerät in Ihre Organisation&#39;und Azure AD.
+    1.  Die Einstellungen-App. Wählen **Einstellungen** Konten **Auf**  ->  **Arbeits- oder Schulkonto zugreifen aus.** Auf diesem Bildschirm können Sie überprüfen, ob Sie erfolgreich registriert sind, indem Sie &quot; Connected to nameofAAD&#39;nameofAAD Azure AD. Verbunden mit *yourusername@nameofAAD.onmicrosoft.com* . Dadurch wird überprüft, ob Ihr Gerät mit ihrer Organisation&#39;und Azure AD.
 
-    1. [Azure-Portal](https://portal.azure.com/#home) Wechseln Sie **zu Azure Active Directory**  ->  **Geräte**  ->  **Alle Geräte,** und suchen Sie den Gerätenamen. Unter Jointyp wird als "Azure AD Join" (Verbunden) gezeigt.
+    1. [Azure-Portal](https://portal.azure.com/#home) Wechseln Sie **Azure Active Directory**  ->  **Geräte Alle**  ->  **Geräte,** und suchen Sie den Gerätenamen. Unter Jointyp wird als "Azure AD Join" (Verbunden) gezeigt.
         ![Überprüfen des Jointyps in Azure AD](./images/hololens2-devices-all-devices.png)
 
 9. Vergewissern Sie sich, dass Ihr Gerät bei MDM registriert ist. Es gibt zwei Möglichkeiten:

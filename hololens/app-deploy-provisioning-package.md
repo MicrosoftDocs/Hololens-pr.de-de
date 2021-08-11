@@ -1,7 +1,7 @@
 ---
 title: Bereitstellungspaket
 description: Erfahren Sie mehr über app packaging, provisioning, deployment und enterprise app deployment for HoloLens devices (Packen, Bereitstellen, Bereitstellen und Bereitstellen HoloLens Unternehmens-Apps).
-keywords: App, App-Bereitstellung, Enterprise-App-Bereitstellung, Bereitstellung
+keywords: App, App-Bereitstellung, Bereitstellung von Unternehmens-Apps, Bereitstellung
 author: evmill
 ms.author: v-evmill
 ms.date: 6/22/2020
@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 5aa554f9e7fdc09c3112b628e0978ac3332bc57d
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 2cb497d850ff7ba2de66f69e8ec53e6dd36b773cc13d01b038def8d539e3b0c1
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635516"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665215"
 ---
 # <a name="provisioning-package"></a>Bereitstellungspaket
 
@@ -38,9 +38,9 @@ Informationen zu den Grundlagen zum Erstellen eines Bereitstellungspakets für H
 > [!NOTE]
 > HoloLens (1. Generation) bietet eingeschränkte Unterstützung für die Installation von Apps (**UniversalAppInstall**) mithilfe eines Bereitstellungspakets. HoloLens -Geräte (1. Generation) unterstützen nur die Installation einer App über PPKG nur während der OOBE und nur bei Benutzerkontext-Installationen.
 
-## <a name="setup"></a>Einrichten
+## <a name="setup"></a>Setup
 
-In [Windows-Konfigurations-Designer](https://www.microsoft.com/store/productId/9NBLGGH4TX22) die folgenden vier Schritte aus.
+In [Windows-Konfigurations-Designer](https://www.microsoft.com/store/productId/9NBLGGH4TX22) die folgenden vier Schritte ausführen.
 
 1. Legen Sie ApplicationManagement/AllowAllTrustedApps auf "Ja" fest. Siehe: [ApplicationManagement/AllowAllTrustedApps](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps).
 

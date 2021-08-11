@@ -12,12 +12,12 @@ ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a27a16913873c5245f734dbe084eb2b7ed007c20
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: ab05f1bbe1570d4966932d6f8ac857e5bd2d8a7d3a8f5b93aaba0335eda05b01
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639929"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665555"
 ---
 # <a name="windows-defender-application-control---wdac"></a>Windows Defender Application Control – WDAC
 
@@ -30,7 +30,7 @@ Einem Gerät können mehrere WDAC-Richtlinien zugewiesen werden. Wenn mehrere WD
 
 Im Folgenden erfahren Benutzer, wie Sie [WDAC und Windows PowerShell verwenden, um Apps auf HoloLens 2 Geräten mit Microsoft Intune zuzulassen oder zu blockieren.](/mem/intune/configuration/custom-profile-hololens)
 
-Wenn Benutzer im ersten Beispielschritt auf ihrem Windows 10 PC nach installierten Apps suchen, müssen sie möglicherweise einige Versuche unternehmen, um die Ergebnisse einzugrenzen.
+Wenn Benutzer mit dem ersten Beispielschritt nach Apps suchen, die auf ihrem Windows 10 PC installiert sind, müssen sie möglicherweise einige Versuche unternehmen, um die Ergebnisse einzugrenzen.
 
 ```powershell
 $package1 = Get-AppxPackage -name *<applicationname>*
@@ -52,7 +52,7 @@ Hier finden Sie eine Liste der häufig verwendeten und In-Box Apps für HoloLens
 
 | App-Name                   | Paketfamilienname                                |
 |----------------------------|----------------------------------------------------|
-| 3D-Viewer                  | Microsoft.Microsoft3DViewer_8wekyb3d8bbwe          |
+| 3D-Betrachter                  | Microsoft.Microsoft3DViewer_8wekyb3d8bbwe          |
 | App-Installer              | Microsoft.DesktopAppInstaller_8wekyb3d8bbwe <sup>1</sup>         |
 | Calendar                   | microsoft.windowscommunicationsapps_8wekyb3d8bbwe  |
 | Kamera                     | HoloCamera_cw5n1h2txyewy                           |
@@ -61,7 +61,7 @@ Hier finden Sie eine Liste der häufig verwendeten und In-Box Apps für HoloLens
 | Dynamics 365 Remote Assist | Microsoft.MicrosoftRemoteAssist_8wekyb3d8bbwe      |
 | Feedback-Hub               | Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe         |
 | Datei-Explorer              | c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy |
-| E-Mail                       | microsoft.windowscommunicationsapps_8wekyb3d8bbwe  |
+| Mail                       | microsoft.windowscommunicationsapps_8wekyb3d8bbwe  |
 | Microsoft Store            | Microsoft.WindowsStore_8wekyb3d8bbwe               |
 | Filme & TV                | Microsoft.ZuneVideo_8wekyb3d8bbwe                  |
 | OneDrive                   | microsoft.microsoftskydrive_8wekyb3d8bbwe          |

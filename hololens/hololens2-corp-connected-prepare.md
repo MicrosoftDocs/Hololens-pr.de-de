@@ -14,24 +14,24 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 88e7d0614cf95f32eaa0434724eddbcb5b8cf863
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 76513c2f2458119785b64d8cccac4e42c2957b5af966dfdb0c165ebeda12e069
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636978"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660080"
 ---
 # <a name="prepare---corporate-connected-guide"></a>Prepare – Corporate Connected Guide (Vorbereiten – Leitfaden für verbundene Unternehmen)
 ## <a name="infrastructure-essentials"></a>Infrastructure Essentials
-Sowohl für private als auch für Unternehmensbereitstellungsszenarien ist ein Mobile Geräteverwaltung-System (MDM) die wesentliche Infrastruktur, die zum Bereitstellen und Verwalten von Windows 10-Geräten erforderlich ist, insbesondere der HoloLens 2. Ein [Azure AD Premium abonnement](/azure/active-directory/fundamentals/active-directory-get-started-premium) wird als Identitätsanbieter empfohlen und **ist erforderlich,** um bestimmte Funktionen zu unterstützen.
+Sowohl für private als auch für Unternehmensbereitstellungsszenarien ist ein Mobile Geräteverwaltung-System (MDM) die wesentliche Infrastruktur, die zum Bereitstellen und Verwalten von Windows 10-Geräten erforderlich ist, insbesondere HoloLens 2. Ein [Azure AD Premium abonnement](/azure/active-directory/fundamentals/active-directory-get-started-premium) wird als Identitätsanbieter empfohlen und **ist erforderlich,** um bestimmte Funktionen zu unterstützen.
 
 > [!NOTE]
 > Obwohl die HoloLens 2 wie ein mobiles Gerät bereitgestellt und verwaltet wird, wird sie in der Regel als gemeinsam genutztes Gerät von vielen Benutzern verwendet.
 
 ## <a name="azure-active-directory"></a>Azure Active Directory
-Azure AD ist ein cloudbasierter Verzeichnisdienst zur Identitäts- und Zugriffsverwaltung. Organisationen, die Microsoft Office 365 oder Intune verwenden, verwenden bereits Azure AD mit drei Editionen: Free, Premium P1 und Premium P2 (siehe [Azure Active Directory Editionen).](https://azure.microsoft.com/documentation/articles/active-directory-editions) Alle Editionen unterstützen Azure AD Geräteregistrierung, aber Premium P1 ist erforderlich, um die automatische MDM-Registrierung zu aktivieren, die wir später in diesem Handbuch verwenden werden.
+Azure AD ist ein cloudbasierter Verzeichnisdienst zur Identitäts- und Zugriffsverwaltung. Organisationen, die Microsoft Office 365 oder Intune verwenden, verwenden bereits Azure AD, das über drei Editionen verfügt: Free, Premium P1 und Premium P2 (siehe [Azure Active Directory Editionen](https://azure.microsoft.com/documentation/articles/active-directory-editions)). Alle Editionen unterstützen Azure AD Geräteregistrierung, aber Premium P1 ist erforderlich, um die automatische MDM-Registrierung zu aktivieren, die wir später in diesem Handbuch verwenden werden.
 > [!Important]
-> Es ist wichtig, dass Sie über Azure AD verfügen, da HoloLens-Geräte keine lokale AD-Verknüpfung unterstützen. Wenn Sie noch nicht über eine Azure AD verfügen, befolgen Sie die Anweisungen unter Erste Schritte und Erstellen eines neuen Mandanten [in Azure Active Directory](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
+> Es ist wichtig, dass Sie über Azure AD verfügen, da HoloLens-Geräte keine lokale AD-Verknüpfung unterstützen. Wenn Sie noch nicht über eine Azure AD verfügen, befolgen Sie die Anweisungen zum Einstieg und Erstellen eines neuen Mandanten [in Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant)
 
 ## <a name="identity-management"></a>Identitätsverwaltung
 In diesem Leitfaden wird [die verwendete Identität](/hololens/hololens-identity) Azure AD verwendet. Es gibt mehrere Vorteile für Azure AD, z. B.:
@@ -71,7 +71,7 @@ Die folgenden Dienste sind für die SCEP-Bereitstellung erforderlich, mit Ausnah
 - [NDES-Serverrolle](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831498(v=ws.11))
 - [Microsoft Intune-Connector](/mem/intune/protect/certificates-scep-configure#install-the-microsoft-intune-connector)
 
-Sie müssen ihre NDES-URL auch extern in Ihrem Unternehmensnetzwerk veröffentlichen, indem Sie Azure AD anwendungsproxy oder Webzugriff [Proxy verwenden.](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application) Sie können auch einen anderen Reverseproxy Ihrer Wahl verwenden.
+Sie müssen ihre NDES-URL auch extern in Ihrem Unternehmensnetzwerk veröffentlichen, indem Sie Azure AD anwendungsproxy oder [Webzugriff Proxy verwenden.](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application) Sie können auch einen anderen Reverseproxy Ihrer Wahl verwenden.
 
 ![SCEP-Datenfluss](./images/hololens2-scep-info-flow.png)
 
@@ -85,14 +85,14 @@ Intune unterstützt auch die Verwendung von PKCS-Zertifikaten (privates und öff
 ## <a name="proxy"></a>Proxy
 Die meisten Intranetnetzwerke des Unternehmens nutzen einen Proxy, um externen Datenverkehr zu verwalten. Mit HoloLens 2 können Sie einen Proxyserver für Ethernet-, Wi-Fi- und VPN-Verbindungen konfigurieren.
 
-Es gibt verschiedene Proxytypen und Möglichkeiten zum Konfigurieren des Proxys. Für die Zwecke dieses Handbuchs entscheiden wir uns für **wlan-proxy,** set via PAC URL und deployed via MDM . Dies hat die Vorteile einer automatischen Bereitstellung über MDM, die Möglichkeit, die PAC-Datei zu aktualisieren, anstatt eine Server:Port-Konfiguration zu verwenden, und schließlich die Verwendung des Wi-Fi-Proxys, um den Proxy so zu konfigurieren, dass er nur auf eine einzelne Wi-Fi-Verbindung angewendet wird, sodass die Geräte weiterhin verwendet werden können, wenn sie an einem anderen Standort verbunden sind.
+Es gibt verschiedene Proxytypen und Möglichkeiten zum Konfigurieren des Proxys. Für die Zwecke dieses Leitfadens entscheiden wir uns für **wlan-proxy,** set via PAC URL und deployed via MDM . Dies hat die Vorteile einer automatischen Bereitstellung über MDM, die Möglichkeit, die PAC-Datei zu aktualisieren, anstatt eine Server:Port-Konfiguration zu verwenden, und schließlich die Verwendung des Wi-Fi-Proxys, um den Proxy so zu konfigurieren, dass er nur auf eine einzelne Wi-Fi-Verbindung angewendet wird, sodass die Geräte weiterhin verwendet werden können, wenn sie an einem anderen Standort verbunden sind.
 
 Weitere Informationen zu Proxyeinstellungen für Windows 10 finden Sie unter Erstellen eines Wi-Fi-Profils für Geräte in Microsoft Intune [– Azure](/mem/intune/configuration/wi-fi-settings-configure).
 
 ## <a name="line-of-business-apps"></a>Line of Business-Apps 
 Zwar können mehrere Apps über das Microsoft Store installiert werden, aber wahrscheinlich verfügen Sie über Ihre eigene benutzerdefinierte App, die Sie speziell für die Verwendung in Mixed Reality erstellt haben. Diese benutzerdefinierten Apps, die in Ihrer gesamten Organisation für Ihr Unternehmen verteilt sind, werden als Branchen-Apps bezeichnet.
   
-Es gibt mehrere Möglichkeiten zum Bereitstellen von Anwendungen auf HoloLens 2 Geräten. Apps können direkt über MDM, den Microsoft Store für Unternehmen (MSfB) oder per Sideloaded über ein Bereitstellungspaket bereitgestellt werden. Im Rahmen dieses Leitfadens stellen wir Apps über MDM mithilfe der erforderlichen App-Installation zur Verfügung. Dadurch können Ihre BRANCHEN-Apps automatisch auf Ihre HoloLens heruntergeladen werden, sobald sie die Registrierung abgeschlossen haben.
+Es gibt mehrere Möglichkeiten zum Bereitstellen von Anwendungen auf HoloLens 2 Geräten. Apps können direkt über MDM, den Microsoft Store für Unternehmen (MSfB) bereitgestellt oder über ein Bereitstellungspaket geladen werden. Im Rahmen dieses Leitfadens stellen wir Apps über MDM mithilfe der erforderlichen App-Installation zur Verfügung. Dadurch können Ihre BRANCHEN-Apps automatisch auf Ihre HoloLens heruntergeladen werden, sobald sie die Registrierung abgeschlossen haben.
 
 Für diejenigen von Ihnen, die nicht über Eine eigene BRANCHEN verfügen, stellen wir eine Beispiel-App zum Testen dieses Bereitstellungsablaufs zur Verfügung. Diese App ist die [MRTK-Beispiel-App](https://aka.ms/HoloLensDocs-Sample-MRTK-Examples-App) und wurde bereits vorgefertigt und gepackt, um den Proof of Concept zu testen.
 

@@ -1,29 +1,29 @@
 ---
-title: HoloLens Sicherheitsübersicht
-description: Beginnen Sie mit einer Übersicht der Sicherheit für HoloLens Mixed Reality-Geräte.
+title: HoloLens-Sicherheitsübersicht
+description: Tun Sie die ersten Schritte mit einer Übersicht zur Sicherheit für HoloLens Mixed Reality-Geräte.
 author: evmill
 ms.author: v-evmill
 ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.topic: article
-keywords: 'Sicherheit, HoloLens, HoloLens 2, HoloLens2 Sicherheit, Sicherheitsübersicht '
+keywords: Sicherheit, HoloLens, HoloLens 2, HoloLens2 Sicherheit, Sicherheitsübersicht
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: bbf05404193f684bdc43d7d6a37159e17678d604
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: 5e65cd542cc1090a7744c0041d57f1e13d3ca0c67b15f81a515f8e3040438aca
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11284146"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665639"
 ---
-# Sicherheitsübersicht
+# <a name="security-overview"></a>Sicherheitsübersicht
 
-Um den Herausforderungen moderner Bedrohungslandschaften und der damit verbundenen Risiken gerecht zu werden, wurde die Sicherheitsarchitektur von HoloLens 2 vollständig überarbeitet, um ein fortschrittliches, innovatives Sicherheits- und Datenschutzkonzept zu bieten, das End-to-End bietet.
+Damit sie den Herausforderungen der modernen Bedrohungslandschaft und den damit verbundenen Risiken gerecht werden kann, wurde die Sicherheitsarchitektur von HoloLens 2 umfassend überarbeitet, um End-to-End ein hochentwickeltes, innovatives Sicherheits- und Datenschutzkonzept zu bieten.
 
-Mit HoloLens 2 haben Unternehmen und Kunden ein modernes, innovatives Betriebssystem mit einem starken, integrierten Sicherheitsframework. Dieses moderne Betriebssystem ermöglicht es Entwicklern, Anwendungen mit einer außergewöhnlichen Sicherheitsstrategie zu entwerfen, zu erstellen und bereitzustellen, um eine komplexe Bedrohungslandschaft und deren Risiken effektiv zu bekämpfen. 
+Mit HoloLens 2 verfügen Unternehmen und Kunden über ein hochmodernes Betriebssystem mit einem starken, integrierten Sicherheitsframework. Dieses moderne Betriebssystem ermöglicht Entwicklern das Entwerfen, Erstellen und Bereitstellen von Anwendungen mit einer außergewöhnlichen Sicherheitsstrategie, um die Risiken in einer komplexen Bedrohungslandschaft effektiv zu bekämpfen. 
 
-Die folgenden Sicherheitskapitel bieten einen Überblick über die sich entwickelnde Windows HoloLens 2-Sicherheit, die es Entwicklern ermöglicht, erfolgreichere und sicherere Hochleistungsanwendungen zu erstellen. In diesen Abschnitten werden die Sicherheitsarchitektur des Windows HoloLens 2-Betriebssystems, die sicheren Speicherorte und die zugehörigen Sicherheitsfeatures und-Mechanismen beschrieben.
+Die folgenden Sicherheitskapitel geben einen Überblick der sich ständig weiter entwickelnden Windows HoloLens 2-Sicherheit, mit der Entwickler die Möglichkeit erhalten, erfolgreichere und sicherere Hochleistungsanwendungen zu erstellen. In diesen Abschnitten werden die Sicherheitsarchitektur des Windows HoloLens 2-Betriebssystems, ihre sicheren Speicherorte und die zugehörigen Sicherheitsfeatures und -mechanismen beschrieben.

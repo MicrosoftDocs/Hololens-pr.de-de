@@ -7,12 +7,12 @@ description: Mixed Reality Supportoptionen für kleine bis große Unternehmensku
 ms.prod: hololens
 ms.topic: article
 ms.date: 3/19/2021
-ms.openlocfilehash: 0ddc4eb15036a4f5aa2ecf86893d5f671584f9bf
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: 43940fca03dec957c2afc6108e1ce77979aa000c1366bdc873056107d0b7da20
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659096"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115658770"
 ---
 # <a name="what-are-the-mixed-reality-support-and-help-options"></a>Welche support- und hilfeoptionen gibt es Mixed Reality?
 
@@ -72,7 +72,7 @@ Verwenden Sie beim Übermitteln einer neuen Frage an Stack Overflow bei der Erst
 - Erhalten Sie HoloLens 2 Programmierhilfe von der Community auf der [Microsoft Q&A.](#post-a-question-on-microsoft-qa)
 - Erfahren Sie mehr über Hilfe und Support und Dienstzustand Ihrer [Azure Mixed Reality-Dienste.](#azure-mixed-reality-services-support)
 - Erstellen einer Supportanfrage für HoloLens 2- oder Immersive Headset-Programmierung beim [MR-Support](https://aka.ms/mrsupport) 
-- Erstellen Sie eine Supportanfrage für HoloLens 2 Geräteprobleme, einschließlich Hardware, Nutzung & Konfiguration bei [HoloLens 2 Gerätesupport.](https://aka.ms/hlsupport) 
+- Erstellen Sie eine Supportanfrage für HoloLens 2 Geräteprobleme, einschließlich Hardware, Nutzung & Konfiguration unter [HoloLens 2 Gerätesupport.](https://aka.ms/hlsupport) 
 
 
 ### <a name="help-with-commercial-store-support-for-your-hololens-2"></a>Hilfe zum Kommerziellen Store-Support für Ihre HoloLens 2
@@ -83,10 +83,10 @@ Verwenden Sie beim Übermitteln einer neuen Frage an Stack Overflow bei der Erst
 
 ### <a name="commercial-store-support-numbers"></a>Supportnummern für kommerzielle Store
 >[!Note]
->Verwenden Sie eine der geschäftlichen Telefonnummern des kommerziellen Supports weiter unten, um Ihren Kauf abzuschließen. 
+>Verwenden Sie eine der geschäftlichen Telefonnummern des kommerziellen Supports, um Ihren Kauf abzuschließen. 
 
 >[!Note]
->Wenn Sie Support von einem Markt fordern, der unten nicht aufgeführt ist, wenden Sie sich an unsere US-Business Desk-Nummer.
+>Wenn Sie Support von einem Markt fordern, der unten nicht aufgeführt ist, wenden Sie sich an unseren US-Business Desk.
 
 | Märkte | Business Desk-Nummer | Geschäftszeiten |
 |-----------------|-------------------|-----------------------|
@@ -107,18 +107,18 @@ Verwenden Sie beim Übermitteln einer neuen Frage an Stack Overflow bei der Erst
 | Portugal |    +351 800600087 |    Mo bis Fr, 09:00 bis 18:00 Uhr |
 | US |  866-425-4709 |  Mo bis Fr, 6:00 bis 18:00 Uhr, PST |
 | Kanada |  877-345-2661 |  Mo bis Fr, 6:00 bis 18:00 Uhr, PST |
-| China |   400-805-6783 |  Mo bis Fr, 9:00 bis 18:00 Uhr |
+| China |   400-805-6783 |  Mo bis Fr, 9:00 BIS 18:00 Uhr |
 | Japan |   0120-03-5241 |  Mo bis Fr, 9:00 bis 17:30 Uhr |
-| Australien |   1800-217-709 |  Mo bis Fr, 8:00 bis 20:00 Uhr |
-| Singapur |   1800 622-1816 | Mo bis Fr, 8:30 bis 17:30 Uhr |
-| Neuseeland | 0800 471 640 |  Mo bis Fr, 8:00 bis 18:00 Uhr |
+| Australien |   1800-217-709 |  Mo bis Fr, 8:00 BIS 20:00 Uhr |
+| Singapur |   1800 622-1816 | Mo bis Fr, 8:30 Bis 17:30 Uhr |
+| Neuseeland | 0800 471 640 |  Mo bis Fr, 8:00 BIS 18:00 Uhr |
 
 >[!IMPORTANT]
->Wenn Sie eine vollständige Rechnung für die Umsatzsteuer benötigen, sollten Sie sich direkt an das Store-Team wenden und kein Gerät online erwerben. Alle online getätigten Käufe erhalten nur eine vereinfachte Rechnung für die Umsatzsteuer, die später nicht mehr bearbeitet werden kann.
+>Wenn Sie eine vollständige Rechnung für die Umsatzsteuer benötigen, sollten Sie sich direkt an das Supportteam für kommerzielle Store wenden und kein Gerät online erwerben. Alle online getätigten Käufe erhalten nur eine vereinfachte Rechnung über die Umsatzsteuer, die später nicht bearbeitet werden kann.
 
 ## <a name="azure-mixed-reality-services-support"></a>Unterstützung von Azure Mixed Reality-Diensten
 
-### <a name="open-an-azure-portal-technical-support-ticket"></a>Öffnen eines Azure-Portal technischen Supporttickets
+### <a name="open-an-azure-portal-technical-support-ticket"></a>Öffnen eines Azure-Portal-Tickets für den technischen Support
 
 So öffnen Sie ein Ticket für den technischen Support im Azure-Portal für Azure Spatial Anchors, Azure Object Anchors oder Azure Remote Rendering:
 
@@ -137,32 +137,32 @@ So öffnen Sie ein Ticket für den technischen Support im Azure-Portal für Azur
 
     ![Felder im Supportticket im Azure-Portal](../hololens/images/azure-help-support3.png)
 
-    1. Klicken Sie unten auf der Seite auf **Weiter: Lösungen,** um weitere Details hinzuzufügen, um mehr über das Problem zu erfahren.
+    1. Klicken **Sie unten auf der** Seite auf Weiter: Lösungen, um weitere Details hinzuzufügen, um uns weitere Informationen zum Problem zu geben.
 
-    2. Füllen Sie das Formular so präzise und detailliert wie möglich sowie Ihre bevorzugte Methode aus, um Sie zu erreichen.
+    2. Füllen Sie das Formular so präzise und detailliert wie möglich aus, und geben Sie Außerdem Ihre bevorzugte Möglichkeit an, Sie zu erreichen.
 
-    3. Überprüfen Sie alle Informationen, die Sie in den vorherigen Abschnitten ausgefüllt haben, und übermitteln Sie jetzt die Supportanfrage.
+    3. Überprüfen Sie alle Informationen, die Sie in den vorherigen Abschnitten ausgefüllt haben, und senden Sie nun die Supportanfrage.
 
 ### <a name="provide-documentation-content-feedback"></a>Bereitstellen von Feedback zu Dokumentationsinhalten
 
-Am Ende jedes Inhaltsartikels besteht die Möglichkeit, ein GitHub Problem zu öffnen und Feedback zu Inhalten in jedem Mixed Reality-Dokumentations-Repository zu geben. 
+Am Ende jedes Inhaltsartikels gibt es die Möglichkeit, ein Problem GitHub und Feedback zu Inhalten in einem beliebigen Mixed Reality-Dokumentationsrepository zu geben. 
 
 ### <a name="provide-product-feedback"></a>Abgeben von Produktfeedback
 
 >[!Note]
 >Das Bereitstellen von Feedback ist eine hervorragende Möglichkeit, Ihre Stimme zu hören, aber Feedback ist keine Möglichkeit, eine Antwort zu erhalten. Feedback-Hub können mit anderen Supportoptionen kombiniert werden.
 
-Um Feedback zu geben, eine Idee oder Vorschläge für Microsoft Mixed Reality-Dienste zu teilen oder über die Ideen abzustimmen, die andere übermittelt haben, besuchen Sie Folgendes: 
+Um Feedback zu geben, eine Idee oder Vorschläge für Microsoft Mixed Reality-Dienste zu teilen oder über die Ideen zu abstimmen, die andere übermittelt haben, besuchen Sie: 
 
 - [HoloLens 2 Produktfeedback](/hololens/hololens-feedback)
-- [Microsoft Mesh App-Produktfeedback](/hololens/hololens-feedback)
+- [Feedback zum Microsoft Mesh-App-Produkt](/hololens/hololens-feedback)
 - [Azure Remote Rendering Feedback](https://feedback.azure.com/forums/928696-azure-remote-rendering)
 - [Azure Spatial Anchors Feedback](https://feedback.azure.com/forums/919252-azure-spatial-anchors)
 
 ### <a name="faqs--troubleshooting"></a>Häufig gestellte Fragen & Problembehandlung
 
-- HoloLens 2 finden Sie auf der Seite [zur Problembehandlung für HoloLens.](../hololens/hololens-troubleshooting.md)
-- Windows Mixed Reality finden Sie auf der Seite mit häufig [gestellten Fragen](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
-- Azure Remote Rendering finden Sie auf der Seite mit häufig [gestellten Fragen](/azure/remote-rendering/resources/troubleshoot)
-- Azure Spatial Anchors finden Sie auf der Seite mit häufig [gestellten Fragen.](/azure/spatial-anchors/spatial-anchor-faq)
-- Azure Object Anchors finden Sie auf der Seite mit häufig [gestellten Fragen](/azure/object-anchors/faq)
+- HoloLens 2 finden Sie auf der Seite [HoloLens Problembehandlung.](../hololens/hololens-troubleshooting.md)
+- Windows Mixed Reality finden Sie auf der Seite mit [den häufig gestellten](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality) Fragen.
+- Azure Remote Rendering finden Sie auf der Seite [mit häufig gestellten](/azure/remote-rendering/resources/troubleshoot) Fragen.
+- Azure Spatial Anchors finden Sie auf der Seite mit den [häufig gestellten](/azure/spatial-anchors/spatial-anchor-faq) Fragen.
+- Azure Object Anchors finden Sie auf der Seite mit [häufig gestellten](/azure/object-anchors/faq) Fragen.

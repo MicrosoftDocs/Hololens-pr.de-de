@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 18dc962b869dafaea9ff9c605eef51fcbb35bfb2
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: ad210c9d31d8d7c226345618b6dfabf8457ee2398882935920d7b3217259a644
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636179"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664875"
 ---
 # <a name="find-open-and-save-files-on-hololens"></a>Suchen, Öffnen und Speichern von Dateien mit HoloLens
 
@@ -40,7 +40,7 @@ Dateien, die Sie auf einem HoloLens, einschließlich Fotos und Videos, werden di
 Verwenden Sie den Datei-Explorer auf HoloLens, um Dateien auf Ihrem Gerät, einschließlich 3D-Objekten, Dokumenten und Bildern, anzeigen und verwalten zu können. Wechseln Sie **zu Alle Apps**   >     >  **Datei-Explorer starten,** um zu beginnen.
 
 > [!TIP]
-> Wenn im Datei-Explorer keine Dateien aufgeführt sind, wählen Sie **im** linken oberen Bereich dieses Geräts aus.
+> Wenn im Datei-Explorer keine Dateien aufgeführt sind, wählen Sie **im** linken oberen Bereich Dieses Gerät aus.
 
 Wenn im Datei-Explorer keine Dateien angezeigt werden, ist der Filter "Zuletzt verwendet" möglicherweise aktiv (das Uhrsymbol ist im linken Bereich hervorgehoben). Um dieses Problem  zu beheben, wählen Sie im linken Bereich (unterhalb des Uhrsymbols) das Dokumentsymbol Dieses Gerät aus, oder öffnen Sie das Menü, und wählen Sie **Dieses Gerät aus.**
 
@@ -99,6 +99,6 @@ Um Informationen zu Ihrer HoloLens, klicken Sie mit der rechten Maustaste auf de
 
 ## <a name="sync-to-the-cloud"></a>Synchronisieren mit der Cloud
 
-Um Fotos und andere Dateien aus Ihrem HoloLens in die Cloud zu synchronisieren, installieren und richten Sie OneDrive auf HoloLens. Um die OneDrive zu erhalten, suchen Sie im Microsoft Store im HoloLens.
+Um Fotos und andere Dateien aus Ihrem HoloLens mit der Cloud zu synchronisieren, installieren und richten Sie OneDrive auf HoloLens. Um die OneDrive, suchen Sie in der Microsoft Store in Ihrer HoloLens.
 
 HoloLens keine App-Dateien und -Daten sichern, ist es daher eine gute Idee, Ihre wichtigen Daten zu OneDrive. Auf diese Weise werden Ihre Informationen gespeichert, wenn Sie Ihr Gerät zurücksetzen oder eine App deinstallieren.

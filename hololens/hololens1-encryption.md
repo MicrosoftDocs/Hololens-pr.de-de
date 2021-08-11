@@ -13,24 +13,24 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 37efab3ef3d68a9641320e144619008612f6efa2
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 4b07bb87b34ec966472bcbde000106590570fd7e7063ab503724884fa266bb34
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635244"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662750"
 ---
 # <a name="hololens-1st-gen-bitlocker-encryption"></a>BitLocker-Verschlüsselung von HoloLens (1. Generation)
 
 HoloLens (1. Generation) und HoloLens 2 unterstützen beide die Geräteverschlüsselung mit BitLocker. BitLocker ist jedoch immer auf HoloLens 2 aktiviert.
 
-Dieser Artikel unterstützt Sie beim Aktivieren und Verwalten von BitLocker auf HoloLens (1. Generation).
+In diesem Artikel erfahren Sie, wie Sie BitLocker auf HoloLens (1. Generation) aktivieren und verwalten.
 
-Auf HoloLens (1. Generation) können Sie die BitLocker-Geräteverschlüsselung manuell oder mithilfe der Verwaltung mobiler Geräte (Mobile Device Management, MDM) aktivieren. Befolgen Sie diese Anweisungen, um die [BitLocker-Geräteverschlüsselung](/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) zum Schützen von Dateien und Informationen zu aktivieren, die auf dem HoloLens gespeichert sind. Die Geräteverschlüsselung trägt zum Schutz Ihrer Daten mithilfe der AES-CBC 128-Verschlüsselungsmethode bei, die der [EncryptionMethodByDriveType-Methode 3](/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype) im BitLocker-Konfigurationsdienstanbieter (CSP) entspricht. Mitarbeiter, die über den richtigen Verschlüsselungsschlüssel (z. B. ein Kennwort) verfügen, können ihn entschlüsseln oder eine Datenwiederherstellung durchführen.
+Auf HoloLens (1. Generation) können Sie die BitLocker-Geräteverschlüsselung manuell oder mithilfe der Verwaltung mobiler Geräte (Mobile Device Management, MDM) aktivieren. Befolgen Sie diese Anweisungen, um die [BitLocker-Geräteverschlüsselung](/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) zum Schützen von Dateien und Informationen zu aktivieren, die auf dem HoloLens gespeichert sind. Die Geräteverschlüsselung trägt zum Schutz Ihrer Daten mithilfe der AES-CBC 128-Verschlüsselungsmethode bei, die [der EncryptionMethodByDriveType-Methode 3](/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype) im BitLocker-Konfigurationsdienstanbieter (CSP) entspricht. Mitarbeiter, die über den richtigen Verschlüsselungsschlüssel (z. B. ein Kennwort) verfügen, können ihn entschlüsseln oder eine Datenwiederherstellung durchführen.
 
 ## <a name="enable-device-encryption-using-mdm"></a>Aktivieren der Geräteverschlüsselung mit MDM
 
-Sie können Ihren Mdm-Anbieter (Mobile Geräteverwaltung) verwenden, um eine Richtlinie anzuwenden, die geräteverschlüsselung erfordert. Die zu verwendende Richtlinie ist die [Einstellung Security/RequireDeviceEncryption](/windows/client-management/mdm/policy-csp-security#security-requiredeviceencryption) im Richtlinien-CSP.
+Sie können Ihren Mobile Geräteverwaltung(MDM)-Anbieter verwenden, um eine Richtlinie anzuwenden, die Geräteverschlüsselung erfordert. Die zu verwendende Richtlinie ist die [Einstellung Security/RequireDeviceEncryption](/windows/client-management/mdm/policy-csp-security#security-requiredeviceencryption) im Richtlinien-CSP.
 
 [Weitere Informationen finden Sie in den Anweisungen zum Aktivieren der Geräteverschlüsselung mithilfe von Microsoft Intune.](/intune/compliance-policy-create-windows#windows-holographic-for-business)
 

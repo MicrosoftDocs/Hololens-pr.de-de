@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b0597806d58d7bf16fe6f6c766af3f9662fca7e6
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 593dc65ab97eaae65591a5239cd0a978750eac9fa538364ba6bbc7ef0a2a08a4
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635176"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660508"
 ---
 # <a name="deploy---cloud-connected-guide"></a>Bereitstellen – Leitfaden für cloudbasierte Bereitstellung
 
@@ -29,18 +29,18 @@ Nachdem Sie nun alles konfiguriert haben, sollten Sie bereit sein, Geräte zu ve
 
 Nachdem nun alles ordnungsgemäß für Azure AD und MDM-Registrierung konfiguriert ist, sollte der Rest jetzt ein Snap-Programm sein. Sie&#39;benötigen eine Wi-Fi Verbindung und das HoloLens-Gerät sowie eines der zuvor konfigurierten AAD-Benutzerkonten.
 
-Wenn Ihr Gerät nicht&#39;sich derzeit nicht im Zustand "Factoryeinstellungen" befindet, ist jetzt ein guter Zeitpunkt, um das Gerät neu [zu bereinen.](/hololens/hololens-recovery#clean-reflash-the-device)
+Wenn Ihr Gerät nicht&#39;derzeit nicht in den Werkseinstellungen befindet, ist jetzt ein guter Zeitpunkt, um das Gerät neu [zu bereinen.](/hololens/hololens-recovery#clean-reflash-the-device)
 
 1. Sobald sich Ihr Gerät in oobe befindet,&#39;sie mit der Interaktion beginnen und den Aufforderungen folgen. 
 1. Die kritische Eingabeaufforderung wird angezeigt, wenn Sie gefragt **werden, Wer diese Rolle HoloLens?** Wählen Sie My work or school owns it (Mein Arbeits-, Schul- oder **Schulkonto besitzt)** aus, und geben Sie Azure AD Kontoanmeldeinformationen ein.
 1. Wenn die Registrierung erfolgreich ist,&#39;sie aufgefordert, eine PIN zu einrichten. Diese PIN ist für dieses Gerät für diesen Benutzer eindeutig. Sie werden auch zur Eingabe von Iris-Scans, Sprachdaten und Telemetrieeinstellungen aufgefordert, und schließlich können Sie&#39;erfahren, wie Sie das Startmenü öffnen und die OOBE abschließen.
 1. Öffnen Sie nach dem Mixed Reality Start die Startmenü mithilfe der soeben **gelernten** Startgeste.
-1. Wählen Sie die **Einstellungen-App** und dann **System aus.** Die erste Information, die&#39;angezeigt wird, ist Ihr Gerätename, der für Ihr HoloLens 2-Gerät HOLOLENS- gefolgt von einer sechsstelligen Zeichenfolge &quot; &quot; ist.
+1. Wählen Sie die **Einstellungen-App** und dann **System aus.** Die erste Information, die&#39;angezeigt wird, ist Ihr Gerätename, der für Ihr HoloLens 2-Gerät HOLOLENS- gefolgt von einer sechsstelligen &quot; &quot; Zeichenfolge ist.
 1. Notieren Sie sich diesen Namen.
 
 ![HoloLens 2 Einstellungen – Informationen](./images/hololens2-settings-about.jpg)
 
-7. Sie können überprüfen, ob Ihr Gerät erfolgreich in der Azure AD in der Einstellungen registriert wurde. Wählen **Einstellungen** Konten **Auf**  ->  **Arbeits- oder Schulkonto zugreifen aus.** Auf diesem Bildschirm können Sie überprüfen, ob Sie erfolgreich registriert wurden, indem Sie &quot; Connected to _nameofAAD&#39;nameofAAD_ Azure AD. Verbunden durch _IhrenUsernamenameofAAD_ @ .onmicrosoft.com &quot; .
+7. Sie können überprüfen, ob Ihr Gerät erfolgreich in der Azure AD in der Einstellungen registriert wurde. Wählen **Einstellungen** **Kontozugriff auf**  ->  **Arbeits- oder Schulkonto aus.** Auf diesem Bildschirm können Sie überprüfen, ob Sie erfolgreich registriert sind, indem Sie &quot; Connected to _nameofAAD&#39;nameofAAD_ Azure AD. Verbunden durch _IhrenUsernamenameofAAD_ @ .onmicrosoft.com &quot; .
 
 
 Um zu überprüfen, ob das Gerät Azure AD beigetreten ist, [](https://portal.azure.com/#home)können wir die Azure Active Directory im Azure-Portal Azure Active Directory Geräte alle Geräte überprüfen und den  ->    ->    ->  Gerätenamen durchsuchen. Sie&#39;sehen, dass das Gerät Teil der Azure Active Directory.
@@ -48,7 +48,7 @@ Um zu überprüfen, ob das Gerät Azure AD beigetreten ist, [](https://portal.az
 
 ![Azure Active Directory – Gerät](./images/aad-enrollment.png)
 
-Als Nächstes&#39;Sie sich beim Microsoft Endpoint Manager [Admin Center anmelden.](https://endpoint.microsoft.com/#home) Melden Sie sich an, **und wählen Sie Geräte** und dann Alle Geräte **aus.** Hier können Sie ihren Gerätenamen HoloLens&#39;suchen. Ihr Konto sollte in Intune HoloLens werden.
+Als Nächstes&#39;Sie sich beim Microsoft Endpoint Manager [Admin Center anmelden.](https://endpoint.microsoft.com/#home) Melden Sie sich an, **und wählen Sie Geräte** und dann Alle Geräte **aus.** Hier können Sie ihren Gerätenamen HoloLens&#39;durchsuchen. Ihr Konto sollte in Intune HoloLens werden.
 
 ![Intune – Gerät](./images/endpoint-all-devices-enrolled.png)
 
@@ -62,8 +62,8 @@ Bei diesem Überprüfungsschritt wird davon ausgegangen, dass Sie den letzten Ü
 1. Wenn Sie noch keine Installation Microsoft Teams pc installiert haben, können Sie diese [Teams herunterladen.](https://www.microsoft.com/microsoft-365/microsoft-teams/download-app)
 2. Melden Sie Teams mit dem zweiten Benutzerkonto Azure AD, das derzeit bei Ihrem Konto angemeldet ist, HoloLens. Nachdem Sie sich bei Ihrem PC angemeldet haben, können Sie den Anruf empfangen.
 3. Entsperren Sie HoloLens, und melden Sie sich an.
-4. Öffnen Sie zum Starten Remote Assist-App das **Startmenü, und** wählen Sie **Remote Assist.** Remote Assist wird nicht nur als Posteingangs-App gebündelt, sondern auch an HoloLens 2&#39;Startmenü des Pakets angeheftet. In einem Fall wird&#39;nicht an den Startmenü angeheftet, und öffnen  Sie dann die liste Alle Apps, um danach zu suchen.
-5. Sobald Remote Assist gestartet wird, sollte der Benutzer des Geräts über [SSO](/azure/active-directory/manage-apps/what-is-single-sign-on) identifiziert und sich bei der App anmelden.
+4. Öffnen Sie zum Starten Remote Assist-App das **Startmenü, und** wählen Sie **Remote Assist.** Remote Assist wird nicht nur als Posteingangs-App gebündelt, sondern auch an HoloLens 2&#39;Startmenü des Pakets angeheftet. In einem Fall, in&#39;sie nicht an den Startmenü angeheftet ist, öffnen Sie dann die liste Alle Apps, um danach zu suchen. 
+5. Nachdem Remote Assist gestartet wurde, sollte der Benutzer des Geräts über [SSO](/azure/active-directory/manage-apps/what-is-single-sign-on) identifiziert und sich bei der App anmelden.
 6. Wählen Sie in der App Suchen aus, **und** suchen Sie nach dem zweiten Benutzer auf dem PC. Wählen Sie den Benutzer aus, um den Aufruf zu starten.
 7. Beantworten Sie auf Ihrem PC den Anruf.
 

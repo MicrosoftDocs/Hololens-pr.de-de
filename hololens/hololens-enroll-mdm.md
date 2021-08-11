@@ -14,16 +14,16 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 6c279664fa6051fab2f5e2e8f61e70b55704ae7c
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 3c17ad2397d87660cb2013604029864f9c36abdbf520710c4fe5952e3440e3a5
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640405"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664232"
 ---
 # <a name="enroll-hololens-in-mdm"></a>Registrieren von HoloLens in MDM
 
-Sie können mehrere Geräte Microsoft HoloLens gleichzeitig verwalten, indem Sie Lösungen wie [Microsoft Intune.](/intune/windows-holographic-for-business) Sie können Einstellungen verwalten, zu installierende Apps auswählen und Sicherheitskonfigurationen festlegen, die auf die Anforderungen Ihrer Organisation zugeschnitten sind. Weitere Informationen finden Sie unter Verwalten von [Windows Holographic mit Microsoft Intune](/intune/windows-holographic-for-business), den [konfigurationsdienstanbietern (CONFIGURATION Service Providers, CSPs),](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference#hololens)die in Windows Holographic unterstützt werden, und den von Windows Holographic for Business [.](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#hololenspolicies)
+Sie können mehrere Microsoft HoloLens gleichzeitig mit lösungen wie [Microsoft Intune.](/intune/windows-holographic-for-business) Sie können Einstellungen verwalten, zu installierende Apps auswählen und Sicherheitskonfigurationen festlegen, die auf die Anforderungen Ihrer Organisation zugeschnitten sind. Weitere Informationen finden Sie unter Verwalten von [Windows Holographic mit Microsoft Intune](/intune/windows-holographic-for-business), den [konfigurationsdienstanbietern (CONFIGURATION Service Providers, CSPs),](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference#hololens)die in Windows Holographic unterstützt werden, und den von Windows Holographic for Business [.](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#hololenspolicies)
 
 > [!NOTE]
 > Die Verwaltung mobiler Geräte (Mobile Device Management, MDM), einschließlich der VPN-, BitLocker- und Kioskmodusfunktionen, ist nur verfügbar, wenn Sie ein Upgrade auf [Windows Holographic for Business.](hololens1-upgrade-enterprise.md)

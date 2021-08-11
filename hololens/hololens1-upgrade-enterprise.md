@@ -12,12 +12,12 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: b5ae9b0d6859c0f916b5b906e2e9ec54cad6cbd9
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 7cf35a10a5f18dc0ccca876230b1677c6eca54ad116f0b2045fc1b269ac6c4b0
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635193"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115661892"
 ---
 # <a name="unlock-windows-holographic-for-business-features"></a>Effiziente Nutzung der Features von Windows Holographic for Business
 
@@ -50,7 +50,7 @@ Bereitstellungspakete sind Dateien, die vom Windows-Konfigurations-Designer-Tool
 
     ![Editionsupgrade mit ausgewählter Lizenzeinstellung](images/icd1.png)
 
-1. Suchen Sie die XML-Lizenzdatei, die beim Erwerb der Commercial Suite bereitgestellt wurde.
+1. Suchen Sie nach der XML-Lizenzdatei, die beim Kauf der Commercial Suite bereitgestellt wurde.
 
     > [!NOTE]
     > Sie können [zusätzliche Einstellungen im Bereitstellungspaket](hololens-provisioning.md) konfigurieren.
@@ -73,7 +73,7 @@ Bereitstellungspakete sind Dateien, die vom Windows-Konfigurations-Designer-Tool
 
 1. Wählen Sie unter **Sicherheitsdetails für das Bereitstellungspaket** auswählen die Option **Weiter** aus.
 
-1. Wählen Sie **Weiter** aus, um den Ausgabespeicherort anzugeben, an den das Bereitstellungspaket nach derEntstellung wechseln soll. Standardmäßig verwendet Windows ICD den Projektordner als Ausgabespeicherort.
+1. Wählen Sie **Weiter** aus, um den Ausgabespeicherort anzugeben, an den das Bereitstellungspaket nach derEntstellung gelangen soll. Standardmäßig verwendet Windows ICD den Projektordner als Ausgabespeicherort.
 
     Optional können Sie **Durchsuchen** auswählen, um den Standardausgabespeicherort zu ändern.
 
@@ -85,7 +85,7 @@ Bereitstellungspakete sind Dateien, die vom Windows-Konfigurations-Designer-Tool
 
 ### <a name="apply-the-provisioning-package-to-hololens"></a>Anwenden des Bereitstellungspakets auf HoloLens
 
-1. Verbinden Sie das Gerät über das USB-Kabel mit einem PC. Starten Sie das Gerät, aber fahren Sie nicht über die **Seite "Anpassen"** der anfänglichen Einrichtung hinaus (die erste Seite mit dem blauen Feld). Auf dem PC wird HoloLens im Datei-Explorer als Gerät angezeigt.
+1. Verbinden Sie das Gerät über das USB-Kabel mit einem PC. Starten Sie das Gerät, aber fahren Sie nicht über die **Seite "Anpassen"** der anfänglichen Einrichtung hinaus (die erste Seite mit dem blauen Feld). Auf dem PC wird HoloLens als Gerät im Datei-Explorer angezeigt.
 
     > [!NOTE]
     > Wenn auf dem HoloLens Gerät Windows 10 Version 1607 oder früher ausgeführt wird, öffnen Sie den Datei-Explorer, indem Sie auf dem Gerät die Schaltflächen **"Herunterfahren"** und **"Einschalten"** kurz drücken und loslassen.

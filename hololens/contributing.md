@@ -1,17 +1,17 @@
 ---
 title: Anleitungen für Mitwirkende
-description: Erfahren Sie, wie Sie mit GitHub-Flavored Markdown zur HoloLens-Dokumentation auf der docs.microsoft.com-Plattform beitragen.
+description: Erfahren Sie, wie Sie mithilfe von GitHub-Flavored Markdown zur HoloLens-Dokumentation auf der docs.microsoft.com-Plattform beitragen.
 author: hferrone
 ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
-ms.openlocfilehash: b1efaa77a4b96ed4b55e84147448cbfbc706d677
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: cbf0b2e4b61f006d0b5d7d74d3d81a4b33cfd6d8c2e124288b17959d54a5a1ad
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659113"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665065"
 ---
 # <a name="contributing-to-the-hololens-documentation"></a>Mitwirken an der HoloLens-Dokumentation
 
@@ -45,7 +45,7 @@ Beim Einrichten Ihres GitHub-Kontos empfehlen wir auch die folgenden Sicherheits
    - Es wird empfohlen, ein Profilbild hochzuladen, da eine Miniaturansicht auf Dokumentationsseiten angezeigt wird, zu der sie beitragen.
 - Wenn Sie die Befehlszeile verwenden möchten, sollten Sie [Git Anmeldeinformationsverwaltung für Windows](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest)einrichten. Auf diese Weise müssen Sie nicht jedes Mal Ihr Kennwort eingeben, wenn Sie einen Beitrag leisten.
 
-Das Veröffentlichungssystem ist an GitHub gebunden, daher sind diese Schritte wichtig. Sie werden entweder als Autor oder Mitwirkender für jeden Artikel mit Ihrem GitHub-Alias aufgeführt.
+Das Veröffentlichungssystem ist an GitHub gebunden, daher sind diese Schritte wichtig. Sie werden entweder als Autor oder Mitwirkender für jeden Artikel aufgeführt, indem Sie Ihren GitHub-Alias verwenden.
 
 ## <a name="editing-an-existing-article"></a>Bearbeiten eines vorhandenen Artikels
 
@@ -57,7 +57,7 @@ Verwenden Sie den folgenden Workflow, um einen *vorhandenen Artikel* über GitHu
 
    ![Bearbeiten sie einen Artikel.](images/editpage.png)
 
-   Dadurch wird automatisch eine verwerfbare Verzweigung aus der Standardverzweigung _master_ gezweigt.
+   Dadurch wird automatisch eine verwerfbare Verzweigung aus der Standardverzweigung _( master_) verzweigt.
 
    > [!NOTE]
    > Dieser Artikel enthält Verweise auf _master_, einen Begriff, den Microsoft nicht mehr verwendet. Sobald der Begriff aus der Software entfernt wurde, wird er auch aus diesem Artikel entfernt.
@@ -70,10 +70,10 @@ Verwenden Sie den folgenden Workflow, um einen *vorhandenen Artikel* über GitHu
    * **description:** Schreiben Sie eine kurze Beschreibung der Inhalte des Artikels, die SEO und Discovery verstärken.
    * **author:** Wenn Sie der primäre Besitzer der Seite sind, fügen Sie hier Ihren GitHub Alias hinzu.
    * **ms.author:** Wenn Sie der primäre Besitzer der Seite sind, fügen Sie hier Ihren Microsoft-Alias hinzu (Sie benötigen nicht @microsoft.com , nur den Alias).
-   * **ms.date:** Aktualisieren Sie das Datum, wenn Sie der Seite Hauptinhalte hinzufügen, jedoch nicht für Korrekturen wie Erläuterungen, Formatierung, Grammatik oder Rechtschreibung.
-   * **keywords:** Schlüsselwörter helfen bei der SUCHMASCHINENOPTIMIERUNG (Suchmaschinenoptimierung). Fügen Sie Schlüsselwörter hinzu, die durch ein Komma und ein Leerzeichen getrennt sind, die für Ihren Artikel spezifisch sind, aber keine Interpunktion nach dem letzten Schlüsselwort in Der Liste. Sie müssen keine globalen Schlüsselwörter hinzufügen, die für alle Artikel gelten, da diese an anderer Stelle verwaltet werden. 
+   * **ms.date:** Aktualisieren Sie das Datum, wenn Sie der Seite Hauptinhalte hinzufügen, aber nicht für Korrekturen wie Erläuterungen, Formatierung, Grammatik oder Rechtschreibung.
+   * **keywords:** Schlüsselwörter helfen bei SEO (Suchmaschinenoptimierung). Fügen Sie Schlüsselwörter hinzu, die durch ein Komma und ein Leerzeichen getrennt sind, die für Ihren Artikel spezifisch sind, aber keine Interpunktion nach dem letzten Schlüsselwort in Der Liste. Sie müssen keine globalen Schlüsselwörter hinzufügen, die für alle Artikel gelten, da diese an anderer Stelle verwaltet werden. 
    
-5. Scrollen Sie nach Abschluss der Bearbeitung Ihres Artikels nach unten, und wählen Sie **Dateiänderung vorschlagen** aus.
+5. Wenn Sie ihre Artikelbearbeitungen abgeschlossen haben, scrollen Sie nach unten, und wählen **Sie Dateiänderung vorschlagen** aus.
 
 6. Wählen Sie auf der nächsten Seite **Pull Request erstellen** aus, um ihren automatisch erstellten Branch mit dem Standardverzweigung _master_ zusammenzuführen.
 
@@ -116,9 +116,9 @@ Verwenden Sie den folgenden Workflow, um neue Artikel im Dokumentations-Reposito
    
 2. Wählen Sie im Ordner "mixed-reality-docs" oben rechts die Option **Neue Datei erstellen** aus.
 
-3. Erstellen Sie einen Seitennamen für den Artikel (verwenden Sie Bindestriche anstelle von Leerzeichen und keine Interpunktion oder Apostrophe), und fügen Sie ".md" an.
+3. Erstellen Sie einen Seitennamen für den Artikel (verwenden Sie Bindestriche anstelle von Leerzeichen, und verwenden Sie keine Interpunktion oder Apostrophe), und fügen Sie ".md" an.
 
-   ![Benennen Sie Ihre neue Seite.](images/newpagetitle.png)
+   ![Geben Sie Ihrer neuen Seite einen Namen.](images/newpagetitle.png)
    
    >[!IMPORTANT]
    >Stellen Sie sicher, dass Sie den neuen Artikel im Ordner "mixed-reality-docs" erstellen. Sie können dies bestätigen, indem Sie in der neuen Dateinamenzeile nach "/mixed-reality-docs/" suchen.
@@ -143,9 +143,9 @@ Verwenden Sie den folgenden Workflow, um neue Artikel im Dokumentations-Reposito
 
 7. Fügen Sie am Ende des Artikels einen `## See also` Abschnitt mit Links zu anderen relevanten Artikeln hinzu.
 
-8. Wenn Sie fertig sind, wählen Sie **Commit new file (Neue Datei committen)** aus.
+8. Wählen Sie abschließend **Commit new file (Neue Datei committen)** aus.
 
-9. Wählen Sie **Neuer Pull Request** aus, und führen Sie den _Master-Branch_ Ihres Forks in MicrosoftDocs/Mixed _Reality-Master_ zusammen (stellen Sie sicher, dass der Pfeil auf das richtige Ziel zeigt).
+9. Wählen Sie **Neuer Pull Request** aus, und führen Sie den _Master-Branch_ Ihres Forks in MicrosoftDocs/Mixed Reality _Master_ zusammen (stellen Sie sicher, dass der Pfeil auf das richtige Ziel zeigt).
 
    ![Erstellen eines Pull Requests aus Ihrer Verzweigung in MicrosoftDocs/Mixed-Reality](images/pr-to-master.png)
 
@@ -164,10 +164,10 @@ Die [Docs Markdown-Erweiterung für Visual Studio Code](/teamblog/docs-extension
 
 ### <a name="adding-images"></a>Hinzufügen von Bildern
 
-Sie müssen Ihre Bilder in den Ordner "mixed-reality-docs/images" im Repository hochladen und dann im Artikel entsprechend darauf verweisen. Bilder werden automatisch in voller Größe gezeigt, was bedeutet, dass große Bilder die gesamte Breite des Artikels ausfüllen. Es wird empfohlen, ihre Bilder vorab zu sizingen, bevor Sie sie hochladen. Die empfohlene Breite liegt zwischen 600 und 700 Pixeln, aber Sie sollten die Größe nach oben oder unten ändern, wenn es sich um einen dichten Screenshot oder einen Bruchteil eines Screenshots handelt.
+Sie müssen Ihre Bilder in den Ordner "mixed-reality-docs/images" im Repository hochladen und dann entsprechend im Artikel darauf verweisen. Bilder werden automatisch in voller Größe gezeigt, was bedeutet, dass große Bilder die gesamte Breite des Artikels ausfüllen. Es wird empfohlen, die Größe Ihrer Bilder vorab zu anpassen, bevor Sie sie hochladen. Die empfohlene Breite liegt zwischen 600 und 700 Pixeln, aber Sie sollten die Größe nach oben oder unten ändern, wenn es sich um einen dichten Screenshot oder einen Bruchteil eines Screenshots handelt.
 
 >[!IMPORTANT]
->Sie können Bilder nur vor dem Zusammenführen in Ihr ge forktete Repository hochladen. Wenn Sie also einem Artikel Bilder hinzufügen möchten, müssen Sie [Visual Studio Code](#using-visual-studio-code) verwenden, um die Bilder zuerst dem Ordner "images" Ihres Forks hinzuzufügen, oder stellen Sie sicher, dass Sie die folgenden Schritte in einem Webbrowser durchgeführt haben:
+>Sie können Bilder nur vor dem Zusammenführen in Ihr ge forkiertes Repository hochladen. Wenn Sie also einem Artikel Bilder hinzufügen möchten, müssen Sie [Visual Studio Code](#using-visual-studio-code) verwenden, um die Bilder zuerst dem Ordner "images" Ihres Forks hinzuzufügen, oder stellen Sie sicher, dass Sie die folgenden Schritte in einem Webbrowser durchgeführt haben:
 >
 >1. Forked the MicrosoftDocs/mixed-reality repo.
 >2. Der Artikel wurde in Ihrem Fork bearbeitet.
@@ -224,11 +224,11 @@ Verwenden Sie den folgenden Workflow, um Änderungen an der Dokumentation mit Vi
 
 1. Stellen Sie sicher, dass Ihr geklonter Fork mit dem offiziellen Repository auf dem neuesten Stand ist.
 
-   1. Erstellen Sie in einem Webbrowser einen Pull Request, um aktuelle Änderungen anderer Mitwirkender im Standardzweig von MicrosoftDocs/mixed-reality, _master,_ mit Ihrer Verzweigung zu synchronisieren (stellen Sie sicher, dass der Pfeil auf das richtige Ziel zeigt).
+   1. Erstellen Sie in einem Webbrowser einen Pull Request, um aktuelle Änderungen von anderen Mitwirkenden im Standardzweig von MicrosoftDocs/mixed-reality, _master,_ mit Ihrer Verzweigung zu synchronisieren (stellen Sie sicher, dass der Pfeil auf das richtige Ziel zeigt).
       
       ![Synchronisieren von Änderungen von MicrosoftDocs/Mixed Reality mit Ihrem Fork](images/sync-repos.png)
       
-   2. Wählen Visual Studio Code Synchronisierungsschaltfläche aus, um Den neu aktualisierten Fork mit dem lokalen Klon zu synchronisieren.
+   2. Wählen Visual Studio Code Synchronisierungsschaltfläche aus, um Ihren neu aktualisierten Fork mit dem lokalen Klon zu synchronisieren.
       
       ![Klicken Sie auf das Bild der Synchronisierungsschaltfläche.](images/sync-clone.png)
       

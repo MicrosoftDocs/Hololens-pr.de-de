@@ -1,6 +1,6 @@
 ---
-title: 'Häufige Szenarien: Sichere offline HoloLens 2'
-description: Erfahren Sie, wie Sie mit der Bereitstellung für HoloLens-Geräte ein Szenario für eine sichere Offlinebereitstellung und App-Bereitstellung einrichten.
+title: 'Häufige Szenarien: Sichere Offline-HoloLens 2'
+description: Erfahren Sie, wie Sie ein Szenario mit sicherer Offlinebereitstellung und App-Bereitstellung mit Bereitstellung für HoloLens Geräte einrichten.
 keywords: HoloLens, Verwaltung, offline, offline sicher
 ms.date: 9/25/2020
 manager: yannisle
@@ -14,14 +14,14 @@ audience: ITPro
 ms.localizationpriority: medium
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8828444a69d7e5d46293340ff771f97eb5eb01e6
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 1da19665dd3298ece8b007e86695bfe9f298f2347a0e7e058cbd30f0ad5d35c3
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397881"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664518"
 ---
-# <a name="common-scenarios--offline-secure-hololens-2"></a>Häufige Szenarien: Sichere offline HoloLens 2
+# <a name="common-scenarios--offline-secure-hololens-2"></a>Häufige Szenarien: Sichere Offline-HoloLens 2
 
 ## <a name="overview"></a>Überblick
 
@@ -40,8 +40,8 @@ Dieser Leitfaden enthält Anleitungen zum Anwenden eines Beispielbereitstellungs
 Windows 10 PC-Setup
 1. [Laden Sie die neueste HoloLens 2 Betriebssystemdatei](https://aka.ms/hololens2download) direkt auf einen PC herunter. 
    1. Unterstützung für diese Konfiguration ist in Build 19041.1117 und höher enthalten.
-1. Laden Sie das Advanced Recovery Companion(ARC)-Tool [von der Microsoft Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8) auf Ihren PC herunter, und installieren Sie es.
-1. Laden Sie das neueste [Windows Configuration Designer-Tool (WCD)](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?activetab=pivot:overviewtab) von der Microsoft Store auf Ihren PC herunter, und installieren Sie es.
+1. Laden Sie das Advanced Recovery Companion(ARC)-Tool [von der Microsoft Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8) auf Ihren PC herunter, oder installieren Sie es.
+1. Laden Sie das neueste [tool Windows Configuration Designer (WCD)](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?activetab=pivot:overviewtab) von der Microsoft Store auf Ihren PC herunter, und installieren Sie es.
 1. [Laden Sie den Ordner OfflineSecureHL2_Sample mit den Projektdateien](https://aka.ms/HoloLensDocs-SecureOfflineSample) herunter, um das PPKG zu erstellen.
 1. Bereiten Sie Ihre [Offline-Branchenanwendung für die PPKG-Bereitstellung](app-deploy-provisioning-package.md)vor. 
 
@@ -51,32 +51,32 @@ Windows 10 PC-Setup
 Erstellen eines Pakets für die sichere Konfigurationsbereitstellung
 
 1. Starten Sie das WCD-Tool auf Ihrem PC.
-1. Wählen **Sie Datei -> Projekt öffnen aus.**
-  1. Navigieren Sie zum Speicherort des zuvor gespeicherten ordners OfflineSecureHL2_Sample, und wählen Sie: OfflineSecureHL2_Sample.icdproj.xml
+1. Wählen Sie **Datei -> Projekt öffnen** aus.
+  1. Navigieren Sie zum Speicherort des zuvor gespeicherten Ordners OfflineSecureHL2_Sample, und wählen Sie Folgendes aus: OfflineSecureHL2_Sample.icdproj.xml
 1. Das Projekt sollte geöffnet werden, und Sie sollten nun über eine Liste der verfügbaren Anpassungen verfügen:
 
    > [!div class="mx-imgBorder"]
    > ![Screenshot des in WCD geöffneten Konfigurationspakets](images/offline-secure-sample-wcd.png)
 
-   Konfigurationen, die in diesem Bereitstellungspaket festgelegt sind:
+   In diesem Bereitstellungspaket festgelegte Konfigurationen:
    
-   |     Element                                                |     Einstellung                       |     Beschreibung                                                                                                                    |
+   |     Element                                                |     Einstellung                       |     BESCHREIBUNG                                                                                                                    |
    |---------------------------------------------------------|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-   |     Konten/Benutzer                                    |     Lokaler Benutzername & Kennwort    |     Für diese Offlinegeräte müssen ein einzelner Benutzername und ein Kennwort festgelegt und von allen Benutzern des Geräts freigegeben werden.          |
-   |     Erste Erfahrung/HoloLens/SkipCalibration       |     True                          |     Überspringt die Kalibrierung nur während der anfänglichen Geräteeinrichtung.                                                                             |
-   |     Erste Erfahrung/HoloLens/SkipTraining          |     True                          |     Überspringt das Gerätetraining während der anfänglichen Geräteeinrichtung.                                                                              |
-   |     Erste Erfahrung/HoloLens/WLAN                  |     True                          |     Überspringt Wi-Fi Konfiguration während der anfänglichen Geräteeinrichtung                                                                                 |
-   |     Policies/Connectivity/AllowBluetooth                |     No                            |     Deaktiviert Bluetooth.                                                                                                             |
-   |     Policies/Experience/AllowCorglu                    |     No                            |     Deaktiviert Cortana (um potenzielle Probleme zu beseitigen, da die Mikrofone deaktiviert sind)                                          |
-   |     Policies/MixedReality/MicrophoneDisabled            |     Yes                           |     Deaktiviert das Mikrofon.                                                                                                            |
+   |     Konten/Benutzer                                    |     Local User Name & Password    |     Für diese Offlinegeräte müssen ein einzelner Benutzername und ein Kennwort festgelegt und von allen Benutzern des Geräts freigegeben werden.          |
+   |     Erste Erfahrung/HoloLens/SkipCalibration       |     True                          |     Überspringt die Kalibrierung nur während der ersten Geräteeinrichtung                                                                             |
+   |     Erste Erfahrung/HoloLens/SkipTraining          |     True                          |     Überspringt das Gerätetraining während der ersten Geräteeinrichtung.                                                                              |
+   |     Erste Erfahrung/HoloLens/WLAN                  |     True                          |     Überspringt Wi-Fi Konfiguration während der ersten Geräteeinrichtung.                                                                                 |
+   |     Richtlinien/Konnektivität/AllowBluetooth                |     No                            |     Deaktiviert Bluetooth                                                                                                             |
+   |     Policies/Experience/AllowCororpora                    |     No                            |     Deaktiviert Cortana (um potenzielle Probleme zu beseitigen, da die Mikrofone deaktiviert sind)                                          |
+   |     Richtlinien/MixedReality/MicrophoneDisabled            |     Yes                           |     Deaktiviert das Mikrofon.                                                                                                            |
    |     Richtlinien/Datenschutz/LetAppsAccessLocation              |     Verweigern erzwingen                    |     Verhindert, dass Apps versuchen, auf Standortdaten zuzugreifen (um potenzielle Probleme zu beseitigen, da die Standortnachverfolgung deaktiviert ist)    |
    |     Richtlinien/Datenschutz/LetAppsAccessMicrophone            |     Verweigern erzwingen                    |     Verhindert, dass Apps versuchen, auf Mikrofone zuzugreifen (um potenzielle Probleme zu beseitigen, da die Mikrofone deaktiviert sind)           |
-   |     Richtlinien/Sicherheit/AllowAddProvisioningPackage       |     No                            |     Verhindert das Hinzufügen von Bereitstellungspaketen, die möglicherweise versuchen, gesperrte Richtlinien außer Kraft zu setzen.                         |
-   |     Richtlinien/Sicherheit/AllowRemoveProvisioningPackage    |     No                            |     Verhindert, dass dieses gesperrte Bereitstellungspaket entfernt wird.                                                           |
+   |     Policies/Security/AllowAddProvisioningPackage       |     No                            |     Verhindert das Hinzufügen von Bereitstellungspaketen, die möglicherweise versuchen, gesperrte Richtlinien außer Kraft zu setzen.                         |
+   |     Policies/Security/AllowRemoveProvisioningPackage    |     No                            |     Verhindert, dass dieses gesperrte Bereitstellungspaket entfernt wird.                                                           |
    |     Richtlinien/System/AllowLocation                       |     No                            |     Verhindert, dass das Gerät versucht, Standortdaten nachzuverfolgen.                                                                        |
    |     Richtlinien/WLAN/AllowWiFi                             |     No                            |     Deaktiviert Wi-Fi                                                                                                                 |
 
-1. Wählen Sie unter Laufzeiteinstellungen die Option **Konten/Benutzer/Benutzername: Holo/Kennwort** aus.
+1. Wählen Sie unter Runtime Einstellungen die Option **Konten/Benutzer/Benutzername: Holo/Kennwort** aus.
 
    Notieren Sie sich das Kennwort, und setzen Sie es bei Bedarf zurück.
 
@@ -92,31 +92,31 @@ Erstellen eines Pakets für die sichere Konfigurationsbereitstellung
 
 ## <a name="deploy"></a>Bereitstellen
 
-1. Schließen Sie hl2 über ein USB-Windows 10 an Ihren Windows 10-PC an.
-1. Starten Sie das ARC-Tool, und wählen **Sie HoloLens 2**
+1. Verbinden hl2 über ein USB-Kabel an Ihren Windows 10-PC.
+1. Starten Sie das ARC-Tool, und wählen Sie **HoloLens 2**
 
-   ![HoloLens 2 clean reflash initial screen](images/ARC2.png)
+   ![„Clean Reflash“ für HoloLens 2 – Startbildschirm](images/ARC2.png)
 
-1. Wählen Sie auf dem nächsten Bildschirm **manuelle Paketauswahl aus.**
+1. Wählen Sie auf dem nächsten Bildschirm **Manuelle Paketauswahl** aus.
 
    ![HoloLens 2 ARC-Infobildschirm](images/arc_device_info.png)
 
-1. Navigieren Sie zur zuvor heruntergeladenen FFU-Datei, und wählen Sie **Öffnen aus.**
-1. Wählen Sie auf der Seite Warnung die Option **Weiter aus.**
+1. Navigieren Sie zur zuvor heruntergeladenen FFU-Datei, und wählen Sie **Öffnen** aus.
+1. Wählen Sie auf der Seite Warnung die Option **Weiter** aus.
 
-   ![HoloLens 2 ARC-Warnungsbildschirm](images/arc_warning.png)
+   ![HoloLens 2 ARC-Warnbildschirm](images/arc_warning.png)
 
-1. Warten Sie, bis das ARC-Tool die HoloLens 2 des Betriebssystems abgeschlossen hat.
-1. Nachdem das Gerät die Installation abgeschlossen und den Back-Up-Start abgeschlossen hat, navigieren Sie von Ihrem PC zum Datei-Explorer, und kopieren Sie die zuvor gespeicherte PPKG-Datei in den Geräteordner.
+1. Warten Sie, bis das ARC-Tool die Installation HoloLens 2 Betriebssystems abgeschlossen hat.
+1. Nachdem das Gerät die Installation abgeschlossen und die Sicherung gestartet hat, navigieren Sie von Ihrem PC zum Datei-Explorer, und kopieren Sie die zuvor gespeicherte PPKG-Datei in den Geräteordner.
 
    > [!div class="mx-imgBorder"]
    > ![PPKG-Datei auf dem PC im Datei-Explorer-Fenster.](images/offline-secure-file-explorer.png)
 
-1. Klicken Sie auf HoloLens 2 Schaltflächenkombination, um das Bereitstellungspaket ausführen:  Tippen Sie gleichzeitig auf **Volume** herunter und Netzschalter.
-1. Sie werden aufgefordert, das Bereitstellungspaket anzuwenden, und wählen Sie Bestätigen **aus.**
-1. Wählen Sie nach Abschluss des Bereitstellungspakets **OK aus.**
-1. Sie sollten dann aufgefordert werden, sich mit dem freigegebenen lokalen Konto und Kennwort beim Gerät zu anmelden.
+1. Klicken Sie auf dem HoloLens 2 auf die folgende Schaltflächenkombination, um das Bereitstellungspaket auszuführen: Tippen Sie gleichzeitig auf **"Lautstärke herunterfahren"** und **"Netzschalter".**
+1. Sie werden aufgefordert, das Bereitstellungspaket anzuwenden, und wählen **Sie Bestätigen** aus.
+1. Wählen Sie nach Abschluss des Bereitstellungspakets **OK** aus.
+1. Sie sollten dann aufgefordert werden, sich mit dem freigegebenen lokalen Konto und Kennwort beim Gerät anzumelden.
 
 ## <a name="maintain"></a>Verwalten
 
-Bei dieser Konfiguration wird empfohlen, den oben genannten Prozess neu zu starten und das Gerät mit dem ARC-Tool neu zu starten und ein neues PPKG anzuwenden, um Updates für das Betriebssystem und/oder die Anwendung(en) zu erstellen.
+Bei dieser Konfiguration wird empfohlen, den oben genannten Prozess neu zu starten und das Gerät mit dem ARC-Tool neu zu schräglegen und eine neue PPKG-Datei anzuwenden, um Updates für das Betriebssystem und/oder die Anwendungen vorzunehmen.

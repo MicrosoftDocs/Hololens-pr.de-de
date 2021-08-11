@@ -12,12 +12,12 @@ ms.date: 05/14/2021
 manager: evmill
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: acbc3e52240f420d384fa372684966d7220d53c6
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: b117542704968150639a47956a8142d7232fcc66d696feb61ec4fffdaa49df59
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112923583"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660579"
 ---
 # <a name="hololens-2-battery-and-charging"></a>HoloLens 2: Akku und Ladevorgang
 
@@ -34,7 +34,7 @@ Verwenden Sie das [Ladegerät und das USB Type-C-Kabel](https://www.microsoft.co
 Wenn das Gerät korrekt hochgefahren und läuft, gibt es drei verschiedene Möglichkeiten, den Akkustand zu überprüfen:
 
 - Über das Hauptmenü der Benutzeroberfläche des HoloLens-Geräts.
-- Sehen Sie sich die LEDs in der Nähe des Netzschalters an (bei 40 % Akkustand sollten mindestens zwei LEDs leuchten).
+- Sehen Sie sich die LEDs in der Nähe des Netzschalters an (bei 40 % Akkustand sollten mindestens zwei LEDs leuchten).
     - Während des Ladevorgangs leuchtet die Akkuanzeige auf, um den aktuellen Ladezustand anzuzeigen.  Die letzte Anzeige leuchtet auf und erlischt, um den aktiven Ladevorgang anzuzeigen.
     - Wenn Ihre HoloLens eingeschaltet ist, zeigt die Akkuanzeige den Akkustand in fünf Stufen an.
     - Wenn nur eine der fünf LEDs leuchtet, ist der Akkustand unter 20 %.

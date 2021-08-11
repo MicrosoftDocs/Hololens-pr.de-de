@@ -14,18 +14,18 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f2f7e1425a208e1f466d995f66118b7e68984242
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 67e34ea275ef73adda840ee4f44d9c0c3c9440ef0bd2aef48cb7aaa971219220
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637012"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660120"
 ---
 # <a name="deployment-guide---corporate-connected-hololens-2-with-dynamics-365-guides---overview"></a>Bereitstellungshandbuch – Unternehmensverknannte HoloLens 2 mit Dynamics 365 Guides – Übersicht
 
 Dieser Leitfaden unterstützt IT-Experten bei der Planung und Bereitstellung von Microsoft HoloLens 2-Geräten mit Dynamics 365 Guides (Handbüchern) für ihre Organisation. Dieser Leitfaden eignet sich hervorragend für Pilot- und Produktionsbereitstellungen und ähnelt dem [Leitfaden Szenario B: Bereitstellen innerhalb des Netzwerks Ihrer Organisation.](/hololens/common-scenarios#scenario-b-deploy-inside-your-organizations-network) Nachdem Sie Ihren Proof of Concept getestet haben, verwenden Sie diesen Leitfaden, um mit der Integration von HoloLens in Ihre Organisation fortzugehen.
 
-In diesem Leitfaden erfahren Sie, wie Sie Ihre Geräte bei Ihrer vorhandenen Geräteverwaltung registrieren, Lizenzen nach Bedarf anwenden und überprüfen, ob Ihre Endbenutzer nach der Geräteeinrichtung einen Dynamics 365-Leitfaden betreiben und benutzerdefinierte Branchen-Apps verwenden können. 
+In diesem Leitfaden wird erläutert, wie Sie Ihre Geräte bei Ihrer vorhandenen Geräteverwaltung registrieren, Lizenzen nach Bedarf anwenden und überprüfen, ob Ihre Endbenutzer nach der Geräteeinrichtung ein Dynamics 365-Handbuch betreiben und benutzerdefinierte Branchen-Apps verwenden können. 
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -41,7 +41,7 @@ Die folgende Infrastruktur sollte bereits vorhanden sein:
     - Proxykonfiguration
 - Benutzer melden sich mit ihrem eigenen Unternehmenskonto (Azure AD) an.
     - Einzelne oder mehrere Benutzer pro Gerät werden unterstützt.
-- Unterschiedliche Ebenen von Gerätesperrungskonfigurationen, die basierend auf bestimmten Anwendungsfällen angewendet werden, von Vollständig geöffnet bis Kiosk mit einzelner App.
+- Unterschiedliche Ebenen der Gerätesperrungskonfigurationen, die basierend auf bestimmten Anwendungsfällen angewendet werden, von Vollständig geöffnet bis Kiosk für einzelne Apps.
 
 ## <a name="guides-licensing-and-requirements"></a>[Handbücher – Lizenzierung und Anforderungen](/dynamics365/mixed-reality/guides/requirements#licensing-and-product-requirements)
 
@@ -63,7 +63,7 @@ Die folgende Infrastruktur sollte bereits vorhanden sein:
 >- [Erfahren Sie mehr über die Grundlegendes zur Infrastruktur für HoloLens 2 Geräte.](hololens2-corp-connected-prepare.md#infrastructure-essentials)
 >- [Erfahren Sie mehr über Azure AD, und richten Sie eine ein, wenn Sie sie nicht haben.](hololens2-corp-connected-prepare.md#azure-active-directory)
 >- [Erfahren Sie mehr über die Identitätsverwaltung und die optimale Einrichtung Azure AD Konten.](hololens2-corp-connected-prepare.md#identity-management)
->- [Erfahren Sie mehr über MDM, und richten Sie intune ein, wenn Sie noch keine bereit haben.](hololens2-corp-connected-prepare.md#mobile-device-management)
+>- [Erfahren Sie mehr über MDM und die Einrichtung mit Intune, falls Sie noch keines bereit haben.](hololens2-corp-connected-prepare.md#mobile-device-management)
 >- [Machen Sie sich mit zertifikatbasiertem WLAN vertraut.](hololens2-corp-connected-prepare.md#certificates)
 >- [Machen Sie sich mit proxy vertraut.](hololens2-corp-connected-prepare.md#proxy)
 >- [Erfahren Sie, wie Sie Branchen-Apps verwenden können.](hololens2-corp-connected-prepare.md#line-of-business-apps)
@@ -73,7 +73,7 @@ Die folgende Infrastruktur sollte bereits vorhanden sein:
 >- [Erstellen von Benutzern und Gruppen](hololens2-corp-connected-configure.md#azure-users-and-groups)
 >- [Einrichten der automatischen Registrierung.](hololens2-corp-connected-configure.md#auto-enrollment-on-hololens-2)
 >- [Einrichten von Wi-Fi Zertifikaten und Profilen für unternehmensinterne Wi-Fi Konnektivität.](hololens2-corp-connected-configure.md#corporate-wi-fi-connectivity)
->- [Hochladen und Zuweisen von LOB-App-Paketen (Line of Business).](hololens2-corp-connected-configure.md#app-deployment)
+>- [Hochladen und Zuweisen von Lob-App-Paketen (Line of Business).](hololens2-corp-connected-configure.md#app-deployment)
 >- [Richten Sie Dynamics 365 Guides ein.](hololens2-corp-connected-configure.md#setup-guides-application-licenses-dataverse-and-authoring)
 >- [Konfigurieren des Kioskmodus (optional)](hololens2-corp-connected-configure.md#optional-kiosk-mode)
 >- [Konfigurieren von WDAC (optional).](hololens2-corp-connected-configure.md#optional-wdac)

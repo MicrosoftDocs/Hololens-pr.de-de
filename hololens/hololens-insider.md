@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e8adb2f796299c99a9152a5b245e8bdd0b768f05
-ms.sourcegitcommit: 78e5f26014e55c13fee9c2b75a80810fd2e77877
+ms.openlocfilehash: de5b8f052cfdd176f5b883661b2339764fd8ec24113e06b1286d9406acf3790f
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2021
-ms.locfileid: "115009339"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664117"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider Preview für Microsoft HoloLens
 
@@ -31,7 +31,7 @@ Willkommen bei den neuesten Insider Preview-Builds für HoloLens! Es ist einfach
 
 Wir freuen uns, mit der Entwicklung neuer Features für Windows Insider beginnen zu können. Neue Builds werden an die Entwicklungs- und Betakanäle übertragen, um die neuesten Updates zu erhalten. Wir werden diese Seite weiterhin aktualisieren, wenn wir unseren Insider-Builds weitere Features und Windows hinzufügen. Lassen Sie sich freuen und bereit sein, diese Updates in Ihre Realität zu mischen.
 
-| Funktion                 | Beschreibung                | Benutzer oder Szenario | Build eingeführt |
+| Funktion                 | BESCHREIBUNG                | Benutzer oder Szenario | Build eingeführt |
 |-------------------------|----------------------------|--------------|------------------|
 | [CSP-Änderungen für die Berichterstellung HoloLens Details](#csp-changes-for-reporting-hololens-details) | Neue CSPs für zum Abfragen von Daten | IT-Administratoren    | 20348.1403                 |
 | [Richtlinie für die automatische Anmeldung, die von CSP gesteuert wird](#auto-login-policy-controlled-by-csp) | Wird zum automatischen Anmelden eines Kontos verwendet. | IT-Administratoren | 20348.1405 |
@@ -123,7 +123,7 @@ Da Benutzer die Offlinediagnose häufig als Fallbackprotokollerfassungsmechanism
 
 Dieses neue Feature wird aktiviert, wenn Ihr Gerät aktualisiert wird, und muss nicht aktiviert oder verwaltet werden. In jedem Fall, in dem dieses neue Feedback nicht angezeigt oder gehört werden kann, wird weiterhin die Offlinediagnose generiert.
 
-Wir hoffen, dass es mit dieser neueren Hinzufügung von Feedback zur Freundlichkeit einfacher ist, Diagnosedaten zu sammeln und Ihre Probleme schneller beheben zu können.
+Wir hoffen, dass es mit dieser neueren Hinzufügung von Feedback zur Resonanz einfacher ist, Diagnosedaten zu sammeln und Ihre Probleme schneller beheben zu können.
 
 ### <a name="use-only-private-store-apps-for-microsoft-store"></a>Nur private Store-Apps für Microsoft Store
 
@@ -140,7 +140,7 @@ In Szenarien, in denen ein Gerät bei der Erfassung von Diagnoseprotokollen weni
 - Es wurde ein [bekanntes Problem für Geräteportal behoben, bei dem keine Aufforderung zum Herunterladen gesperrter Dateien angezeigt wurde.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
 - Ein [bekanntes Problem für Geräteportal mit Dateiupload- und Downloadtime outs](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out) wurde behoben.
 - Beheben von Problemen bei der Berichterstellung von Konformitätseigenschaften von HoloLens Geräten Möglicherweise ist ein Neustart erforderlich, damit die richtige Berichterstellung in Insider-Builds ausgelöst wird.  
-- Die In-Box-Version von Remote Assist, die auf neuen Flashs installiert ist, wurde aktualisiert.
+- Die in der Box enthaltene Version von Remote Assist, die auf neuen Flashs installiert ist, wurde aktualisiert.
 
 ## <a name="start-receiving-insider-builds"></a>Starten des Empfangs von Insider-Builds
 
@@ -153,9 +153,9 @@ In Szenarien, in denen ein Gerät bei der Erfassung von Diagnoseprotokollen weni
 
 Wechseln Sie auf einem HoloLens 2 Gerät zu **Einstellungen**  >  **Update & Security** Windows Insider  >  **Program,** und wählen Sie Erste Schritte **aus.** Verknüpfen Sie das Konto, das Sie zum Registrieren als Windows Insider verwendet haben.
 
-Windows Insider wechselt jetzt zu Kanäle. Der **Fast-Ring** wird zum **Entwicklungskanal,** der **langsame** Ring zum **Betakanal** und der **Releasevorschauring** zum **Releasevorschaukanal.** Diese Zuordnung sieht wie folgt aus:
+Windows Insider wechselt jetzt zu Kanäle. Der **Fast-Ring** wird zum **Dev-Kanal,** der **langsame** Ring zum **Betakanal** und der **Release preview-Ring** zum **Releasevorschaukanal.** Diese Zuordnung sieht wie folgt aus:
 
-![Windows Erklärung von Insiderkanälen](images/WindowsInsiderChannels.png)
+![Windows Erklärung zu Insiderkanälen](images/WindowsInsiderChannels.png)
 
 Weitere Informationen finden Sie unter [Introducing Windows Insider Channels (Einführung Windows Insider Channels)](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) in Windows Blogs.
 Wählen Sie dann **Aktive Entwicklung von Windows** aus, wählen Sie aus, ob Sie Dev **Channel** oder **Betakanal** Builds erhalten möchten, und überprüfen Sie die Programmbedingungen.
@@ -163,7 +163,7 @@ Wählen Sie **Confirm > Restart Now (Jetzt neu starten)** aus, um den Vorgang ab
 
 ### <a name="update-error-0x80070490-work-around"></a>Updatefehler 0x80070490 Problembearbeitung
 
-Wenn beim Aktualisieren im Dev- oder Betakanal ein Updatefehler 0x80070490 auftritt, versuchen Sie es mit der folgenden kurzfristigen Problemumgemeinung. Dies umfasst das Verschieben Ihres Insider-Kanals, das Aufnehmen des Updates und das anschließende Verschieben Ihres Insider-Kanals zurück.
+Wenn beim Aktualisieren im Dev- oder Betakanal ein Updatefehler 0x80070490 wird, versuchen Sie es mit der folgenden kurzfristigen Problemumgemeinung. Dies umfasst das Verschieben Ihres Insider-Kanals, das Aufnehmen des Updates und das anschließende Verschieben Ihres Insider-Kanals zurück.
 
 #### <a name="stage-one---release-preview"></a>Phase 1: Releasevorschau
 
@@ -179,7 +179,7 @@ Wenn beim Aktualisieren im Dev- oder Betakanal ein Updatefehler 0x80070490 auftr
 
 ## <a name="ffu-download-and-flash-directions"></a>Download- und Flash-Anweisungen für FFU
 
-Zum Testen mit einer Flugsignierungs-FFU müssen Sie ihr Gerät zunächst entsperren, bevor Sie die flugsigniert ffu blinken lassen.
+Zum Testen mit einer Flugsignierungs-FFU müssen Sie zunächst ihr Gerät entsperren, bevor Sie die flugsigniert-FFU blinken lassen.
 
 1. Auf dem PC:
     1. Laden Sie FFU von auf Ihren PC [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) herunter.
@@ -192,14 +192,14 @@ Zum Testen mit einer Flugsignierungs-FFU müssen Sie ihr Gerät zunächst entspe
 
 ### <a name="provide-feedback-and-report-issues"></a>Bereitstellen von Feedback und Melden von Problemen
 
-Verwenden Sie [die Feedback-Hub-App](hololens-feedback.md) auf Ihrem HoloLens, um Feedback zu geben und Probleme zu melden. Mit Feedback-Hub wird sichergestellt, dass alle erforderlichen Diagnoseinformationen enthalten sind, damit unsere Techniker das Problem schnell debuggen und beheben können.  Probleme mit der chinesischen und japanischen Version von HoloLens sollten auf die gleiche Weise gemeldet werden.
+Verwenden Sie [die Feedback-Hub-App](hololens-feedback.md) auf Ihrem HoloLens, um Feedback zu geben und Probleme zu melden. Die Verwendung von Feedback-Hub stellt sicher, dass alle erforderlichen Diagnoseinformationen enthalten sind, damit unsere Techniker das Problem schnell debuggen und beheben können.  Probleme mit der chinesischen und japanischen Version von HoloLens sollten auf die gleiche Weise gemeldet werden.
 
 > [!NOTE]
 > Achten Sie darauf, dass Sie die Eingabeaufforderung akzeptieren, in der Sie gefragt werden, ob sie Feedback-Hub möchten, auf Ihren Ordner Dokumente zuzugreifen (wählen Sie **Ja** aus, wenn Sie dazu aufgefordert werden).
 
 ## <a name="note-for-developers"></a>Hinweis für Entwickler
 
-Sie sind willkommen und sollten versuchen, Ihre Anwendungen mit Insider-Builds von HoloLens zu entwickeln.  Sehen Sie sich die [HoloLens Developer-Dokumentation](https://developer.microsoft.com/windows/mixed-reality/development) an, um zu beginnen. Die gleichen Anweisungen funktionieren mit Insider-Builds von HoloLens.  Sie können die gleichen Builds von Unity und Visual Studio verwenden, die Sie bereits für HoloLens Entwicklung verwenden.
+Sie sind willkommen und werden empfohlen, Ihre Anwendungen mit Insider-Builds von HoloLens zu entwickeln.  Sehen Sie sich die [HoloLens Developer-Dokumentation](https://developer.microsoft.com/windows/mixed-reality/development) an, um zu beginnen. Die gleichen Anweisungen funktionieren mit Insider-Builds von HoloLens.  Sie können die gleichen Builds von Unity und Visual Studio verwenden, die Sie bereits für HoloLens Entwicklung verwenden.
 
 ## <a name="stop-receiving-insider-builds"></a>Beenden des Empfangs von Insider-Builds
 

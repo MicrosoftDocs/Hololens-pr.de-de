@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9457acd2f53d0d3127d6c68d620b660f6e09866d
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 2b855f5891dfa4ca695e4ae3b2a2e82510c5b626f08b434643169be239b48291
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637080"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660193"
 ---
 # <a name="configure---corporate-connected-guide"></a>Konfigurieren – Leitfaden für verbundene Unternehmen
 
@@ -38,15 +38,15 @@ Wenn Sie nicht&#39;haben, haben Sie noch keinen Zugriff auf zwei Azure AD-Konten
 
 ## <a name="auto-enrollment-on-hololens-2"></a>Automatische Registrierung auf HoloLens 2
 
-Um eine reibungslose und nahtlose Benutzererfahrung zu gewährleisten, ist das Einrichten von Azure Active Directory Join (AADJ) und der automatischen Registrierung bei Intune für HoloLens 2-Geräte die erste Möglichkeit. Dadurch können Benutzer ihre Anmeldeinformationen für die Organisation während der OOBE eingeben und sich automatisch bei Azure AD registrieren und das Gerät bei MDM registrieren.
+Um eine reibungslose und nahtlose Umgebung zu gewährleisten, ist das Einrichten von Azure Active Directory Join (AADJ) und der automatischen Registrierung bei Intune für HoloLens 2-Geräte die erste Möglichkeit. Dadurch können Benutzer ihre Anmeldeinformationen für die Organisation während der OOBE eingeben und sich automatisch bei Azure AD registrieren und das Gerät bei MDM registrieren.
 
-Mithilfe [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home)können wir Dienste auswählen und in einigen Seiten navigieren, bis wir auf Get a Premium trial (Testversion Premium können. Möglicherweise werden Sie feststellen, dass Azure Active Directory Premium 1 und 2 vorhanden sind. Für die automatische Registrierung ist P1 ausreichend. Wir können Intune auswählen und den Benutzerbereich für die automatische Registrierung auswählen und die Gruppe auswählen, die zuvor erstellt wurde.
+Mithilfe [von Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home)können wir Dienste auswählen und zu einigen Seiten navigieren, bis wir auf Get a Premium trial (Testversion Premium können. Möglicherweise werden Sie feststellen, dass Azure Active Directory Premium 1 und 2 vorhanden sind. Für die automatische Registrierung ist P1 ausreichend. Wir können Intune auswählen und den Benutzerbereich für die automatische Registrierung auswählen und die Gruppe auswählen, die zuvor erstellt wurde.
 
 Ausführliche Informationen und Schritte finden Sie im Leitfaden zum Aktivieren der [automatischen Registrierung für Intune.](/mem/intune/enrollment/quickstart-setup-auto-enrollment)
 
 ## <a name="corporate-wi-fi-connectivity"></a>UnternehmensWi-Fi Konnektivität
 
-UnternehmensWi-Fi verbindungen erfordern in der Regel eine zertifikatbasierte Authentifizierung für Kunden, die HoloLens 2. Sie müssen solche Zertifikate bereitstellen, indem Sie eine Simple Certificate Enrollment-Protokoll-Zertifikatinfrastruktur (SCEP) oder eine PUBLIC KEY Cryptography Standard-Zertifikatinfrastruktur (Public Key Cryptography Standard, PKCS) verwenden, die in Ihre MDM-Lösung integriert ist. Die Verwendung von Intune Wi-Fi Bereitstellung von Profilen, Zertifikaten und Proxyeinstellungen sorgt für eine nahtlose Benutzererfahrung.
+UnternehmensWi-Fi verbindungen erfordern in der Regel eine zertifikatbasierte Authentifizierung für Kunden, die HoloLens 2. Sie müssen solche Zertifikate bereitstellen, indem Sie eine Simple Certificate Enrollment-Protokoll-Zertifikatinfrastruktur (SCEP) oder eine PUBLIC KEY Cryptography Standard-Zertifikatinfrastruktur (PUBLIC Key Cryptography Standard, PKCS) verwenden, die in Ihre MDM-Lösung integriert ist. Die Verwendung von Intune Wi-Fi Bereitstellung von Profilen, Zertifikaten und Proxyeinstellungen sorgt für eine nahtlose Benutzererfahrung.
  
 ### <a name="deploy-certificates-and-wi-fi-profiles"></a>Bereitstellen von Zertifikaten und Wi-Fi Profilen
 
@@ -57,15 +57,15 @@ Führen Sie zum Bereitstellen von Zertifikaten und Profilen Microsoft Endpoint M
     > [!CAUTION]
     > **Zertifikatprofile ohne Ablaufdatum werden nicht bereitgestellt.**
 
-2. Erstellen Sie ein Profil für jedes SCEP- oder PKCS-Zertifikat (siehe Erstellen eines [SCEP-Zertifikatprofils](/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)oder Erstellen eines PKCS-Zertifikatprofils). Jedes dieser Profile muss eine Beschreibung aufweisen, die ein Ablaufdatum im Format TT/MM/YYYY enthält.
+2. Erstellen Sie ein Profil für jedes SCEP- oder PKCS-Zertifikat (siehe [Erstellen eines SCEP-Zertifikatprofils oder Erstellen eines PKCS-Zertifikatprofils](/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)). Jedes dieser Profile muss eine Beschreibung aufweisen, die ein Ablaufdatum im Format TT/MM/YYYY enthält.
 
     > [!CAUTION]
     > **Zertifikatprofile ohne Ablaufdatum werden nicht bereitgestellt.**
 
     > [!Note]
-    > Da die HoloLens 2 für viele als gemeinsam genutztes Gerät betrachtet wird, d. h. mehrere Benutzer pro Gerät, wird empfohlen, gerätezertifikate anstelle von Benutzerzertifikaten für die Wi-Fi-Authentifizierung bereitzustellen, wenn dies möglich ist.
+    > Da die HoloLens 2 für viele als gemeinsam genutztes Gerät betrachtet wird, d. h. mehrere Benutzer pro Gerät, wird empfohlen, gerätezertifikate anstelle von Benutzerzertifikaten für die Wi-Fi-Authentifizierung bereitzustellen.
 
-3. Erstellen Sie ein Profil für Ihr Unternehmensnetzwerk Wi-Fi (siehe [WLAN-Einstellungen für](/intune/wi-fi-settings-windows)Windows 10 und höher). In Ihrem Wi-Fi können Sie die Proxyeinstellungen in Ihrer Organisation verwenden.
+3. Erstellen Sie ein Profil für Ihr Unternehmensnetzwerk Wi-Fi (siehe [WLAN-Einstellungen für](/intune/wi-fi-settings-windows)Windows 10 und höher). In Ihrem Wi-Fi können Sie auswählen, ob Sie die Proxyeinstellungen in Ihrer Organisation verwenden möchten.
 
     Folgende Optionen sind verfügbar:
     - **Keine**: Es sind keine Proxyeinstellungen konfiguriert.
@@ -75,10 +75,10 @@ Führen Sie zum Bereitstellen von Zertifikaten und Profilen Microsoft Endpoint M
     Weitere Informationen zu PAC-Dateien finden Sie unter [Proxy Auto-Configuration (PAC) file (Datei für die automatische Proxykonfiguration)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (öffnet eine Drittanbieterwebsite).
  
     > [!Note]
-    > Es wird empfohlen, Wi-Fi Gerätegruppen anstelle von Benutzergruppen zu zuweisen.
+    > Es empfiehlt sich, WLAN-Profile möglichst Gerätegruppen statt Benutzergruppen zuzuweisen.
      
     > [!Tip]
-    > Sie können auch ein Arbeitsprofil Wi-Fi von einem Windows 10 PC in Ihrem Unternehmensnetzwerk exportieren. Dieser Export erstellt eine XML-Datei mit allen aktuellen Einstellungen. Importieren Sie diese Datei dann in Intune, und verwenden Sie sie als Wi-Fi Profil für Ihre HoloLens 2 Geräte. Weitere Informationen finden Sie unter [Exportieren und Importieren von WLAN-Einstellungen für Windows-Geräte](/mem/intune/configuration/wi-fi-settings-import-windows-8-1).
+    > Sie können auch ein funktionierendes WLAN-Profil von einem Windows 10-PC in Ihrem Unternehmensnetzwerk exportieren. Mit diesem Export wird eine XML-Datei mit allen aktuellen Einstellungen erstellt. Importieren Sie dann diese Datei in Intune, und verwenden Sie sie als WLAN-Profil für Ihre HoloLens 2-Geräte. Weitere Informationen finden Sie unter [Exportieren und Importieren von WLAN-Einstellungen für Windows-Geräte](/mem/intune/configuration/wi-fi-settings-import-windows-8-1).
 
 1.  [Weisen](/mem/intune/configuration/device-profile-assign) Sie die Geräteprofile der HoloLens zu.
 
@@ -87,7 +87,7 @@ Führen Sie zum Bereitstellen von Zertifikaten und Profilen Microsoft Endpoint M
 Wenn Probleme mit Wi-Fi-Profilen Wi-Fi Problembehandlung [bei Gerätekonfigurationsprofilen in Intune.](/troubleshoot/mem/intune/troubleshoot-wi-fi-profiles)
 
 ## <a name="troubleshooting-external-internet-access-when-corp-connected"></a>Problembehandlung beim externen Internetzugriff bei verbundener Corp.
-Wenn Dienste versuchen, keinen festgelegten Proxy zu passieren, versuchen sie möglicherweise, eine Verbindung über die Firewall herzustellen. Sie können Ihren Firewallregeln eine Liste von Endpunktspezifisch hinzufügen, um diese Probleme zu beheben.
+Wenn Dienste versuchen, keinen festgelegten Proxy zu passieren, versuchen sie möglicherweise, eine Verbindung über die Firewall herzustellen. Sie können Ihren Firewallregeln eine Liste mit Endpunktspezifischen Informationen hinzufügen, um diese Probleme zu beheben.
 
 Wenn Sie an Firewallports blockiert sind, aktivieren Sie einige allgemeine [Endpunkte](/hololens/hololens-offline) für HoloLens.
 
@@ -102,7 +102,7 @@ Wenn Sie Ihre Apps noch entwickeln oder noch keines haben, können Sie eine Beis
 Wenn Sie lieber Ihre eigene App verwenden möchten oder an der App-Entwicklung für Mixed Reality interessiert sind, können Sie sich unsere Dokumentation für [Mixed Reality-Entwickler durchsischen.](/windows/mixed-reality/design/design)
 
 > [!NOTE]
-> Die Systemanforderungen für HoloLens basieren auf der Architektur des App-Build. HoloLens 2-Geräte verwenden die ARM-Architektur. Wenn Sie Ihre Apps in Visual Studio, stellen Sie sicher, dass Sie die richtige Architektur für das Gerät ausgewählt haben und alle erforderlichen Abhängigkeiten enthalten.
+> Die Systemanforderungen für HoloLens-Geräte basieren auf der Architektur des App-Builds. HoloLens 2-Geräte verwenden die ARM-Architektur. Wenn Sie Ihre Apps in Visual Studio, stellen Sie sicher, dass Sie die richtige Architektur für das Gerät ausgewählt haben und alle erforderlichen Abhängigkeiten enthalten.
 
 > [!IMPORTANT]
 > Bei der Bereitstellung von BRANCHEN-Apps ist es wichtig, das Zertifikat auch in Intune hochzuladen und es derselben Gruppe zu zuweisen, die die App verwenden soll, da sie nicht ordnungsgemäß installiert wird.
@@ -125,7 +125,7 @@ Wenn Sie lieber Ihre eigene App verwenden möchten oder an der App-Entwicklung f
 
 8. Fügen Sie unter Erforderlich die zuvor erstellte Gruppe hinzu, damit diese App für die Gruppe erforderlich ist. Dies führt dazu, dass die App automatisch auf registrierte Geräte in der Gruppe heruntergeladen wird. Wählen Sie **Weiter** aus.
 
-9. Wählen Sie **Erstellen** aus.
+9. Klicken Sie auf **Erstellen**.
 
 Weitere Informationen: [Zuweisen von Apps zu Gruppen in Microsoft Intune](/mem/intune/apps/apps-deploy#assign-an-app)
 
@@ -137,9 +137,9 @@ Um die Dynamics 365 Guides verwenden zu können, müssen Sie einige Vorbereitung
 
 Damit jemand Leitfäden verwenden kann, muss er ein Azure AD verwenden, das wir zuvor in diesem Leitfaden eingerichtet haben.
 
-Außerdem müssen Sie dem benutzer Dynamics 365 Guides, den Sie erstellt haben, eine Lizenz zuweisen. Dies wird über die [Microsoft 365 Admin Center.](https://admin.microsoft.com/AdminPortal/Home) Weisen Sie die Lizenz auch Ihrem primären Azure-Konto zu.
+Außerdem müssen Sie dem benutzer Dynamics 365 Guides, den Sie erstellt haben, eine Lizenz zuweisen. Hierzu verwenden Sie die [Microsoft 365 Admin Center](https://admin.microsoft.com/AdminPortal/Home). Weisen Sie die Lizenz auch Ihrem primären Azure-Konto zu.
 
-Befolgen [Sie diese kurze Anleitung](/dynamics365/mixed-reality/guides/setup-step-one#assign-the-dynamics-365-guides-license-to-user-accounts) mit Bildern, um schritt-für-Schritt-Anweisungen zum Anwenden von Anwendungslizenzen zu erhalten.
+Befolgen [Sie diese kurze Anleitung](/dynamics365/mixed-reality/guides/setup-step-one#assign-the-dynamics-365-guides-license-to-user-accounts) mit Bildern, um eine Schritt-für-Schritt-Anleitung zum Anwenden von Anwendungslizenzen zu erhalten.
 
 ### <a name="set-up-the-dataverse"></a>Einrichten der Datenverse
 
@@ -152,34 +152,34 @@ In diesem Leitfaden zum [Erstellen einer Microsoft Dataverse-Umgebung:](/dynamic
 3. Es ist wichtig, dass Sie Datenbank **für diese Umgebung erstellen umschalten?**  Option auf **Ja.**
 4. Legen Sie  **im Dialogfeld Datenbank**  hinzufügen die Option Dynamics  **365-Apps aktivieren**  auf Ja  **fest.**
 
-Sie sollten die maximale Dateigröße von Elementen in Ihrem Datenverse erhöhen. Wenn Sie die maximale Dateigröße erhöhen, können Sie größere 3D-Modelle oder Videodateien hochladen, die Sie später in Ihren Leitfäden verwenden werden. Befolgen Sie eine kurze [Anleitung, um die maximale Uploaddateigröße zu ändern.](/dynamics365/mixed-reality/guides/setup-step-two#change-the-maximum-upload-file-size)
+Sie möchten die maximale Dateigröße von Elementen in Ihrem Dataverse erhöhen. Wenn Sie die maximale Dateigröße erhöhen, können Sie größere 3D-Modelle oder Videodateien hochladen, die Sie später in Ihren Handbüchern verwenden werden. Befolgen Sie eine kurze [Anleitung, um die maximale Uploaddateigröße zu ändern.](/dynamics365/mixed-reality/guides/setup-step-two#change-the-maximum-upload-file-size)
 
-Schließlich müssen Sie die Lösung [installieren und konfigurieren.](/dynamics365/mixed-reality/guides/setup-step-two#install-and-configure-the-solution) Wählen Sie [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/environments)ressourcen  \& gt; aus.  **Dynamics 365-Apps**, wählen **Dynamics 365 Guides** in der Liste und dann **Installieren aus.**  
+Schließlich müssen Sie die [Projektmappe installieren und konfigurieren.](/dynamics365/mixed-reality/guides/setup-step-two#install-and-configure-the-solution) Wählen Sie im [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/environments)die Option **Ressourcen** \& gt;  **Dynamics 365-Apps,** wählen Sie **Dynamics 365 Guides** in der Liste und dann **Installieren** aus.  
 
-Sie müssen [eine Sicherheitsrolle Leitfäden hinzufügen,](/dynamics365/mixed-reality/guides/assign-role) bevor Sie die Apps verwenden können.
+Sie müssen [eine Sicherheitsrolle "Handbücher" hinzufügen,](/dynamics365/mixed-reality/guides/assign-role) bevor Sie die Apps verwenden können.
 
-### <a name="create-a-test-guide-on-your-pc-via-authoring"></a>Erstellen eines Testhandbuchs auf Ihrem PC über die Erstellung
+### <a name="create-a-test-guide-on-your-pc-via-authoring"></a>Erstellen eines Testleitfadens auf Ihrem PC per Erstellung
 
-Beim Erstellen von Leitfäden starten Sie immer auf Ihrem PC. Erstellen der Schritte, Auswählen von Modellen und Verankern des Leitfadens Danach platzieren Sie Inhalte für Ihren Leitfaden später im Erstellungsmodus auf Ihrem HoloLens Gerät. Für die Zwecke dieses Leitfadens empfehlen wir, einen kurzen Testleitfaden mit minimalen Schritten und Modellen zu erstellen.
+Beim Erstellen von Handbüchern starten Sie immer auf Ihrem PC. Erstellen der Schritte, Auswählen von Modellen und Verankern des Leitfadens. Danach werden Inhalte für Ihren Leitfaden später im Erstellungsmodus auf Ihrem HoloLens Gerät platziert. Für die Zwecke dieses Leitfadens wird empfohlen, einen kurzen Testleitfaden mit minimalen Schritten und Modellen zu erstellen.
 
-Wenn Sie mit dem Erstellen von Leitfäden beginnen möchten, beginnen Sie hier mit der [Übersicht über die Erstellung.](/dynamics365/mixed-reality/guides/authoring-overview) Oder sehen Sie sich dieses kurze Video an, um sich einen Schnellen Überblick zu verschaffen.
+Wenn Sie sich mit der Erstellung von Handbüchern informieren möchten, beginnen Sie hier mit der Übersicht über die [Erstellung.](/dynamics365/mixed-reality/guides/authoring-overview) Alternativ können Sie sich dieses kurze Video ansehen, um sich einen schnellen Überblick zu verschaffen.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EC24dMlAy90" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## <a name="optional-kiosk-mode"></a>Optional: Kioskmodus
 
-Der Kioskmodus ist ein Modus, in dem ein IT-Administrator die Benutzeroberfläche des Startmenüs so konfigurieren kann, dass nur eine einzelne App oder eine Auswahl von Apps angezeigt wird. Ein Kiosk kann auch auf bestimmte Benutzer, Gruppen oder auf Geräteebene angewendet werden. und in einigen Fällen bestimmte Benutzer aus dem Kiosk ausschließen, sodass sie weiterhin Zugriff auf das reguläre Startmenü haben.
+Der Kioskmodus ist ein Modus, in dem ein IT-Administrator die Benutzeroberfläche des Startmenüs so konfiguriert, dass nur eine einzelne App oder eine Auswahl von Apps angezeigt wird. Ein Kiosk kann auch auf bestimmte Benutzer, Gruppen oder auf Geräteebene angewendet werden. und in einigen Fällen bestimmte Benutzer vom Kiosk ausschließen, sodass sie weiterhin Zugriff auf das reguläre Startmenü haben.
 
-Der Kioskmodus verfügt über viele verschiedene Variablen, sowohl im Bereich als auch in den Konfigurationen, die festgelegt werden können, sowie methoden zum Bereitstellen des Kiosks für HoloLens. Aufgrund all dieser Variablen bleibt der Kioskmodus für diesen Leitfaden _optional_ und wird nicht erneut verwendet. Wenn Sie der Meinung sind, dass Sie eine geschäftliche Notwendigkeit haben, verfügbare Apps auf Benutzer zu beschränken, oder mehr erfahren möchten, können Sie sich darüber informieren, wie Sie HoloLens als Kiosk [einrichten.](/hololens/hololens-kiosk)
+Der Kioskmodus verfügt über viele verschiedene Variablen, sowohl im Bereich als auch in den Konfigurationen, die festgelegt werden können, sowie Methoden zum Bereitstellen des Kiosks im HoloLens. Aufgrund all dieser Variablen bleibt der Kioskmodus für diese Anleitung _optional_ und wird nicht erneut überprüft. Wenn Sie der Meinung sind, dass Sie ein Unternehmen benötigen, um verfügbare Apps auf Benutzer zu beschränken, oder weitere Informationen erhalten möchten, können Sie sich darüber informieren, wie [Sie HoloLens als Kiosk einrichten.](/hololens/hololens-kiosk)
 
 ## <a name="optional-wdac"></a>Optional: WDAC
 
-WDAC ermöglicht einem IT-Administrator, seine Geräte so zu konfigurieren, dass das Starten von Apps auf Geräten blockiert wird. Dies ist anders als die Methoden der Geräteeinschränkung, z. B. kioskmodus, in dem dem Benutzer eine Benutzeroberfläche angezeigt wird, die die Apps auf dem Gerät ausblendet, aber trotzdem gestartet werden kann. Während WDAC implementiert ist, sind die Apps weiterhin in der Liste Alle Apps sichtbar, aber WDAC verhindert, dass diese Apps und Prozesse vom Gerätebenutzer gestartet werden können.
+Mit WDAC kann ein IT-Administrator seine Geräte so konfigurieren, dass der Start von Apps auf Geräten blockiert wird. Dies unterscheidet sich von Methoden der Geräteeinschränkung, z. B. dem Kioskmodus, in dem dem Benutzer eine Benutzeroberfläche angezeigt wird, die die Apps auf dem Gerät ausblendet, aber trotzdem gestartet werden kann. Während WDAC implementiert ist, sind die Apps weiterhin in der Liste Alle Apps sichtbar, aber WDAC verhindert, dass diese Apps und Prozesse vom Gerätebenutzer gestartet werden können.
 
-Weitere Informationen finden Sie unter [Use WDAC and Windows PowerShell to allow or block apps on HoloLens 2 devices with Microsoft Intune](/mem/intune/configuration/custom-profile-hololens).
+Weitere Informationen hierzu können Sie unter [Verwenden von WDAC und Windows PowerShell zum Zulassen oder Blockieren](/mem/intune/configuration/custom-profile-hololens)von Apps auf HoloLens 2 Geräten mit Microsoft Intune .
 
 [Windows Defender Application Control – WDAC](/hololens/windows-defender-application-control-wdac)
 
 ## <a name="next-step"></a>Nächster Schritt 
 > [!div class="nextstepaction"]
-> [Bereitstellung im verbundenen Unternehmen – Bereitstellen](hololens2-corp-connected-deploy.md)
+> [Unternehmensverbundene Bereitstellung – Bereitstellen](hololens2-corp-connected-deploy.md)
