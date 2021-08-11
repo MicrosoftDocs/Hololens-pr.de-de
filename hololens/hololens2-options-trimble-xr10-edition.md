@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cd3b122de155efeb59acb86bfc56264c3da4bd44
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 7bf6896ee14b730e7c8f7f6c38e6a3c4279555429fb17f5b30a0c866123a3712
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639453"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115658858"
 ---
 # <a name="trimble-xr10-with-hololens-2"></a>Trimble XR10 mit HoloLens 2
 
@@ -36,7 +36,7 @@ Weitere Informationen finden Sie unter [Trimble XR10](https://fieldtech.trimble
 ## <a name="next-steps"></a>Nächste Schritte
 
 1. Beginnen Sie sofort, mit Mixed Reality zu interagieren und der Navigation in Windows 10 auf Ihrer HoloLens – in der App **Tipps** finden Sie praktische Tutorials für Handinteraktionen. Verwenden Sie die Startgeste, um zum Startmenü zu wechseln. Oder sagen Sie „Zum Startmenü”, und wählen Sie „Tipps“ aus.
-1. Klicken Sie unten, um mehr über den Umgang mit HoloLens 2 zu erfahren.
+1. Klicken Sie unten, um mehr über den Umgang mit HoloLens 2 zu lesen.
 
 > [!div class="nextstepaction"]
 > [Erste Schritte mit HoloLens 2](hololens2-basic-usage.md)

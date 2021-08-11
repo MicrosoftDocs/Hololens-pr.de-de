@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: bbb99b37ab20d6ac8c593045265de29c0481a0d5
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 72a0ef3fbe54a090c0cd8ea1731c920120a84cb2112bf69d4e25ccddd1326d15
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639606"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115658810"
 ---
 # <a name="hololens-2-device-only-edition"></a>HoloLens 2 – Nur-Gerät-Edition
 
@@ -41,7 +41,7 @@ Das Verwenden Ihrer HoloLens 2-Geräte in einer kommerziellen Umgebung kann ein
 ## <a name="next-steps"></a>Nächste Schritte
 
 1. Beginnen Sie sofort, mit Mixed Reality zu interagieren und der Navigation in Windows 10 auf Ihrer HoloLens – in der App **Tipps** finden Sie praktische Tutorials für Handinteraktionen. Verwenden Sie die Startgeste, um zum Startmenü zu wechseln. Oder sagen Sie „Zum Startmenü”, und wählen Sie „Tipps“ aus.
-1. Klicken Sie unten, um mehr über den Umgang mit HoloLens 2 zu erfahren.
+1. Klicken Sie unten, um mehr über den Umgang mit HoloLens 2 zu lesen.
 
 > [!div class="nextstepaction"]
 > [Erste Schritte mit HoloLens 2](hololens2-basic-usage.md)

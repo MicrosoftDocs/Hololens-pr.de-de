@@ -16,12 +16,12 @@ ms.custom:
 - CSSTroubleshooting
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d2280a794455090c61a7bf30bc5dc5b8faf5adbe
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 99149c24922c582a66669685df20520b29f692677859d1408328fc9f2ee8ddf3
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636400"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115659815"
 ---
 # <a name="manage-custom-apps-for-hololens-2"></a>Verwalten der benutzerdefinierten Apps für HoloLens 2
 
@@ -37,4 +37,4 @@ Wenn Sie nach einer der Entwicklermethoden für die App-Installation für HoloLe
 - [Geräteportal: Installieren einer App](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app)
 - [Verwenden von Visual Studio zum Bereitstellen und Debuggen von Apps](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio)
 
-Wenn Sie benutzerdefinierte Apps auf HoloLens (1. Generation) bereitstellen möchten, lesen Sie unseren [Leitfaden.](holographic-custom-apps.md)
+Wenn Sie benutzerdefinierte Apps in HoloLens (1. Generation) bereitstellen möchten, lesen Sie unseren [Leitfaden.](holographic-custom-apps.md)
