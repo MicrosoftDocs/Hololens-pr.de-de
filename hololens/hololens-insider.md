@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: df0cb555c8445ef4d8f8165996a33e0f8c1a38653b45514594f893e3c761f65a
-ms.sourcegitcommit: 9615ed824bdf3f1747ec346da6136704d8eed015
+ms.openlocfilehash: 86a763adb233b45242182d069a56692aeddc2e59
+ms.sourcegitcommit: 5cb3230e02e703584e50358cb0f0b5f33a51b169
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120364284"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121858584"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider Preview für Microsoft HoloLens
 
@@ -31,11 +31,13 @@ Willkommen bei den neuesten Insider Preview-Builds für HoloLens! Es ist einfach
 
 Wir freuen uns, neue Features erneut für Windows Insider zu nutzen. Neue Builds werden in den Entwicklungs- und Betakanälen bereitgestellt, um die neuesten Updates zu erhalten. Wir werden diese Seite weiterhin aktualisieren, wenn wir unseren Windows Insider-Builds weitere Features und Updates hinzufügen. Freuen Sie sich darauf, diese Updates in Ihre Realität zu integrieren.
 
-| Funktion                 | BESCHREIBUNG                | Benutzer oder Szenario | Build eingeführt |
+| Feature                 | Beschreibung                | Benutzer oder Szenario | Build eingeführt |
 |-------------------------|----------------------------|--------------|------------------|
 | [CSP-Änderungen für die Berichterstellung HoloLens Details](#csp-changes-for-reporting-hololens-details) | Neue CSPs für zum Abfragen von Daten | IT-Administratoren    | 20348.1403                 |
 | [Richtlinie für die automatische Anmeldung, die vom CSP gesteuert wird](#auto-login-policy-controlled-by-csp) | Wird verwendet, um sich automatisch bei einem Konto anzumelden. | IT-Administratoren | 20348.1405 |
+| [Verbesserte Erkennung von Updateneustarts und Benachrichtigungen](#improved-update-restart-detection-and-notifications) | Neue aktivierte Policen und UX für Updates. | IT-Administratoren | 20348.1405 |
 | [PFX-Dateiunterstützung für den Zertifikat-Manager](#pfx-file-support-for-certificate-manager) | Hinzufügen von PFX-Zertifikaten über Einstellungen Benutzeroberfläche | Endbenutzer | 20348.1405 |
+| [Smart Retry für App-Updates](#smart-retry-for-app-updates) | Ermöglicht IT-Administratoren geplante Wiederholungsversuche zum Aktualisieren von Apps. | IT-Administratoren | 20348.1405 |
 | [Anzeigen des erweiterten Diagnoseberichts in Einstellungen auf HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | Anzeigen von MDM-Diagnoseprotokollen auf dem Gerät | Problembehandlung | 20348.1405 |
 | [Offlinediagnosebenachrichtigungen](#offline-diagnostics-notifications) | Feedback zur Protokollsammlung | Problembehandlung | 20348.1405 |
 | [Nur private Store-Apps für Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | Konfigurieren der Store-App, um nur Apps aus der Organisation anzuzeigen | IT-Administrator | 20348.1408 |
@@ -84,7 +86,7 @@ Syncml-Beispielblob (für MDM-Anbieter) zum Abfragen von NetworkIdentifiers
 
 ### <a name="auto-login-policy-controlled-by-csp"></a>Richtlinie für die automatische Anmeldung, die vom CSP gesteuert wird
 
-Diese neue AutoLogonUser-Richtlinie steuert, ob ein Benutzer automatisch angemeldet wird. Einige Kunden möchten Geräte einrichten, die an eine Identität gebunden sind, aber keine Anmeldeerfahrung haben möchten. Imagine sofort ein Gerät abzuholen und die Remoteunterstützung zu verwenden. Sie können auch schnell HoloLens Geräte verteilen und endbenutzern ermöglichen, die Anmeldung zu beschleunigen.
+Diese neue AutoLogonUser-Richtlinie steuert, ob ein Benutzer automatisch angemeldet wird. Einige Kunden möchten Geräte einrichten, die an eine Identität gebunden sind, aber keine Anmeldeerfahrung haben möchten. Imagine sofort ein Gerät aufnehmen und remote assist verwenden. Sie können auch schnell HoloLens Geräte verteilen und endbenutzern ermöglichen, die Anmeldung zu beschleunigen.
 
 Wenn die Richtlinie auf einen nicht leeren Wert festgelegt ist, wird die E-Mail-Adresse des Benutzers für die automatische Anmeldung angegeben. Der angegebene Benutzer muss sich mindestens einmal beim Gerät anmelden, um die automatische Anmeldung zu aktivieren.
 
@@ -95,31 +97,52 @@ Der OMA-URI der neuen Richtlinie `./Device/Vendor/MSFT/Policy/Config/MixedRealit
 Auf einem Gerät, auf dem diese Richtlinie konfiguriert ist, muss sich der in der Richtlinie angegebene Benutzer mindestens einmal anmelden. Bei nachfolgenden Neustarts des Geräts nach der ersten Anmeldung wird der angegebene Benutzer automatisch angemeldet. Es wird nur ein einzelner Benutzer für die automatische Anmeldung unterstützt. Nach der Aktivierung kann sich der automatisch angemeldete Benutzer nicht mehr manuell abmelden. Um sich als anderer Benutzer anmelden zu können, muss die Richtlinie zuerst deaktiviert werden.
 
 > [!NOTE]
-> - Einige Ereignisse, z. B. wichtige Betriebssystemupdates, erfordern möglicherweise, dass sich der angegebene Benutzer erneut beim Gerät anmeldet, um das Verhalten der automatischen Anmeldung fortzusetzen. 
+>
+> - Einige Ereignisse, z. B. wichtige Betriebssystemupdates, erfordern möglicherweise, dass sich der angegebene Benutzer erneut beim Gerät anmeldet, um das Verhalten der automatischen Anmeldung fortzusetzen.
 > - Die automatische Anmeldung wird nur für MSA- und AAD-Benutzer unterstützt.
+
+### <a name="improved-update-restart-detection-and-notifications"></a>Verbesserte Erkennung von Updateneustarts und Benachrichtigungen
+
+Zwischen aktiven Stunden und Installationszeitrichtlinien ist es möglich, einen Neustart HoloLens Geräten zu vermeiden, wenn sie verwendet werden. Es würde jedoch auch die Einführung von Updates verzögern, wenn keine Neustarts durchgeführt werden, um die Installation eines erforderlichen Updates abzuschließen. Wir haben nun Richtlinien hinzugefügt, damit die IT-It Stichtage und erforderliche Neustarts erzwingen und sicherstellen kann, dass die Installation eines Updates rechtzeitig abgeschlossen wird. Benutzer können benachrichtigt werden, bevor der Neustart initiiert wird, und sie können den Neustart entsprechend der IT-Richtlinie verzögern.
+
+Die folgenden Updaterichtlinien wurden hinzugefügt:
+
+- [Update/AutoRestartNotificationSchedule](/windows/client-management/mdm/policy-csp-update#update-autorestartnotificationschedule)
+- [Update/AutoRestartRequiredNotificationDismissal](/windows/client-management/mdm/policy-csp-update#update-autorestartrequirednotificationdismissal)
+- [Update/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates)
+- [Update/ConfigureDeadlineForQualityUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
+- [Update/ConfigureDeadlineGracePeriod](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
+- [Update/ConfigureDeadlineNoAutoReboot](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot)
+- [Update/ScheduleImminentRestartWarning](/windows/client-management/mdm/policy-csp-update#update-scheduleimminentrestartwarning)
+- [Update/ScheduleRestartWarning](/windows/client-management/mdm/policy-csp-update#update-schedulerestartwarning)
+- [Update/UpdateNotificationLevel](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel)
 
 ### <a name="pfx-file-support-for-certificate-manager"></a>PFX-Dateiunterstützung für den Zertifikat-Manager
 
-Eingeführt in Windows Insider-Build 20348.1405. Wir haben dem [Zertifikat-Manager](certificate-manager.md) Unterstützung für die Verwendung von PFX-Zertifikaten hinzugefügt. Wenn Benutzer zu **Einstellungen** Update &  >  **Sicherheitszertifikate** navigieren und Zertifikat  >   **installieren** auswählen, unterstützt die Benutzeroberfläche jetzt PFX-Zertifikatsdateien.
-Benutzer können ein PFX-Zertifikat mit privatem Schlüssel in den Benutzer- oder Computerspeicher importieren.
+Eingeführt in Windows Insider-Build 20348.1405. Wir haben dem [Zertifikat-Manager](certificate-manager.md) Unterstützung für die Verwendung von PFX-Zertifikaten hinzugefügt. Wenn Benutzer zu **Einstellungen** Update &-Sicherheitszertifikate navigieren und Zertifikat installieren auswählen, unterstützt die Benutzeroberfläche jetzt die  >    >  PFX-Zertifikatdatei. 
+Benutzer können das PFX-Zertifikat mit privatem Schlüssel in den Benutzer- oder Computerspeicher importieren.
+
+### <a name="smart-retry-for-app-updates"></a>Smart Retry für App-Updates
+
+Jetzt für HoloLens ist eine neue Richtlinie, mit der IT-Administratoren ein wiederkehrendes oder einmaliges Datum für den Neustart von Apps festlegen können, deren Update fehlgeschlagen ist, weil die App verwendet wird und das Update angewendet werden kann. Diese können basierend auf einigen verschiedenen Triggern festgelegt werden, z. B. einer geplanten Zeit oder Anmeldung. Weitere Informationen zur Verwendung dieser Richtlinie finden Sie unter [ApplicationManagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures).
 
 ### <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>Anzeigen des erweiterten Diagnoseberichts in Einstellungen auf HoloLens
 
-Bei verwalteten Geräten bei der Problembehandlung ist die Bestätigung, dass eine erwartete Richtlinienkonfiguration angewendet wird, ein wichtiger Schritt. Zuvor musste dieses neue Feature über MDM oder in der Nähe des Geräts außerhalb des Geräts erfolgen, nachdem mdm-Diagnoseprotokolle exportiert wurden, die über **Einstellungen**  ->  **Konten**  >  **auf Arbeits- oder Schulkonto zugreifen** gesammelt wurden. Wählen Sie dann **Verwaltungsprotokolle exportieren** und auf einem PC in der Nähe anzeigen aus.
+Für verwaltete Geräte bei der Problembehandlung ist die Bestätigung, dass eine erwartete Richtlinienkonfiguration angewendet wird, ein wichtiger Schritt. Zuvor musste dies auf dem Gerät über MDM oder in der Nähe des Geräts erfolgen, nachdem mdm-Diagnoseprotokolle exportiert wurden, die über **Einstellungen-Konten** gesammelt wurden, auf Arbeits- oder Schulkonto zugreifen, und wählen Sie Ihre Verwaltungsprotokolle exportieren und auf einem pc in der Nähe anzeigen  ->    >  aus. 
 
-Jetzt kann die MDM-Diagnose über den Edge-Browser auf dem Gerät angezeigt werden. Um den MDM-Diagnosebericht einfacher anzuzeigen, navigieren Sie zur Seite Auf Arbeits- oder Schuleinrichtung zugreifen, und wählen **Sie Erweiterten Diagnosebericht anzeigen** aus. Dadurch wird der Bericht in einem neuen Edgefenster generiert und geöffnet.
+Die MDM-Diagnose kann nun mithilfe des Edge-Browsers auf dem Gerät angezeigt werden. Um den MDM-Diagnosebericht einfacher anzuzeigen, navigieren Sie zur Seite Auf Arbeits- oder Schularbeit zugreifen, und wählen **Sie Erweiterten Diagnosebericht anzeigen aus.** Dadurch wird der Bericht in einem neuen Edgefenster generiert und geöffnet.
 
-![Zeigen Sie den erweiterten Diagnosebericht in Einstellungen App an.](./images/view-advanced-diagnostic-report.jpg)
+![Zeigen Sie den erweiterten Diagnosebericht in Einstellungen an.](./images/view-advanced-diagnostic-report.jpg)
 
 ### <a name="offline-diagnostics-notifications"></a>Offlinediagnosebenachrichtigungen
 
-Dies ist ein Update für ein vorhandenes Feature namens [Offlinediagnose.](hololens-diagnostic-logs.md#offline-diagnostics) Bisher gab es keinen eindeutigen Hinweis für Benutzer, dass sie die Diagnosesammlung ausgelöst oder abgeschlossen hatten.
-Jetzt in Windows Insider-Builds hinzugefügt, gibt es zwei Formen des feedback-Feedbacks für die Offlinediagnose. Das erste , das popupt, zeigt Benachrichtigungen an, die sowohl beim Start als auch beim Abschluss der Sammlung angezeigt werden. Diese werden angezeigt, wenn der Benutzer angemeldet ist und über Visuals verfügt.
+Dies ist ein Update für ein vorhandenes Feature namens [Offlinediagnose.](hololens-diagnostic-logs.md#offline-diagnostics) Zuvor gab es keinen eindeutigen Hinweis für Benutzer, dass sie die Diagnosesammlung ausgelöst oder abgeschlossen hatten.
+Jetzt in Windows Insider-Builds hinzugefügt, gibt es zwei Formen von Feedback zur Offlinediagnose. Das erste sind Popupbenachrichtigungen, die sowohl beim Start als auch beim Abschluss der Sammlung angezeigt werden. Diese werden angezeigt, wenn der Benutzer angemeldet ist und über Visuals verfügt.
 
 ![Popup zum Sammeln von Protokollen.](./images/logcollection1.jpg)
 
 ![Popup, wenn die Protokollsammlung abgeschlossen ist.](./images/logcollection2.jpg)
- 
+
 Da Benutzer die Offlinediagnose häufig als Fallbackprotokollerfassungsmechanismus verwenden, wenn sie keinen Zugriff auf eine Anzeige haben, sich nicht anmelden können oder sich noch in oobe befinden, wird beim Sammeln von Protokollen auch ein Audio-Hinweis abgespielt. Dieser Sound wird zusätzlich zur Popupbenachrichtigung abgespielt.
 
 Dieses neue Feature wird aktiviert, wenn Ihr Gerät aktualisiert wird, und muss nicht aktiviert oder verwaltet werden. In jedem Fall, in dem dieses neue Feedback nicht angezeigt oder gehört werden kann, wird weiterhin die Offlinediagnose generiert.
@@ -147,21 +170,22 @@ Weitere Informationen dazu, was unterstützt wird und wie Sie dieses neue Featur
 - Es wurde ein [bekanntes Problem für Geräteportal, bei dem keine Aufforderung zum Herunterladen gesperrter Dateien angezeigt wurde.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
 - Es wurde ein [bekanntes Problem bei Geräteportal Time outs](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out) beim Hochladen und Herunterladen von Dateien behoben.
 - Beheben von Problemen im Zusammenhang mit der Berichterstellung von Konformitätseigenschaften HoloLens Geräten Möglicherweise ist ein Neustart erforderlich, damit die richtige Berichterstellung für Insider-Builds ausgelöst wird.  
-- Es wurde [eine API für zugewiesenen Zugriff](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348) aktiviert, damit Apps nun ermitteln können, ob eine HoloLens im Kioskmodus für den benutzer angemeldeten Benutzer ausgeführt HoloLens.
+- Es wurde [eine API für zugewiesenen](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348) Zugriff aktiviert, damit Apps nun ermitteln können, ob eine HoloLens im Kioskmodus für den benutzer angemeldeten Benutzer ausgeführt HoloLens.
 - Die In-Box-Version von Remote Assist aktualisiert, die auf neuen Flashs installiert ist.
 
 ## <a name="start-receiving-insider-builds"></a>Starten des Empfangs von Insider-Builds
 
 > [!NOTE]
 > Wenn Sie vor Kurzem noch nicht aktualisiert haben, starten Sie Ihr Gerät neu, um den Status zu aktualisieren und den neuesten Build zu erhalten.
-> - Der Sprachbefehl "Gerät neu starten" funktioniert gut. 
+>
+> - Der Sprachbefehl "Gerät neu starten" funktioniert gut.
 > - Sie können auch die Schaltfläche "Neu starten" im Einstellungen/Windows Insider-Programm auswählen.
 >
 > Es ist ein Fehler auf dem Back-End aufgetreten, den Sie möglicherweise gefunden haben. Dadurch sind Sie wieder auf kurs.
 
 Wechseln Sie auf HoloLens 2 Gerät zu Update **Einstellungen**  >  **& Security** Windows Insider Program, und wählen  >   Sie Erste **Schritte aus.** Verknüpfen Sie das Konto, das Sie zum Registrieren als Windows Insider verwendet haben.
 
-Windows Insider geht jetzt zu Kanälen. Der **Fast-Ring** wird zum **Dev Channel,** der **Langsame** Ring wird zum **Betakanal,** und der **Release Preview-Ring** wird zum Release **Preview Channel**. Diese Zuordnung sieht wie hier aus:
+Windows Insider geht jetzt zu Kanäle. Der **Fast-Ring** wird zum **Dev Channel,** der **Langsame** Ring wird zum **Betakanal,** und der **Release Preview-Ring** wird zum Release **Preview Channel**. Diese Zuordnung sieht wie hier aus:
 
 ![Windows Erläuterungen zu Insiderkanälen](images/WindowsInsiderChannels.png)
 
@@ -175,9 +199,9 @@ Wenn beim Aktualisieren auf dem Dev- oder Betakanal 0x80070490 Updatefehler auft
 
 #### <a name="stage-one---release-preview"></a>Phase 1: Releasevorschau
 
-1.  Einstellungen Sie unter Update & Security (Windows Insider-Programm) **release preview channel (Vorschaukanal für Release) aus.**
+1. Einstellungen Sie unter Update & Security (Windows Insider-Programm) **release preview channel (Vorschaukanal für Release) aus.**
 
-2.  Einstellungen, Update & Security, Windows Update, **Check for updates**. Fahren Sie nach dem Update mit Phase 2 fort.
+2. Einstellungen, Update & Security, Windows Update, **Check for updates**. Fahren Sie nach dem Update mit Phase 2 fort.
 
 #### <a name="stage-two---dev-channel"></a>Phase 2: Entwicklungskanal
 
@@ -191,9 +215,9 @@ Zum Testen mit einem FFU mit Flugsignierung müssen Sie ihr Gerät zunächst ent
 
 1. Auf dem PC:
     1. Laden Sie ffu von auf Ihren PC [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) herunter.
-    
+
     1. Installieren Sie ARC (Advanced Recovery Companion) über Microsoft Store: [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8) .
-    
+
 1. On HoloLens – Flight Unlock :Öffnen **Sie Einstellungen** Update &  >  **Security** Windows  >  **Insider Program,** registrieren Sie sich, und starten Sie das Gerät neu.
 
 1. Flash FFU: Jetzt können Sie die FFU mit Flugsignierung mit ARC flashen.
@@ -218,7 +242,7 @@ Wenn Sie keine Insider-Builds von Windows Holographic mehr erhalten möchten, k�
 
 So überprüfen Sie, HoloLens ein Produktions-Build ausgeführt wird:
 
-1. Wechseln Sie **zu Einstellungen > System > About**(Informationen), und suchen Sie die Buildnummer.
+1. Wechseln Sie **zu Einstellungen > System > About (Informationen),** und suchen Sie die Buildnummer.
 
 1. [Weitere Informationen finden Sie in den Versionshinweisen für Produktions-Buildnummern.](hololens-release-notes.md)
 
