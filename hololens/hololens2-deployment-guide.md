@@ -1,127 +1,135 @@
 ---
-title: Bereitstellungshandbuch für externe Clients
+title: Bereitstellen von mit der Cloud verbundenen HoloLens 2 für externe Clients
 description: Bereitstellungshandbuch für HoloLens 2 für externe Clients (mit Remoteunterstützung als Beispiel)
 ms.prod: hololens
 ms.sitesec: library
-author: pawinfie
-ms.author: pawinfie
+author: qianw211
+ms.author: v-qianwen
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 1/12/2021
+ms.date: 8/6/2021
 ms.custom: ''
 ms.reviewer: ''
-manager: laurawi
+manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 495be858c235931ed591b097e6b5951f7197c3f7a62bd1aaa16bea65a4e3885f
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 476ea17dfad114741191595fa0ce3bd1c7bca28d
+ms.sourcegitcommit: 7b666c63a0367032a4a3f366b7f9029b2613e345
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115659891"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "122401132"
 ---
-# <a name="deploying-hololens-2-to-external-clients-with-remote-assist"></a>Bereitstellen von HoloLens 2 auf externen Clients mit Remote Assist
+# <a name="deploy-cloud-connected-hololens-2-to-external-clients"></a>Bereitstellen von mit der Cloud verbundenen HoloLens 2 für externe Clients
 
-Dieser Leitfaden unterstützt IT-Experten bei der Bereitstellung Microsoft HoloLens 2 Geräten in ihrer Organisation:
+Dieser Leitfaden ist eine Ergänzung zum [Cloud Connected Deployment Guide](hololens2-cloud-connected-overview.md). Sie wird in Situationen verwendet, in denen Ihre Organisation HoloLens 2 Geräte zur kurz- oder langfristigen Verwendung an die Einrichtung eines externen Clients versenden möchte. Der externe Client meldet sich mit den von Ihrer Organisation bereitgestellten Anmeldeinformationen beim HoloLens 2 Gerät an und verwendet [Remote Assist,](/dynamics365/mixed-reality/remote-assist/ra-overview) um Sich an Ihre Experten zu wenden. Dieser Leitfaden enthält [allgemeine HoloLens 2 Bereitstellungsempfehlungen,](#general-deployment-recommendations) die für die meisten externen HoloLens 2 Bereitstellungsszenarien gelten, sowie [allgemeine Bedenken,](#common-external-client-deployment-concerns) die Kunden bei der Bereitstellung von Remote Assist für die externe Verwendung haben. 
 
-1. Cloud connect HoloLens 2 Devices
-1. Beliehen HoloLens 2 geräte an externe Clients zur Verwendung
-1. Sichern von geliehenen Geräten
+## <a name="prerequisites"></a>Voraussetzungen
 
-Dieser Leitfaden enthält allgemeine Empfehlungen [HoloLens 2](#general-deployment-recommendations-and-instructions) Bereitstellung, die für die meisten [](#common-concerns) HoloLens 2-Bereitstellungsszenarien gelten, sowie allgemeine Bedenken, die Kunden bei der Bereitstellung von Remote Assist für die externe Verwendung haben.
+Die folgende Infrastruktur sollte gemäß dem Leitfaden für die [cloudgebundene Bereitstellung](hololens2-cloud-connected-overview.md) vorhanden sein, um die HoloLens 2 extern bereitzustellen.
 
-## <a name="scenario-description"></a>Beschreibung des Szenarios
+- Azure AD Beitreten zur automatischen MDM-Registrierung – MDM-verwaltet (Intune)
+- Benutzer melden sich mit ihrem eigenen Unternehmenskonto (Azure AD) an.
+    - Einzelne oder mehrere Benutzer pro Gerät werden unterstützt.
 
-Im Sinne dieses Dokuments möchte contoso company ein HoloLens 2-Gerät zur kurzfristigen oder langfristigen Verwendung an das Werk eines externen Clients versenden. Wenn der Client Hilfe bei der Wartung benötigt, wird er sich mit den Anmeldeinformationen des Contoso-Unternehmens beim HoloLens 2-Gerät anmelden und Remote Assist verwenden, um sich mit den Experten des Contoso-Unternehmens in Verbindung zu setzen.
+### <a name="remote-assist-licensing-and-requirements"></a>Remote Assist Lizenzierung und Anforderungen
 
-Weitere Informationen zu Remote Assist [finden Sie hier.](/hololens/hololens2-cloud-connected-overview#learn-about-remote-assist)
+- Azure AD-Konto (erforderlich für den Erwerb des Abonnements und die Zuweisung von Lizenzen)
+- [Remote Assist-Abonnement](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (oder [Remote Assist-Testversion](/dynamics365/mixed-reality/remote-assist/try-remote-assist))
 
-### <a name="requirements-for-this-scenario"></a>Anforderungs for this Scenario
+Weitere [Informationen zu Remote Assist](/hololens/hololens2-cloud-connected-overview#learn-about-remote-assist)finden Sie unter .
 
-1. [Azure AD](/azure/active-directory/fundamentals/active-directory-whatis)
-1. Mobile Geräte-Manager– z. B. [Intune](/mem/intune/fundamentals/free-trial-sign-up)
-1. Remote Assist-Lizenz
-    1. [Kaufen Remote Assist](/dynamics365/mixed-reality/remote-assist/buy-remote-assist)
-    1. [Test Remote Assist](/dynamics365/mixed-reality/remote-assist/try-remote-assist)
+### <a name="dynamics-365-remote-assist-user"></a>Dynamics 365 Remote Assist-Benutzer
 
-## <a name="common-concerns"></a>Allgemeine Bedenken
+- Remote Assist-Lizenz
+- Netzwerkverbindung
 
-- [Sicherstellen, dass externe Clients nicht miteinander kommunizieren können](#how-to-ensure-that-external-clients-do-not-have-the-ability-to-communicate-with-one-another)
-- [Sicherstellen, dass Clients keinen Zugriff auf Unternehmensressourcen haben](#how-to-ensure-that-clients-do-not-have-access-to-company-resources)
-- [Einschränken von Apps](#how-to-restrict-apps)
-- [Verwalten von Kennwörtern](#how-to-manage-passwords)
-- [Sicherstellen, dass Clients keinen Zugriff auf den Chatverlauf haben](#how-to-ensure-that-clients-do-not-have-access-to-chat-history)
+### <a name="microsoft-teams-user"></a>Microsoft Teams-Benutzer
 
-### <a name="how-to-ensure-that-external-clients-do-not-have-the-ability-to-communicate-with-one-another"></a>Sicherstellen, dass externe Clients nicht miteinander kommunizieren können
+- Microsoft Teams oder [Teams Freemium](https://products.office.com/microsoft-teams/free)
+- Netzwerkverbindungen
 
-Da Remote Assist HoloLens aufrufe HoloLens nicht unterstützt werden, können Clients nacheinander suchen, aber nicht miteinander kommunizieren. Um weiter einzuschränken, nach wem Clients suchen und aufrufen können, können  [Informationsbarrieren](/microsoft-365/compliance/information-barriers) einschränken, mit wem ein Client kommunizieren kann. Eine weitere zu berücksichtigende Option ist die Verwendung [der Bereichsverzeichnissuche.](/MicrosoftTeams/teams-scoped-directory-search)
+## <a name="general-deployment-recommendations"></a>Allgemeine Bereitstellungsempfehlungen
+
+Für die Bereitstellung externer HoloLens 2 werden die folgenden Schritte empfohlen:
+
+1. Verwenden Sie die [neueste HoloLens Betriebssystemversion](https://aka.ms/hololens2download) als Baselinebuild.
+1. Weisen Sie benutzer- oder gerätebasierte Lizenzen zu, indem Sie die folgenden Schritte ausführen:
+    1. [Erstellen Sie eine Gruppe in AAD, und fügen Sie Mitglieder](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal#create-a-basic-group-and-add-members) für HoloLens/RA-Benutzer hinzu.
+    1. Weisen Sie dieser Gruppe [gerätebasierte oder benutzerbasierte Lizenzen](/azure/active-directory/enterprise-users/licensing-groups-assign#:~:text=In%20this%20article%201%20Assign%20the%20required%20licenses,3%20Check%20for%20license%20problems%20and%20resolve%20them) zu.
+    1. (Optional) Zielgruppen für [Mdm-Richtlinien (Mobile Device Management).](hololens-enroll-mdm.md)
+
+1. Verbinden Sie AAD-Geräte mit Ihrem Mandanten, [registrieren Sie sich automatisch,](/hololens/hololens-enroll-mdm#auto-enrollment-in-mdm)und konfigurieren Sie über [Autopilot](/hololens/hololens2-autopilot). Weitere Informationen finden Sie unter [Gerätebesitzer.](/hololens/security-adminless-os#device-owner)
+    1. Der erste Benutzer auf dem Gerät ist der Gerätebesitzer.
+    1. Wenn das Gerät in AAD eingebunden ist, wird der Benutzer, der die Verknüpfung durchgeführt hat, zum Gerätebesitzer.
+    
+1. [Der Mandant sperrt](/hololens/hololens-release-notes#tenantlockdown-csp-and-autopilot) das Gerät so, dass es nur von Ihrem Mandanten eingebunden werden kann.
+    1. Siehe auch [Mandantensperr-CSP.](/windows/client-management/mdm/tenantlockdown-csp)
+
+1. [Konfigurieren Sie den Kioskmodus mit global zugewiesenem Zugriff.](/hololens/hololens-global-assigned-access-kiosk)
+
+1. Deaktivieren Sie die folgenden (optionalen) Funktionen:
+    1. Hier können Sie das Gerät in den [Entwicklermodus](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock)versetzen.
+    1. Die Möglichkeit, die HoloLens mit einem PC zum Kopieren des Datums zu verbinden, [deaktiviert USB.](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection)
+       > [!NOTE]
+        > Wenn Sie USB nicht deaktivieren möchten, aber ein Bereitstellungspaket über USB auf das Gerät anwenden möchten, befolgen Sie die Anweisungen unter Zulassen der [Installation des Bereitstellungspakets.](/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
+
+1. Verwenden Sie [Windows Defender Application Control (WDAC),](/hololens/windows-defender-application-control-wdac) um Apps auf dem HoloLens 2 Gerät zuzulassen oder zu blockieren.
+1. Aktualisieren Sie Remote Assist im Rahmen des Setups auf die neueste Version. Betrachten Sie die folgenden beiden Optionen:
+    1. Wechseln Sie zu Windows **Microsoft Store --> Remote Assist --> und App aktualisieren.**
+    1. [ApplicationManagement/AllowAppStoreAutoUpdate](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) , das automatische App-Updates zulässt, ist standardmäßig aktiviert. Lassen Sie das Gerät angeschlossen, um Updates zu erhalten.
+1. [Deaktivieren Sie alle Einstellungsseiten](/hololens/settings-uri-list) mit Ausnahme der Netzwerkeinstellungen, damit Benutzer eine Verbindung mit Gastnetzwerken an Clientstandorten herstellen können.
+1. [Verwalten von HoloLens-Updates](/hololens/hololens-updates)
+    1. Option zum Steuern von [Betriebssystemupdates](/mem/intune/protect/windows-update-for-business-configure#create-and-assign-update-rings) oder zulassen des freien Flusses.
+1. Legen Sie [allgemeine Geräteeinschränkungen fest.](/hololens/hololens-common-device-restrictions)
+
+Jetzt können Ihre externen Clients ihre HoloLens 2 verwenden.
+
+## <a name="common-external-client-deployment-concerns"></a>Allgemeine Probleme bei der Bereitstellung externer Clients
+
+- [Sicherstellen, dass Clients nicht miteinander kommunizieren können](#ensure-that-external-clients-cant-communicate-with-one-another)
+- [Sicherstellen, dass Clients nicht auf Unternehmensressourcen zugreifen können](#ensure-that-clients-wont-have-access-to-company-resources)
+- [Ausblenden oder Einschränken von Apps](#hidden-or-restricted-apps)
+- [Verwalten von Kennwörtern für Ihre Clients](#password-management-for-your-clients) 
+- [Sicherstellen, dass Clients nicht auf den Chatverlauf zugreifen können](#ensure-that-clients-wont-have-access-to-chat-history)
+
+### <a name="ensure-that-external-clients-cant-communicate-with-one-another"></a>Sicherstellen, dass externe Clients nicht miteinander kommunizieren können
+
+Remote Assist HoloLens HoloLens Aufrufe werden nicht unterstützt. Clients können nach suchen, aber nicht miteinander kommunizieren. [Informationsbarrieren in Microsoft 365](/microsoft-365/compliance/information-barriers) können weiter einschränken, mit wem ein Client suchen und aufrufen kann. Eine weitere Option ist die Verwendung [Microsoft Teams Bereichsverzeichnissuche.](/MicrosoftTeams/teams-scoped-directory-search)
 
  > [!NOTE]
-> Da einmaliges Anmelden aktiviert ist, ist es wichtig, den Browser mit [**WDAC zu deaktivieren.**](/hololens/windows-defender-application-control-wdac) Wenn ein externer Client den Browser öffnet und die Webversion von Teams verwendet, hat der Client Zugriff auf den Anruf-/Chatverlauf.
+> Da einmaliges Anmelden aktiviert ist, ist es wichtig, den Browser mit [Windows Defender Application Control (WDAC)](/hololens/windows-defender-application-control-wdac)zu deaktivieren. Wenn ein externer Client den Browser öffnet und die Webversion von Teams verwendet, hat der Client Zugriff auf Ihren Chatverlauf.
 
-### <a name="how-to-ensure-that-clients-do-not-have-access-to-company-resources"></a>Sicherstellen, dass Clients keinen Zugriff auf Unternehmensressourcen haben
+### <a name="ensure-that-clients-wont-have-access-to-company-resources"></a>Sicherstellen, dass Clients keinen Zugriff auf Unternehmensressourcen haben
 
-Es gibt zwei Optionen, die Sie berücksichtigen sollten.
+Es gibt zwei Optionen zu berücksichtigen.
 
 Die erste Option ist ein mehrschichtiger Ansatz:
 
-1. Weisen Sie nur Lizenzen zu, die der Benutzer benötigt. Wenn Sie dem Benutzer OneDrive, Outlook, SharePoint, Yammer usw. nicht zuweisen, hat er keinen Zugriff auf diese Ressourcen. Die einzigen Lizenzen, die Benutzer benötigen, sind Remote Assist, Intune und AAD-Lizenzen.
-1. Blockieren Sie Apps (z. B. E-Mails), auf die Clients nicht zugreifen können (siehe [Einschränken von Apps).](#how-to-restrict-apps)
-1. Geben Sie weder Benutzernamen noch Kennwörter für Clients weiter. Für die Anmeldung beim HoloLens 2 sind eine E-Mail und eine numerische PIN erforderlich.
+1. Weisen Sie nur Lizenzen zu, die der Benutzer benötigt. Wenn Sie OneDrive, Outlook, SharePoint, Yammer usw. nicht zuweisen, hat der Benutzer keinen Zugriff auf diese Ressourcen. Die einzigen Lizenzen, die Benutzer benötigen, sind Remote Assist, Intune und AAD-Lizenzen, um zu beginnen.
+1. Blockieren Sie Apps (z. B. E-Mails), auf die Clients nicht zugreifen sollen (siehe [Apps sind ausgeblendet oder eingeschränkt).](#apps are hidden or restricted)
+1. Geben Sie Benutzernamen und Kennwörter nicht für Clients frei. Um sich beim HoloLens 2 anzumelden, sind eine E-Mail und eine numerische PIN erforderlich.
 
-Die zweite Option besteht in der Erstellung eines separaten Mandanten, der Clients hostet (siehe Abbildung 1.1).
+Die zweite Option besteht darin, einen separaten Mandanten zu erstellen, der Clients hostet (siehe Abbildung 1.1).
 
 **Abbildung 1.1**
 
-![Dienst-Mandantenimage](./images/hololens-service-tenant-image.png)
+![Image des Dienstmandanten](./images/hololens-service-tenant-image.png)
 
-### <a name="how-to-restrict-apps"></a>Einschränken von Apps
+### <a name="hidden-or-restricted-apps"></a>Ausgeblendete oder eingeschränkte Apps
 
-[Kioskmodus](/hololens/hololens-kiosk) und/oder [WDAC (Windows Defender Application Control)](/hololens/windows-defender-application-control-wdac) sind Optionen zum Einschränken von Anwendungen.
+[Kioskmodus](/hololens/hololens-kiosk) und/oder [Windows Defender Anwendungssteuerung (WDAC)](/hololens/windows-efender-application-control-wdac) sind Optionen zum Ausblenden und/oder Einschränken von Anwendungen.
 
-### <a name="how-to-manage-passwords"></a>Verwalten von Kennwörtern
+### <a name="password-management-for-your-clients"></a>Kennwortverwaltung für Ihre Clients
 
-1. Kennwortablauf entfernen. Dies erhöht jedoch die Wahrscheinlichkeit, dass ein Konto kompromittiert wird. NIST-Kennwortempfehlung: Kennwörter werden alle 30 bis 90 Tage geändert.
-1. Verlängern Sie den Kennwortablauf für HoloLens 2 Geräte auf mehr als 90 Tage.
-1. Die Geräte sollten an Contoso zurückgegeben werden, um die Kennwörter zu ändern. Dies kann jedoch zu Problemen führen, wenn erwartet wird, dass sich die Geräte mehr als 90 Tage im Werk des Clients befinden.  
-1. Setzen Sie für Geräte, die an mehrere Clients gesendet werden, Kennwörter zurück, bevor Sie das Gerät an Clients versenden.
+1. Entfernen Sie den Ablauf des Kennworts. Diese Option kann jedoch die Wahrscheinlichkeit erhöhen, dass ein Konto kompromittiert wird. NIST-Kennwortempfehlung: Kennwörter alle 30 bis 90 Tage ändern.
+1. Verlängern Sie den Ablauf des Kennworts für HoloLens 2 Geräte auf mehr als 90 Tage.
+1. Die Geräte sollten an Ihre Organisation zurückgegeben werden, um die Kennwörter zu ändern. Diese Option kann jedoch Probleme verursachen, wenn die Geräte voraussichtlich mehr als 90 Tage im Werk des Clients sind.  
+1. Setzen Sie für Geräte, die an mehrere Clients gesendet werden, Kennwörter zurück, bevor Sie das Gerät an Clients senden.
 
-### <a name="how-to-ensure-that-clients-do-not-have-access-to-chat-history"></a>Sicherstellen, dass Clients keinen Zugriff auf den Chatverlauf haben
+### <a name="ensure-that-clients-wont-have-access-to-chat-history"></a>Sicherstellen, dass Clients keinen Zugriff auf den Chatverlauf haben
 
-Remote Assist nach jeder Sitzung den Chatverlauf. Der Chatverlauf ist jedoch für den Benutzer Microsoft Teams verfügbar.
+Remote Assist löscht den Chatverlauf nach jeder Sitzung. Der Chatverlauf ist jedoch für Microsoft Teams Benutzer verfügbar.
 
 > [!NOTE]
-> Da einmaliges Anmelden aktiviert ist, ist es wichtig, den Browser mit [**WDAC zu deaktivieren.**](/hololens/windows-defender-application-control-wdac) Wenn ein externer Client den Browser öffnet und die Webversion von Teams verwendet, hat der Client Zugriff auf den Anruf-/Chatverlauf.
-
-## <a name="general-deployment-recommendations-and-instructions"></a>Allgemeine Bereitstellungs- Empfehlungen und Anweisungen
-
-Es wird Folgendes für die HoloLens 2 empfohlen:
-
-1. Verwenden Sie [das neueste HoloLens Betriebssystemversion](https://aka.ms/hololens2download) als Baseline-Build.
-1. Zuweisen von benutzer- oder gerätebasierten Lizenzen:
-    1. Benutzer- und gerätebasierte Lizenzen führen beide die folgenden Schritte aus:
-        1. [Erstellen Sie eine Gruppe in AAD, und fügen Sie Mitglieder](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal#create-a-basic-group-and-add-members) für HoloLens/RA-Benutzer hinzu.
-        1. [Weisen Sie dieser Gruppe gerätebasierte oder benutzerbasierte](/azure/active-directory/enterprise-users/licensing-groups-assign#:~:text=In%20this%20article%201%20Assign%20the%20required%20licenses,3%20Check%20for%20license%20problems%20and%20resolve%20them) Lizenzen zu.
-        1. (Optional) Sie können Zielgruppen für MDM-Richtlinien verwenden.
-
-1. Geräte sollten mit Ihrem Mandanten in AAD, [automatisch registriert](/hololens/hololens-enroll-mdm#auto-enrollment-in-mdm)und über [AutoPilot konfiguriert werden.](/hololens/hololens2-autopilot)
-    1. Beachten Sie, dass der erste Benutzer auf dem Gerät der Gerätebesitzer ist.
-    1. Beachten Sie, dass der Benutzer, der die Verknüpfung durchgeführt hat, gerätebesitzer ist, wenn das Gerät mit AAD verbunden ist.
-    1. Weitere Informationen finden Sie unter [Gerätebesitzer.](/hololens/security-adminless-os#device-owner)
-1. [Der Mandant](/hololens/hololens-release-notes#tenantlockdown-csp-and-autopilot) sperrt das Gerät so, dass es nur Ihrem Mandanten beigetreten sein kann.
-    1. **Zusätzlicher Link:** [Mandantensperr-CSP](/windows/client-management/mdm/tenantlockdown-csp).
-1. Konfigurieren Sie kiosk mit global zugewiesenem Zugriff auf [hier.](/hololens/hololens-global-assigned-access-kiosk)
-1. Es wird empfohlen, die folgenden (optionalen) Funktionen zu deaktivieren:
-    1. Hier können Sie das Gerät in den [Entwicklermodus bringen.](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock)
-    1. Deaktivieren Sie USB, um HoloLens Verbindung mit einem PC zum Kopieren des Datums [herzustellen.](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection)
-       > [!NOTE]
-        > Wenn Sie USB nicht deaktivieren möchten, aber ein Bereitstellungspaket über USB auf das Gerät anwenden möchten, befolgen Sie die hier aufgeführten [**Anweisungen.**](/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
-
-1. Verwenden [Sie WDAC](/hololens/windows-defender-application-control-wdac) zum Zulassen oder Blockieren von Apps auf dem HoloLens 2 Gerät.
-1. Aktualisieren Remote Assist im Rahmen des Setups auf die neueste Version. Dazu gibt es zwei Möglichkeiten:
-    1. Dies können Sie tun, indem Sie Windows **Microsoft Store --> Remote Assist --> app aktualisieren.**
-    1. [ApplicationManagement/AllowAppStoreAutoUpdate,](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) die automatische App-Updates zulässt, ist standardmäßig aktiviert. Halten Sie das Gerät angeschlossen, um Updates zu erhalten.
-1. [Deaktivieren Sie alle Einstellungsseiten außer](/hololens/settings-uri-list) den Netzwerkeinstellungen, damit Benutzer eine Verbindung mit Gastnetzwerken an Clientstandorten herstellen können.
-1. [Verwalten HoloLens Updates](/hololens/hololens-updates)
-    1. Option zum [Steuern von Betriebssystemupdates](/mem/intune/protect/windows-update-for-business-configure#create-and-assign-update-rings) oder zum zulassen des freien Flusses.
-1. [Allgemeine Geräteeinschränkungen.](/hololens/hololens-common-device-restrictions)
+> Da einmaliges Anmelden aktiviert ist, ist es wichtig, den Browser mit [Windows Defender Application Control (WDAC)](/hololens/windows-defender-application-control-wdac)zu deaktivieren.  Wenn ein externer Client den Browser öffnet und die Webversion von Teams verwendet, hat der Client Zugriff auf den Anruf-/Chatverlauf.
