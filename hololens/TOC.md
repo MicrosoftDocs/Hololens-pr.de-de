@@ -53,7 +53,7 @@
 #### [Konfigurieren](hololens2-cloud-connected-configure.md)
 #### [Bereitstellen](hololens2-cloud-connected-deploy.md)
 #### [Verwalten](hololens2-cloud-connected-maintain.md)
-#### [Bereitstellungshandbuch für cloudbasierte Umgebung (externe Clients)](hololens2-deployment-guide.md)
+#### [Externe Clients](hololens2-deployment-guide.md)
 ### Bereitstellungshandbuch für Unternehmensnetzwerke
 #### [Übersicht](hololens2-corp-connected-overview.md)
 #### [Vorbereiten](hololens2-corp-connected-prepare.md)
@@ -75,7 +75,7 @@
 ### [Verschlüsselung und Datenschutz](security-encryption-data-protection.md)
 ### [Netzwerksicherheit](security-network-security.md)
 ### [Sicherheitsentwicklung](security-engineering.md)
-### [Datenschutzbestimmungen für HoloLens 2](hololens2-compliance.md)
+### [HoloLens 2-Datenschutz](hololens2-privacy.md)
 ## -Geräteverwaltung
 ### [Verwenden von MDM zum Verwalten von HoloLens-Geräten](hololens-mdm-configure.md)
 ## Geräteregistrierung
