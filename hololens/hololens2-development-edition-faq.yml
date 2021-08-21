@@ -1,7 +1,7 @@
 ### YamlMime:FAQ
 metadata:
   title: HoloLens 2 Häufig gestellte Fragen zur Development Edition
-  description: Bleiben Sie mit den am häufigsten gestellten Fragen zum HoloLens 2 Development Edition Mixed Reality-Gerät auf dem laufenden.
+  description: Bleiben Sie mit den am häufigsten gestellten Fragen zum Mixed Reality-Gerät HoloLens 2 Development Edition auf dem laufenden.
   keywords: Hololens 2 purchasing options, HoloLens options, Developer Edition
   author: evmill
   ms.author: v-evmill
@@ -15,12 +15,12 @@ metadata:
   manager: yannisle
   appliesto:
   - HoloLens 2
-  ms.openlocfilehash: 92a7afe20808afa57282a1f073c326bbf9550d6b345cd27a236c59300f7dcbf9
-  ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+  ms.openlocfilehash: 85631d756285f4111016e39dc946733bb1e12d3c
+  ms.sourcegitcommit: 6b3b455f66a2b4d5b42f4674a5ff940a2a01c294
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "115659764"
+  ms.lasthandoff: 08/20/2021
+  ms.locfileid: "122610249"
 title: 'HoloLens 2 Development Edition: Häufig gestellte Fragen'
 summary: ''
 sections:
@@ -39,9 +39,9 @@ sections:
     answer: >
       Ja. Jede Edition von HoloLens 2 kann zum Entwickeln von Apps verwendet werden.
   - question: >
-      Wie und erhalte ich meine Azure-Gutschriften in Höhe von 500 USD, die dreimonatige Unity Pro-Testversion und die dreimonatige Pixyz-Plug-In-Testversion?
+      Wie und erhalte ich mein Azure-Guthaben in Höhe von 500 USD, die dreimonatige Unity Pro-Testversion und die dreimonatige Pixyz-Plug-In-Testversion?
     answer: >
-      Ihr Rabattguthaben oder Der Testzugriff wird an die E-Mail gesendet, die beim Kauf innerhalb von zwei Werktagen nach dem Versand des Produkts verwendet wird.
+      Ihr Rabattguthaben oder Der Testzugriff ist in Ihrer HoloLens 2 Development Edition enthalten.
   - question: >
       Kann ich für mein HoloLens 2-Gerät (nur Gerät) ein Upgrade auf die HoloLens 2 Development Edition durchführen, um das Testguthaben zu erhalten?
     answer: >
@@ -49,16 +49,16 @@ sections:
   - question: >
       Was ist Unity Pro?
     answer: >
-      Unity Pro ist eine 3D-Echtzeitplattform für kleine/mittelgroße Studios/Unternehmen. Es ist für Teams mit einer Mischung aus technischen und nicht technischen Fähigkeiten konzipiert. [Weitere Informationen](https://store.unity.com/products/unity-pro)
+      Unity Pro ist eine 3D-Echtzeitplattform für kleine/mittelgroße Studio-/Unternehmensunternehmen. Es ist für Teams mit einer Mischung aus technischen und nicht technischen Fähigkeiten konzipiert. [Weitere Informationen](https://store.unity.com/products/unity-pro)
   - question: >
       Was ist das Pixyz-Plug-In?
     answer: >
       Das Pixyz-Plug-In liest und konvertiert fast jedes Format, optimiert und legt es in Unity ab und stellt es bereit, um sofort einsatzbereite Ressourcen für Echtzeitanwendungen zu bieten. [Weitere Informationen](https://unity.com/products/pixyz)
   - question: >
       Ist die HoloLens 2 Development Edition verfügbar?
-    answer: "Ja, [die HoloLens 2 Development Edition](https://ms.liftforward.com/hololens?product=hololens-development-edition) ist jetzt nur noch in der USA. \n"
+    answer: "Ja, [die HoloLens 2 Development Edition](https://ms.liftforward.com/hololens?product=hololens-development-edition) ist jetzt nur in der USA. \n"
   - question: >
-      Wer ich mich mit Fragen zu meinen Berechtigungen HoloLens 2 Development Edition in Verbindung?
+      Wer habe ich Kontakt mit Fragen zu meinen Berechtigungen für HoloLens 2 Development Edition?
     answer: >
       Wenden Sie sich bei Fragen zu Berechtigungen unter 866-425-4709, Mo bis Fr, 6:00 bis 18:00 Uhr PST an Ihren Vertriebsspezialisten.
   - question: "Kann mein Unternehmen mehrere HoloLens 2 Development Edition-Geräte kaufen? \n"
@@ -125,14 +125,14 @@ sections:
 
       2. Melden Sie sich mit Ihrer Unity-ID an, oder erstellen Sie ein Konto.
 
-      3. Wählen sie &#39;Einlösen eines Produktcodes&#39;
+      3. Wählen &#39;Einlösen eines Produktcodes&#39;
 
       4. Geben Sie den Produktcode ein, und wählen Sie &#39;Einlösen eines Produktcodes&#39;
 
 
-      Weitere Informationen HoloLens 2 Sie in der Dokumentation zur HoloLens 2 [Development Edition.](hololens2-options.md?tabs=device)
+      Weitere HoloLens 2 finden Sie in der Dokumentation zur Development [Edition.](hololens2-options.md?tabs=device)
   - question: >
-      Kann ich Anwendungen mit anderen Versionen von Unity als pro-Lizenz erstellen?
+      Kann ich Anwendungen mit anderen Versionen als der PRO-Lizenz von Unity erstellen?
     answer: >
       Ja, Sie können Anwendungen mit allen kompatiblen Versionen von Unity erstellen.
   - question: >
@@ -158,36 +158,36 @@ sections:
 
       2. Melden Sie sich mit Pixyz an, oder erstellen Sie ein Konto.
 
-      3. Klicken &#39;auf Einlösen eines Produktcodes&#39;
+      3. Klicken &#39;auf Einlösen eines&#39;
 
       4. Geben Sie den Produktcode ein, und klicken Sie &#39;, um einen Produktcode einzulösen&#39;
 
 
-      Weitere Informationen HoloLens 2 Sie in der Dokumentation zur HoloLens 2 [Development Edition.](hololens2-options.md?tabs=device)
+      Weitere HoloLens 2 finden Sie in der Dokumentation zur Development [Edition.](hololens2-options.md?tabs=device)
   - question: >
       Gewusst wie Wenden Sie sich an den Pixyz-Support?
     answer: >
       Wenn Sie Hilfe bei Fragen zu Ihrer Unity-ID, Ihrem Konto, Ihren Organisationen und Ihren Abonnements erhalten möchten, besuchen Sie support.unity3d.com
 
 
-      Pixyz-spezifischer Support (nach dem Einlösen Ihrer Testversion) finden Sie unter [Pixyz-software.com/support](http://pixyz-software.com/support)
+      Informationen zum Pixyz-spezifischen Support (nach dem Einlösen Ihrer Testversion) finden Sie [unter Pixyz-software.com/support](http://pixyz-software.com/support)
 - name: Azure
   questions:
   - question: >
       Wie kann ich mein Azure-Guthaben in Höhe von 500 USD einlösen?
     answer: >
-      Um Ihr Azure-Guthaben von 500 USD einzulösen, lösen Sie Ihren Azure Pass Promocode ein, und aktivieren Sie Ihr Abonnement. [Weitere Informationen](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
+      Um Ihr Azure-Guthaben in Höhe von 500 USD einzulösen, lösen Sie Ihren Azure Pass-Promocode ein, und aktivieren Sie Ihr Abonnement. [Weitere Informationen](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
 
 
-      Lesen Sie den Azure Pass [Abonnementvertrag](https://azure.microsoft.com/support/legal/subscription-agreement/?country=US) und [die Angebotsdetails.](https://azure.microsoft.com/en-us/offers/azure-pass/)
+      Sehen Sie sich Azure Pass [Abonnementvertrag und](https://azure.microsoft.com/support/legal/subscription-agreement/?country=US) [Angebotsdetails an.](https://azure.microsoft.com/en-us/offers/azure-pass/)
   - question: >
       Wann läuft mein Azure-Guthaben von 500 USD ab?
     answer: >
-      Ihr Azure-Guthaben von 500 USD läuft 90 Tage nach der Aktivierung Ihres Azure-Schlüsselcodes ab.
+      Ihr Azure-Guthaben in Höhe von 500 USD läuft 90 Tage nach der Aktivierung Ihres Azure-Schlüsselcodes ab.
   - question: >
       Was kann ich mit meinem Azure-Guthaben tun?
     answer: >
-      Mit Ihrem Azure-Guthaben können Sie mit der Erstellung von Microsoft&#39;ständig wachsenden Clouddiensten beginnen. Die in der HoloLens 2 Development Edition enthaltenen Azure-Gutschriften sollen Es Kunden ermöglichen, schnell mit dem Erstellen und Testen von Mixed Reality-Anwendungen in Azure zu beginnen. Ausführliche Informationen zum Erstellen in Azure finden Sie unter [Azure-Ressourcen.](https://azure.microsoft.com/en-us/resources/)
+      Mit Ihrem Azure-Guthaben können Sie mit der Entwicklung von Microsoft&#39;ständig wachsenden Clouddiensten beginnen. Das in der HoloLens 2 Development Edition enthaltene Azure-Guthaben ermöglicht Kunden den schnellen Einstieg in das Erstellen und Testen von Mixed Reality-Anwendungen in Azure. Vollständige Informationen zum Erstellen in Azure finden Sie unter [Azure-Ressourcen.](https://azure.microsoft.com/en-us/resources/)
   - question: >
-      Wo finde ich weitere Informationen zu Azure Mixed Reality-Diensten?
+      Wo kann ich mehr über Azure Mixed Reality-Dienste erfahren?
     answer: Microsoft bietet eine Reihe von Mixed Reality-Diensten, mit denen Entwickler Mixed Reality-Lösungen erstellen und testen können. [Weitere Informationen](/windows/mixed-reality/develop/mixed-reality-cloud-services)
