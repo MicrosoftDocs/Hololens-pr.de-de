@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 7438b147a31ff38233412a4213a568286fb2e3b8982bc4fd6af3f9dde842fd1a
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b8bfa5359436151bcae9579c78674a93ae0db88d
+ms.sourcegitcommit: dab46153e0948310a96b1a6f47d788b7130cfa14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662476"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122620810"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>Windows Autopilot für HoloLens 2
 
@@ -250,7 +250,12 @@ Sobald die obigen Anweisungen abgeschlossen sind, werden Ihre Benutzer der HoloL
        >
        > Bei Geräten, die Ethernet-Adapter verwenden, müssen Sie das Gerät an das Netzwerk anschließen, bevor die Out-of-the-Box-Erfahrung (OOBE) beginnt. Auf dem ersten OOBE-Bildschirm wird ermittelt, ob das Gerät als Autopilot-Gerät bereitgestellt wird. Wenn das Gerät keine Verbindung mit dem Netzwerk herstellen kann, oder wenn Sie sich entscheiden, das Gerät nicht als Autopilot-Gerät bereitzustellen, können Sie zu einem späteren Zeitpunkt nicht zur Autopilot-Bereitstellung wechseln. Stattdessen müssten Sie diesen Vorgang erneut ausführen, um das Gerät als Autopilot-Gerät bereitzustellen.
 
-1. Das Gerät sollte die OOBE automatisch starten. Interagieren Sie nicht mit OOBE. Lehnen Sie sich stattdessen ganz entspannt zurück! Lassen Sie HoloLens 2 die Netzwerkverbindung ermitteln, und erlauben Sie ihr den OOBE-Vorgang automatisch auszuführen. Das Gerät könnte während des OOBE-Vorgangs neu starten. Die OOBE-Bildschirme sollten wie folgt aussehen.
+1. Das Gerät sollte die OOBE automatisch starten. Interagieren Sie nicht mit OOBE.
+
+    > [!IMPORTANT]
+    > Interagieren Sie während einer Autopilot-Bereitstellung nicht mit OOBE, und drücken Sie nicht den Netzschalter, um das System in den Standbymodus zu bringen oder herunterzufahren. Dies kann dazu führen, dass der Autopilot-Ablauf nicht abgeschlossen wird.
+
+   Lassen Sie HoloLens 2 die Netzwerkverbindung ermitteln, und erlauben Sie ihr den OOBE-Vorgang automatisch auszuführen. Das Gerät könnte während des OOBE-Vorgangs neu starten. Die OOBE-Bildschirme sollten wie folgt aussehen.
 
    ![OOBE Schritt 1](./images/autopilot-welcome.jpg)
    ![OOBE Schritt 2](./images/autopilot-step-complete.jpg)
