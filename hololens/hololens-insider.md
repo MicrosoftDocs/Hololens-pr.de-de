@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 80346fd74c9b38ed557d815ed138b1da5702609e
-ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
+ms.openlocfilehash: b865f9f9a9a734ef6a6c6419fc523049e925d5f8
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "122859016"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189476"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider Preview für Microsoft HoloLens
 
@@ -29,17 +29,17 @@ Willkommen bei den neuesten Insider Preview-Builds für HoloLens! Es ist einfach
 
 ## <a name="windows-insider-release-notes"></a>Windows Insider-Versionshinweise
 
-Wir freuen uns, mit der Entwicklung neuer Features zu beginnen, Windows Insider zu erhalten. Neue Builds werden an die Entwicklungs- und Betakanäle übertragen, um die neuesten Updates zu erhalten. Wir werden diese Seite weiterhin aktualisieren, wenn wir unseren Insider-Builds weitere Features und Windows hinzufügen. Lassen Sie sich freuen und bereit sein, diese Updates in Ihre Realität zu mischen.
+Wir freuen uns, mit der Entwicklung neuer Features für Windows Insider beginnen zu können. Neue Builds werden an die Entwicklungs- und Betakanäle übertragen, um die neuesten Updates zu erhalten. Wir werden diese Seite weiterhin aktualisieren, wenn wir unseren Insider-Builds weitere Features und Windows hinzufügen. Lassen Sie sich freuen und bereit sein, diese Updates in Ihre Realität zu mischen.
 
-In diesem Thema geht es um die verbesserte Problembehandlung und Geräteberichte, einige behobene Fehler im Kioskmodus und den Zertifikat-Viewer, die erweiterte Verwaltbarkeitsoberfläche und die erhöhte Updatezuverlässigkeit. Ein neues Feature dieses Featureupdates, das in HoloLens wird, ist unser Moving Platform Mode. Sehen Sie sich alle neuen großartigen Features für HoloLens 2!
+In diesem Thema geht es um die verbesserte Problembehandlung und Geräteberichte, einige behobene Fehler im Kioskmodus und den Zertifikat-Viewer, die erweiterte Verwaltbarkeitsoberfläche und die erhöhte Updatezuverlässigkeit. Ein neues Feature dieses Featureupdates, das im HoloLens ist unser Moving Platform-Modus. Sehen Sie sich alle neuen großartigen Features für HoloLens 2!
 
-| Funktion                 | Beschreibung                | Benutzer oder Szenario | Build eingeführt |
+| Funktion                 | BESCHREIBUNG                | Benutzer oder Szenario | Build eingeführt |
 |-------------------------|----------------------------|--------------|------------------|
-| [Verschieben des Plattformmodus](#moving-platform-mode) | Führt die Betaversion des Moving Platform Mode ein, die, wenn sie konfiguriert ist, die Verwendung von HoloLens 2 bei großen, dynamischen Bewegungsabläufen ermöglicht. | All | 20348.1411 |
+| [Verschieben des Plattformmodus](#moving-platform-mode) | Führt die Betaversion des Moving Platform Mode ein, die, wenn sie konfiguriert ist, die Verwendung von HoloLens 2 bei großen, dynamischen Bewegungsabläufen in großen 2016-100-Booten ermöglicht. | Alle | 20348.1411 |
 | [PFX-Dateiunterstützung für den Zertifikat-Manager](#pfx-file-support-for-certificate-manager) | Hinzufügen von PFX-Zertifikaten über Einstellungen Benutzeroberfläche | Endbenutzer | 20348.1405 |
 | [Anzeigen des erweiterten Diagnoseberichts in Einstellungen auf HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | Anzeigen von MDM-Diagnoseprotokollen auf dem Gerät | Problembehandlung | 20348.1405 |
 | [Offlinediagnosebenachrichtigungen](#offline-diagnostics-notifications) | Feedback zur Protokollsammlung | Problembehandlung | 20348.1405 |
-| [Verbesserungen bei der Erfassung von Protokollen mit geringem Speicher](#low-storage-log-collection-improvements) | Verbesserungen an Protokollsammlungsszenarien in Situationen mit geringem Speicher. | Problembehandlung | 20348.1412 |
+| [Verbesserungen bei der Protokollsammlung mit geringem Speicher](#low-storage-log-collection-improvements) | Verbesserungen an Protokollsammlungsszenarien in Situationen mit geringem Speicher. | Problembehandlung | 20348.1412 |
 | [CSP-Änderungen für die Berichterstellung HoloLens Details](#csp-changes-for-reporting-hololens-details) | Neue CSPs für zum Abfragen von Daten | IT-Administratoren    | 20348.1403                 |
 | [Richtlinie für die automatische Anmeldung, die von CSP gesteuert wird](#auto-login-policy-controlled-by-csp) | Wird zum automatischen Anmelden eines Kontos verwendet. | IT-Administratoren | 20348.1405 |
 | [Verbesserte Erkennung von Updateneustarts und Benachrichtigungen](#improved-update-restart-detection-and-notifications) | Neue aktivierte Richtlinien und Beux für Updates. | IT-Administratoren | 20348.1405 |
@@ -50,8 +50,8 @@ In diesem Thema geht es um die verbesserte Problembehandlung und Geräteberichte
 
 ### <a name="it-admin-insider-feature-checklist"></a>Checkliste für IT-Administrator-Insiderfeatures
 
-✔️ Wenn Sie ein einzelnes Konto für Azure AD automatisch anmelden möchten, konfigurieren [Sie diesen neuen CSP.](#auto-login-policy-controlled-by-csp) <br>
-✔️ Wenn Sie Ihre Apps so konfigurieren möchten, dass sie nach einem Fehler beim Aktualisieren automatisch aktualisiert werden, legen Sie diesen neuen CSP für intelligente [Wiederholungen fest.](#smart-retry-for-app-updates) <br>
+✔️ Sie diesen neuen CSP konfigurieren, wenn Sie ein einzelnes Azure AD-Konto für die automatische Anmeldung [festlegen möchten.](#auto-login-policy-controlled-by-csp) <br>
+✔️ Wenn Sie Ihre Apps so konfigurieren möchten, dass sie nach einem Fehler beim Aktualisieren automatisch eine Aktualisierung versuchen, legen Sie diesen neuen CSP für intelligente [Wiederholungen fest.](#smart-retry-for-app-updates) <br>
 ✔️ Wenn Sie mehr Kontrolle über Betriebssystemupdates haben möchten, sehen Sie sich diese [neu aktivierten Updaterichtlinien an.](#improved-update-restart-detection-and-notifications) <br>
 ✔️ Wenn Sie die Apps Ihrer Organisation über den Microsoft Store im Unternehmensspeicher verfügbar machen müssen, aber nur den Zugriff auf die Apps Ihrer Organisation und nicht auf den vollständigen Store zulassen möchten, legen Sie diese Richtlinie [fest.](#use-only-private-store-apps-for-microsoft-store) <br>
 ✔️ Wenn Sie den freien Speicherplatz, die SSID oder BSSID Ihrer HoloLens-Geräte kennen möchten, sehen Sie sich diese CsPs für die [Berichterstellung an.](#csp-changes-for-reporting-hololens-details) <br>
@@ -59,18 +59,18 @@ In diesem Thema geht es um die verbesserte Problembehandlung und Geräteberichte
 
 ### <a name="moving-platform-mode"></a>Verschieben des Plattformmodus
 
-Ab **Insider-Build 20348.1411** haben wir Betaunterstützung für die Nachverfolgung auf Plattformen mit geringen dynamischen Bewegungen auf HoloLens 2. Nachdem Sie den Build installiert und den Moving Platform-Modus aktiviert haben, können Sie Ihre HoloLens 2 in umgebungen verwenden, auf die zuvor nicht zugegriffen werden konnte, z. B. in großen Booten und großen Booten. Derzeit ist das Feature nur auf die Unterstützung dieser spezifischen beweglichen Plattformen ausgerichtet. Zwar hindert Sie nichts daran, die Verwendung des Features in anderen Umgebungen zu versuchen, der Schwerpunkt bei diesem Feature liegt aber zuerst bei der hinzugefügten Unterstützung für diese Umgebungen.
+Ab **Insider-Build 20348.1411** haben wir Betaunterstützung für die Nachverfolgung auf Plattformen mit geringen dynamischen Bewegungen auf HoloLens 2. Nachdem Sie den Build installiert und den Moving Platform-Modus aktiviert haben, können Sie Ihre HoloLens 2 in umgebungen verwenden, auf die zuvor nicht zugegriffen werden konnte, z. B. in großen Booten und großen 2003-Booten. Derzeit ist das Feature nur auf die Unterstützung dieser spezifischen beweglichen Plattformen ausgerichtet. Zwar hindert Sie nichts daran, die Verwendung des Features in anderen Umgebungen zu versuchen, der Schwerpunkt bei diesem Feature liegt aber zuerst bei der hinzugefügten Unterstützung für diese Umgebungen.
 
-Weitere Informationen dazu, was unterstützt wird und wie Sie dieses neue Feature aktivieren, finden Sie auf der Seite [zum Verschieben der Plattform.](hololens2-moving-platform.md)
+Weitere Informationen dazu, was unterstützt wird und wie Sie dieses neue Feature aktivieren, finden Sie auf [der Seite zum Verschieben der Plattform.](hololens2-moving-platform.md)
 
 ### <a name="pfx-file-support-for-certificate-manager"></a>PFX-Dateiunterstützung für den Zertifikat-Manager
 
-Eingeführt in Windows Insider-Build 20348.1405. Wir haben dem [Zertifikat-Manager](certificate-manager.md) Unterstützung für die Verwendung von PFX-Zertifikaten hinzugefügt. Wenn Benutzer zu **Einstellungen** Update & Security Certificates (Sicherheitszertifikate aktualisieren) navigieren und Zertifikat installieren auswählen, unterstützt die Benutzeroberfläche jetzt die  >    >  PFX-Zertifikatdatei. 
-Benutzer können das PFX-Zertifikat mit privatem Schlüssel in den Benutzer- oder Computerspeicher importieren.
+Eingeführt in Windows Insider-Build 20348.1405. Wir haben dem [Zertifikat-Manager](certificate-manager.md) Unterstützung für die Verwendung von PFX-Zertifikaten hinzugefügt. Wenn Benutzer zu **Einstellungen** Update &-Sicherheitszertifikate navigieren und Zertifikat installieren auswählen, unterstützt die Benutzeroberfläche jetzt die  >    >  PFX-Zertifikatdatei. 
+Benutzer können pfx-Zertifikate mit privatem Schlüssel in den Benutzer- oder Computerspeicher importieren.
 
 ### <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>Anzeigen des erweiterten Diagnoseberichts in Einstellungen auf HoloLens
 
-Für verwaltete Geräte bei der Problembehandlung ist die Bestätigung, dass eine erwartete Richtlinienkonfiguration angewendet wird, ein wichtiger Schritt. Bisher mussten diese Informationen auf dem Gerät über MDM oder in der Nähe des Geräts angezeigt werden, nachdem mdm-Diagnoseprotokolle exportiert wurden, die über **Einstellungen-Konten** gesammelt wurden, auf Arbeits- oder Schulkonto zugreifen. Wählen Sie anschließend  ->    >   **Verwaltungsprotokolle** exportieren und auf einem pc in der Nähe anzeigen aus.
+Für verwaltete Geräte bei der Problembehandlung ist die Bestätigung, dass eine erwartete Richtlinienkonfiguration angewendet wird, ein wichtiger Schritt. Bisher mussten diese Informationen auf dem Gerät über MDM oder in der Nähe des Geräts angezeigt werden, nachdem mdm-Diagnoseprotokolle exportiert wurden, die über **Einstellungen-Konten** gesammelt wurden. Wählen Sie anschließend Die Verwaltungsprotokolle exportieren und auf einem pc in der Nähe anzeigen  ->    >  aus. 
 
 Die MDM-Diagnose kann nun mithilfe des Edge-Browsers auf dem Gerät angezeigt werden. Um den MDM-Diagnosebericht einfacher anzuzeigen, navigieren Sie zur Seite Auf Arbeits- oder Schularbeit zugreifen, und wählen **Sie Erweiterten Diagnosebericht anzeigen aus.** Dadurch wird der Bericht in einem neuen Edgefenster generiert und geöffnet.
 
@@ -101,7 +101,7 @@ In Szenarien, in denen ein Gerät bei der Erfassung von Diagnoseprotokollen weni
 
 Die folgenden CSPs wurden mit neuen Möglichkeiten zum Melden von Informationen von Ihren HoloLens-Geräten aktualisiert.
 
-#### <a name="devdetail-csp---free-storage"></a>DevDetail-CSP: Kostenlose Storage
+#### <a name="devdetail-csp---free-storage"></a>DevDetail-CSP : Kostenlose Storage
 
 DevDetail CSP meldet jetzt auch freien Speicherplatz auf HoloLens Gerät. Dies sollte ungefähr mit dem Wert übereinstimmen, der auf der Storage-Seite Einstellungen App angezeigt wird. Im Folgenden finden Sie den spezifischen Knoten, der diese Informationen enthält.
 
@@ -136,7 +136,7 @@ Syncml-Beispielblob (für MDM-Anbieter) zum Abfragen von NetworkIdentifiers
 
 ### <a name="auto-login-policy-controlled-by-csp"></a>Richtlinie für die automatische Anmeldung, die vom CSP gesteuert wird
 
-Diese neue AutoLogonUser-Richtlinie steuert, ob ein Benutzer automatisch angemeldet wird. Einige Kunden möchten Geräte einrichten, die an eine Identität gebunden sind, aber keine Anmeldeerfahrung haben möchten. Imagine ein Gerät abzuholen und sofort Remoteunterstützung zu verwenden. Sie können auch schnell HoloLens Geräte verteilen und endbenutzern die Anmeldung beschleunigen.
+Diese neue AutoLogonUser-Richtlinie steuert, ob ein Benutzer automatisch angemeldet wird. Einige Kunden möchten Geräte einrichten, die an eine Identität gebunden sind, aber keine Anmeldeerfahrung haben möchten. Imagine sofort ein Gerät abholen und die Remoteunterstützung verwenden. Sie können auch schnell HoloLens Geräte verteilen und endbenutzern die Anmeldung beschleunigen.
 
 Wenn die Richtlinie auf einen nicht leeren Wert festgelegt ist, wird die E-Mail-Adresse des Benutzers für die automatische Anmeldung angegeben. Der angegebene Benutzer muss sich mindestens einmal beim Gerät anmelden, um die automatische Anmeldung zu aktivieren.
 
@@ -171,7 +171,7 @@ Die folgenden Updaterichtlinien wurden hinzugefügt:
 
 Jetzt für HoloLens aktiviert ist eine neue Richtlinie, mit der IT-Administratoren ein wiederkehrendes oder einmaliges Datum festlegen können, um Apps neu zu starten, deren Update fehlgeschlagen ist, weil die App verwendet wird und das Update angewendet werden kann. Diese können basierend auf einigen verschiedenen Triggern festgelegt werden, z. B. einem geplanten Zeitpunkt oder einer Anmeldung. Weitere Informationen zur Verwendung dieser Richtlinie finden Sie unter [ApplicationManagement/ScheduleForceRestartForUpdateFailures.](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)
 
-### <a name="use-only-private-store-apps-for-microsoft-store"></a>Nur private Store-Apps für Microsoft Store verwenden
+### <a name="use-only-private-store-apps-for-microsoft-store"></a>Nur private Store-Apps für Microsoft Store
 
 Die RequirePrivateStoreOnly-Richtlinie wurde für HoloLens aktiviert. Mit dieser Richtlinie kann die Microsoft Store-App so konfiguriert werden, dass nur der private Speicher angezeigt wird, der für Ihre Organisation konfiguriert ist. Beschränken des Zugriffs auf die Apps, die Sie zur Verfügung gestellt haben.
 
@@ -185,9 +185,9 @@ Sie können jetzt WDAC verwenden, um den Start von Apps oder Prozessen zu blocki
 
 - Es wurde ein [bekanntes Problem für Geräteportal behoben, bei dem keine Aufforderung zum Herunterladen gesperrter Dateien angezeigt wurde.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
 - Ein [bekanntes Problem für Geräteportal mit Dateiupload- und Downloadtime outs](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out) wurde behoben.
-- Beheben von Problemen bei der Berichterstellung von Kompatibilitätseigenschaften von HoloLens Geräten Möglicherweise ist ein Neustart erforderlich, damit die richtige Berichterstellung in Insider-Builds ausgelöst wird.  
-- Aktivierte eine API für [den zugewiesenen Zugriff,](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348) sodass Apps jetzt ermitteln können, ob ein HoloLens im Kioskmodus für den Benutzer ausgeführt wird, der beim HoloLens angemeldet ist.
-- Die in der Box enthaltene Version von Remote Assist, die auf neuen Flashs installiert ist, wurde aktualisiert.
+- Beheben von Problemen bei der Berichterstellung von Konformitätseigenschaften von HoloLens Geräten Möglicherweise ist ein Neustart erforderlich, damit die richtige Berichterstellung in Insider-Builds ausgelöst wird.  
+- Aktivierte eine API für [den zugewiesenen Zugriff,](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348) sodass Apps jetzt ermitteln können, ob ein HoloLens in einem Kioskmodus für den Benutzer ausgeführt wird, der beim HoloLens angemeldet ist.
+- Die In-Box-Version von Remote Assist, die auf neuen Flashs installiert ist, wurde aktualisiert.
 
 ## <a name="start-receiving-insider-builds"></a>Starten des Empfangs von Insider-Builds
 
@@ -201,17 +201,17 @@ Sie können jetzt WDAC verwenden, um den Start von Apps oder Prozessen zu blocki
 
 Wechseln Sie auf einem HoloLens 2 Gerät zu **Einstellungen**  >  **Update & Security** Windows Insider  >  **Program,** und wählen Sie Erste Schritte **aus.** Verknüpfen Sie das Konto, das Sie zum Registrieren als Windows Insider verwendet haben.
 
-Windows Insider wechselt jetzt zu Kanäle. Der **Schnelle** Ring wird zum **Entwicklungskanal,** der **langsame** Ring zum **Betakanal** und der **Releasevorschauring** zum **Releasevorschaukanal.** Diese Zuordnung sieht wie folgt aus:
+Windows Insider wechselt jetzt zu Kanäle. Der **Fast-Ring** wird zum **Dev-Kanal,** der **langsame** Ring zum **Betakanal** und der **Release preview-Ring** zum **Releasevorschaukanal.** Diese Zuordnung sieht wie folgt aus:
 
-![Windows Erklärung von Insiderkanälen](images/WindowsInsiderChannels.png)
+![Windows Erklärung von Insider-Kanälen.](images/WindowsInsiderChannels.png)
 
-Weitere Informationen finden Sie unter [Introducing Windows Insider Channels (Einführung Windows Insider Channels)](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) in Windows Blogs.
+Weitere Informationen finden Sie unter [Introducing Windows Insider Channels (Einführung in Windows Insider Channels)](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) auf Windows Blogs.
 Wählen Sie dann **Aktive Entwicklung von Windows** aus, wählen Sie aus, ob Sie Dev **Channel** oder **Betakanal** Builds erhalten möchten, und überprüfen Sie die Programmbedingungen.
 Wählen Sie **Confirm > Restart Now (Jetzt neu starten)** aus, um den Vorgang abzuschließen. Wechseln Sie nach dem Neustart Ihres Geräts zu **Einstellungen > Update & Security > Suchen nach Updates,** um den neuesten Build zu erhalten.
 
 ### <a name="update-error-0x80070490-work-around"></a>Updatefehler 0x80070490 Problembearbeitung
 
-Wenn beim Aktualisieren im Dev- oder Betakanal ein Updatefehler 0x80070490 auftritt, versuchen Sie es mit der folgenden kurzfristigen Problemumgemeinung. Dies umfasst das Verschieben Ihres Insider-Kanals, das Aufnehmen des Updates und das anschließende Verschieben Ihres Insider-Kanals zurück.
+Wenn beim Aktualisieren auf dem Entwicklungs- oder Betakanal ein Updatefehler 0x80070490 auftritt, versuchen Sie es mit der folgenden kurzfristigen Problemumgemeinung. Dies umfasst das Verschieben Ihres Insider-Kanals, das Aufnehmen des Updates und das anschließende Verschieben Ihres Insider-Kanals zurück.
 
 #### <a name="stage-one---release-preview"></a>Phase 1: Releasevorschau
 
@@ -232,38 +232,38 @@ Zum Testen mit einer Flugsignierungs-FFU müssen Sie ihr Gerät zunächst entspe
 1. Auf dem PC:
     1. Laden Sie FFU von auf Ihren PC [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) herunter.
 
-    1. Installieren Sie ARC (Advanced Recovery Companion) über Microsoft Store: [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8) .
+    1. Installieren Sie ARC (Advanced Recovery Companion) über die Microsoft Store: [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8) .
 
-1. On HoloLens – Flight Unlock :Öffnen **Sie Einstellungen** Update &  >  **Security** Windows  >  **Insider Program,** registrieren Sie sich, und starten Sie das Gerät neu.
+1. Bei HoloLens – Flight Unlock: Öffnen **Sie Einstellungen** Update  >  **& Security** Windows Insider  >  **Program,** und starten Sie das Gerät neu.
 
-1. Flash FFU: Jetzt können Sie die FFU mit Flugsignierung mit ARC flashen.
+1. Flash-FFU: Jetzt können Sie die mit Flugsignieren signierte FFU mit ARC flashen.
 
 ### <a name="provide-feedback-and-report-issues"></a>Bereitstellen von Feedback und Melden von Problemen
 
-Verwenden Sie [die Feedback-Hub-App](hololens-feedback.md) in Ihrem HoloLens, um Feedback zu geben und Probleme zu melden. Durch Feedback-Hub wird sichergestellt, dass alle erforderlichen Diagnoseinformationen enthalten sind, damit unsere Techniker das Problem schnell debuggen und beheben können.  Probleme mit der chinesischen und japanischen Version von HoloLens sollten auf die gleiche Weise gemeldet werden.
+Verwenden Sie [die Feedback-Hub-App](hololens-feedback.md) auf Ihrem HoloLens, um Feedback zu geben und Probleme zu melden. Die Verwendung von Feedback-Hub stellt sicher, dass alle erforderlichen Diagnoseinformationen enthalten sind, damit unsere Techniker das Problem schnell debuggen und beheben können.  Probleme mit der chinesischen und japanischen Version von HoloLens sollten auf die gleiche Weise gemeldet werden.
 
 > [!NOTE]
-> Stellen Sie sicher, dass Sie die Eingabeaufforderung akzeptieren, in der  Sie gefragt werden, ob Sie Feedback-Hub Auf Ihren Ordner Dokumente zugreifen möchten (wählen Sie Ja aus, wenn Sie dazu aufgefordert werden).
+> Achten Sie darauf, dass Sie die Eingabeaufforderung akzeptieren, in der Sie gefragt werden, ob Feedback-Hub auf Ihren Ordner Dokumente zugreifen soll (wählen Sie **Ja** aus, wenn Sie dazu aufgefordert werden).
 
 ## <a name="note-for-developers"></a>Hinweis für Entwickler
 
-Sie sind willkommen und werden aufgefordert, Ihre Anwendungen mithilfe von Insider-Builds von HoloLens.  Sehen Sie sich die [HoloLens Entwicklerdokumentation an,](https://developer.microsoft.com/windows/mixed-reality/development) um zu beginnen. Diese Anweisungen funktionieren mit Insider-Builds von HoloLens.  Sie können die gleichen Builds von Unity und Visual Studio, die Sie bereits für die Entwicklung HoloLens verwenden.
+Sie sind willkommen und werden empfohlen, Ihre Anwendungen mit Insider-Builds von HoloLens zu entwickeln.  Informationen zu den ersten Schritte finden Sie in der [HoloLens Developer-Dokumentation.](https://developer.microsoft.com/windows/mixed-reality/development) Die gleichen Anweisungen funktionieren mit Insider-Builds von HoloLens.  Sie können die gleichen Builds von Unity und Visual Studio verwenden, die Sie bereits für HoloLens Entwicklung verwenden.
 
 ## <a name="stop-receiving-insider-builds"></a>Beenden des Empfangs von Insider-Builds
 
-Wenn Sie keine Insider-Builds von Windows Holographic mehr erhalten möchten, können Sie dies deaktivieren, wenn [](hololens-recovery.md) Ihre HoloLens einen Produktions-Build ausgeführt, oder Sie können Ihr Gerät mit dem Advanced Recovery Companion wiederherstellen, um Ihr Gerät auf eine nicht-Insider-Version von Windows Holographic wiederhergestellt.
+Wenn Sie keine Insider-Builds von Windows Holographic mehr erhalten möchten, können Sie sich abmelden, wenn Ihr HoloLens einen Produktionsbuild ausführt, oder Sie können Ihr Gerät mit dem Advanced Recovery Companion wiederherstellen, um Ihr Gerät in einer Nicht-Insider-Version von Windows Holographic [wiederherzustellen.](hololens-recovery.md)
 
 > [!CAUTION]
-> Es gibt ein bekanntes Problem, bei dem Benutzer, die die Registrierung bei Insider Preview-Builds nach der manuellen Neuinstallation eines neuen Vorschauversions-Builds wieder auf einen blauen Bildschirm setzen. Anschließend muss das Gerät manuell wiederhergestellt werden. Ausführliche Informationen dazu, ob Sie davon in Kontakt sind, finden Sie unter Bekanntes [Problem.](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
+> Es gibt ein bekanntes Problem, bei dem Benutzer, die die Registrierung bei Insider Preview-Builds nach der manuellen Neuinstallation eines neuen Vorschaubuilds aufheben, einen Bluescreen erhalten. Anschließend müssen sie ihr Gerät manuell wiederherstellen. Ausführliche Informationen dazu, ob Sie betroffen sind oder nicht, finden Sie in diesem [bekannten Problem.](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
 
-So überprüfen Sie, HoloLens ein Produktions-Build ausgeführt wird:
+So überprüfen Sie, ob ihr HoloLens einen Produktionsbuild ausführt:
 
-1. Wechseln Sie **zu Einstellungen > System > About**(Informationen), und suchen Sie die Buildnummer.
+1. Wechseln Sie zu **Einstellungen > System > About**, und suchen Sie die Buildnummer.
 
-1. [Weitere Informationen finden Sie in den Versionshinweisen für Produktions-Buildnummern.](hololens-release-notes.md)
+1. [Informationen zu den Buildnummern für die Produktion finden Sie in den Versionshinweisen.](hololens-release-notes.md)
 
 So deaktivieren Sie Insider-Builds:
 
-1. Wechseln Sie HoloLens, auf dem ein Produktions-Build ausgeführt wird, zu Einstellungen > **Update & Security > Windows Insider Program,** und wählen Sie Stop Insider builds **(Insider-Builds beenden) aus.**
+1. Wechseln Sie auf einem HoloLens, auf dem ein Produktionsbuild ausgeführt wird, zu **Einstellungen > Update & Security > Windows Insider Program,** und wählen Sie **Insider-Builds beenden** aus.
 
 1. Befolgen Sie die Anweisungen, um Ihr Gerät zu deaktivieren.

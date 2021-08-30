@@ -14,12 +14,12 @@ manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 3aa5ed676a9f8864904752da3d965cba5fab7ce98db51abb4ff9444f1a0a370b
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 9b306b10ff82603fd238f195beacc300f1a82bf6
+ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664470"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "122858999"
 ---
 # <a name="configure-your-network-for-hololens"></a>Konfigurieren Ihres Netzwerks für HoloLens
 
@@ -180,7 +180,7 @@ Anweisungen zum Upgrade auf die kommerzielle Suite finden Sie in der Dokumentati
 
 ![Abbildung, in der die Konfiguration des Kioskmodus in Intune dargestellt ist](images/aad-kioskmode.png)
 
-Anweisungen zu weiteren MDM-Diensten finden Sie in der Dokumentation Ihres Anbieters. Lesen Sie die Anweisungen zum [HoloLens-Kiosk](hololens-kiosk.md#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk), wenn Sie eine benutzerdefinierte Einstellung und eine vollständige XML-Konfiguration verwenden müssen, um einen Kiosk in Ihrem MDM-Dienst einzurichten.
+Anweisungen zu weiteren MDM-Diensten finden Sie in der Dokumentation Ihres Anbieters. Lesen Sie die Anweisungen zum [HoloLens-Kiosk](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens), wenn Sie eine benutzerdefinierte Einstellung und eine vollständige XML-Konfiguration verwenden müssen, um einen Kiosk in Ihrem MDM-Dienst einzurichten.
 
 ## <a name="certificates-and-authentication"></a>Zertifikate und Authentifizierung
 

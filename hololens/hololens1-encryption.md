@@ -13,26 +13,26 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 4b07bb87b34ec966472bcbde000106590570fd7e7063ab503724884fa266bb34
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: d5cf7385dd0a53c6b17f79e16364e84ab6ec867d
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662750"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189935"
 ---
 # <a name="hololens-1st-gen-bitlocker-encryption"></a>BitLocker-Verschlüsselung von HoloLens (1. Generation)
 
-HoloLens (1. Generation) und HoloLens 2 unterstützen beide die Geräteverschlüsselung mit BitLocker. BitLocker ist jedoch immer auf HoloLens 2 aktiviert.
+HoloLens (1. Generation) und HoloLens 2 unterstützen die Geräteverschlüsselung mit BitLocker. BitLocker ist jedoch immer auf HoloLens 2 aktiviert.
 
-In diesem Artikel erfahren Sie, wie Sie BitLocker auf HoloLens (1. Generation) aktivieren und verwalten.
+Dieser Artikel unterstützt Sie beim Aktivieren und Verwalten von BitLocker auf HoloLens (1. Generation).
 
-Auf HoloLens (1. Generation) können Sie die BitLocker-Geräteverschlüsselung manuell oder mithilfe der Verwaltung mobiler Geräte (Mobile Device Management, MDM) aktivieren. Befolgen Sie diese Anweisungen, um die [BitLocker-Geräteverschlüsselung](/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) zum Schützen von Dateien und Informationen zu aktivieren, die auf dem HoloLens gespeichert sind. Die Geräteverschlüsselung trägt zum Schutz Ihrer Daten mithilfe der AES-CBC 128-Verschlüsselungsmethode bei, die [der EncryptionMethodByDriveType-Methode 3](/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype) im BitLocker-Konfigurationsdienstanbieter (CSP) entspricht. Mitarbeiter, die über den richtigen Verschlüsselungsschlüssel (z. B. ein Kennwort) verfügen, können ihn entschlüsseln oder eine Datenwiederherstellung durchführen.
+Auf HoloLens (1. Generation) können Sie die BitLocker-Geräteverschlüsselung manuell oder mithilfe der Verwaltung mobiler Geräte (Mobile Device Management, MDM) aktivieren. Befolgen Sie diese Anweisungen, um die [BitLocker-Geräteverschlüsselung](/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) zum Schutz von Dateien und Informationen zu aktivieren, die auf dem HoloLens gespeichert sind. Die Geräteverschlüsselung trägt zum Schutz Ihrer Daten mithilfe der AES-CBC 128-Verschlüsselungsmethode bei, die der [EncryptionMethodByDriveType-Methode 3](/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype) im BitLocker-Konfigurationsdienstanbieter (CSP) entspricht. Mitarbeiter, die über den richtigen Verschlüsselungsschlüssel (z. B. ein Kennwort) verfügen, können ihn entschlüsseln oder eine Datenwiederherstellung durchführen.
 
 ## <a name="enable-device-encryption-using-mdm"></a>Aktivieren der Geräteverschlüsselung mit MDM
 
-Sie können Ihren Mobile Geräteverwaltung(MDM)-Anbieter verwenden, um eine Richtlinie anzuwenden, die Geräteverschlüsselung erfordert. Die zu verwendende Richtlinie ist die [Einstellung Security/RequireDeviceEncryption](/windows/client-management/mdm/policy-csp-security#security-requiredeviceencryption) im Richtlinien-CSP.
+Sie können Ihren Mdm-Anbieter (Mobile Geräteverwaltung) verwenden, um eine Richtlinie anzuwenden, die geräteverschlüsselung erfordert. Die zu verwendende Richtlinie ist die [Einstellung Security/RequireDeviceEncryption](/windows/client-management/mdm/policy-csp-security#security-requiredeviceencryption) im Richtlinien-CSP.
 
-[Weitere Informationen finden Sie in den Anweisungen zum Aktivieren der Geräteverschlüsselung mithilfe von Microsoft Intune.](/intune/compliance-policy-create-windows#windows-holographic-for-business)
+[Anweisungen zum Aktivieren der Geräteverschlüsselung mit Microsoft Intune finden Sie hier.](/intune/compliance-policy-create-windows#windows-holographic-for-business)
 
 Anweisungen für andere MDM-Tools finden Sie in der Dokumentation Ihres MDM-Anbieters. Wenn Ihr MDM-Anbieter einen benutzerdefinierten URI für die Geräteverschlüsselung erfordert, verwenden Sie die folgende Konfiguration:
 
@@ -51,7 +51,7 @@ Bereitstellungspakete sind Dateien, die vom Windows-Konfigurations-Designer-Tool
 1. [Erstellen Sie ein Bereitstellungspaket für HoloLens.](hololens-provisioning.md)
 1. Wechseln Sie zu **Laufzeiteinstellungen**  >    >  **Richtliniensicherheit,** und wählen **Sie RequireDeviceEncryption** aus.
 
-    ![Geräteverschlüsselungseinstellung erforderlich, die auf Ja konfiguriert ist](images/device-encryption.png)
+    ![Geräteverschlüsselungseinstellung erforderlich, die auf Ja konfiguriert ist.](images/device-encryption.png)
 
 1. Suchen Sie die XML-Lizenzdatei, die beim Erwerb der Commercial Suite bereitgestellt wurde.
 
@@ -61,13 +61,13 @@ Bereitstellungspakete sind Dateien, die vom Windows-Konfigurations-Designer-Tool
 
 1. Klicken Sie im Menü **Datei** auf **Speichern**. 
 
-1. Lesen Sie die Warnung, in der erläutert wird, dass Projektdateien vertrauliche Informationen enthalten können, und klicken Sie auf **OK.**
+1. Lesen Sie die Warnung, in der erklärt wird, dass Projektdateien vertrauliche Informationen enthalten können, und klicken Sie auf **OK.**
 
     > [!IMPORTANT]
     > Wenn Sie ein Bereitstellungspaket erstellen, können Sie vertrauliche Informationen in die Projektdateien und die Bereitstellungspaketdatei (PPKG) einschließen. Obwohl Sie die PPKG-Datei verschlüsseln können, werden die Projektdateien nicht verschlüsselt. Sie sollten die Projektdateien an einem sicheren Speicherort speichern und die Projektdateien löschen, wenn sie nicht mehr benötigt werden.
 
 1. Klicken Sie im Menü **Exportieren** auf **Bereitstellungspaket**.
-1. Ändern Sie **Besitzer** in **IT-Administrator,** wodurch die Rangfolge dieses Bereitstellungspakets höher ist als das Bereitstellen von Paketen, die auf dieses Gerät aus anderen Quellen angewendet werden, und wählen Sie dann **Weiter** aus.
+1. Ändern Sie **Besitzer** in **IT-Administrator,** wodurch die Rangfolge dieses Bereitstellungspakets höher als die Auf dieses Gerät angewendeten Bereitstellungspakete aus anderen Quellen festgelegt wird, und wählen Sie dann **Weiter** aus.
 1. Legen Sie einen Wert für **Paketversion** fest.
 
     > [!TIP]
@@ -84,7 +84,7 @@ Bereitstellungspakete sind Dateien, die vom Windows-Konfigurations-Designer-Tool
 
 ### <a name="apply-the-provisioning-package-to-hololens"></a>Anwenden des Bereitstellungspakets auf HoloLens
 
-1. Verbinden das Gerät über USB an einen PC, und starten Sie das Gerät, aber fahren Sie nicht über die **Anpassungsseite** der anfänglichen Einrichtung hinaus (die erste Seite mit dem blauen Feld).
+1. Verbinden das Gerät über USB an einen PC, und starten Sie das Gerät, aber fahren Sie nicht über die **Seite "Anpassen"** der anfänglichen Einrichtung (die erste Seite mit dem blauen Feld) hinaus.
 1. Drücken Sie die Tasten **Leiser** und **Ein/Aus** kurz gleichzeitig, und geben Sie sie anschließend wieder frei.
 1. HoloLens wird im Datei-Explorer auf dem PC als Gerät angezeigt.
 1. Verschieben Sie das Bereitstellungspaket (.ppkg) im Datei-Explorer per Drag & Drop zum Gerätespeicher.
@@ -101,4 +101,4 @@ Die Verschlüsselung erfolgt bei HoloLens im Hintergrund. So überprüfen Sie de
 
 - Wechseln Sie auf HoloLens zu **Einstellungen**  >  **System**  >  **about**. **BitLocker** ist **aktiviert,** wenn das Gerät verschlüsselt ist. 
 
-    ![Bildschirm "Informationen" mit aktivierter BitLocker-Funktion](images/about-encryption.png)
+    ![Bildschirm "Informationen", auf dem BitLocker aktiviert ist](images/about-encryption.png)

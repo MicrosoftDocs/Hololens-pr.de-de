@@ -1,6 +1,6 @@
 ---
 title: Vorbereiten eines neuen HoloLens
-description: Erfahren Sie, wie Sie Ihr HoloLens (1. Generation) Mixed Reality-Gerät zum ersten Mal vorbereiten, anpassen und einrichten.
+description: Erfahren Sie, wie Sie Ihr Mixed Reality-Gerät HoloLens (1. Generation) zum ersten Mal vorbereiten, anpassen und einrichten.
 ms.prod: hololens
 ms.sitesec: library
 author: JesseMcCulloch
@@ -12,29 +12,29 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - Hololens (1st gen)
-ms.openlocfilehash: 03a84f1035154660fe51ec5be07c3f32f4746564b95616ec45ef3978fb49b911
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 5918e3dcb7f2504ae6e85cb584aaf21bc87217bc
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662263"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189255"
 ---
 # <a name="get-your-hololens-1st-gen-ready-to-use"></a>Vorbereiten von HoloLens (1. Generation)
 
-Gehen Sie wie folgt vor, um zum ersten Mal eine HoloLens (1. Generation) einzurichten.
+Führen Sie die folgenden Anweisungen aus, HoloLens (1. Generation) zum ersten Mal einrichten.
 
-## <a name="charge-your-hololens-1st-gen"></a>Berechnen der HoloLens (1. Generation)
+## <a name="charge-your-hololens-1st-gen"></a>Berechnen ihrer HoloLens (1. Generation)
 
-Um Ihre HoloLens zu laden, verbinden Sie die Stromversorgung mithilfe des enthaltenen Micro-USB-Kabels mit dem Ladeport. Schließen Sie dann die Stromversorgung an einen Stromanschluss an. Wenn das Gerät geladen wird, wird der Akkuindikator in einem Wellenmuster aufleuchten.
+Verbinden Sie zum HoloLens die Stromversorgung mit dem Ladeanschluss, indem Sie das enthaltene Micro-USB-Kabel verwenden. Schließen Sie dann die Stromversorgung in ein Netzkabel ein. Wenn das Gerät geladen wird, wird der Akkuindikator in einem Wellenmuster angezeigt.
 
-![Abbildung, die zeigt, wie das Micro-USB-Kabel an die HoloLens](./images/hololens-charging.png)
+![Abbildung: Anfügen des Micro-USB-Kabels an HoloLens.](./images/hololens-charging.png)
 
-Wenn Ihr HoloLens eingeschaltet ist, zeigt der Akkuindikator den Akkustand in Schritten an. Wenn nur eine der fünf LEDs leuchtet, ist der Akkustand unter 20 %. Wenn der Akkuladestand kritisch niedrig ist und Sie versuchen, das Gerät einzuschalten, blinkt eine LED kurz und erlischt anschließend.
+Wenn ihr HoloLens ist, zeigt der Akkuindikator den Akkustand in Schritten an. Wenn nur eine der fünf LEDs leuchtet, ist der Akkustand unter 20 %. Wenn der Akkuladestand kritisch niedrig ist und Sie versuchen, das Gerät einzuschalten, blinkt eine LED kurz und erlischt anschließend.
 
 > [!TIP]
-> Um eine Schätzung des aktuellen Akkustands zu erhalten, sagen Sie: "Hey Cortana, wie viel Akku habe ich noch übrig?"
+> Um eine Schätzung des aktuellen Akkustands zu erhalten, sagen Sie "Hey Cortana, wie viel Akku habe ich noch?"
 
-Die Stromversorgung und das USB-Kabel, die mit dem Gerät geliefert werden, sind die beste Möglichkeit, ihre HoloLens (1. Generation) zu laden.  Die Stromversorgung bietet eine Stromversorgung von 18W (9 V 2A).
+Die Stromversorgung und das USB-Kabel des Geräts sind die beste Möglichkeit, ihre Stromversorgung HoloLens (1. Generation) zu laden.  Die Stromversorgung bietet eine Stromversorgung von 18W (9 V 2A).
 
 Die Lade- und Laufgeschwindigkeit kann je nach Umgebung, in der das Gerät betrieben wird, variieren.
 
@@ -44,64 +44,64 @@ Die Lade- und Laufgeschwindigkeit kann je nach Umgebung, in der das Gerät betri
 
 | &nbsp; | &nbsp; |
 |:--- |:--- |
-|1. Drehen Sie das Hauptband um etwa 20 bis 30 Grad.|![Schritt 1: Drehen des Hauptbands](./images/FitGuideStep1.png)|
-|2. Pushen Sie das Hauptband zurück. Ziehen Sie es nicht zurück, oder bearbeiten Sie das Band hinter dem Scharnier, da dies im Laufe der Zeit das Band unterbrechen kann.|![Schritt 2: Zurückschieben des Hauptbands](./images/FitGuideStep2.png)|
-|3. Drehen Sie das Anpassungsrad, um das Hauptband bis zum Ende zu erweitern. |![Schritt 3: Verwenden des Anpassungsrades zum Erweitern des Hauptbands](./images/FitGuideStep3.png)|
-|4. Halten Sie das Gerät an den Gerätewaffen, und platzieren Sie es auf dem Kopf. Stellen Sie sicher, dass sich das Kopfband oben auf der Stirn befindet, und ziehen Sie dann das Anpassungsrad an.|![Schritt 4: Stellen Sie das Gerät ein, und passen Sie das Hauptband an.](./images/FitGuideStep4.png)|
-|5. Schieben Sie das Visier zurück, und überprüfen Sie dann die Eignung des Geräts. Das Kopfband sollte sich am oberen Rand der Stirn befinden, direkt unterhalb der Linie, mit den Lautsprechern über Demenz. Die Augen sollten zentriert sein.|![Schieben Sie in Schritt 5 das Visier zurück, und überprüfen Sie die Eignung.](./images/FitGuideSetep5.png)|
+|1. Drehen Sie den Kopfband um etwa 20 bis 30 Grad.|![Drehen Sie in Schritt 1 den Kopfband.](./images/FitGuideStep1.png)|
+|2. Pushen Sie den Kopfband zurück. Ziehen Sie sie nicht zurück, oder bearbeiten Sie das Band hinter dem Scharnier, da dies im Laufe der Zeit das Band unterbricht.|![Schritt 2: Pushen Sie den Headband zurück.](./images/FitGuideStep2.png)|
+|3. Drehen Sie das Anpassungsrad, um den Kopfband ganz nach vorn zu erweitern. |![Schritt 3: Verwenden Sie das Anpassungsrad, um den Kopfband zu erweitern.](./images/FitGuideStep3.png)|
+|4. Halten Sie das Gerät an den Gerätewaffen, und platzieren Sie es auf Dem Kopf. Stellen Sie sicher, dass sich das Kopfband am oberen Ende Ihrer Stirn befindet, und ziehen Sie dann das Anpassungsrad an.|![Schritt 4: Setzen Sie das Gerät an, und passen Sie den Kopfband an.](./images/FitGuideStep4.png)|
+|5. Schieben Sie das Visor zurück, und überprüfen Sie dann die Anpassung des Geräts. Das Kopfband sollte sich oben auf der Stirn, direkt unterhalb der Kopflinie, mit den Lautsprechern oberhalb Ihrer Sehenswürdigkeiten befindet. Die Brillen sollten über Ihren Augen zentriert sein.|![Schritt 5: Schieben Sie das Visor zurück, und überprüfen Sie die Anpassung.](./images/FitGuideSetep5.png)|
 
-## <a name="turn-on-your-hololens"></a>Aktivieren Der HoloLens
+## <a name="turn-on-your-hololens"></a>Aktivieren HoloLens
 
-Verwenden Sie den Netzschalter, um HoloLens ein- und auszuschalten oder in den Standbymodus zu versetzen.
+Verwenden Sie den Netzschalter, um HoloLens ein- und ausschalten oder in den Standbymodus zu schalten.
 
-![Abbildung des HoloLens Netzschalters](./images/hololens-power.png)
+![Abbildung, die den HoloLens einschalten.](./images/hololens-power.png)
 
-Wenn Ihr Gerät nicht reagiert oder nicht gestartet wird, finden Sie weitere Informationen unter [Neustarten, Zurücksetzen oder Wiederherstellen HoloLens](hololens-restart-recover.md).
+Wenn Ihr Gerät nicht reagiert oder nicht startet, finden Sie weitere Informationen unter Neustart, Zurücksetzen oder [Wiederherstellen HoloLens.](hololens-restart-recover.md)
 
-Wenn Ihre HoloLens ausgeschaltet ist oder sich im Standbymodus befindet, schalten Sie sie ein, indem Sie eine Sekunde lang auf den Netzschalter klicken. Wenn sie nicht aktiviert wird, schließen Sie sie an, und berechnen Sie sie mindestens 30 Minuten.
+Wenn Ihr HoloLens ausgeschaltet ist oder sich im Standbymodus befindet, schalten Sie ihn ein, indem Sie den Netzschalter für eine Sekunde drücken. Wenn es nicht ein-/aus ist, schließen Sie es an, und berechnen Sie es mindestens 30 Minuten lang.
 
 > [!TIP]
-> Um HoloLens neu zu starten, z. B. "Hey Cortana, starten Sie das Gerät neu".
+> Um die HoloLens neu zu starten, sagen Sie "Hey Cortana, starten Sie das Gerät neu."
 
-### <a name="put-hololens-in-standby"></a>Versetzen von HoloLens in den Standbymodus
+### <a name="put-hololens-in-standby"></a>Versetzt HoloLens in den Standbymodus
 
-Um Ihre HoloLens während des Einschaltens in den Standbymodus zu versetzen, drücken Sie einmal den Netzschalter. Die Akkuindikatoren blinken aus. Um sie aus dem Standbymodus zu aktivieren, drücken Sie erneut den Netzschalter.
+Um Ihre HoloLens eingeschalteten Standbymodus zu aktivieren, drücken Sie einmal den Netzschalter. Die Akkuindikatoren blinken. Um sie aus dem Standbymodus zu aktivieren, drücken Sie erneut den Netzschalter.
 
-HoloLens wechselt nach 3 Minuten Inaktivität automatisch in den Standbymodus. Wenn sie sich im Standbymodus befindet, wird sie nach vier Stunden oder nach einem Abfall des Akkustands um 10 Prozent automatisch heruntergefahren.
+HoloLens nach 3 Minuten Inaktivität automatisch in den Standbymodus versetzt. Wenn er sich im Standbymodus befindet, wird er nach vier Stunden oder nach einem Umschalten des Akkustands um 10 Prozent automatisch heruntergefahren.
 
 ### <a name="shut-down-hololens"></a>Herunterfahren HoloLens
 
-Um HoloLens herunterzufahren (zu deaktivieren), halten Sie den Netzschalter vier Sekunden lang gedrückt. Die Akkuanzeigen werden nacheinander ausgeschaltet, und das Gerät wird heruntergefahren.
+Halten Sie den Netzschalter vier Sekunden lang gedrückt, HoloLens herunterfahren (ausschalten). Die Akkuanzeigen schalten nach und nach aus, und das Gerät wird heruntergefahren.
 
-HoloLens wird automatisch heruntergefahren, wenn der Akkustand auf einen Prozentwert fällt, auch wenn er angeschlossen ist. Nachdem Sie die Akkukapazität auf drei Prozent erhöht haben, können Sie HoloLens wieder einschalten.
+HoloLens wird automatisch heruntergefahren, wenn der Akkustand auf ein Prozent fällt, auch wenn er angeschlossen ist. Nachdem Sie den Akku auf drei Prozent erhöht haben, können Sie die HoloLens wieder aktivieren.
 
 ## <a name="adjust-volume-and-brightness"></a>Anpassen von Lautstärke und Helligkeit
 
-Die Helligkeits- und Lautstärketasten befinden sich auf der Lautstärke der Gerätewappen &mdash; rechts und die Helligkeit links.
+Die Helligkeits- und Lautstärketasten befinden sich auf der rechten Seite des Gerätegeräts und die &mdash; Helligkeit auf der linken Seite.
 
-![Abbildung der schaltflächen HoloLens](./images/hololens-buttons.jpg)
+![Abbildung, die die Schaltflächen HoloLens zeigt.](./images/hololens-buttons.jpg)
 
-## <a name="hololens-indicator-lights"></a>HoloLens Indikatorlichter
+## <a name="hololens-indicator-lights"></a>HoloLens Indikatorlicht
 
-![Abbildung, die die HoloLens Indikatorlichter zeigt](./images/hololens-lights.png)
+![Abbildung, die die HoloLens Indikatorlichter zeigt.](./images/hololens-lights.png)
 
-Sie wissen nicht genau, was die Statusleuchten auf Ihrer HoloLens bedeuten? Hier finden Sie einige Hilfe.
+Sie wissen nicht genau, was die Statusleuchten auf Ihrer HoloLens bedeuten? Hier finden Sie Hilfe.
 
-|Wenn dies durch die Beleuchtung geschieht |Das bedeutet: |
+|Wenn dies von den Beleuchtungslichtern der Fall ist |Bedeutung |
 |---|---|
 |Scrollen Sie von der Mitte nach außen. |HoloLens wird gestartet. |
-|Bleiben Sie hell (alle oder einige). |HoloLens ist eingeschaltet und einsatzbereit. Die Akkulaufzeit wird in Schritten von 20 Prozent angezeigt. |
-|Scrollen Sie, leuchten Sie auf, und scrollen Sie dann. |HoloLens wird ab- und abgeladen. Die Akkulaufzeit wird in Schritten von 20 Prozent angezeigt. |
-|Nacheinander deaktivieren. |HoloLens wird heruntergefahren. |
-|Deaktivieren Sie alle gleichzeitig. |HoloLens wird in den Standbymodus versetzt. |
-|Alle lichten auf, dann blinkt eine kurz, und dann werden alle deaktiviert. |Die Akkukapazität ist äußerst niedrig. HoloLens müssen gebührenpflichtig sein. |
-|Alle scrollen, blinken und scrollen dann alle. |Die Akkukapazität ist äußerst niedrig. HoloLens wird abgeladen. |
+|Bleiben Sie (alle oder einige) leuchtet. |HoloLens ist ein und einsatzbereit. Die Akkulebensdauer wird in Schritten von 20 Prozent angezeigt. |
+|Scrollen Sie nach oben, und scrollen Sie dann. |HoloLens ist ein und wird geladen. Die Akkulebensdauer wird in Schritten von 20 Prozent angezeigt. |
+|Schalten Sie nach und nach aus. |HoloLens wird heruntergefahren. |
+|Deaktivieren Sie alle auf einmal. |HoloLens wird in den Standbymodus versetzt. |
+|Alles leuchtet auf, dann blinkt eins kurz, und dann werden alle deaktiviert. |Der Akku ist kritisch niedrig. HoloLens muss in Rechnung gestellt werden. |
+|Alle Scrollen, dann ein Blinken und dann alle Scrollen. |Der Akku ist kritisch niedrig. HoloLens wird geladen. |
 
 ## <a name="safety-and-comfort"></a>Sicherheit und Komfort
 
 ### <a name="use-in-safe-surroundings"></a>Verwenden in einer sicheren Umgebung
 
-Verwenden Sie Ihre HoloLens in einem sicheren Raum, der keine Hindernisse und Fahrtenrisiken bietet. Verwenden Sie sie nicht, wenn Sie ein klares Sichtfeld und Ihre volle Aufmerksamkeit benötigen, z. B. während Sie ein Fahrzeug betreiben oder andere potenziell gefährliche Aktivitäten durchführen.
+Verwenden Sie HoloLens in einem sicheren Ort, der frei von Hindernissen und Tripingbehinderungen ist. Verwenden Sie sie nicht, wenn Sie ein klares Sichtfeld und ihre volle Aufmerksamkeit benötigen, z. B. während Sie ein Fahrzeug benähren oder andere potenziell gefährlichen Aktivitäten unternehmen.
 
 ### <a name="stay-comfortable"></a>Tragekomfort
 

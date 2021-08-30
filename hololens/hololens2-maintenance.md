@@ -1,6 +1,6 @@
 ---
-title: HoloLens 2 häufig gestellte Fragen zur Bereinigung
-description: Hier erhalten Sie aktuelle Antworten auf all Ihre häufig gestellten Fragen zum Bereinigen und Warten HoloLens 2 Geräts.
+title: 'Reinigen von HoloLens 2: Häufig gestellte Fragen'
+description: Hier erhalten Sie aktuelle Antworten auf alle häufig gestellten Fragen zum Bereinigen und Warten HoloLens 2 Geräts.
 author: Teresa-Motiv
 ms.author: v-tea
 ms.date: 4/14/2020
@@ -15,19 +15,19 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a110f711d402432e727be6f342156e7dee733157
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 8b14ebd9639495d2b174678518b4562a2b3c85fa
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308671"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189442"
 ---
-# <a name="hololens-2-cleaning-faq"></a>HoloLens 2 häufig gestellte Fragen zur Bereinigung
+# <a name="hololens-2-cleaning-faq"></a>Reinigen von HoloLens 2: Häufig gestellte Fragen
 
 > [!IMPORTANT]  
-> Microsoft kann keine Entscheidung über die Effektivität eines bestimmten halterlichen Produkts im Ringen gegen Schläge wie COVID-19 treffen. Lesen Sie den Leitfaden Ihrer lokalen öffentlichen Gesundheitsstelle, um zu erfahren, wie Sie vor potenziellen Gesundheitsrisiken geschützt bleiben können.  
+> Microsoft kann keine Entscheidung über die Effektivität eines bestimmten Produkts treffen, das im Ringen gegen Diebanten wie COVID-19 verwendet wird. Lesen Sie den Leitfaden Ihrer lokalen öffentlichen Gesundheitsstelle, um zu erfahren, wie Sie vor potenziellen Gesundheitsrisiken geschützt bleiben können.  
 
-## <a name="hololens-2-use-and-care"></a>HoloLens 2 Und-Pflege
+## <a name="hololens-2-use-and-care"></a>HoloLens 2 Verwenden und Pflegen
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWwEFP]
 
@@ -35,57 +35,57 @@ ms.locfileid: "108308671"
 
 **So bereinigt das Gerät**
 
-1. Entfernen Sie jeglichen Entstau, indem Sie eine lappenfreie Mikrofiziererart verwenden, um die Oberfläche des Geräts zierlich zu bewischen.
+1. Entfernen Sie alle Entstauen, indem Sie eine lappenfreie Mikrofiziererart verwenden, um die Oberfläche des Geräts zierlich zu bewischen.
 
-   ![Bereinigt beim Halten aus dem Stirnpad](images/hl2-cleaning.png)
+   ![Bereinigt beim Halten aus dem Stirnpad.](images/hl2-cleaning.png)
 
-2. Glühbirnen mit medizinischen "70%"-Isobeben, und verwenden Sie dann die moistente Lappen, um die Oberfläche des Geräts glühend zu bereinigen.
+2. Bereinigen Sie die Glühbirne leicht mit medizinischen "70%"-Isobeben, und verwenden Sie dann die moistente Glühbirne, um die Oberfläche des Geräts glühend zu bereinigen.
 
 3. Lassen Sie das Gerät vollständig lass.
 
 **So bereinigt man das Stirnpad**
 
-1. Verwenden Sie Wasser und ein Lappen, Wisch soap, um eine Füllung zu bereinen, und verwenden Sie dann die angemoizierte Füllung, um das Stirnrunzeln zu löschen.
+1. Verwenden Sie Wasser und einen Lappen, Wisch soap, um eine Füllung zu bereinen, und verwenden Sie dann die angemoizierte Füllung, um das Stirnrunzeln zu löschen.
 1. Lassen Sie das Stirnpad vollständig lass.
 
-## <a name="can-i-use-any-lens-cleaner-for-cleaning-the-hololens-visor"></a>Kann ich zum Bereinigen des HoloLens-Visors einen beliebigen Brillenfilter verwenden?
+## <a name="can-i-use-any-lens-cleaner-for-cleaning-the-hololens-visor"></a>Kann ich zum Bereinigen des Brillenvisors einen HoloLens verwenden?
 
-Nein. Brillenbereinigungen können den Brillen auf dem Visor untertraten. Führen Sie die folgenden Schritte aus, um das Visor zu bereinigt:  
+Nein. Brillenbereinigungen können den Brillen auf dem Visor nieren. Führen Sie die folgenden Schritte aus, um das Visor zu bereinigt:  
 
-1. Entfernen Sie jeglichen Entstau, indem Sie mithilfe eines frei von Lint freien Mikrofizierers das Visor zierlich zurückdrendern.
+1. Entfernen Sie jeglichen Entstau, indem Sie mithilfe eines frei von Lint freien Mikrofibers das Visor zierlich zurückdrendern.
 1. Bereinigen Sie ein Glühbirnen mit medizinischen "70%"-Isoparaden, und löschen Sie dann das Visor glühend.
 1. Lassen Sie das Visor vollständig lass.
 
-## <a name="can-i-use-disinfecting-wipes-to-clean-the-device"></a>Kann ich das Gerät mithilfe von Zurücksetzungen bereinigen?
+## <a name="can-i-use-disinfecting-wipes-to-clean-the-device"></a>Kann ich das Gerät mithilfe von zurücksetzungen bereinigt werden?
 
-Ja, wenn die Zurücksetzungen kein Bleach enthalten. Sie können nicht-Bleach-löschbare Zurücksetzungen verwenden, um [die HoloLens-Oberflächen dauerhaft zu löschen.](#hololens-2-use-and-care)  
-
-> [!CAUTION]  
-> Vermeiden Sie das Bereinigen von Zurücksetzungen, die Bleach enthalten, um die HoloLens-Oberflächen zu bereinigen. Es ist akzeptabel, Bleach-Zurücksetzungen in kritischen Situationen zu verwenden, wenn nichts anderes verfügbar ist. Allerdings kann Bleach das HoloLens-Visier oder andere Oberflächen beschädigen.
-
-## <a name="can-i-use-alcohol-to-clean-the-device"></a>Kann ich zum Bereinigen des Geräts Denkgebrauch verwenden?
-
-Ja. Sie können eine Lösung von "70 %" Isopropylalkohol und Wasser verwenden, um die harte Oberfläche des Geräts, einschließlich des Visiers, zu bereinigen. Befeuchten Sie die Wärme leicht, indem Sie eine Mischung aus Isopropylalkohol und Wasser verwenden, und setzen Sie dann die Oberfläche des Geräts mäßig zurück.
-
-## <a name="is-the-brow-pad-replaceable"></a>Ist das Stirnpad ersetzbar?
-
-Ja. Das Stirnpad ist magnetisch an das Gerät angefügt. Um es zu trennen, ziehen Sie es vom Hauptband weg. Um sie zu ersetzen, legen Sie sie wieder fest.
-
-![Entfernen oder Ersetzen des Stirnpads](images/hololens2-remove-browpad.png)
-
-## <a name="how-can-i-clean-the-brow-pad"></a>Wie kann ich das Stirnpad bereinigen?
-
-Um das Stirnpad zu bereinigen, setzen Sie es mithilfe einer Ähre zurück, die mit Wasser und einem freundlichen Brillenseife angenetzt wird. Lassen Sie das Stirnpad vollständig trocken, bevor Sie es erneut verwenden.
-
-## <a name="can-i-use-ultraviolet-uv-light-to-sanitize-the-device"></a>Kann ich uv-Licht (Uv) verwenden, um das Gerät zu bereinigt?
-
-Uvc-Belichtung mit UVC-LED, die bei einer Intensität von 0,5 bis 0,6 mW/cm<sup>2</sup>bei 265nm betrieben wird und keine Strahlstärke ausgibt, kann zum Bebereinigten von HoloLens2 verwendet werden. Befolgen Sie die Spezifikationen des Herstellers zur Verarbeitungs- und Belichtungszeit.
+Ja, wenn die Zurücksetzungen keine Scheiben enthalten. Sie können nicht-unaufgelöschte Zurücksetzungen verwenden, um die HoloLens zurück [zu setzen.](#hololens-2-use-and-care)  
 
 > [!CAUTION]  
-> Ein hohes Maß an UV-A- und UV-B-Belichtung kann die Anzeigequalität des Geräts herabsetzen und die Visorschicht beschädigen. Die Überbelichtung durch UV-A- und UV-B-Licht hat die folgenden Auswirkungen in der Reihenfolge der Dauer und Intensität der Belichtung:
+> Vermeiden Sie die Verwendung von Löschlöschungen, die Beläge enthalten, um die HoloLens zu bereinigt. Es ist akzeptabel, in kritischen Situationen Zurücksetzungen zu verwenden, wenn nichts anderes verfügbar ist. Allerdings kann der Beläge das HoloLens oder andere Oberflächen beschädigen.
+
+## <a name="can-i-use-alcohol-to-clean-the-device"></a>Kann ich Mitbereinigungen für das Gerät verwenden?
+
+Ja. Sie können eine Lösung mit "70 %" Isobeben und Wasser verwenden, um die harte Oberfläche des Geräts zu bereinigen, einschließlich des Visors. Glühbirnen mit einer Mischung aus Isobenen und Wasser leicht benetzen und dann die Oberfläche des Geräts löschen
+
+## <a name="is-the-brow-pad-replaceable"></a>Kann das Stirnpad ersetzt werden?
+
+Ja. Das Stirnpad ist magnetisch an das Gerät angeschlossen. Um es zu trennen, ziehen Sie es lösbar vom Kopfband. Um es zu ersetzen, lehnen Sie es wieder an ortswechseln an.
+
+![Entfernen oder ersetzen Sie das Stirnpad.](images/hololens2-remove-browpad.png)
+
+## <a name="how-can-i-clean-the-brow-pad"></a>Wie kann ich das Stirnrunzeln bereinigt werden?
+
+Um das Stirnpad zu bereinigten, löschen Sie es mithilfe einer Füllung, die mit Wasser und einer Mäßigungsspuch bereinigt wird. Lassen Sie das Stirnpad vollständig lass, bevor Sie es erneut verwenden.
+
+## <a name="can-i-use-ultraviolet-uv-light-to-sanitize-the-device"></a>Kann ich uv-Licht (UV) verwenden, um das Gerät zu besorgen?
+
+Die UVC-Belässigung mit UVC-LED, die bei einer Intensität von 0,5–0,6 mW/cm2 mit einer Intensität von 265nm arbeitet und keine<sup>Pegel</sup>austrägt, kann verwendet werden, um HoloLens2 zu besauen. Befolgen Sie die Herstellerspezifikationen zur Behandlung und zur Belichtungszeit.
+
+> [!CAUTION]  
+> Ein hohes Maß an UV-A- und UV-B-Belichtung kann die Anzeigequalität des Geräts herabsetzen und die Visorschicht beschädigen. Die Überexposition gegenüber UV-A- und UV-B-Licht hat die folgenden Auswirkungen, in Der Reihenfolge nach Dauer und Intensität der Belichtung:
 >  
 > 1. Das Stirnpad und das Schließen des Geräts werden verfärbt.
-> 1. Mängel treten im Antireflektor (AR) auf dem Visor und in den Sensorfenstern auf.
+> 1. Mängel treten im Antireflektor (AR) auf dem Visier und in den Sensorfenstern auf.
 > 1. Mängel treten in den Basismaterialien des Visors und in den Sensorfenstern auf.
 > 1. Leistungsverschlechterungen anzeigen.
 

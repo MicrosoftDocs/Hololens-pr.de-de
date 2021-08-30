@@ -1,5 +1,5 @@
 ---
-title: Bereitstellen von mit der Cloud verbundenen HoloLens 2 für externe Clients
+title: Bereitstellen von cloudfähigen HoloLens 2 für externe Clients
 description: Bereitstellungshandbuch für HoloLens 2 für externe Clients (mit Remoteunterstützung als Beispiel)
 ms.prod: hololens
 ms.sitesec: library
@@ -13,14 +13,14 @@ ms.reviewer: ''
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 476ea17dfad114741191595fa0ce3bd1c7bca28d
-ms.sourcegitcommit: 7b666c63a0367032a4a3f366b7f9029b2613e345
+ms.openlocfilehash: d5cd9c380e0d276f0a8aa9efac14cf44885446e5
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "122401132"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190326"
 ---
-# <a name="deploy-cloud-connected-hololens-2-to-external-clients"></a>Bereitstellen von mit der Cloud verbundenen HoloLens 2 für externe Clients
+# <a name="deploy-cloud-connected-hololens-2-to-external-clients"></a>Bereitstellen von cloudfähigen HoloLens 2 für externe Clients
 
 Dieser Leitfaden ist eine Ergänzung zum [Cloud Connected Deployment Guide](hololens2-cloud-connected-overview.md). Sie wird in Situationen verwendet, in denen Ihre Organisation HoloLens 2 Geräte zur kurz- oder langfristigen Verwendung an die Einrichtung eines externen Clients versenden möchte. Der externe Client meldet sich mit den von Ihrer Organisation bereitgestellten Anmeldeinformationen beim HoloLens 2 Gerät an und verwendet [Remote Assist,](/dynamics365/mixed-reality/remote-assist/ra-overview) um Sich an Ihre Experten zu wenden. Dieser Leitfaden enthält [allgemeine HoloLens 2 Bereitstellungsempfehlungen,](#general-deployment-recommendations) die für die meisten externen HoloLens 2 Bereitstellungsszenarien gelten, sowie [allgemeine Bedenken,](#common-external-client-deployment-concerns) die Kunden bei der Bereitstellung von Remote Assist für die externe Verwendung haben. 
 
@@ -114,7 +114,7 @@ Die zweite Option besteht darin, einen separaten Mandanten zu erstellen, der Cli
 
 **Abbildung 1.1**
 
-![Image des Dienstmandanten](./images/hololens-service-tenant-image.png)
+![Dienstmandantenimage.](./images/hololens-service-tenant-image.png)
 
 ### <a name="hidden-or-restricted-apps"></a>Ausgeblendete oder eingeschränkte Apps
 

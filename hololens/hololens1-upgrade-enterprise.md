@@ -12,12 +12,12 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 7cf35a10a5f18dc0ccca876230b1677c6eca54ad116f0b2045fc1b269ac6c4b0
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: c6d1225dc6da1c039a34fc2782f23330ae40f280
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115661892"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189187"
 ---
 # <a name="unlock-windows-holographic-for-business-features"></a>Effiziente Nutzung der Features von Windows Holographic for Business
 
@@ -35,7 +35,7 @@ Wenn Sie die Commercial Suite erwerben, erhalten Sie eine Lizenz, die Windows Ho
 
 Die Enterprise-Lizenz kann von jedem MDM-Anbieter angewendet werden, der den [WindowsLicensing-Konfigurationsdienstanbieter (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn904983.aspx) unterstützt. Die neueste Version der Microsoft-MDM-API unterstützt den WindowsLicensing CSP.
 
-Eine Schritt-für-Schritt-Anleitung zum Aktualisieren von HoloLens mithilfe von Microsoft Intune finden Sie unter Upgrade devices [running Windows Holographic to Windows Holographic for Business](/intune/holographic-upgrade).
+Eine Schritt-für-Schritt-Anleitung zum Aktualisieren von HoloLens mithilfe von Microsoft Intune finden Sie unter Upgrade devices [running Windows Holographic to Windows Holographic for Business (Aktualisieren](/intune/holographic-upgrade)von Geräten, auf denen Windows Holographic ausgeführt wird) auf Windows Holographic for Business .
 
  Im Fall anderer MDM-Anbieter können die einzelnen Schritte zum Einrichten und Bereitstellen der Richtlinie abweichen.
 
@@ -48,9 +48,9 @@ Bereitstellungspakete sind Dateien, die vom Windows-Konfigurations-Designer-Tool
 1. [Erstellen Sie ein Bereitstellungspaket für HoloLens.](hololens-provisioning.md)
 1. Wechseln Sie zu **Runtimeeinstellungen**  >  **EditionUpgrade**, und wählen Sie **EditionUpgradeWithLicense** aus.
 
-    ![Editionsupgrade mit ausgewählter Lizenzeinstellung](images/icd1.png)
+    ![Aktualisieren Sie die Edition mit ausgewählter Lizenzeinstellung.](images/icd1.png)
 
-1. Suchen Sie nach der XML-Lizenzdatei, die beim Kauf der Commercial Suite bereitgestellt wurde.
+1. Suchen Sie die XML-Lizenzdatei, die beim Erwerb der Commercial Suite bereitgestellt wurde.
 
     > [!NOTE]
     > Sie können [zusätzliche Einstellungen im Bereitstellungspaket](hololens-provisioning.md) konfigurieren.
@@ -85,10 +85,10 @@ Bereitstellungspakete sind Dateien, die vom Windows-Konfigurations-Designer-Tool
 
 ### <a name="apply-the-provisioning-package-to-hololens"></a>Anwenden des Bereitstellungspakets auf HoloLens
 
-1. Verbinden Sie das Gerät über das USB-Kabel mit einem PC. Starten Sie das Gerät, aber fahren Sie nicht über die **Seite "Anpassen"** der anfänglichen Einrichtung hinaus (die erste Seite mit dem blauen Feld). Auf dem PC wird HoloLens als Gerät im Datei-Explorer angezeigt.
+1. Verbinden Sie das Gerät über das USB-Kabel mit einem PC. Starten Sie das Gerät, aber fahren Sie nicht über die **Seite "Anpassen"** der anfänglichen Einrichtung hinaus (die erste Seite mit dem blauen Feld). Auf dem PC wird HoloLens im Datei-Explorer als Gerät angezeigt.
 
     > [!NOTE]
-    > Wenn auf dem HoloLens Gerät Windows 10 Version 1607 oder früher ausgeführt wird, öffnen Sie den Datei-Explorer, indem Sie auf dem Gerät die Schaltflächen **"Herunterfahren"** und **"Einschalten"** kurz drücken und loslassen.
+    > Wenn auf dem HoloLens Gerät Windows 10 Version 1607 oder früher ausgeführt wird, öffnen Sie den Datei-Explorer, indem Sie auf dem Gerät die Tasten **"Herunterfahren"** und **"Einschalten"** kurz drücken und loslassen.
 
 1. Verschieben Sie das Bereitstellungspaket (.ppkg) im Datei-Explorer per Drag & Drop zum Gerätespeicher.
 
