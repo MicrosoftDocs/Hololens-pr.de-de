@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f717a0323d1b141423fab52e49a38407ba617d02
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.openlocfilehash: e856ac74e959743e8d05ea6acf583700a6450373
+ms.sourcegitcommit: 37611ac0a4efaf69816a734e16b763c810655f1a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189340"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123411343"
 ---
 # <a name="set-up-hololens-as-a-kiosk"></a>Einrichten von HoloLens als Kiosk
 
@@ -48,17 +48,17 @@ In der folgenden Tabelle sind die Featurefunktionen in den verschiedenen Kioskmo
 
 ## <a name="key-general-considerations-before-configuring-kiosk-mode"></a>Wichtige allgemeine Überlegungen vor dem Konfigurieren des Kioskmodus
 
-1. Bestimmen Sie die Art des Benutzerkontos, das sich in Ihrer Umgebung bei HoloLens anmeldet– HoloLens unterstützt Azure Active Directory -Konten (AAD), Microsoft-Konten (MSA) und lokale Konten. Darüber hinaus werden vorübergehend erstellte Konten, die als Gäste/Besucher bezeichnet werden, ebenfalls unterstützt (nur für AAD Join-Geräte). Weitere Informationen finden Sie unter [Verwalten der Benutzeridentität und Anmeldung für HoloLens](hololens-identity.md).
+1. Bestimmen Sie die Art des Benutzerkontos, das sich in Ihrer Umgebung bei HoloLens anmeldet– HoloLens unterstützt AAD-Konten (Azure Active Directory), Microsoft-Konten (MSA) und lokale Konten. Darüber hinaus werden vorübergehend erstellte Konten, die als Gäste/Besucher bezeichnet werden, ebenfalls unterstützt (nur für AAD Join-Geräte). Weitere Informationen finden Sie unter [Verwalten der Benutzeridentität und Anmeldung für HoloLens](hololens-identity.md).
 2. Bestimmen sie die Ziele der Kioskmodus-Benutzeroberfläche– ob es sich um alle Benutzer, einen einzelnen Benutzer, bestimmte Benutzer oder Benutzer handelt, die Mitglied von AAD-Gruppen sind usw.
 3. Legen Sie für den Kioskmodus für mehrere Apps fest, welche Anwendungen im Startmenü angezeigt werden sollen. Für jede Anwendung wird die [ZUGEHÖRIGE BENUTZERMODELL-ID (Application User Model ID, AUMID)](hololens-kiosk-reference.md#hololens-application-user-model-ids-aumids) benötigt.
-4. Bestimmen Sie, ob der Kioskmodus entweder über Laufzeitbereitstellungspakete oder mobile Geräteverwaltung (MDM)-Server auf HoloLens angewendet wird.
+4. Bestimmen Sie, ob der Kioskmodus auf HoloLens über Laufzeitbereitstellungspakete oder Mobile Geräteverwaltung-Server (MDM) angewendet wird.
 
 ## <a name="security-considerations"></a>Sicherheitshinweise
 
 Der Kioskmodus sollte nicht als Sicherheitsmethode betrachtet werden, sondern als Mittel zum Steuern der Starterfahrung bei der Benutzeranmeldung. Sie können die Kioskmodus-Benutzeroberfläche mit den unten genannten Optionen kombinieren, wenn bestimmte sicherheitsbezogene Anforderungen bestehen:
 
 - Wenn Einstellungen App so konfiguriert ist, dass sie im Kioskmodus angezeigt wird, und Sie steuern möchten, welche Seiten in Einstellungen App angezeigt werden, lesen Sie [Seite Einstellungen Sichtbarkeit.](settings-uri-list.md)
-- Wenn Sie den Zugriff auf bestimmte Hardwarefunktionen wie Kamera, Bluetooth usw. für bestimmte Apps usw. steuern möchten, lesen Sie [Richtlinien in Richtlinien-CSP, der von HoloLens 2 unterstützt wird – Windows Clientverwaltung](/windows/client-management/mdm/policies-in-policy-csp-supported-by-hololens2). Weitere Informationen finden Sie unter [Allgemeine Geräteeinschränkungen.](hololens-common-device-restrictions.md)
+- Wenn Sie den Zugriff auf bestimmte Hardwarefunktionen wie Kamera, Bluetooth usw. für bestimmte Apps usw. steuern möchten, lesen Sie [Richtlinien in Richtlinien-CSP, der von HoloLens 2 unterstützt wird](/windows/client-management/mdm/policies-in-policy-csp-supported-by-hololens2)– Windows Clientverwaltung . Weitere Informationen finden Sie unter [Allgemeine Geräteeinschränkungen.](hololens-common-device-restrictions.md)
 - Der Kioskmodus verhindert nicht, dass eine App (die als Teil der Kioskerfahrung konfiguriert ist) andere Apps startet. Wenn Sie den Start bestimmter Apps/Prozesse auf HoloLens vollständig blockieren möchten, lesen [Sie Verwenden von Windows Defender Anwendungssteuerung auf HoloLens 2 Geräten in Microsoft Intune – Azure.](/mem/intune/configuration/custom-profile-hololens)
 
 ## <a name="key-technical-considerations-for-kiosk-mode-for-hololens"></a>Wichtige technische Überlegungen zum Kioskmodus für HoloLens
@@ -78,20 +78,10 @@ Unter [Referenzlinks](hololens-kiosk-reference.md#kiosk-xml-code-samples) finden
 
 ### <a name="for-users-who-sign-in-as-either-local-account-or-msa"></a>Für Benutzer, die sich entweder als lokales Konto oder als MSA anmelden
 
-### <a name="prov-package-step-2-ndash-add-the-kiosk-configuration-xml-file-to-a-provisioning-package"></a><a id="ppconfigadd"></a>Prov. Paket, Schritt &ndash; 2: Hinzufügen der XML-Datei für die Kioskkonfiguration zu einem Bereitstellungspaket
-
-1. Öffnen [Sie Windows-Konfigurations-Designer.](https://www.microsoft.com/store/apps/9nblggh4tx22)
-1. Wählen Sie **Erweiterte Bereitstellung** aus, geben Sie einen Namen für Ihr Projekt ein, und wählen Sie dann **Weiter** aus.
-1. Wählen Sie **Windows 10 Holographic** und dann **Weiter** aus.
-1. Wählen Sie **Fertig stellen** aus. Der Arbeitsbereich für das Paket wird geöffnet.
-1. Wählen Sie **Laufzeiteinstellungen**  >  **AssignedAccess**  >  **MultiAppAssignedAccessSettings aus.**
-1. Wählen Sie im mittleren Bereich **Durchsuchen** aus, um die von Ihnen erstellte Kioskkonfigurations-XML-Datei zu suchen und auszuwählen.
-
-   ![Screenshot des Felds "MultiAppAssignedAccessSettings" in Windows-Konfigurations-Designer](./images/multiappassignedaccesssettings.png)
 | **Gewünschte Kioskerfahrung** | **Empfohlene Kioskkonfiguration** | **Möglichkeiten zum Konfigurieren**  | **Anmerkungen** |
 | --- | --- | --- | --- |
 | Jeder Benutzer, der sich anmeldet, erhält Kioskerfahrung. | [Konfigurieren eines Global Assigned Access-Profils für mehrere Apps](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile) | • [Microsoft Intune benutzerdefinierte Vorlage](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Laufzeitbereitstellung – Mehrere Apps](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | Global zugewiesener Zugriff erfordert [20H2 und neuere Builds](hololens-release-notes.md#windows-holographic-version-20h2) |
-| Ein bestimmter Benutzer, der sich anmeldet, erhält Kioskerfahrung.  | [Konfigurieren Sie ein oder mehrere app-zugewiesene Zugriffsprofile (sofern erforderlich), und geben Sie dabei den Namen eines bestimmten Benutzers an.](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-a-local-account-or-aad-user-account) | [Weitere Informationen finden Sie weiter unten unter unterstützte Optionen.](#steps-in-configuring-kiosk-mode-for-hololens) | Für den Einzel-App-Kioskmodus wird nur das lokale Benutzerkonto oder msa-Konto auf HoloLens unterstützt. <br> Für den Kioskmodus mehrerer Apps wird nur ein MSA-Konto oder ein AAD-Konto auf HoloLens unterstützt. |
+| Ein bestimmter Benutzer, der sich anmeldet, erhält Kioskerfahrung.  | [Konfigurieren Sie ein oder mehrere app-zugewiesene Zugriffsprofile (sofern erforderlich), und geben Sie dabei den Namen eines bestimmten Benutzers an.](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-a-local-account-or-aad-user-account) | [Weitere Informationen finden Sie weiter unten unter unterstützte Optionen.](#steps-in-configuring-kiosk-mode-for-hololens) | Für den Kioskmodus einer einzelnen App wird nur ein lokales Benutzerkonto oder MSA-Konto auf HoloLens unterstützt. <br> Für den Kioskmodus für mehrere Apps wird nur ein MSA-Konto oder ein AAD-Konto auf HoloLens unterstützt. |
 
 ### <a name="for-users-who-sign-in-as-aad-account"></a>Für Benutzer, die sich als AAD-Konto anmelden
 
@@ -100,8 +90,8 @@ Unter [Referenzlinks](hololens-kiosk-reference.md#kiosk-xml-code-samples) finden
 | Jeder Benutzer, der sich anmeldet, erhält Kioskerfahrung. | [Konfigurieren eines Global Assigned Access-Profils für mehrere Apps](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile) | • [Microsoft Intune benutzerdefinierte Vorlage](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Laufzeitbereitstellung – Mehrere Apps](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | Global zugewiesener Zugriff erfordert [20H2 und neuere Builds](hololens-release-notes.md#windows-holographic-version-20h2) |
 | Jeder Benutzer, der sich anmeldet, erhält Kioskerfahrung mit Ausnahme bestimmter Benutzer. | [Konfigurieren Sie mehrere Global Assigned Access-App-Profile, indem Sie bestimmte Benutzer ausschließen (die Gerätebesitzer sein müssen).](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile-excluding-device-owners) | • [Microsoft Intune benutzerdefinierte Vorlage](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Laufzeitbereitstellung – Mehrere Apps](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | Global zugewiesener Zugriff erfordert [20H2 und neuere Builds](hololens-release-notes.md#windows-holographic-version-20h2) |
 | Jeder AAD-Benutzer erhält eine separate Kioskerfahrung, die für diesen Benutzer spezifisch ist. | [Konfigurieren Sie die Konfiguration des zugewiesenen Zugriffs für jeden Benutzer, und geben Sie dabei den Namen des AAD-Kontos an.](hololens-kiosk-reference.md#multiple-app-assigned-access-profiles-for-two-aad-users-or-more) | • [Microsoft Intune benutzerdefinierte Vorlage](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Laufzeitbereitstellung – Mehrere Apps](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | &nbsp; |
-| Benutzer in unterschiedlichen AAD-Gruppen erleben den Kioskmodus, der nur für ihre Gruppe gilt. | [Konfigurieren Sie die Konfiguration des zugewiesenen Zugriffs für jede gewünschte AAD-Gruppe.](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-two-aad-groups-or-more) | • [Microsoft Intune benutzerdefinierte Vorlage](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Laufzeitbereitstellung – Mehrere Apps](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | • Wenn sich ein Benutzer anmeldet und HoloLens mit dem Internet verbunden ist und dieser Benutzer Mitglied der AAD-Gruppe ist, für die eine Kioskkonfiguration vorhanden ist, wird der Benutzer zum Kiosk für diese AAD-Gruppe. <br> • Wenn bei der [Benutzeranmeldung kein Internet verfügbar ist, tritt für den Benutzer HoloLens Fehlermodusverhalten auf.](#issue---no-apps-are-shown-in-start-menu-in-kiosk-mode) <br> • Wenn die Internetverfügbarkeit nicht garantiert wird, wenn sich Benutzer anmelden und ein gruppenbasierter AAD-Kiosk verwendet werden muss, [sollten Sie die Verwendung von AADGroupMembershipCacheCacheCacheInDayspolicy in Betracht ziehen.](hololens-release-notes.md#cache-azure-ad-group-membership-for-offline-kiosk) |
-| Benutzer, die HoloLens für temporäre Zwecke verwenden müssen, erhalten Kioskerfahrung. | [Konfigurieren der Konfiguration des zugewiesenen Zugriffs für Besucher](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-visitors) | • [Microsoft Intune benutzerdefinierte Vorlage](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Laufzeitbereitstellung – Einzelne App](hololens-kiosk.md?tabs=ppkgsak#steps-in-configuring-kiosk-mode-for-hololens) | • Temporäres Benutzerkonto wird automatisch von HoloLens bei der Anmeldung erstellt und wird entfernt, wenn sich ein temporärer Benutzer abmeldet. <br> • Aktivieren Sie die Richtlinie für [die automatische Anmeldung](#how-can-visitor-accounts-automatically-logon-to-kiosk-experience)von Besuchern. |
+| Benutzer in unterschiedlichen AAD-Gruppen erleben den Kioskmodus, der nur für ihre Gruppe gilt. | [Konfigurieren Sie die Konfiguration des zugewiesenen Zugriffs für jede gewünschte AAD-Gruppe.](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-two-aad-groups-or-more) | • [Microsoft Intune benutzerdefinierte Vorlage](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Laufzeitbereitstellung – Mehrere Apps](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | • Wenn sich ein Benutzer anmeldet und HoloLens mit dem Internet verbunden ist und dieser Benutzer Mitglied der AAD-Gruppe ist, für die eine Kioskkonfiguration vorhanden ist, wird der Benutzer zum Kiosk für diese AAD-Gruppe. <br> • [Wenn bei der Benutzeranmeldung kein Internet verfügbar ist, tritt für den Benutzer HoloLens Fehlermodusverhalten auf.](#issue---no-apps-are-shown-in-start-menu-in-kiosk-mode) <br> • Wenn die Internetverfügbarkeit nicht garantiert wird, wenn sich Benutzer anmelden und ein gruppenbasierter AAD-Kiosk verwendet werden muss, [sollten Sie die Verwendung von AADGroupMembershipCacheCacheCacheInDayspolicy in Betracht ziehen.](hololens-release-notes.md#cache-azure-ad-group-membership-for-offline-kiosk) <br> • Um eine optimale Erfahrung mit AAD-Gruppen während der Anmeldung zu gewährleisten, empfiehlt es sich, [AADGroupMembershipCacheCacheCacheInDayspolicy](/hololens/hololens-release-notes#cache-azure-ad-group-membership-for-offline-kiosk) zu verwenden. |
+| Benutzer, die HoloLens für temporäre Zwecke verwenden müssen, erhalten Kioskerfahrung. | [Konfigurieren der Konfiguration des zugewiesenen Zugriffs für Besucher](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-visitors) | • [Microsoft Intune benutzerdefinierte Vorlage](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Laufzeitbereitstellung – Einzelne App](hololens-kiosk.md?tabs=ppkgsak#steps-in-configuring-kiosk-mode-for-hololens) | • Temporäres Benutzerkonto wird automatisch von HoloLens bei der Anmeldung erstellt und entfernt, wenn sich ein temporärer Benutzer abmeldet. <br> • Aktivieren Sie die Richtlinie für [die automatische Anmeldung](#how-can-visitor-accounts-automatically-logon-to-kiosk-experience)von Besuchern. |
 
 ## <a name="steps-in-configuring-kiosk-mode-for-hololens"></a>Schritte zum Konfigurieren des Kioskmodus für HoloLens
 
@@ -130,7 +120,7 @@ Auf Builds [Windows Holographic, Version 21H1](hololens-release-notes.md#windows
 
 [!INCLUDE[](includes/kiosk-autologin.md)]
 
-### <a name="is-kiosk-experience-supported-on-hololens-1st-gen"></a>Wird die Kioskerfahrung in HoloLens (1. Generation) unterstützt?
+### <a name="is-kiosk-experience-supported-on-hololens-1st-gen"></a>Wird kioskdarstellung auf HoloLens (1. Generation) unterstützt?
 
 Der Kioskmodus ist nur verfügbar, wenn das Gerät über Windows Holographic for Business verfügt. Alle HoloLens 2 Geräte werden mit Windows Holographic for Business versendet, und es gibt keine anderen Editionen. Jedes HoloLens 2 Gerät kann den Kioskmodus sofort ausführen.
 
@@ -143,7 +133,7 @@ Richten Sie das [HoloLens Gerät für die Verwendung des Windows Geräteportal](
  > [!CAUTION]
  > Wenn Sie HoloLens für die Verwendung des Geräteportal einrichten, müssen Sie den Entwicklermodus auf dem Gerät aktivieren. Im Entwicklermodus auf einem Gerät mit Windows Holographic for Business können Sie Apps querladen. Diese Einstellung birgt jedoch das Risiko, dass ein Benutzer Apps installieren kann, die nicht vom Microsoft Store zertifiziert wurden. Administratoren können die Möglichkeit zum Aktivieren des Entwicklermodus mithilfe der Einstellung **ApplicationManagement/AllowDeveloper Unlock** im [Richtlinien-CSP](/windows/client-management/mdm/policy-configuration-service-provider)blockieren. [Weitere Informationen zum Entwicklermodus](/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
 
-Der Kioskmodus kann über die REST-API Geräteportal festgelegt werden, indem sie einen POST-Wert für /api/holographic/kioskmode/settings mit einem erforderlichen Abfragezeichenfolgenparameter ("kioskModeEnabled" mit dem Wert "true" oder "false") und einem optionalen Parameter ("startupApp" mit einem Wert eines Paketnamens) vornimmt. Beachten Sie, dass Geräteportal nur für Entwickler vorgesehen ist und nicht auf Geräten ohne Entwickler aktiviert werden sollte. Die REST-API kann in zukünftigen Updates/Releases geändert werden.
+Der Kioskmodus kann über die REST-API Geräteportal festgelegt werden, indem ein POST für /api/holographic/kioskmode/settings mit einem erforderlichen Abfragezeichenfolgenparameter ("kioskModeEnabled" mit dem Wert "true" oder "false") und einem optionalen Parameter ("startupApp" mit dem Wert eines Paketnamens) ausgeführt wird. Beachten Sie, dass Geräteportal nur für Entwickler bestimmt ist und nicht auf Geräten ohne Entwickler aktiviert werden sollte. Die REST-API kann in zukünftigen Updates/Releases geändert werden.
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
