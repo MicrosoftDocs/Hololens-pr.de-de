@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cd46e162971ea709d865b2ac998cc7a517d231ec
-ms.sourcegitcommit: 18f6c00a57a6b4608dadcec418d1970455d8ee3a
+ms.openlocfilehash: a0717524cd1f762c92a5b821ae90acb8474dafd2
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122989198"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190394"
 ---
 # <a name="moving-platform-mode-on-low-dynamic-motion-moving-platforms"></a>Modus für bewegliche Plattformen auf beweglichen Plattformen mit geringer dynamischer Bewegung
 
@@ -75,19 +75,19 @@ Zum Aktivieren des Modus für bewegliche Plattformen [aktivieren Sie das Geräte
 
 1. Wählen Sie im Menü auf der linken Seite **System** aus
 
-   ![Erste Abbildung](.\images\moving-platform-1w.png)
+   ![Erste Abbildung.](.\images\moving-platform-1w.png)
 
 2. Wählen Sie die Seite **Moving Platform Mode** (Modus für bewegliche Plattformen) aus, und aktivieren Sie das Kontrollkästchen **Moving Platform Mode**
 
-    ![Zweite Abbildung](.\images\moving-platform-2z.png)
+    ![Zweite Abbildung.](.\images\moving-platform-2z.png)
 
 3. Wenn Ihnen eine Warnung angezeigt wird, wählen Sie **OK** aus.
 
-   ![Dritte Abbildung](.\images\moving-platform-3w.png)
+   ![Dritte Abbildung.](.\images\moving-platform-3w.png)
 
 4. Starten Sie Ihr Gerät neu. Dies kann entweder über das Menü **Ein/Aus** oben rechts im Geräteportal oder durch Ausführen des folgenden Sprachbefehls &quot;Gerät neu starten&quot; und Auswahl von &quot;Ja&quot; erfolgen.
 
-   ![Vierte Abbildung](.\images\moving-platform-4z.png)
+   ![Vierte Abbildung.](.\images\moving-platform-4z.png)
 
 Wenn die Option für den Modus für bewegliche Plattformen im Geräteportal nicht angezeigt wird, bedeutet dies wahrscheinlich, dass Sie nicht den richtigen Build ausführen. Weitere Informationen finden Sie im Abschnitt [Voraussetzungen](#prerequisites).
 

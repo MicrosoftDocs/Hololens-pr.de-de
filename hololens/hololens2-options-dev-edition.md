@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a4e2bc30d1141fcc1c6a648ccc7c3573f6afda2ba3f5cd413a8e9a69203ea617
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: ee2b87823324f3183d86763d47b38ca0503f0aeb
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115658894"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190343"
 ---
 # <a name="hololens-2-development-edition"></a>HoloLens 2 Development Edition
 
@@ -38,7 +38,7 @@ HoloLens 2 Development Edition umfasst eine HoloLens 2, eine Azure-Gutschrift 
 |  [Pixyz-Plug-In für Unity](https://www.pixyz-software.com/plugin/) | Eine Brücke zum Verbinden der Bereiche Technik und CAD mit dem Entwicklungsbereich.   |
 | [Azure-Gutschrift von 500 USD für Azure-Dienste](https://azure.microsoft.com/resources/) | Die im Lieferumfang der HoloLens 2 Development Edition enthaltene Azure-Gutschrift dient dazu, möglichst schnell die ersten Schritte beim Erstellen und Testen von Mixed Reality-Anwendungen in Azure machen zu können. |
 
-![HoloLens 2 Development Edition](./images/hololens-2-dev-ed.png)
+![HoloLens 2 Development Edition.](./images/hololens-2-dev-ed.png)
 
 ## <a name="redeem-your-credits"></a>Einlösen Ihrer Gutschrift
 

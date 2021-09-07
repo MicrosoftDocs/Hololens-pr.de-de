@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 452a032896d7b1959e706313d83f023588507c0882962cf689508edc63921bdb
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: cf3770dd55498dbe98abf88d002247646e4db9be
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115661939"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189884"
 ---
 # <a name="getting-around-hololens-2"></a>Immer auf dem richtigen Weg in HoloLens 2
 
@@ -47,7 +47,7 @@ Sobald Sie diese grundlegenden Interaktionen kennen, ist der Umgang mit HoloLens
 
 HoloLens verfügt über Sensoren, die zu beiden Seiten ein paar Meter weit sehen können. Wenn Sie Ihre Hände einsetzen, müssen Sie sie innerhalb dieses Rahmens halten, da die HoloLens sie sonst sieht nicht. Der Rahmen bewegt sich jedoch mit Ihnen mit, während Sie sich bewegen.  
 
-![Abbildung des Rahmens für die Handnachverfolgung der HoloLens](./images/hololens-2-gesture-frame.png)
+![Abbildung des Rahmens für die Handnachverfolgung von HoloLens.](./images/hololens-2-gesture-frame.png)
 
 ## <a name="touch-holograms-near-you"></a>Berühren von Hologrammen in Ihrer Nähe
 
@@ -74,7 +74,7 @@ Führen Sie die folgenden Schritte aus, um etwas mithilfe von **Handstrahlen** a
 1. Zeigen Sie mit dem Zeigefinger gerade nach oben zur Decke.
 1. Drücken Sie Daumen und Zeigefinger zusammen, und lassen Sie sie dann schnell los, um die **Tippbewegung in die Luft** auszuführen.
 
-   ![Animation der Tippbewegung in die Luft](./images/hololens-air-tap.gif)
+   ![Animation der Tippbewegung in die Luft.](./images/hololens-air-tap.gif)
 
 ### <a name="grab-using-air-tap-and-hold"></a>Greifen mithilfe von „in die Luft tippen und halten”
 
@@ -101,7 +101,7 @@ Mit der Startgeste wird das **Startmenü** geöffnet.  Halten Sie zum Ausführen
 > - Wenn Sie Probleme beim Lesen des kleineren Texts im Startmenü haben, gehen Sie nach dem Öffnen näher heran.
 > - Wenn sich Ihre Hand etwas außerhalb des Rahmens befindet, können Sie das Startmenü möglicherweise weiterhin anzeigen, indem Sie auf die Innenseite Ihres Handgelenks tippen, auch wenn Sie das Symbol nicht sehen.
 
-![Abbildung des Startsymbols und der Startgeste](./images/hololens-2-start-gesture.png)
+![Abbildung des Startsymbols und der Startgeste.](./images/hololens-2-start-gesture.png)
 
 Um das Startmenü zu **schließen**, führen Sie die Startgeste aus, wenn das Startmenü geöffnet ist.  Sie können auch das Startmenü anvisieren und „Schließen” sagen.
 
@@ -115,7 +115,7 @@ Um das Startmenü zu **schließen**, führen Sie die Startgeste aus, wenn das St
 
 Sie können die Startgeste auch mit nur einer Hand ausführen. Halten Sie dazu Ihre Hand mit der Handfläche zu sich gerichtet, und blicken Sie auf das **Startsymbol** auf der Innenseite Ihres Handgelenks. **Während Sie das Symbol im Auge behalten**, führen Sie Daumen und Zeigefinger zusammen.
 
-![Abbildung des Startsymbols und der einhändigen Startgeste](./images/hololens-2-start-alternative.png)
+![Abbildung des Startsymbols und der einhändigen Startgeste.](./images/hololens-2-start-alternative.png)
 
 ## <a name="start-menu-mixed-reality-home-and-apps"></a>Startmenü, Mixed Reality-Startumgebung und Apps
 

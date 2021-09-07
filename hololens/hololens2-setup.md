@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 13f7000f608e6375efce201f1edd1627900ecdda2f86ddca8a174ac0b8e43ceb
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 77c061c53806e7410d73ecf3aaa20d74c217ea33
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115658979"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190411"
 ---
 # <a name="get-your-hololens-2-ready-to-use"></a>Vorbereiten von HoloLens 2
 
@@ -42,7 +42,7 @@ Setzen Sie die HoloLens 2 auf Ihren Kopf. Wenn Sie eine Brille tragen, lassen S
 
 Verlängern Sie bei Bedarf das Stirnband durch Drehen des Einstellrads, und lockern Sie dann den Kopfgurt.
 
-![HoloLens 2: Sitz und Einstellung](images/hololens2-fit.png)
+![HoloLens 2: Sitz und Einstellungen.](images/hololens2-fit.png)
 
 ### <a name="attach-and-detach-the-overhead-strap"></a>Befestigen und Lösen des Kopfgurts
 
@@ -52,7 +52,7 @@ Um die Vorderseite des Kopfgurts abzunehmen, haken Sie den Gurt aus und schieben
 
 Um die Rückseite des Kopfgurts zu lösen, drücken Sie den Knopf unter jeder Verbindungslasche und ziehen vorsichtig daran. Zum erneuten Anbringen drücken Sie die Verbindungslaschen wieder in die Steckplätze, bis sie einrasten.
 
-![Befestigen oder Entfernen des HoloLens 2-Kopfgurts](images/hololens2-headstrap.png)
+![Befestigen oder Entfernen des HoloLens 2-Kopfgurts.](images/hololens2-headstrap.png)
 
 ## <a name="turn-on-the-hololens-2"></a>Einschalten der HoloLens 2
 

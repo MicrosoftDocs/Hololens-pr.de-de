@@ -19,12 +19,12 @@ ms.custom:
 - CI 115825
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: 635e2cc274101fcf08fd05f2b3b54ce6c2f79182011d76409a51c722ea47ecc7
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 3afe3d2aecd64c2b4724f4805571cb3c46112875
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662789"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190037"
 ---
 # <a name="manage-hololens-updates"></a>Verwalten von HoloLens-Updates
 
@@ -122,7 +122,7 @@ Gehen wir beispielsweise von einer Organisation mit 1.000 Geräten aus, die in 
 
 So verläuft der Rollout im Laufe der Zeit in der gesamten Organisation.
 
-![Zeitachse für die Installation von Updates](./images/hololens-updates-timeline.png)
+![Zeitachse für die Bereitstellung von Updates.](./images/hololens-updates-timeline.png)
 
 #### <a name="configure-an-update-deferral-policy"></a>Konfigurieren einer Zurückstellungsrichtlinie für Updates
 

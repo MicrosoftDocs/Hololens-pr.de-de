@@ -12,16 +12,16 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 759ef671e9a831e23809d5974595ce5928433e3e50ddb26e25a7a74ebe2559a3
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: c1d83577400126903a80999c46ddaeabddaba029
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660052"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190377"
 ---
 # <a name="about-hololens-2"></a>Informationen zu HoloLens 2
 
-![HoloLens 2 – Seitenansicht](images/hololens2-breakdown.png)
+![Seitenansicht von HoloLens 2.](images/hololens2-breakdown.png)
 
 Microsoft HoloLens 2 ist ein ungebundener holographischer Computer.  Er verfeinert die von HoloLens (1. Generation) begonnene holographische Computererfahrung und bietet ein komfortableres und umfassenderes Erlebnis, gepaart mit mehr Optionen für die Zusammenarbeit in Mixed Reality. HoloLens 2 wird auf dem [Windows Holographic-Betriebssystem](hololens-release-notes.md) ausgeführt, das auf einer "Variante" von Windows 10 basiert und Benutzern, Administratoren und Entwicklern eine stabile, leistungsfähige und sichere Plattform bietet. 
 
@@ -75,7 +75,7 @@ Um den Prozentsatz der internen Akkuladedauer beizubehalten bzw. zu verbessern, 
 | **Trägheitsmesseinheit (Inertial Measurement Unit, IMU)** | Beschleunigungsmesser, Gyroskop, Magnetometer |
 | **Kamera** | 8-Megapixel-Standbilder, 1080p30-Video |
 
-![HoloLens 2-Sensoren](images/hololens2-front-view.png)
+![HoloLens 2-Sensoren.](images/hololens2-front-view.png)
 
 > [!NOTE]
 > Decken Sie keine der Sensoren ab, die im Bild genannt werden. Die Kopfverfolgungskameras haben ein sehr breites Sichtfeld (FOV). Es sollte sich nichts um sie herum befinden um sie nicht zu verdecken.

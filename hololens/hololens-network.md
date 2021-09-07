@@ -10,12 +10,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: a230538a2bbf33481ef33c992a5b6c76107bb3829774744bc7e9a888f9102692
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: fe1c47de48e413a6f45921ba1e247016873ca996
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663085"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189102"
 ---
 # <a name="connect-hololens-to-a-network"></a>Verbinden von HoloLens mit einem Netzwerk
 
@@ -39,7 +39,7 @@ Auf HoloLens 2 Geräten kann ein Benutzer auch einen [USB-C-zu-Ethernet-Adapter]
 1. Wählen Sie ein Netzwerk und dann **Verbinden** aus.
 1. Wenn Sie zur Eingabe eines Netzwerkkennworts aufgefordert werden, geben Sie es ein, und wählen Sie dann **Weiter** aus.
 
-![WLAN-Einstellungen für HoloLens](./images/hololens-2-wifi-settings.jpg)
+![WLAN-Einstellungen für HoloLens.](./images/hololens-2-wifi-settings.jpg)
 
 Um zu bestätigen, dass Sie mit einem WLAN verbunden sind, überprüfen Sie den WLAN-Status im **Startmenü**:
 
@@ -211,7 +211,7 @@ VPN ist standardmäßig nicht aktiviert, kann aber durch Öffnen der App **Einst
 1. Fügen Sie optional Benutzername und Kennwort hinzu.
 1. Anwenden der VPN-Einstellungen. 
 
-![HoloLens VPN-Einstellungen](./images/vpn-settings-ui.jpg)
+![HoloLens VPN-Einstellungen.](./images/vpn-settings-ui.jpg)
 
 ### <a name="vpn-set-via-provisioning-package"></a>VPN über Bereitstellungspaket einstellen
 
@@ -354,7 +354,7 @@ Natives IKEv2-VPN-Beispiel:
 1. Wählen Sie **Netzwerk & Internet** aus.
 1. Scrollen Sie nach unten unter die Liste der verfügbaren WLAN-Netzwerke und wählen Sie **Hardwareeigenschaften** aus.
 
-    ![Hardwareeigenschaften in WLAN-Einstellungen](./images/wifi-hololens-hwdetails.jpg)
+    ![Hardwareeigenschaften in WLAN-Einstellungen.](./images/wifi-hololens-hwdetails.jpg)
 
    Die IP-Adresse wird neben der **IPv4-Adresse** angezeigt.
 

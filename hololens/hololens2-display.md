@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3567c1f33f10240a9cacbf258669a0e3274f4c6bb3c90fc1317a57a3a415fc7f
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 38bab16d2d0d4ace5879f00c133d66b9974e4b2a
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115659943"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190360"
 ---
 # <a name="hololens-2-display-troubleshooting"></a>Problembehandlung für das HoloLens 2-Display
 
@@ -46,7 +46,7 @@ Führen Sie die folgenden Schritte aus, um die höchste visuelle Qualität von H
     > Wenn Sie Probleme haben, die abgeblendete Szenerie in Ihrer Umgebung zu sehen, können Sie den Helligkeitspegel der HoloLens 2 manuell justieren, indem Sie links am Gerät auf die Tasten für Helligkeit drücken.
 1. Wählen Sie die Tasten 1-6 aus, um die einzelnen Farbprofile sofort auszuprobieren und dasjenige zu finden, das in Ihren Augen am besten aussieht (dies bedeutet in der Regel das Profil, das die Szene am neutralsten erscheinen lässt, wobei die Graustufenmuster und Hautfarbtöne wie erwartet aussehen).
 
-    ![Szenerie zur Farbkalibrierung des Displays](images/color-cal-ui.png)
+    ![Szenerie zur Farbkalibrierung des Displays.](images/color-cal-ui.png)
     
 6. Wenn Sie mit dem ausgewählten Profil zufrieden sind, wählen Sie die Schaltfläche **Speichern und beenden** aus.
 1. Wenn Sie keine Änderungen vornehmen möchten, wählen Sie die Schaltfläche **Abbrechen und beenden** aus, woraufhin Ihre Änderungen zurückgesetzt werden.
@@ -79,7 +79,7 @@ Wenn Sie nicht mit dem benutzerdefinierten Farbprofil zufrieden sind, das in Ihr
 
 Auf dem Display Ihrer HoloLens 2 sind in der linken und rechten unteren Ecke gelegentlich verschiedene Muster zu sehen. Beispiele hierfür sind nachstehend dargestellt (animierte GIFs). Dieses Muster gehört zum normalen Betrieb des HoloLens 2-Geräts zum Kalibrieren des Displays für ein optimales Erlebnis.
 
-![Zweiphasiges Muster](./images/DAT-Biphase-Fiducial.gif) ![GEO-Muster](./images/DAT-GEO-Fiducial.gif)
+![Zweiphasiges Muster.](./images/DAT-Biphase-Fiducial.gif) ![GEO-Muster](./images/DAT-GEO-Fiducial.gif)
 
 ### <a name="why-am-i-unable-to-take-an-accurate-photograph-of-my-hololens-2-display"></a>Warum kann ich kein einwandfreies Foto von meinem HoloLens 2-Display machen?
 

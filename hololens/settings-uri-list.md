@@ -13,12 +13,12 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d2747da37ae198f7a2c051593da3ffd4cb4476dfaa7a3078a7749fa1fc912ba2
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 92040019b093c5ef63d74f095dcb3809112ae7a0
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665623"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190428"
 ---
 # <a name="page-settings-visibility"></a>Sichtbarkeit von Seiteneinstellungen
 
@@ -74,7 +74,7 @@ Ausführliche Informationen zum Erstellen und Anwenden eines Bereitstellungspake
 
 Unabhängig von der gewählten Methode sollte Ihr Gerät jetzt die Änderungen erhalten, und den Benutzern wird die folgende Einstellungen-App angezeigt.
 
-![Screenshot der Nutzungszeit, die in der Einstellungen-App geändert werden](images/hololens-page-visibility-list.jpg)
+![Screenshot der Nutzungszeit, die in der Einstellungen-App geändert werden.](images/hololens-page-visibility-list.jpg)
 
 Um die Einstellungen-App-Seiten so zu konfigurieren, dass Ihre eigene Auswahl von Seiten ein- oder ausgeblendet wird, sehen Sie sich die Einstellungen-URIs an, die auf HoloLens verfügbar sind.
 

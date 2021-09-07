@@ -13,12 +13,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c510738595e234b30395aafa309d42bd33affb7889a3174f2e708ba1aac56626
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: f9a6f1692df05e5fd8faec3da07cc85f7c6a32c7
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664898"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189170"
 ---
 # <a name="use-the-start-menu-and-mixed-reality-home"></a>Verwenden des Startmenüs und der Mixed Reality-Startseite
 
@@ -91,7 +91,7 @@ Wenn eine immersive App einen fehlerhaften Zustand hat und Sie sie neu starten m
 
 Wenn Sie in [Version 21H1 von Windows Holographic](hololens-release-notes.md#windows-holographic-version-21h1) einen Link aktivieren oder einen Dateityp öffnen, der von mehr als einer installierten App unterstützt wird, öffnet sich ein neues Fenster, in dem Sie auswählen können, mit welcher installierten App der Datei- oder Linktyp gehandhabt werden soll. In diesem Fenster können Sie auch festlegen, dass die ausgewählte App die Datei oder den Linktyp „Einmal" oder „Immer“ handhabt.
 
-![App-Auswahlfenster](images/default-app-picker.png)
+![App-Auswahlfenster.](images/default-app-picker.png)
 
 Wenn Sie „Immer“ wählen, aber später ändern möchten, mit welcher App eine bestimmte Datei oder ein bestimmter Linktyp gehandhabt wird, können Sie Ihre gespeicherten Standardeinstellungen unter **Einstellungen > Apps** zurücksetzen. Scrollen Sie auf der Seite nach unten, und wählen Sie unter „Standard-Apps für Dateitypen“ und/oder „Standard-Apps für Linktypen“ die Schaltfläche **Löschen** aus. Im Gegensatz zur ähnlichen Einstellung auf Desktop-PCs können Sie die Standardeinstellungen einzelner Dateitypen nicht zurücksetzen.
 

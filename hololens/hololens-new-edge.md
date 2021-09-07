@@ -9,16 +9,16 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: yannisle
-ms.openlocfilehash: 35d3b38cd442198aec8aaabf46ff7d842c1bf599dbada68718c1d0fa548b2030
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 8ef73733b9fa4f422335977be860371b9570d549
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663238"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189697"
 ---
 # <a name="introducing-the-new-microsoft-edge"></a>Vorstellung des neuen Microsoft Edge
 
-![Animation vom Logo der Vorgängerversion von Microsoft Edge zum neuen Microsoft Edge-Logo](images/new-edge.gif)
+![Animation des Logos der Vorgängerversion von Microsoft Edge zum neuen Microsoft Edge-Logo.](images/new-edge.gif)
 
 Der neue Microsoft Edge [greift auf das Open-Source-Projekt Chromium zurück](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/), um für Kunden mehr Kompatibilität und für Webentwickler weniger Fragmentierung des Webs zu ermöglichen.
 
@@ -27,11 +27,11 @@ Mit der [Windows Holographic-Version 21H1](hololens-release-notes.md#windows-ho
 > [!IMPORTANT]
 > Diese neue Microsoft Edge-Version ersetzt automatisch die Vorgängerversion von Microsoft Edge, die in neuen Releases [nicht mehr unterstützt](https://blogs.windows.com/msedgedev/2021/03/09/microsoft-edge-legacy-end-of-support/) wird.
 
-![Screenshot des neuen Microsoft Edge](images/new-edge-ui.png)
+![Screenshot des neuen Microsoft Edge.](images/new-edge-ui.png)
 
 ## <a name="launching-the-new-microsoft-edge"></a>Einführung des neuen Microsoft Edge
 
-Der neue Microsoft Edge ![Symbol des neuen Microsoft Edge](images/new_edge_logo.png) (dargestellt durch ein blaugrünes Wirbelsymbol) wird an das Startmenü angeheftet und automatisch gestartet, wenn Sie einen Weblink aktivieren.
+Der neue Microsoft Edge ![Symbol des neuen Microsoft Edge.](images/new_edge_logo.png) (dargestellt durch ein blaugrünes Wirbelsymbol) wird an das Startmenü angeheftet und automatisch gestartet, wenn Sie einen Weblink aktivieren.
 
 > [!NOTE]
 > Wenn Sie den neuen Microsoft Edge erstmals auf der HoloLens 2 starten, werden Ihre Einstellungen und Daten aus der Vorgängerversion von Microsoft Edge importiert.
@@ -139,7 +139,7 @@ Die 360 Viewer-Erweiterung basiert auf WebXR und wird automatisch zusammen mit d
 1. Navigieren Sie zu einer Website mit WebXR-Unterstützung.
 1. Wählen Sie auf der Website die Schaltfläche **In VR ansehen** aus. Die Position und visuelle Darstellung dieser Schaltfläche kann je nach Website variieren, sieht aber in etwa so aus:
 
-    ![Beispiel der Schaltfläche „In VR ansehen“](images/75px-enter-vr.png)
+    ![Beispiel der Schaltfläche „In VR ansehen“.](images/75px-enter-vr.png)
 
 1. Wenn Sie zum ersten Mal versuchen, eine WebXR-Umgebung in einer bestimmten Domäne zu starten, bittet der Browser um Zustimmung zum Aufrufen einer immersiven Ansicht. Wählen Sie **Zulassen** aus.
 1. Verwenden Sie [HoloLens 2-Gesten](hololens2-basic-usage.md#the-hand-tracking-frame), um sich in der Umgebung zu bewegen.
@@ -156,7 +156,7 @@ Die 360 Viewer-Erweiterung basiert auf WebXR und wird automatisch zusammen mit d
 1. Navigieren Sie auf YouTube zu einem 360-Grad-Video.
 1. Wählen Sie im Videoframe die Schaltfläche mit dem Mixed Reality-Headset aus:
 
-    ![Schaltfläche zum Aktivieren von 360 Viewer](images/enter-360-viewer.jpg)
+    ![Schaltfläche zum Aktivieren von 360 Viewer.](images/enter-360-viewer.jpg)
 
 1. Wenn Sie zum ersten Mal versuchen, 360 Viewer in einer bestimmten Domäne zu starten, bittet der Browser um Zustimmung zum Aufrufen einer immersiven Ansicht. Wählen Sie **Zulassen** aus.
 1. [Tippen Sie in die Luft](hololens2-basic-usage.md#select-using-air-tap), um die Wiedergabesteuerelemente zu aktivieren. Per [Handstrahl und Tippen in die Luft](hololens2-basic-usage.md#select-using-air-tap) können Sie die Wiedergabe starten/anhalten, vor- und zurückspringen, Untertitel ein-/ausschalten oder die Umgebung beenden (wodurch die immersive Ansicht beendet wird). Die Wiedergabesteuerelemente werden nach einigen Sekunden Inaktivität nicht mehr angezeigt.

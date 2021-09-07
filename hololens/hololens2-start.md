@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6f50874c39d8bffa43ff94101c81dcffe3dc1b3c34c69e940ed503dc7bd8b4ba
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 8f07ed42c873b62b3b4201c2756b55bbb29707d3
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115659349"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189765"
 ---
 # <a name="set-up-your-hololens-2"></a>Einrichten von HoloLens 2
 
@@ -82,7 +82,7 @@ Eine Schaltfläche mit einem Microsoft-Logo wird angezeigt. Drücken Sie die Sch
 
      HoloLens legt Ihre Zeitzone basierend auf den Informationen, die aus dem WLAN-Netzwerk abgerufen werden, automatisch fest. Nachdem das Setup abgeschlossen ist, können Sie die Zeitzone mithilfe der Einstellungen-App ändern.
 
-    ![Herstellen einer WLAN-Verbindung](images/11-network.png)
+    ![Herstellen einer WLAN-Verbindung.](images/11-network.png)
 
     > [!NOTE] 
     > Wenn Sie über den WLAN-Schritt hinausgehen und später zu einem anderen Netzwerk wechseln müssen, während Sie sich noch in der Einrichtung befinden, können Sie die Tasten **Lautstärke senken** und **Ein/Aus** gleichzeitig drücken, um zu diesem Schritt zurückzukehren. Das ist möglich, wenn Sie eine Betriebssystemversion von Oktober 2019 oder später verwenden. Bei früheren Versionen ist es möglicherweise erforderlich, dass Sie das [Gerät zurücksetzen](hololens-recovery.md) oder an einem Ort, an dem das WLAN-Netzwerk nicht verfügbar ist, neu starten, um zu verhindern, dass es sich automatisch verbindet.
@@ -91,15 +91,15 @@ Eine Schaltfläche mit einem Microsoft-Logo wird angezeigt. Drücken Sie die Sch
 
 1. HoloLens 2 wird nach einem Autopilot-Profil suchen und es anwenden, sofern vorhanden. Auf diesem Bildschirm ist keine Aktion erforderlich.
  
-    ![Autopilot-Profilsuche](images/autopilot-profile-search.png) 
+    ![Autopilot-Profilsuche.](images/autopilot-profile-search.png) 
 
 1. Klicken Sie auf dem Bildschirm „Lizenzierung“ **Akzeptieren** an.
 
-    ![Windows-Lizenzvereinbarung](images/windows-license-agreement.png)
+    ![Windows-Lizenzvertrag.](images/windows-license-agreement.png)
 
 1. Melden Sie sich bei Ihrem Benutzerkonto an. Sie wählen zwischen **Die Lizenz gehört meinem Arbeitgeber oder meiner Bildungseinrichtung** und **Die Lizenz gehört mir**.
 
-    ![Benutzer festlegen](images/13-device-owner.png)
+    ![Benutzer festlegen.](images/13-device-owner.png)
     - Wenn Sie **Meinem Arbeitgeber oder meiner Bildungseinrichtung** gewählt haben, melden Sie sich mit dem Azure AD-Konto an. Wenn Ihr Unternehmen Azure AD Premium verwendet und die automatische MDM-Registrierung konfiguriert hat, wird HoloLens automatisch in MDM registriert. Wenn in Ihrer Organisation kein Azure AD Premium verwendet wird, ist die automatische MDM-Registrierung nicht verfügbar. In diesem Fall müssen Sie [HoloLens manuell in der Geräteverwaltung registrieren](hololens-enroll-mdm.md#different-ways-to-enroll).
 
         1. Geben Sie Ihre Unternehmenskontodaten ein.
@@ -123,11 +123,11 @@ Eine Schaltfläche mit einem Microsoft-Logo wird angezeigt. Drücken Sie die Sch
   
 1. Einrichten einer PIN zur Anmeldung am Gerät. Diese PIN ist gerätespezifisch. 
 
-    ![Einrichten von Windows Hello](images/setup-windows-hello.png)
+    ![Einrichten von Windows Hello.](images/setup-windows-hello.png)
 
-    ![Einrichten einer Windows Hello PIN](images/windows-hello-pin.png)
+    ![Einrichten einer Windows Hello PIN.](images/windows-hello-pin.png)
 
-    ![Einrichten von Windows Hello war erfolgreich](images/windows-hello-successful.png) 
+    ![Einrichten von Windows Hello erfolgreich.](images/windows-hello-successful.png) 
 
     
 1. Wählen Sie, ob Sprache auf der HoloLens 2 aktiviert werden soll.

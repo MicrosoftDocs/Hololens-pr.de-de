@@ -14,12 +14,12 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 keywords: Kalibrierung, Komfort, visuelle Elemente, Qualität, IPD, HoloLens, Windows Mixed Reality, VR-Headsets
-ms.openlocfilehash: 5ba00d873b8a42c3397315a62492b14ab04ded367ccdd05af8be4f68c56627e2
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b3d917c71ac7441aeaf8dcbc25748ee07b9fbfa3
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664691"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189204"
 ---
 # <a name="improve-visual-quality-and-comfort"></a>Verbessern von Grafikqualität und Komfort
 
@@ -64,7 +64,7 @@ Mehrere Benutzer können ein HoloLens 2-Gerät gemeinsam nutzen, ohne dass jede 
 1. Wenn die Einstellungen-App nicht an **Start** angeheftet ist, wählen Sie **Alle Apps** aus.
 1. Wählen Sie **Einstellungen** und dann **System** > **Kalibrierung** > **Augenkalibrierung** > **Augenkalibrierung ausführen** aus.
 
-   ![Die App „Einstellungen“, die die Option „Augenkalibrierung“ ausführen anzeigt](./images/C-Settings.Calibration.png)
+   ![Die App „Einstellungen“, die die Option „Augenkalibrierung ausführen“ anzeigt.](./images/C-Settings.Calibration.png)
 
 ### <a name="auto-eye-position-support"></a>Unterstützung der automatischen Augenstellung
 
@@ -131,7 +131,7 @@ Beim Einrichten Ihrer HoloLens (1. Generation) werden Sie aufgefordert, Ihre vis
 
 Während des Kalibrierungsvorgangs fordert HoloLens Sie auf, Ihren Finger an einer Folge von sechs Zielen pro Auge auszurichten. HoloLens verwendet diesen Vorgang, um den IPD für Ihre Augen richtig einzustellen.
 
-![Der IPD-Fingerausrichtungsbildschirm im zweiten Schritt](./images/ipd-finger-alignment-300px.jpg)
+![Der IPD-Fingerausrichtungsbildschirm im zweiten Schritt.](./images/ipd-finger-alignment-300px.jpg)
 
 ### <a name="manually-start-the-calibration-process"></a>Manuelles Starten des Kalibrierungsvorgangs
 
@@ -143,9 +143,9 @@ Führen Sie die folgenden Schritte aus, um die Kalibrierung-App über das **Star
 1. Wählen Sie **+** aus, um alle Apps anzuzeigen.
 1. Wählen Sie **Kalibrierung** aus.
 
-   ![Zugreifen auf die Kalibrierung-App aus der Shell](./images/calibration-shell.png)
+   ![Zugreifen auf die Kalibrierungs-App aus der Shell.](./images/calibration-shell.png)
 
-   ![Die Kalibrierung-App wird nach dem Start als Live-Cube angezeigt](./images/calibration-livecube-200px.png)
+   ![Die Kalibrierungs-App wird nach dem Start als Live-Cube angezeigt.](./images/calibration-livecube-200px.png)
 
 Führen Sie die folgenden Schritte aus, um die Kalibrierung-App über die Einstellungen-App auszuführen:
 
@@ -154,7 +154,7 @@ Führen Sie die folgenden Schritte aus, um die Kalibrierung-App über die Einste
 1. Wählen Sie **Settings** aus.
 1. Wählen Sie **System** > **Dienstprogramme** > **Kalibrierung öffnen** aus.
 
-   ![Starten der Kalibrierung-App aus der Einstellungen-App](./images/calibration-settings-500px.jpg)
+   ![Starten der Kalibrierungs-App aus der Einstellungen-App.](./images/calibration-settings-500px.jpg)
 
 ## <a name="immersive-headsets"></a>Immersive Headsets
 
