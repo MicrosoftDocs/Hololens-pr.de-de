@@ -16,12 +16,12 @@ metadata:
   - CI 111456
   - CSSTroubleshooting
   manager: bradke
-  ms.openlocfilehash: b09670ee24139c129629d061edae4d5bb43b2d766c90df152aeddb202cc1fe55
-  ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+  ms.openlocfilehash: 108f2e4c0aa9af251ecb6bc5185c7803ae51b5f7
+  ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "115662648"
+  ms.lasthandoff: 09/13/2021
+  ms.locfileid: "126032810"
 title: Häufig gestellte Sicherheitsfragen zu HoloLens (1. Generation)
 summary: ''
 sections:
@@ -46,7 +46,7 @@ sections:
     answer: >
       * C3K1688
   - question: >
-      Auf welchem Frequenzbereich und welchen Kanälen arbeitet das Gerät, und ist es konfigurierbar?
+      In welchem Frequenzbereich und in welchen Kanälen arbeitet das Gerät und ist es konfigurierbar?
     answer: >
       * WLAN: Der Frequenzbereich ist nicht vom Benutzer konfigurierbar und hängt vom Land ab, in dem sie verwendet werden. In den USA verwendet Wi-Fi kanäle sowohl 2,4 GHz (1-11) als auch 5 GHz (36-64, 100-165).
 
@@ -68,7 +68,7 @@ sections:
   - question: >
       Was ist Übertragungs- und Empfangsverhalten, wenn sich ein Tool nicht im Bereich befindet?
     answer: >
-      * HoloLens Übertragung/Empfang folgt dem Standardmäßigen WLAN/Bluetooth Muster. Am Rand des Bereichs werden Sie wahrscheinlich feststellen, dass die Eingabe langsam wird, bis die Verbindung vollständig getrennt wird, aber nachdem Sie wieder in den Bereich gelangt sind, sollte die Verbindung schnell wiederhergestellt werden.
+      * HoloLens Übertragung/Empfang folgt dem Standardmäßigen WLAN-/Bluetooth-Muster. Am Rand des Bereichs werden Sie wahrscheinlich feststellen, dass die Eingabe langsam wird, bis die Verbindung vollständig getrennt wird, aber nachdem Sie wieder in den Bereich gelangt sind, sollte die Verbindung schnell wiederhergestellt werden.
   - question: >
       Was ist die Bereitstellungsdichte pro Quadratfuß?
     answer: >
@@ -76,15 +76,15 @@ sections:
   - question: >
       Kann das Gerät die Infrastruktur als Client verwenden?
     answer: >
-      * Yes
+      * Ja
   - question: >
       Welches Protokoll wird verwendet?
     answer: >
       * HoloLens verwendet keine proprietären Protokolle.
   - question: >
-      Häufigkeit von Betriebssystemupdates: Wie oft werden Betriebssystemupdates für hl aktualisiert?  Gibt es einen festgelegten Zeitplan?  Gibt Microsoft Sicherheitspatches nach Bedarf frei, usw.
+      Häufigkeit von Betriebssystemupdates: Wie oft werden Betriebssystemupdates für hl aktualisiert?  Gibt es einen festgelegten Zeitplan?  Gibt Microsoft Sicherheitspatches nach Bedarf usw. frei.
     answer: >
-      * Microsoft stellt Betriebssystemupdates für HoloLens genau so bereit, wie dies für Windows 10 erfolgt. Normalerweise gibt es zwei wichtige Updates pro Jahr: eine im Spring, eine im Fall. Da HoloLens ein Windows Gerät ist, ist das Updatekonzept identisch mit jedem anderen Windows Gerät. Microsoft veröffentlicht Sicherheitspatches nach Bedarf und folgt dem gleichen Konzept wie auf jedem anderen Windows Gerät.
+      * Microsoft stellt Betriebssystemupdates für HoloLens genauso bereit wie für Windows 10. Normalerweise gibt es zwei wichtige Updates pro Jahr: eine im Spring, eine im Fall. Da HoloLens ein Windows Gerät ist, ist das Updatekonzept identisch mit jedem anderen Windows Gerät. Microsoft veröffentlicht Sicherheitspatches nach Bedarf und folgt dem gleichen Konzept wie auf jedem anderen Windows Gerät.
   - question: >
       Betriebssystemhärtung: Welche Optionen gibt es, um das Betriebssystem zu härten?  Können wir unnötige Apps oder Dienste entfernen oder herunterfahren?
     answer: >
@@ -92,7 +92,7 @@ sections:
   - question: >
       Wie werden Softwareanwendungen verwaltet und aktualisiert? Welche Kontrolle haben wir, um zu definieren, welche Apps geladen werden und welcher App-Updateprozess für Apps erfolgt, die im Microsoft Store gespeichert sind?
     answer: >
-      * HoloLens ruft Softwareanwendungen nur über den Windows Store ab. Es können nur Appx-Anwendungspakete installiert werden, die für die Verwendung von HoloLens entwickelt wurden. Dies wird im Microsoft Store mit einem kleinen Logo neben der Anwendung angezeigt, die das HoloLens Gerät anzeigt. Jede Kontrolle über die Verwaltung von Store Anwendungen gilt auch für HoloLens. Sie können das Konzept des offiziellen Geschäfts oder des Geschäftsgeschäfts verwenden. Apps können entweder quergeladen werden (manueller Prozess zum Laden einer App auf einem Windows Gerät) oder über eine MDM verwaltet werden, sodass Apps bei Bedarf automatisch aus dem Store abgerufen werden.
+      * HoloLens ruft Softwareanwendungen nur über den Windows Store ab. Es können nur Appx-Anwendungspakete installiert werden, die für die Verwendung von HoloLens entwickelt wurden. Dies wird im Microsoft Store mit einem kleinen Logo neben der Anwendung angezeigt, die das HoloLens Gerät anzeigt. Jede Kontrolle über die Verwaltung Store Anwendungen gilt auch für HoloLens. Sie können das Konzept des offiziellen Geschäfts oder des Geschäftsgeschäfts verwenden. Apps können entweder quergeladen werden (manueller Prozess zum Laden einer App auf einem Windows Gerät) oder über eine MDM verwaltet werden, sodass Apps bei Bedarf automatisch aus dem Store abgerufen werden.
   - question: >
       Wie häufig werden Apps im Store für HoloLens aktualisiert?
     answer: >
@@ -100,29 +100,29 @@ sections:
   - question: >
       Gibt es eine sichere Startfunktion für die HoloLens?
     answer: >
-      * Yes
+      * Ja
   - question: >
-      Gibt es die Möglichkeit, die Peripherieunterstützung des Geräts zu deaktivieren oder zu trennen?
+      Gibt es die Möglichkeit, die Unterstützung für Peripheriegeräte vom Gerät zu deaktivieren oder zu trennen?
     answer: >
-      * Yes
+      * Ja
   - question: >
       Gibt es die Möglichkeit, die Verwendung von Ports auf dem Gerät zu steuern oder zu deaktivieren?
     answer: >
-      * Die HoloLens enthält nur zwei Ports (einen für Steckverbindungen und einen für das Laden oder Herstellen einer Verbindung mit PCs). Der Port kann aus Funktions- und Wiederherstellungsgründen nicht deaktiviert werden.
+      * Die HoloLens enthält nur zwei Ports (einen für Anschlüsse und einen zum Laden oder Herstellen einer Verbindung mit PCs). Der Port kann aus Funktions- und Wiederherstellungsgründen nicht deaktiviert werden.
   - question: >
       Antivirus, Endpunkterkennung, IPS, App-Steuerungs-Allow List: Alle Möglichkeiten zum Ausführen von Antivirensoftware, Endpunkterkennung, IPS, App-Steuerungs-Allow List usw.
     answer: >
       * Windows Holographic for Business (kommerzielle Suite) unterstützt Windows Defender Smart Screen. Wenn ein Antivirenunternehmen seine App erstellen und auf der Universal Windows Platform veröffentlichen würde, könnte sie auf HoloLens heruntergeladen werden. Derzeit haben keine Unternehmen dies für HoloLens durchgeführt.
 
-      * Das Zulassen von Apps ist mithilfe des Microsoft Enterprise Store möglich, in dem Sie nur auswählen können, welche bestimmten Apps heruntergeladen werden können. Außerdem können Sie über MDM sperren, welche bestimmten Apps auf dem Gerät ausgeführt oder sogar angezeigt werden können.
+      * Das Zulassen von Apps ist mithilfe des Microsoft Enterprise Store möglich, in dem Sie nur auswählen können, welche bestimmten Apps heruntergeladen werden können. Darüber hinaus können Sie über MDM sperren, welche bestimmten Apps auf dem Gerät ausgeführt oder sogar angezeigt werden können.
   - question: >
-      Können wir das Gerät aus dem Prod-Netzwerk unter Quarantäne stellen, bis wir das Gerät aktualisieren, wenn es über einen längeren Zeitraum offline war?  Ex. Das Gerät befindet sich seit einem Zeitraum (sechs Monate) nicht in einer Schublade und hat keine Updates, Patches usw. erhalten.  Wenn versucht wird, in das Netzwerk zu gelangen, können wir es kennzeichnen und sagen, dass Sie ein Update in einem anderen Netzwerk durchführen müssen, bevor Sie für den Beitritt zum Netzwerk aufgefordert werden.
+      Können wir das Gerät aus dem Prod-Netzwerk unter Quarantäne stellen, bis wir das Gerät aktualisieren, wenn es über einen längeren Zeitraum offline war?  Ex. Das Gerät befindet sich seit einem Zeitraum (sechs Monate) nicht in einer Schublade und hat keine Updates, Patches usw. erhalten.  Wenn versucht wird, in das Netzwerk zu gelangen, können wir es kennzeichnen und sagen, dass Sie ein Update in einem anderen Netzwerk durchführen müssen, bevor Sie mit dem Beitritt zum Netzwerk rechnen müssen.
     answer: >
       * Dies ist etwas, das auf Infrastrukturebene entweder von einem MDM- oder einem on-prem-Server verwaltet werden kann. Das Gerät kann als nicht konform gekennzeichnet werden, wenn es einer angegebenen Updateversion nicht entspricht.
   - question: >
       Schließt Microsoft Hintertüren oder Zugriff auf Dienste ein, die es Microsoft ermöglichen, sich zur Bildschirmfreigabe oder zur Remoteunterstützung nach Beweggründen mit dem Gerät zu verbinden?
     answer: >
-      * No
+      * Nein
   - question: >
       Wenn ein PKI-Zertifikat für die vertrauenswürdige Kommunikation generiert wird, soll das Zertifikat auf dem Gerät generiert werden, damit wir wissen, dass es sich nur auf diesem Gerät befindet, für dieses Gerät eindeutig ist und nicht exportiert oder verwendet werden kann, um die Identität des Geräts zu annehmen. Gilt dies für HoloLens? Wenn nicht, gibt es eine mögliche Entschärfung?
     answer: >-

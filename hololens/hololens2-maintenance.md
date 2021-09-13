@@ -15,17 +15,17 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8b14ebd9639495d2b174678518b4562a2b3c85fa
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.openlocfilehash: 286e90fab7be0c4132cfab15306cc57c52607ccf
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189442"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032656"
 ---
 # <a name="hololens-2-cleaning-faq"></a>Reinigen von HoloLens 2: Häufig gestellte Fragen
 
 > [!IMPORTANT]  
-> Microsoft kann keine Entscheidung über die Effektivität eines bestimmten Produkts treffen, das im Ringen gegen Diebanten wie COVID-19 verwendet wird. Lesen Sie den Leitfaden Ihrer lokalen öffentlichen Gesundheitsstelle, um zu erfahren, wie Sie vor potenziellen Gesundheitsrisiken geschützt bleiben können.  
+> Microsoft kann keine Entscheidung über die Effektivität eines bestimmten halterlichen Produkts im Ringen gegen Schläge wie COVID-19 treffen. Lesen Sie den Leitfaden Ihrer lokalen öffentlichen Gesundheitsstelle, um zu erfahren, wie Sie vor potenziellen Gesundheitsrisiken geschützt bleiben können.  
 
 ## <a name="hololens-2-use-and-care"></a>HoloLens 2 Verwenden und Pflegen
 
@@ -35,11 +35,11 @@ ms.locfileid: "123189442"
 
 **So bereinigt das Gerät**
 
-1. Entfernen Sie alle Entstauen, indem Sie eine lappenfreie Mikrofiziererart verwenden, um die Oberfläche des Geräts zierlich zu bewischen.
+1. Entfernen Sie jeglichen Entstau, indem Sie eine lappenfreie Mikrofiziererart verwenden, um die Oberfläche des Geräts zierlich zu bewischen.
 
    ![Bereinigt beim Halten aus dem Stirnpad.](images/hl2-cleaning.png)
 
-2. Bereinigen Sie die Glühbirne leicht mit medizinischen "70%"-Isobeben, und verwenden Sie dann die moistente Glühbirne, um die Oberfläche des Geräts glühend zu bereinigen.
+2. Glühbirnen mit medizinischen "70%"-Isobeben, und verwenden Sie dann die moistente Glühbirne, um die Oberfläche des Geräts glühend zu bereinigen.
 
 3. Lassen Sie das Gerät vollständig lass.
 
@@ -52,20 +52,20 @@ ms.locfileid: "123189442"
 
 Nein. Brillenbereinigungen können den Brillen auf dem Visor nieren. Führen Sie die folgenden Schritte aus, um das Visor zu bereinigt:  
 
-1. Entfernen Sie jeglichen Entstau, indem Sie mithilfe eines frei von Lint freien Mikrofibers das Visor zierlich zurückdrendern.
+1. Entfernen Sie jeglichen Entstau, indem Sie mithilfe eines frei von Lint freien Mikrofizierers das Visor zierlich zurückdrendern.
 1. Bereinigen Sie ein Glühbirnen mit medizinischen "70%"-Isoparaden, und löschen Sie dann das Visor glühend.
 1. Lassen Sie das Visor vollständig lass.
 
 ## <a name="can-i-use-disinfecting-wipes-to-clean-the-device"></a>Kann ich das Gerät mithilfe von zurücksetzungen bereinigt werden?
 
-Ja, wenn die Zurücksetzungen keine Scheiben enthalten. Sie können nicht-unaufgelöschte Zurücksetzungen verwenden, um die HoloLens zurück [zu setzen.](#hololens-2-use-and-care)  
+Ja, wenn die Zurücksetzungen keine Scheiben enthalten. Sie können nicht-unaufgelöschte Zurücksetzungen verwenden, um die HoloLens [zurücksetzungen.](#hololens-2-use-and-care)  
 
 > [!CAUTION]  
-> Vermeiden Sie die Verwendung von Löschlöschungen, die Beläge enthalten, um die HoloLens zu bereinigt. Es ist akzeptabel, in kritischen Situationen Zurücksetzungen zu verwenden, wenn nichts anderes verfügbar ist. Allerdings kann der Beläge das HoloLens oder andere Oberflächen beschädigen.
+> Vermeiden Sie die Verwendung von Zurücksetzungen, die Beläge enthalten, um die HoloLens zu bereinigt. Es ist akzeptabel, in kritischen Situationen Zurücksetzungen zu verwenden, wenn nichts anderes verfügbar ist. Allerdings kann der Beläge das HoloLens oder andere Oberflächen beschädigen.
 
 ## <a name="can-i-use-alcohol-to-clean-the-device"></a>Kann ich Mitbereinigungen für das Gerät verwenden?
 
-Ja. Sie können eine Lösung mit "70 %" Isobeben und Wasser verwenden, um die harte Oberfläche des Geräts zu bereinigen, einschließlich des Visors. Glühbirnen mit einer Mischung aus Isobenen und Wasser leicht benetzen und dann die Oberfläche des Geräts löschen
+Ja. Sie können eine Lösung von "70%" iso und water verwenden, um die harte Oberfläche des Geräts zu bereinigen, einschließlich des Visors. Glühbirnen mit einer Mischung aus Isobenen und Wasser leicht benetzen und dann die Oberfläche des Geräts löschen
 
 ## <a name="is-the-brow-pad-replaceable"></a>Kann das Stirnpad ersetzt werden?
 
@@ -75,17 +75,17 @@ Ja. Das Stirnpad ist magnetisch an das Gerät angeschlossen. Um es zu trennen, z
 
 ## <a name="how-can-i-clean-the-brow-pad"></a>Wie kann ich das Stirnrunzeln bereinigt werden?
 
-Um das Stirnpad zu bereinigten, löschen Sie es mithilfe einer Füllung, die mit Wasser und einer Mäßigungsspuch bereinigt wird. Lassen Sie das Stirnpad vollständig lass, bevor Sie es erneut verwenden.
+Um das Stirnpad zu bereinigten, lösche es mithilfe einer Füllung, die mit Wasser und einer Mäßigungs soap bereinigt wird. Lassen Sie das Stirnpad vollständig lass, bevor Sie es erneut verwenden.
 
-## <a name="can-i-use-ultraviolet-uv-light-to-sanitize-the-device"></a>Kann ich uv-Licht (UV) verwenden, um das Gerät zu besorgen?
+## <a name="can-i-use-ultraviolet-uv-light-to-sanitize-the-device"></a>Kann ich uv-Licht (Uv) verwenden, um das Gerät zu besorgen?
 
-Die UVC-Belässigung mit UVC-LED, die bei einer Intensität von 0,5–0,6 mW/cm2 mit einer Intensität von 265nm arbeitet und keine<sup>Pegel</sup>austrägt, kann verwendet werden, um HoloLens2 zu besauen. Befolgen Sie die Herstellerspezifikationen zur Behandlung und zur Belichtungszeit.
+Die UVC-Beregnung mit UVC-LED oder gefilterten UVC-Lichten, die mit einer Intensität von 0,5–0,6 mW/cm2 betrieben wird und keine Partikel austrägt, kann verwendet werden, um HoloLens 2. Befolgen Sie die Herstellerspezifikationen zur Behandlung und zur Belichtungszeit.
 
 > [!CAUTION]  
-> Ein hohes Maß an UV-A- und UV-B-Belichtung kann die Anzeigequalität des Geräts herabsetzen und die Visorschicht beschädigen. Die Überexposition gegenüber UV-A- und UV-B-Licht hat die folgenden Auswirkungen, in Der Reihenfolge nach Dauer und Intensität der Belichtung:
+> Ein hohes Maß an UV-A- und UV-B-Belichtung kann die Anzeigequalität des Geräts herabsetzen und die Visorschicht beschädigen. Die Überbelichtung durch UV-A- und UV-B-Licht hat die folgenden Auswirkungen in der Reihenfolge der Dauer und Intensität der Belichtung:
 >  
 > 1. Das Stirnpad und das Schließen des Geräts werden verfärbt.
-> 1. Mängel treten im Antireflektor (AR) auf dem Visier und in den Sensorfenstern auf.
+> 1. Mängel treten im Antireflektor (AR) auf dem Visor und in den Sensorfenstern auf.
 > 1. Mängel treten in den Basismaterialien des Visors und in den Sensorfenstern auf.
 > 1. Leistungsverschlechterungen anzeigen.
 

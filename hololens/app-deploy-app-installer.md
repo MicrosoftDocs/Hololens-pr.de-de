@@ -15,16 +15,16 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 071dfb3b211928c561fc84754dd7ed4d64886f61
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123188915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032490"
 ---
 # <a name="install-apps-on-hololens-2-via-app-installer"></a>Installieren von Apps auf HoloLens 2 über App-Installer
 
 > [!NOTE]
-> Dieses Feature wurde in [Windows Holographic, Version 20H2 – Dezember 2020 Update,](hololens-release-notes.md)zur Verfügung gestellt. Stellen Sie sicher, dass Ihr Gerät für die Verwendung dieses Features [aktualisiert](hololens-update-hololens.md) wurde.
+> Dieses Feature wurde in [Windows Holographic, Version 20H2 – Dezember 2020 Update](hololens-release-notes.md)verfügbar gemacht. Stellen Sie sicher, dass Ihr Gerät [aktualisiert](hololens-update-hololens.md) wurde, um dieses Feature zu verwenden.
 
 Wir haben **eine neue Funktion (App-Installer) hinzugefügt, mit** der Sie Anwendungen nahtloser auf Ihren HoloLens 2 Geräten installieren können. Das Feature ist **für nicht verwaltete Geräte standardmäßig aktiviert.** Um Unterbrechungen für Unternehmen zu verhindern, ist das App-Installationsprogramm **derzeit nicht für verwaltete Geräte verfügbar.**  
 
@@ -36,7 +36,7 @@ Ein Gerät gilt als "verwaltet", wenn **eine** der folgenden Punkte zutrifft:
 
 Sie können apps jetzt installieren, ohne den Entwicklermodus aktivieren oder Geräteportal verwenden zu müssen.  Laden Sie (über USB oder über Microsoft Edge) das Appx-Paket auf Ihr Gerät herunter, und navigieren Sie im Datei-Explorer zum Appx-Paket, um aufgefordert zu werden, die Installation zu starten.  Alternativ können Sie [eine Installation über eine Webseite initiieren.](/windows/msix/app-installer/installing-windows10-apps-web) Genau wie Apps, die Sie über die Microsoft Store installieren oder mithilfe der BEREITSTELLUNGsfunktion für branchenspezifische Apps von MDM querladen, müssen Apps mit dem [Signierungstool](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) digital signiert werden, und das zum Signieren verwendete Zertifikat muss vom HoloLens Gerät [vertrauenswürdig sein,](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) bevor die App bereitgestellt werden kann.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 
 ### <a name="for-your-devices"></a>Für Ihre Geräte:
 
@@ -66,7 +66,7 @@ Apps, die über diese Methode installiert werden, müssen digital signiert sein.
 1. Überprüfen Sie, ob Ihr HoloLens 2 Gerät eingeschaltet ist und Sie angemeldet sind.
 1. Navigieren Sie auf Ihrem PC zu Ihrer benutzerdefinierten App, und kopieren Sie "app.appxbundle" in "IhrGerätename\Interne Storage\Downloads".
     Nachdem Sie das Kopieren der Datei abgeschlossen haben, können Sie ihr Gerät trennen und die Installation später beenden.
-1. Wählen Sie auf Ihrem HoloLens 2 Gerät **Startmenü** öffnen **aus,** wählen Sie Alle Apps aus, und starten Sie die **Datei-Explorer-App.**
+1. Wählen Sie auf Ihrem HoloLens 2 Gerät Das **Startmenü** öffnen aus, wählen Sie **Alle Apps** aus, und starten Sie die **Datei-Explorer-App.**
 1. Navigieren Sie zum Ordner Downloads. Möglicherweise müssen Sie im linken Bereich der App zuerst **Dieses Gerät** auswählen und dann zu Downloads navigieren.
 1. Wählen Sie die Datei yourapp.appxbundle aus.
 1. Die App-Installer wird gestartet. Wählen Sie die Schaltfläche **Installieren** aus, um Ihre App zu installieren.
@@ -100,7 +100,7 @@ Benutzer können eine App direkt von einem Webserver installieren. Für diesen F
 
 Die App wird nun auf dem Gerät installiert. Um die App zu finden, öffnen Sie die **Startmenü,** und wählen Sie die Schaltfläche **Alle Apps** aus, um Ihre App zu finden.
 
-- Weitere Hilfe zur Problembehandlung bei der Installationsmethode des App-Installers finden Sie unter [Problembehandlung bei App-Installationsprogrammen.](/windows/msix/app-installer/troubleshoot-appinstaller-issues)
+- Weitere Hilfe zur Problembehandlung bei der Installationsmethode des App-Installers finden Sie unter Beheben von Problemen mit dem [App-Installationsprogramm.](/windows/msix/app-installer/troubleshoot-appinstaller-issues)
 
 > [!NOTE]
 > Die Benutzeroberfläche während des Updateprozesses wird nicht unterstützt. Daher werden die Option ShowPrompt auf [dieser Seite](/windows/msix/app-installer/update-settings) und verwandte Optionen nicht unterstützt.

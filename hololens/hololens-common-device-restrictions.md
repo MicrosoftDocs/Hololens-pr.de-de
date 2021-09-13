@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 6a09766a06fff912aae20dc07974b723d812bd370562a33297552dc0d2f7f12c
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 769cacc1803af9d9e9bf1079f8cd5671f194c3bc
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664283"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032546"
 ---
 # <a name="common-device-restrictions"></a>Allgemeine Geräteeinschränkungen 
 
@@ -26,12 +26,12 @@ Dieser Leitfaden hilft IT-Experten dabei, die häufig verwendeten Verwaltungsopt
 
 ## <a name="prevent-changing-of-settings"></a>Ändern der Einstellungen verhindern
 In der Regel dürfen Mitarbeiter bestimmte Einstellungen auf persönlichen Geräten ändern, die Sie auf unternehmenseigenen Geräten möglicherweise sperren würden. Mitarbeiter können bestimmte Einstellungen der HoloLens über die Benutzeroberfläche für Einstellungen interaktiv anpassen. Mithilfe von MDM können Sie einschränken, welche Einstellungen Benutzer ändern können. Im Folgenden werden häufig verwendete MDM-Einstellungen aufgeführt, die Windows 10 Holographic zum Konfigurieren von Einstellungseinschränkungen unterstützt:
--   [VPN zulassen:](/windows/client-management/mdm/policy-csp-settings#settings-allowvpn) Ermöglicht dem Benutzer, VPN-Einstellungen zu ändern.
--   [Manuelle WLAN-Konfiguration zulassen:](/windows/client-management/mdm/policy-csp-wifi#wifi-allowmanualwificonfiguration) Ermöglicht Benutzern das Herstellen Wi-Fi Verbindungen außerhalb von MDM-bereitgestellten Netzwerken.
+-   [VPN zulassen:](/windows/client-management/mdm/policy-csp-settings#settings-allowvpn) Ermöglicht dem Benutzer das Ändern von VPN-Einstellungen
+-   [Manuelle WLAN-Konfiguration zulassen:](/windows/client-management/mdm/policy-csp-wifi#wifi-allowmanualwificonfiguration) Ermöglicht Es Benutzern, Wi-Fi Verbindungen außerhalb von MDM-bereitgestellten Netzwerken herzustellen.
 -   [Manuelle MDM-Registrierung zulassen](/windows/client-management/mdm/policy-csp-experience#experience-allowmanualmdmunenrollment) Gibt an, ob Benutzer das Arbeitsplatzkonto löschen dürfen (d. h. die Registrierung des Geräts beim MDM-System aufheben).
 
 Hinzugefügt in [Windows Holographic, Version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) für HoloLens 2 Geräte:
-- [Bereitstellungspaket hinzufügen zulassen:](/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage) Umschalten, wenn Benutzer neue Bereitstellungspakete hinzufügen können, wobei neue Werte überschrieben werden.
+- [Bereitstellungspaket hinzufügen zulassen:](/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage) Schalten Sie um, wenn Benutzer neue Bereitstellungspakete hinzufügen und mit neuen Werten überschreiben können.
 - [Bereitstellungspaket entfernen zulassen:](/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) Schalten Sie um, wenn Benutzer Bereitstellungspakete entfernen können, sodass sie zuvor gesperrte Einstellungen umschalten können.
 
 Weitere Informationen zu Richtlinienoptionen finden Sie in den HoloLens unterstützten [Richtlinien-CSPs.](/windows/client-management/mdm/policy-csps-supported-by-hololens2)

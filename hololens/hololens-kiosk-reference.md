@@ -14,19 +14,19 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: 9f8cfd0013ac5b8cf85a334cbb89c458440820d9
-ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "122863938"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032566"
 ---
-# <a name="hololens-kiosk-reference-information"></a>HoloLens Kioskreferenzinformationen
+# <a name="hololens-kiosk-reference-information"></a>HoloLens-Kiosk-Referenzinformationen
 
 Diese Seite enthält hilfreiche Informationen zum Einrichten des Kioskmodus Ihres HoloLens Geräts. Zu diesen Verweisen gehören AUMIDs für Posteingangs-Apps und die Suche nach Ihren Sowie mehrere XML-Beispiele für den Kioskmodus, die nur wenige Bearbeitungen von der Verwendung für verschiedene Szenarien entfernt sind. Informationen zum Einrichten eines Kiosks finden Sie auf der [Seite Einrichten eines Kiosks.](hololens-kiosk.md)
 
 ## <a name="hololens-application-user-model-ids-aumids"></a>HoloLens Anwendungsbenutzermodell-IDs (AUMIDs)  
 
-Allgemeine Informationen zur Auswahl von Kiosk-Apps finden Sie unter [Richtlinien zum Auswählen einer App für zugewiesenen Zugriff (Kioskmodus).](/windows/configuration/guidelines-for-assigned-access-app)
+Allgemeine Informationen zum Auswählen von Kiosk-Apps finden Sie unter [Richtlinien zum Auswählen einer App für zugewiesenen Zugriff (Kioskmodus).](/windows/configuration/guidelines-for-assigned-access-app)
 
 Wenn Sie ein Mobile Geräteverwaltung-System (MDM) oder ein Bereitstellungspaket zum Konfigurieren des Kioskmodus verwenden, verwenden Sie [den AssignedAccess-Konfigurationsdienstanbieter (AssignedAccess Configuration Service Provider, CSP),](/windows/client-management/mdm/assignedaccess-csp) um Anwendungen anzugeben. Der CSP verwendet [Anwendungsbenutzermodell-IDs (Application User Model IDs, AUMIDs),](/windows/configuration/find-the-application-user-model-id-of-an-installed-app) um Anwendungen zu identifizieren. In der folgenden Tabelle sind die AUMIDs einiger In-Box-Anwendungen aufgeführt, die Sie in einem Kiosk mit mehreren Apps verwenden können.
 
@@ -41,7 +41,7 @@ Wenn Sie ein Mobile Geräteverwaltung-System (MDM) oder ein Bereitstellungspaket
 |Geräteauswahl auf HoloLens (1. Generation) |HoloDevicesFlow \_ cw5n1h2txyewy \! HoloDevicesFlow |
 |Geräteauswahl auf HoloLens 2 |Microsoft. Windows. DevicesFlowHost \_ cw5n1h2txyewy \! Microsoft.Windows. DevicesFlowHost |
 |Dynamics 365-Leitfäden |Microsoft.Dynamics365.Guides \_ 8wekyb3d8bbwe \! MicrosoftGuides |
-|Dynamics 365 Remote Assist |Microsoft.MicrosoftRemoteRob \_ 8wekyb3d8bbwe \! Microsoft.RemoteDiagnose |
+|Dynamics 365 Remote Assist |Microsoft.MicrosoftRemoteRob \_ 8wekyb3d8bbwe \! Microsoft.RemoteRobin |
 |&nbsp;Feedback-Hub |Microsoft.WindowsFeedbackHub \_ 8wekyb3d8bbwe-App \! |
 |Datei-Explorer |c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy! App |
 |E-Mail |microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.mail |
@@ -61,7 +61,7 @@ Wenn Sie ein Mobile Geräteverwaltung-System (MDM) oder ein Bereitstellungspaket
 > - Das Menü Schnellaktionen enthält die Schaltflächen Foto und Video.
 > - Sie sollten auch eine App (z. B. Fotos, E-Mail oder OneDrive) aktivieren, die mit Bildern interagieren oder diese abrufen kann.  
 >  
-> <sup>3</sup> Auch wenn Sie Cortana nicht als Kiosk-App aktivieren, werden integrierte Sprachbefehle aktiviert. Befehle, die sich auf deaktivierte Features beziehen, haben jedoch keine Auswirkungen.  
+> <sup>3</sup> Auch wenn Sie Cortana nicht als Kiosk-App aktivieren, sind integrierte Sprachbefehle aktiviert. Befehle, die sich auf deaktivierte Features beziehen, haben jedoch keine Auswirkungen.  
 > <sup>4</sup> Sie können Miracast nicht direkt aktivieren. Um Miracast als Kiosk-App zu aktivieren, aktivieren Sie die Kamera-App und die Geräteauswahl-App.
 
 Darüber hinaus kann die Mixed Reality Home nicht als Kiosk-App festgelegt werden.

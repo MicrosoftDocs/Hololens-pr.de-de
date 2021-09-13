@@ -17,18 +17,18 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f1c178c940224ed3cd07c58b886b176108614caf7a8463af089e2f2357f45553
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b192732f5e7edffaa1d0ab081454e4034c416191
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665249"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032482"
 ---
 # <a name="intune--company-portal"></a>Intune- und Unternehmensportal
 
 Mit Mobile Geräteverwaltung (MDM) können Sie Ihre eigenen benutzerdefinierten Apps über [Microsoft Endpoint Manager (Intune)](/intune/windows-holographic-for-business) verwenden, um sie direkt auf Ihren HoloLens bereitzustellen. Microsoft Intune ist ein cloudbasierter Dienst, der sich auf die Verwaltung mobiler Geräte (MDM, Mobile Device Management) und mobiler Anwendungen (MAM, Mobile Application Management) konzentriert. Intune ist in der [EMS-Suite (Enterprise Mobility + Security)](https://www.microsoft.com/microsoft-365/enterprise-mobility-security) von Microsoft enthalten und ermöglicht Ihren Benutzern, produktiv zu sein, während die Daten ihrer Organisation geschützt bleiben. Weitere Informationen zu Intune finden Sie unter [Was ist Intune?.](/mem/intune/fundamentals/what-is-intune)
 
-## <a name="setup"></a>Setup
+## <a name="setup"></a>Einrichten
 
 1. Hochladen einer App in einen Line of Business-Dienst, oder laden Sie eine benutzerdefinierte App in Ihren Intune-Mandanten hoch. Siehe auch: [Enterprise App-Verwaltung.](/windows/client-management/mdm/enterprise-app-management)
 
@@ -50,7 +50,7 @@ Führen Sie die folgenden Schritte aus, um Ihre Apps automatisch zu erhalten:
 
 1. Registrieren Sie Ihr Gerät bei Ihrem Mandanten.
 2. Nachdem die Registrierung Ihres Geräts abgeschlossen ist, sollten Sie die App auf Ihrem Gerät erhalten.
-3. Wenn Ihre App nicht sofort angezeigt wird, wechseln Sie zu **Einstellungen** Accounts Work or School your account Info (Kontoinformationen zu Ihrem Konto für Einstellungen-Konten), und scrollen Sie nach unten, um Informationen zum Status der  >    >    >   installierten App anzuzeigen.
+3. Wenn Sie Ihre App nicht sofort sehen, wechseln Sie zu **Einstellungen** Accounts Work or School your account Info (Kontoinformationen zu Ihrem Konto für Einstellungen-Konten), und scrollen Sie nach unten, um Informationen zum Status der  >    >    >   installierten App anzuzeigen.
 
 Informationen zum Zugreifen auf Apps über die Unternehmensportal:
 

@@ -1,6 +1,6 @@
 ---
-title: 'Übersicht: App-Verwaltung'
-description: Verschaffen Sie sich einen Überblick über die Mixed Reality-App-Verwaltung mit Verwaltung mobiler Geräte, Microsoft Store für Unternehmen und Bereitstellungspakete.
+title: 'Übersicht : App-Verwaltung'
+description: Beginnen Sie mit einer Übersicht über die Mixed Reality-App-Verwaltung mit der Verwaltung mobiler Geräte, microsoft store for business und Bereitstellungspaketen.
 keywords: HoloLens, Benutzer, Konto, App, Anwendungsverwaltung,
 author: evmill
 ms.author: v-evmill
@@ -14,20 +14,20 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 019700c7e35f31c234c9fe69870cae54b3364b631253c37a17d8eaa0fe3053bd
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: ca87f34718319d489b69ba33ad24731628d87fac
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665232"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032485"
 ---
 # <a name="app-management-overview"></a>App-Verwaltung: Übersicht
 
-Sie können Apps auf vier verschiedenen Pfaden bereitstellen: **Mobile Geräteverwaltung (MDM),** **Microsoft Store für Unternehmen**, **Microsoft Store** oder durch Installation über **Bereitstellung**.
+Sie können Apps auf vier verschiedenen Pfaden bereitstellen: **Mobile Geräteverwaltung (MDM),** **Microsoft Store für Unternehmen**, **Microsoft Store** oder durch Installation über **die Bereitstellung.**
 
 ## <a name="mobile-device-management-mdm"></a>Mobile Geräteverwaltung (MDM)
 
-Mit einer MDM-Lösung können IT-Entscheidungsträger und Administratoren ihre unternehmensspezifischen Apps privat automatisch installieren (pushen) oder Apps über den Store für eine Gruppe von Benutzern erwerben. HoloLens-Geräte funktionieren am besten mit Microsoft Endpoint Manager (Intune) für [die Anwendungsverwaltung.](app-deploy-intune.md) Intune bietet Benutzern auch eine feiner abgrenzende Kontrolle über IT-verwaltete Apps über die Unternehmensportal herunterladbare Benutzererfahrung.
+Eine MDM-Lösung ermöglicht IT-Entscheidungsträgern und Administratoren die private automatische Installation (Push) ihrer unternehmensinternen, branchenbezogenen Apps oder den Kauf von Apps über den Store für eine Gruppe von Benutzern. HoloLens Geräte funktionieren am besten mit Microsoft Endpoint Manager (Intune) für die [Anwendungsverwaltung.](app-deploy-intune.md) Intune bietet Benutzern auch eine differenziertere Kontrolle über IT-verwaltete Apps über die Unternehmensportal herunterladbare Benutzeroberfläche.
 
 > [!NOTE]
 > Die folgenden Anweisungen gelten für Benutzer, die ihre Anwendungen mit Intune verwalten möchten. Microsoft empfiehlt die Verwendung von Intune für die Anwendungs- und Geräteverwaltung.
@@ -35,52 +35,52 @@ Mit einer MDM-Lösung können IT-Entscheidungsträger und Administratoren ihre u
 Mobile Geräteverwaltung (MDM) gilt für:
 
 * MDM bereitgestellt + Unternehmensportal
-* Line of Business-Apps (nicht öffentlich)
+* Branchenspezifische (nicht öffentliche) Apps
 * Manuelle Installation verfügbarer Anwendungen über Unternehmensportal
-* Pushen durch den Administrator durch die MDM-Richtlinie
+* Administrator pusht MDM-Richtlinie
 * Automatisches Update über MDM
 
 ## <a name="microsoft-store-for-business"></a>Microsoft Store für Unternehmen
 
-Das [Microsoft Store für Unternehmen](app-deploy-store-business.md) bietet IT-Entscheidungsträgern und Administratoren in Unternehmen das Suchen, Erwerben, Verwalten und Verteilen kostenloser und kostenpflichtiger Apps. IT-Administratoren können Microsoft Store-Apps und private Line-of-Business-Apps in einem Bestand verwalten und lizenzen nach Bedarf zuweisen und wiederverwenden. Weitere Informationen finden Sie unter [Voraussetzungen für die Verwendung der Microsoft Store für Unternehmen](/microsoft-store/prerequisites-microsoft-store-for-business).
+Die [Microsoft Store für Unternehmen](app-deploy-store-business.md) bietet IT-Entscheidungsträgern und Administratoren in Unternehmen die Möglichkeit, kostenlose und kostenpflichtige Apps zu finden, zu erwerben, zu verwalten und zu verteilen. IT-Administratoren können Microsoft Store-Apps und private Branchen-Apps in einem Bestand verwalten sowie Lizenzen nach Bedarf zuweisen und wiederverwenden. Weitere Informationen finden Sie unter [Voraussetzungen für die Verwendung des Microsoft Store für Unternehmen](/microsoft-store/prerequisites-microsoft-store-for-business).
 
 Die Microsoft Store für Unternehmen gilt für:
 
-* Öffentliche oder line of Business-Apps
-* Automatische Installation erforderlicher Anwendungen durch MDM-Zuordnung
+* Öffentliche oder Branchen-Apps
+* Automatische Installation erforderlicher Anwendungen über MDM-Zuordnung
 * Benutzer lädt Apps manuell herunter
 * Automatische Aktualisierung
 
 ## <a name="microsoft-store-apps"></a>Microsoft Store-Apps
 
-Das Microsoft Store bietet IT-Entscheidungsträgern und Administratoren in Unternehmen das Suchen, Erwerben, Verwalten und Verteilen öffentlicher Apps.
+Die Microsoft Store bietet IT-Entscheidungsträgern und Administratoren in Unternehmen die Möglichkeit, öffentliche Apps zu finden, zu erwerben, zu verwalten und zu verteilen.
 
 Diese Microsoft Store gilt für:
 
 * Nur öffentliche Apps
 * Benutzer lädt Apps manuell herunter
-* Automatisches Update, wenn eine Internetverbindung besteht
+* Automatisches Update, wenn eine Verbindung mit dem Internet besteht
 
 Weitere Informationen finden Sie unter [Holographic Store Apps](/hololens/holographic-store-apps).
 
 ## <a name="install-via-provisioning-packages"></a>Installieren über Bereitstellungspakete
 
-[Mit](app-deploy-provisioning-package.md) Bereitstellungspaketen können Sie benutzerdefinierte oder line of Business-Apps installieren, sodass IT-Profis und Administratoren Apps schnell über USB auf einem lokalen Gerät installieren können. Diese Installation kann ohne Internetverbindung und für jeden Identitätstyp erfolgen.
+[Mit Bereitstellungspaketen](app-deploy-provisioning-package.md) können Sie benutzerdefinierte oder branchenspezifische Apps installieren, sodass IT-Spezialisten und Administratoren Apps schnell über USB auf einem lokalen Gerät installieren können. Diese Installation kann ohne Internetverbindung und für jeden Identitätstyp erfolgen.
 
 Die Installation über Bereitstellungspakete gilt für:
 
-* Line of Business/Selbst entwickelte (nicht öffentliche) Apps
-* Öffentliche Apps (wenn das Offlineinstallationsprogramm verfügbar ist)
-* Nur USB-Seitenladevorgang
-* Keine automatische Aktualisierung (manuelle Updates über Bereitstellungspaket erforderlich)
+* Branchenspezifische/selbst entwickelte (nicht öffentliche) Apps
+* Öffentliche Apps (wenn ein Offlineinstaller verfügbar ist)
+* Nur USB-Querladen
+* Kein automatisches Update (erfordert manuelle Updates über das Bereitstellungspaket)
 
 ## <a name="install-apps-on-hololens-2-via-app-installer"></a>Installieren von Apps auf HoloLens 2 über App-Installer
 
-Mithilfe [App-Installer](app-deploy-app-installer.md) können Benutzer einfach Apps auf lokalen Geräten installieren oder eine App für andere Benutzer freigeben, die mit anderen App-Installationsmethoden auf lokalen Geräten nicht vertraut HoloLens. Dies kann erfolgen, ohne den Entwicklermodus zu aktivieren oder Geräteportal. Dies ist eine einfache Methode zum Verteilen einer vollständig erstellten App. Unabhängig davon, ob Sie Ihre App einfach für einen anderen Benutzer mit einem HoloLens demo oder ihre App bereitstellen möchten, funktioniert diese Methode problemlos.
+Mithilfe der [App-Installer](app-deploy-app-installer.md) können Benutzer über eine einfache Benutzeroberfläche verfügen, um Apps auf lokalen Geräten zu installieren oder eine App für eine andere Person zu teilen, die mit anderen App-Installationsmethoden auf HoloLens nicht vertraut ist. Dies kann erfolgen, ohne den Entwicklermodus aktivieren oder Geräteportal verwenden zu müssen. Dies ist eine einfache Methode zum Verteilen einer vollständig erstellten App. Unabhängig davon, ob Sie Ihre App einfach einem anderen Benutzer mit einem HoloLens vordemonst oder Ihre App bereitstellen möchten, funktioniert diese Methode problemlos.
 
 Die Installation über App-Installer gilt für:
 
-* Line of Business/Selbst entwickelte (nicht öffentliche) Apps
-* Nur side-load
-* Der Entwicklermodus oder das Geräteportal ist nicht erforderlich.
+* Branchenspezifische/selbst entwickelte (nicht öffentliche) Apps
+* Nur Seitenladevorgang
+* Der Entwicklermodus oder das Geräteportal sind nicht erforderlich.
 * Einfache Installation durch Endbenutzer

@@ -15,11 +15,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: d071f4326a35a9ea61e2069618da7107bb808f04
-ms.sourcegitcommit: f480d3cc8d549fa356e05df6ce15e9517f5b978a
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "123610988"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032493"
 ---
 # <a name="provisioning-package"></a>Bereitstellungspaket
 
@@ -36,7 +36,7 @@ Apps, die über ein Bereitstellungspaket installiert werden, müssen durch ein Z
 Informationen zu den Grundlagen zum Erstellen eines Bereitstellungspakets für HoloLens-Geräte finden Sie [unter HoloLens Provisioning](/hololens/hololens-provisioning). Um eine App bereitzustellen, müssen Sie mit der erweiterten Bereitstellung beginnen.
 
 > [!NOTE]
-> HoloLens (1. Generation) bietet eingeschränkte Unterstützung für die Installation von Apps (**UniversalAppInstall**) mithilfe eines Bereitstellungspakets. HoloLens -Geräte (1. Generation) unterstützen die Installation einer App über PPKG nur während oobe und nur mit Benutzerkontext-Installationen.
+> HoloLens (1. Generation) bietet eingeschränkte Unterstützung für die Installation von Apps (**UniversalAppInstall**) mithilfe eines Bereitstellungspakets. HoloLens (1. Generation) unterstützen die Installation einer App über PPKG nur während der OOBE und nur bei Benutzerkontext-Installationen.
 
 ## <a name="setup"></a>Einrichten
 

@@ -12,12 +12,12 @@ ms.date: 10/13/2020
 audience: ITPro
 appliesto:
 - HoloLens 1
-ms.openlocfilehash: e332794baf20fbab8278a138ceeafb651c6fa2a06f3f41a66038e544f7a6e46b
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 0fb6c9ed1cd8d3ecc23975052eed54512a465bfb
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115661835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032786"
 ---
 # <a name="hololens-1st-gen-release-notes"></a>Versionshinweise zu HoloLens 1. Generation
 
@@ -33,8 +33,8 @@ Für Entwickler bedeutet dies, dass HoloLens -Apps (1. Generation) die OpenXR-AP
 | Funktion | Details |
 |---|---|
 | **Menü "Schnelle Aktionen"** | Wenn Sie in einer App sind, öffnet die Geste Bloom jetzt ein Menü Schnellaktionen, um Ihnen schnellen Zugriff auf häufig verwendete Systemfeatures zu ermöglichen, ohne die App verlassen zu müssen. <br> Informationen zum Menü Schnellaktionen [im Kioskmodus](hololens-kiosk.md) finden Sie unter Einrichten von HoloLens im Kioskmodus.<br><br> |
-| **Beenden der Videoaufnahme über das Menü "Start" oder "Schnellaktionen"** | Wenn Sie die Videoaufnahme über das Menü Startmenü oder schnelle Aktionen starten, können Sie die Aufzeichnung an derselben Stelle beenden. (Vergessen Sie nicht, sie können dies auch immer mit Sprachbefehlen tun.) |
-| **Project zu einem Miracast-fähigen Gerät** | Project Ihre HoloLens Inhalte an ein surface-Gerät in der Nähe oder einen Tv/Monitor in der Nähe, wenn Sie den Microsoft Display-Adapter verwenden.  Wählen Sie **unter** **Start** Verbinden aus, und wählen Sie dann das Gerät aus, auf das Sie ein Projekt erstellen möchten. **Hinweis:** Sie können HoloLens bereitstellen, um Miracast Projektion zu verwenden, ohne den Entwicklermodus zu aktivieren. |
+| **Beenden der Videoaufnahme über das Menü "Start" oder "Schnellaktionen"** | Wenn Sie die Videoaufnahme über das Menü "Startmenü" oder "Schnelle Aktionen" starten, können Sie die Aufzeichnung an derselben Stelle beenden. (Vergessen Sie nicht, sie können dies auch immer mit Sprachbefehlen tun.) |
+| **Project zu einem Miracast-fähigen Gerät** | Project Ihre HoloLens Inhalte an ein Surface-Gerät in der Nähe oder einen Tv/Monitor in der Nähe, wenn Sie den Microsoft Display-Adapter verwenden.  Wählen Sie **unter** **Start** Verbinden aus, und wählen Sie dann das Gerät aus, auf das Sie ein Projekt erstellen möchten. **Hinweis:** Sie können HoloLens bereitstellen, um Miracast Projektion zu verwenden, ohne den Entwicklermodus zu aktivieren. |
 | **Neue Benachrichtigungen** | Zeigen Sie wie auf einem PC Benachrichtigungs-Popups auf HoloLens an, und reagieren Sie darauf. Anvisieren, um darauf zu reagieren oder sie zu verwerfen (oder wenn Sie sich in einer immersiven Benutzeroberfläche befinden, verwenden Sie die Geste "Bloom"). |
 | **HoloLens Überlagerungen**<br>(Dateiauswahl, Tastatur, Dialogfelder usw.) | Wenn Sie immersive Apps verwenden, werden nun Überlagerungen wie Tastatur, Dialogfelder, Dateiauswahl usw. angezeigt. |
 | **Benutzeroberfläche für visuelles Feedbacküberlagerung für Volumenänderungen** | Wenn Sie die Auf-/Ab-Schaltflächen des Volumes auf Ihrem HoloLens wird eine visuelle Anzeige der Volumeebene angezeigt. |
@@ -69,11 +69,11 @@ Windows 10, Version 1803, ist das erste Featureupdate für Windows Holographic f
 - Zuvor konnten Sie nur überprüfen, ob die Upgradelizenz für Commercial Suite auf Ihr HoloLens Gerät angewendet wurde, indem Sie überprüfen, ob VPN auf dem Gerät verfügbar war. Jetzt zeigt **Einstellungen** System Windows Holographic for Business an,  >   nachdem die Upgradelizenz angewendet wurde.  [Erfahren Sie, wie Sie Windows Holographic for Business Features entsperren.](hololens1-upgrade-enterprise.md)
 
 - Sie können die Buildnummer des Betriebssystems in den Geräteeigenschaften in der Datei-Explorer-App und im [Windows Device Recovery Tool (WDRT)](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq)anzeigen.
-- Die Bereitstellung eines HoloLens Geräts ist jetzt mit dem neuen Assistenten zum **Bereitstellen von HoloLens Geräten** im Windows-Konfigurations-Designer-Tool einfacher. Im Assistenten können Sie die Einrichtungsumgebung und Netzwerkverbindungen konfigurieren, den Entwicklermodus festlegen und massenweise Azure AD Token abrufen. [Erfahren Sie, wie Sie den einfachen Bereitstellungs-Assistenten für HoloLens verwenden.](hololens-provisioning.md#provisioning-package-hololens-wizard)
+- Die Bereitstellung eines HoloLens Geräts ist jetzt mit dem neuen Assistenten **zum Bereitstellen HoloLens Geräten** im Windows-Konfigurations-Designer-Tool einfacher. Im Assistenten können Sie die Einrichtungsumgebung und Netzwerkverbindungen konfigurieren, den Entwicklermodus festlegen und massenweise Azure AD Token abrufen. [Erfahren Sie, wie Sie den einfachen Bereitstellungs-Assistenten für HoloLens verwenden.](hololens-provisioning.md#provisioning-package-hololens-wizard)
 
 - Wenn Sie ein lokales Konto in einem Bereitstellungspaket erstellen, läuft das Kennwort nicht mehr alle 42 Tage ab.
 
-- Sie können HoloLens als Kiosk mit [einer app oder mehreren Apps konfigurieren.](hololens-kiosk.md) Im Kioskmodus mit mehreren Apps können Sie eine HoloLens einrichten, um nur die von Ihnen angegebenen Apps auszuführen, und Benutzer daran hindern, Änderungen vorzunehmen.
+- Sie können HoloLens als Kiosk mit [einer einzelnen App oder mehreren Apps konfigurieren.](hololens-kiosk.md) Im Kioskmodus mit mehreren Apps können Sie eine HoloLens einrichten, um nur die von Ihnen angegebenen Apps auszuführen, und Benutzer daran hindern, Änderungen vorzunehmen.
 
 - Das Media Transfer Protocol (MTP) ist aktiviert, sodass Sie das HoloLens Gerät per USB mit einem PC verbinden und Dateien zwischen HoloLens und dem PC übertragen können. Sie können auch die Datei-Explorer-App verwenden, um Dateien innerhalb HoloLens zu verschieben und zu löschen.
 

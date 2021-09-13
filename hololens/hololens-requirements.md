@@ -13,130 +13,130 @@ ms.date: 11/04/2020
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 5a4f251f3ca6eae5e85e4d763074e035039159cb
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189238"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032869"
 ---
 # <a name="common-deployment-scenarios"></a>Häufige Bereitstellungsszenarien
 
 ## <a name="overview"></a>Übersicht
 
-Es kann schwierig sein, herauszufinden, wie ein neues Gerät bereitgestellt wird, wenn Sie es zum ersten Mal ausprobieren. Hier werden verschiedene Möglichkeiten zum Bereitstellen und Verwalten von Microsoft HoloLens 2 Geräten innerhalb der Organisation bereitgestellt.
+Es kann schwierig sein, herauszufinden, wie Sie ein neues Gerät bereitstellen, wenn Sie es zum ersten Mal ausprobieren. Hier werden verschiedene Möglichkeiten zum Bereitstellen und Verwalten von Microsoft HoloLens 2-Geräten innerhalb der Organisation bereitgestellt und verwaltet.
 
-Sie möchten, dass Lösungen in großem Umfang bereitgestellt werden. Wir möchten Sie dorthin bringen. Zunächst werden die Schritte zum Bereitstellen von Geräten (also Hologrammen) beschrieben, um einen Mehrwert für Ihr Mixed Reality-Zielszenario zu erzielen, unabhängig davon, ob Sie D365 Remote Assist, Handbücher oder eine azure mixed reality-dienstfähige Anwendung verwenden, die Sie erstellt haben.
+Sie möchten Lösungen im großen Stil bereitgestellt haben. Wir möchten Sie dort finden. Zunächst werden die Schritte zum Bereitstellen von Geräten (also Hologrammen) beschrieben, um einen Mehrwert für Ihr Mixed Reality-Zielszenario zu erzielen, unabhängig davon, ob Sie D365 Remote Assist, Guides oder eine von Ihnen erstellte Azure Mixed Reality-Dienstanwendung verwenden.
 
-Möglicherweise sind Sie ein Geschäftlicher Entscheidungsträger, IT-Experten oder ein Innovationsteam, das HoloLens in Ihrer Organisation übernehmen möchte. Wenn Sie vom Proof of Concept bis hin zu einer skalierten Bereitstellung entwickeln, sind unsere Bereitstellungsleitfäden für HoloLens innerhalb Ihrer IT-Infrastruktur sinnvoll – unabhängig davon, wie groß oder klein sie sind. Die folgenden Bereitstellungsszenarien sind die gängigsten:
+Möglicherweise sind Sie ein Entscheidungsträger im Unternehmen, IT-Experten oder Innovationsteam, das HoloLens Inbetrieb nehmen möchten. Wenn Sie vom Proof of Concept bis zu einer skalierten Bereitstellung aufbauen, sind unsere Bereitstellungsleitfäden für die HoloLens in Ihrer IT-Infrastruktur sinnvoll – unabhängig davon, wie groß oder klein sie sind. Die folgenden Bereitstellungsszenarien werden am häufigsten verwendet:
 
 | Szenario |Verwendung | Wesentliche Punkte |
 |---------|---------|---------|
-| [Szenario A: Mit der Cloud verbundene Geräte](hololens2-cloud-connected-overview.md) | Wenn Sie ihre Bereitstellung zum ersten Mal starten, können Sie klein anfangen und ein einzelnes Gerät bereitstellen, das mit der Cloud verbunden ist, um den grundlegenden Prozess anzuzeigen. | Geräte werden mit Clouddiensten und dem öffentlichen Internet verbunden. Dies eignet sich am besten für Anwendungsfälle von Kunden, Außendienst und Proof of Concept.|
-| [Szenario B: Netzwerk der Organisation](hololens2-corp-connected-overview.md) | Wenn Sie die Bereitstellung in der Produktionsumgebung im großen Stil durchführen, müssen Sie möglicherweise in das Netzwerk Ihrer eigenen Organisation integriert werden. | Geräte werden mit einem UNTERNEHMENS-WLAN-Netzwerk verbunden. Dies eignet sich am besten für interne Benutzer oder die Verwendung innerhalb der Unternehmensumgebung.|
-| [Szenario C: Sichere Offlineumgebung](hololens-common-scenarios-offline-secure.md) | Einige unternehmenskritische Prozesse oder einige Unternehmensrichtlinien erfordern möglicherweise die Verwendung von Offlineumgebungen. | Geräte werden mit einem stark restriktiven Netzwerk verbunden oder sind ausschließlich Offlinegeräte. Dies eignet sich am besten für äußerst sichere Umgebungen oder Internetkonnektivitätseinschränkungen in Remotebereichen. |
+| [Szenario A: Mit der Cloud verbundene Geräte](hololens2-cloud-connected-overview.md) | Wenn Sie ihre Bereitstellung zum ersten Mal starten, können Sie klein anfangen und ein einzelnes Gerät bereitstellen, das mit der Cloud verbunden ist, um den grundlegenden Prozess zu sehen. | Geräte werden mit Clouddiensten und dem öffentlichen Internet verbunden. Dies eignet sich am besten für Anwendungsfälle, Außendienstdienste und Proof of Concept.|
+| [Szenario B: Netzwerk der Organisation](hololens2-corp-connected-overview.md) | Bei der Bereitstellung in der Produktionsumgebung im großen Stil müssen Sie möglicherweise in das Netzwerk Ihrer eigenen Organisation integrieren. | Geräte werden mit einem UNTERNEHMENS-WLAN-Netzwerk verbunden. Dies eignet sich am besten für interne Benutzer oder die Verwendung in der Unternehmensumgebung.|
+| [Szenario C: Sichere Offlineumgebung](hololens-common-scenarios-offline-secure.md) | Einige unternehmenskritische Prozesse oder unternehmensrichtlinien erfordern möglicherweise die Verwendung von Offlineumgebungen. | Geräte werden mit einem stark restriktiven Netzwerk verbunden oder sind rein offline. Dies eignet sich am besten für hochsichere Umgebungen oder Einschränkungen der Internetkonnektivität in Remotebereichen. |
 
 ## <a name="scenario-a-deploy-to-cloud-connected-devices"></a>Szenario A: Bereitstellen auf mit der Cloud verbundenen Geräten
 
-Dieses Szenario ist vergleichbar mit der Bereitstellung verwalteter mobiler Geräte innerhalb eines Unternehmens. HoloLens 2 wird in erster Linie in Umgebungen außerhalb eines Unternehmensnetzwerks bereitgestellt. Auf Unternehmensressourcen wird nicht zugegriffen oder kann über VPN eingeschränkt werden.
+Dieses Szenario ist vergleichbar mit der Bereitstellung verwalteter mobiler Geräte in einem Unternehmen. HoloLens 2 wird hauptsächlich für die Verwendung in Umgebungen außerhalb eines Unternehmensnetzwerks bereitgestellt. Auf Unternehmensressourcen wird nicht zugegriffen oder kann über VPN eingeschränkt werden.
 
 [![Szenario Ein Diagramm.](images/deployment-guides-revised-scenario-a.png)](images/deployment-guides-revised-scenario-a.png#lightbox)
 
 ### <a name="when-to-use"></a>Verwendung
 
-Betrachten Sie dieses Bereitstellungsmodell für:
+Betrachten Sie dieses Bereitstellungsmodell für Folgendes:
 
-* Bereitstellen von Proof of Concept, Pilotprojekten und Außendienstdiensten
-* Bereitstellen von [Remote Assist](hololens2-options-remote-assist.md)
+* Bereitstellen von Proof of Concept, Pilotversuchen und Außendienstdiensten
+* Bereitstellen [von Remote Assist](hololens2-options-remote-assist.md)
 
 ### <a name="basic-common-configurations"></a>Grundlegende allgemeine Konfigurationen
 
-* Wi-Fi Netzwerke sind in der Regel vollständig für das Internet und Clouddienste geöffnet.
-* Azure AD Mit mobiler Geräteverwaltung (MDM) automatischer Registrierung beitreten – MDM (Intune) verwaltet
+* Wi-Fi-Netzwerke sind in der Regel vollständig für das Internet und Clouddienste geöffnet.
+* Azure AD join with Mobile Geräteverwaltung (MDM) Auto Enrollment –MDM (Intune) Managed
 * Benutzer melden sich mit ihrem eigenen Unternehmenskonto (Azure AD) an.
-  * Einzelne oder mehrere Benutzer pro Gerät unterstützt
-* Unterschiedliche Ebenen von Gerätesperrungskonfigurationen werden basierend auf bestimmten Anwendungsfällen angewendet, von Vollständig geöffnet bis zu Kiosk mit einzelner App.
-* Eine oder mehrere Anwendungen werden über MDM bereitgestellt.
+  * Unterstützter Einzelbenutzer oder mehrere Benutzer pro Gerät
+* Verschiedene Ebenen von Gerätesperrungskonfigurationen werden basierend auf bestimmten Anwendungsfällen angewendet, von Vollständig geöffnet bis Einzel-App-Kiosk.
+* Mindestens eine Anwendung wird über MDM bereitgestellt.
 
 ### <a name="common-challenges"></a>Häufige Herausforderungen
 
-* Bestimmen der MDM-Konfigurationen, die auf die HoloLens 2 angewendet werden sollen, basierend auf den Szenarioanforderungen
+* Bestimmen der MDM-Konfigurationen, die auf die HoloLens 2 basierend auf den Szenarioanforderungen angewendet werden
 
-Im entsprechenden Leitfaden für cloudfähige Verbindungen wird erläutert, wie Sie HoloLens 2 bei Der Geräteverwaltung registrieren, Lizenzen nach Bedarf anwenden und überprüfen, ob Ihre Endbenutzer Remote Assist sofort bei der Geräteeinrichtung verwenden können.
-
-> [!div class="nextstepaction"]
-> [Leitfaden zur Bereitstellung mit Cloudverbindung](hololens2-cloud-connected-overview.md)
-
-Verwenden Sie den Leitfaden für externe Clients, um Geräte zur kurzfristigen oder langfristigen externen Verwendung an einem Remotestandort bereitzustellen.
+Im entsprechenden Cloud Connected-Leitfaden erfahren Sie, wie Sie HoloLens 2 bei Ihrer Geräteverwaltung registrieren, Lizenzen nach Bedarf anwenden und überprüfen, ob Ihre Endbenutzer die Geräte bei der Geräteeinrichtung Remote Assist sofort verwenden können.
 
 > [!div class="nextstepaction"]
-> [Bereitstellungshandbuch für cloudverbundene (externe Clients)](hololens2-deployment-guide.md)
+> [Leitfaden für die Cloud Connected-Bereitstellung](hololens2-cloud-connected-overview.md)
 
-## <a name="scenario-b-deploy-inside-your-organizations-network"></a>Szenario B: Bereitstellen innerhalb des Netzwerks Ihrer Organisation
+Verwenden Sie den Leitfaden externe Clients, um Geräte für die kurzfristige oder langfristige externe Verwendung an einem Remotestandort bereitzustellen.
 
-Dieses Szenario ist mit einer klassischen Bereitstellung für die meisten Windows 10 PCs identisch. HoloLens 2 wird für die Verwendung in erster Linie im Unternehmensnetzwerk mit Zugriff auf interne Unternehmensressourcen bereitgestellt. Internet- und Clouddienste können eingeschränkt sein. 
+> [!div class="nextstepaction"]
+> [Bereitstellungshandbuch für cloud verbundene (externe Clients)](hololens2-deployment-guide.md)
 
-[![Szenario B1-Diagramm.](images/deployment-guides-revised-scenario-b-01-1.png)](images/deployment-guides-revised-scenario-b-01-1.png#lightbox)
+## <a name="scenario-b-deploy-inside-your-organizations-network"></a>Szenario B: Bereitstellen im Netzwerk Ihrer Organisation
+
+Dieses Szenario ist identisch mit einer klassischen Bereitstellung für die Windows 10 PCs. HoloLens 2 wird hauptsächlich für die Verwendung im Unternehmensnetzwerk mit Zugriff auf interne Unternehmensressourcen bereitgestellt. Internet- und Clouddienste sind möglicherweise eingeschränkt. 
+
+[![Diagramm zu Szenario B1.](images/deployment-guides-revised-scenario-b-01-1.png)](images/deployment-guides-revised-scenario-b-01-1.png#lightbox)
 
 [![Szenario B2-Diagramm.](images/deployment-guides-revised-scenario-b-02-1.png)](images/deployment-guides-revised-scenario-b-02-1.png#lightbox)
 
 ### <a name="when-to-use"></a>Verwendung
 
-Betrachten Sie dieses Bereitstellungsmodell für:
+Betrachten Sie dieses Bereitstellungsmodell für Folgendes:
 
 * Interne Benutzer
-* Bereitstellung im großen Stil (Pilot und Produktion) in der Unternehmensumgebung
+* Bereitstellung im großen Stil (Pilot und Produktion) innerhalb der Unternehmensumgebung
 
 ### <a name="basic-common-configurations"></a>Grundlegende allgemeine Konfigurationen
 
 * Wi-Fi Netzwerk ist ein internes Unternehmensnetzwerk mit Zugriff auf interne Ressourcen und eingeschränktem Zugriff auf das Internet oder Clouddienste.
-* Azure AD Beitreten zur automatischen MDM-Registrierung
+* Azure AD Join with MDM Auto Enrollment
 * MDM (Intune) Verwaltet
 * Benutzer melden sich mit ihrem eigenen Unternehmenskonto (Azure AD) an.
-  * Einzelne oder mehrere Benutzer pro Gerät unterstützt
-* Unterschiedliche Ebenen von Gerätesperrungskonfigurationen werden basierend auf bestimmten Anwendungsfällen angewendet, von Vollständig geöffnet bis zu Kiosk mit einzelner App.
-* Eine oder mehrere Anwendungen werden über MDM bereitgestellt.
+  * Unterstützter Einzelbenutzer oder mehrere Benutzer pro Gerät
+* Verschiedene Ebenen von Gerätesperrungskonfigurationen werden basierend auf bestimmten Anwendungsfällen angewendet, von Vollständig geöffnet bis Einzel-App-Kiosk.
+* Mindestens eine Anwendung wird über MDM bereitgestellt.
 
 ### <a name="common-challenges"></a>Häufige Herausforderungen
 
-* HoloLens 2 unterstützt keine lokale AD-Verknüpfung oder System Center Configuration Manager (SCCM). Nur Azure AD mit MDM beitreten. Viele Unternehmen stellen in diesem Szenario noch immer Windows 10 PCs als lokale, in AD eingebundene Geräte bereit, die von SCCM verwaltet werden, und verfügen möglicherweise nicht über die bereitgestellte/konfigurierte Infrastruktur für die Verwaltung interner Windows 10 Geräte über cloudbasierte MDM-Lösungen.
-* Da es sich bei HoloLens 2 um ein cloudbasiertes Gerät handelt, basiert es in hohem Maße auf internet- und cloudverbundenen Diensten für Benutzerauthentifizierung, Betriebssystemupdates, MDM-Verwaltung usw. Beim Herstellen einer Verbindung mit einem Unternehmensnetzwerk müssen wahrscheinlich Proxy-/Firewallregeln angepasst werden, um den Zugriff für HoloLens 2 und die darauf ausgeführten Anwendungen zu ermöglichen.
-* Unternehmenskonnektivität Wi-Fi erfordert in der Regel Zertifikate, um das Gerät oder den Benutzer beim Netzwerk zu authentifizieren. Die erforderliche Infrastruktur oder die erforderlichen Einstellungen zum Bereitstellen von Zertifikaten auf Windows 10 Geräten über MDM können schwierig zu konfigurieren sein.
+* HoloLens 2 unterstützt keine lokale AD-Verknüpfung oder -System Center Configuration Manager (SCCM). Nur Azure AD mit MDM beitreten. Viele Unternehmen stellen in diesem Szenario weiterhin Windows 10-PCs als lokale AD-geräte bereit, die von SCCM verwaltet werden und möglicherweise nicht über die Infrastruktur verfügen, die für die Verwaltung interner Windows 10-Geräte über cloudbasierte MDM-Lösungen bereitgestellt/konfiguriert ist.
+* Da HoloLens 2 ein Cloud-First-Gerät ist, ist es für die Benutzerauthentifizierung, Betriebssystemupdates, MDM-Verwaltung und so weiter stark von mit dem Internet und der Cloud verbundenen Diensten abhängig. Beim Herstellen einer Verbindung mit einem Unternehmensnetzwerk müssen wahrscheinlich Proxy-/Firewallregeln angepasst werden, um den Zugriff für HoloLens 2 anwendungen zu ermöglichen, die darauf ausgeführt werden.
+* UnternehmensWi-Fi verbindung erfordert in der Regel Zertifikate, um das Gerät oder den Benutzer beim Netzwerk zu authentifizieren. Die erforderliche Infrastruktur oder Einstellungen zum Bereitstellen von Zertifikaten auf Windows 10 Geräten über MDM kann eine Herausforderung darstellen.
 
-Im entsprechenden Leitfaden für unternehmensinterne Verbindungen erfahren Sie, wie Sie HoloLens 2 bei Ihrer vorhandenen Geräteverwaltung registrieren, Lizenzen nach Bedarf anwenden und überprüfen, ob Ihre Endbenutzer nach der Geräteeinrichtung einen Dynamics 365-Leitfaden betreiben und benutzerdefinierte Branchen-Apps verwenden können.
+Der entsprechende Leitfaden für verbundene Unternehmen weist Sie an, wie Sie HoloLens 2 bei Ihrer vorhandenen Geräteverwaltung registrieren, bei Bedarf Lizenzen anwenden und überprüfen, ob Ihre Endbenutzer ein Dynamics 365-Handbuch betreiben und benutzerdefinierte Line-of-Business-Apps verwenden können, nachdem das Gerät eingerichtet wurde.
 
 > [!div class="nextstepaction"]
-> [Bereitstellungshandbuch für unternehmenseingegeschaltete Verbindungen](hololens2-corp-connected-overview.md)
+> [Leitfaden für die Bereitstellung von verbundenen Unternehmen](hololens2-corp-connected-overview.md)
 
 ## <a name="scenario-c-deploy-in-secure-offline-environment"></a>Szenario C: Bereitstellen in einer sicheren Offlineumgebung
 
 Dies ist eine typische Bereitstellung für äußerst sichere oder vertrauliche Standorte. HoloLens 2 wird für die Verwendung in erster Linie offline ohne Netzwerk- oder Internetzugriff bereitgestellt.
 
-[![Diagramm 1 zur Offlinesicherheit.](images/deployment-guides-revised-scenario-c-01.png)](images/deployment-guides-revised-scenario-c-01.png#lightbox)
+[![Offline: Sicheres Diagramm 1.](images/deployment-guides-revised-scenario-c-01.png)](images/deployment-guides-revised-scenario-c-01.png#lightbox)
 
 ### <a name="when-to-use"></a>Verwendung
 
-Betrachten Sie dieses Bereitstellungsmodell für:
+Betrachten Sie dieses Bereitstellungsmodell für Folgendes:
 
-* Hochsichere Umgebungen, in denen Daten im Haus aufbewahrt werden müssen
-* "Erfahrungen", in denen die Öffentlichkeit die Geräte verwendet
+* Äußerst sichere Umgebungen, in denen Daten im Haus aufbewahrt werden müssen
+* "Erfahrungen", bei denen die Öffentlichkeit die Geräte verwendet
 * Internetkonnektivitätsproblem im Remotebereich
 
 ### <a name="basic-common-configurations"></a>Grundlegende allgemeine Konfigurationen
 
-* Wi-Fi Konnektivität ist deaktiviert. Ethernet über USB kann bei Bedarf für LAN-Konnektivität aktiviert werden.
+* Wi-Fi Die Konnektivität ist deaktiviert. Ethernet über USB kann bei Bedarf für LAN-Konnektivität aktiviert sein.
 * Nicht verwaltet
-* Lokales Benutzerkonto für die Geräteanmeldung
+* Lokales Benutzerkonto für die Geräte anmeldung
   * HoloLens 2 unterstützt nur ein lokales Konto.
 * Unterschiedliche Ebenen von Gerätesperrungskonfigurationen werden über Bereitstellungspakete basierend auf bestimmten Anwendungsfällen angewendet. Diese Konfigurationen sind in der Regel aufgrund sicherer Umgebungsanforderungen eingeschränkt.
-* Eine oder mehrere Anwendungen werden über das Bereitstellungspaket bereitgestellt.
+* Mindestens eine Anwendung wird über das Bereitstellungspaket bereitgestellt.
 
 ### <a name="common-challenges"></a>Häufige Herausforderungen
 
 * Es gibt eine begrenzte Anzahl von Konfigurationen, die über Bereitstellungspakete verfügbar sind.
-* Clouddienste können nicht verwendet werden, wodurch die HoloLens 2 Funktionen eingeschränkt werden.
+* Clouddienste können nicht verwendet werden, wodurch die HoloLens 2 eingeschränkt wird.
 * Höherer Verwaltungsaufwand, da diese Geräte manuell eingerichtet, konfiguriert und aktualisiert werden müssen.
 
-Der entsprechende sichere Offlineleitfaden enthält Anweisungen zum Anwenden eines Beispielbereitstellungspakets, das eine HoloLens 2 für die Verwendung in sicheren Umgebungen sperrt.
+Der entsprechende Sichere Offlineleitfaden enthält Anweisungen zum Anwenden eines Beispielbereitstellungspakets, das eine HoloLens 2 für die Verwendung in sicheren Umgebungen sperrt.
 
 > [!div class="nextstepaction"]
 > [Bereitstellungshandbuch für sichere Offlineumgebung](hololens-common-scenarios-offline-secure.md)

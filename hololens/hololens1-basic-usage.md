@@ -15,11 +15,11 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: 70ee881eb0c2ffaade173b31e5168371d042bbb2
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190071"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032858"
 ---
 # <a name="getting-around-hololens-1st-gen"></a>Aufbau der HoloLens (1. Generation)
 
@@ -33,36 +33,36 @@ Auf HoloLens werden Hologramme mit Ihrer physischen Umgebung kombiniert, um so a
 
 Der holografische Rahmen positioniert Ihre Hologramme an der Stelle, an der Ihre Augen für Details am empfindlichsten sind, und die durchsichtigen Brillen sorgen dafür, dass Ihr Peripheriebild ungeöffnet ist. Mit räumlichem Sound können Sie ein Hologramm auch dann lokalisieren, wenn es sich hinter Ihnen befindet. Und da HoloLens Ihre Umgebung lernt und versteht, können Sie Hologramme auf und um echte Objekte platzieren – ebenso wie Ihre Apps und Spiele. Ein Zeichen in einem Spiel könnte sich also auf Ihrem Automaten befinden, oder [Raumboten könnten aus Ihren Wänden herausfahren.](https://www.microsoft.com/store/apps/9nblggh5fv3j)
 
-## <a name="use-hololens-with-your-hands"></a>Verwenden von HoloLens mit Ihren Händen
+## <a name="use-hololens-with-your-hands"></a>Verwenden von HoloLens mit ihren Händen
 
 Der Umgang mit HoloLens ähnelt dem Umgang mit Ihrem Smartphone. Sie können Ihre Hände verwenden, um holografische Fenster, Menüs und Schaltflächen zu bearbeiten.  Anstatt zu zeigen, zu klicken oder zu tippen, verwenden Sie Das Anvieren, Ihre [Stimme](hololens-cortana.md)und Gesten, um Apps und Hologramme auszuwählen und HoloLens zu umgehen.
 
 Wenn Sie diese grundlegenden Interaktionen kennen, ist es ein Kinderspiel, sich mit HoloLens zu bewegen.
 
-Wir werden Sie bei der ersten Verwendung Ihrer HoloLens durch die Grundlagen gehen. Sie finden auch ein Gestentutorial im **Startmenü–** suchen Sie nach der App "Gesten lernen".
+Wir werden Sie bei der ersten Verwendung Ihrer HoloLens durch die Grundlagen gehen. Sie finden auch ein Gestentutorial im **Startmenü–** suchen Sie nach der App Learn Gestures.
 
 ### <a name="the-hand-tracking-frame"></a>Der Rahmen für die Handnachverfolgung
 
 HoloLens verfügt über Sensoren, die zu beiden Seiten ein paar Meter weit sehen können. Wenn Sie Ihre Hände einsetzen, müssen Sie sie innerhalb dieses Rahmens halten, da die HoloLens sie sonst sieht nicht. Während Sie sich bewegen, bewegt sich der Frame mit Ihnen.  
 
-![Abbildung, die den HoloLens Handtrackingframes zeigt.](./images/hololens-2-gesture-frame.png)
+![Abbildung des Rahmens für die Handnachverfolgung von HoloLens.](./images/hololens-2-gesture-frame.png)
 
 ### <a name="open-the-start-menu-with-bloom"></a>Öffnen Sie die Startmenü mit Bloom.
 
 So öffnen Sie das **Startmenü:**
 
-1. Halten Sie Ihre Hand vor Sich, sodass sie sich im Gestenrahmen zeigt.
+1. Halten Sie Ihre Hand vor Sich, damit sie sich im Gestenrahmen begibt.
 1. Bloom: Bringen Sie alle Finger zusammen, und öffnen Sie ihre Hand.
   ![Animation, die die Geste "Bloom" zeigt.](./images/hololens-bloom.gif)
 
 ### <a name="select-holograms-with-gaze-and-air-tap"></a>Auswählen von Hologrammen mit Anvieren und Tippen in die Luft
 
-Um eine App oder ein anderes Hologramm auszuwählen, tippen Sie in die Luft, während Sie das ausgewählte Hologramm direkt betrachten. Gehen Sie dazu folgendermaßen vor:
+Um eine App oder ein anderes Hologramm auszuwählen, tippen Sie in der Luft darauf, während Sie das ausgewählte Hologramm direkt betrachten. Gehen Sie hierzu folgendermaßen vor:
 
 1. Sehen Sie sich das Hologramm an, das Sie auswählen möchten.
 1. Zeigen Sie mit dem Zeigefinger gerade nach oben zur Decke.
-1. Tippen In die Luft: Drücken Sie den Finger, und heben Sie ihn dann schnell an.
-   ![Gestenanimation mit Tippbewegung in die Luft.](./images/hololens-air-tap.gif)
+1. Tippen in die Luft: Drücken Sie den Finger, und heben Sie ihn schnell an.
+   ![Animation der Tippbewegung in die Luft.](./images/hololens-air-tap.gif)
 
 ### <a name="select-a-hologram-by-using-your-voice"></a>Auswählen eines Hologramms mit ihrer Stimme
 
@@ -87,7 +87,7 @@ Wenn Sie ein App-Fenster oder ein App-Startfenster platzieren, bleibt es so lang
 Das Verschieben und Ändern der Größe von Apps auf HoloLens funktioniert etwas anders als auf einem PC. Anstatt die App zu ziehen, verwenden Sie das Anvieren zusammen mit einer [Geste](https://support.microsoft.com/help/12644/hololens-use-gestures) oder dem [Klicker](hololens1-clicker.md). Sie können ein App-Fenster auch im 3D-Bereich drehen.
 
 > [!TIP]
-> Apps mit Ihrer Stimme neu anordnen: Sie können eine App anvieren und "Zu mir drehen", "Größer" oder "Kleiner" sagen. Sie können auch Cortana eine App für Sie verschieben: "Hey Cortana, app name here" (Hallo Cortana, \* *App-Name \** hier verschieben).
+> Apps mit Ihrer Stimme neu anordnen: Sie können eine App anvieren und "Zu mir drehen", "Größer" oder "Kleiner" sagen. Sie können auch Cortana eine App für Sie verschieben: "Hey Cortana, \* *move app name \** here".
 
 ### <a name="move-an-app"></a>Verschieben einer App
 
@@ -104,9 +104,9 @@ Sehen Sie sich die App an (in der Titelleiste eines App-Fensters), und gehen Sie
 
 Sehen Sie sich die App an, und gehen Sie dann wie folgt vor.
 
-- Anvimen an einer Ecke oder einem Rand eines App-Fensters und Tippen und Halten. Bewegen Sie Ihre Hand, um die Größe der App zu ändern, und heben Sie den Finger, wenn Sie fertig sind.
+- Sie können eine Ecke oder einen Rand eines App-Fensters anv und tippen und halten. Bewegen Sie Ihre Hand, um die Größe der App zu ändern, und heben Sie den Finger, wenn Sie fertig sind.
 - Wählen Sie **Anpassen** aus. Sie können eines der blauen Quadrate an den Ecken der App anvisieren, tippen und halten und dann ihre Hand bewegen, um die Größe der App zu ändern. Heben Sie den Finger, um ihn freizugeben, und wählen Sie dann **Fertig** aus.
-- Wählen Sie **Anpassen** aus. Sehen Sie sich eines der blauen Quadrate an den Ecken der App an, klicken Und halten Sie den Clicker, und bewegen Sie ihre Hand, um die Größe der App zu ändern. Geben Sie den Clicker frei, und wählen Sie dann **Fertig** aus.
+- Wählen Sie **Anpassen** aus. Anvisieren Sie eines der blauen Quadrate an den Ecken der App, klicken Und halten Sie den Clicker, und bewegen Sie ihre Hand, um die Größe der App zu ändern. Geben Sie den Clicker frei, und wählen Sie dann **Fertig** aus.
 
 > [!TIP]
 > Im Anpassungsmodus können Sie beliebige Hologramme verschieben oder deren Größe ändern.
@@ -117,11 +117,11 @@ Sehen Sie sich die App an, und halten Sie sie mit beiden Händen an, um sie ausz
 
 ### <a name="scroll-content-in-an-app-window"></a>Scrollen von Inhalten in einem App-Fenster
 
-Sehen Sie sich den Inhalt des App-Fensters an. Tippen Und halten Sie die Hand gedrückt, und bewegen Sie sie leicht nach oben oder unten, um den Inhalt zu scrollen.
+Sehen Sie sich den Inhalt des App-Fensters an. Tippen Und halten Sie die Hand gedrückt, und bewegen Sie sie dann leicht nach oben oder unten, um den Inhalt zu scrollen.
 
 ## <a name="meet-the-hololens-1st-gen-clicker"></a>Meet the HoloLens (1st gen) Clicker (Erfüllen des HoloLens(1. Generation)-Clicker)
 
-Der [HoloLens-Klicker (1. Generation)](hololens1-clicker.md) bietet Ihnen eine weitere Möglichkeit, mit Hologrammen zu interagieren. [Koppeln Sie es](hololens-connect-devices.md) mit Ihrem HoloLens, und verwenden Sie es dann zusammen mit Dem Anvieren, um auszuwählen, zu scrollen und vieles mehr.
+Der [HoloLens-Clicker (1. Generation)](hololens1-clicker.md) bietet Ihnen eine weitere Möglichkeit, mit Hologrammen zu interagieren. [Koppeln Sie es](hololens-connect-devices.md) mit Ihrem HoloLens, und verwenden Sie es dann zusammen mit Dem Anvieren, um auszuwählen, zu scrollen und vieles mehr.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
@@ -140,4 +140,4 @@ Wenn Sie bei der Verwendung von HoloLens keine Hologramme sehen, die Sie platzie
 - Stellen Sie sicher, dass Sie im rechten Bereich &mdash; suchen. Beachten Sie, dass Hologramme dort bleiben, wo Sie sie verlassen haben!
 - Stellen Sie sicher, dass Sie sich in einem gut beleuchteten Raum ohne viele direkte Würfe befinden.
 - Warte. Wenn HoloLens Probleme beim Erkennen Ihres Raums haben, kann es bis zu einer Minute dauern, bis zuvor platzierte Hologramme wieder angezeigt werden.
-- Wenn das Problem weiterhin besteht, sollten Sie Ihre Hologramme-Speicherdaten in **Einstellungen** System Hologramme löschen und hologramme dann erneut in Mixed Reality Startumgebung  >    >  platzieren.
+- Wenn das Problem weiterhin besteht, sollten Sie Ihre Hologramme-Speicherdaten in **Einstellungen** System Hologramme löschen und hologramme dann wieder in Mixed Reality Startumgebung  >    >  platzieren.
