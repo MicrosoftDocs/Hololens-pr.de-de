@@ -11,11 +11,11 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: Holografischer Rahmen, Sichtfeld, Kalibrierung, Räume, Umgebung, Hilfe und Anleitung, HoloLens, Mixed Reality, Mixed Reality-Headsets
 ms.openlocfilehash: 6976527d759e768fa5da72f96395a8b7b390cefd
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428615"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126034282"
 ---
 # <a name="hololens-environment-considerations"></a>Überlegungen zur HoloLens-Umgebung
 

@@ -10,11 +10,11 @@ ms.localizationpriority: high
 ms.reviewer: ''
 manager: yannisle
 ms.openlocfilehash: 8ef73733b9fa4f422335977be860371b9570d549
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126034388"
 ---
 # <a name="introducing-the-new-microsoft-edge"></a>Vorstellung des neuen Microsoft Edge
 

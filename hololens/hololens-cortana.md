@@ -16,11 +16,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: f6e3dd8f7dc90cea158d000251973ec75dc76a90
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427252"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126034222"
 ---
 # <a name="use-your-voice-to-operate-hololens"></a>Verwenden Ihrer Stimme zum Bedienen von HoloLens
 
