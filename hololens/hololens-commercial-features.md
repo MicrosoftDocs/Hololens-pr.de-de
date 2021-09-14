@@ -17,12 +17,12 @@ manager: skerewa
 appliesto:
 - HoloLens 2
 keywords: HoloLens 2, kommerziell, Features, MDM, Verwaltung mobiler Geräte, Kioskmodus, Anwendungen, Identität, BitLocker, Iris, Windows Hello, Azure-gestützt, Autopilot, Mixed Reality, WDAC
-ms.openlocfilehash: 0c47eedad0d5a23249c48356765b74e4dbeac33e
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.openlocfilehash: aef0bfd8672464eb71d147eeffa3e0ea245dbbd0
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428500"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126034257"
 ---
 # <a name="hololens-2-capabilities-and-solutions"></a>HoloLens 2-Funktionen und -Lösungen
 
@@ -77,7 +77,7 @@ Was macht die HoloLens 2 so leistungsfähig?
     :::column-end:::
     :::column span="2":::
         ### <a name="sheba-medical-center-uses-microsofts-hololens-for-ventilators-training"></a>[Sheba Medical Center verwendet HoloLens von Microsoft für die Schulung an Beatmungsgeräten.](https://customers.microsoft.com/en-us/story/1388628932382960935-sheba-health-provider-azure-en-israel)
-        HoloLens im Dienste medizinischer Schulung in Krisenzeiten.
+        Die Mitarbeiter im Sheba Medical Center verwendeten HoloLens, um Krankenschwestern und andere unterstützende Mitarbeiter in der Verwendung von Beatmungsgeräten zu schulen, die während der COVID-19-Pandemie zu Hunderten eingesetzt wurden.
     :::column-end:::
 :::row-end:::
 
