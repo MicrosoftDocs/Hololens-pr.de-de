@@ -76,8 +76,6 @@
 ### [Netzwerksicherheit](security-network-security.md)
 ### [Sicherheitsentwicklung](security-engineering.md)
 ### [HoloLens 2-Datenschutz](hololens2-privacy.md)
-## -Geräteverwaltung
-### [Verwenden von MDM zum Verwalten von HoloLens-Geräten](hololens-mdm-configure.md)
 ## Geräteregistrierung
 ### [Registrieren von HoloLens in MDM](hololens-enroll-mdm.md)
 ### [Windows Autopilot für HoloLens 2](hololens2-autopilot.md) 
@@ -90,6 +88,7 @@
 ### [App-Installer](app-deploy-app-installer.md)
 ## Richtlinien (CSPs)
 ### [Übersicht über CSPs und Geräteverwaltung konfigurieren](hololens-csp-policy-overview.md)
+### [Verwenden von MDM zum Verwalten von HoloLens-Geräten](hololens-mdm-configure.md)
 ### [Konfigurieren von HoloLens mithilfe von Bereitstellungspaketen](hololens-provisioning.md)
 ### [Allgemeine Geräteeinschränkungen](hololens-common-device-restrictions.md)
 ### [Einrichten von HoloLens als Kiosk](hololens-kiosk.md)
