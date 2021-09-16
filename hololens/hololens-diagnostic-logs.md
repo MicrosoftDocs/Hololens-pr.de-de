@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2cbf3005293f4fde91b22f3ff87edc6041e53336
-ms.sourcegitcommit: 16897df83c309acecf04e2bcfea310891cb6681b
+ms.openlocfilehash: e977d0d42831760749bb5c6c469d2482e2ca72e7
+ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "127817275"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "127833521"
 ---
 # <a name="collect-and-use-diagnostic-information-from-hololens-devices"></a>Sammeln und Verwenden von Diagnoseinformationen von HoloLens-Geräten
 
@@ -35,7 +35,7 @@ HoloLens Benutzer und Administratoren können aus vier verschiedenen Methoden au
 - Offlinediagnose
 
 > [!IMPORTANT]  
-> Gerätediagnoseprotokolle enthalten personenbezogene Informationen (PiI), z. B. darüber, welche Prozesse oder Anwendungen der Benutzer bei typischen Vorgängen startet. Wenn mehrere Benutzer ein HoloLens Gerät freigeben (z. B. wenn sich Benutzer mit unterschiedlichen Microsoft Azure Active Directory -Konten (Azure AD) beim gleichen Gerät anmelden), können die Diagnoseprotokolle PERSONENBEZOGENE Informationen enthalten, die für mehrere Benutzer gelten. Weitere Informationen finden Sie in den [Datenschutzbestimmungen von Microsoft.](https://privacy.microsoft.com/privacystatement)
+> Gerätediagnoseprotokolle enthalten personenbezogene Informationen (PiI), z. B. darüber, welche Prozesse oder Anwendungen der Benutzer bei typischen Vorgängen startet. Wenn mehrere Benutzer ein HoloLens Gerät freigeben (z. B. wenn sich Benutzer mit unterschiedlichen Microsoft Azure Active Directory -Konten (Azure AD) beim gleichen Gerät anmelden), enthalten die Diagnoseprotokolle möglicherweise PII-Informationen, die für mehrere Benutzer gelten. Weitere Informationen finden Sie in den [Datenschutzbestimmungen von Microsoft.](https://privacy.microsoft.com/privacystatement)
 
 In der folgenden Tabelle werden verschiedene Auflistungsmethoden verglichen. Die Methodennamen sind mit ausführlicheren Informationen in den Abschnitten verknüpft, die der Tabelle folgen.
 
@@ -74,7 +74,7 @@ Der Feedback-Hub bietet dem Benutzer zwei Orte zum Speichern von Diagnoseinforma
    > [!NOTE]  
    > Diese Anforderungen gelten für Daten in allen Feedback-Hub Kategorien.
 
-- **Die HoloLens Geräts**. Beim Erstellen eines Berichts in Feedback-Hub kann der Benutzer lokale Kopie der Diagnose und Anlagen speichern auswählen, die **beim Senden von Feedback erstellt wurden.** Wenn der Benutzer diese Option auswählt, speichert der Feedback-Hub eine Kopie der Diagnoseinformationen auf dem HoloLens Gerät. Auf diese Informationen kann der Benutzer (oder jeder Benutzer, der dieses Konto für die Anmeldung bei HoloLens verwendet) zugreifen. Um diese Informationen zu löschen, muss ein Benutzer über **Gerätebesitzer-** oder **Administratorberechtigungen** auf dem Gerät verfügen. Ein Benutzer mit den entsprechenden Berechtigungen kann sich beim Feedback-Hub anmelden, **Einstellungen**  >  **Diagnoseprotokolle anzeigen** auswählen und die Informationen löschen.
+- **Die HoloLens Geräts**. Beim Erstellen eines Berichts in Feedback-Hub kann der Benutzer lokale Kopie von Diagnosen und Anlagen speichern auswählen, die **beim Senden von Feedback erstellt wurden.** Wenn der Benutzer diese Option auswählt, speichert der Feedback-Hub eine Kopie der Diagnoseinformationen auf dem HoloLens Gerät. Auf diese Informationen kann der Benutzer (oder jeder Benutzer, der dieses Konto verwendet, um sich bei HoloLens anzumelden) zugreifen. Um diese Informationen zu löschen, muss ein Benutzer über **Gerätebesitzer-** oder **Administratorberechtigungen** auf dem Gerät verfügen. Ein Benutzer mit den entsprechenden Berechtigungen kann sich beim Feedback-Hub anmelden, **Einstellungen**  >  **Diagnoseprotokolle anzeigen** auswählen und die Informationen löschen.
 
 ## <a name="settings-troubleshooter"></a>Einstellungen Problembehandlung
 
@@ -90,6 +90,7 @@ Ein Benutzer kann auch das Verhalten der Fallbackdiagnose über die **Einstellun
 > Wenn für das Gerät eine MDM-Richtlinie konfiguriert ist, kann der Benutzer dieses Verhalten nicht außer Kraft setzen.
 
 ### <a name="os-update-troubleshooter"></a>Problembehandlung für Betriebssystemupdates
+
 Auf Builds [Windows Holographic, Version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) und höher:
 - Zusätzlich zu den vorherigen Problembehandlungen in der Einstellungen-App wurde eine neue Problembehandlung hinzugefügt, und die neue Einstellungen-App für Betriebssystemupdates wurde hinzugefügt. Navigieren Sie zu **Einstellungen -> Update & Security -> Problembehandlung -> Windows Update,** und wählen **Sie Starten** aus. Dadurch können Sie Ablaufverfolgungen erfassen, während Sie Ihr Problem mit Betriebssystemupdates reproduzieren, um die Problembehandlung für Ihre IT oder Ihren Support zu verbessern.
 
@@ -99,11 +100,11 @@ Auf Builds [Windows Holographic, Version 21H1](hololens-release-notes.md#windows
 
 ### <a name="data-locations-access-and-retention"></a>Datenspeicherorte, Zugriff und Aufbewahrung
 
-Da der Benutzer die Datensammlung startet, stimmt der Benutzer implizit dem Speichern der Diagnoseinformationen zu. Nur der Benutzer oder jeder Benutzer, für den der Benutzer die Daten gemeinsam nutzt, kann auf die Daten zugreifen.
+Da der Benutzer die Datensammlung startet, stimmt der Benutzer implizit dem Speichern der Diagnoseinformationen zu. Nur der Benutzer oder jeder Benutzer, für den der Benutzer die Daten gemeinsam verwendet, kann auf die Daten zugreifen.
 
 Die Diagnoseinformationen werden auf dem Gerät gespeichert. Wenn das Gerät mit dem Computer des Benutzers verbunden ist, befinden sich die Informationen auch auf dem Computer in der folgenden Datei:
 
-> Dieser \\ \<*HoloLens device name*> \\ pcinterne Storage \\ Dokumente \\ Trace \<*ddmmyyhhmmss*> .etl
+> This PC \\ \<*HoloLens device name*> \\ Internal Storage Documents \\ Trace \\ \<*ddmmyyhhmmss*> .etl
 
 > [!NOTE]  
 > In diesem Dateipfad und -namen \<*HoloLens device name*> stellt den Namen des HoloLens Geräts und das Datum und die Uhrzeit der \<*ddmmyyhhmmss*> Dateierstellung dar.
@@ -138,6 +139,7 @@ Der IT-Administrator verwendet den DiagnosticLog-CSP, um die Datenspeicher-, Auf
 - Berechtigungen, die den Zugriff auf die Diagnoseinformationen steuern.
 
 ## <a name="offline-diagnostics"></a>Offlinediagnose
+
 In Situationen, in denen das Gerät nicht in der Lage ist, Diagnosedaten über Feedback-Hub oder die Einstellungen Problembehandlung zu erfassen, können Sie die Diagnose manuell erfassen. Ein Szenario, in dem dies erforderlich ist, ist, wenn das Gerät keine Verbindung mit einem gerät herstellen Wi-Fi oder Sie nicht auf andere oben genannte Methoden zugreifen können. Die Diagnose erfasst Absturzabbilddaten und Protokolle vom Gerät, die einem Microsoft-Supporttechniker helfen, Probleme zu isolieren.
 
 Dies funktioniert, wenn das Gerät im Datei-Explorer angezeigt wird, nachdem es über ein USB-Kabel mit einem PC verbunden wurde.
@@ -146,8 +148,8 @@ Dies funktioniert, wenn das Gerät im Datei-Explorer angezeigt wird, nachdem es 
 > Die Generierung und Verwaltung der Offlinediagnose wird je nach Betriebssystemversion unterschiedlich gesteuert. Zuvor wurde sie durch die Telemetrieeinstellung gesteuert, wird aber jetzt direkt über die MDM-Richtlinie gesteuert. Wenn diese Einstellung oder MDM-Richtlinie deaktiviert wird, können mit diesem Mechanismus keine Diagnoseprotokolle gesammelt werden.
 
 Verhalten vor [Windows Holographic, Version 20H2:](hololens-release-notes.md#windows-holographic-version-20h2)
- - Die Offlinediagnose ist nur aktiviert, wenn der Benutzer entweder oobe durchfädt oder der Richtlinienwert [System\AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) auf Vollständig festgelegt ist (Basic ist der Standardwert HoloLens). 
-- Um die Offlinediagnose zu deaktivieren, wechseln Sie zur **Seite Einstellungen App > Datenschutz,** und wählen Sie unter  **Diagnosedaten die Option Standard aus.** Bei Builds, bei denen die Offlinediagnose von der Telemetrieeinstellung abhängt, wirkt sich dies nur darauf aus, ob Protokolle erfasst werden. Dies wirkt sich nicht auf die erfassten Dateien aus.
+ - Die Offlinediagnose ist nur aktiviert, wenn der Benutzer entweder oobe durchfädt oder der Richtlinienwert [System\AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) auf Full festgelegt ist (Basic ist der Standardwert HoloLens). 
+- Um die Offlinediagnose zu deaktivieren, wechseln Sie zur Seite **Einstellungen App > Datenschutz,** und wählen **Sie** unter **Diagnosedaten die Option Standard aus.** Bei Builds, bei denen die Offlinediagnose von der Telemetrieeinstellung abhängt, wirkt sich dies nur darauf aus, ob Protokolle erfasst werden. Dies wirkt sich nicht auf die erfassten Dateien aus.
 - Wenn das Gerät gesperrt ist, werden keine Protokolle angezeigt.
 
 Auf Builds [Windows Holographic, Version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) und ab:
@@ -160,7 +162,7 @@ Sehen Sie sich dieses Video an, um mehr zu erfahren.
 
 Führen Sie die folgenden Schritte aus, um Diagnosedaten zu erfassen:
 
-1.  Verbinden Sie das Gerät mit einem USB-Kabel an Ihren PC an.
+1.  Verbinden sie das Gerät mit einem USB-Kabel an Ihren PC an.
 
 2.  Navigieren Sie im Datei-Explorer auf Ihrem PC zu **"This PC \<hololens-device> \Internal Storage".**
 
