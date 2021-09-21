@@ -14,12 +14,12 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 keywords: Kalibrierung, Komfort, visuelle Elemente, Qualität, IPD, HoloLens, Windows Mixed Reality, VR-Headsets
-ms.openlocfilehash: b3d917c71ac7441aeaf8dcbc25748ee07b9fbfa3
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: cdeef216cbf6d1fb165737ae194071c60b31146a
+ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034240"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "127833555"
 ---
 # <a name="improve-visual-quality-and-comfort"></a>Verbessern von Grafikqualität und Komfort
 
@@ -37,8 +37,7 @@ HoloLens 2 fordert den Benutzer auf, das Gerät unter den folgenden Umständen z
 - Der Benutzer hat sich zuvor von dem Kalibrierungsvorgang abgemeldet
 - Der Kalibrierungsvorgang war bei der letzten Verwendung des Geräts durch den Benutzer nicht erfolgreich
 - Der Benutzer hat seine Kalibrierungsprofile gelöscht
-- Das Gerät wird abgenommen und wieder aufgesetzt und einer der oben genannten Umstände trifft zu 
-
+- Das Gerät wird abgenommen und wieder aufgesetzt, und einer der oben genannten Umstände trifft zu 
 
 ![Kalibrierungsabfrage zur Anpassung an die Augen.](./images/07-et-adjust-for-your-eyes.png)
 
@@ -87,7 +86,7 @@ Bei Umgebungen, für die Blickdaten oder eine präzise Hologramm-Positionierung 
 
 #### <a name="deferred-calibration-prompt"></a>Verzögerte Anzeige des Kalibrierungsaufforderung
 
-Bei aktivierter Auto Eye Position-Funktion wird die Anzeige des Dialogfelds so lange verzögert, bis eine Anwendung die Blickdaten anfordert. Dadurch wird sichergestellt, dass dem Benutzer das Dialogfeld nicht angezeigt wird, wenn die aktive Anwendung keine Blickdaten erfordert. Wenn die Anwendung Blickdaten erfordert und der aktuelle Benutzer nicht kalibriert ist, wird ihm das Kalibrierungsdialogfeld angezeigt. Dieses Verhalten kann dazu genutzt werden, das Dialogfeld zur Eye-Tracking-Kalibrierung zu einem geeigneten Zeitpunkt für die Erfahrung anzuzeigen. Diese Methode empfiehlt sich aus den folgenden Gründen
+Bei aktivierter Auto Eye Position-Funktion wird die Anzeige des Dialogfelds so lange verzögert, bis eine Anwendung die Blickdaten anfordert. Dadurch wird sichergestellt, dass dem Benutzer das Dialogfeld nicht angezeigt wird, wenn die aktive Anwendung keine Blickdaten erfordert. Wenn die Anwendung Blickdaten erfordert und der aktuelle Benutzer nicht kalibriert ist, wird ihm das Kalibrierungsdialogfeld angezeigt. Dieses Verhalten kann dazu genutzt werden, eine Aufforderung zur Eye-Tracking-Kalibrierung zu einem für die Erfahrung geeigneten Zeitpunkt anzuzeigen. Diese Methode empfiehlt sich aus den folgenden Gründen:
 
 1.  Das Dialogfeld zur Eye-Tracking-Kalibrierung informiert den Benutzer mit Hinweisen darüber, warum das Eye-Tracking erforderlich ist.
 2.  Es bietet dem Benutzer eine Möglichkeit, die Kalibrierung seiner Augen abzulehnen.
@@ -96,7 +95,7 @@ Wenn der Benutzer die Eye-Tracking-Kalibrierung startet, sollte der Fokus nach A
 
 ### <a name="calibration-data-and-security"></a>Kalibrierungsdaten und Sicherheit
 
-Kalibrierungsinformationen werden lokal auf dem Gerät gespeichert und sind keinem Konto zugeordnet. Es gibt keine Aufzeichnung darüber, wer das Gerät ohne Kalibrierung verwendet hat. Dies bedeutet, dass neue Benutzer bei der ersten Verwendung des Geräts aufgefordert werden, visuelle Elemente zu kalibrieren, sowie Benutzer, die sich zuvor von der Kalibrierung abgemeldet haben oder wenn die Kalibrierung nicht erfolgreich war.
+Kalibrierungsinformationen werden lokal auf dem Gerät gespeichert und sind keinem Konto zugeordnet. Es gibt keine Aufzeichnung darüber, wer das Gerät ohne Kalibrierung verwendet hat. Dies bedeutet, dass neue Benutzer bei der ersten Verwendung des Geräts aufgefordert werden, visuelle Elemente zu kalibrieren, sowie Benutzer, die sich zuvor von der Kalibrierung abgemeldet haben oder deren Kalibrierung nicht erfolgreich war.
 
 Auf dem Gerät können bis zu 50 Kalibrierungsprofile lokal gespeichert werden. Wenn diese Zahl erreicht ist, löscht das Gerät automatisch das älteste nicht verwendete Profil.
 
@@ -104,16 +103,23 @@ Kalibrierungsinformationen können immer von dem Gerät gelöscht werden. Wähle
 
 ### <a name="disable-calibration"></a>Kalibrierung deaktivieren
 
-Sie können die Kalibrierungsaufforderung auch deaktivieren, indem Sie die folgenden Schritte ausführen:
+#### <a name="eye-calibration-behavior-on-hololens-2-builds-20h2-and-newer"></a>Verhalten der Augenkalibrierung in HoloLens 2, Build 20H2 und neuer
+
+Mit der Einführung von [Unterstützung der automatischen Augenstellung](hololens-release-notes.md#auto-eye-position-support) in Windows Holographic, Version 20H2, braucht die Kalibrierung nicht mehr deaktiviert zu werden. Die Kalibrierungsaufforderung wird nur dann automatisch angezeigt, wenn Sie eine App mit Eye-Tracking-Unterstützung verwenden.
+
+#### <a name="disabling-eye-calibration-on-hololens-2-older-builds"></a>Deaktivieren der Augenkalibrierung in älteren Builds von HoloLens 2
+
+Sie können einen Schalter „Einstellungen“ am Headset umschalten, um die Kalibrierung zu deaktivieren, aber der Zustand des Schalters ist möglicherweise nicht einfach zu bestimmen. Er wurde entfernt und durch die [Unterstützung der automatischen Augenstellung](hololens-release-notes.md#auto-eye-position-support) ersetzt, die die Kalibrierung aufschiebt und zugleich Farbkorrektur und Hologrammpositionierung bietet.
+
+#### <a name="disabling-eye-calibration-on-hololens-1st-gen"></a>Deaktivieren der Augenkalibrierung in HoloLens (1. Generation)
+
+Für die [Kalibrierung von HoloLens (1. Generation)](#calibrating-your-hololens-1st-gen) können Sie die Aufforderung zur Augenkalibrierung deaktivieren, indem Sie diese Schritte ausführen:
 
 1. Wählen Sie **Einstellungen** > **System** > **Kalibrierung**.
 1. Deaktivieren Sie **Wenn eine neue Person diese HoloLens benutzt, automatisch dazu auffordern, eine Augenkalibrierung durchzuführen**.
 
    > [!IMPORTANT]
    > Diese Einstellung kann die Qualität und den Komfort der Hologrammwiedergabe ungünstig beeinträchtigen.  Wenn Sie diese Einstellung deaktivieren, funktionieren Funktionen, die von Eye Tracking abhängig sind (z, B. Textbildlauf), nicht mehr in immersiven Anwendungen.
-
-> [!NOTE]
-> Der Schalter „Einstellungen“ wurde entfernt, beginnend mit Windows Holographic, Version 20H2, mit der Einführung der [Auto Eye Position-Unterstützung](hololens-release-notes.md#auto-eye-position-support). Die Kalibrierungsaufforderung wird nur dann automatisch angezeigt, wenn ein nicht kalibrierter Benutzer eine App verwendet, für die Eye Tracking aktiviert ist.
 
 ### <a name="hololens-2-eye-tracking-technology"></a>HoloLens 2 Eye Tracking-Technologie
 
