@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: sekerawa
-ms.openlocfilehash: 28793b385bad58d44c6592a800c4f56b18d152ce
-ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
+ms.openlocfilehash: 10dc251bbeb204a6621ca0891029858c00c467bc
+ms.sourcegitcommit: d09556a101663ef5dfff865d4753e64a41032b78
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "127833572"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "128346773"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>Windows Autopilot für HoloLens 2
 
@@ -26,7 +26,7 @@ ms.locfileid: "127833572"
 
 Für die Bereitstellung im großen Stil empfehlen wir den Einstieg in Windows Autopilot. Diese Art der Bereitstellung wird als „geringer Benutzereingriff“ angesehen, da sie das Einrichten von HoloLens sowohl für IT- als auch für Endbenutzer drastisch vereinfacht. 
 
-Auf allgemeiner Ebene erstellt ein IT-Administrator in der Regel die für den Geschäftsbetrieb bereiten Konfigurationen und registriert HoloLens 2 Geräte in MDM-Portalen. Wenn HoloLens 2 Geräte mit Out-Of-Box Experience (OOBE) gestartet werden und eine Verbindung mit dem Internet herstellen, werden geschäftsbereite Konfigurationen für registrierte HoloLens 2-Geräte automatisch heruntergeladen und angewendet, um das Gerät ohne Benutzereingriff betriebsbereit zu machen.
+Auf allgemeiner Ebene erstellt ein IT-Administrator in der Regel die für den Geschäftsbetrieb bereiten Konfigurationen und registriert HoloLens 2 Geräte in MDM-Portalen. Wenn HoloLens 2 Geräte mit Out-Of-Box Experience (OOBE) gestartet werden und eine Verbindung mit dem Internet herstellen, werden geschäftsbereite Konfigurationen für registrierte HoloLens 2-Geräte automatisch heruntergeladen und angewendet, um die Geräte ohne Benutzereingriff betriebsbereit zu machen.
 
 Weitere Informationen finden Sie im Artikel [Übersicht zu Windows Autopilot | Microsoft-Dokumentation](/mem/autopilot/windows-autopilot).
 
@@ -244,7 +244,7 @@ Sobald die obigen Anweisungen abgeschlossen sind, werden Ihre Benutzer der HoloL
 
 1. Für die Nutzung Autopilot-Erfahrungen ist ein Internetzugriff erforderlich. Verwenden Sie eine der folgenden Optionen um einen Internetzugang bereitzustellen:
 
-    - Schließen Sie Ihr Gerät an ein WLAN-Netzwerk in OOBE an. Lassen Sie es dann automatisch Autopilot-Erfahrung finden. Das ist das einzige Mal, dass Sie mit OOBE interagieren müssen, bis Autopilot-Erfahrung von selbst abgeschlossen ist. Standardmäßig wartet HoloLens 2 nach der Internet-Erkennung 10 Sekunden, bis es Autopilot findet. Wenn kein Autopilot-Profil innerhalb von 10 Sekunden erkannt wird, zeigt OOBE „EULA“ an. Wenn dieses Szenario auftritt, starten Sie Ihr Gerät neu, um die Autopilot-Erkennung erneut zu versuchen. Beachten Sie auch, dass OOBE nur dann unbegrenzt auf Autopilot wartet, wenn die TenantLockdown-Richtlinie auf dem Gerät eingestellt ist.
+    - Schließen Sie Ihr Gerät an ein WLAN-Netzwerk in OOBE an. Lassen Sie es dann automatisch Autopilot-Erfahrung finden. Das ist das einzige Mal, dass Sie mit OOBE interagieren müssen, bis Autopilot-Erfahrung von selbst abgeschlossen ist.
 
     - Schließen Sie Ihr Gerät mit einem „USB-C auf Ethernet“-Adapter für eine kabelgebundene Internetverbindung an das Ethernet an. Lassen Sie HoloLens 2 automatisch Autopilot-Erfahrung vervollständigen.
 
@@ -268,7 +268,7 @@ Sobald die obigen Anweisungen abgeschlossen sind, werden Ihre Benutzer der HoloL
 
 1. Am Ende des OOBE-Vorgangs können Sie sich mit Ihrem Benutzernamen und Kennwort beim Gerät anmelden.
 
-   <br/><img src="./images/other-user.jpg" alt="Other user" width="450" height="700" />
+   <img src="./images/other-user.jpg" alt="Other user" width="450" height="700" />
 
 ## <a name="tenant-lockdown-csp-and-autopilot"></a>TenantLockdown CSP und Autopilot
 
@@ -318,7 +318,13 @@ OOBE wartet auf unbestimmte Zeit auf den Autopilot-Profil-Download. Folgendes Di
 
 ![Geräteinterne Ansicht für den Zeitpunkt, zu dem die Richtlinie auf dem Gerät durchgesetzt wird.](images/hololens-autopilot-lockdown.png)
 
-## <a name="known-issues--limitations"></a>Bekannte Probleme und Einschränkungen
+#### <a name="why-did-i-not-see-autopilot-experience-even-though-the-autopilot-profile-is-assigned-in-intune"></a>Warum wurde die Autopilot-Benutzeroberfläche nicht angezeigt, obwohl das Autopilot-Profil in Intune zugewiesen ist?
+
+Standardmäßig wartet HoloLens 2 nach der Internet-Erkennung 15 Sekunden mit der Autopilot-Ermittlung. Wenn innerhalb von 15 Sekunden kein Autopilot-Profil erkannt wird, bedeutet dies, dass Autopilot nicht ordnungsgemäß erkannt wurde, dann wird die Seite mit der EULA angezeigt.
+
+Starten Sie Ihr Gerät neu, und versuchen Sie es erneut. Weitere Informationen finden Sie unter [Bekannte Probleme und Einschränkungen](hololens2-autopilot.md#known-issues-and-limitations) oder [Problembehandlung](hololens2-autopilot.md#troubleshooting).
+
+## <a name="known-issues-and-limitations"></a>Einschränkungen und bekannte Probleme
 
 - Wir untersuchen ein Problem, bei dem die in MEM konfigurierte Anwendungsinstallation basierend auf dem Gerätekontext nicht für die HoloLens gilt. [Mehr Informationen zu Gerätekontext- und Benutzerkontext-Installationen.](/mem/intune/apps/apps-windows-10-app-deploy#install-apps-on-windows-10-devices)
 - Beim Einrichten des Autopiloten über WLAN kann es vorkommen, dass das Autopilot-Profil nicht heruntergeladen wird, wenn die Internetverbindung zum ersten Mal hergestellt wird. In diesem Fall wird die Endbenutzer-Lizenzvereinbarung (EULA) vorgelegt, und der Benutzer hat die Möglichkeit, das Setup ohne Autopilot-Erfahrung durchzuführen. Um das Einrichten mit Autopilot zu wiederholen, setzen Sie das Gerät in den Ruhezustand und fahren Sie es dann hoch, oder starten Sie das Gerät neu, und versuchen Sie es erneut.
