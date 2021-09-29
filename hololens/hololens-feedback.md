@@ -1,10 +1,10 @@
 ---
 title: Geben Sie uns Feedback
-description: Erstellen Sie mithilfe des HoloLens umsetzbares Feedback Windows Mixed Reality Entwickler Feedback-Hub n.
+description: Erstellen Sie mithilfe der HoloLens umsetzbares Feedback für Windows Mixed Reality- und Feedback-Hub.
 ms.assetid: b9b24c72-ff86-44a9-b30d-dd76c49479a9
-author: mattzmsft
-ms.author: mazeller
-ms.date: 12/17/2020
+author: evmill
+ms.author: v-evmill
+ms.date: 9/28/2021
 ms.custom:
 - CI 116157
 - CSSTroubleshooting
@@ -12,37 +12,39 @@ audience: ITPro
 ms.prod: hololens
 ms.topic: article
 keywords: Feedback, Fehler, Problem, Fehler, Problembehandlung, Hilfe
-manager: jarrettr
+manager: ranjibb
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 214b2b9cda33eb074b06a9157429d1f52bfe0716
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 40619e6d891ddd56d26be227df11aae758f880ae
+ms.sourcegitcommit: 0b42c241c44c98e94dc9043bd5891d26776bc745
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126032601"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "129191208"
 ---
 # <a name="feedback-for-hololens"></a>Feedback zu HoloLens
 
 Verwenden Sie Feedback-Hub, um uns zu sagen, welche Features Sie gerne haben, auf welche Features Sie nicht mehr benötigen könnten und wie etwas besser sein könnte. Das Entwicklungsteam verwendet intern den gleichen Mechanismus, um Fehler nachverfolgung und zu beheben. Verwenden Sie daher Feedback-Hub, um alle fehlerbehebungen zu melden. Wir hören zu!
 
-Feedback-Hub ist eine hervorragende Möglichkeit, das Engineeringteam vor Fehlern zu warnen und sicherzustellen, dass zukünftige Updates enstwegen und konsistenter frei von Fehlern sind. Allerdings stellt Feedback-Hub keine Antwort zur Verfügung. Wenn Sie sofortige Hilfe benötigen, senden Sie Feedback, notieren Sie sich die Zusammenfassung, die Sie für  Ihr Feedback bereitgestellt haben, und wenden Sie sich dann an den [HoloLens-Support.](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f) Verwenden Sie das Feature Freigeben in Feedback-Hub, um einen direkten Link zur URL frei zu geben. Feedback-Hub täglich viele Daten erhält: Die URL hilft uns, Ihr Feedback schnell zu identifizieren.
+Feedback-Hub ist eine hervorragende Möglichkeit, das Engineeringteam vor Fehlern zu warnen und sicherzustellen, dass zukünftige Updates unerntwegt und konsistenter ohne Fehler sind. Allerdings stellt Feedback-Hub keine Antwort zur Verfügung. Wenn Sie sofortige Hilfe benötigen, senden Sie Uns Feedback, notieren Sie sich die Zusammenfassung, die Sie  für Ihr Feedback angegeben haben, und wenden Sie sich dann an den [HoloLens-Support.](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f) Verwenden Sie das Feature "Freigeben" in Feedback-Hub, um einen direkten Link zur URL frei zu geben. Feedback-Hub täglich viele Daten erhält: Die URL hilft uns, Ihr Feedback schnell zu identifizieren.
 
-> [!NOTE]  
->  
-> - Stellen Sie sicher, dass Sie über die aktuelle Version von Feedback-Hub. Wählen Sie hierzu **Start** Microsoft Store  >  aus, und wählen Sie dann die Ausellipsen ( ... )**aus.** Wählen Sie dann Downloads **und Updates Updates** herunterladen  >  **aus.**  
->  
-> - Um die bestmöglichen Daten zum Beheben von Problemen zur Verfügung zu stellen, wird dringend empfohlen, dass Sie Ihre Gerätetelemetrie auf **Optional festlegen.** Sie können diesen Wert während der Out-of-Box-Experience (OOBE) oder mithilfe der Einstellungen festlegen. Wählen Sie hierzu mithilfe von Einstellungen die **Option Start Einstellungen**  >  Privacy App Diagnostics On (App-Diagnose für Datenschutz  >    >  **auf**  >  **starten) aus.**
+> [!NOTE]
+> Stellen Sie sicher, dass Sie über die aktuelle Version von Feedback-Hub. Wählen Sie hierzu **Start** Microsoft Store aus, und wählen Sie dann  >  die Ausellipsen ( ... )**aus.** Wählen Sie dann Downloads **und Updates Updates** herunterladen  >  **aus.** Erfahren Sie mehr [über das Aktualisieren von Store-Apps.](holographic-store-apps.md#update-apps)
 
-## <a name="use-the-feedback-hub"></a>Verwenden sie Feedback-Hub
+> [!IMPORTANT]
+> Um die bestmöglichen Daten zum Beheben von Problemen zur Verfügung zu stellen, wird dringend empfohlen, dass Sie Ihre Gerätetelemetrie auf **Optional festlegen.** Wenn Sie diese zusätzliche Telemetrie nicht aktivieren, kann Ihr Fehler oder Feedback nicht mehr behoben werden.
+>
+> Sie können diesen Wert während der Out-of-Box-Experience (OOBE) oder mithilfe der Einstellungen festlegen. Um dies mithilfe von Einstellungen zu tun, wählen Sie **Start**  >  **Einstellungen**  >  **Privacy**  >  **Diagnostics & Feedback**  >  **Optionale Diagnosedaten** auf  >  **aus.**
 
-1. Verwenden Sie **die Geste** Start, um das **Startmenü** zu öffnen, und wählen Sie **dann Feedback-Hub.** Die App wird in Ihrer Umgebung geöffnet.
+## <a name="use-the-feedback-hub"></a>Verwenden der Feedback-Hub
 
-   ![Feedback-App auf HoloLens Startmenü.](./images/hololens2-feedbackhub-tile.png)
+1. Öffnen Sie **mithilfe** der Geste Start das **Startmenü,** und wählen Sie **dann Feedback-Hub.** Die App wird in Ihrer Umgebung geöffnet.
+
+   ![Feedback-App HoloLens Startmenü.](./images/hololens2-feedbackhub-tile.png)
    > [!NOTE]  
-   > Wenn sie nicht angezeigt **wird, Feedback-Hub** Alle **Apps** aus, um die vollständige Liste der Apps auf dem Gerät zu sehen.
+   > Wenn sie nicht angezeigt wird, **Feedback-Hub** Alle **Apps** aus, um die vollständige Liste der Apps auf dem Gerät zu sehen.
 
 1. Um festzustellen, ob eine andere Person ähnliches Feedback gegeben hat, geben Sie im Suchfeld **Feedback** einige Schlüsselwörter zum Thema ein.
 1. Wenn Sie ähnliches Feedback finden, wählen Sie es  aus, fügen Sie alle zusätzlichen Informationen hinzu, die Sie im Feld Kommentar schreiben haben, und wählen Sie dann **Upvote aus.**
@@ -55,19 +57,19 @@ Feedback-Hub ist eine hervorragende Möglichkeit, das Engineeringteam vor Fehler
 1. Wählen Sie unter **Kategorie auswählen** ein Thema aus, und wählen Sie dann unter Unterkategorie auswählen eine **Unterkategorie aus.** In der folgenden Tabelle werden die Kategorien beschrieben, die in der Kategorie Windows Holographic verfügbar sind.
 
    > [!NOTE]  
-   > **Kommerzielle Kunden:** Um einen Fehler im Zusammenhang mit MDM, Bereitstellung oder einem anderen Aspekt der Geräteverwaltung  zu melden, wählen Sie die Kategorie **Enterprise-Verwaltung** und die Unterkategorie Gerät aus.
+   > **Kommerzielle Kunden:** Um einen Fehler im Zusammenhang mit MDM, Bereitstellung oder einem anderen Aspekt der Geräteverwaltung zu melden, wählen Sie die Kategorie  **Enterprise-Verwaltung** und die Unterkategorie Gerät aus.
 
-   |Category |Beschreibung |
+   |Category |BESCHREIBUNG |
    | --- | --- |
    |Eyetracking – Blickverfolgung |Feedback zu Eyetracking, Iris-Anmeldung oder Kalibrierung. |
    |Hologrammgenauigkeit, Stabilität und Zuverlässigkeit |Feedback dazu, wie Hologramme im Raum erscheinen. |
    |Starten, Platzieren, Anpassen und Beenden von Apps |Feedback zum Starten oder Beenden von 2D- oder 3D-Apps. |
    |Miracast |Feedback zu Miracast. |
-   |Leerzeichen und Persistenz |Feedback dazu, HoloLens Raum erkennt und Hologramme im Raum beibehalte. |
+   |Leerzeichen und Persistenz |Feedback dazu, HoloLens Leerzeichen erkennt und Hologramme im Raum beibehalte. |
    |Startmenü und alle Apps |Feedback zum **Startmenü** und zur Liste "Alle Apps". |
    |Oberflächenzuordnung |Feedback zur Oberflächenzuordnung. |
    |Aufnehmen von Bildern und Videos |Feedback zu Mixed Reality-Erfassungen. |
-   |Wiedergabe des Video-Hologramms |Feedback zur Wiedergabe von Video hologrammen. |
+   |Wiedergabe des Video-Hologramms |Feedback zur Wiedergabe des Video hologramms. |
    |Alle anderen Probleme |Alle anderen Probleme. |
 
 1. Möglicherweise werden Sie aufgefordert, nach ähnlichem Feedback zu suchen. Wenn Ihr Problem dem Feedback anderer Benutzer ähnelt, wählen Sie dieses Feedback aus. Wählen Sie **andernfalls Neues Feedback** und dann Weiter **aus.**
