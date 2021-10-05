@@ -12,12 +12,12 @@ ms.date: 05/14/2021
 manager: evmill
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b4692468942da88877370864eda2ce173cc499af
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: a0ae0ccade01d7df520cd6cb142a9b51e63a2b05
+ms.sourcegitcommit: c73cdefbdb4411f6a187cc38bb2570dadeb156bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034349"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "129163980"
 ---
 # <a name="hololens-2-battery-and-charging"></a>HoloLens 2: Akku und Ladevorgang
 
@@ -45,7 +45,7 @@ Wenn das Gerät korrekt hochgefahren und läuft, gibt es drei verschiedene Mögl
 
 ## <a name="alternative-charging-specifications"></a>Spezifikationen für alternatives Laden
 
-Die HoloLens 2 können von [USB-Stromversorgung](https://www.usb.org/usb-charger-pd)quellen bis zu 27 Watt geladen werden. Wenn die Quelle mindestens 10 Watt bereitstellen kann, kann die HoloLens Betriebszeit verlängert werden (bei einigen Workloads möglicherweise auf unbestimmte Zeit). 
+Die HoloLens 2 können von [USB-Stromversorgung](https://www.usb.org/usb-charger-pd)quellen bis zu 27 Watt geladen werden. Wenn die Quelle mindestens 10 Watt bereitstellen kann, kann die HoloLens Betriebszeit verlängert werden (bei einigen Workloads möglicherweise auf unbestimmte Zeit). 
 
 > [!NOTE]
 > Durch die Verwendung eines USB-A-auf-USB-C-Ladekabels wird die Ladung auf 7,5 Watt beschränkt. Die Betriebszeit wird immer noch verlängert, aber nicht so lange, wie bei der Verwendung von USB-C auf C.

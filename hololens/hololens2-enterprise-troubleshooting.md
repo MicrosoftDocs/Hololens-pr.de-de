@@ -1,8 +1,8 @@
 ---
 title: Behandeln von Problemen bei der Implementierung und Verwaltung von HoloLens 2-Geräten
 description: Behandeln von Problemen bei HoloLens 2-Geräten in einer Unternehmensumgebung
-author: JoyJaz
-ms.author: v-jjaswinski
+author: beelia
+ms.author: v-beehanson
 ms.date: 6/22/2021
 ms.topic: article
 keywords: Problembehandlung
@@ -12,14 +12,14 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9f3950de51e4bfa2a76431a2a070d87aa81ed443
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 2e997514be5d067ce5e9bd7f3611b464d19a6fad
+ms.sourcegitcommit: b9cd7ed5edb98249c609b547b90587863ea1cb9e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034337"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "129364592"
 ---
-# <a name="troubleshooting-implementation-and-managed-devices"></a>Behandeln von Problemen bei der Implementierung und Verwaltung von Geräten 
+# <a name="troubleshooting-implementation-and-managed-devices"></a>Behandeln von Problemen bei der Implementierung und Verwaltung von Geräten
 
 In diesem Artikel wird beschrieben, wie Sie verschiedene Probleme und Fragen zur Implementierung und Verwaltung von HoloLens 2 klären können.
 
@@ -37,12 +37,12 @@ In diesem Artikel wird beschrieben, wie Sie verschiedene Probleme und Fragen zur
 - [Häufig gestellte Fragen zu verwalteten HoloLens-Geräten](#managed-hololens-devices-faqs)
 
 ## <a name="eap-troubleshooting"></a>Behandlung von EAP-Problemen
-1. Prüfen Sie sorgfältig, ob das WLAN-Profil die richtigen Einstellungen aufweist:
-    - EAP-Typ ist ordnungsgemäß konfiguriert, gängige EAP-Typen: EAP-TLS (13), EAP-TTLS (21) und PEAP (25).
-    - Der WLAN-SSID-Name ist richtig und stimmt mit der HEX-Zeichenfolge überein.
-    - Für EAP-TLS enthält TrustedRootCA den SHA-1-Hash des Zertifikats der vertrauenswürdigen Stammzertifizierungsstelle des Servers. Auf einem Windows-PC zeigt der Befehl „certutil.exe -dump cert_Dateiname“ die SHA-1-Hashzeichenfolge eines Zertifikats.
+1. Überprüfen Sie, ob das WLAN-Profil die richtigen Einstellungen aufweist:
+    - Konfigurieren Sie den EAP-Typ ordnungsgemäß. Gängige EAP-Typen sind EAP-TLS (13), EAP-TTLS (21) und PEAP (25).
+    - Überprüfen Sie den SSID-Namen des WLANs, und überprüfen Sie, ob er mit der HEX-Zeichenfolge übereinstimmt.
+    - Vergewissern Sie sich, dass TrustedRootCA für EAP-TLS den SHA-1-Hash des Zertifikats der vertrauenswürdigen Stammzertifizierungsstelle des Servers enthält. Auf einem Windows-PC wird mit dem Befehl „certutil.exe -dump cert_Dateiname“ die SHA-1-Hashzeichenfolge eines Zertifikats angezeigt.
 2. Starten Sie die Aufzeichnung von Netzwerkpaketen in den Protokollen von Zugriffspunkt, Controller oder AAA-Server, um herauszufinden, wo die EAP-Sitzung fehlschlägt.
-    - Wenn die von der HoloLens bereitgestellte EAP-Identität nicht erwartet wird, prüfen Sie, ob die Identität korrekt über das WLAN-Profil oder Clientzertifikat bereitgestellt wurde.
+    - Wenn die von der HoloLens bereitgestellte EAP-Identität nicht erwartet wird, überprüfen Sie, ob die Identität korrekt über das WLAN-Profil oder Clientzertifikat bereitgestellt wurde.
     - Wenn der Server das HoloLens-Clientzertifikat ablehnt, prüfen Sie, ob das erforderliche Clientzertifikat auf dem Gerät bereitgestellt wurde.
     - Wenn HoloLens das Serverzertifikat ablehnt, prüfen Sie, ob das Zertifikat der Stammzertifizierungsstelle des Servers auf der HoloLens bereitgestellt wurde.
 3. Wenn das Unternehmensprofil über das WLAN-Bereitstellungspaket bereitgestellt wird, sollten Sie das Bereitstellungspaket auf einen Windows 10-PC anwenden. Wenn es auch auf einem Windows 10-PC zu einem Fehler kommt, befolgen Sie den Leitfaden zur Problembehandlung der  802.1X-Authentifizierung für Windows-Clients.
@@ -54,7 +54,7 @@ In diesem Artikel wird beschrieben, wie Sie verschiedene Probleme und Fragen zur
 
 Hier sind einige Dinge, die Sie ausprobieren sollten, wenn Sie Ihre HoloLens nicht mit einem WLAN verbinden können:
 
-1. Stellen Sie sicher, dass das WLAN aktiviert ist. Überprüfen Sie dies mit der Startgeste und durch Wählen von „Einstellungen“ > „Netzwerk & Internet“ > WLAN“. Wenn das WLAN eingeschaltet ist, schalten Sie es aus und dann wieder ein.
+1. Stellen Sie sicher, dass WLAN aktiviert ist. Überprüfen Sie dies mit der Startgeste und durch Wählen von „Einstellungen“ > „Netzwerk & Internet“ > WLAN“. Wenn das WLAN eingeschaltet ist, schalten Sie es versuchsweise aus und dann wieder ein.
 2. Verringern Sie den Abstand zum Router oder Zugangspunkt.
 3. Starten Sie erst Ihren WLAN-Router und dann die HoloLens neu. Try connecting again.
 4. Wenn keiner dieser Schritte funktioniert, prüfen Sie, ob Ihr Router die neueste Firmware verwendet. Diese Informationen finden Sie auf der Website des Herstellers.
@@ -78,53 +78,53 @@ Fiddler ist ein Webdebugproxy und wird zur Behandlung von HTTP(S)-Problemen verw
 
 1. [Installieren](https://docs.telerik.com/fiddler-everywhere/get-started/installation-procedure) und starten Sie Fiddler auf Ihrem PC.  
 1. Konfigurieren Sie Fiddler auf Ihrem PC so, dass Remotecomputer eine Verbindung herstellen können.
-    1. Wechseln Sie zu „Fiddler-Einstellungen“ > „Verbindungen“
-    1. Notieren Sie sich den Lauschport für Fiddler (der Standardwert ist 8866)
-    1. Aktivieren Sie „Verbindungen von Remotecomputern zulassen“
+    1. Wechseln Sie zu „Fiddler-Einstellungen“ > „Verbindungen“.
+    1. Notieren Sie sich den Lauschport für Fiddler (der Standardwert ist 8866).
+    1. Aktivieren Sie „Verbindungen von Remotecomputern zulassen“.
     1. Klicken Sie auf Speichern.
 3. Konfigurieren Sie Fiddler auf Ihrer HoloLens 2 als Proxyserver<sup>1</sup>:
-    1. Öffnen Sie das Startmenü, und wählen Sie „Einstellungen“ aus
-    1. Wählen Sie „Netzwerk & Internet“ und dann im linken Menü „Proxy“ aus
-    1. Scrollen Sie nach unten zu „Manuelle Proxyeinrichtung“, und stellen Sie den Umschalter „Proxyserver verwenden“ auf „Ein“
-    1. Geben Sie die IP-Adresse des PCs ein, auf dem Fiddler installiert ist
-    1. Geben Sie die oben notierte Portnummer ein (Standardwert: 8866)
+    1. Öffnen Sie das Startmenü und wählen Sie „Einstellungen“ aus.
+    1. Wählen Sie „Netzwerk & Internet“ und dann „Proxy“ aus dem linken Menü.
+    1. Scrollen Sie nach unten zu „Manuelle Proxyeinrichtung“, und klicken Sie bei „Proxyserver verwenden“ auf „Ein“.
+    1. Geben Sie die IP-Adresse des PCs ein, auf dem Fiddler installiert ist.
+    1. Geben Sie die oben notierte Portnummer ein (Standardwert: 8866).
     1. Klicken Sie auf Speichern.
 
 <sup>1</sup> Verwenden Sie für Builds ab Version 20279.1006 (Insider und das bevorstehende Release) die folgenden Schritte, um den Proxy zu konfigurieren:
-1. Öffnen Sie das Startmenü, und wechseln Sie zur Seite „Eigenschaften“ Ihres WLAN-Netzwerks 
-1. Scrollen Sie nach unten zu Proxy
-1. Wechseln Sie zu Manuelles Setup
-1. Geben Sie die IP-Adresse des PCs ein, auf dem Fiddler installiert ist
-1. Geben Sie die oben notierte Portnummer ein. (Der Standardwert ist 8866.)
-1. Klicken Sie auf „Übernehmen“
+1. Öffnen Sie das Startmenü, und wechseln Sie zur Seite der WLAN-Eigenschaften Ihres Netzwerks. 
+1. Scrollen Sie nach unten zu „Proxy“.
+1. Wechseln Sie zu „Manuelles Setup“.
+1. Geben Sie die IP-Adresse des PCs ein, auf dem Fiddler installiert ist.
+1. Geben Sie die oben notierte Portnummer ein (Standardwert: 8866).
+1. Klicken Sie auf „Übernehmen“.
     
 #### <a name="decrypt-https-traffic-from-hololens-2"></a>Entschlüsseln von HTTPS-Datenverkehr aus HoloLens 2
 
 1. Exportieren Sie auf Ihrem PC das Fiddler-Zertifikat.
-    1. Wechseln Sie zu „Fiddler Einstellungen“ > „HTTPS“, und erweitern Sie „Erweiterte Einstellungen“
-    2. Klicken Sie auf „Fiddler-Zertifikat exportieren“. Es wird auf Ihrem Desktop gespeichert
-    3. Verschieben Sie das Zertifikat in den Ordner „Downloads“ auf Ihrer HoloLens 2
+    1. Wechseln Sie zu „Fiddler-Einstellungen“ > „HTTPS“, und klappen Sie „Erweiterte Einstellungen“ auf.
+    2. Klicken Sie auf „Fiddler-Zertifikat exportieren“. Es wird auf Ihrem Desktop gespeichert.
+    3. Verschieben Sie das Zertifikat in den Ordner „Downloads“ auf Ihrer HoloLens 2.
 
 2.  Importieren Sie auf Ihrer HoloLens 2 das Fiddler-Zertifikat.
-    1. Wechseln Sie zu „Einstellungen“ > „Update und Sicherheit“ > „Zertifikate“
-    2. Klicken Sie auf „Zertifikat installieren“, navigieren Sie zum Ordner „Downloads“, und wählen Sie das Fiddler-Zertifikat aus
-    3. Ändern Sie den Speicherort in „Lokaler Computer“
-    4. Ändern Sie den Zertifikatspeicher in das Stammverzeichnis (root)
-    5. Wählen Sie „Installieren“ aus
-    6. Vergewissern Sie sich, dass das Zertifikat in der Liste der Zertifikate angezeigt wird. Wiederholen Sie andernfalls die Schritte oben
+    1. Wechseln Sie zu „Einstellungen“ > „Update und Sicherheit“ > „Zertifikate“.
+    2. Klicken Sie auf „Zertifikat installieren“, navigieren Sie zum Ordner „Downloads“, und wählen Sie das Fiddler-Zertifikat aus.
+    3. Ändern Sie den Speicherort in „Lokaler Computer“.
+    4. Ändern Sie den Zertifikatspeicher in das Stammverzeichnis (root).
+    5. Wählen Sie Installieren.
+    6. Vergewissern Sie sich, dass das Zertifikat in der Liste der Zertifikate angezeigt wird. Wiederholen Sie andernfalls diese Schritte.
 
 #### <a name="inspect-https-sessions"></a>Untersuchen von HTTP(S)-Sitzungen
 
-Auf Ihrem PC zeigt Fiddler die HTTP(S)-Livesitzungen der HoloLens 2 an. Im Bereich „Inspektoren“ in Fiddler können HTTP(S)-Anforderungen/-Antworten in verschiedenen Ansichten angezeigt werden. In der Ansicht „Raw“ wird beispielsweise die unformatierte Anforderung oder Antwort als reiner Text angezeigt. 
+Auf Ihrem PC zeigt Fiddler die HTTP(S)-Livesitzungen der HoloLens 2 an. Das Bedienfeld „Inspectors“ in Fiddler kann HTTP(S)-Anforderungen/Antworten in verschiedenen Ansichten anzeigen. Beispielsweise wird in der Ansicht „Raw“ die Anforderung oder Antwort als unformatierter Text dargestellt. 
 
 ### <a name="configure-wireshark-to-capture-network-traffic"></a>Konfigurieren von Wireshark zur Erfassung von Netzwerkverkehr
-Wireshark ist ein Tool zur Netzwerkprotokollanalyse und wird verwendet, um TCP/UDP-Datenverkehr von und zu Ihren HoloLens 2-Geräten zu untersuchen. Dadurch können Sie leicht erkennen, welcher Datenverkehr Ihr Netzwerk zu Ihrer HoloLens 2 durchquert, wie viel es davon gibt, wie häufig er ist, wie viel Latenz zwischen bestimmten Hops besteht usw.
+Wireshark ist ein Tool zur Netzwerkprotokollanalyse, das verwendet wird, um TCP/UDP-Datenverkehr zu und von Ihren HoloLens 2-Geräten zu untersuchen. Dadurch können Sie den Datenverkehr, der Ihr Netzwerk zu Ihrer HoloLens 2 durchquert, leicht erkennen – wie viel es davon gibt, wie häufig er ist, wie viel Latenz zwischen bestimmten Hops besteht usw.
 
 #### <a name="prerequisites"></a>Voraussetzungen:
-- Der PC muss über Internetzugriff verfügen und die Internetfreigabe über WLAN unterstützen
+- Der PC muss über Internetzugriff verfügen und die Internetfreigabe über WLAN unterstützen.
 
 #### <a name="install-and-configure-wireshark"></a>Installieren und Konfigurieren von Wireshark
-1. Installieren Sie [Wireshark](https://www.wireshark.org/#download) auf Ihrem PC 
+1. Installieren Sie [Wireshark](https://www.wireshark.org/#download) auf Ihrem PC.
 1. Aktivieren Sie auf Ihrem PC den mobilen Hotspot, um Ihre Internetverbindung über WLAN zu teilen.
 1. Starten Sie Wireshark auf Ihrem PC, und erfassen Sie Datenverkehr über die mobile Hotspot-Schnittstelle. 
 1. Ändern Sie auf Ihrer HoloLens 2 das WLAN-Netzwerk in den mobilen Hotspot des PCs. Der HoloLens 2-IP-Datenverkehr wird in Wireshark angezeigt.
@@ -157,7 +157,7 @@ Das betroffene Gerät wurde möglicherweise aus dem Azure AD-Mandanten gelösch
 - Ein Administrator oder Benutzer hat das Gerät im Azure-Portal oder mithilfe von PowerShell gelöscht.
 - Das Gerät wurde aufgrund von Inaktivität aus Azure AD entfernt. Für eine effizient verwaltete Umgebung empfehlen wir IT-Administratoren in der Regel, [veraltete, inaktive Geräte aus ihrem Azure AD-Mandanten zu entfernen](/azure/active-directory/devices/manage-stale-devices).
 
-Wenn ein betroffenes Gerät versucht, den Azure AD-Mandanten erneut zu kontaktieren, nachdem es gelöscht wurde, schlägt die Authentifizierung bei Azure AD fehl. Dieser Effekt ist für den Benutzer des Geräts oft nicht sichtbar, da die zwischengespeicherte Anmeldung per PIN dem Benutzer weiterhin die Anmeldung ermöglicht.
+Wenn ein betroffenes Gerät versucht, den Azure AD-Mandanten erneut zu kontaktieren, nachdem es gelöscht wurde, tritt bei der Authentifizierung bei Azure AD ein Fehler auf. Dieser Effekt ist für den Benutzer des Geräts oft nicht sichtbar, da die zwischengespeicherte Anmeldung per PIN dem Benutzer weiterhin die Anmeldung ermöglicht.
 
 ### <a name="mitigation"></a>Minderung
 Es gibt derzeit keine Möglichkeit, ein gelöschtes HoloLens-Gerät wieder in Azure AD einzubinden. Für betroffene Geräte ist ein sog. Clean-Reflash gemäß den Anweisungen [in diesem Artikel](hololens-recovery.md#clean-reflash-the-device) erforderlich.
@@ -166,7 +166,7 @@ Es gibt derzeit keine Möglichkeit, ein gelöschtes HoloLens-Gerät wieder in Az
 
 ## <a name="autopilot-troubleshooting"></a>Behandlung von Autopilot-Problemen
 
-Die folgenden Artikel können eine nützliche Ressource für Sie sein, um mehr Informationen zu erhalten und Autopilot-Probleme zu beheben. Beachten Sie jedoch, dass diese Artikel auf dem Windows 10 Desktop basieren und möglicherweise nicht alle Informationen für die HoloLens gelten:
+Die folgenden Artikel stellen für Sie möglicherweise nützliche Ressourcen dar, um mehr über Autopilot-Probleme und deren Behandlung zu erfahren. Die Artikel beziehen sich jedoch auf Windows 10 Desktop, und möglicherweise gelten nicht alle Informationen für HoloLens:
 
 - [Windows Autopilot: bekannte Probleme](/mem/autopilot/known-issues)
 - [Behandeln von Problemen bei der Windows-Geräteregistrierung in Microsoft Intune](/mem/intune/enrollment/troubleshoot-windows-enrollment-errors)
@@ -194,9 +194,9 @@ Nein.
 
 ### <a name="does-hololens-support-branding"></a>Unterstützt HoloLens Branding?
 
-Nein. Sie können dieses Problem allerdings mithilfe einer der folgenden Methoden umgehen:
+Nein. Sie können dieses Problem aber mithilfe einer der folgenden Methoden umgehen:
 
-- Erstellen Sie eine benutzerdefinierte App, und aktivieren Sie dann den [Kioskmodus](hololens-kiosk.md). Die benutzerdefinierte App kann Branding aufweisen und andere Apps starten (z. B. Remote Assist).  
+- Erstellen Sie eine benutzerdefinierte App, und [aktivieren Sie dann den Kioskmodus](hololens-kiosk.md). Die benutzerdefinierte App kann Branding aufweisen und andere Apps starten (z. B. Remote Assist).  
 - Ändern Sie alle Benutzerprofilbilder in Azure AD in Ihr Unternehmenslogo. Dies ist jedoch möglicherweise nicht für alle Szenarien wünschenswert.
 
 ### <a name="what-logging-capabilities-does-hololens-2-offer"></a>Welche Protokollierungsmöglichkeiten bietet HoloLens 2?
