@@ -1,25 +1,25 @@
 ---
 title: Aufbau der HoloLens (1. Generation)
-description: Beginnen Sie mit einem kurzen Überblick über die schnittstelle HoloLens (1. Generation), die Funktionen der Handnachverfolgung und die Verwendung holografischer Anwendungen.
+description: Beginnen Sie mit einem kurzen Überblick über die HoloLens -Schnittstelle (1. Generation), die Funktionen der Handnachverfolgung und die Verwendung holografischer Anwendungen.
 ms.assetid: 064f7eb0-190e-4643-abeb-ed3b09312042
-ms.date: 9/16/2019
-ms.reviewer: jarrettr
-manager: jarrettr
+ms.date: 8/9/2021
+ms.reviewer: sean-kerawala
+manager: sean-kerawala
 keywords: HoloLens
 ms.prod: hololens
 ms.sitesec: library
-author: v-miegge
-ms.author: v-miegge
+author: qianw211
+ms.author: v-qianwen
 ms.topic: article
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 70ee881eb0c2ffaade173b31e5168371d042bbb2
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 3723a30499c0237f19d85b48109b40ca643c6bdb
+ms.sourcegitcommit: be1393d24a98381e37bd1f56183c1f381f87cbd4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126032858"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "129600745"
 ---
 # <a name="getting-around-hololens-1st-gen"></a>Aufbau der HoloLens (1. Generation)
 
@@ -33,7 +33,7 @@ Auf HoloLens werden Hologramme mit Ihrer physischen Umgebung kombiniert, um so a
 
 Der holografische Rahmen positioniert Ihre Hologramme an der Stelle, an der Ihre Augen für Details am empfindlichsten sind, und die durchsichtigen Brillen sorgen dafür, dass Ihr Peripheriebild ungeöffnet ist. Mit räumlichem Sound können Sie ein Hologramm auch dann lokalisieren, wenn es sich hinter Ihnen befindet. Und da HoloLens Ihre Umgebung lernt und versteht, können Sie Hologramme auf und um echte Objekte platzieren – ebenso wie Ihre Apps und Spiele. Ein Zeichen in einem Spiel könnte sich also auf Ihrem Automaten befinden, oder [Raumboten könnten aus Ihren Wänden herausfahren.](https://www.microsoft.com/store/apps/9nblggh5fv3j)
 
-## <a name="use-hololens-with-your-hands"></a>Verwenden von HoloLens mit ihren Händen
+## <a name="use-hololens-with-your-hands"></a>Verwenden von HoloLens mit Ihren Händen
 
 Der Umgang mit HoloLens ähnelt dem Umgang mit Ihrem Smartphone. Sie können Ihre Hände verwenden, um holografische Fenster, Menüs und Schaltflächen zu bearbeiten.  Anstatt zu zeigen, zu klicken oder zu tippen, verwenden Sie Das Anvieren, Ihre [Stimme](hololens-cortana.md)und Gesten, um Apps und Hologramme auszuwählen und HoloLens zu umgehen.
 
@@ -57,7 +57,7 @@ So öffnen Sie das **Startmenü:**
 
 ### <a name="select-holograms-with-gaze-and-air-tap"></a>Auswählen von Hologrammen mit Anvieren und Tippen in die Luft
 
-Um eine App oder ein anderes Hologramm auszuwählen, tippen Sie in der Luft darauf, während Sie das ausgewählte Hologramm direkt betrachten. Gehen Sie hierzu folgendermaßen vor:
+Um eine App oder ein anderes Hologramm auszuwählen, tippen Sie in der Luft darauf, während Sie das ausgewählte Hologramm direkt betrachten. Folgen Sie diesen Schritten:
 
 1. Sehen Sie sich das Hologramm an, das Sie auswählen möchten.
 1. Zeigen Sie mit dem Zeigefinger gerade nach oben zur Decke.
@@ -87,13 +87,13 @@ Wenn Sie ein App-Fenster oder ein App-Startfenster platzieren, bleibt es so lang
 Das Verschieben und Ändern der Größe von Apps auf HoloLens funktioniert etwas anders als auf einem PC. Anstatt die App zu ziehen, verwenden Sie das Anvieren zusammen mit einer [Geste](https://support.microsoft.com/help/12644/hololens-use-gestures) oder dem [Klicker](hololens1-clicker.md). Sie können ein App-Fenster auch im 3D-Bereich drehen.
 
 > [!TIP]
-> Apps mit Ihrer Stimme neu anordnen: Sie können eine App anvieren und "Zu mir drehen", "Größer" oder "Kleiner" sagen. Sie können auch Cortana eine App für Sie verschieben: "Hey Cortana, \* *move app name \** here".
+> Apps mit Ihrer Stimme neu anordnen: Sie können eine App anvieren und "Zu mir drehen", "Größer" oder "Kleiner" sagen. Oder Cortana eine App für Sie verschieben: "Hey Cortana, \* *App-Name \** hier verschieben".
 
 ### <a name="move-an-app"></a>Verschieben einer App
 
 Sehen Sie sich die App an (in der Titelleiste eines App-Fensters), und gehen Sie dann wie folgt vor.
 
-- Tippen Sie auf , und halten Sie sich, um die App auszuwählen. Bewegen Sie Ihre Hand, um die App zu positionieren, und heben Sie den Finger, um sie zu platzieren.
+- Tippen Und halten Sie, um die App auszuwählen. Bewegen Sie Ihre Hand, um die App zu positionieren, und heben Sie den Finger, um sie zu platzieren.
 - Wählen Sie **Anpassen** aus, tippen Und halten Sie die Hand, und bewegen Sie ihre Hand, um die App zu positionieren. Heben Sie den Finger, um ihn zu platzieren, und wählen Sie dann **Fertig** aus.
 - Wählen Sie **Anpassen** aus, klicken Und halten Sie den Clicker, und bewegen Sie Ihre Hand, um die App zu positionieren. Geben Sie den Clicker frei, und wählen Sie dann **Fertig** aus.
 
@@ -104,8 +104,8 @@ Sehen Sie sich die App an (in der Titelleiste eines App-Fensters), und gehen Sie
 
 Sehen Sie sich die App an, und gehen Sie dann wie folgt vor.
 
-- Sie können eine Ecke oder einen Rand eines App-Fensters anv und tippen und halten. Bewegen Sie Ihre Hand, um die Größe der App zu ändern, und heben Sie den Finger, wenn Sie fertig sind.
-- Wählen Sie **Anpassen** aus. Sie können eines der blauen Quadrate an den Ecken der App anvisieren, tippen und halten und dann ihre Hand bewegen, um die Größe der App zu ändern. Heben Sie den Finger, um ihn freizugeben, und wählen Sie dann **Fertig** aus.
+- Anvimen an einer Ecke oder einem Rand eines App-Fensters und Tippen und Halten. Bewegen Sie Ihre Hand, um die Größe der App zu ändern, und heben Sie den Finger, wenn Sie fertig sind.
+- Wählen Sie **Anpassen** aus. Anvisieren sie eines der blauen Quadrate an den Ecken der App, tippen und halten Sie sie, und bewegen Sie ihre Hand, um die Größe der App zu ändern. Heben Sie den Finger, um ihn freizugeben, und wählen Sie dann **Fertig** aus.
 - Wählen Sie **Anpassen** aus. Anvisieren Sie eines der blauen Quadrate an den Ecken der App, klicken Und halten Sie den Clicker, und bewegen Sie ihre Hand, um die Größe der App zu ändern. Geben Sie den Clicker frei, und wählen Sie dann **Fertig** aus.
 
 > [!TIP]
@@ -118,6 +118,35 @@ Sehen Sie sich die App an, und halten Sie sie mit beiden Händen an, um sie ausz
 ### <a name="scroll-content-in-an-app-window"></a>Scrollen von Inhalten in einem App-Fenster
 
 Sehen Sie sich den Inhalt des App-Fensters an. Tippen Und halten Sie die Hand gedrückt, und bewegen Sie sie dann leicht nach oben oder unten, um den Inhalt zu scrollen.
+
+## <a name="share-your-hololens-with-multiple-people"></a>Freigeben Ihrer HoloLens für mehrere Personen
+
+Es ist üblich, eine HoloLens für viele Personen freizugeben oder eine Reihe von HoloLens Geräten gemeinsam zu nutzen.  
+
+### <a name="share-with-multiple-people-each-using-their-own-account"></a>Freigeben für mehrere Personen mit jeweils einem eigenen Konto
+
+**Voraussetzung:** HoloLens (1. Generation) muss [auf Windows Holographic for Business aktualisiert](hololens-upgrade-enterprise.md)werden.
+
+Wenn sie ihre eigenen Azure Active Directory -Konten (Azure AD) verwenden, können mehrere Benutzer jeweils ihre eigenen Benutzereinstellungen und Benutzerdaten auf dem Gerät beibehalten.
+
+Führen Sie die folgenden Schritte aus, um sicherzustellen, dass mehrere Personen ihre eigenen Konten für Ihre HoloLens verwenden können:
+
+1. Wenn Sie das Gerät einrichten, wählen Sie **Meine Arbeit oder Schule besitzt es** aus, und melden Sie sich mit einem Azure AD Konto an.
+1. Stellen Sie nach Abschluss der Einrichtung sicher, dass die Kontoeinstellungen (**Einstellungen**  >  **Konten**) **andere Benutzer** enthalten.
+
+Um HoloLens verwenden zu können, muss jeder Benutzer die folgenden Schritte ausführen:
+
+1. Wenn ein anderer Benutzer das Gerät verwendet hat, drücken Sie einmal den Netzschalter, um in den Standbymodus zu wechseln. Drücken Sie dann erneut den Netzschalter, um zum Sperrbildschirm zurückzukehren.
+
+1. Melden Sie sich mit ihren Azure AD-Kontoanmeldeinformationen beim Gerät an. Wenn Sie das Gerät zum ersten Mal verwenden, müssen Sie die HoloLens an Ihre eigenen Augen [kalibrieren.](hololens-calibration.md)
+
+Um eine Liste der Gerätebenutzer anzuzeigen oder einen Benutzer vom Gerät zu entfernen, wechseln Sie zu **Einstellungen**  >  **Konten**  >  **Andere Benutzer**.
+
+### <a name="share-with-multiple-people-all-using-the-same-account"></a>Freigeben für mehrere Personen, die alle das gleiche Konto verwenden
+
+Mehrere Benutzer können ein HoloLens Gerät auch freigeben, während sie ein einzelnes Benutzerkonto verwenden.
+
+Benutzer, die ein konto gemeinsam nutzen, müssen die HoloLens in **Einstellungen neucalibrieren.**  Weitere Informationen zur [Kalibrierung](hololens-calibration.md)finden Sie hier.
 
 ## <a name="meet-the-hololens-1st-gen-clicker"></a>Meet the HoloLens (1st gen) Clicker (Erfüllen des HoloLens(1. Generation)-Clicker)
 
@@ -139,5 +168,5 @@ Wenn Sie bei der Verwendung von HoloLens keine Hologramme sehen, die Sie platzie
 
 - Stellen Sie sicher, dass Sie im rechten Bereich &mdash; suchen. Beachten Sie, dass Hologramme dort bleiben, wo Sie sie verlassen haben!
 - Stellen Sie sicher, dass Sie sich in einem gut beleuchteten Raum ohne viele direkte Würfe befinden.
-- Warte. Wenn HoloLens Probleme beim Erkennen Ihres Raums haben, kann es bis zu einer Minute dauern, bis zuvor platzierte Hologramme wieder angezeigt werden.
-- Wenn das Problem weiterhin besteht, sollten Sie Ihre Hologramme-Speicherdaten in **Einstellungen** System Hologramme löschen und hologramme dann wieder in Mixed Reality Startumgebung  >    >  platzieren.
+- Warte. Wenn HoloLens Probleme beim Erkennen Ihres Raumes hat, kann es bis zu einer Minute dauern, bis zuvor platzierte Hologramme wieder angezeigt werden.
+- Wenn das Problem weiterhin besteht, sollten Sie Ihre Hologramme Speicherdaten in **Einstellungen** System Hologramme löschen  >    >  und dann hologramme erneut in Mixed Reality Startumgebung platzieren.
