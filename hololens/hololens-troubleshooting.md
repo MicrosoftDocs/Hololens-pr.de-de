@@ -13,12 +13,12 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: Probleme, Fehler, Problembehandlung, Fehlerbehebung, Hilfe, Support, HoloLens, Emulator
-ms.openlocfilehash: 247cf9d34da723e587f6796178ad9a917b93ac08
-ms.sourcegitcommit: 39accbc8e35728969c500da052035af4fd317a65
+ms.openlocfilehash: 5c79e119352146ac249ef02ab888141391c9cea1
+ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129964563"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "130034194"
 ---
 # <a name="device-troubleshooting"></a>Problembehandlung für Geräte
 
@@ -142,13 +142,13 @@ Wenn Sie den Build nicht auf Remote Assist neueren Build aktualisieren können, 
 
 Wenn Ihre Aufrufe länger als 20 Minuten dauern und dieses Problem vor sich geht, versuchen Sie, Ihr Gerät neu zu starten. Wenn Sie Ihr Gerät zwischen Remote Assist aufrufen, wird das Gerät aktualisiert und wieder in einen guten Zustand zurückverstanden.
 
-Um ein Gerät in Windows Holographic schnell neu zu starten, öffnen Sie Version [21H1](hololens-release-notes.md#windows-holographic-version-21h1) das Startmenü, wählen Sie das Benutzersymbol aus, und wählen Sie dann **Neu starten aus.**
+Um ein Gerät auf Windows Holographic schnell neu zu starten, öffnen Sie Version [21H1](hololens-release-notes.md#windows-holographic-version-21h1) das Startmenü, wählen Sie das Benutzersymbol aus, und wählen Sie dann **Neu starten aus.**
 
 [Zurück zur Liste](#list)
 
 ## <a name="auto-login-asks-for-log-in"></a>Bei der automatischen Anmeldung wird nach der Anmeldung gefragt.
 
-Ein HoloLens 2 Gerät kann so konfiguriert werden, dass es sich automatisch über **Einstellungen**  ->    ->  **Kontoanmeldungsoptionen** -> anmeldet und unter **Erforderlich** den Wert **auf Nie** festlegt. Einige Benutzer müssen sich möglicherweise erneut beim Gerät anmelden, wenn sie ein Gerät mit einem erheblich großen Update aktualisieren, z. B. ein Featureupdate. Dies ist ein **bekanntes Problem.**
+Ein HoloLens 2 Gerät kann so konfiguriert werden, dass es sich automatisch über **Einstellungen**  ->  **Anmeldeoptionen** für Konten >  ->   anmeldet und unter **Erforderlich** den Wert **nie** auf festlegt. Einige Benutzer müssen sich möglicherweise erneut beim Gerät anmelden, wenn sie ein Gerät mit einem erheblich großen Update aktualisieren, z. B. ein Featureupdate. Dies ist ein **bekanntes Problem.**
 
 Beispiel für den Fall, dass dies der Fall sein kann:
 
@@ -163,7 +163,7 @@ Dies sollte nicht während der:
 Umgehen von Methoden:
 
 - Anmeldemethoden wie PIN, Kennwort, Iris, Webauthentifizierung oder FIDO2-Schlüssel.
-- Wenn die Geräte-PIN nicht gespeichert werden kann und andere Authentifizierungsmethoden nicht verfügbar sind, kann ein Benutzer den [manuellen Reflashingmodus](hololens-recovery.md#manual-procedure)verwenden.
+- Wenn die Geräte-PIN nicht gespeichert werden kann und andere Authentifizierungsmethoden nicht verfügbar sind, kann ein Benutzer den [manuellen Reflashingmodus](hololens-recovery.md#manual-flashing-mode-procedure)verwenden.
 
 [Zurück zur Liste](#list)
 
@@ -172,7 +172,7 @@ Umgehen von Methoden:
 > [!NOTE]
 > Dieses Problem wurde ursprünglich mit der Versandversion von Microsoft Edge erstellt. Dieses Problem kann im [neuen Microsoft Edge](hololens-new-edge.md)behoben werden. Wenn dies nicht dere ist, senden Sie uns Feedback.
 
-Einige Kunden haben ein Problem gemeldet, bei dem Microsoft Edge nicht gestartet werden kann. Für diese Kunden bleibt das Problem durch einen Neustart bestehen und wird nicht mit Windows oder Anwendungsupdates gelöst. Wenn dieses Problem auftritt und Sie bestätigt [haben, dass Windows auf dem neuesten Stand ist,](hololens-updates.md#manually-check-for-updates)melden Sie einen Fehler aus der [Feedback-Hub-App](hololens-feedback.md) mit der folgenden Kategorie und Unterkategorie: Installieren und Aktualisieren > Herunterladen, Installieren und Konfigurieren Windows Update.
+Einige Kunden haben ein Problem gemeldet, bei dem Microsoft Edge nicht gestartet werden kann. Für diese Kunden bleibt das Problem durch einen Neustart bestehen und wird nicht mit Windows oder Anwendungsupdates gelöst. Wenn dieses Problem auftritt und Sie bestätigt [haben, dass Windows auf dem neuesten Stand ist,](hololens-updates.md#manually-check-for-updates)melden Sie einen Fehler aus der [Feedback-Hub-App](hololens-feedback.md) mit der folgenden Kategorie und Unterkategorie: Installieren und Aktualisieren > Herunterladen, Installieren und Konfigurieren von Windows Update.
 
 Es gibt keine bekannten Problemumgehungen, da wir das Problem bisher nicht lösen konnten. Das Melden eines Fehlers über Feedback-Hub hilft uns bei unserer Untersuchung! Dies ist ein **bekanntes Problem.**
 
@@ -180,7 +180,7 @@ Es gibt keine bekannten Problemumgehungen, da wir das Problem bisher nicht löse
 
 ## <a name="keyboard-doesnt-switch-to-special-characters"></a>Tastatur wechselt nicht zu Sonderzeichen
 
-Während der OOBE tritt ein Problem auf. Sobald der Benutzer ein Arbeits- oder Schulkonto ausgewählt und sein Kennwort eingegeben hat, versucht, zu den Sonderzeichen auf der Tastatur zu wechseln, indem er auf die Schaltfläche &123 tippt, ändert sich nicht in Sonderzeichen. Dies ist ein **bekanntes Problem.**
+Während der OOBE tritt ein Problem auf. Sobald der Benutzer ein Arbeits- oder Schulkonto ausgewählt hat und sein Kennwort eingibt, ändert sich der Versuch, zu den Sonderzeichen auf der Tastatur zu wechseln, indem er auf die Schaltfläche &123 tippt, nicht in Sonderzeichen. Dies ist ein **bekanntes Problem.**
 
 Work-arounds:
 
@@ -196,7 +196,7 @@ Dies wirkt sich nicht auf:
 
 [Zurück zur Liste](#list)
 
-## <a name="downloading-locked-files-doesnt-error"></a>Beim Herunterladen gesperrter Dateien tritt kein Fehler auf.
+## <a name="downloading-locked-files-doesnt-error"></a>Fehler beim Herunterladen gesperrter Dateien
 
 > [!NOTE]
 > Dies ist ein **bekanntes Problem,** das in [Windows Holographic, Version 21H1 – Update von Juli 2021](hololens-release-notes.md#windows-holographic-version-21h1---july-2021-update)behoben wurde.
@@ -205,30 +205,30 @@ In vorherigen Builds von Windows Holographic war das Ergebnis beim Herunterladen
 
 [Zurück zur Liste](#list)
 
-## <a name="device-portal-file-uploaddownload-times-out"></a>Geräteportal Dateiupload-/Download-Times out
+## <a name="device-portal-file-uploaddownload-times-out"></a>Geräteportal Zeit für Dateiupload/-download
 > [!NOTE]
 > Dies ist ein **bekanntes Problem,** das in [Windows Holographic, Version 21H1 – Update von Juli 2021](hololens-release-notes.md#windows-holographic-version-21h1---july-2021-update)behoben wurde. Wenn Sie die SSL-Verbindung zuvor als Teil der Problemumgehung deaktiviert haben, wird dringend empfohlen, sie erneut zu aktivieren.
 
-Einige Kunden haben festgestellt, dass beim Versuch, Dateien hoch- oder herunterzuladen, der Vorgang möglicherweise hängt und dann ein Time out oder nie abgeschlossen wird. Dies ist vom[bekannten Problem "Datei gesperrt"](#downloading-locked-files-doesnt-error) getrennt. Dies betrifft Windows Holographic-Builds der Versionen 2004, 20H2 und 21H1. Das Problem wurde aufgrund eines Fehlers bei der Verarbeitung bestimmter Anforderungen durch Geräteportal verursacht und tritt am häufigsten auf, wenn https verwendet wird. Dies ist die Standardeinstellung.
+Einige Kunden haben festgestellt, dass beim Versuch, Dateien hoch- oder herunterzuladen, der Vorgang möglicherweise hängt und dann ein Time out oder nie abgeschlossen wird. Dies ist vom[bekannten Problem "Datei gesperrt"](#downloading-locked-files-doesnt-error) getrennt. Dies wirkt sich auf Windows Holographic-Builds der Versionen 2004, 20H2 und 21H1 aus. Das Problem wurde aufgrund eines Fehlers bei der Verarbeitung bestimmter Anforderungen durch Geräteportal verursacht und tritt am häufigsten auf, wenn https verwendet wird. Dies ist die Standardeinstellung.
 
 ### <a name="workaround"></a>Problemumgehung
 
-Diese Problemumgehung, die gleichermaßen für Wi-Fi und UsbNcm gilt, besteht darin, die Option "erforderlich" unter "SSL-Verbindung" zu deaktivieren. Navigieren Sie hierzu zu **Geräteportal, System**, und wählen Sie die Seite **Einstellungen aus.** Suchen Sie im Abschnitt **Gerätesicherheit** nach **SSL-Verbindung,** und deaktivieren Sie die Option **Erforderlich.**
+Diese Problemumgehung, die gleichermaßen für Wi-Fi und UsbNcm gilt, besteht darin, die Option "erforderlich" unter "SSL-Verbindung" zu deaktivieren. Navigieren Sie hierzu zu Geräteportal, **System**, und wählen Sie die Seite **Einstellungen aus.** Suchen Sie im Abschnitt **Gerätesicherheit** nach **SSL-Verbindung,** und deaktivieren Sie die Option **Erforderlich.**
 
-Der Benutzer sollte dann zu http:// wechseln, nicht https:// (IP-Adresse) und Funktionen wie Dateiupload und -download funktionieren.
+Der Benutzer sollte dann zu http:// wechseln, nicht https:// (IP-Adresse) und Features wie Dateiupload und -download funktionieren.
 
 [Zurück zur Liste](#list)
 
 ## <a name="blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build"></a>Blue screen after unenrolling from Insider preview on a device flashed with an Insider build (Blauer Bildschirm nach dem Aufheben der Registrierung bei der Insider-Vorschau auf einem Gerät, das mit einem Insider-Build blinkt)
 
-Dies ist ein Problem, das Sich auf Benutzer auswirkt, die sich in einem Insider-Vorschaubuild befanden, ihre HoloLens 2 mit einem neuen Insider Preview-Build umgestrichen und dann die Registrierung beim Insider-Programm aufgehoben haben. Dies ist ein **bekanntes Problem.**
+Dies ist ein Problem, das Sich auf Benutzer auswirkt, die sich in einem Insider-Vorschaubuild befinden, ihre HoloLens 2 mit einem neuen Insider Preview-Build umgestrichen und dann die Registrierung beim Insider-Programm aufgehoben haben. Dies ist ein **bekanntes Problem.**
 
 Dies wirkt sich nicht auf:
 
 - Benutzer, die nicht bei Windows Insider registriert sind
 - Insider:
     - Wenn ein Gerät registriert wurde, da Insider-Builds Version 18362.x waren
-    - Wenn sie einen von Insider signierten 19041.x-Build flashten, bleiben Sie für das Insider-Programm registriert.
+    - Wenn sie einen insidersignierten 19041.x-Build flashten, bleiben Sie für das Insider-Programm registriert.
 
 Umgehen:
 
@@ -237,7 +237,7 @@ Umgehen:
     - Bleiben Sie auf Insider Preview
 - Reflash the device (Reflash des Geräts)
 
-    1. Versetzen Sie die HoloLens 2 manuell in den [Blinkmodus,](hololens-recovery.md) indem Sie vollständig herunterschalten, ohne eine Verbindung herzustellen. Tippen Sie dann bei gedrückter Lautstärke auf die Netzschaltfläche.
+    1. Versetzen Sie die HoloLens 2 manuell in den [Blinkmodus,](hololens-recovery.md) indem Sie vollständig herunterschalten, ohne eine Verbindung herzustellen. Tippen Sie dann bei gedrückter Lautstärke auf die Schaltfläche "Einschalten".
 
     1. Verbinden zum PC, und öffnen Sie Advanced Recovery Companion.
 
@@ -245,7 +245,7 @@ Umgehen:
 
 [Zurück zur Liste](#list)
 
-## <a name="onedrive-doesnt-automatically-upload-pictures"></a>OneDrive lädt Bilder nicht automatisch hoch.
+## <a name="onedrive-doesnt-automatically-upload-pictures"></a>OneDrive lädt Bilder nicht automatisch hoch
 
 Die OneDrive-App für HoloLens unterstützt keinen automatischen Kameraupload für Arbeits- oder Schulkonten. Dies ist ein **bekanntes Problem.**
 
@@ -253,16 +253,16 @@ Problemumgehungen:
 
 - Wenn dies für Ihr Unternehmen geeignet ist, wird der automatische Kameraupload für Microsoft-Kundenkonten unterstützt. Sie können sich zusätzlich zu Ihrem Arbeits- oder Schulkonto bei Ihrem Microsoft-Konto anmelden (die OneDrive-App unterstützt die duale Anmeldung). In Ihrem Microsoft-Konto-Profil in OneDrive können Sie den automatischen Kamerarollup im Hintergrund aktivieren.
 
-- Wenn Sie einen Consumer Microsoft-Konto nicht sicher zum automatischen Hochladen Ihrer Fotos verwenden können, können Sie Fotos manuell über die OneDrive-App in Ihr Arbeits- oder Schulkonto hochladen. Stellen Sie hierzu sicher, dass Sie bei Ihrem Arbeits- oder Schulkonto in der OneDrive-App angemeldet sind. Wählen Sie die **+** Schaltfläche und dann **Hochladen** aus. Suchen Sie die Fotos oder Videos, die Sie hochladen möchten, indem Sie zu **Bilder > Kameraroll navigieren.** Wählen Sie die Fotos oder Videos aus, die Sie hochladen möchten, und klicken Sie dann auf die Schaltfläche **Öffnen.**
+- Wenn Sie einen Consumer Microsoft-Konto für das automatische Hochladen Ihrer Fotos nicht sicher verwenden können, können Sie Fotos manuell über die OneDrive-App in Ihr Arbeits- oder Schulkonto hochladen. Stellen Sie hierzu sicher, dass Sie bei Ihrem Arbeits- oder Schulkonto in der OneDrive-App angemeldet sind. Wählen Sie die **+** Schaltfläche und dann **Hochladen** aus. Suchen Sie die Fotos oder Videos, die Sie hochladen möchten, indem Sie zu **Bilder > Kameraroll navigieren.** Wählen Sie die Fotos oder Videos aus, die Sie hochladen möchten, und klicken Sie dann auf die Schaltfläche **Öffnen.**
 
 [Zurück zur Liste](#list)
 
-## <a name="hololens-is-unresponsive-or-wont-start"></a>HoloLens reagiert nicht oder wird nicht gestartet
+## <a name="hololens-is-unresponsive-or-wont-start"></a>HoloLens reagiert nicht oder wird nicht gestartet.
 
 Wenn Ihre HoloLens nicht gestartet wird:
 
 - Wenn die LEDs neben dem Netzschalter nicht aufleuchten oder nur eine LED kurz blinkt, müssen Sie ihre HoloLens möglicherweise [aufladen.](hololens2-charging.md#charging-the-device)
-- Wenn die LEDs beim Drücken des Netzschalters aufleuchten, aber auf den Bildschirmen nichts angezeigt wird, setzen Sie [das Gerät hart zurück.](hololens-recovery.md#hard-reset-procedure)
+- Wenn die LEDs beim Drücken des Netzschalters aufleuchten, aber auf den Bildschirmen nichts angezeigt wird, setzen Sie [das Gerät hart zurück.](hololens-recovery.md#hard-restart-procedure)
 
 Wenn Ihr HoloLens eingefroren wird oder nicht mehr reagiert:
 
@@ -279,7 +279,7 @@ Sie müssen Speicherplatz freigeben, indem Sie eine oder mehrere der folgenden S
 - Löschen Sie einige nicht verwendeten Leerzeichen. Wechseln Sie zu **Einstellungen**  >    >  **Systemräume,** wählen Sie einen Nicht mehr benötigten Bereich aus, und wählen Sie dann **Entfernen** aus.
 - Entfernen Sie einige der Hologramme, die Sie platziert haben.
 - Löschen Sie einige Bilder und Videos aus der Fotos App.
-- Deinstallieren Sie einige Apps aus HoloLens. Tippen und **Alle Apps** in der Liste Der Benutzer tippen und halten Sie die App, die Sie deinstallieren möchten, und wählen Sie dann **Deinstallieren aus.**
+- Deinstallieren Sie einige Apps aus HoloLens. Tippen und **Alle Apps** in der Liste der Benutzer auf die App, die Sie deinstallieren möchten, und halten Sie sie fest, und wählen Sie dann **Deinstallieren aus.**
 
 [Zurück zur Liste](#list)
 
@@ -290,12 +290,12 @@ Die Kalibrierung sollte für die meisten Personen funktionieren, aber es gibt F�
 Mögliche Gründe für Kalibrierungsfehler:
 
 - Abgelenkung und Nichterkennen der Kalibrierungsziele
-- Dirty or scratched device visor or device visor not positioned properly (Nicht ordnungsgemäß positioniertes oder verzerrtes Gerätevisor oder Gerätevisor)
+- Dirty or scratched device visor or device visor not positioned or device visor not positioned (Nicht ordnungsgemäß positioniertes oder verzerrtes Gerätevisor oder Gerätevisor)
 - Dirty oder Scratched Brille
 - Bestimmte Arten von Kontaktobjekten und Brillen (farbige Kontaktbrillen, einige Toric-Kontaktbrillen, IR blockierende Brillen, einige Brillen mit hoher Brille, Sonnenbrillen oder ähnliches)
 - Stärker ausgesprochenes Makeup und einige Wimpernerweiterungen
 - Brillenrahmen mit Kopf oder Brille, wenn sie das Gerät am Sehen Ihrer Augen blockieren
-- Bestimmte Augenplage, Augenbedingungen oder Augenbrillen wie schmale Augen, lange Augenstriche, Amblylen, Nystagmus, einige Fälle von LASIK oder andere Augenspitzen
+- Bestimmte Augenplage, Augenbedingungen oder Augenbrillen, z. B. schmale Augen, lange Augen, lange Augenstriche, Amblylen, Nystagmus, einige Fälle von LASIK oder andere Augenspitzen
 
 Wenn die Kalibrierung nicht erfolgreich ist, versuchen Sie:
 
@@ -329,17 +329,17 @@ Sie können [das Gerät in den **Flashmodus setzen** und Advanced Recovery Compa
 
 ## <a name="windows-device-portal-isnt-working-correctly"></a>Windows Geräteportal funktioniert nicht ordnungsgemäß
 
-- Das LiveVorschaufeature in Mixed Reality erfassung kann einige Sekunden Wartezeit zeigen.
+- Die LiveVorschaufunktion in Mixed Reality Erfassung kann einige Sekunden Latenz zeigen.
 
 - Auf der Seite Virtuelle Eingabe sind die Steuerelemente Geste und Bildlauf im Abschnitt Virtuelle Gesten nicht funktionsfähig. Ihre Verwendung hat keine Auswirkungen. Die virtuelle Tastatur auf der virtuellen Eingabeseite funktioniert ordnungsgemäß.
 
-- Nachdem Sie den Entwicklermodus in Einstellungen aktiviert haben, kann es einige Sekunden dauern, bis der Schalter aktiviert Geräteportal ist.
+- Nach dem Aktivieren des Entwicklermodus in Einstellungen kann es einige Sekunden dauern, bis der Schalter aktiviert Geräteportal ist.
 
 [Zurück zur Liste](#list)
 
 ## <a name="the-hololens-emulator-isnt-working"></a>Die HoloLens Emulator funktioniert nicht
 
-Informationen zum HoloLens Emulator finden Sie in unserer Entwicklerdokumentation.  Erfahren Sie mehr über [die Problembehandlung des HoloLens Emulators.](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator#troubleshooting)
+Informationen zum HoloLens Emulator finden Sie in unserer Entwicklerdokumentation.  Weitere Informationen zur [Problembehandlung für den HoloLens Emulator finden Sie hier.](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator#troubleshooting)
 
 
 - Nicht alle Apps in der Microsoft Store sind mit dem Emulator kompatibel. Beispielsweise können Young Conker und Fragmente nicht auf dem Emulator abspielbar sein.
@@ -350,7 +350,7 @@ Informationen zum HoloLens Emulator finden Sie in unserer Entwicklerdokumentatio
 
 ## <a name="voice-commands-arent-working"></a>Sprachbefehle funktionieren nicht
 
-Wenn Cortana nicht auf Ihre Sprachbefehle reagiert, stellen Sie sicher, Cortana aktiviert ist. Wählen Sie in Alle Apps Liste die Option **Cortana**  >  **Menü**  >  **notebook**  >  **Einstellungen** aus, um Änderungen vorzunehmen. Weitere Informationen dazu, was Sie sagen können, finden Sie unter [Verwenden Ihrer Stimme mit HoloLens](hololens-cortana.md).
+Wenn Cortana nicht auf Ihre Sprachbefehle reagiert, stellen Sie sicher, Cortana aktiviert ist. Wählen Sie in Alle Apps Liste die Option **Cortana**  >  **Menü**  >  **Notebook**  >  **Einstellungen,** um Änderungen vorzunehmen. Weitere Informationen dazu, was Sie sagen können, finden Sie unter [Verwenden Ihrer Stimme mit HoloLens](hololens-cortana.md).
 
 Auf HoloLens (1. Generation) ist die integrierte Spracherkennung nicht konfigurierbar. Sie ist immer aktiviert. Auf HoloLens 2 können Sie auswählen, ob sie während der Geräteeinrichtung sowohl die Spracherkennung als auch Cortana aktivieren möchten.
 
@@ -404,16 +404,16 @@ Legen **Einstellungen** Systemsound explizit die integrierten Lautsprecher  ->  
 
 ## <a name="devices-listed-as-available-in-settings-dont-work"></a>Geräte, die als verfügbar in aufgeführt Einstellungen funktionieren nicht
 
-HoloLens (1. Generation) unterstützt keine Bluetooth Audioprofile. Bluetooth Audiogeräte, z. B. Lautsprecher und Headsets, werden möglicherweise in HoloLens Einstellungen als verfügbar angezeigt, werden jedoch nicht unterstützt.
+HoloLens (1. Generation) unterstützt keine Bluetooth Audioprofile. Bluetooth Audiogeräte, z. B. Lautsprecher und Headsets, werden möglicherweise als in HoloLens verfügbar angezeigt, werden aber nicht unterstützt.
 
-HoloLens 2 unterstützt das Bluetooth A2DP-Audioprofil für die Stereowiedergabe. Das profil Bluetooth Hands Free, das die Mikrofonaufnahme von einem Bluetooth Peripheriegerät ermöglicht, wird auf HoloLens 2 nicht unterstützt.
+HoloLens 2 unterstützt das Bluetooth A2DP-Audioprofil für die Stereowiedergabe. Das Bluetooth Hands Free-Profil, das die Mikrofonerfassung von einem Bluetooth-Peripheriegerät ermöglicht, wird auf HoloLens 2.
 
-Wenn Sie Probleme bei der Verwendung eines Bluetooth Geräts haben, stellen Sie sicher, dass es sich um ein unterstütztes Gerät handelt. Folgende Geräte werden unterstützt:
+Wenn Sie Probleme bei der Verwendung eines Bluetooth haben, stellen Sie sicher, dass es sich um ein unterstütztes Gerät ist. Folgende Geräte werden unterstützt:
 
 - QWERTY in englischer Sprache Bluetooth Tastaturen (Sie können diese überall dort verwenden, wo Sie die holografische Tastatur verwenden).
-- Bluetooth-Maus.
-- Der [HoloLens Clicker](hololens1-clicker.md).
+- Bluetooth Maus.
+- Der [HoloLens klickt.](hololens1-clicker.md)
 
-Sie können andere Bluetooth HID- und GATT-Geräte mit Ihrem HoloLens koppeln. Möglicherweise müssen Sie jedoch entsprechende Begleit-Apps von Microsoft Store installieren, um die Geräte tatsächlich zu verwenden.
+Sie können andere hid Bluetooth HID- und GATT-Geräte mit Ihren geräten HoloLens. Möglicherweise müssen Sie jedoch entsprechende Begleit-Apps von Microsoft Store, um die Geräte tatsächlich zu verwenden.
 
 [Zurück zur Liste](#list)
