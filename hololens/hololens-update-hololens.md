@@ -1,7 +1,7 @@
 ---
-title: Update HoloLens 2
-description: Erfahren Sie, wie HoloLens Buildnummer überprüfen, mit Geräteupdates auf dem Laufenden bleiben, am Insider-Programm teilnehmen und ein Rollback für Updates erstellen.
-keywords: How-to, update, rollback, HoloLens, check build, build number
+title: Aktualisieren HoloLens 2
+description: Erfahren Sie, wie Sie Ihre HoloLens Buildnummer überprüfen, über Geräteupdates auf dem Laufenden bleiben, am Insiders-Programm teilnehmen und Updates zurücksetzen.
+keywords: Vorgehensweise, Update, Rollback, HoloLens, Build überprüfen, Buildnummer
 ms.prod: hololens
 ms.sitesec: library
 author: qianw211
@@ -14,87 +14,91 @@ ms.reviewer: ''
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 49036135ba13a93d2e8be97a7f3a95d50785c5c5
-ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
+ms.openlocfilehash: 080fb184c7eca3fdb978e860a29764f5012a179e
+ms.sourcegitcommit: f105a770814ccd61e88b650448902a03c95b7a3c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "130034262"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130151689"
 ---
-# <a name="update-hololens-2"></a>Update HoloLens 2
+# <a name="update-hololens-2"></a>Aktualisieren HoloLens 2
 
 ## <a name="overview"></a>Übersicht
 
 Wir arbeiten immer an neuen Features, Fehlerbehebungen und Sicherheitsupdates. Sie werden benachrichtigt, wenn diese Updates bereit sind.
 
-Je nach Ihren Vorlieben werden Systemupdates von HoloLens automatisch heruntergeladen und installiert, wenn sie an den Strom angeschlossen, mit dem Internet verbunden und sogar im Standbymodus angeschlossen ist.
+Je nach Ihren Wünschen lädt Ihr HoloLens Systemupdates automatisch herunter und installiert sie, sobald es an den Strom angeschlossen, mit dem Internet verbunden und sogar im Standbymodus ist.
 
-Um sicherzustellen, HoloLens immer aktualisiert wird, lassen Sie es mit der 10000-000-000-000-Version verbunden. Sie möchten auch, dass HoloLens mit dem Internet verbunden ist. Auf diese Weise werden automatisch Systemupdates heruntergeladen und installiert. 
+Um sicherzustellen, dass Ihre HoloLens immer aktualisiert wird, lassen Sie sie mit der Vorrichtung verbunden, die mit ihr geliefert wurde. Sie möchten auch, dass Ihre HoloLens mit dem Internet verbunden ist. Auf diese Weise werden Systemupdates automatisch heruntergeladen und installiert. 
 
-Mit Windows Updatedienst steuern Sie mehrere Aspekte des Updateprozesses, z. B. welche Geräte zu welchem Zeitpunkt welche Updates erhalten. Dieses Steuerelement ist hilfreich, da Sie Updates für eine Teilmenge von HoloLens für Tests bereitstellen können. Anschließend werden Updates für die verbleibenden Updates veröffentlicht. Oder Sie können unterschiedliche Zeitpläne für verschiedene Arten von Updates festlegen.
+Mit Windows Updatedienst steuern Sie mehrere Aspekte des Updateprozesses, z. B. welche Geräte zu welchem Zeitpunkt welche Updates erhalten. Dieses Steuerelement ist hilfreich, da Sie Updates für eine Teilmenge von HoloLens Geräten zu Testzwecken bereitstellen können. Anschließend werden Updates für die verbleibenden Updates bereitgestellt. Oder Sie können unterschiedliche Zeitpläne für verschiedene Arten von Updates festlegen.
 
 ## <a name="types-of-updates"></a>Updatetypen
 
 Für HoloLens können Sie automatisch zwei Arten von Updates verwalten.
 
 - Featureupdates: zweimal pro Jahr veröffentlicht.
-- Qualitätsupdates: Enthalten wichtige Sicherheitsupdates. Sie werden monatlich oder nach Bedarf veröffentlicht.
+- Qualitätsupdates: Wichtige Sicherheitsupdates sind enthalten. Sie werden monatlich oder nach Bedarf veröffentlicht.
 
-Verwenden **Sie** / **AllowAutoUpdate aktualisieren,** um das Scannen, Herunterladen und Installieren von Updates zu verwalten. 
+Verwenden Sie **Update** / **AllowAutoUpdate,** um das Scannen, Herunterladen und Installieren von Updates zu verwalten. 
 
 ## <a name="scheduling-updates"></a>Planen von Updates
 
-Sie können auch einen Updatezeitplan festlegen. Dies kann an einem bestimmten Tag oder täglich zu einem bestimmten Zeitpunkt der Fall sein. Beispielsweise um 17:00 Uhr oder außerhalb der aktiven Stunden.
+Sie können auch einen Updatezeitplan festlegen. Dies kann an einem bestimmten Tag oder an jedem Tag zu einer bestimmten Zeit erfolgen. Beispielsweise um 17:00 Uhr oder außerhalb der aktiven Stunden.
 
-Abschließend noch ein paar Worte zur Planung Ihrer Updatestrategie. Wir unterstützen Verzögerungen bei Updates, sodass Sie entscheiden können, wie lange gewartet werden soll, nachdem Microsoft ein Update veröffentlicht hat, um dieses Update auf Geräten zu installieren.
+Abschließend ein paar Worte zur Planung Ihrer Updatestrategie. Wir unterstützen Updaterückstellungen, sodass Sie entscheiden können, wie lange nach der Veröffentlichung eines Updates durch Microsoft gewartet werden soll, um dieses Update auf Geräten zu installieren.
 
-Manchmal möchte ein Unternehmen zuerst alle neuen Features ausprobieren, um sicherzustellen, dass alles funktioniert, und es ist mit den neuen Updates vertraut, damit das Supportteam vorbereitet ist. Nachdem bestätigt wurde, dass alles gut ist, werden die Updates für das gesamte Unternehmen veröffentlicht. Indem Sie Teilmengen Ihrer Geräte verschiedenen Zurückungsrichtlinien zuordnen, die als Updateringe bezeichnet werden, können Sie eine Updaterolloutstrategie für Ihre Organisation koordinieren.
+Manchmal möchte ein Unternehmen zuerst alle neuen Features ausprobieren, um sicherzustellen, dass alles funktioniert, und es ist mit den neuen Updates vertraut, damit das Supportteam vorbereitet ist. Nachdem sie bestätigt haben, dass alles gut ist, stellen sie die Updates für das gesamte Unternehmen bereit. Indem Sie Teilmengen Ihrer Geräte verschiedenen Zurückstellungsrichtlinien zuordnen, die als Updateringe bezeichnet werden, können Sie eine Updaterolloutstrategie für Ihre Organisation koordinieren.
 
-## <a name="hololens-update-tools"></a>HoloLens Updatetools
+## <a name="hololens-update-tools"></a>HoloLens-Updatetools
 
-In diesem Abschnitt werden die folgenden HoloLens beschrieben:
+Dieser Abschnitt führt Sie durch HoloLens Tools für:
 
 - Suchen nach Updates
-- Manuelles Aktualisieren HoloLens
-- Anzeigen ihrer aktuellen Betriebssystemversion (Buildnummer)
-- Roll zurück zu einem älteren Update
+- manuelles Aktualisieren HoloLens
+- Anzeigen der aktuellen Betriebssystemversion (Buildnummer)
+- Rollback zu einem älteren Update
 
 ### <a name="check-for-updates-and-manually-update"></a>Suchen nach Updates und manuelles Aktualisieren
 
-Sie können jederzeit in den Einstellungen nach Updates suchen.  So sehen Sie verfügbare Updates und suchen nach neuen Updates:
+Sie können jederzeit in den Einstellungen nach Updates suchen.  So können Sie verfügbare Updates anzeigen und nach neuen Updates suchen:
 
 1. Öffnen Sie die App **Einstellungen**.
-1. Navigieren Sie **zu Update & Security** Windows  >  **Update**.
+1. Navigieren Sie zu **Update & Security** Windows  >  **Update**.
 1. Wählen Sie **Nach Updates suchen** aus.
 
-Wenn ein Update verfügbar ist, wird mit dem Herunterladen der neuen Version gestartet. Wählen Sie nach Abschluss des Downloads die Schaltfläche **Jetzt neu starten** aus, um die Installation auszulösen. Wenn Ihr Gerät unter 40 % liegt und nicht angeschlossen ist, beginnt der Neustart nicht mit der Installation des Updates.
+Wenn ein Update verfügbar ist, wird die neue Version heruntergeladen. Wählen Sie nach Abschluss des Downloads die Schaltfläche **Jetzt neu starten** aus, um die Installation auszulösen. Wenn Ihr Gerät unter 40 % liegt und nicht angeschlossen ist, wird die Installation des Updates durch einen Neustart nicht gestartet.
 
-Während Ihr HoloLens das Update installiert, werden spinnende Zahnrad und eine Statusanzeige angezeigt. Deaktivieren Sie ihre HoloLens während dieser Zeit nicht. Sie wird nach Abschluss der Installation automatisch neu gestartet.
+Während Ihr HoloLens das Update installiert, werden drehende Zahnradschaltungen und eine Statusanzeige angezeigt. Deaktivieren Sie ihre HoloLens während dieser Zeit nicht. Sie wird nach Abschluss der Installation automatisch neu gestartet.
 
-HoloLens wird ein Update nach dem anderen angewendet.  Wenn Ihr HoloLens mehr als eine Version hinter der neuesten Version liegt, müssen Sie den Updateprozess möglicherweise mehrmals ausführen, um ihn vollständig auf dem neuesten Stand zu halten.
+HoloLens wendet jeweils ein Update an.  Wenn Ihr HoloLens mehr als eine Version hinter der neuesten version liegt, müssen Sie den Updateprozess möglicherweise mehrmals ausführen, um ihn vollständig auf dem neuesten Stand zu halten.
 
-### <a name="check-your-operating-system-version-build-number"></a>Überprüfen Ihrer Betriebssystemversion (Buildnummer)
+### <a name="check-your-operating-system-version-build-number"></a>Überprüfen der Betriebssystemversion (Buildnummer)
 
-Sie können die Systemversionsnummer (Buildnummer) überprüfen, indem Sie Einstellungen **system** about **(System about)**  >  **auswählen.**
+Sie können die Systemversionsnummer (Buildnummer) überprüfen, indem Sie **Einstellungen** öffnen und **System**  >  **about** auswählen.
 
 ### <a name="go-back-to-a-previous-version"></a>Zurück zu einer früheren Version
 
-In einigen Fällen möchten Sie möglicherweise zu einer früheren Version der HoloLens wechseln. Die folgenden Schritte werden empfohlen:
+In einigen Fällen möchten Sie möglicherweise zu einer früheren Version der HoloLens-Software zurückkehren. Die folgenden Schritte werden empfohlen:
 
-1. Wenden Sie sich an den Support, um zu erfahren, ob er Ihr Problem beheben kann.
-    1. Stellen Sie **sicher, dass** **optionale** oder vollständige Telemetrie aktiviert ist. Dadurch wird Ihr Fehler umsetzbarer und einfacher für Techniker zu diagnostizieren.
-    1. Geben [Sie unter Dateifeedback](hololens-feedback.md) so beschreibend wie möglich an. Notieren Sie sich den Titel, oder verwenden Sie das Freigabefeature, damit Sie Ihren Fehler für den Support freigeben können.
-    1. Wenden Sie [sich an den Support.](https://aka.ms/hlsupport) Wenn Ihr Problem gelöst werden muss, indem sie zu einer früheren Version zurückkehren, können sie Ihnen die FFU zum Flashen Ihres Geräts zur Verfügung geben.
+1. Wenden Sie sich an den Support, um zu prüfen, ob das Problem behoben werden kann.
+    1. Stellen Sie sicher, dass **optionale** oder **vollständige** Telemetrie aktiviert ist. Dies macht Ihren Fehler handlungsfähiger und für Techniker einfacher zu diagnostizieren.
+    1. Unter [Dateifeedback](hololens-feedback.md) ist so beschreibend wie möglich. Notieren Sie sich den Titel, oder verwenden Sie das Freigabefeature, damit Sie Ihren Fehler mit dem Support teilen können.
+    1. Wenden Sie sich an [den Support.](https://aka.ms/hlsupport) Wenn Ihr Problem gelöst werden muss, indem Sie zu einer früheren Version zurückkehren, können Sie die FFU zum Flashen Ihres Geräts bereitstellen.
 
-1. Wenn dies nicht funktioniert, geben Sie ihren HoloLens 2 mit [dem Advanced Recovery Companion neu.](hololens-recovery.md#clean-reflash-the-device)
+1. Alternativ können Sie [ihre HoloLens 2 mit dem Advanced Recovery Companion umschwenkten.](hololens-recovery.md#clean-reflash-the-device)
+    1.  Wählen Sie aus, in welche Version Sie flashen möchten: 
+        1.  Sie können das [neueste HoloLens 2 Release](https://aka.ms/hololens2download)herunterladen.
+        1.  Sie können den Standardbuild verwenden, der von ARC gehostet wird.
+        1.  Sie können einen Buildsupport verwenden, der Ihnen zur Verfügung gestellt wird.
 
 > [!NOTE]
-> Wenn Sie zu einer früheren Version zurückkommen, werden Ihre persönlichen Dateien und Einstellungen gelöscht.
+> Wenn Sie zu einer früheren Version zurückkehren, werden Ihre persönlichen Dateien und Einstellungen gelöscht.
 
-Wenn Sie das derzeit installierte Release weiterhin verwenden möchten, können Sie Updates auch [manuell anhalten.](hololens-updates.md#pause-updates-via-device) Dies gibt dem Engineering-Team Zeit, das Problem zu beheben.
+Darüber hinaus können Sie Updates auch manuell [anhalten,](hololens-updates.md#pause-updates-via-device)wenn Sie ihr derzeit installiertes Release fortsetzen möchten. Dadurch erhält das Engineering-Team Zeit, das Problem zu beheben.
 
-## <a name="windows-insider-program-on-hololens"></a>Windows Insider-Programm HoloLens
+## <a name="windows-insider-program-on-hololens"></a>Windows Insider Program on HoloLens
 
-Möchten Sie die neuesten Features in HoloLens?  Wenn ja, treten Sie dem Windows Insider-Programm bei. Sie erhalten Zugriff auf Vorschauversionen von HoloLens Softwareupdates, bevor sie für die allgemeine Öffentlichkeit verfügbar sind.
+Möchten Sie die neuesten Features in HoloLens anzeigen?  Wenn ja, treten Sie dem Windows Insider-Programm bei. Sie erhalten Zugriff auf Vorschaubuilds von HoloLens Softwareupdates, bevor sie für die allgemeine Öffentlichkeit verfügbar sind.
 
-[Hier Windows Insider-Vorschau für Microsoft HoloLens.](hololens-insider.md)
+[Erhalten Sie Windows Insider-Vorschauversion für Microsoft HoloLens](hololens-insider.md).
