@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2da84a11a8f9613999e2b376fefeb6cb2b83cd00
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 810bcae8b457c2f6efba55162e54bcc8956e6005
+ms.sourcegitcommit: a9a86748afd368f3d316a4d2c978063a0905ad08
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034298"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129949019"
 ---
 # <a name="compare-hololens-2-options"></a>Vergleich der HoloLens 2-Optionen
 
@@ -39,6 +39,7 @@ Ob Sie als [IT-Fachmann](https://www.microsoft.com/hololens/apps) nach Ihrer nä
 | **Audioausgabe mit Geräuschunterdrückung**                        |            |                               |                               |                                                  |               ✔️              |                                |
 | **Entwicklerberechtigungen <sup>1</sup>**                             |            |                               |                               |                                                  |                              |                ✔️               |
 | **Schnellaustauschprogramm <sup>2</sup>**                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
+ **Schutzart (IP50, staubgeschützt)**                       |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                ✔️               |
 | **Kommerzielle Nutzungsrechte**                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
 | [**Gewährleistung**](hololens2-hardware.md#warranty-information)                                             |   1 Jahr   |             1 Jahr            |             2 Jahre            |                      2 Jahre                      |            1 Jahr <sup>3</sup>            |             1 Jahr             |
 | **Obergrenze für Gerätekauf**                                |    Keine    |              Keine             |              Keine             |                       Keine                       |             Keine             |       Eines pro Transaktion      |

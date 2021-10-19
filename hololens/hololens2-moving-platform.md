@@ -5,7 +5,7 @@ keywords: Bewegliche Plattformen, dynamische Bewegung, HoloLens, Modus für bewe
 author: evmill
 ms.author: v-evmill
 ms.reviewer: yabahman
-ms.date: 8/10/2021
+ms.date: 10/12/2021
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -14,19 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 81b3231827fce9a2ae2d5e3105800685fedb917b
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 7c636cd97e31c74d4976e71ec3f41ac5afe5bdcc
+ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034310"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129924427"
 ---
 # <a name="moving-platform-mode-on-low-dynamic-motion-moving-platforms"></a>Modus für bewegliche Plattformen auf beweglichen Plattformen mit geringer dynamischer Bewegung
 
-Im **Insider-Build 20348.1411** haben wir Betaunterstützung für die Nachverfolgung auf beweglichen Plattformen mit geringer dynamischer Bewegung in HoloLens 2 hinzugefügt. Nachdem Sie den Build installiert und den Modus für bewegliche Plattformen aktiviert haben, können Sie Ihre HoloLens 2 in bis dahin unzugänglichen Umgebungen verwenden, z. B. auf großen Schiffen und Wasserfahrzeugen. Derzeit ist das Feature nur auf die Unterstützung dieser spezifischen beweglichen Plattformen ausgerichtet. Zwar hindert Sie nichts daran, die Verwendung des Features in anderen Umgebungen zu versuchen, der Schwerpunkt bei diesem Feature liegt aber zuerst bei der hinzugefügten Unterstützung für diese Umgebungen.
-
-> [!NOTE]
-> Dieses Feature ist derzeit nur über [Windows Insider](hololens-insider.md) verfügbar.
+In [Windows Holographic, Version 21H2](hololens-release-notes.md#windows-holographic-version-21h2) haben wir in HoloLens 2 Betaunterstützung für die Nachverfolgung auf beweglichen Plattformen mit geringer dynamischer Bewegung hinzugefügt. Nachdem Sie den Build installiert und den Modus für bewegliche Plattformen aktiviert haben, können Sie Ihre HoloLens 2 in bis dahin unzugänglichen Umgebungen verwenden, z. B. auf großen Schiffen und Wasserfahrzeugen. Derzeit ist das Feature nur auf die Unterstützung dieser spezifischen beweglichen Plattformen ausgerichtet. Zwar hindert Sie nichts daran, die Verwendung des Features in anderen Umgebungen zu versuchen, der Schwerpunkt bei diesem Feature liegt aber zuerst bei der hinzugefügten Unterstützung für diese Umgebungen.
 
 ![Beispiel für bewegliche Plattformen.](./images/mpm-compare.gif)
 
@@ -39,8 +36,8 @@ In diesem Artikel wird Folgendes behandelt:
 
 HoloLens muss in der Lage sein, Ihre Kopfposition mit [6 Freiheitsgraden](https://en.wikipedia.org/wiki/Six_degrees_of_freedom) (X, Y, Z, Verschiebung sowie Roll-, Nick- und Gierrotation) nachzuverfolgen, um stabile Hologramme darzustellen. Zu diesem Zweck verfolgt HoloLens zwei ähnliche Informationen aus zwei separaten Quellen nach:
 
-1. Kameras für sichtbares Licht – die die Umgebung nachverfolgen, z. B. den physischen Raum, in dem Sie die HoloLens verwenden
-1. Einer Massenträgheitseinheit (Inertial Measurement Unit, IMU) – die aus einem Beschleunigungsmesser, Gyroskop und Magnetometer besteht und Ihre Kopfbewegung und -ausrichtung relativ zur Erde verfolgt
+1. **Kameras für sichtbares Licht.** Diese Kameras verfolgen die Umgebung nach, z. B. den physischen Raum, in dem Sie die HoloLens verwenden
+1. **Trägheitsmesseinheit (Inertial Measurement Unit, IMU).** Die Trägheitsmesseinheit besteht aus einem Beschleunigungsmesser, Gyroskop und Magnetometer und verfolgt Ihre Kopfbewegung und -ausrichtung relativ zur Erde
 
 Informationen aus diesen beiden Quellen werden zusammengesetzt, um Ihre Kopfposition mit einer geringen Latenz und ausreichend hohen Frequenz nachzuverfolgen, um Hologramme reibungslos zu rendern.
 
@@ -62,10 +59,7 @@ Der Modus für bewegliche Plattformen wurde zwar entwickelt, um Konfliktfälle b
 
 Die Betaunterstützung für den Modus für bewegliche Plattformen erfordert nur einige wenige Voraussetzungen:
 
-1. Installieren Sie Build 20348.1411 oder neuer, [indem Sie den neuesten Insider-Build über ARC flashen](hololens-insider.md#ffu-download-and-flash-directions) oder [Ihr Gerät registrieren und aktualisieren](hololens-insider.md#start-receiving-insider-builds).
-
-   > [!NOTE]
-   > Dieser Build ist derzeit nur im [Insider Dev Channel](hololens-insider.md#start-receiving-insider-builds) verfügbar.
+1. Installieren Sie [Windows Holographic, Version 21H2](hololens-release-notes.md#windows-holographic-version-21h2) oder höher, indem Sie den [neuesten Build](https://aka.ms/hololens2download)[über ARC](hololens-recovery.md#clean-reflash-the-device)aktualisieren oder flashen.
 
 2. Aktivieren Sie den [Entwicklermodus und das Geräteportal](/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
 
@@ -93,7 +87,7 @@ Wenn die Option für den Modus für bewegliche Plattformen im Geräteportal nich
 
 ## <a name="reporting-issues"></a>Melden von Problemen
 
-Wie bereits erwähnt, ist dieses Feature eine Betafunktion, die nur im Entwicklermodus verfügbar ist. Dies bedeutet, dass Probleme auftreten können. Gehen Sie in diesem Fall bitte wie folgt vor, damit wir das Problem untersuchen und das Produkt verbessern können:
+Wie bereits erwähnt, ist dieses Feature eine Betafunktion, die nur im Entwicklermodus verfügbar ist. Dies bedeutet, dass Probleme auftreten können. Gehen Sie in diesem Fall wie folgt vor, damit wir das Problem untersuchen und das Produkt verbessern können:
 
 1. Melden Sie das Problem über den [Feedback-Hub](hololens-feedback.md) unter der Kategorie **Hologram accuracy, stability, and reliability** (Genauigkeit, Stabilität und Zuverlässigkeit von Hologrammen), und schließen Sie Folgendes ein:
     1. Eine Beschreibung des Problems, einschließlich des erwarteten Verhaltens und des aufgetretenen Verhaltens

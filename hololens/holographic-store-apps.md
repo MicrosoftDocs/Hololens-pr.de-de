@@ -15,12 +15,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f7d4ddf41f02b083000c1e57f5140c38527826d7
-ms.sourcegitcommit: b9cd7ed5edb98249c609b547b90587863ea1cb9e
+ms.openlocfilehash: 4705112ee41ce6de0598358b9c81775f261bb2fa
+ms.sourcegitcommit: 8a3f925d2bda13c095b35f14d80afdd876aa859c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "129364415"
+ms.lasthandoff: 10/12/2021
+ms.locfileid: "129800554"
 ---
 # <a name="find-install-and-uninstall-applications-from-the-microsoft-store"></a>Suchen, Installieren und Deinstallieren von Anwendungen aus dem Microsoft Store
 
@@ -74,6 +74,9 @@ Zum Herunterladen von Apps müssen Sie mit einem Microsoft-Konto angemeldet sein
 1. Wählen Sie auf der Seite der Anwendung **Abrufen** oder **Installieren** aus (möglicherweise ist ein Kauf erforderlich).
 
 ### <a name="install-microsoft-onedrive-pwa-app"></a>Install Microsoft OneDrive PWA App
+
+> [!NOTE]
+> PWA kann nicht über Microsoft Intune/MDM verwaltet oder bereitgestellt werden.
 
 Voraussetzungen: Der Benutzer hat das HoloLens 2-Gerät bereits mit seinem Arbeitsmandanten verknüpft.
 

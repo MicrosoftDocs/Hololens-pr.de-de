@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e9aad32891bb093cbce18671b76549788b19afcb
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 0efcfd0adf9bd380007e5ed4f905cb130b76d4b8
+ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034370"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "130034225"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>Neustarten, Zurücksetzen oder Wiederherstellen von HoloLens 2
 
@@ -45,13 +45,19 @@ Wenn das Gerät korrekt hochgefahren ist und läuft, gibt es drei verschiedene M
 
    ![Ein Bildschirm mit den HoloLens 2-Eigenschaften zeigt den Akkustand.](images/ResetRecovery2.png)
 
-Wenn das Gerät nicht ins Startmenü hochfahren kann, beachten Sie die LED-Darstellung und die Geräteaufzählung auf dem Host-PC. Befolgen Sie dann die [Anleitung zur Problembehandlung](hololens-troubleshooting.md). Falls der Zustand des Geräts mit keinem der im Handbuch zur Fehlerbehebung aufgeführten Zustände übereinstimmt, führen Sie einen [Kaltstart](hololens-recovery.md#hard-reset-procedure) durch, wobei das Gerät nicht mit Ihrem Host-PC, sondern mit dem Netzteil verbunden sein muss. Warten Sie mindestens eine Stunde, bis das Gerät aufgeladen ist.
+Wenn das Gerät nicht ins Startmenü hochfahren kann, beachten Sie die LED-Darstellung und die Geräteaufzählung auf dem Host-PC. Befolgen Sie dann die [Anleitung zur Problembehandlung](hololens-troubleshooting.md). Falls der Zustand des Geräts mit keinem der im Handbuch zur Fehlerbehebung aufgeführten Zustände übereinstimmt, führen Sie einen [Kaltstart](hololens-recovery.md#hard-restart-procedure) durch, wobei das Gerät nicht mit Ihrem Host-PC, sondern mit dem Netzteil verbunden sein muss. Warten Sie mindestens eine Stunde, bis das Gerät aufgeladen ist.
 
-## <a name="reset-the-device"></a>Zurücksetzen des Geräts
+> [!NOTE]
+> Beginnen wir mit der Definition von Begriffen.\
+> „Neu starten“ bedeutet einfach, dass das Gerät ausgeschaltet und wieder eingeschaltet wird.\
+> „Zurücksetzen“ bedeutet, dass die Standardeinstellungen des Geräts über die Benutzeroberfläche wiederhergestellt werden, indem das aktuelle Image erneut installiert wird.\
+> „Reflash“ bedeutet, dass das Gerät mit einem PC verbunden und ein neues Image (optional ein anderes) installiert wird.
 
-Unter bestimmten Umständen möchten Sie das Gerät möglicherweise manuell zurücksetzen, ohne die Software-Benutzeroberfläche zu verwenden.
+## <a name="restart-the-device"></a>Neustart des Geräts
 
-### <a name="standard-procedure"></a>Standardverfahren
+Unter bestimmten Umständen müssen Sie das Gerät möglicherweise manuell neu starten, ohne die Benutzeroberfläche der Software zu verwenden. Dies kann Ihnen bei der Lösung eines auftretenden Problems helfen, ohne dass Sie das Gerät zurücksetzen oder einen Reflash ausführen müssten.
+
+### <a name="standard-restart-procedure"></a>Standardprozedur zum Neustart
 
 1. Trennen Sie das Gerät von der Stromversorgung oder dem Host-PC, indem Sie das Typ-C-Kabel abziehen.
 
@@ -63,7 +69,7 @@ Unter bestimmten Umständen möchten Sie das Gerät möglicherweise manuell zur�
 
    ![Gerätemanager für HoloLens 2 MicrosoftHoloLensRecovery.](images/MicrosoftHoloLens_DeviceManager.png)
 
-### <a name="hard-reset-procedure"></a>Kaltstart-Verfahren
+### <a name="hard-restart-procedure"></a>Prozedur zum harten Neustart
 
 Wenn das Standard Zurücksetzungsverfahren nicht funktioniert, verwenden Sie das Kaltstart-Verfahren:
 
@@ -92,13 +98,13 @@ Es gibt es zwei Möglichkeiten ein „Reflash“ für das Gerät durchzuführen 
 >[!WARNING]
 >Wenn Sie Ihr Gerät neu „flashen“, werden alle Ihre persönlichen Daten, Apps und Einstellungen gelöscht, einschließlich der TPM-Zurücksetzungsinformationen.
 
-Standardmäßig ist Advanced Recovery Companion so eingestellt, dass der neueste Featurerelease-Build heruntergeladen wird. Weitere Informationen zum neuesten Featurerelease finden Sie in unseren [Versionshinweisen zu HoloLens 2](hololens-release-notes.md). Um das neueste HoloLens 2 Full Flash Update (FFU) Paket zu erhalten, um Ihr Gerät über Advanced Recovery Companion zu „reflashen“, laden Sie das neueste monatliche HoloLens 2-Image herunter: [https://aka.ms/hololens2download](https://aka.ms/hololens2download). Diese Version ist der neueste allgemein verfügbare Build.
+Standardmäßig ist Advanced Recovery Companion so konfiguriert, dass der aktuellste Featurerelease-Build heruntergeladen wird. Weitere Informationen zum neuesten Featurerelease finden Sie in den HoloLens 2-[Versionshinweisen](hololens-release-notes.md). Um das neueste HoloLens 2 Full Flash Update (FFU) Paket zu erhalten, um Ihr Gerät über Advanced Recovery Companion zu „reflashen“, laden Sie das neueste monatliche HoloLens 2-Image herunter: [https://aka.ms/hololens2download](https://aka.ms/hololens2download). Diese Version ist der neueste allgemein verfügbare Build.
 
 Stellen Sie vor dem Starten des „Flashens“ sicher, dass die App auf Ihrem Windows 10-PC installiert ist, läuft und bereit ist, das Gerät zu erkennen. Stellen Sie außerdem sicher, dass Ihre HoloLens auf mindestens 40 % aufgeladen ist.
 
 ![Screenshot von „Clean Reflash“ für HoloLens 2.](images/ARC1.png)
 
-### <a name="normal-procedure"></a>Normales Verfahren
+### <a name="normal-flashing-procedure"></a>Normale Flashprozedur
 
 1. Während das HoloLens-Gerät läuft, verbinden Sie es mit Ihrem Windows 10-PC, auf dem Sie zuvor die Advanced Recovery Companion-App geöffnet haben.
 
@@ -108,7 +114,7 @@ Stellen Sie vor dem Starten des „Flashens“ sicher, dass die App auf Ihrem Wi
 
 1. Wählen Sie das HoloLens 2-Gerät in der Benutzeroberfläche der Advanced Recovery Companion-Anwendung aus und befolgen Sie die Anweisungen, um den „Reflash“ abzuschließen.
 
-### <a name="manual-procedure"></a>Manuelle Vorgehensweise
+### <a name="manual-flashing-mode-procedure"></a>Prozedur im manuellen Flashmodus
 
 Unter folgenden Umständen müssen Sie das Gerät möglicherweise in den Wiederherstellungsmodus versetzen:
 
@@ -146,7 +152,7 @@ Unter folgenden Umständen müssen Sie das Gerät möglicherweise in den Wiederh
 
 1. Wenn ARC Ihr Gerät nicht erkennt, stellen Sie sicher, dass Sie über den Datei-Explorer auf Ihrem PC eine Verbindung mit Ihrem Gerät herstellen können. Wenn das nicht möglich ist:
 
-    1. Möglicherweise verfügt Ihr Gerät über USB-Richtlinien, die diese Verbindung deaktivieren. Wenn ja, versuchen Sie den [Manuellen Flash-Modus](hololens-recovery.md#manual-procedure).
+    1. Möglicherweise verfügt Ihr Gerät über USB-Richtlinien, die diese Verbindung deaktivieren. Wenn ja, versuchen Sie den [Manuellen Flash-Modus](hololens-recovery.md#manual-flashing-mode-procedure).
     2. Wenn keine Richtlinien vorhanden sind, versuchen Sie es mit einem anderen USB-Kabel.
 
 1. Stellen Sie sicher, dass ihr Gerät kein [1-3-5-LED-Muster](hololens2-setup.md#lights-to-indicate-problems) anzeigt.

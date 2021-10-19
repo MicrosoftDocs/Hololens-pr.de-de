@@ -108,7 +108,7 @@
 ## [Anzeige](hololens2-display.md)
 ## [Implementierung und verwaltete Geräte](hololens2-enterprise-troubleshooting.md#)
 ## [Aktivieren der Diagnoseprotokollierung für Apps in Azure App Service](hololens-diagnostic-logs.md)
-## [Zurücksetzen von HoloLens 2](hololens-recovery.md)
+## [Neustarten, Zurücksetzen oder Wiederherstellen von HoloLens 2](hololens-recovery.md)
 
 # Ressourcen
 ## [Erwerben von HoloLens 2](hololens2-purchase.md)
@@ -131,7 +131,7 @@
 #### [Verwalten der benutzerdefinierten Apps für HoloLens](holographic-custom-apps.md)
 #### [Installieren einer lokalisierten HoloLens-Version (1. Generation)](hololens1-install-localized.md)
 #### [Effiziente Nutzung der Features von Windows Holographic for Business](hololens1-upgrade-enterprise.md)
-#### [Zurücksetzen von HoloLens (1. Generation)](hololens1-recovery.md)
+#### [Neustarten, Zurücksetzen oder Wiederherstellen von HoloLens (1. Generation)](hololens1-recovery.md)
 ### HoloLens (1. Generation): Sicherheit
 #### [Häufig gestellte Sicherheitsfragen zu HoloLens (1. Generation)](hololens1-faq-security.yml)
 #### [BitLocker-Verschlüsselung von HoloLens (1. Generation)](hololens1-encryption.md)

@@ -8,7 +8,7 @@ ms.author: v-tea
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: high
-ms.date: 10/13/2020
+ms.date: 10/12/2021
 ms.reviewer: jarrettr
 manager: jarrettr
 appliesto:
@@ -19,12 +19,12 @@ ms.custom:
 - CI 115825
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: 3afe3d2aecd64c2b4724f4805571cb3c46112875
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 854e867238de6c87732970fba75abdc8e1fb2c64
+ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034364"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129924333"
 ---
 # <a name="manage-hololens-updates"></a>Verwalten von HoloLens-Updates
 
@@ -101,6 +101,24 @@ Mithilfe der folgenden Updaterichtlinien können Sie Geräte so konfigurieren, d
 - [Update/AllowUpdateService](/windows/client-management/mdm/policy-csp-update#update-allowupdateservice)
 - [Update/RequireUpdateApproval](/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)
 - [Update/UpdateServiceUrl](/windows/client-management/mdm/policy-csp-update#update-updateserviceurl)
+
+#### <a name="improved-update-restart-detection-and-notifications"></a>Verbesserte Erkennung von Neustarts beim Update und Benachrichtigungen
+
+- Eingeführt in [Windows Holographic, Version 21H2](hololens-release-notes.md#windows-holographic-version-21h2).
+
+Zwischen Nutzungszeit und Installationszeitrichtlinien kann der Neustart von HoloLens-Geräten während des Gebrauchs vermieden werden. Allerdings bringt es auch eine verzögerte Übernahme von Updates mit sich, wenn keine Neustarts ausgeführt werden, um die Installation eines erforderlichen Updates abzuschließen. Wir haben nun Richtlinien hinzugefügt, mit denen die IT-Abteilung Stichtage und erforderliche Neustarts erzwingen und so sicherstellen kann, dass die Installation eines Updates zeitnah abgeschlossen wird. Die Benutzer können vor dem Einleiten des Neustarts benachrichtigt werden, und sie können den Neustart in Übereinstimmung mit der IT-Richtlinie hinauszögern.
+
+Die folgenden Updaterichtlinien wurden hinzugefügt:
+
+- [Update/AutoRestartNotificationSchedule](/windows/client-management/mdm/policy-csp-update#update-autorestartnotificationschedule)
+- [Update/AutoRestartRequiredNotificationDismissal](/windows/client-management/mdm/policy-csp-update#update-autorestartrequirednotificationdismissal)
+- [Update/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates)
+- [Update/ConfigureDeadlineForQualityUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
+- [Update/ConfigureDeadlineGracePeriod](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
+- [Update/ConfigureDeadlineNoAutoReboot](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot)
+- [Update/ScheduleImminentRestartWarning](/windows/client-management/mdm/policy-csp-update#update-scheduleimminentrestartwarning)
+- [Update/ScheduleRestartWarning](/windows/client-management/mdm/policy-csp-update#update-schedulerestartwarning)
+- [Update/UpdateNotificationLevel](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel)
 
 ### <a name="plan-and-configure-update-rollouts-for-hololens-2"></a>Planen und Konfigurieren von Updaterollouts für HoloLens 2
 
