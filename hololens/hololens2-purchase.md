@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0ee90e8aa89c4121053ff6319ec46f83f01a4a3f
-ms.sourcegitcommit: a9a86748afd368f3d316a4d2c978063a0905ad08
+ms.openlocfilehash: a9f4609f39405b6815fe044cae124bc95365707c
+ms.sourcegitcommit: 38b5e4d92da6fc5d6a6a2ef875644d6db2cce822
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129949036"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130202861"
 ---
 # <a name="where-to-buy-hololens-2"></a>Erwerben von HoloLens 2
 
@@ -30,15 +30,23 @@ HoloLens 2 stellt das komfortabelste verfügbare Mixed Reality-Gerät dar, mit 
 
 | HoloLens 2-Edition| Unterstützter Markt |
 |-------------------------------------------| ----------------------------------------| 
-| HoloLens 2 | Australien, Österreich, Belgien, Kanada, China, Dänemark, Finnland, Frankreich, Deutschland, Hongkong, Irland, Italien, Japan, Malaysia, Niederlande, Neuseeland, Norwegen, Polen, Portugal, Singapur, Südkorea, Spanien, Schweden, Schweiz, Taiwan, Thailand, Vereinigtes Königreich, USA und Vietnam  |
-| HoloLens 2 mit Remote Assist | Australien, Österreich, Belgien, Kanada, Dänemark, Finnland, Frankreich, Deutschland, Hongkong, Irland, Italien, Japan, Korea, Malaysia, Niederlande, Neuseeland, Norwegen, Singapur, Spanien, Schweden, Schweiz, Taiwan, Thailand, Vereinigtes Königreich, USA und Vietnam <sup>1</sup> 
-| HoloLens 2 Industrial Edition *(bei Markteinführung)* | Australien, Österreich, Belgien, Kanada, China, Dänemark, Finnland, Frankreich, Deutschland, Hongkong, Irland, Italien, Japan, Malaysia, Niederlande, Neuseeland, Norwegen, Polen, Portugal, Singapur, Südkorea, Spanien, Schweden, Schweiz, Taiwan, Thailand, Vereinigtes Königreich, USA und Vietnam  |
+| HoloLens 2 | Australien, Österreich, Belgien, Kanada, China, Dänemark, Finnland, Frankreich, Deutschland, Hongkong, Irland, Italien, Japan, Malaysia, Mexiko, Niederlande, Neuseeland, Norwegen, Polen, Portugal, Singapur, Südafrika, Südkorea, Spanien, Schweden, Schweiz, Taiwan, Thailand, Vereinigtes Königreich, USA und Vietnam  |
+| HoloLens 2 mit Remote Assist | Australien, Österreich, Belgien, Kanada, Dänemark, Finnland, Frankreich, Deutschland, Hongkong, Irland, Italien, Japan, Korea, Malaysia, Mexiko, Niederlande, Neuseeland, Norwegen, Singapur, Spanien, Südafrika, Schweden, Schweiz, Taiwan, Thailand, Vereinigtes Königreich, USA und Vietnam <sup>1</sup> 
+| HoloLens 2 Industrial Edition *(bei Markteinführung)* | Australien, Österreich, Belgien, Kanada, China, Dänemark, Finnland, Frankreich, Deutschland, Hongkong, Irland, Italien, Japan, Malaysia, Mexiko, Niederlande, Neuseeland, Norwegen, Polen, Portugal, Singapur, Südafrika, Südkorea, Spanien, Schweden, Schweiz, Taiwan, Thailand, Vereinigtes Königreich, USA und Vietnam  |
 | HoloLens 2 Development Edition | Australien, Kanada, Frankreich, Deutschland, Irland, Italien, Japan, Neuseeland, Schweiz und Vereinigtes Königreich |
 
 &nbsp;&nbsp;&nbsp;<sup>1</sup> Diese Liste ist dynamisch und wird regelmäßig aktualisiert.
 
 ## <a name="find-an-authorized-hololens-2-reseller"></a>Suchen eines autorisierten HoloLens 2-Handelspartners
 In den folgenden Tabellen finden die Verfügbarkeits- und Kaufoptionen für HoloLens 2 nach Region.
+
+### <a name="africa"></a>**Afrika**
+
+| Land | ADD | DMPs | HoloLens 2 DMPs |
+|---------|-----|------|----------------|
+| **Südafrika** | Tarsus Distribution | Datacentrix | [Datacentrix – ein führender Hybrid-IT-Systemintegrator und Anbieter verwalteter Dienste](https://www.datacentrix.co.za/)|
+| || Nulitics Development Company Pty Ltd. | [NTICSTICS, Augmented Reality, Development, Rich Communication Services](https://nulitics.com/#work-with-us)|
+| | | Crimson Line Networking <br/>cc – t/a Crimson Line – Solving IT |[Verwaltete Cloud- und IT-Dienste \| Südafrika \| Crimsonline](https://www.crimsonline.co.za)|
 
 ### <a name="apac"></a>**APAC**
 
@@ -64,6 +72,13 @@ In den folgenden Tabellen finden die Verfügbarkeits- und Kaufoptionen für Holo
 | **Taiwan** | Systex Software & Service Corporation精誠資訊股份有限公司 | Gina Ko<br><ginako@systex.com><br>Sean Chien<br><seanchien@systex.com> | [HoloLens 2 kaufen – Systex Software & Service Corporation精誠資訊股份有限公司](https://tw.systex.com/microsoft-hololens/) | [HoloLens 2 Industrial Edition kaufen – Systex Software & Service Corporation精誠資訊股份有限公司](https://dcsalesportal.com/brands/microsoft/microsoft-hololens/) | 
 | **Thailand** | Sustainable Solution Co., Ltd. | Vongsakorn Pannate <vongsakorn@sustain-solution.com> | [HoloLens 2 kaufen – Sustainable Solution Co., Ltd.](https://hololensthai.com/) | [HoloLens 2 Industrial Edition kaufen – Sustainable Solution Co., Ltd.](https://hololensthai.com/) |
 | **Vietnam** | CÔNG TY TNHH HIVERLAB VIETNAM | Cincin Phung<br><cincin.phung@hiverlab.com> | [HoloLens 2 kaufen – CÔNG TY TNHH HIVERLAB VIETNAM](https://www.hiverlab.com/vn) | [HoloLens 2 Industrial Edition kaufen – CÔNG TY TNHH HIVERLAB VIETNAM](https://www.hiverlab.com/vn) |
+
+### <a name="south-america"></a>**Südamerika**
+
+| Land | ADDs | DMPs | HoloLens 2 DMPs |
+|---------|-----|------|----------------|
+| **Mexiko** | Ingram Micro México, S.A. de C.V. | Aevitas S.A. de C.V. | [Aevitas S.A. de C.V.](http://aevitas.com.mx)|
+| | Commercializadora Intcomex, S.A. de C.V.| Equipos Comp. de Occte. S.A. de C.V. | [Productos \| Equipos MCA  S.A. de C.V.](https://equiposmca.com/productos/) |
 
 ### <a name="north-america"></a>**Nordamerika**
 

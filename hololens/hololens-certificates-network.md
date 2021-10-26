@@ -13,12 +13,12 @@ audience: ITPro
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 62eedd0c05bb23f11a4e17a97b4ab5441a2931cf
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: c7c15cc0630f11d1687db19f2e6b28b8347dd4c3
+ms.sourcegitcommit: f105a770814ccd61e88b650448902a03c95b7a3c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034258"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130151670"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-hololens-2"></a>Vorbereiten von Zertifikaten und Netzwerkprofilen für HoloLens 2
 
@@ -27,7 +27,7 @@ Die zertifikatbasierte Authentifizierung wird häufig von Kunden benötigt, die 
 HoloLens 2-Geräte werden in der Regel mit Azure AD (Azure Active Directory) verbunden und über Intune oder einen anderen MDM-Anbieter verwaltet. Daher müssen Sie diese Zertifikate mit einem SCEP- (Simple Certificate Enrollment Protocol) oder einer PKCS-Zertifikatinfrastruktur (Public Key Cryptography Standard) bereitstellen, die in Ihre MDM-Lösung integriert ist. 
 
 >[!NOTE]
-> Wenn Sie keinen MDM-Anbieter haben, können Sie die Zertifikate trotzdem über ein [Bereitstellungspaket](hololens-provisioning.md#steps-for-creating-provisioning-packages) im [Windows-Konfigurations-Designer](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?rtc=1&activetab=pivot:regionofsystemrequirementstab) oder über den [Zertifikat-Manager](certificate-manager.md) bereitstellen, indem Sie **Einstellungen > Update und Sicherheit >Zertifikat-Manager** auswählen.
+> Wenn Sie keinen MDM-Anbieter haben, können Sie die Zertifikate trotzdem über ein [Bereitstellungspaket](hololens-provisioning.md#create-the-provisioning-package) im [Windows-Konfigurations-Designer](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?rtc=1&activetab=pivot:regionofsystemrequirementstab) oder über den [Zertifikat-Manager](certificate-manager.md) bereitstellen, indem Sie **Einstellungen > Update und Sicherheit >Zertifikat-Manager** auswählen.
 
 ## <a name="certificate-requirements"></a>Zertifikatanforderungen
 Für die Bereitstellung von Zertifikaten über eine SCEP- oder PKCS-Infrastruktur sind Stammzertifikate erforderlich. Andere Anwendungen und Dienste in Ihrem Unternehmen erfordern möglicherweise, dass Stammzertifikate auch für Ihre HoloLens 2-Geräte bereitgestellt werden. 

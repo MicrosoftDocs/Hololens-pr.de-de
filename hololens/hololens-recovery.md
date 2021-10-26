@@ -1,13 +1,13 @@
 ---
-title: Neustarten, Zurücksetzen oder Wiederherstellen von HoloLens
+title: Neustarten, Zurücksetzen oder Wiederherstellen von HoloLens 2
 ms.reviewer: Follow along with our basic and advanced instructions for rebooting or resetting your HoloLens 2 device.
 description: Verwenden von Advanced Recovery Companion (ARC), um einen Flash eines Images in HoloLens 2 auszuführen.
 keywords: 'Anleitung für: Neustart, Zurücksetzen, Wiederherstellen, Kaltstart, Warmstart, Energiezyklus, HoloLens, Herunterfahren, ARC, Advanced Recovery Companion'
 ms.prod: hololens
 ms.sitesec: library
 author: mattzmsft
-ms.author: mazeller
-ms.date: 08/30/2021
+ms.author: v-beehanson
+ms.date: 10/15/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0efcfd0adf9bd380007e5ed4f905cb130b76d4b8
-ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
+ms.openlocfilehash: 9f8969d018059a3b38d2b3001f8bc983b72d58c7
+ms.sourcegitcommit: f105a770814ccd61e88b650448902a03c95b7a3c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "130034225"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130151643"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>Neustarten, Zurücksetzen oder Wiederherstellen von HoloLens 2
 
@@ -67,11 +67,11 @@ Unter bestimmten Umständen müssen Sie das Gerät möglicherweise manuell neu s
 
 4. Verbinden Sie das Gerät mit dem Host-PC, und öffnen Sie dann den Geräte-Manager. (Drücken Sie unter Windows 10 die **Windows**-Taste und dann die **X**-Taste und wählen Sie dann **Geräte-Manager** aus.) Stellen Sie sicher, dass das Gerät, wie im folgenden Bild dargestellt, korrekt als *Microsoft HoloLens* aufgeführt wird:
 
-   ![Gerätemanager für HoloLens 2 MicrosoftHoloLensRecovery.](images/MicrosoftHoloLens_DeviceManager.png)
+   ![Gerätemanager für HoloLens 2 MicrosoftHoloLensRecovery.](images/MicrosoftHoloLens_DeviceManager.png)
 
 ### <a name="hard-restart-procedure"></a>Prozedur zum harten Neustart
 
-Wenn das Standard Zurücksetzungsverfahren nicht funktioniert, verwenden Sie das Kaltstart-Verfahren:
+Wenn das Standardverfahren zum Zurücksetzen nicht funktioniert, verwenden Sie das Kaltstart-Verfahren:
 
 1. Trennen Sie das Gerät von der Stromversorgung oder dem Host-PC, indem Sie das Typ-C-Kabel abziehen.
 
@@ -82,6 +82,14 @@ Wenn das Standard Zurücksetzungsverfahren nicht funktioniert, verwenden Sie das
 1. Öffnen Sie den Geräte-Manager (drücken Sie unter Windows 10 die **Windows**-Taste und dann die **X**-Taste und wählen Sie dann **Gerätemanager** aus). Stellen Sie sicher, dass das Gerät ordnungsgemäß als *Microsoft HoloLens* aufgeführt wird, wie in der folgenden Abbildung dargestellt:
 
    ![Gerätemanager 2 für HoloLens 2 MicrosoftHoloLensRecovery.](images/MicrosoftHoloLens_DeviceManager.png)
+
+## <a name="reset-the-device"></a>Zurücksetzen des Geräts
+
+Sie können Ihr Gerät direkt über Ihr Headset zurücksetzen. Wählen Sie **Einstellungen** und dann **Update & Sicherheit > Zurücksetzen & Wiederherstellen > Dieses Gerät zurücksetzen** aus.
+
+   ![Zurücksetzen des HoloLens-Headsets.](images/headset-reset-recovery.png)
+
+Wenn Sie das Zurücksetzen auf diese Weise ausführen, werden alle Benutzerkonten entfernt, und alle Daten werden gelöscht.
 
 ## <a name="clean-reflash-the-device"></a>Ausführen von „Clean-Reflash“ am Gerät
 
