@@ -1,6 +1,6 @@
 ---
 title: Insider Preview für Microsoft HoloLens
-description: Erfahren Sie mehr über die ersten Schritte mit Insider-Builds, und geben Sie wertvolles Feedback zu unserem nächsten wichtigen Betriebssystemupdate für HoloLens.
+description: Erfahren Sie, wie Sie mit Insider-Builds beginnen und wertvolles Feedback zu unserem nächsten wichtigen Betriebssystemupdate für HoloLens geben.
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 10/12/2021
+ms.date: 10/19/2021
 ms.reviewer: ''
 manager: ranjibb
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 080eb5949bc80d1ce922d57f099c375668f5633f
-ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
+ms.openlocfilehash: 382c979138068ab1d9682ee4e84831accc9e4553
+ms.sourcegitcommit: 73a1555fb8b84f3d20c480282c648d8d800a6c98
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129924365"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "130351651"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider Preview für Microsoft HoloLens
 
@@ -29,7 +29,26 @@ Willkommen bei den neuesten Insider Preview-Builds für HoloLens! Es ist einfach
 
 ## <a name="windows-insider-release-notes"></a>Windows Insider-Versionshinweise
 
-Wir freuen uns, dass alle unsere aktuellen Insider-Features veröffentlicht wurden! Wenn Sie mehr darüber erfahren möchten, sehen Sie sich die Seite mit den [Versionshinweisen](hololens-release-notes.md) an.
+Neuerungen und Neuerungen bei HoloLens Sehen Sie sich diese neuen Updates an, die HoloLens!
+
+### <a name="colorblind-mode"></a>Farbblindmodus
+
+Hinzugefügt im Insider-Build 20348.1463
+
+Der Farbblindmodus ist ein nützliches Feature, das HoloLens zugänglicher macht. Den neuen Farbblindmodus finden Sie in der Einstellungen-App unter **Einstellungen**  ->  **Erleichterte Bedienung**  ->  **Farbfilter.** Es sind mehrere neue Filter verfügbar. Hier sehen Sie ein visuelles Beispiel für einige der verfügbaren Filter.
+
+| Aus | Graustufen | Tritantropie |
+|-----|-----------|------------|
+| ![Farbfilter aus](images/colorblind-off.png)   | ![Farbfilter graustufen](images/colorblind-greyscale.png)         | ![Farbfilter-Tritantropie](images/colorblind-tritanopia.png)          |
+
+### <a name="fixes-and-improvements"></a>Fehlerbehebungen und Verbesserungen
+
+- Ein bekanntes Problem wurde behoben, bei [dem das Gerät bei jedem Stromstrom von 18 Prozent plötzlich automatisch heruntergefahren wurde.](hololens-troubleshooting.md#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
+- Verbesserungen beim Verschieben des Plattformmodus beim Erkennen der Abwärtsrichtung.
+- Ein Problem mit Updatedialogen wurde behoben.
+- Der Posteingang Microsoft Edge Browserversion wurde aktualisiert.
+- Ein Problem wurde behoben, bei dem das Umstellen optionaler Diagnosedaten die ausgewählte Einstellung nach einem Neustart auf der Seite mit den Telemetrieeinstellungen nicht beibehalten hat.
+- Es wurde ein Problem behoben, bei dem QR-Codes nicht erkannt wurden, wenn sie relativ zum Gerät in einem Winkel von 45 Grad gedreht wurden.
 
 ## <a name="start-receiving-insider-builds"></a>Starten des Empfangs von Insider-Builds
 
@@ -46,7 +65,7 @@ Wechseln Sie auf einem HoloLens 2 Gerät zu **Einstellungen**  >  **Update & Sec
 > [!NOTE]
 > Um Ihr Gerät bei Insider-Builds zu registrieren, müssen Sie optionale Telemetriedaten aktivieren. Wenn Sie dies noch nicht getan haben, öffnen Sie die Einstellungen-App, wählen Sie  ->  **Datenschutzdiagnose & Feedback** und dann Optionale **Diagnosedaten** aus.
 
-Windows Insider wechselt jetzt zu Kanäle. Der **Fast-Ring** wird zum **Dev-Kanal,** der **langsame** Ring zum **Betakanal** und der **Releasevorschauring** zum **Releasevorschaukanal.** Diese Zuordnung sieht wie folgt aus:
+Windows Insider wechselt jetzt zu Kanäle. Der **schnelle** Ring wird zum **Entwicklungskanal,** der **langsame** Ring zum **Betakanal** und der **Releasevorschauring** zum **Releasevorschaukanal.** Diese Zuordnung sieht wie folgt aus:
 
 ![Windows Erklärung der Insiderkanäle.](images/WindowsInsiderChannels.png)
 
@@ -56,39 +75,39 @@ Wählen Sie **Confirm > Restart Now (Jetzt neu starten)** aus, um den Vorgang ab
 
 ### <a name="update-error-0x80070490-work-around"></a>Updatefehler 0x80070490 Problembearbeitung
 
-Wenn beim Aktualisieren auf dem Dev- oder Betakanal ein Updatefehler 0x80070490 wird, versuchen Sie es mit der folgenden kurzfristigen Problemumgemeinung. Dies umfasst das Verschieben Ihres Insider-Kanals, das Aufnehmen des Updates und das anschließende Verschieben Ihres Insider-Kanals zurück.
+Wenn beim Aktualisieren im Dev- oder Betakanal ein Updatefehler 0x80070490 auftritt, versuchen Sie es mit der folgenden kurzfristigen Problemumgemeinung. Dies umfasst das Verschieben Ihres Insider-Kanals, das Aufnehmen des Updates und das anschließende Verschieben Ihres Insider-Kanals zurück.
 
 #### <a name="stage-one---release-preview"></a>Phase 1: Releasevorschau
 
 1. Einstellungen, Update & Security, Windows Insider Program, wählen Sie **Release Preview Channel (Releasevorschaukanal)** aus.
 
-2. Einstellungen, Update & Security, Windows Update, Check **for updates**. Fahren Sie nach dem Update mit Phase 2 fort.
+2. Einstellungen, Update & Security, Windows Update, Suchen **nach Updates.** Fahren Sie nach dem Update mit Phase 2 fort.
 
 #### <a name="stage-two---dev-channel"></a>Phase 2: Entwicklungskanal
 
 1. Einstellungen, Update & Security, Windows Insider Program, wählen Sie **Dev Channel** aus.
 
-2. Einstellungen, Update & Security, Windows Update, Check **for updates**.
+2. Einstellungen, Update & Security, Windows Update, Suchen **nach Updates.**
 
-## <a name="ffu-download-and-flash-directions"></a>FFU-Download und Flash-Anweisungen
+## <a name="ffu-download-and-flash-directions"></a>Download- und Flash-Anweisungen für FFU
 
-Zum Testen mit einer Flugsignierungs-FFU müssen Sie ihr Gerät zunächst entsperren, bevor Sie die flugsigniert-FFU blinken lassen.
+Zum Testen mit einer Flugsignierungs-FFU müssen Sie zunächst ihr Gerät entsperren, bevor Sie die flugsigniert-FFU blinken lassen.
 
 1. Auf dem PC:
     1. Laden Sie FFU von auf Ihren PC [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) herunter.
 
     1. Installieren Sie ARC (Advanced Recovery Companion) über die Microsoft Store: [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8) .
 
-1. Bei HoloLens – Flight Unlock: Öffnen **Sie Einstellungen** Update  >  **& Security** Windows Insider  >  **Program,** und starten Sie das Gerät neu.
+1. Bei HoloLens – Flight Unlock: Öffnen **Sie Einstellungen** Update  >  **& Security** Windows Insider  >  **Program,** registrieren Sie sich, und starten Sie das Gerät neu.
 
-1. Flash-FFU: Jetzt können Sie die flugsignieren FFU mit ARC flashen.
+1. Flash-FFU: Jetzt können Sie die mit Flugsignieren signierte FFU mit ARC flashen.
 
 ### <a name="provide-feedback-and-report-issues"></a>Bereitstellen von Feedback und Melden von Problemen
 
 Verwenden Sie [die Feedback-Hub-App](hololens-feedback.md) auf Ihrem HoloLens, um Feedback zu geben und Probleme zu melden. Die Verwendung von Feedback-Hub stellt sicher, dass alle erforderlichen Diagnoseinformationen enthalten sind, damit unsere Techniker das Problem schnell debuggen und beheben können.  Probleme mit der chinesischen und japanischen Version von HoloLens sollten auf die gleiche Weise gemeldet werden.
 
 > [!NOTE]
-> Achten Sie darauf, dass Sie die Eingabeaufforderung akzeptieren, in der Sie gefragt werden, ob sie Feedback-Hub möchten, auf Ihren Ordner Dokumente zuzugreifen (wählen Sie **Ja** aus, wenn Sie dazu aufgefordert werden).
+> Achten Sie darauf, dass Sie die Eingabeaufforderung akzeptieren, in der Sie gefragt werden, ob sie Feedback-Hub möchten, um auf Ihren Ordner Dokumente zuzugreifen (wählen Sie **Ja** aus, wenn Sie dazu aufgefordert werden).
 
 ## <a name="note-for-developers"></a>Hinweis für Entwickler
 
